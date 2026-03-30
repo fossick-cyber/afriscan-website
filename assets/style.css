@@ -138,6 +138,38 @@ ul { list-style: none; }
 .highlight strong { font-size: 1.15rem; display: block; margin-bottom: 8px; }
 .highlight p { font-size: .9rem; color: rgba(255,255,255,.7); }
 
+/* === EXAMPLES === */
+.examples-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.example-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--dark);
+  border: 1px solid var(--gray-200);
+  transition: transform .2s, box-shadow .2s;
+}
+.example-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.12); }
+.example-large { grid-column: 1 / -1; }
+.example-card img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.example-large img { max-height: 480px; }
+.example-card:not(.example-large) img { height: 280px; }
+.example-caption {
+  padding: 20px 24px;
+}
+.example-caption h3 { color: var(--white); font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; }
+.example-caption p { color: rgba(255,255,255,.6); font-size: .9rem; }
+@media (max-width: 700px) {
+  .examples-grid { grid-template-columns: 1fr; }
+  .example-card:not(.example-large) img { height: 220px; }
+}
+
 /* === CARD LIST === */
 .card-large { padding: 36px; }
 .card-list { margin-top: 16px; padding-left: 20px; list-style: disc; }
