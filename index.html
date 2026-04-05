@@ -38,7 +38,7 @@
       <a href="assets/AfriScan-Presentation.pptx" class="btn btn-lg btn-outline" download>Download Presentation</a>
     </div>
     <div class="hero-stats">
-      <div class="stat"><strong>3 AI Models</strong> working together</div>
+      <div class="stat"><strong>5 Detection Engines</strong> working together</div>
       <div class="stat"><strong>Risk Analysis</strong> per 500m segment</div>
       <div class="stat"><strong>Africa</strong> Trained &amp; tested</div>
     </div>
@@ -79,6 +79,13 @@
           <p>An entire pipeline corridor scanned in minutes. Every building and facility within the buffer zone is identified, measured, and included in the professional risk report.</p>
         </div>
       </div>
+      <div class="example-card example-large">
+        <img src="assets/examples/compare-historical.jpg" alt="Side-by-side comparison of drone orthophoto and satellite imagery along a pipeline corridor in Mozambique" loading="lazy">
+        <div class="example-caption">
+          <h3>Historical Imagery Comparison</h3>
+          <p>Side-by-side view of a pipeline corridor — drone orthophoto (left) and high-resolution satellite (right) with the route overlaid in magenta. Spot new buildings, cleared land, and encroachment between surveys at a glance.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -117,42 +124,52 @@
       <div class="feature">
         <div class="feature-num">01</div>
         <h3>One-Click Corridor Scan</h3>
-        <p>Draw a pipeline route on the map or upload a KML, click scan — AfriScan does everything automatically. Fetches high-resolution satellite imagery, runs AI detection, and delivers a complete encroachment report in minutes.</p>
+        <p>Draw a route on the map, upload a KML/GeoJSON/GPX/Shapefile, or pick from your saved routes. Set your buffer zones, click scan, and AfriScan fetches satellite imagery, runs AI detection, and delivers a complete encroachment report — hands-off, in minutes.</p>
       </div>
       <div class="feature">
         <div class="feature-num">02</div>
-        <h3>Multi-Model AI Detection</h3>
-        <p>Three detection engines work together: Google Open Buildings for known structures, RAMP deep learning for additional buildings, and custom-trained YOLO models fine-tuned on your specific terrain. Catches mud huts, zinc-roof compounds, and informal structures that generic models miss.</p>
+        <h3>Multi-Engine AI Detection</h3>
+        <p>Five detection engines work together: YOLOv8 deep learning, RAMP segmentation (trained on African buildings), HOT fAIr humanitarian mapping, Google Open Buildings, and OpenStreetMap footprints. Combined ensemble mode deduplicates overlapping detections and catches mud huts, zinc-roof compounds, and informal structures that single-model tools miss. Optional SAM refinement converts boxes into precise footprint polygons.</p>
       </div>
       <div class="feature">
         <div class="feature-num">03</div>
-        <h3>Risk Segment Analysis</h3>
-        <p>Your pipeline is automatically divided into 500m segments, each classified as high, medium, or low risk based on building density. Interactive maps show colour-coded risk zones — pinpoint exactly where encroachment is worst and prioritise action.</p>
+        <h3>Buffer Zones &amp; Risk Segments</h3>
+        <p>Define any number of buffer distances (50m, 100m, 200m) around your route, or switch to polygon mode for concessions and exclusion zones. AfriScan automatically classifies every structure by buffer, divides your corridor into 500m risk segments, and ranks each one high / medium / low by building density.</p>
       </div>
       <div class="feature">
         <div class="feature-num">04</div>
-        <h3>Professional Encroachment Reports</h3>
-        <p>Executive summary with overall risk rating, building counts within 50m and 100m buffer zones, satellite imagery crops of every structure with GPS coordinates, and risk segment tables. PDF reports ready for regulators, stakeholders, and legal teams.</p>
+        <h3>Before / After Change Detection</h3>
+        <p>Compare any two imagery datasets — drone vs satellite, wet vs dry season, this month vs last year — with side-by-side or swipe viewers. AI diff mode highlights new, removed, and changed structures automatically. Track encroachment growth over time with hard evidence.</p>
       </div>
       <div class="feature">
         <div class="feature-num">05</div>
-        <h3>Historical Comparison</h3>
-        <p>Run the same corridor monthly or quarterly. AfriScan tracks what changed — new buildings, removed structures, settlement expansion. Compare any two scans to see exactly where encroachment is growing over time.</p>
+        <h3>Manual Verification &amp; Spotter</h3>
+        <p>Human-in-the-loop tools for ground-truth confirmation: a click-to-mark interface for inspectors, and a gamified "Spotter" challenge with leaderboards for crowdsourced building marking. Verified marks merge back into your corridor results and feed directly into custom model training.</p>
       </div>
       <div class="feature">
         <div class="feature-num">06</div>
-        <h3>Google Earth &amp; GIS Export</h3>
-        <p>Download results as KMZ for Google Earth, GeoPackage, GeoJSON, or Shapefile. Every building includes GPS coordinates, distance to pipeline, buffer zone, and confidence score. Interactive web maps with toggleable risk overlays.</p>
+        <h3>Custom Model Training</h3>
+        <p>Fine-tune YOLOv8 on your own labelled imagery to catch the exact structures you care about in your terrain. Auto-chip orthomosaics into training tiles, review and confirm labels in-browser, and export a ready-to-train YOLO dataset. Train locally or ship to Colab/RunPod GPUs, then re-import your custom model.</p>
       </div>
       <div class="feature">
         <div class="feature-num">07</div>
-        <h3>Drone Survey Integration</h3>
-        <p>When satellite flags high-risk areas, deploy <a href="https://afridr.one" class="afridrone-link">Afridrone</a> teams for centimetre-resolution verification. Raw drone photos are processed into georeferenced orthophotos directly in AfriScan via WebODM integration.</p>
+        <h3>Imagery Library</h3>
+        <p>Persistent dataset management for every image you work with — upload drone GeoTIFFs or fetch satellite tiles from Google, Esri, or Bing at zoom 16&ndash;20 (0.15&ndash;2.4m/pixel). Every dataset stored with its bounds, CRS, and capture date, ready for scan, compare, and report.</p>
       </div>
       <div class="feature">
         <div class="feature-num">08</div>
-        <h3>Mobile-Ready Dashboard</h3>
-        <p>Full web dashboard works on any device — desktop, tablet, or phone. Draw routes, run scans, review results, and label training data from the field. No app install required.</p>
+        <h3>Drone Surveys with WebODM</h3>
+        <p>Upload raw drone photos and AfriScan processes them into georeferenced orthomosaics directly in the dashboard via WebODM, then feeds them straight into detection. For high-risk areas satellite flags, deploy <a href="https://afridr.one" class="afridrone-link">Afridrone</a> teams for centimetre-resolution verification.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-num">09</div>
+        <h3>Professional Reports &amp; GIS Export</h3>
+        <p>PDF encroachment reports with executive summary, risk ratings, per-segment tables, and GPS-tagged photo crops of every structure. Per-location House Reports pull all available imagery for a single coordinate. GIS-ready exports: GeoPackage, GeoJSON, Shapefile, and KMZ for Google Earth — every detection with confidence, buffer zone, and distance-to-route.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-num">10</div>
+        <h3>Field-Ready &amp; Mobile</h3>
+        <p>Prefetch satellite tiles for offline field use, watch live progress of every scan via real-time streaming, and resume jobs after restarts from persistent job history. The full dashboard runs on any browser — desktop, tablet, or phone — so routes, scans, and verification happen wherever the work is.</p>
       </div>
     </div>
   </div>
