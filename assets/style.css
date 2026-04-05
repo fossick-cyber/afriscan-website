@@ -183,6 +183,36 @@ ul { list-style: none; }
 .data-cta { margin-top: 36px; text-align: center; }
 .data-cta p { font-size: 1.05rem; color: rgba(255,255,255,.6); font-style: italic; }
 
+/* === PRICING MODEL BAR === */
+.pricing-model {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  margin: 32px 0 40px; padding: 24px; border-radius: var(--radius);
+  background: var(--gray-100); border: 1px solid var(--gray-200);
+}
+.pricing-model-item { text-align: center; }
+.pricing-model-label { display: block; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); margin-bottom: 8px; }
+.pricing-model-item strong { display: block; font-size: 1.15rem; color: var(--dark); margin-bottom: 6px; }
+.pricing-model-desc { font-size: .85rem; color: var(--gray-600); }
+
+/* === PLAN CARDS === */
+.plans-grid { margin-top: 8px; }
+.plan-card { display: flex; flex-direction: column; padding: 28px; }
+.plan-card .card-list { flex: 1; color: var(--gray-600); }
+.plan-card .card-list li { color: var(--gray-600); margin-bottom: 8px; font-size: .9rem; }
+.plan-tier { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); margin-bottom: 10px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.plan-badge { font-size: .65rem; font-weight: 700; background: var(--accent); color: var(--white); padding: 2px 8px; border-radius: 10px; letter-spacing: .05em; }
+.plan-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 6px; }
+.plan-for { font-size: .85rem; color: var(--gray-600); margin-bottom: 16px; font-style: italic; }
+.plan-featured { border-color: var(--accent); border-width: 2px; box-shadow: 0 8px 24px rgba(0,0,0,.06); }
+.plan-featured .plan-tier { color: var(--accent); }
+.plan-cta { display: inline-block; margin-top: 20px; font-size: .9rem; font-weight: 700; color: var(--accent); text-decoration: none; }
+.plan-cta:hover { text-decoration: underline; }
+
+/* === ONE-TIME SERVICES === */
+.onetime-services { margin-top: 64px; padding-top: 48px; border-top: 1px solid var(--gray-200); }
+.onetime-header { font-size: 1.4rem; font-weight: 700; margin-bottom: 8px; text-align: center; }
+.onetime-lead { text-align: center; color: var(--gray-600); margin-bottom: 32px; font-size: 1rem; }
+
 /* === CONTACT FORM === */
 .contact-form { max-width: 600px; margin: 0 auto; text-align: left; }
 .form-row { display: flex; gap: 16px; margin-bottom: 16px; }
@@ -219,6 +249,7 @@ ul { list-style: none; }
 @media (max-width: 700px) {
   .grid-2, .grid-3 { grid-template-columns: 1fr; }
   .grid-4 { grid-template-columns: 1fr; }
+  .pricing-model { grid-template-columns: 1fr; gap: 20px; }
   .nav-links { display: none; }
   .nav-links.open {
     display: flex; flex-direction: column; position: absolute;
