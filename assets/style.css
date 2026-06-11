@@ -783,3 +783,29 @@ ul { list-style: none; }
 /* let taps fall through empty hero space to the scene below (keep links/buttons clickable) */
 .hero-inner { pointer-events: none; }
 .hero-inner a, .hero-inner button { pointer-events: auto; }
+
+/* === WEBGL HERO (Three.js) — CSS scene hides when the GL scene boots === */
+.scene3d-canvas { position: absolute; inset: 0; width: 100% !important; height: 100% !important; display: block; }
+.hero-scene.webgl-on .stage { display: none; }
+.tag3d {
+  position: absolute; top: 0; left: 0; z-index: 3;
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: .62rem; font-weight: 700; letter-spacing: .1em;
+  padding: 3px 8px; border-radius: 4px;
+  background: rgba(13,17,23,.85); white-space: nowrap;
+  pointer-events: none; will-change: transform, opacity;
+}
+.tag3d .led { width: 8px; height: 8px; border-radius: 50%; flex: 0 0 auto; }
+.tag3d-green { color: #4ade80; border: 1px solid rgba(34,197,94,.5); }
+.tag3d-green .led { background: #22c55e; box-shadow: 0 0 7px #22c55e; }
+.tag3d-amber { color: #fcd34d; border: 1px solid rgba(245,197,24,.5); }
+.tag3d-amber .led { background: #f5c518; box-shadow: 0 0 7px #f5c518; animation: ledPulse 1s ease-in-out infinite; }
+.tag3d-red { color: #f87171; border: 1px solid rgba(239,68,68,.6); }
+.tag3d .warn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 14px; height: 14px; border-radius: 50%; flex: 0 0 auto;
+  background: #ef4444; color: #fff; font-style: normal; font-weight: 900; font-size: .62rem;
+  box-shadow: 0 0 8px rgba(239,68,68,.85);
+  animation: warnPulse 1s ease-in-out infinite;
+}
+.tag3d-cleared { color: #cbd5e1 !important; border-color: rgba(154,163,175,.55) !important; }
