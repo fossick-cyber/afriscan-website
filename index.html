@@ -37,6 +37,79 @@
 
 <!-- HERO -->
 <header class="hero">
+  <div class="hero-scene" aria-hidden="true">
+    <div class="scene-grid"></div>
+    <div class="radar"></div>
+    <svg class="satellite" viewBox="0 0 130 64">
+      <line x1="44" y1="31" x2="52" y2="31" stroke="#5c6b80" stroke-width="2"/>
+      <line x1="78" y1="31" x2="86" y2="31" stroke="#5c6b80" stroke-width="2"/>
+      <rect x="4" y="26" width="40" height="10" rx="2" fill="#0f4c75" stroke="rgba(94,234,212,.7)" stroke-width="1"/>
+      <rect x="86" y="26" width="40" height="10" rx="2" fill="#0f4c75" stroke="rgba(94,234,212,.7)" stroke-width="1"/>
+      <rect x="52" y="20" width="26" height="22" rx="3" fill="#2d3a4d"/>
+      <circle cx="65" cy="48" r="4" fill="#5eead4" class="sat-dish"/>
+    </svg>
+    <div class="drone-flight">
+      <div class="drone-bob">
+        <svg class="drone-svg" viewBox="0 0 140 64">
+          <line x1="36" y1="28" x2="62" y2="37" stroke="#3b4759" stroke-width="4" stroke-linecap="round"/>
+          <line x1="104" y1="28" x2="78" y2="37" stroke="#3b4759" stroke-width="4" stroke-linecap="round"/>
+          <rect x="30" y="18" width="11" height="13" rx="3" fill="#2d3a4d"/>
+          <rect x="99" y="18" width="11" height="13" rx="3" fill="#2d3a4d"/>
+          <ellipse class="rotor" cx="35.5" cy="16" rx="21" ry="3.5" fill="rgba(94,234,212,.45)"/>
+          <ellipse class="rotor rotor-2" cx="104.5" cy="16" rx="21" ry="3.5" fill="rgba(94,234,212,.45)"/>
+          <ellipse cx="70" cy="40" rx="24" ry="11" fill="#2d3a4d"/>
+          <rect x="56" y="31" width="28" height="11" rx="5" fill="#3b4759"/>
+          <rect x="63" y="49" width="14" height="10" rx="3" fill="#1a2230"/>
+          <circle cx="70" cy="54" r="3" fill="#5eead4" class="lens"/>
+          <circle class="navlight" cx="46" cy="41" r="2.2" fill="#ef4444"/>
+          <circle class="navlight navlight-2" cx="94" cy="41" r="2.2" fill="#22c55e"/>
+        </svg>
+        <div class="scan-cone"></div>
+      </div>
+    </div>
+    <div class="pipeline"></div>
+    <div class="hut-cluster" style="left:9%; bottom:10%">
+      <svg class="hut" viewBox="0 0 100 82">
+        <path d="M50 4 L97 48 L3 48 Z" fill="#7a5a36" stroke="#54401f" stroke-width="2"/>
+        <path d="M50 4 L24 48 M50 4 L50 48 M50 4 L76 48" stroke="#54401f" stroke-width="1.4" opacity=".55"/>
+        <rect x="15" y="48" width="70" height="32" rx="3" fill="#9c6b42"/>
+        <rect x="42" y="57" width="16" height="23" rx="2" fill="#3c2a18"/>
+      </svg>
+      <svg class="hut hut-sm" viewBox="0 0 100 82">
+        <path d="M50 4 L97 48 L3 48 Z" fill="#73552f" stroke="#54401f" stroke-width="2"/>
+        <path d="M50 4 L24 48 M50 4 L76 48" stroke="#54401f" stroke-width="1.4" opacity=".55"/>
+        <rect x="15" y="48" width="70" height="32" rx="3" fill="#92633c"/>
+        <rect x="42" y="57" width="16" height="23" rx="2" fill="#3c2a18"/>
+      </svg>
+    </div>
+    <div class="hut-cluster" style="left:47%; bottom:10%">
+      <svg class="hut" viewBox="0 0 100 82">
+        <path d="M50 4 L97 48 L3 48 Z" fill="#7a5a36" stroke="#54401f" stroke-width="2"/>
+        <path d="M50 4 L24 48 M50 4 L50 48 M50 4 L76 48" stroke="#54401f" stroke-width="1.4" opacity=".55"/>
+        <rect x="15" y="48" width="70" height="32" rx="3" fill="#9c6b42"/>
+        <rect x="42" y="57" width="16" height="23" rx="2" fill="#3c2a18"/>
+      </svg>
+    </div>
+    <div class="hut-cluster" style="left:80%; bottom:10%">
+      <svg class="hut hut-sm" viewBox="0 0 100 82">
+        <path d="M50 4 L97 48 L3 48 Z" fill="#73552f" stroke="#54401f" stroke-width="2"/>
+        <path d="M50 4 L24 48 M50 4 L76 48" stroke="#54401f" stroke-width="1.4" opacity=".55"/>
+        <rect x="15" y="48" width="70" height="32" rx="3" fill="#92633c"/>
+        <rect x="42" y="57" width="16" height="23" rx="2" fill="#3c2a18"/>
+      </svg>
+      <svg class="hut" viewBox="0 0 100 82">
+        <path d="M50 4 L97 48 L3 48 Z" fill="#7a5a36" stroke="#54401f" stroke-width="2"/>
+        <path d="M50 4 L24 48 M50 4 L50 48 M50 4 L76 48" stroke="#54401f" stroke-width="1.4" opacity=".55"/>
+        <rect x="15" y="48" width="70" height="32" rx="3" fill="#9c6b42"/>
+        <rect x="42" y="57" width="16" height="23" rx="2" fill="#3c2a18"/>
+      </svg>
+    </div>
+    <div class="det-box" style="left:8.8%; bottom:10.2%; animation-delay:2.1s"><span>BLDG-001</span></div>
+    <div class="det-box det-sm" style="left:13.6%; bottom:10%; animation-delay:2.8s"><span>BLDG-002</span></div>
+    <div class="det-box" style="left:46.8%; bottom:10.2%; animation-delay:8.9s"><span>BLDG-003</span></div>
+    <div class="det-box det-sm" style="left:79.8%; bottom:10%; animation-delay:14.6s"><span>BLDG-004</span></div>
+    <div class="det-box" style="left:83.6%; bottom:10.2%; animation-delay:15.3s"><span>BLDG-005</span></div>
+  </div>
   <div class="container hero-inner">
     <h1>Know What's Happening on Your Land — Before It Becomes a Problem</h1>
     <p class="hero-sub">AI-powered pipeline corridor scanning and encroachment detection. Draw a route, click scan, get a professional risk report with every building identified — in minutes, not weeks.</p>
@@ -59,35 +132,50 @@
     <p class="section-lead">Real results from AfriScan — AI detection on satellite and drone imagery across Mozambique.</p>
     <div class="examples-grid">
       <div class="example-card example-large">
-        <img src="assets/examples/corridor-buildings.jpg" alt="6 buildings detected with ID labels along a pipeline corridor in Mozambique" loading="lazy">
+        <div class="example-media">
+          <img src="assets/examples/corridor-buildings.jpg" alt="6 buildings detected with ID labels along a pipeline corridor in Mozambique" loading="lazy">
+          <span class="scan-badge"><span class="rec-dot"></span>AI DETECTION — LIVE</span>
+        </div>
         <div class="example-caption">
           <h3>Pipeline Corridor — Live Detection</h3>
           <p>6 buildings identified along a pipeline corridor with buffer zone overlays. Each structure labelled with a unique ID, GPS coordinates, and distance to pipeline — ready for the risk report.</p>
         </div>
       </div>
       <div class="example-card">
-        <img src="assets/examples/industrial-detection.jpg" alt="Industrial facility detected within pipeline buffer zone" loading="lazy">
+        <div class="example-media">
+          <img src="assets/examples/industrial-detection.jpg" alt="Industrial facility detected within pipeline buffer zone" loading="lazy">
+          <span class="scan-badge"><span class="rec-dot"></span>AI DETECTION</span>
+        </div>
         <div class="example-caption">
           <h3>Industrial Encroachment</h3>
           <p>Industrial facility flagged within the pipeline buffer zone. AfriScan detects structures of all sizes — from mud huts to processing plants — and classifies risk by proximity to the corridor.</p>
         </div>
       </div>
       <div class="example-card">
-        <img src="assets/examples/facility-detection.jpg" alt="Large compound detected in bush terrain along a pipeline route" loading="lazy">
+        <div class="example-media">
+          <img src="assets/examples/facility-detection.jpg" alt="Large compound detected in bush terrain along a pipeline route" loading="lazy">
+          <span class="scan-badge"><span class="rec-dot"></span>AI DETECTION</span>
+        </div>
         <div class="example-caption">
           <h3>Facility Detection in Bush Terrain</h3>
           <p>Fenced compound identified adjacent to the pipeline route in dense Mozambique bush. Corridor buffer zones (50m red, 100m orange) pinpoint exactly how close infrastructure sits to the pipeline.</p>
         </div>
       </div>
       <div class="example-card">
-        <img src="assets/examples/compound-detection.jpg" alt="Industrial compound detected within pipeline corridor buffer zone" loading="lazy">
+        <div class="example-media">
+          <img src="assets/examples/compound-detection.jpg" alt="Industrial compound detected within pipeline corridor buffer zone" loading="lazy">
+          <span class="scan-badge"><span class="rec-dot"></span>AI DETECTION</span>
+        </div>
         <div class="example-caption">
           <h3>Full Corridor Scan</h3>
           <p>An entire pipeline corridor scanned in minutes. Every building and facility within the buffer zone is identified, measured, and included in the professional risk report.</p>
         </div>
       </div>
       <div class="example-card example-large">
-        <img src="assets/examples/compare-historical.jpg" alt="Side-by-side comparison of drone orthophoto and satellite imagery along a pipeline corridor in Mozambique" loading="lazy">
+        <div class="example-media">
+          <img src="assets/examples/compare-historical.jpg" alt="Side-by-side comparison of drone orthophoto and satellite imagery along a pipeline corridor in Mozambique" loading="lazy">
+          <span class="scan-badge"><span class="rec-dot"></span>CHANGE DETECTION</span>
+        </div>
         <div class="example-caption">
           <h3>Historical Imagery Comparison</h3>
           <p>Side-by-side view of a pipeline corridor — drone orthophoto (left) and high-resolution satellite (right) with the route overlaid in magenta. Spot new buildings, cleared land, and encroachment between surveys at a glance.</p>

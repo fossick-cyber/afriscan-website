@@ -28,10 +28,38 @@ document.getElementById('contactForm').addEventListener('submit', e => {
   e.target.reset();
 });
 
-// Navbar background on scroll
+// Navbar background + hero scene parallax on scroll
+const heroScene = document.querySelector('.hero-scene');
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 window.addEventListener('scroll', () => {
   document.querySelector('.navbar').style.background =
     window.scrollY > 50
       ? 'rgba(13,17,23,.98)'
       : 'rgba(13,17,23,.92)';
-});
+  if (heroScene && !reducedMotion) {
+    heroScene.style.transform = `translateY(${window.scrollY * 0.25}px)`;
+  }
+}, { passive: true });
+
+// Scroll-reveal animations, staggered within each container
+if ('IntersectionObserver' in window && !reducedMotion) {
+  const targets = document.querySelectorAll(
+    '.card, .feature, .step, .industry-card, .example-card, .highlight, .pricing-model-item'
+  );
+  const perParent = new Map();
+  targets.forEach(el => {
+    el.classList.add('reveal');
+    const n = perParent.get(el.parentElement) || 0;
+    el.style.transitionDelay = `${Math.min(n * 80, 480)}ms`;
+    perParent.set(el.parentElement, n + 1);
+  });
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  targets.forEach(el => io.observe(el));
+}
