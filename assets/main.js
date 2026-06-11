@@ -58,6 +58,31 @@ window.addEventListener('scroll', () => {
   }
 }, { passive: true });
 
+// 3D tilt: the hero diorama leans toward the pointer
+const stage = document.querySelector('.hero-scene .stage');
+const hero = document.querySelector('.hero');
+if (stage && hero && !reducedMotion && window.matchMedia('(pointer: fine)').matches) {
+  let targetX = 0, targetY = 0, curX = 0, curY = 0, raf = null;
+  const tick = () => {
+    curX += (targetX - curX) * 0.06;
+    curY += (targetY - curY) * 0.06;
+    stage.style.transform = `rotateX(${curY.toFixed(3)}deg) rotateY(${curX.toFixed(3)}deg)`;
+    if (Math.abs(targetX - curX) + Math.abs(targetY - curY) > 0.002) {
+      raf = requestAnimationFrame(tick);
+    } else {
+      raf = null;
+    }
+  };
+  const nudge = () => { if (!raf) raf = requestAnimationFrame(tick); };
+  hero.addEventListener('mousemove', e => {
+    const r = hero.getBoundingClientRect();
+    targetX = ((e.clientX - r.left) / r.width - 0.5) * 5;
+    targetY = ((e.clientY - r.top) / r.height - 0.5) * -3.5;
+    nudge();
+  });
+  hero.addEventListener('mouseleave', () => { targetX = 0; targetY = 0; nudge(); });
+}
+
 // Scroll-reveal animations, staggered within each container
 if ('IntersectionObserver' in window && !reducedMotion) {
   const targets = document.querySelectorAll(
