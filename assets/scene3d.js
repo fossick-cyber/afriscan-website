@@ -264,9 +264,9 @@ async function boot() {
   const settlements = [
     { id: 1, x: -15, z: 8.6, dist: '258m', cls: 'green', huts: [[0, 0, 1], [1.6, .5, .8]], treeAt: [-1.5, .4] },
     { id: 2, x: -8,  z: 5.6, dist: '168m', cls: 'green', huts: [[0, 0, .95]], treeAt: [-1.4, .3] },
-    { id: 3, x: -2,  z: 3.3, dist: '99m',  cls: 'amber', huts: [[0, 0, 1], [1.4, .4, .78]], treeAt: null },
+    { id: 3, x: -2,  z: 3.3, dist: '99m',  cls: 'amber', huts: [[0, 0, 1], [1.4, .4, .78]], treeAt: null, mobOff: 26 },
     { id: 4, x: 5,   z: 1.05, dist: '32m', cls: 'red',   huts: [[0, 0, 1], [1.3, .5, .82]], treeAt: null },
-    { id: 5, x: 11,  z: 2.5, dist: '75m',  cls: 'amber', huts: [[0, 0, .9]], treeAt: [1.5, .3] },
+    { id: 5, x: 11,  z: 2.5, dist: '75m',  cls: 'amber', huts: [[0, 0, .9]], treeAt: [1.5, .3], mobOff: -22 },
     { id: 6, x: 17,  z: 6.4, dist: '192m', cls: 'green', huts: [[0, 0, 1], [-1.4, .4, .8]], treeAt: [1.6, .5] },
   ];
   const detColors = { green: 0x22c55e, amber: 0xf5c518, red: 0xef4444 };
@@ -524,6 +524,7 @@ async function boot() {
     dozer.visible = true;
   }
   window.__afriscanDemolish3D = demolish;
+  window.__afriscanState = () => ({ running, taps });
   window.__afriscanBldg3Rect = () => bldg3.tag.getBoundingClientRect();
 
   // secret triggers (keyword + triple-tap on red label/buildings)
@@ -542,16 +543,16 @@ async function boot() {
     const hitLabel = inRect(e.clientX, e.clientY, bldg3.tag.getBoundingClientRect(), 18);
     if (!hitHouse && !hitLabel) return;
     taps++; clearTimeout(tapT);
-    tapT = setTimeout(() => { taps = 0; }, 700);
+    tapT = setTimeout(() => { taps = 0; }, 1200);
     if (taps >= 3) { taps = 0; demolish(); }
   }, { passive: true });
 
   // label projection
   const v = new THREE.Vector3();
-  function place(tag, x, y, z, opacity) {
+  function place(tag, x, y, z, opacity, offY = 0) {
     v.set(x, y, z).project(camera);
     const r = canvas.getBoundingClientRect();
-    const sx = (v.x * 0.5 + 0.5) * r.width, sy = (-v.y * 0.5 + 0.5) * r.height;
+    const sx = (v.x * 0.5 + 0.5) * r.width, sy = (-v.y * 0.5 + 0.5) * r.height + offY;
     tag.style.transform = `translate(${sx.toFixed(1)}px, ${sy.toFixed(1)}px) translate(-50%, -100%)`;
     tag.style.opacity = opacity.toFixed(2);
   }
@@ -570,16 +571,21 @@ async function boot() {
     } catch (e) { console.warn('composer setup failed:', e); composer = null; }
   }
 
-  const camBase = { y: 12.5, lookY: 0.3, lookZ: 4.2 };
+  const camBase = { px: 0, py: 12.5, pz: 23.5, lx: 0, ly: 0.3, lz: 4.2 };
   function resize() {
     const w = sceneRoot.clientWidth, h = sceneRoot.clientHeight;
     const pr = renderer.getPixelRatio();
     if (canvas.width !== Math.round(w * pr) || canvas.height !== Math.round(h * pr)) {
       renderer.setSize(w, h, false);
       camera.aspect = w / h;
-      // narrow/portrait band: steeper, wider top-down view so the corridor fills the frame
-      if (camera.aspect < 1.4) { camera.fov = 56; camBase.y = 26; camBase.lookY = -1.5; camBase.lookZ = 2.2; }
-      else { camera.fov = 44; camBase.y = 12.5; camBase.lookY = 0.3; camBase.lookZ = 4.2; }
+      // portrait: look DOWN the corridor (pipeline recedes to the horizon) — fits a tall screen
+      if (camera.aspect < 1.4) {
+        camera.fov = 50;
+        Object.assign(camBase, { px: -23, py: 10, pz: 4.6, lx: 12, ly: -2.2, lz: 1.4 });
+      } else {
+        camera.fov = 44;
+        Object.assign(camBase, { px: 0, py: 12.5, pz: 23.5, lx: 0, ly: 0.3, lz: 4.2 });
+      }
       camera.updateProjectionMatrix();
       if (composer) composer.setSize(w, h);
       if (bloomPass) bloomPass.setSize(w, h);
@@ -619,7 +625,7 @@ async function boot() {
       const scan = THREE.MathUtils.clamp(1 - (d - 2.4) / 1.8, 0, 1);
       const crushed = s === bldg3 && demo;
       s.det.material.opacity = crushed ? 0 : 0.42 + scan * 0.45 + Math.sin(t * 5) * 0.05;
-      place(s.tag, s.labelPos.x, s.labelPos.y, s.labelPos.z, crushed && !s.tagLock ? 0 : 1);
+      place(s.tag, s.labelPos.x, s.labelPos.y, s.labelPos.z, crushed && !s.tagLock ? 0 : 1, camera.aspect < 1.4 ? (s.mobOff || 0) : 0);
       if (s === bldg3) {
         v.set(s.x, 1.0, s.z).project(camera);
         const r = canvas.getBoundingClientRect();
@@ -641,9 +647,10 @@ async function boot() {
 
     // camera idle + parallax
     parX += (tgtParX - parX) * 0.05; parY += (tgtParY - parY) * 0.05;
-    camera.position.x = parX + Math.sin(t * 0.07) * 0.9;
-    camera.position.y = camBase.y - parY + Math.sin(t * 0.11) * 0.25;
-    camera.lookAt(0, camBase.lookY, camBase.lookZ);
+    camera.position.x = camBase.px + parX + Math.sin(t * 0.07) * 0.9;
+    camera.position.y = camBase.py - parY + Math.sin(t * 0.11) * 0.25;
+    camera.position.z = camBase.pz;
+    camera.lookAt(camBase.lx, camBase.ly, camBase.lz);
 
     // demolition timeline
     if (demo) {
