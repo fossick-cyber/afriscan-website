@@ -326,8 +326,7 @@ ul { list-style: none; }
     radial-gradient(500px 260px at 28% 35%, rgba(96,128,84,.12), transparent 70%),
     radial-gradient(620px 300px at 72% 64%, rgba(140,110,70,.12), transparent 70%),
     radial-gradient(420px 220px at 14% 80%, rgba(96,128,84,.09), transparent 70%),
-    radial-gradient(380px 200px at 88% 22%, rgba(140,110,70,.08), transparent 70%),
-    linear-gradient(90deg, transparent calc(58% + 44px), rgba(190,160,110,.08) calc(58% + 48px), rgba(190,160,110,.08) calc(58% + 100px), transparent calc(58% + 104px));
+    radial-gradient(380px 200px at 88% 22%, rgba(140,110,70,.08), transparent 70%);
 }
 
 /* atmospheric haze over the far ground */
@@ -337,37 +336,55 @@ ul { list-style: none; }
   filter: blur(6px);
 }
 
-/* pipeline running from the foreground to the horizon */
+/* GAS PIPELINE — runs left→right across the corridor; the drone flies along it */
 .pipeline3d {
-  position: absolute; top: -20px; bottom: -20px; left: 58%; width: 40px;
-  transform: rotate(3deg); transform-origin: top center;
-  /* coated-steel cylinder: dark edges → bright specular highlight off-centre */
+  position: absolute; left: -12%; right: -12%; top: 356px; height: 42px;
+  /* coated-steel cylinder: dark top/bottom edges → bright specular highlight band */
   background:
-    repeating-linear-gradient(0deg, rgba(8,14,22,.85) 0 2px, transparent 2px 150px),
-    repeating-linear-gradient(0deg, rgba(255,255,255,.05) 0 1px, transparent 1px 150px),
-    linear-gradient(90deg,
-      #0c131c 0%, #243140 14%, #4a5d72 30%,
-      #8ea4b9 44%, #b9cad9 50%, #7990a6 58%,
-      #3a4a5d 76%, #1a2430 90%, #0a1018 100%);
-  border-radius: 3px;
-  box-shadow: 16px 0 28px rgba(0,0,0,.45), inset 0 0 6px rgba(0,0,0,.4);
+    repeating-linear-gradient(90deg, rgba(8,14,22,.8) 0 2px, transparent 2px 170px),
+    linear-gradient(180deg,
+      #0a1018 0%, #243140 16%, #4a5d72 34%,
+      #9fb3c6 47%, #c6d6e3 53%, #7c93a8 64%,
+      #36465a 82%, #0a1018 100%);
+  border-radius: 5px;
+  box-shadow: 0 18px 30px rgba(0,0,0,.5), inset 0 0 7px rgba(0,0,0,.45);
 }
-/* girth-weld bands at regular intervals */
+/* girth welds — raised rings perpendicular to the run */
 .pipeline3d::before {
   content: ''; position: absolute; inset: 0;
-  background: repeating-linear-gradient(0deg,
-    transparent 0 148px,
-    rgba(255,255,255,.18) 148px 150px,
-    rgba(0,0,0,.55) 150px 153px);
+  background: repeating-linear-gradient(90deg,
+    transparent 0 168px,
+    rgba(255,255,255,.16) 168px 170px,
+    rgba(0,0,0,.5) 170px 173px);
+}
+/* unpaved service road that follows the line on its far side */
+.access-road {
+  position: absolute; left: -12%; right: -12%; top: 338px; height: 14px;
+  background:
+    repeating-linear-gradient(90deg, rgba(120,98,62,.0) 0 40px, rgba(90,72,44,.25) 40px 44px),
+    linear-gradient(180deg, #6b5836, #4f4026);
+  opacity: .55;
+}
+/* corridor buffer zones, flat on the ground, parallel to the line */
+.zone { position: absolute; left: -12%; right: -12%; }
+.zone-red {
+  top: 396px; height: 78px;
+  background: linear-gradient(180deg, rgba(239,68,68,.32), rgba(239,68,68,.06));
+  border-top: 1px dashed rgba(239,68,68,.6);
+}
+.zone-amber {
+  top: 474px; height: 130px;
+  background: linear-gradient(180deg, rgba(245,197,24,.05) 30%, rgba(245,197,24,.2));
+  border-bottom: 1px dashed rgba(245,197,24,.45);
 }
 /* yellow gas warning marker post planted beside the line */
 .gas-marker {
-  position: absolute; top: 360px; left: calc(58% + 60px); width: 30px;
-  transform: rotate(3deg); text-align: center; z-index: 2;
+  position: absolute; top: 306px; left: 14%; width: 32px;
+  text-align: center; z-index: 2;
 }
 .gas-marker .post {
-  width: 5px; height: 46px; margin: 0 auto;
-  background: linear-gradient(90deg, #9a9a9a, #d8d8d8, #8a8a8a);
+  width: 5px; height: 40px; margin: 0 auto;
+  background: linear-gradient(90deg, #8a8a8a, #d8d8d8, #8a8a8a);
 }
 .gas-marker .sign {
   font-size: .42rem; font-weight: 800; letter-spacing: .03em; line-height: 1.05;
@@ -375,17 +392,17 @@ ul { list-style: none; }
   padding: 3px 2px; box-shadow: 0 2px 6px rgba(0,0,0,.4);
 }
 
-/* the drone's scan footprint sweeping the terrain */
+/* the drone's scan footprint sweeping along the corridor */
 .scan-spot {
-  position: absolute; top: 500px; left: -25%; width: 340px; height: 200px; border-radius: 50%;
-  background: radial-gradient(closest-side, rgba(94,234,212,.28), rgba(94,234,212,.04) 70%, transparent);
+  position: absolute; top: 380px; left: -25%; width: 300px; height: 170px; border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(94,234,212,.3), rgba(94,234,212,.05) 70%, transparent);
   filter: blur(3px);
   animation: spotSweep 18s linear infinite;
 }
 @keyframes spotSweep { to { left: 115%; } }
 
-/* base-station radar ping, flat on the ground */
-.radar { position: absolute; top: 540px; left: 45%; width: 14px; height: 14px; }
+/* monitoring station ping, flat on the ground beside the line */
+.radar { position: absolute; top: 344px; left: 8%; width: 14px; height: 14px; }
 .radar::before, .radar::after {
   content: ''; position: absolute; inset: 0; border-radius: 50%;
   border: 1.5px solid rgba(94,234,212,.35);
@@ -423,18 +440,19 @@ ul { list-style: none; }
   padding: 2px 6px; border-radius: 3px; white-space: nowrap;
 }
 @keyframes detPop {
-  0%, 1% { opacity: 0; transform: scale(.6); }
-  3.5% { opacity: 1; transform: scale(1.12); }
-  5.5% { transform: scale(1); }
-  82% { opacity: 1; }
-  93%, 100% { opacity: 0; transform: scale(1); }
+  0% { opacity: 0; transform: scale(.6); }
+  3% { opacity: 1; transform: scale(1.14); }
+  6% { transform: scale(1); }
+  34% { opacity: 1; transform: scale(1); }   /* ~5s lit as the drone scans past */
+  42% { opacity: 0; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1); }
 }
 
 /* the air: drones + satellite, floated forward of the ground for parallax */
 .air { position: absolute; inset: 0; transform: translateZ(60px); transform-style: preserve-3d; }
 
 .drone-flight {
-  position: absolute; top: 15%; left: -180px; width: 150px;
+  position: absolute; top: 44%; left: -180px; width: 150px;
   animation: droneFly 18s linear infinite;
   filter: drop-shadow(0 8px 20px rgba(0,0,0,.5));
 }
@@ -444,7 +462,7 @@ ul { list-style: none; }
   100% { transform: translateX(calc(100vw + 380px)) scale(.9) rotate(2deg); }
 }
 .drone-far {
-  top: 27%; width: 64px; left: auto; right: -90px;
+  top: 34%; width: 64px; left: auto; right: -90px;
   filter: blur(1px) brightness(.65) drop-shadow(0 4px 8px rgba(0,0,0,.4));
   animation: droneFlyBack 31s linear infinite;
 }
@@ -684,11 +702,11 @@ ul { list-style: none; }
 .dozing .dozer .smoke { animation: smokePuff 1.1s ease-out infinite; }
 .dozing .dozer .s2 { animation-delay: .55s; }
 @keyframes dozeDrive {
-  0%   { left: 96%; }
-  38%  { left: 56%; }   /* reach BLDG-003 */
-  55%  { left: 53%; }   /* push through */
-  62%  { left: 53%; }
-  100% { left: 99%; }   /* reverse back out */
+  0%   { left: 108%; }
+  38%  { left: 58%; }   /* reach BLDG-003 */
+  55%  { left: 55%; }   /* push through */
+  62%  { left: 55%; }
+  100% { left: 110%; }  /* reverse back out */
 }
 @keyframes treadRoll { to { stroke-dashoffset: -22; } }
 @keyframes smokePuff {
@@ -759,12 +777,7 @@ ul { list-style: none; }
   50% { transform: scale(1.18); box-shadow: 0 0 15px rgba(239,68,68,1); } }
 #bldg3.cleared .warn { display: none; }
 
-/* the highest-risk building stays permanently flagged + pulsing, and is tappable */
-#bldg3 .det-box { opacity: 1; animation: redAlert 1.6s ease-in-out infinite; }
-@keyframes redAlert {
-  0%,100% { box-shadow: 0 0 14px rgba(239,68,68,.35), inset 0 0 12px rgba(239,68,68,.08); }
-  50% { box-shadow: 0 0 28px rgba(239,68,68,.8), inset 0 0 16px rgba(239,68,68,.2); }
-}
+/* the red box appears only as the drone scans overhead (via detPop + its delay) */
 #bldg3 { pointer-events: auto; cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 
 /* let taps fall through empty hero space to the scene below (keep links/buttons clickable) */
