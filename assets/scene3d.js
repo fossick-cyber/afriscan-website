@@ -76,8 +76,8 @@ async function boot() {
     scene.add(new THREE.Mesh(skyGeo, skyMat));
   }
 
-  const camera = new THREE.PerspectiveCamera(42, 2, 0.1, 320);
-  camera.position.set(0, 10.5, 22);
+  const camera = new THREE.PerspectiveCamera(44, 2, 0.1, 320);
+  camera.position.set(0, 12.5, 23.5);
 
   const pmrem = new THREE.PMREMGenerator(renderer);
   scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
@@ -260,11 +260,14 @@ async function boot() {
     return g;
   }
 
-  // settlements at true distances (1 unit = 30 m)
+  // settlements at true distances (1 unit = 30 m); zone by z: red <1.67, amber <5, else green
   const settlements = [
-    { id: 'b1', x: -10, z: 8.9,  dist: '267m', cls: 'green', huts: [[0, 0, 1], [1.5, .4, .78]], treeAt: [-1.4, .5] },
-    { id: 'b2', x: 0,   z: 3.63, dist: '109m', cls: 'amber', huts: [[0, 0, 1]], treeAt: [-1.5, .2] },
-    { id: 'b3', x: 9,   z: 0.97, dist: '29m',  cls: 'red',   huts: [[0, .3, 1], [1.3, .6, .8]], treeAt: null },
+    { id: 1, x: -15, z: 8.6, dist: '258m', cls: 'green', huts: [[0, 0, 1], [1.6, .5, .8]], treeAt: [-1.5, .4] },
+    { id: 2, x: -8,  z: 5.6, dist: '168m', cls: 'green', huts: [[0, 0, .95]], treeAt: [-1.4, .3] },
+    { id: 3, x: -2,  z: 3.3, dist: '99m',  cls: 'amber', huts: [[0, 0, 1], [1.4, .4, .78]], treeAt: null },
+    { id: 4, x: 5,   z: 1.05, dist: '32m', cls: 'red',   huts: [[0, 0, 1], [1.3, .5, .82]], treeAt: null },
+    { id: 5, x: 11,  z: 2.5, dist: '75m',  cls: 'amber', huts: [[0, 0, .9]], treeAt: [1.5, .3] },
+    { id: 6, x: 17,  z: 6.4, dist: '192m', cls: 'green', huts: [[0, 0, 1], [-1.4, .4, .8]], treeAt: [1.6, .5] },
   ];
   const detColors = { green: 0x22c55e, amber: 0xf5c518, red: 0xef4444 };
 
@@ -273,34 +276,34 @@ async function boot() {
     s.group.position.set(s.x, 0, s.z);
     s.hutGroup = new THREE.Group();
     for (const [hx, hz, hs] of s.huts) {
-      if (hs < 0.5) continue;
       const h = hut(hs); h.position.set(hx, 0, hz); s.hutGroup.add(h);
     }
     s.group.add(s.hutGroup);
     if (s.treeAt) { const t = tree(0.9); t.position.set(s.treeAt[0], 0, s.treeAt[1]); s.group.add(t); }
-    // detection wireframe box (hidden until the drone scans overhead)
+    scene.add(s.group);
+    // detection box from TRUE world bounds (matrices updated first)
+    s.group.updateMatrixWorld(true);
     const bbox = new THREE.Box3().setFromObject(s.hutGroup);
-    const size = bbox.getSize(new THREE.Vector3()).addScalar(0.6);
-    const center = bbox.getCenter(new THREE.Vector3()).sub(s.group.position);
+    const size = bbox.getSize(new THREE.Vector3()).addScalar(0.5);
+    const center = bbox.getCenter(new THREE.Vector3());
     s.det = new THREE.LineSegments(
       new THREE.EdgesGeometry(new THREE.BoxGeometry(size.x, size.y, size.z)),
       new THREE.LineBasicMaterial({ color: detColors[s.cls], transparent: true, opacity: 0 }));
-    s.det.position.copy(center);
-    s.group.add(s.det);
-    scene.add(s.group);
+    s.det.position.copy(center);                       // world space (child of scene)
+    scene.add(s.det);
+    s.labelPos = new THREE.Vector3(center.x, center.y + size.y / 2 + 0.55, center.z);
     // DOM label
     s.tag = document.createElement('div');
     s.tag.className = `tag3d tag3d-${s.cls}`;
     s.tag.innerHTML = (s.cls === 'red' ? '<i class="warn">!</i>' : `<i class="led${s.cls === 'amber' ? ' led-pulse' : ''}"></i>`) +
-      `BLDG-00${s.id[1]} &middot; ${s.dist}`;
+      `BLDG-00${s.id} &middot; ${s.dist}`;
     s.tag.style.opacity = '0';
     sceneRoot.appendChild(s.tag);
-    s.labelAnchor = new THREE.Vector3();
   }
-  const bldg3 = settlements[2];
+  const bldg3 = settlements.find(s => s.cls === 'red');   // demolition target
 
   // scattered background trees
-  for (const [tx, tz, ts] of [[-20, 5, 0.9], [19, 6, 0.85], [-13, 9.5, 1.0], [12, 9, 0.8], [22, 2.5, 0.8], [-22, 2, 0.75], [7, 12, 0.7]]) {
+  for (const [tx, tz, ts] of [[-22, 4.5, 0.9], [21, 5, 0.85], [-19, 9.5, 1.0], [14, 9.5, 0.8], [24, 2.5, 0.8], [-24, 2, 0.75], [2, 11.5, 0.7], [9, 12, 0.75]]) {
     const t = tree(ts); t.position.set(tx, 0, tz); scene.add(t);
   }
 
@@ -608,13 +611,12 @@ async function boot() {
     // detection sync — each box lights only while the drone is overhead
     for (const s of settlements) {
       const d = Math.abs(dx - s.x);
-      const a = THREE.MathUtils.clamp(1 - (d - 3) / 1.6, 0, 1);
+      const a = THREE.MathUtils.clamp(1 - (d - 2.4) / 1.8, 0, 1);
       const crushed = s === bldg3 && demo;
-      s.det.material.opacity = crushed ? 0 : a * (0.55 + Math.sin(t * 5) * 0.2 + 0.25);
-      const top = s.det.position.y + 1.5;
-      place(s.tag, s.group.position.x, top, s.group.position.z, crushed && s.tagLock ? 1 : a);
+      s.det.material.opacity = crushed ? 0 : a * (0.7 + Math.sin(t * 5) * 0.25);
+      place(s.tag, s.labelPos.x, s.labelPos.y, s.labelPos.z, crushed && s.tagLock ? 1 : a);
       if (s === bldg3) {
-        v.set(s.x, 1.2, s.z).project(camera);
+        v.set(s.x, 1.0, s.z).project(camera);
         const r = canvas.getBoundingClientRect();
         s.screenRect = { x: (v.x * .5 + .5) * r.width - 70 + r.left, y: (-v.y * .5 + .5) * r.height - 60 + r.top, w: 140, h: 120 };
       }
@@ -635,8 +637,8 @@ async function boot() {
     // camera idle + parallax
     parX += (tgtParX - parX) * 0.05; parY += (tgtParY - parY) * 0.05;
     camera.position.x = parX + Math.sin(t * 0.07) * 0.9;
-    camera.position.y = 10.5 - parY + Math.sin(t * 0.11) * 0.25;
-    camera.lookAt(0, 1.1, 3);
+    camera.position.y = 12.5 - parY + Math.sin(t * 0.11) * 0.25;
+    camera.lookAt(0, 0.3, 4.2);
 
     // demolition timeline
     if (demo) {
