@@ -210,7 +210,7 @@ async function boot() {
 
   // ---------- huts / trees ----------
   const thatchTex = texCanvas(128, 128, ctx => {
-    ctx.fillStyle = '#8a6c38'; ctx.fillRect(0, 0, 128, 128);
+    ctx.fillStyle = '#a8854e'; ctx.fillRect(0, 0, 128, 128);
     for (let i = 0; i < 240; i++) {
       ctx.strokeStyle = `rgba(60,45,18,${0.15 + Math.random() * 0.3})`;
       const x = Math.random() * 128; ctx.beginPath();
@@ -219,7 +219,7 @@ async function boot() {
   });
   thatchTex.wrapS = thatchTex.wrapT = THREE.RepeatWrapping; thatchTex.repeat.set(4, 1);
   const wallTex = texCanvas(128, 64, ctx => {
-    ctx.fillStyle = '#9c6b42'; ctx.fillRect(0, 0, 128, 64);
+    ctx.fillStyle = '#b87f4e'; ctx.fillRect(0, 0, 128, 64);
     for (let i = 0; i < 26; i++) {
       ctx.fillStyle = `rgba(216,167,107,${Math.random() * 0.16})`;
       ctx.beginPath(); ctx.ellipse(Math.random() * 128, Math.random() * 64, 8 + Math.random() * 10, 4 + Math.random() * 5, 0, 0, 7); ctx.fill();
@@ -238,7 +238,10 @@ async function boot() {
     const door = new THREE.Mesh(new THREE.BoxGeometry(0.22, 0.34, 0.05),
       new THREE.MeshStandardMaterial({ color: 0x2a1c0e, roughness: 1 }));
     door.position.set(0, 0.18, 0.58);
-    g.add(wall, roof, door);
+    const win = new THREE.Mesh(new THREE.PlaneGeometry(0.16, 0.13),
+      new THREE.MeshBasicMaterial({ color: 0xffc46b }));
+    win.position.set(0.38, 0.3, 0.45); win.rotation.y = 0.6;
+    g.add(wall, roof, door, win);
     g.traverse(o => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
     g.scale.setScalar(scale);
     return g;
@@ -626,7 +629,7 @@ async function boot() {
       const d = Math.abs(dx - s.x);
       const scan = THREE.MathUtils.clamp(1 - (d - 2.4) / 1.8, 0, 1);
       const crushed = s === bldg3 && demo;
-      s.det.material.opacity = crushed ? 0 : 0.42 + scan * 0.45 + Math.sin(t * 5) * 0.05;
+      s.det.material.opacity = crushed ? 0 : 0.58 + scan * 0.38 + Math.sin(t * 5) * 0.04;
       place(s.tag, s.labelPos.x, s.labelPos.y, s.labelPos.z, crushed && !s.tagLock ? 0 : 1, camera.aspect < 1.4 ? (s.mobOff || 0) : 0);
       if (s === bldg3) {
         v.set(s.x, 1.0, s.z).project(camera);
