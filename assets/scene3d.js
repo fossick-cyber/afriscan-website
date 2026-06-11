@@ -581,7 +581,9 @@ async function boot() {
       // portrait: look DOWN the corridor (pipeline recedes to the horizon) — fits a tall screen
       if (camera.aspect < 1.4) {
         camera.fov = 50;
-        Object.assign(camBase, { px: -23, py: 10, pz: 4.6, lx: 12, ly: -2.2, lz: 1.4 });
+        // the taller the frame, the more we pitch down so ground fills it
+        const k = THREE.MathUtils.clamp((1.4 - camera.aspect) / 0.9, 0, 1);
+        Object.assign(camBase, { px: -23, py: 10 + k * 5, pz: 4.6, lx: 12 - k * 2, ly: -2.2 - k * 5.5, lz: 1.4 });
       } else {
         camera.fov = 44;
         Object.assign(camBase, { px: 0, py: 12.5, pz: 23.5, lx: 0, ly: 0.3, lz: 4.2 });

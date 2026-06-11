@@ -618,7 +618,7 @@ ul { list-style: none; }
 /* === RESPONSIVE / SCENE TUNING === */
 @media (max-width: 700px) {
   /* scene becomes its own block under the text — nothing overlaps */
-  .hero-scene { perspective: 720px; position: relative; inset: auto; height: 580px; width: 100%; order: 2; margin-top: 6px; }
+  .hero-scene { perspective: 720px; position: relative; inset: auto; height: 100svh; width: 100%; order: 2; margin-top: 6px; }
   .hero .hero-inner { order: 1; }
   .drone-svg { width: 112px; }
   .drone-far .drone-svg { width: 48px; }
