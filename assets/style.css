@@ -320,6 +320,15 @@ ul { list-style: none; }
   animation: groundScroll 8s linear infinite;
 }
 @keyframes groundScroll { to { background-position: 0 0, 0 110px, 0 0; } }
+.ground::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(500px 260px at 28% 35%, rgba(96,128,84,.12), transparent 70%),
+    radial-gradient(620px 300px at 72% 64%, rgba(140,110,70,.12), transparent 70%),
+    radial-gradient(420px 220px at 14% 80%, rgba(96,128,84,.09), transparent 70%),
+    radial-gradient(380px 200px at 88% 22%, rgba(140,110,70,.08), transparent 70%),
+    linear-gradient(90deg, transparent calc(58% + 44px), rgba(190,160,110,.08) calc(58% + 48px), rgba(190,160,110,.08) calc(58% + 100px), transparent calc(58% + 104px));
+}
 
 /* atmospheric haze over the far ground */
 .fog {
@@ -369,8 +378,10 @@ ul { list-style: none; }
   transform: rotateX(-76deg);
   filter: drop-shadow(0 6px 6px rgba(0,0,0,.45));
 }
-.hut { width: 56px; height: auto; }
-.hut-sm { width: 40px; }
+.hut { width: 64px; height: auto; }
+.tree { width: 54px; height: auto; }
+.tree-sm { width: 42px; }
+.hut-sm { width: 48px; }
 .standee .det-box { position: absolute; inset: -16px -10px -4px; }
 
 .det-box {
@@ -412,14 +423,14 @@ ul { list-style: none; }
   filter: blur(1px) brightness(.65) drop-shadow(0 4px 8px rgba(0,0,0,.4));
   animation: droneFlyBack 31s linear infinite;
 }
-.drone-far .drone-svg { width: 64px; }
+.drone-far .drone-svg { width: 72px; }
 @keyframes droneFlyBack {
   from { transform: translateX(0) scaleX(-1); }
   to { transform: translateX(calc(-100vw - 200px)) scaleX(-1); }
 }
 .drone-bob { animation: droneBob 3.2s ease-in-out infinite; position: relative; }
 @keyframes droneBob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-13px); } }
-.drone-svg { width: 150px; height: auto; display: block; }
+.drone-svg { width: 175px; height: auto; display: block; }
 .rotor { transform-box: fill-box; transform-origin: center; animation: rotorSpin .16s linear infinite; }
 .rotor-2 { animation-delay: .08s; }
 @keyframes rotorSpin { 0%, 100% { transform: scaleX(1); opacity: .5; } 50% { transform: scaleX(.2); opacity: .9; } }
@@ -430,7 +441,7 @@ ul { list-style: none; }
 @keyframes lensPulse { 50% { opacity: .4; } }
 
 .scan-cone {
-  position: absolute; top: 56px; left: 50%;
+  position: absolute; top: 70px; left: 50%;
   width: 320px; height: 460px;
   transform: translateX(-50%);
   background: linear-gradient(rgba(94,234,212,.30), rgba(94,234,212,.03) 70%, transparent);
@@ -439,7 +450,7 @@ ul { list-style: none; }
 }
 @keyframes conePulse { 50% { opacity: .5; } }
 
-.satellite { position: absolute; top: 6%; right: -140px; width: 110px; opacity: .8; animation: satCross 45s linear infinite; }
+.satellite { position: absolute; top: 6%; right: -160px; width: 132px; opacity: .8; animation: satCross 45s linear infinite; }
 @keyframes satCross { to { transform: translate(calc(-100vw - 300px), 50px) rotate(-4deg); } }
 .sat-dish { animation: lensPulse 1.8s ease-in-out infinite; }
 
@@ -576,12 +587,14 @@ ul { list-style: none; }
 /* === RESPONSIVE / SCENE TUNING === */
 @media (max-width: 700px) {
   .hero-scene { perspective: 720px; }
-  .drone-svg { width: 96px; }
-  .drone-far .drone-svg { width: 44px; }
-  .scan-cone { width: 200px; height: 300px; top: 38px; }
+  .drone-svg { width: 112px; }
+  .drone-far .drone-svg { width: 48px; }
+  .scan-cone { width: 200px; height: 300px; top: 46px; }
   .satellite { width: 76px; }
-  .hut { width: 46px; }
-  .hut-sm { width: 34px; }
+  .hut { width: 48px; }
+  .tree { width: 40px; }
+  .tree-sm { width: 32px; }
+  .hut-sm { width: 36px; }
   .standee { gap: 6px; }
   .det-box span { font-size: .52rem; top: -20px; }
   .ground { height: 700px; top: 54%; }
