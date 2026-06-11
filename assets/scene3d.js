@@ -168,9 +168,9 @@ async function boot() {
   });
   steelRough.wrapS = THREE.RepeatWrapping; steelRough.repeat.set(20, 1);
   const steel = new THREE.MeshStandardMaterial({
-    color: 0xaebccd, metalness: 0.96, roughness: 0.26,
-    normalMap: steelNormal, normalScale: new THREE.Vector2(0.35, 0.35),
-    roughnessMap: steelRough,
+    color: 0x8c98a6, metalness: 0.35, roughness: 0.82,
+    normalMap: steelNormal, normalScale: new THREE.Vector2(0.25, 0.25),
+    roughnessMap: steelRough, envMapIntensity: 0.35,
   });
   const pipe = new THREE.Mesh(new THREE.CylinderGeometry(0.45, 0.45, 170, 48), steel);
   pipe.rotation.z = Math.PI / 2;
