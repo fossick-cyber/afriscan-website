@@ -23,6 +23,23 @@ async function boot() {
     return;
   }
 
+  // optional post-processing — failure here just disables bloom, scene still renders
+  let PP = null;
+  try {
+    const mods = await Promise.all([
+      import('three/addons/postprocessing/EffectComposer.js'),
+      import('three/addons/postprocessing/RenderPass.js'),
+      import('three/addons/postprocessing/UnrealBloomPass.js'),
+      import('three/addons/postprocessing/OutputPass.js'),
+      import('three/addons/postprocessing/SMAAPass.js'),
+    ]);
+    PP = {
+      EffectComposer: mods[0].EffectComposer, RenderPass: mods[1].RenderPass,
+      UnrealBloomPass: mods[2].UnrealBloomPass, OutputPass: mods[3].OutputPass,
+      SMAAPass: mods[4].SMAAPass,
+    };
+  } catch (e) { console.warn('post-processing unavailable:', e); }
+
   // ---------- renderer / scene / camera ----------
   const canvas = document.createElement('canvas');
   canvas.className = 'scene3d-canvas';
@@ -34,10 +51,30 @@ async function boot() {
   renderer.shadowMap.enabled = !isMobile;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.05;
+  renderer.toneMappingExposure = 1.0;
 
   const scene = new THREE.Scene();
-  scene.fog = new THREE.FogExp2(0x0d1b29, 0.011);
+  scene.fog = new THREE.FogExp2(0x0d1b29, 0.0105);
+
+  // gradient sky dome (dark zenith → faint teal/orange horizon)
+  {
+    const skyGeo = new THREE.SphereGeometry(160, 32, 16);
+    const skyMat = new THREE.ShaderMaterial({
+      side: THREE.BackSide, depthWrite: false, fog: false,
+      uniforms: {
+        top: { value: new THREE.Color(0x070d16) },
+        mid: { value: new THREE.Color(0x123048) },
+        hor: { value: new THREE.Color(0x1d4257) },
+      },
+      vertexShader: 'varying vec3 vP; void main(){ vP = position; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }',
+      fragmentShader: `varying vec3 vP; uniform vec3 top; uniform vec3 mid; uniform vec3 hor;
+        void main(){ float h = normalize(vP).y;
+          vec3 c = mix(hor, mid, smoothstep(-0.02, 0.32, h));
+          c = mix(c, top, smoothstep(0.18, 0.7, h));
+          gl_FragColor = vec4(c, 1.0); }`,
+    });
+    scene.add(new THREE.Mesh(skyGeo, skyMat));
+  }
 
   const camera = new THREE.PerspectiveCamera(42, 2, 0.1, 320);
   camera.position.set(0, 10.5, 22);
@@ -114,11 +151,31 @@ async function boot() {
   zone(1.67, 5.0, 0xf5c518, 0.05);   // 50–150 m
 
   // ---------- gas pipeline along X ----------
-  const steel = new THREE.MeshStandardMaterial({ color: 0x9fb3c6, metalness: 0.92, roughness: 0.28 });
-  const pipe = new THREE.Mesh(new THREE.CylinderGeometry(0.45, 0.45, 170, 28), steel);
+  // brushed-metal normal map (fine lengthwise streaks) + roughness variation
+  const steelNormal = texCanvas(512, 64, ctx => {
+    ctx.fillStyle = '#8080ff'; ctx.fillRect(0, 0, 512, 64);
+    for (let i = 0; i < 900; i++) {
+      const y = Math.random() * 64, n = 110 + Math.random() * 90;
+      ctx.strokeStyle = `rgba(${n},${n},255,0.5)`; ctx.lineWidth = Math.random() * 1.2;
+      ctx.beginPath(); ctx.moveTo(Math.random() * 512, y); ctx.lineTo(Math.random() * 512, y); ctx.stroke();
+    }
+  });
+  steelNormal.wrapS = steelNormal.wrapT = THREE.RepeatWrapping; steelNormal.repeat.set(40, 2);
+  const steelRough = texCanvas(256, 64, ctx => {
+    ctx.fillStyle = '#4a4a4a'; ctx.fillRect(0, 0, 256, 64);
+    for (let i = 0; i < 200; i++) { ctx.fillStyle = `rgba(${Math.random()>.5?200:30},0,0,0.18)`;
+      ctx.fillRect(Math.random()*256, Math.random()*64, 6+Math.random()*30, 2+Math.random()*6); }
+  });
+  steelRough.wrapS = THREE.RepeatWrapping; steelRough.repeat.set(20, 1);
+  const steel = new THREE.MeshStandardMaterial({
+    color: 0xaebccd, metalness: 0.96, roughness: 0.26,
+    normalMap: steelNormal, normalScale: new THREE.Vector2(0.35, 0.35),
+    roughnessMap: steelRough,
+  });
+  const pipe = new THREE.Mesh(new THREE.CylinderGeometry(0.45, 0.45, 170, 48), steel);
   pipe.rotation.z = Math.PI / 2;
   pipe.position.y = 0.78;
-  pipe.castShadow = true;
+  pipe.castShadow = true; pipe.receiveShadow = true;
   scene.add(pipe);
   const weldMat = new THREE.MeshStandardMaterial({ color: 0x55606c, metalness: 0.85, roughness: 0.5 });
   const sleeperMat = new THREE.MeshStandardMaterial({ color: 0x8d8d86, roughness: 0.9 });
@@ -247,6 +304,59 @@ async function boot() {
     const t = tree(ts); t.position.set(tx, 0, tz); scene.add(t);
   }
 
+  // ground dressing: rocks + shrubs (instanced), seeded pseudo-random
+  let seed = 1337; const rnd = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647; };
+  {
+    const rockGeo = new THREE.IcosahedronGeometry(0.22, 0);
+    const rockMat = new THREE.MeshStandardMaterial({ color: 0x6b6b66, roughness: 1, flatShading: true });
+    const rocks = new THREE.InstancedMesh(rockGeo, rockMat, 26);
+    const shrubGeo = new THREE.IcosahedronGeometry(0.3, 0);
+    const shrubMat = new THREE.MeshStandardMaterial({ color: 0x35502c, roughness: 1, flatShading: true });
+    const shrubs = new THREE.InstancedMesh(shrubGeo, shrubMat, 30);
+    const m = new THREE.Matrix4(), q = new THREE.Quaternion(), s = new THREE.Vector3(), pos = new THREE.Vector3();
+    for (let i = 0; i < 26; i++) {
+      pos.set((rnd() - 0.5) * 46, 0.12, 1 + rnd() * 13);
+      q.setFromEuler(new THREE.Euler(rnd(), rnd() * 6, rnd()));
+      const sc = 0.4 + rnd() * 1.1; s.set(sc, sc * (0.6 + rnd() * 0.5), sc);
+      rocks.setMatrixAt(i, m.compose(pos, q, s));
+    }
+    for (let i = 0; i < 30; i++) {
+      pos.set((rnd() - 0.5) * 50, 0.16, 0.8 + rnd() * 14);
+      q.setFromEuler(new THREE.Euler(0, rnd() * 6, 0));
+      const sc = 0.5 + rnd() * 0.9; s.set(sc * 1.4, sc * 0.7, sc * 1.4);
+      shrubs.setMatrixAt(i, m.compose(pos, q, s));
+    }
+    rocks.castShadow = shrubs.castShadow = true;
+    rocks.receiveShadow = shrubs.receiveShadow = true;
+    scene.add(rocks, shrubs);
+  }
+
+  // cattle kraal — a ring of stick fence posts beside the far settlement
+  {
+    const kraal = new THREE.Group();
+    const postMat = new THREE.MeshStandardMaterial({ color: 0x5a4327, roughness: 1 });
+    const R = 1.5;
+    for (let a = 0; a < Math.PI * 2; a += Math.PI / 11) {
+      const p = new THREE.Mesh(new THREE.CylinderGeometry(0.035, 0.045, 0.6, 5), postMat);
+      p.position.set(Math.cos(a) * R, 0.3, Math.sin(a) * R);
+      p.rotation.z = (rnd() - 0.5) * 0.2; p.castShadow = true;
+      kraal.add(p);
+    }
+    const rail = new THREE.Mesh(new THREE.TorusGeometry(R, 0.03, 5, 28), postMat);
+    rail.rotation.x = Math.PI / 2; rail.position.y = 0.45; kraal.add(rail);
+    kraal.position.set(-13.5, 0, 11.2);
+    scene.add(kraal);
+  }
+
+  // dirt footpaths linking the settlements to the corridor
+  const pathMat = new THREE.MeshStandardMaterial({ color: 0x6b5836, roughness: 1, transparent: true, opacity: 0.6 });
+  for (const s of settlements) {
+    const len = Math.hypot(s.x - s.x, s.z - 0.6) + s.z;
+    const path = new THREE.Mesh(new THREE.PlaneGeometry(0.5, s.z + 0.6), pathMat);
+    path.rotation.x = -Math.PI / 2; path.position.set(s.x, 0.045, (s.z + 0.6) / 2 + 0.3);
+    scene.add(path);
+  }
+
   // ---------- monitoring station (radar) ----------
   const mast = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.07, 1.8, 6),
     new THREE.MeshStandardMaterial({ color: 0x8a98ab, metalness: 0.7, roughness: 0.4 }));
@@ -288,8 +398,8 @@ async function boot() {
     // gimbal camera
     const gim = new THREE.Mesh(new THREE.SphereGeometry(0.14, 10, 8), darkMat);
     gim.position.set(0.42, -0.22, 0);
-    const lens = new THREE.Mesh(new THREE.SphereGeometry(0.06, 8, 6),
-      new THREE.MeshStandardMaterial({ color: 0x5eead4, emissive: 0x2a8d7e, emissiveIntensity: 1.4, roughness: 0.1 }));
+    const lens = new THREE.Mesh(new THREE.SphereGeometry(0.07, 10, 8),
+      new THREE.MeshStandardMaterial({ color: 0x9bfff0, emissive: 0x5eead4, emissiveIntensity: 2.6, roughness: 0.05 }));
     lens.position.set(0.52, -0.24, 0);
     g.add(gim, lens);
     // nav lights (emissive + glow sprites)
@@ -308,13 +418,18 @@ async function boot() {
 
   // scan cone + ground spot
   const coneH = 4.9;
-  const cone = new THREE.Mesh(new THREE.ConeGeometry(2.1, coneH, 26, 1, true),
-    new THREE.MeshBasicMaterial({ color: 0x5eead4, transparent: true, opacity: 0.10, depthWrite: false, side: THREE.DoubleSide, blending: THREE.AdditiveBlending }));
+  const cone = new THREE.Mesh(new THREE.ConeGeometry(2.1, coneH, 32, 1, true),
+    new THREE.MeshBasicMaterial({ color: 0x5eead4, transparent: true, opacity: 0.12, depthWrite: false, side: THREE.DoubleSide, blending: THREE.AdditiveBlending }));
   scene.add(cone);
-  const spot = new THREE.Mesh(new THREE.CircleGeometry(2.1, 26),
-    new THREE.MeshBasicMaterial({ color: 0x5eead4, transparent: true, opacity: 0.13, depthWrite: false, blending: THREE.AdditiveBlending }));
+  const spot = new THREE.Mesh(new THREE.CircleGeometry(2.1, 32),
+    new THREE.MeshBasicMaterial({ color: 0x5eead4, transparent: true, opacity: 0.16, depthWrite: false, blending: THREE.AdditiveBlending }));
   spot.rotation.x = -Math.PI / 2; spot.position.y = 0.07;
   scene.add(spot);
+  // bright scan ring on the ground for the bloom to catch
+  const scanRing = new THREE.Mesh(new THREE.RingGeometry(1.85, 2.1, 40),
+    new THREE.MeshBasicMaterial({ color: 0x7ef7e6, transparent: true, opacity: 0.6, depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide }));
+  scanRing.rotation.x = -Math.PI / 2; scanRing.position.y = 0.08;
+  scene.add(scanRing);
 
   // ---------- satellite ----------
   const sat = new THREE.Group();
@@ -437,12 +552,30 @@ async function boot() {
     tag.style.opacity = opacity.toFixed(2);
   }
 
+  // ---------- post-processing: bloom + SMAA + filmic output ----------
+  let composer = null, bloomPass = null, smaaPass = null;
+  if (PP) {
+    try {
+      const w0 = sceneRoot.clientWidth || 1280, h0 = sceneRoot.clientHeight || 720;
+      composer = new PP.EffectComposer(renderer);
+      composer.addPass(new PP.RenderPass(scene, camera));
+      bloomPass = new PP.UnrealBloomPass(new THREE.Vector2(w0, h0), isMobile ? 0.5 : 0.62, 0.55, 0.82);
+      composer.addPass(bloomPass);
+      if (!isMobile) { smaaPass = new PP.SMAAPass(w0, h0); composer.addPass(smaaPass); }
+      composer.addPass(new PP.OutputPass());
+    } catch (e) { console.warn('composer setup failed:', e); composer = null; }
+  }
+
   function resize() {
     const w = sceneRoot.clientWidth, h = sceneRoot.clientHeight;
-    if (canvas.width !== w * renderer.getPixelRatio() || canvas.height !== h * renderer.getPixelRatio()) {
+    const pr = renderer.getPixelRatio();
+    if (canvas.width !== Math.round(w * pr) || canvas.height !== Math.round(h * pr)) {
       renderer.setSize(w, h, false);
       camera.aspect = w / h;
       camera.updateProjectionMatrix();
+      if (composer) composer.setSize(w, h);
+      if (bloomPass) bloomPass.setSize(w, h);
+      if (smaaPass) smaaPass.setSize(w, h);
     }
   }
 
@@ -466,8 +599,11 @@ async function boot() {
     drone.navL.material.opacity = blink ? 0.9 : 0.15;
     drone.navR.material.opacity = blink ? 0.15 : 0.9;
     cone.position.set(dx, alt - coneH / 2 - 0.25, 0.6);
-    cone.material.opacity = 0.085 + Math.sin(t * 4.2) * 0.03;
+    cone.material.opacity = 0.10 + Math.sin(t * 4.2) * 0.035;
     spot.position.x = dx; spot.position.z = 0.6;
+    scanRing.position.x = dx; scanRing.position.z = 0.6;
+    scanRing.material.opacity = 0.45 + Math.sin(t * 4.2) * 0.2;
+    const sr = 1 + Math.sin(t * 4.2) * 0.06; scanRing.scale.set(sr, sr, sr);
 
     // detection sync — each box lights only while the drone is overhead
     for (const s of settlements) {
@@ -548,6 +684,11 @@ async function boot() {
       }
     }
 
-    renderer.render(scene, camera);
+    if (composer) {
+      try { composer.render(); }
+      catch (e) { console.warn('post-processing render failed, falling back:', e); composer = null; }
+    } else {
+      renderer.render(scene, camera);
+    }
   });
 }
