@@ -417,6 +417,7 @@ ul { list-style: none; }
 }
 .det-box span {
   position: absolute; top: -24px; left: -2px;
+  display: inline-flex; align-items: center; gap: 5px;
   font-size: .6rem; font-weight: 700; letter-spacing: .1em;
   color: var(--teal); background: rgba(13,17,23,.85);
   padding: 2px 6px; border-radius: 3px; white-space: nowrap;
@@ -609,10 +610,11 @@ ul { list-style: none; }
   .standee { gap: 6px; }
   .det-box span { font-size: .52rem; top: -20px; }
   .ground { height: 700px; top: 54%; }
-  .ground .standee:nth-child(4) { left: 39% !important; top: 300px !important; }
-  .ground .standee:nth-child(5) { left: 50% !important; top: 340px !important; }
-  .ground .standee:nth-child(6) { left: 60% !important; top: 320px !important; }
+  #bldg1 { left: 30% !important; top: 300px !important; }
+  #bldg2 { left: 46% !important; top: 345px !important; }
+  #bldg3 { left: 60% !important; top: 320px !important; }
   .pipeline3d { left: 70%; width: 24px; }
+  .gas-marker { left: calc(70% + 36px); top: 250px; }
   .scan-spot { width: 200px; height: 120px; top: 300px; }
   .radar { top: 360px; left: 46%; }
   .fog { top: 51%; }
@@ -736,3 +738,35 @@ ul { list-style: none; }
   from { transform: translateX(-26px) rotate(-22deg) scaleY(.12); opacity: .15; }
   to { transform: none; opacity: 1; }
 }
+
+/* === RISK INDICATOR LIGHTS + EXCLAMATION === */
+.det-box .led {
+  width: 8px; height: 8px; border-radius: 50%; flex: 0 0 auto;
+}
+.det-green .led { background: #22c55e; box-shadow: 0 0 7px #22c55e; }
+.det-amber .led { background: #f5c518; box-shadow: 0 0 7px #f5c518; }
+.led-pulse { animation: ledPulse 1s ease-in-out infinite; }
+@keyframes ledPulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .35; transform: scale(.7); } }
+
+.det-box .warn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 14px; height: 14px; border-radius: 50%; flex: 0 0 auto;
+  background: #ef4444; color: #fff; font-style: normal; font-weight: 900; font-size: .62rem;
+  box-shadow: 0 0 8px rgba(239,68,68,.85);
+  animation: warnPulse 1s ease-in-out infinite;
+}
+@keyframes warnPulse { 0%,100% { transform: scale(1); box-shadow: 0 0 8px rgba(239,68,68,.85); }
+  50% { transform: scale(1.18); box-shadow: 0 0 15px rgba(239,68,68,1); } }
+#bldg3.cleared .warn { display: none; }
+
+/* the highest-risk building stays permanently flagged + pulsing, and is tappable */
+#bldg3 .det-box { opacity: 1; animation: redAlert 1.6s ease-in-out infinite; }
+@keyframes redAlert {
+  0%,100% { box-shadow: 0 0 14px rgba(239,68,68,.35), inset 0 0 12px rgba(239,68,68,.08); }
+  50% { box-shadow: 0 0 28px rgba(239,68,68,.8), inset 0 0 16px rgba(239,68,68,.2); }
+}
+#bldg3 { pointer-events: auto; cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+
+/* let taps fall through empty hero space to the scene below (keep links/buttons clickable) */
+.hero-inner { pointer-events: none; }
+.hero-inner a, .hero-inner button { pointer-events: auto; }

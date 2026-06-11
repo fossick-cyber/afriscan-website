@@ -83,22 +83,16 @@ if (stage && hero && !reducedMotion && window.matchMedia('(pointer: fine)').matc
   hero.addEventListener('mouseleave', () => { targetX = 0; targetY = 0; nudge(); });
 }
 
-// Secret: type "doze" to send a bulldozer to clear the red-flagged building
+// Secret: clear the red-flagged building. Desktop — type "doze".
+// Touch/anywhere — triple-tap the red high-risk marker.
 (() => {
   const scene = document.querySelector('.hero-scene');
   const bldg3 = document.getElementById('bldg3');
   if (!scene || !bldg3) return;
-  const target = 'doze';
-  let buf = '';
   let running = false;
-  document.addEventListener('keydown', e => {
-    if (e.key.length !== 1 || e.metaKey || e.ctrlKey || e.altKey) return;
-    const tag = (e.target.tagName || '').toLowerCase();
-    if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
-    buf = (buf + e.key.toLowerCase()).slice(-target.length);
-    if (buf === target && !running) demolish();
-  });
+
   function demolish() {
+    if (running) return;
     running = true;
     scene.classList.add('dozing');
     setTimeout(() => bldg3.classList.add('cleared'), 3900);   // label flips to CLEARED
@@ -109,6 +103,31 @@ if (stage && hero && !reducedMotion && window.matchMedia('(pointer: fine)').matc
       setTimeout(() => { bldg3.classList.remove('regrowing'); running = false; }, 1500);
     }, 8500);
   }
+
+  // typed keyword (desktop)
+  const target = 'doze';
+  let buf = '';
+  document.addEventListener('keydown', e => {
+    if (e.key.length !== 1 || e.metaKey || e.ctrlKey || e.altKey) return;
+    const tag = (e.target.tagName || '').toLowerCase();
+    if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
+    buf = (buf + e.key.toLowerCase()).slice(-target.length);
+    if (buf === target) demolish();
+  });
+
+  // triple-tap the red marker — location-based so overlapping layers can't block it
+  let taps = 0, tapTimer = null;
+  document.addEventListener('pointerup', e => {
+    const r = bldg3.getBoundingClientRect();
+    const pad = 12;
+    const hit = e.clientX >= r.left - pad && e.clientX <= r.right + pad &&
+                e.clientY >= r.top - pad && e.clientY <= r.bottom + pad;
+    if (!hit) return;
+    taps++;
+    clearTimeout(tapTimer);
+    tapTimer = setTimeout(() => { taps = 0; }, 700);
+    if (taps >= 3) { taps = 0; demolish(); }
+  }, { passive: true });
 })();
 
 // Scroll-reveal animations, staggered within each container
