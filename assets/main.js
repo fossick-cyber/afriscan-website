@@ -12,20 +12,37 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   });
 });
 
-// Contact form — local storage for now (no backend)
-document.getElementById('contactForm').addEventListener('submit', e => {
+// Contact form — delivered via FormSubmit (https://formsubmit.co)
+document.getElementById('contactForm').addEventListener('submit', async e => {
   e.preventDefault();
-  const data = Object.fromEntries(new FormData(e.target));
-  console.log('Enquiry submitted:', data);
+  const form = e.target;
+  const msg = document.getElementById('formMsg');
+  const button = form.querySelector('button[type="submit"]');
+  const data = Object.fromEntries(new FormData(form));
+  data._subject = `New AfriScan enquiry — ${data.name || 'no name'}${data.company ? ' (' + data.company + ')' : ''}`;
 
-  // Store locally
-  const enquiries = JSON.parse(localStorage.getItem('afriscan_enquiries') || '[]');
-  enquiries.push({ ...data, timestamp: new Date().toISOString() });
-  localStorage.setItem('afriscan_enquiries', JSON.stringify(enquiries));
-
-  document.getElementById('formMsg').textContent =
-    'Thanks! Your enquiry has been saved. We\'ll be in touch soon.';
-  e.target.reset();
+  button.disabled = true;
+  button.textContent = 'Sending…';
+  msg.textContent = '';
+  try {
+    const res = await fetch('https://formsubmit.co/ajax/fossickpictures@gmail.com', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    const body = await res.json();
+    if (!res.ok || String(body.success) !== 'true') throw new Error(body.message || `HTTP ${res.status}`);
+    msg.textContent = 'Thanks! Your enquiry has been sent. We\'ll be in touch soon.';
+    form.reset();
+  } catch (err) {
+    // fall back to a native POST so the enquiry still gets through
+    console.error('AJAX submit failed, falling back to form POST:', err);
+    form.submit();
+    return;
+  } finally {
+    button.disabled = false;
+    button.textContent = 'Send Enquiry';
+  }
 });
 
 // Navbar background + hero scene parallax on scroll
