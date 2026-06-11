@@ -608,13 +608,13 @@ async function boot() {
     scanRing.material.opacity = 0.45 + Math.sin(t * 4.2) * 0.2;
     const sr = 1 + Math.sin(t * 4.2) * 0.06; scanRing.scale.set(sr, sr, sr);
 
-    // detection sync — each box lights only while the drone is overhead
+    // detection boxes stay locked on every house; brighter glow as the drone scans past
     for (const s of settlements) {
       const d = Math.abs(dx - s.x);
-      const a = THREE.MathUtils.clamp(1 - (d - 2.4) / 1.8, 0, 1);
+      const scan = THREE.MathUtils.clamp(1 - (d - 2.4) / 1.8, 0, 1);
       const crushed = s === bldg3 && demo;
-      s.det.material.opacity = crushed ? 0 : a * (0.7 + Math.sin(t * 5) * 0.25);
-      place(s.tag, s.labelPos.x, s.labelPos.y, s.labelPos.z, crushed && s.tagLock ? 1 : a);
+      s.det.material.opacity = crushed ? 0 : 0.42 + scan * 0.45 + Math.sin(t * 5) * 0.05;
+      place(s.tag, s.labelPos.x, s.labelPos.y, s.labelPos.z, crushed && !s.tagLock ? 0 : 1);
       if (s === bldg3) {
         v.set(s.x, 1.0, s.z).project(camera);
         const r = canvas.getBoundingClientRect();
