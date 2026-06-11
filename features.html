@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features &amp; How It Works — AfriScan by Afridrone</title>
+  <meta name="description" content="Everything AfriScan does: one-click corridor scans, five AI detection engines, buffer zones and risk segments, change detection, custom model training, reports and GIS export.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Features &amp; How It Works — AfriScan by Afridrone">
+  <meta property="og:description" content="Everything AfriScan does: one-click corridor scans, five AI detection engines, buffer zones and risk segments, change detection, custom model training, reports and GIS export.">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230d1117'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-size='38' font-weight='800' text-anchor='middle' fill='%23e8672f'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">Afri<span>Scan</span> <small class="by-line">by Afridrone</small></a>
+    <ul class="nav-links">
+      <li><a href="results.html">Results</a></li>
+      <li><a href="features.html" class="active">Features</a></li>
+      <li><a href="imagery.html">Imagery</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html" class="btn btn-sm">Get In Touch</a></li>
+      <li><a href="https://magic.owrek.com/housecheck" class="btn btn-sm btn-login" target="_blank" rel="noopener">Client Login</a></li>
+    </ul>
+    <button class="mobile-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+  </div>
+</nav>
+
+<!-- PAGE HEAD -->
+<header class="page-head">
+  <div class="container">
+    <h1>Features</h1>
+    <p>Ten capabilities, one platform &mdash; from one-click corridor scans to custom-trained detection models.</p>
+  </div>
+</header>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+  <div class="container">
+    <h2>What AfriScan Does</h2>
+    <p class="section-lead">Continuous land use monitoring powered by live satellite imagery, drone surveys, and AI — so you see encroachment as it happens, not months later.</p>
+    <div class="grid-2">
+      <div class="feature">
+        <div class="feature-num">01</div>
+        <h3>One-Click Corridor Scan</h3>
+        <p>Draw a route on the map, upload a KML/GeoJSON/GPX/Shapefile, or pick from your saved routes. Set your buffer zones, click scan, and AfriScan fetches satellite imagery, runs AI detection, and delivers a complete encroachment report — hands-off, in minutes.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-num">02</div>
+        <h3>Multi-Engine AI Detection</h3>
+        <p>Five detection engines work together: YOLOv8 deep learning, RAMP segmentation (trained on African buildings), HOT fAIr humanitarian mapping, Google Open Buildings, and OpenStreetMap footprints. Combined ensemble mode deduplicates overlapping detections and catches mud huts, zinc-roof compounds, and informal structures that single-model tools miss. Optional SAM refinement converts boxes into precise footprint polygons.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-num">03</div>
+        <h3>Buffer Zones &amp; Risk Segments</h3>
+        <p>Define any number of buffer distances (50m, 100m, 200m) around your route, or switch to polygon mode for concessions and exclusion zones. AfriScan automatically classifies every structure by buffer, divides your corridor into 500m risk segments, and ranks each one high / medium / low by building density.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-num">04</div>
+        <h3>Before / After Change Detection</h3>
+        <p>Compare any two imagery datasets — drone vs satellite, wet vs dry season, this month vs last year — with side-by-side or swipe viewers. AI diff mode highlights new, removed, and changed structures automatically. Track encroachment growth over time with hard evidence.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-num">05</div>
+        <h3>Manual Verification &amp; Spotter</h3>
+        <p>Human-in-the-loop tools for ground-truth confirmation: a click-to-mark interface for inspectors, and a gamified "Spotter" challenge with leaderboards for crowdsourced building marking. Verified marks merge back into your corridor results and feed directly into custom model training.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-num">06</div>
+        <h3>Custom Model Training</h3>
+        <p>Fine-tune YOLOv8 on your own labelled imagery to catch the exact structures you care about in your terrain. Auto-chip orthomosaics into training tiles, review and confirm labels in-browser, and export a ready-to-train YOLO dataset. Train locally or ship to Colab/RunPod GPUs, then re-import your custom model.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-num">07</div>
+        <h3>Imagery Library</h3>
+        <p>Persistent dataset management for every image you work with — upload drone GeoTIFFs or fetch satellite tiles from Google, Esri, or Bing at zoom 16&ndash;20 (0.15&ndash;2.4m/pixel). Every dataset stored with its bounds, CRS, and capture date, ready for scan, compare, and report.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-num">08</div>
+        <h3>Drone Surveys with WebODM</h3>
+        <p>Upload raw drone photos and AfriScan processes them into georeferenced orthomosaics directly in the dashboard via WebODM, then feeds them straight into detection. For high-risk areas satellite flags, deploy <a href="https://afridr.one" class="afridrone-link" target="_blank" rel="noopener">Afridrone</a> teams for centimetre-resolution verification.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-num">09</div>
+        <h3>Professional Reports &amp; GIS Export</h3>
+        <p>PDF encroachment reports with executive summary, risk ratings, per-segment tables, and GPS-tagged photo crops of every structure. Per-location House Reports pull all available imagery for a single coordinate. GIS-ready exports: GeoPackage, GeoJSON, Shapefile, and KMZ for Google Earth — every detection with confidence, buffer zone, and distance-to-route.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-num">10</div>
+        <h3>Field-Ready &amp; Mobile</h3>
+        <p>Prefetch satellite tiles for offline field use, watch live progress of every scan via real-time streaming, and resume jobs after restarts from persistent job history. The full dashboard runs on any browser — desktop, tablet, or phone — so routes, scans, and verification happen wherever the work is.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how">
+  <div class="container">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h3>Draw or Upload Your Route</h3>
+          <p>Draw your pipeline route directly on the satellite map, upload a KML/GeoJSON file, or select from existing routes. Set your buffer zones (50m, 100m) and click scan.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h3>AI Scans the Corridor</h3>
+          <p>AfriScan automatically fetches high-resolution satellite imagery along your route, runs multiple AI detection models, identifies every building and homestead within your buffer zones, and classifies each pipeline segment by risk level.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h3>Review Interactive Results</h3>
+          <p>Explore results on an interactive map with colour-coded risk segments, toggleable building layers, and satellite imagery. Click any detection to see its distance to the pipeline, GPS coordinates, and satellite photo.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h3>Download Reports &amp; Take Action</h3>
+          <p>Download a professional PDF report with executive summary, risk analysis, and building photos. Export to Google Earth (KMZ) or GIS formats. Compare with previous scans to track changes over time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Protect Your Corridors &amp; Concessions</h2>
+    <p>Live satellite and drone intelligence over your infrastructure &mdash; see encroachment before it becomes a problem, not after.</p>
+    <a href="contact.html" class="btn btn-lg">Get In Touch</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Afri<span>Scan</span></a>
+      <p>Drone survey intelligence for African infrastructure.<br>A product by <strong><a href="https://afridr.one" class="afridrone-link" target="_blank" rel="noopener">Afridrone</a></strong></p>
+    </div>
+    <div class="footer-links">
+      <h4>Product</h4>
+      <a href="features.html">Features</a>
+      <a href="features.html#how">How It Works</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="pricing.html#procurement">Procurement</a>
+    </div>
+    <div class="footer-links">
+      <h4>Industries</h4>
+      <a href="index.html#industries">Oil &amp; Gas</a>
+      <a href="index.html#industries">Mining</a>
+      <a href="index.html#industries">Power &amp; Utilities</a>
+      <a href="index.html#industries">Telecoms</a>
+    </div>
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <a href="contact.html">Get In Touch</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 AfriScan by <a href="https://afridr.one" class="afridrone-link" target="_blank" rel="noopener">Afridrone</a>. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>

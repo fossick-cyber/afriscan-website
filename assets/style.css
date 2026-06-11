@@ -608,3 +608,20 @@ ul { list-style: none; }
 /* full-viewport immersive hero */
 .hero { min-height: 100svh; display: flex; align-items: center; padding: 130px 0 220px; }
 @media (max-width: 700px) { .hero { padding: 110px 0 170px; } }
+
+/* === MULTI-PAGE: page headers, CTA band, active nav === */
+.nav-links a.active { color: var(--white); }
+.page-head {
+  padding: 150px 0 64px;
+  background: linear-gradient(160deg, var(--dark) 0%, var(--primary-dark) 70%, var(--primary) 100%);
+  color: var(--white);
+}
+.page-head h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 800; margin-bottom: 12px; animation: fadeUp .7s ease both; }
+.page-head p { color: rgba(255,255,255,.75); max-width: 660px; font-size: 1.05rem; line-height: 1.7; animation: fadeUp .7s .12s ease both; }
+.cta-band {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  color: var(--white); text-align: center; padding: 72px 24px;
+}
+.cta-band h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 800; margin-bottom: 12px; }
+.cta-band h2::after { margin-left: auto; margin-right: auto; }
+.cta-band p { color: rgba(255,255,255,.75); max-width: 560px; margin: 0 auto 28px; }

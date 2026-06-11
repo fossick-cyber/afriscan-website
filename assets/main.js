@@ -13,7 +13,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 // Contact form — delivered via FormSubmit (https://formsubmit.co)
-document.getElementById('contactForm').addEventListener('submit', async e => {
+document.getElementById('contactForm')?.addEventListener('submit', async e => {
   e.preventDefault();
   const form = e.target;
   const msg = document.getElementById('formMsg');
