@@ -536,10 +536,11 @@ async function boot() {
     if (buf === 'doze') demolish();
   });
   let taps = 0, tapT = null;
+  const inRect = (x, y, r, pad) => r && x >= r.x - pad && x <= r.x + (r.w ?? r.width) + pad && y >= r.y - pad && y <= r.y + (r.h ?? r.height) + pad;
   document.addEventListener('pointerup', e => {
-    const r = bldg3.screenRect;
-    if (!r) return;
-    if (e.clientX < r.x - 16 || e.clientX > r.x + r.w + 16 || e.clientY < r.y - 16 || e.clientY > r.y + r.h + 16) return;
+    const hitHouse = inRect(e.clientX, e.clientY, bldg3.screenRect, 16);
+    const hitLabel = inRect(e.clientX, e.clientY, bldg3.tag.getBoundingClientRect(), 18);
+    if (!hitHouse && !hitLabel) return;
     taps++; clearTimeout(tapT);
     tapT = setTimeout(() => { taps = 0; }, 700);
     if (taps >= 3) { taps = 0; demolish(); }
@@ -569,12 +570,16 @@ async function boot() {
     } catch (e) { console.warn('composer setup failed:', e); composer = null; }
   }
 
+  const camBase = { y: 12.5, lookY: 0.3, lookZ: 4.2 };
   function resize() {
     const w = sceneRoot.clientWidth, h = sceneRoot.clientHeight;
     const pr = renderer.getPixelRatio();
     if (canvas.width !== Math.round(w * pr) || canvas.height !== Math.round(h * pr)) {
       renderer.setSize(w, h, false);
       camera.aspect = w / h;
+      // narrow/portrait band: steeper, wider top-down view so the corridor fills the frame
+      if (camera.aspect < 1.4) { camera.fov = 56; camBase.y = 26; camBase.lookY = -1.5; camBase.lookZ = 2.2; }
+      else { camera.fov = 44; camBase.y = 12.5; camBase.lookY = 0.3; camBase.lookZ = 4.2; }
       camera.updateProjectionMatrix();
       if (composer) composer.setSize(w, h);
       if (bloomPass) bloomPass.setSize(w, h);
@@ -637,14 +642,19 @@ async function boot() {
     // camera idle + parallax
     parX += (tgtParX - parX) * 0.05; parY += (tgtParY - parY) * 0.05;
     camera.position.x = parX + Math.sin(t * 0.07) * 0.9;
-    camera.position.y = 12.5 - parY + Math.sin(t * 0.11) * 0.25;
-    camera.lookAt(0, 0.3, 4.2);
+    camera.position.y = camBase.y - parY + Math.sin(t * 0.11) * 0.25;
+    camera.lookAt(0, camBase.lookY, camBase.lookZ);
 
     // demolition timeline
     if (demo) {
       const e = t - demo.t0;
       const { driveIn, push, hold, out } = DEMO;
       const bx = bldg3.x;
+      if (!bldg3.tagLock && e >= driveIn + push * 0.9) {
+        bldg3.tagLock = true;
+        bldg3.tag.classList.add('tag3d-cleared');
+        bldg3.tag.innerHTML = `BLDG-00${bldg3.id} &middot; ${bldg3.dist} — CLEARED`;
+      }
       if (e < driveIn) {
         dozer.position.x = 46 + (bx + 2.6 - 46) * THREE.MathUtils.smoothstep(e / driveIn, 0, 1);
       } else if (e < driveIn + push) {
@@ -659,12 +669,9 @@ async function boot() {
           d.position.set(bx - 1 + Math.sin(i * 2.4) * 1.6, 0.4 + p * 2 + i * 0.18, bldg3.z + Math.cos(i * 1.7));
           d.scale.setScalar(1.2 + p * 2.4 + i * 0.2);
         });
-        if (!bldg3.tagLock && p > 0.9) {
-          bldg3.tagLock = true;
-          bldg3.tag.classList.add('tag3d-cleared');
-          bldg3.tag.innerHTML = 'BLDG-003 &middot; 29m — CLEARED';
-        }
+
       } else if (e < driveIn + push + hold) {
+        bldg3.hutGroup.scale.y = 0.12; bldg3.hutGroup.rotation.z = -0.3; bldg3.hutGroup.position.x = -0.8;
         dusts.forEach(d => d.material.opacity *= 0.96);
       } else if (e < driveIn + push + hold + out) {
         const p = (e - driveIn - push - hold) / out;
@@ -680,7 +687,7 @@ async function boot() {
         bldg3.hutGroup.scale.y = 1; bldg3.hutGroup.rotation.z = 0; bldg3.hutGroup.position.x = 0;
         bldg3.tagLock = false;
         bldg3.tag.classList.remove('tag3d-cleared');
-        bldg3.tag.innerHTML = '<i class="warn">!</i>BLDG-003 &middot; 29m';
+        bldg3.tag.innerHTML = `<i class="warn">!</i>BLDG-00${bldg3.id} &middot; ${bldg3.dist}`;
         dozer.position.x = 46;
         demo = null; running = false;
       }
