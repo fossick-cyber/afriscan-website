@@ -83,6 +83,34 @@ if (stage && hero && !reducedMotion && window.matchMedia('(pointer: fine)').matc
   hero.addEventListener('mouseleave', () => { targetX = 0; targetY = 0; nudge(); });
 }
 
+// Secret: type "doze" to send a bulldozer to clear the red-flagged building
+(() => {
+  const scene = document.querySelector('.hero-scene');
+  const bldg3 = document.getElementById('bldg3');
+  if (!scene || !bldg3) return;
+  const target = 'doze';
+  let buf = '';
+  let running = false;
+  document.addEventListener('keydown', e => {
+    if (e.key.length !== 1 || e.metaKey || e.ctrlKey || e.altKey) return;
+    const tag = (e.target.tagName || '').toLowerCase();
+    if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
+    buf = (buf + e.key.toLowerCase()).slice(-target.length);
+    if (buf === target && !running) demolish();
+  });
+  function demolish() {
+    running = true;
+    scene.classList.add('dozing');
+    setTimeout(() => bldg3.classList.add('cleared'), 3900);   // label flips to CLEARED
+    setTimeout(() => {                                         // reset, then huts creep back
+      scene.classList.remove('dozing');
+      bldg3.classList.remove('cleared');
+      bldg3.classList.add('regrowing');
+      setTimeout(() => { bldg3.classList.remove('regrowing'); running = false; }, 1500);
+    }, 8500);
+  }
+})();
+
 // Scroll-reveal animations, staggered within each container
 if ('IntersectionObserver' in window && !reducedMotion) {
   const targets = document.querySelectorAll(
