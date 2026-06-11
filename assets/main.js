@@ -1,12 +1,14 @@
 // Mobile nav toggle
-document.querySelector('.mobile-toggle').addEventListener('click', () => {
-  document.querySelector('.nav-links').classList.toggle('open');
+document.querySelector('.mobile-toggle').addEventListener('click', e => {
+  const open = document.querySelector('.nav-links').classList.toggle('open');
+  e.currentTarget.setAttribute('aria-expanded', open);
 });
 
 // Close mobile nav on link click
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     document.querySelector('.nav-links').classList.remove('open');
+    document.querySelector('.mobile-toggle').setAttribute('aria-expanded', 'false');
   });
 });
 
