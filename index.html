@@ -68,7 +68,6 @@
       <li><a href="imagery.html">Imagery</a></li>
       <li><a href="pricing.html">Pricing</a></li>
       <li><a href="contact.html" class="btn btn-sm">Get In Touch</a></li>
-      <li><a href="https://magic.owrek.com/housecheck" class="btn btn-sm btn-login" target="_blank" rel="noopener">Client Login</a></li>
     </ul>
     <button class="mobile-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
   </div>
@@ -76,6 +75,15 @@
 
 <!-- HERO -->
 <header class="hero">
+  <!-- STATIC VISUAL (shown by default; the animated diorama is opt-in below) -->
+  <div class="hero-still" aria-hidden="true">
+    <img src="assets/examples/corridor-buildings.jpg" alt="" loading="eager">
+    <span class="scan-badge"><span class="rec-dot"></span>AI DETECTION</span>
+  </div>
+  <button type="button" class="anim-toggle" aria-pressed="false">
+    <span class="anim-toggle-icon" aria-hidden="true">&#9658;</span>
+    <span class="anim-toggle-label">Show animation</span>
+  </button>
   <div class="hero-scene" aria-hidden="true">
     <svg width="0" height="0" style="position:absolute">
       <defs>

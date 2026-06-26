@@ -11,7 +11,14 @@ function webglOK() {
   } catch { return false; }
 }
 
-if (sceneRoot && !reduced && webglOK()) boot();
+// The animated diorama is opt-in — boot only once the visitor presses "Show animation".
+let booted = false;
+function maybeBoot() {
+  if (booted) return;
+  if (sceneRoot && !reduced && webglOK()) { booted = true; boot(); }
+}
+if (window.__afriscanShowAnim) maybeBoot();
+window.addEventListener('afriscan:show-animation', maybeBoot);
 
 async function boot() {
   let THREE, RoomEnvironment;

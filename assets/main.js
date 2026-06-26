@@ -45,6 +45,22 @@ document.getElementById('contactForm')?.addEventListener('submit', async e => {
   }
 });
 
+// Hero animation is opt-in — reveal the animated diorama (and boot WebGL) on demand
+const animToggle = document.querySelector('.anim-toggle');
+const heroEl = document.querySelector('.hero');
+if (animToggle && heroEl) {
+  animToggle.addEventListener('click', () => {
+    const on = heroEl.classList.toggle('anim-on');
+    animToggle.setAttribute('aria-pressed', String(on));
+    const label = animToggle.querySelector('.anim-toggle-label');
+    if (label) label.textContent = on ? 'Hide animation' : 'Show animation';
+    if (on) {
+      window.__afriscanShowAnim = true;
+      window.dispatchEvent(new Event('afriscan:show-animation'));
+    }
+  });
+}
+
 // Navbar background + hero scene parallax on scroll
 const heroScene = document.querySelector('.hero-scene');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

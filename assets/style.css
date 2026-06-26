@@ -822,3 +822,47 @@ ul { list-style: none; }
 @media (max-width: 700px) {
   .tag3d { display: none; }
 }
+
+/* === STATIC HERO STILL + OPT-IN ANIMATION === */
+.hero-still {
+  position: absolute; left: 0; right: 0; bottom: 0; top: auto;
+  height: 60%; z-index: 1; overflow: hidden; pointer-events: none;
+}
+.hero-still img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; }
+.hero-still::before {                 /* blend the top edge into the hero gradient */
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(to bottom,
+    var(--dark) 0, rgba(13,17,23,.45) 120px, rgba(13,17,23,.12) 240px, rgba(13,17,23,.5) 100%);
+}
+
+/* the animated diorama is opt-in — hidden until the visitor presses "Show animation" */
+.hero-scene { display: none; }
+.hero.anim-on .hero-scene { display: block; }
+.hero.anim-on .hero-still { display: none; }
+
+.anim-toggle {
+  position: absolute; right: 20px; bottom: 20px; z-index: 5;
+  pointer-events: auto; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: inherit; font-size: .8rem; font-weight: 600; letter-spacing: .02em;
+  color: var(--white); background: rgba(13,17,23,.72);
+  border: 1px solid rgba(255,255,255,.22); border-radius: 999px;
+  padding: 9px 16px; backdrop-filter: blur(6px);
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+.anim-toggle:hover { background: rgba(13,17,23,.92); border-color: var(--accent); transform: translateY(-1px); }
+.anim-toggle .anim-toggle-icon { font-size: .7rem; color: var(--accent); line-height: 1; }
+.hero.anim-on .anim-toggle .anim-toggle-icon { color: #fff; }
+
+@media (max-width: 700px) {
+  .hero-still {
+    position: relative; inset: auto; width: 100%; height: 46svh;
+    order: 2; margin-top: 10px; border-radius: 12px;
+  }
+  .anim-toggle { right: 14px; bottom: 14px; font-size: .72rem; padding: 7px 13px; }
+}
+
+/* honour reduced-motion: keep the static visual, hide the opt-in control */
+@media (prefers-reduced-motion: reduce) {
+  .anim-toggle { display: none; }
+}
