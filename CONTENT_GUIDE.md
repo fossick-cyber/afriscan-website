@@ -65,7 +65,8 @@ site/
   tests/fixtures/     self-test and demo fixtures (never published)
   tools/              make_samples.py (T-9 images), make_diagrams.py (schematics), shoot.py (screenshots),
                       check_dist.py (independent dist checks), crawl.py (HTTP crawl of a preview)
-functions/geo.js      the one Pages Function: /geo returns the visitor's country for the banner
+functions/geo.js      Pages Function: /geo returns the visitor's country for the banner
+functions/_middleware.js  host redirects: www and afriscan-website.pages.dev → https://afri-scan.com
 dist/                 GENERATED site that Cloudflare Pages serves
 ```
 

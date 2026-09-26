@@ -41,3 +41,6 @@ org:
     - https://afridr.one/
 
 theme_color: "#0d1117"
+
+# IndexNow (https://www.indexnow.org): the build publishes /<key>.txt holding the key. It is public by design.
+indexnow_key: e666ed719ca61b23e21e4475606c7e95

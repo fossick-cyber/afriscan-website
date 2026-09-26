@@ -1059,9 +1059,18 @@ class Build:
             lines.append(f"{src} {dst} {code}")
             self.redirect_sources.add(src)
         (self.dist / "_redirects").write_text("\n".join(lines) + "\n", encoding="utf-8")
+        # functions/_middleware.js (host redirects) runs on every route except these, which saves quota
+        (self.dist / "_routes.json").write_text(json.dumps(
+            {"version": 1, "include": ["/*"], "exclude": ["/assets/*"]}, indent=2) + "\n", encoding="utf-8")
         headers = (SITE / "templates/_headers.j2").read_text(encoding="utf-8")
         (self.dist / "_headers").write_text(headers, encoding="utf-8")
         brand.write_icons(self.dist, self.site["theme_color"])
+        key = str(self.site.get("indexnow_key", ""))
+        if key:
+            if not re.fullmatch(r"[A-Za-z0-9-]{8,128}", key):
+                self.err(f"indexnow_key {key!r}: 8-128 letters, digits or dashes")
+            else:
+                (self.dist / f"{key}.txt").write_text(key, encoding="utf-8")
 
     # ------------------------------------------------------------------ checks
     def visible_text(self, html, main_only=False):
