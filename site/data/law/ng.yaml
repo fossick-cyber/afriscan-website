@@ -1,0 +1,102 @@
+# Nigeria: the instruments the drone-law and compliance page (/ng/drone-regulations) relies on.
+# Facts ONLY from regional/ng.FINAL.md (verified 2026-09-26 against the Official Gazette texts and
+# the regulators' own documents). Dates are the Gazette, signature or document dates given there, or
+# the commencement dates printed in the PLAC compilation (Official Secrets Act, Survey Co-ordination
+# Act). Items the brief marks [unverified] stay out: the NDPC GAID, the radio-licence issuer, the
+# contents of NCAA's truncated "RPAS/UAV guidelines" PDF. Documents without a full date (NCAA-AC-GEN007
+# and NCAA's own April 2023 edition of Part 21, both "April 2023"; the RPAS Portal; the ONSA EUC
+# pages; the NDPA, whose commencement date is blank in the PLAC scan) are cited with links in the page
+# body instead of this table. No fee, fine or penalty amount appears anywhere (owner rule 1).
+country_name: Nigeria
+last_reviewed: 2026-09-26
+regulator:
+  name: Nigeria Civil Aviation Authority (NCAA)
+  url: https://ncaa.gov.ng/documents/regulations/nigcars-2023-official-gazette/
+summary:
+  regulator: Nigeria Civil Aviation Authority (NCAA), with ONSA security clearance built into certification
+  instruments: Nig.CARs 2023 Part 21 (RPAS), S.I. 82 of 22 September 2023; Part 11 (aerial work); Civil Aviation Act 2022
+instruments:
+  - id: nigcars-part21
+    title: Nigeria Civil Aviation Regulations 2023, Part 21 (Remotely Piloted Aircraft Systems)
+    identifier: S.I. 82, Official Gazette No. 169, Vol. 110 (Government Notice 143)
+    date: 2023-09-22
+    url: https://ncaa.gov.ng/media/wabn2axn/nigcars-part-21-remotely-piloted-aircraft-system.pdf
+    last_checked: 2026-09-26
+    note: Mass classes (21.2.1.1), registration (21.3), the RPAS Operator Certificate (21.4), operating rules (21.9), security (21.13), insurance (21.17), privacy (21.18).
+  - id: nigcars-part11
+    title: Nigeria Civil Aviation Regulations 2023, Part 11 (Aerial Work)
+    identifier: S.I. 72, Official Gazette No. 159 (Government Notice 132)
+    date: 2023-09-06
+    url: https://ncaa.gov.ng/media/1lrh3ff2/nigcars-part-11-aerial-work.pdf
+    last_checked: 2026-09-26
+    note: The RPA aerial-work application, form IS 11.1.1.1(F) (11.1.1.1(f)); the PAAS and Aerial Work Certificate rule (11.1.1.4(a)).
+  - id: nigcars-part18
+    title: Nigeria Civil Aviation Regulations 2023, Part 18 (Air Transport Economic Regulations)
+    identifier: S.I. 79, Official Gazette No. 166 (Government Notice 140)
+    date: 2023-09-18
+    url: https://ncaa.gov.ng/media/kpjldhy3/nigcars-part-18-air-transport-economics.pdf
+    last_checked: 2026-09-26
+    note: The Permit for Aerial Aviation Services (PAAS) for aerial work (18.3.6; IS 18.3.6.1(A)).
+  - id: nigcars-part2
+    title: Nigeria Civil Aviation Regulations 2023, Part 2 (Personnel Licensing)
+    identifier: S.I. 61, Official Gazette No. 144 (Government Notice 117)
+    date: 2023-08-11
+    url: https://ncaa.gov.ng/media/mvmk433o/nigcars-part-2-personnel-licensing.pdf
+    last_checked: 2026-09-26
+    note: The Remote Pilot Licence (2.3.11).
+  - id: nigcars-part10
+    title: Nigeria Civil Aviation Regulations 2023, Part 10 (Commercial Air Transport by Foreign Air Operators within Nigeria)
+    identifier: S.I. 69, Official Gazette of 30 August 2023 (Government Notice 125)
+    date: 2023-08-30
+    url: https://ncaa.gov.ng/media/0qll0mio/nigcars-part-10-commercial-air-transport-by-foreign-air-operators-within-nigeria.pdf
+    last_checked: 2026-09-26
+    note: Foreign operators of remotely piloted aircraft (10.8.1.1).
+  - id: ncaa-ac-aws061
+    title: NCAA Advisory Circular NCAA-AC-AWS061 (RPA operations)
+    identifier: NCAA-AC-AWS061
+    date: 2023-04-10
+    url: https://ncaa.gov.ng/media/jjah0hhl/ncaa-ac-aws061.pdf
+    last_checked: 2026-09-26
+    note: ONSA security clearance as a condition of commercial, corporate and government-civil operation (App. 4 and 5); lead times; insurance; landowner rights (12.7.1).
+  - id: ncaa-aol-24-29
+    title: NCAA All Operators Letter on flying in controlled airspace
+    identifier: NCAA/DGCA/AOL/24/29
+    date: 2025-06-20
+    url: https://ncaa.gov.ng/media/tygotxei/controlled-airspace.pdf
+    last_checked: 2026-09-26
+    note: ATC clearance before any flight in controlled or restricted airspace, under Nig.CARs 21.9.6.32; names Lagos and Port Harcourt.
+  - id: civil-aviation-act-2022
+    title: Civil Aviation Act 2022
+    identifier: Act No. 30, Official Gazette No. 153, Vol. 109 (Government Notice 107)
+    date: 2022-08-24
+    url: https://ncaa.gov.ng/media/sxxn42yu/civil-aviation-act-2022-publi9cation.pdf
+    last_checked: 2026-09-26
+    note: Enforcement, detention and seizure (s.78), liability for damage on the ground (s.79), dangerous flying (s.81), failure to report (s.82(4)).
+  - id: nuprc-ogisp-2024
+    title: NUPRC Oil and Gas Industry Service Permit (OGISP) Guidelines 2024
+    identifier: OGISP Guidelines 2024, cl. 2.1.12
+    date: 2024-01-29
+    url: https://ogisp.nuprc.gov.ng/Content/ApplicationGuideLines/OGISPGUIDELINE2024.pdf
+    last_checked: 2026-09-26
+    note: Service companies offering drone-based security services must show NCAA and ONSA approvals.
+  - id: survey-coordination-act
+    title: Survey Co-ordination Act (1962 No. 28, as amended by 1968 No. 42)
+    identifier: Laws of the Federation of Nigeria 2004 (PLAC compilation)
+    date: 1962-09-13
+    url: https://lawsofnigeria.placng.org/view2.php?sn=501
+    last_checked: 2026-09-26
+    note: Three months' notice to the Director of Federal Surveys before survey work, including aerial photography for survey purposes (s.1).
+  - id: official-secrets-act
+    title: Official Secrets Act (1962 No. 29)
+    identifier: Laws of the Federation of Nigeria 2004 (PLAC compilation)
+    date: 1962-09-13
+    url: https://lawsofnigeria.placng.org/view2.php?sn=421
+    last_checked: 2026-09-26
+    note: Photographing or recording protected places (s.2); penalties (s.7).
+  - id: ncaa-fees-2023
+    title: NCAA Schedule of Fees and Charges
+    identifier: S.I. 83, Official Gazette No. 170 (Government Notice 144)
+    date: 2023-09-25
+    url: https://ncaa.gov.ng/media/k1rfvnjj/nigcars-ncaa-schedule-of-fees-and-charges.pdf
+    last_checked: 2026-09-26
+    note: RPAS fees (item 6.56). This site quotes no amounts.
