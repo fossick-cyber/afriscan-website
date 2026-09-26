@@ -66,7 +66,7 @@ COMPONENTS = {
     "register": {"required": {"data"}, "allowed": {"limit"}},
     "details": {"required": {"summary"}, "allowed": {"open"}},
     "lead": {"allowed": set()},
-    "country-sites": {"allowed": set()},
+    "country-sites": {"allowed": {"match"}},
 }
 
 
@@ -585,8 +585,16 @@ class Build:
         return {"rows": rows}
 
     def cmp_country_sites(self, p, b, ctx):
-        sites = [{"label": self.locales[k]["label"], "href": self.home_of(k)["url"], "lang": self.locales[k]["lang"]}
-                 for k in self.live_locales if k != "global"]
+        # match="page": link each country to its version of this page (same cluster key), else its home
+        match = b.attrs.get("match") == "page"
+        sites = []
+        for k in self.live_locales:
+            if k == "global":
+                continue
+            target = self.find(p["key"], k) if match else None
+            if not target or target["noindex"]:
+                target = self.home_of(k)
+            sites.append({"label": self.locales[k]["label"], "href": target["url"], "lang": self.locales[k]["lang"]})
         return {"sites": sites}
 
     def cmp_segments(self, p, b, ctx):

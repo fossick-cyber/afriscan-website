@@ -58,7 +58,7 @@ site/
   static/assets/      CSS, JS, font (copied; CSS and JS get content-hashed file names)
   images/             image masters; the build makes AVIF, WebP and JPEG at several widths
   tests/fixtures/     self-test and demo fixtures (never published)
-  tools/              make_samples.py (T-9 images), shoot.py (screenshots)
+  tools/              make_samples.py (T-9 images), make_diagrams.py (schematics), shoot.py (screenshots)
 functions/geo.js      the one Pages Function: /geo returns the visitor's country for the banner
 dist/                 GENERATED site that Cloudflare Pages serves
 ```
@@ -250,7 +250,7 @@ Body content outside a `section` is wrapped in a plain white section automatical
 | `register` | `data`*, `limit` | The register excerpt table from the same file. |
 | `details` | `summary`*, `open` (`true`) | A collapsible block. |
 | `lead` | | Larger intro text. |
-| `country-sites` | | Buttons to each country site that exists (renders nothing until one does). |
+| `country-sites` | `match` (`page`) | Buttons to each country site that exists (renders nothing until one does). With `match="page"` each button goes to that country's version of the current page (same `key`), else to the country home. |
 
 Icons (`icon="…"`): check, arrow-right, globe, pipeline, mine, power, clipboard, rail, sun, tree, building, corridor, boundary, shield, excavation, calendar, route, history, file-check, file-text, houses, compare, leaf, water, drone, satellite, target, map, layers, user-check, scale, search, mail, alert, info, external, clock, lock, download, ruler, flag, x-circle, send, grid, eye, language. Add new ones to `data/icons.yaml` (24×24, stroke style, no fills). Never use emoji.
 
@@ -283,6 +283,8 @@ What may be shown:
 - No flags, coats of arms, regulator or client logos, stock photos of people, or images that identify anyone.
 
 `site/tools/make_samples.py` rebuilds the T-9 images and `data/samples/t9.json` from the app's stored job (read-only). The old site's JPEGs had red and blue swapped; the tool draws from the raw GeoTIFFs, which are natural colour.
+
+**Schematics:** `site/tools/make_diagrams.py` draws `images/diagrams/corridor` and `images/diagrams/area-ring`, labelled "Schematic", with invented geometry whose counts follow the survey rules. The images carry no legend, so the page gives it in the caption with the band chips (`<span class="band band--a">Within 50 m</span>`, `band--b`, `band--c`), which stay readable on a phone. Credit them "Schematic drawn by AfriScan for illustration".
 
 Social cards (1200×630) are drawn automatically for every page from `og.headline`, `og.subline` and the country; there is nothing to upload.
 
