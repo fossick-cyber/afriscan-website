@@ -524,7 +524,8 @@ class Build:
             if p["loc_key"] in s.get("exclude", []):
                 continue
             name = s.get("name_pt") if lang == "pt" and s.get("name_pt") else s["name"]
-            out.append({"id": s["id"], "name": name, "line": s["line"], "group": s["group"]})
+            line = s.get("line_pt") if lang == "pt" and s.get("line_pt") else s["line"]
+            out.append({"id": s["id"], "name": name, "line": line, "group": s["group"]})
         return out
 
     def cmp_catalogue(self, p, b, ctx):
@@ -559,8 +560,16 @@ class Build:
                   "icon": q["meta"].get("icon"), "date": q["meta"].get("published")} for q in items]
         return {"cards": cards}
 
+    def law_for(self, p, cc):
+        """data/law/<cc>.yaml with each instrument's optional title_pt / identifier_pt / note_pt used on PT pages."""
+        law = self.law.get(cc)
+        if not law or p["lang2"] != "pt":
+            return law
+        loc = lambda i: {**i, **{k: i[k + "_pt"] for k in ("title", "identifier", "note") if i.get(k + "_pt")}}
+        return {**law, "instruments": [loc(i) for i in law.get("instruments", [])]}
+
     def cmp_sources(self, p, b, ctx):
-        law = self.law.get(b.attrs["law"])
+        law = self.law_for(p, b.attrs["law"])
         if not law:
             raise ContentError(f"{ctx['where']}: no data/law/{b.attrs['law']}.yaml")
         ids = [x.strip() for x in b.attrs.get("ids", "").split(",") if x.strip()]
@@ -736,7 +745,7 @@ class Build:
         p["jsonld"] = self.jsonld(p)
         ctx = self.page_ctx(p)
         if p["template"] == "law":
-            ctx["law"] = self.law[m["law"]]
+            ctx["law"] = self.law_for(p, m["law"])
             ctx["as_of"] = m.get("as_of", self.site["law_as_of"])
         html = self.env.get_template(f"{p['template']}.html.j2").render(**ctx)
         html = re.sub(r"\n\s*\n+", "\n", html)
@@ -815,7 +824,7 @@ class Build:
                           "author": {"@id": org_id}, "publisher": {"@id": org_id},
                           "image": p["og_image"]["url"], "mainEntityOfPage": {"@id": wp["@id"]}})
         if p["template"] == "law":
-            law = self.law[p["meta"]["law"]]
+            law = self.law_for(p, p["meta"]["law"])
             wp["lastReviewed"] = str(law["last_reviewed"])
             wp["citation"] = [{"@type": "Legislation", "name": i["title"], "legislationIdentifier": i["identifier"],
                                "legislationDate": str(i["date"]), "legislationJurisdiction": law["country_name"],

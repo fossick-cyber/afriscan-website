@@ -46,8 +46,10 @@ site/
   data/
     site.yaml         brand, organisation JSON-LD, FormSubmit endpoint (do not change the endpoint)
     locales.yaml      the five sections: prefix, language, hreflang codes, selector labels
-    catalogue.yaml    industries, solutions (U-codes) and services (S01–S45): names, blurbs, keys; `footer: true` picks the footer solutions
-    law/<cc>.yaml     drone-law instruments per country (mz, za, ng): the Sources tables come from here
+    catalogue.yaml    industries, solutions (U-codes) and services (S01–S45): names, blurbs, keys; `footer: true` picks the footer solutions;
+                      services carry `name_pt` and `line_pt` for /mz/pt/ pages
+    law/<cc>.yaml     drone-law instruments per country (mz, za, ng): the Sources tables come from here; optional
+                      `title_pt`, `identifier_pt`, `note_pt` replace English wording on /mz/pt/ pages
     samples/t9.json   the T-9 sample register and segment ratings (written by tools/make_samples.py)
     i18n/en.yaml, i18n/pt-MZ.yaml   every interface string (nav, buttons, form, footer, 404…)
     glossary/pt-MZ.yaml             Mozambican Portuguese: banned Brazilian forms, AO90 warnings, preferred terms
@@ -179,6 +181,8 @@ Suggested keys and URLs. Industry and solution keys must match `data/catalogue.y
 | `home` | `/` | `/mz/` | `/mz/pt/` | `/za/` | `/ng/` |
 | `contact` | `/contact` | `/mz/contact` | `/mz/pt/contacto` | `/za/contact` | `/ng/contact` |
 | `how-we-work` | `/how-we-work` | | `/mz/pt/como-trabalhamos` | | |
+| `results` | `/results` | | `/mz/pt/resultados-de-exemplo` | | |
+| `industries`, `solutions` (hubs) | `/industries`, `/solutions` | | `/mz/pt/sectores`, `/mz/pt/solucoes` | | |
 | `oil-gas` | `/industries/oil-gas` | `/mz/pipelines` | `/mz/pt/gasodutos-e-oleodutos` | `/za/pipelines` | `/ng/oil-gas-pipelines` |
 | `power-utilities` | `/industries/power-utilities` | `/mz/power-lines` | `/mz/pt/linhas-de-transporte-de-energia` | `/za/power-lines` | `/ng/power-transmission` |
 | `mining` | `/industries/mining` | | | `/za/mining` | |
@@ -287,6 +291,8 @@ What may be shown:
 
 `site/tools/make_samples.py` rebuilds the T-9 images and `data/samples/t9.json` from the app's stored job (read-only). The old site's JPEGs had red and blue swapped; the tool draws from the raw GeoTIFFs, which are natural colour.
 
+Portuguese pages must not show English inside a picture. `site/tools/make_pt_images.py` reuses `make_samples.py` and `make_diagrams.py` unchanged and writes Portuguese versions with a `-pt` suffix (`samples/t9-km5-6-pt`, `samples/t9-rating-{high,medium,low}-pt`, `diagrams/corridor-pt`, `diagrams/area-ring-pt`). Rerun it whenever the English images change. `diagrams/mz-strips` has no words and serves both languages.
+
 **Schematics:** `site/tools/make_diagrams.py` draws `images/diagrams/corridor` and `images/diagrams/area-ring`, labelled "Schematic", with invented geometry whose counts follow the survey rules. The images carry no legend, so the page gives it in the caption with the band chips (`<span class="band band--a">Within 50 m</span>`, `band--b`, `band--c`), which stay readable on a phone. Credit them "Schematic drawn by AfriScan for illustration".
 
 Social cards (1200×630) are drawn automatically for every page from `og.headline`, `og.subline` and the country; there is nothing to upload.
@@ -349,6 +355,8 @@ Procurement and local-content pages list only registrations and facts the owner 
 - Numbers use a decimal comma and a thin space for thousands (0,5 m; 14 500 km). Dates: 26 de Setembro de 2026.
 - Prefer impersonal constructions or "a sua empresa"; the reviewer will settle the register.
 - Interface strings are in `data/i18n/pt-MZ.yaml` (every key must exist in both files).
+- On PT pages, `:::catalogue` shows each service's `name_pt` and `line_pt`, and law tables and `:::sources` use an instrument's `*_pt` fields when present; write them whenever you add a service or an instrument.
+- Use the `-pt` images (§8) and the PT hubs (`/mz/pt/sectores`, `/mz/pt/solucoes`) so PT menus, breadcrumbs and the PT 404 stay in Portuguese. Global pages without a PT version still appear in PT menus, marked `hreflang="en-GB"`.
 - Set `reviewed_on` and `reviewed_by_role` only after a real native review. The build warns on every PT page without them.
 - The footer line "Falamos português" is not shown until someone can answer enquiries in Portuguese (owner question).
 
