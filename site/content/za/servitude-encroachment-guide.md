@@ -31,6 +31,10 @@ faq:
     a: On South African work we scope registers for planning, maintenance and engagement. We do not package them as evidence about unlawful occupation unless your counsel has confirmed the POPIA position, including any prior authorisation under section 57.
   - q: We fly our own drones along the servitude. Can you use that imagery?
     a: Yes. Send your georeferenced orthophotos and we run the same structure register, distances and change comparison on them. Satellite imagery can then cover the stretches and dates your flights do not.
+cta:
+  title: Need a dated register of your servitudes?
+  text: Send the line or pipeline route, the registered servitude widths and the stretches that worry you. We reply with a scope and a written proposal.
+  button: Request a proposal
 ---
 
 ## A registered right, not a fence {#what-you-hold}

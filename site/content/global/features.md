@@ -28,6 +28,10 @@ faq:
   - q: How often can a route be re-surveyed?
     a: On a schedule agreed with you. How often new imagery can be captured depends on satellite availability, cloud and, for drone work, on permits, so we set the cadence per project rather than promising a fixed interval.
 related: [right-of-way-monitoring, oil-gas, power-utilities]
+cta:
+  title: See the steps on your own route.
+  text: Send the route file and the distances that matter. The proposal walks through each step for your line or site, from the imagery plan to the files your teams receive.
+  button: Request a proposal
 ---
 
 ::::section{id="steps" eyebrow="The process" title="Four steps from route file to register"}
@@ -95,7 +99,7 @@ Your route or site re-surveyed on a schedule agreed with you, with an email to y
 ::::section{id="drone" eyebrow="Drone surveys" title="Drone detail for the stretches that need it"}
 :::::columns{split="2-1" align="center"}
 ::::col
-Satellite screening narrows the search; drone flights over the flagged stretches then capture the detail your team needs: a georeferenced orthophoto, surface and terrain elevation models, a point cloud and a processing quality report. Drone work is carried out by [Afridrone](https://afridr.one/), AfriScan's sister drone-services brand, subject to the permits and authorisations each job requires. Afridrone is working towards the operator approvals needed in each country, and every drone job is planned around the permits that particular flight needs.
+Satellite screening narrows the search; drone flights over the flagged stretches then capture the detail your team needs: a georeferenced orthophoto, surface and terrain elevation models, a point cloud and a processing quality report. AfriScan is [Afridrone](https://afridr.one/)’s land and corridor monitoring service; Afridrone flies the drone work, subject to the permits and authorisations each job requires. Afridrone is working towards the operator approvals needed in each country, and every drone job is planned around the permits that particular flight needs.
 ::::
 ::::col
 :::callout{tone="legal" title="Permits are part of the plan"}

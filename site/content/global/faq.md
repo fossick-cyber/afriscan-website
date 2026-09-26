@@ -14,6 +14,10 @@ lead: Straight answers for integrity engineers, land and resettlement teams, GIS
 og:
   headline: Frequently asked questions
   subline: Imagery dates, review, formats, permits and proposals
+cta:
+  title: Didn't find your question?
+  text: Ask it with your request, and send the route or boundary if you have it. We answer in the written proposal, with the scope, the imagery plan and the deliverables.
+  button: Request a proposal
 ---
 
 ::::section{id="topics" eyebrow="Jump to" title="Topics"}
@@ -38,7 +42,7 @@ It depends on what exists for your area and on the job. We check the archive bef
 Purchased satellite scenes come with their acquisition date and time in the metadata, and drone photos record their capture time. The report states the date of each image used, and the metadata stays with the imagery. Map-service basemaps carry no stated date, which is why we never use them for a dated record.
 :::
 :::details{summary="Do you use Google Earth or other web-map imagery?"}
-Only to screen and plan. Google, Bing and Esri web-map layers have no stated capture date and their terms do not make them survey imagery, so they are never delivered and never the basis of a dated record. The T-9 sample on this site is drawn over a Google basemap, credited on each image and shown for illustration only.
+Only to screen and plan. Google, Bing and Esri web-map layers have no stated capture date and their terms do not make them survey imagery, so they are never delivered, never published and never the basis of a dated record. The T-9 sample on this site was marked on such a basemap during review; the site shows its register as strip views and the route on a dated Sentinel-2 scene, not the basemap.
 :::
 :::details{summary="Can you capture imagery on a date we choose?"}
 Not with certainty from satellites: a new capture is requested for a window, and the date depends on satellite availability and weather. A drone survey, subject to the permits each job requires, gives the most control over the date.
@@ -59,7 +63,7 @@ For most corridor and concession work, both, in order: satellite for the whole r
 Yes. Open building datasets and segmentation models propose structures; a reviewer confirms, removes and adds structures on the imagery before anything is delivered. Anything the imagery cannot settle is listed for a ground check.
 :::
 :::details{summary="What does the reviewer actually check?"}
-The whole route or site, in chainage order: whether each proposed structure is real, whether anything was missed (thatch, mud-brick and zinc roofs, small outbuildings and homesteads under trees are the usual misses), and whether a proposal is really a bush, a rock or a shadow. Every mark records who placed it. The steps are set out in the [methodology](/methodology#detection).
+The whole route or site, in chainage order: whether each proposed structure is real, whether anything was missed (thatch, mud-brick and zinc roofs, small outbuildings and homesteads under trees are the usual misses), and whether a proposal is really a bush, a rock or a shadow. The register records, for each structure it lists, whether it was proposed automatically or added by the reviewer. The steps are set out in the [methodology](/methodology#detection).
 :::
 :::details{summary="Why don't you publish an accuracy percentage?"}
 Because it would mislead. Detection quality depends on the imagery, the season, tree cover and local building styles, so one figure cannot describe your route. We state the imagery used, have a person review the results, and list what needs a ground check. On a large project we can agree a check of a sample against your own field data.
@@ -122,7 +126,7 @@ No drone flies in a satellite-based survey. Satellite-based surveys are availabl
 It depends on the country and the site: typically an operator approval from the civil aviation authority, flight permissions for the site and airspace, and in some countries separate authorisation for the survey itself or for handing over the images. Every drone proposal sets out what that flight needs. Drone surveys are subject to the permits and authorisations each job requires, and Afridrone is working towards the operator approvals each country requires. The three countries are compared in [drone rules by country](/drone-regulations).
 :::
 :::details{summary="Who flies the drones?"}
-[Afridrone](https://afridr.one/), AfriScan's sister drone-services brand, subject to the permits and authorisations each job requires.
+[Afridrone](https://afridr.one/), which flies AfriScan’s drone work, subject to the permits and authorisations each job requires.
 :::
 ::::
 
@@ -151,8 +155,8 @@ Send the route or boundary, the country and province, the distances that matter 
 :::details{summary="Can we start with part of the route?"}
 Yes. Many projects start with one stretch, one site or one concession boundary, so your team can check the register against what it knows before the rest is surveyed.
 :::
-:::details{summary="Do you respond to tenders and complete supplier forms?"}
-Yes. Send the tender documents or onboarding form with your request. Our guide to [scoping an encroachment survey](/insights/encroachment-survey-scope) sets out what a good scope asks for, whoever you buy from.
+:::details{summary="Do you respond to tenders and supplier forms?"}
+Yes. Send the tender documents, or your supplier or prequalification forms, with your request; the proposal states which registrations are in place for your contract and which are being arranged. Our guide to [scoping an encroachment survey](/insights/encroachment-survey-scope) sets out what a good scope asks for, whoever you buy from.
 :::
 :::details{summary="Can you work under an ESIA or engineering consultancy?"}
 Yes. Consultancies can commission structure registers, route comparisons and GIS layers for their own reports, delivered in the formats their teams already use.

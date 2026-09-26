@@ -93,7 +93,7 @@ Every proposal names the services it includes. These are the ones this solution 
 :::
 
 :::callout{tone="note" title="Open data, credited"}
-This work uses open data, credited in every report as its licence requires: contains modified Copernicus Sentinel data; fire hotspots from NASA FIRMS; alerts from Global Forest Watch; ESA WorldCover (CC BY 4.0); and the Meta and WRI canopy-height map (CC BY 4.0).
+This work uses open data, credited as each licence requires: contains modified Copernicus Sentinel data; fire hotspots from NASA FIRMS; alerts from Global Forest Watch; ESA WorldCover (CC BY 4.0); and the Meta and WRI canopy-height map (CC BY 4.0).
 :::
 ::::
 

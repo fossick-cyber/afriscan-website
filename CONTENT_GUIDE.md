@@ -58,6 +58,7 @@ site/
     rules.yaml        the guard patterns
     redirects.yaml    path redirects -> dist/_redirects
     icons.yaml        inline SVG icons by name
+    reviews.yaml      native-PT and counsel reviews each page needs, and the pages the owner put live before them
   templates/          Jinja2 page templates, partials and components
   static/assets/      CSS, JS, font (copied; CSS and JS get content-hashed file names)
   images/             image masters; the build makes AVIF, WebP and JPEG at several widths
@@ -162,7 +163,8 @@ Required on every page: `title`, `description`, `h1`.
 | `og` | Social card: `{headline, subline, alt}`. Defaults: the H1 and the "a person reviews every result" line. |
 | `law`, `as_of` | Law pages: the country code of `data/law/<cc>.yaml`, and the "as of" date (default `law_as_of` in `site.yaml`, 26 September 2026). |
 | `published`, `updated` | Articles: ISO dates. |
-| `reviewed_on`, `reviewed_by_role` | pt-MZ pages: set ONLY when a native Mozambican reviewer has actually signed the page off. Until then the build warns; never invent a review date. |
+| `reviewed_on`, `reviewed_by_role` | pt-MZ pages: set ONLY when a native Mozambican reviewer has actually signed the page off. A pt-MZ page without them fails the build unless `data/reviews.yaml` lists it under `pending.native_pt` (the pages the owner put live before the review). Never invent a review date. |
+| `counsel_reviewed_on`, `counsel_reviewed_by_role` | Law pages and the pages under `counsel_required` in `data/reviews.yaml`: set ONLY after counsel for that country has signed the page off. Same rule: without them the build fails unless the page is under `pending.counsel`. |
 | `noindex`, `sitemap` | `noindex: true` keeps a page out of search and the sitemap; `sitemap: false` keeps an indexable page out of the sitemap. |
 
 **YAML gotcha:** any value that contains `: ` (colon space), or starts with a quote, `[`, `{`, `*`, `&` or `#`, must be in double quotes: `title: "Where We Work: Mozambique | AfriScan"`.
@@ -298,18 +300,18 @@ Tables: ordinary Markdown tables; the build wraps them in a scrollable box so th
 3. Alt text says what the image shows, for someone who cannot see it. Captions say what it is and where it comes from.
 
 What may be shown:
-- **The T-9 replacement pipeline and Pande (Inhambane) route and imagery**: yes, the owner has permission. Captions must be honest: manual marks are "Reviewed · manual marks", never "AI detection" or "live"; the operator's own plants and well pads are never "encroachment". Do not name the client company or use its logo.
-- **Google, Bing or Esri basemap imagery**: only as an illustration, credited "Imagery © Google" (etc.), and never presented as delivered survey imagery. The T-9 views are built this way.
+- **The T-9 replacement pipeline and Pande (Inhambane) route**: yes, the owner has permission. Captions must be honest: manual marks are "Reviewed · manual marks", never "AI detection" or "live"; the operator's own plants and well pads are never "encroachment". Do not name the client company or use its logo. The site never offers the T-9 PDF or GIS files; sample-report requests get a redacted sample.
+- **Google, Bing or Esri basemap imagery: never on this site.** The app's T-9 review used Google tiles, which Google's terms do not allow in published material, so the T-9 views are register strip views drawn from the register alone (no imagery, no coordinates) and the route on a dated Copernicus Sentinel-2 scene (credit "Contains modified Copernicus Sentinel data 2026"). 10 m Sentinel-2 pixels cannot show structures: never draw marks on it.
 - **Drone orthophotos or mosaics of Mozambique**: not without the Lei n.º 6/2024 authorisation (art. 16(1)(c) makes unauthorised reproduction an infraction). Ask the owner first.
 - No flags, coats of arms, regulator or client logos, stock photos of people, or images that identify anyone.
 
-`site/tools/make_samples.py` rebuilds the T-9 images and `data/samples/t9.json` from the app's stored job (read-only). The old site's JPEGs had red and blue swapped; the tool draws from the raw GeoTIFFs, which are natural colour.
+`site/tools/make_samples.py` rebuilds the T-9 images (`samples/t9-register-*` in English and `-pt`, `samples/t9-route-hero`, `samples/t9-route-ratings`) and `data/samples/t9.json` from the app's stored job (read-only) and a Sentinel-2 L2A window read once from the public sentinel-cogs bucket (cached in `site/.cache/s2/`).
 
-Portuguese pages must not show English inside a picture. `site/tools/make_pt_images.py` reuses `make_samples.py` and `make_diagrams.py` unchanged and writes Portuguese versions with a `-pt` suffix (`samples/t9-km5-6-pt`, `samples/t9-rating-{high,medium,low}-pt`, `diagrams/corridor-pt`, `diagrams/area-ring-pt`). Rerun it whenever the English images change. `diagrams/mz-strips` has no words and serves both languages.
+Portuguese pages must not show English inside a picture. `make_samples.py` draws the register views in both languages (`-pt` suffix); `site/tools/make_pt_images.py` reuses `make_diagrams.py` unchanged and writes `diagrams/corridor-pt` and `diagrams/area-ring-pt`. Rerun it whenever the English diagrams change. The Sentinel-2 route views carry no words and serve both languages. `diagrams/mz-strips` has no words and serves both languages.
 
 **Schematics:** `site/tools/make_diagrams.py` draws `images/diagrams/corridor` and `images/diagrams/area-ring`, labelled "Schematic", with invented geometry whose counts follow the survey rules. The images carry no legend, so the page gives it in the caption with the band chips (`<span class="band band--a">Within 50 m</span>`, `band--b`, `band--c`), which stay readable on a phone. Credit them "Schematic drawn by AfriScan for illustration".
 
-Social cards (1200×630) are drawn automatically for every page from `og.headline`, `og.subline` and the country; there is nothing to upload.
+Social cards (1200×630) are drawn automatically for every page from `og.headline`, `og.subline` and the country; there is nothing to upload. The text is shrunk to fit and never cut: a headline or subline that still does not fit fails the build, so shorten it.
 
 ---
 
@@ -368,10 +370,11 @@ Procurement and local-content pages list only registrations and facts the owner 
 - Write natively in Mozambican/European Portuguese as used in the Boletim da República, never Brazilian, and never raw machine translation. The glossary (`data/glossary/pt-MZ.yaml`) lists banned forms, AO90 spellings to avoid and the preferred vocabulary: zona de protecção parcial, faixa de servidão, servidão administrativa, linha de transporte de energia, gasoduto/oleoduto, construções (not invasões), machambas, benfeitorias, agregado familiar, DUAT, licença especial, reassentamento, PAR, data de corte, censo e inventário de bens, EIA, ortofotomapa, monitoria.
 - Numbers use a decimal comma and a thin space for thousands (0,5 m; 14 500 km). Dates: 26 de Setembro de 2026.
 - Prefer impersonal constructions or "a sua empresa"; the reviewer will settle the register.
-- Interface strings are in `data/i18n/pt-MZ.yaml` (every key must exist in both files).
+- Interface strings are in `data/i18n/pt-MZ.yaml` (every key must exist in both files, or the build fails).
+- A Portuguese page that links to an English page (menus, footer, breadcrumbs, related cards) takes that page's Portuguese label and blurb from `foreign_pages.<key>` in `data/i18n/pt-MZ.yaml`, ending "(em inglês)". A missing entry fails the build. Catalogue industries and solutions keep their PT names and show a small "EN" badge. Section names in menus, the footer and the selector come from `sites:` in each i18n file.
 - On PT pages, `:::catalogue` shows each service's `name_pt` and `line_pt`, and law tables and `:::sources` use an instrument's `*_pt` fields when present; write them whenever you add a service or an instrument.
 - Use the `-pt` images (§8) and the PT hubs (`/mz/pt/sectores`, `/mz/pt/solucoes`) so PT menus, breadcrumbs and the PT 404 stay in Portuguese. Global pages without a PT version still appear in PT menus, marked `hreflang="en-GB"`.
-- Set `reviewed_on` and `reviewed_by_role` only after a real native review. The build warns on every PT page without them.
+- Set `reviewed_on` and `reviewed_by_role` only after a real native review, and delete the page from `pending.native_pt` in `data/reviews.yaml` in the same commit. A new PT page is never added to that list to get it through the build: it stays `status: draft` until reviewed, unless the owner decides otherwise.
 - The footer line "Falamos português" is not shown until someone can answer enquiries in Portuguese (owner question).
 
 ---
@@ -380,7 +383,7 @@ Procurement and local-content pages list only registrations and facts the owner 
 
 Omit, never stub: the legal entity, registration numbers, NUIT, VAT, address, phone or WhatsApp, team names, insurance, data-storage location and retention, response times, supplier-portal registrations, memberships, partners, client names, case studies, logos, accuracy or turnaround figures. The contact form endpoint and email stay exactly as they are in `site.yaml`.
 
-Brand: "AfriScan by Afridrone". Afridrone is AfriScan's sister drone-services brand (afridr.one). The Organization JSON-LD (in `site.yaml`) disambiguates AfriScan from Afriscan Construction (South Africa) and Afriscan Kenya.
+Brand: "AfriScan by Afridrone". Describe the relationship in one sentence, the same everywhere: "AfriScan is Afridrone’s land and corridor monitoring service; Afridrone flies the drone work." Never call Afridrone a "sister" brand (afridr.one uses the same sentence). The Organization JSON-LD (in `site.yaml`) disambiguates AfriScan from Afriscan Construction (South Africa) and Afriscan Kenya.
 
 Every service in `catalogue.yaml` is presented as available now. No "coming soon", "on demand", "future", "roadmap", "beta" or "pilot product" labels. Thermal, LiDAR, multispectral, RTK/survey-grade and gas-sensing services are not offered. Never offer a client portal, logins, dashboards or an API. A person reviews every result before delivery: say so.
 

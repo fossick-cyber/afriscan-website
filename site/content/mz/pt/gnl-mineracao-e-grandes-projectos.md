@@ -29,7 +29,7 @@ cta:
   button: Pedir proposta
 faq:
   - q: Podem trabalhar em zonas com restrições de segurança?
-    a: O rastreio por satélite não exige presença no local, por isso o trabalho pode começar sem deslocações. Qualquer trabalho de campo ou voo de drone só avança com as autorizações exigidas e com um plano de segurança acordado com o projecto. Nunca publicamos mapas de assentamentos à volta de um projecto.
+    a: O rastreio por satélite não exige presença no local, por isso o trabalho pode começar sem deslocações. Qualquer trabalho de campo ou voo de drone só avança com as autorizações exigidas e com um plano de segurança acordado com o projecto. Sem a autorização escrita do cliente, nunca publicamos mapas dos assentamentos à volta de um projecto.
   - q: Mapeiam a mineração artesanal?
     a: Mapeamos as covas, o terreno revolvido, os montes de terra e as escavações com água dentro e à volta do direito mineiro, com os novos locais assinalados entre datas. Mapeamos a terra, não as pessoas, e não dizemos quem abriu uma escavação.
   - q: Podem acompanhar uma aldeia de reassentamento depois da mudança?
@@ -41,7 +41,7 @@ faq:
 ---
 
 ::::section{id="problema" eyebrow="O problema" title="Um grande projecto atrai gente, e a terra à sua volta muda depressa" lead="Um projecto de GNL ou uma mina traz estradas, empregos e serviços. À sua volta crescem casas junto das vedações e ao longo dos acessos, as aldeias de reassentamento ganham vizinhos, e as escavações aparecem nos limites das concessões. Cada uma destas mudanças pesa no plano de reassentamento, no relatório ao financiador e na relação com as comunidades."}
-O sector está a crescer. O projecto Mozambique LNG retomou todas as actividades em 29 de Janeiro de 2026 e prevê o primeiro GNL em 2029 ([TotalEnergies](https://totalenergies.com/news/press-releases/mozambique-lng-announces-full-restart-all-its-activities-onshore-and-offshore)); no Rovuma LNG, o empreiteiro de engenharia e construção foi seleccionado em 10 de Agosto de 2026 ([ExxonMobil](https://corporate.exxonmobil.com/locations/mozambique/mozambique-newsroom/exxonmobil-in-mozambique-selects-epc-contractor-for-rovuma-lng-project)). Na mineração, a nova Lei de Minas, aprovada pela Assembleia da República em Maio de 2026, reserva áreas para a mineração artesanal e de pequena escala ([AIM](https://aimnews.org/2026/05/08/ar-aprova-lei-de-minas-que-proibe-venda-de-produtos-minerais-nao-processados/)). Estes projectos são citados como contexto público do sector.
+O sector está a crescer. O projecto Mozambique LNG retomou todas as actividades em 29 de Janeiro de 2026 e prevê o primeiro GNL em 2029 ([TotalEnergies](https://totalenergies.com/news/press-releases/mozambique-lng-announces-full-restart-all-its-activities-onshore-and-offshore)); no Rovuma LNG, o empreiteiro de engenharia e construção foi seleccionado em 10 de Agosto de 2026 ([ExxonMobil](https://corporate.exxonmobil.com/locations/mozambique/mozambique-newsroom/exxonmobil-in-mozambique-selects-epc-contractor-for-rovuma-lng-project)). Na mineração, a nova Lei de Minas, aprovada pela Assembleia da República em Maio de 2026, reserva áreas para a mineração artesanal e de pequena escala ([AIM](https://aimnews.org/2026/05/08/ar-aprova-lei-de-minas-que-proibe-venda-de-produtos-minerais-nao-processados/)). Citamos estes projectos apenas como contexto; não são referências de trabalho da AfriScan.
 
 :::cards{cols="3"}
 :::card{title="Casas junto das vedações e dos acessos" icon="houses"}
@@ -113,7 +113,7 @@ Perto de fábricas de GNL e de outras instalações estratégicas, a directiva d
 ::::
 ::::col
 :::callout{tone="scope" title="O que nunca publicamos"}
-Mapas de assentamentos à volta de um projecto, imagens das instalações de um cliente e resultados de qualquer trabalho sem autorização escrita. As instalações do próprio projecto fazem parte do activo e nunca são registadas como ocupação.
+Sem a autorização escrita do cliente, nunca publicamos mapas dos assentamentos à volta de um projecto, imagens das suas instalações nem resultados de qualquer trabalho. As instalações do próprio projecto fazem parte do activo e nunca são registadas como ocupação.
 :::
 
 [Lei de drones em Moçambique](/mz/pt/lei-de-drones)

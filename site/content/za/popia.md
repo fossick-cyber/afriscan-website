@@ -30,6 +30,10 @@ faq:
     a: No. The register lists structures with an ID, a location, a distance to the line and a date. It carries no names, and we do not tag, count or follow people or vehicles in any imagery.
   - q: Where is our imagery processed and stored?
     a: The proposal for your work says where the imagery and results will be processed and stored and for how long, so your information officer can check the section 72 basis for any transfer outside South Africa before work starts.
+cta:
+  title: Setting up a register under POPIA?
+  text: Tell us what the register is for and who will receive it. The proposal sets out the purpose, the processing terms, the operator agreement your organisation uses and the deliverables.
+  button: Request a proposal
 ---
 
 ::::section{id="in-short" eyebrow="In short" title="Four questions to settle before the first survey"}
@@ -132,7 +136,7 @@ The proposal for your work states where the imagery and results will be processe
 ::::section{id="security-measures" tone="alt" eyebrow="Installations" title="Security measures stay out of the picture"}
 Stations, substations and plants along a servitude may be national key points or critical infrastructure. The [Critical Infrastructure Protection Act 8 of 2019](https://static.pmg.org.za/Critical_Infra_Protection_Act8of2019.pdf) makes it an offence to take or record a photograph, video or film of the security measures at critical infrastructure (s26(1)(b)), meaning measures that are not clearly visible to the public (s26(2)); whether that section is in force for a given site is a question for counsel. Drone flights near these sites also need SACAA notice on form CA 101-20 ([drone law](/za/drone-regulations#sensitive-sites)).
 
-Our deliverables leave the security measures at stations and installations out of every image and report, and we never publish imagery of a client's installations.
+Our deliverables leave the security measures at stations and installations out of every image and report, and we never publish imagery of a client's installations without the client's written permission.
 ::::
 
 ::::section{id="practice" eyebrow="How we work" title="What we do, and what we don't"}

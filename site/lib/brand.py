@@ -5,13 +5,12 @@ no client imagery, no basemap imagery, no flags or regulator logos.
 """
 import hashlib
 import json
-import textwrap
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
 
 INK, INK2, ACCENT, TEAL, TEXT, DIM = "#0d1117", "#0b3954", "#e8672f", "#5eead4", "#f3f5f7", "#aab4be"
-CARD_VERSION = "og-v3"
+CARD_VERSION = "og-v4"
 
 # The mark: an orange "A" on the dark rounded square. Coordinates on a 64-unit grid, shared by the
 # SVG favicon and the PNG/ICO renders so they match.
@@ -79,6 +78,33 @@ def _corridor(img):
     img.alpha_composite(ov)
 
 
+class CardTextError(ValueError):
+    pass
+
+
+def _wrap(d, text, font, width):
+    lines, cur = [], ""
+    for word in text.split():
+        cand = f"{cur} {word}".strip()
+        if cur and d.textlength(cand, font=font) > width:
+            lines.append(cur)
+            cur = word
+        else:
+            cur = cand
+    return lines + ([cur] if cur else [])
+
+
+def _fit(d, font_path, text, sizes, weight, width, max_lines, what):
+    """Largest size at which every word fits in max_lines lines; never drops words."""
+    for size in sizes:
+        f = _font(font_path, size, weight)
+        lines = _wrap(d, text, f, width)
+        if len(lines) <= max_lines:
+            return f, lines
+    raise CardTextError(f"social card {what} does not fit in {max_lines} lines even at {sizes[-1]} px; "
+                        f"shorten it: {text!r}")
+
+
 def card(out_dir: Path, url_path: str, headline: str, subline: str, region: str, font_path: Path,
          cache_dir: Path) -> str:
     key = hashlib.sha256("|".join([CARD_VERSION, headline, subline, region]).encode()).hexdigest()[:10]
@@ -105,16 +131,16 @@ def card(out_dir: Path, url_path: str, headline: str, subline: str, region: str,
             tw = d.textlength(region.upper(), font=rf)
             d.rounded_rectangle([72, 138, 72 + tw + 28, 180], radius=8, fill=(22, 27, 34), outline=(60, 70, 82))
             d.text((86, 146), region.upper(), font=rf, fill=TEAL)
-        hf = _font(font_path, 58, 800)
-        lines = textwrap.wrap(headline, 26)[:4]
+        hf, lines = _fit(d, font_path, headline, (58, 54, 50, 46), 800, 860, 4, "headline")
+        sf, slines = _fit(d, font_path, subline, (28, 26, 24), 500, 780, 3 if len(lines) <= 3 else 2, "subline")
+        step = round(hf.size * 1.2)
         y = 236 if len(lines) <= 3 else 212
         for line in lines:
             d.text((72, y), line, font=hf, fill=TEXT)
-            y += 70
-        sf = _font(font_path, 28, 500)
-        for line in textwrap.wrap(subline, 52)[:2]:
+            y += step
+        for line in slines:
             d.text((72, y + 18), line, font=sf, fill=DIM)
-            y += 40
+            y += round(sf.size * 1.42)
         img.convert("RGB").save(cached, "JPEG", quality=84, optimize=True, progressive=True)
     out_dir.mkdir(parents=True, exist_ok=True)
     target = out_dir / name

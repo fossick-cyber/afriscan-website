@@ -135,7 +135,7 @@ Your own stations, valve sites and yards are part of the asset. We record them a
 ::::
 ::::col
 :::callout{tone="legal" title="Key points and security measures"}
-Some stations are national key points: [ROMPCO](https://www.rompco.co.za/about-us/) states that its Komatipoort Compressor Station has been declared one. Drone flights adjacent to or above a key point need SACAA notice on form CA 101-20 with the controlling authority's permission. Our deliverables leave the security measures at your stations out of every image and report, and we never publish imagery of a client's installations.
+Some stations are national key points: [ROMPCO](https://www.rompco.co.za/about-us/) states that its Komatipoort Compressor Station has been declared one. Drone flights adjacent to or above a key point need SACAA notice on form CA 101-20 with the controlling authority's permission. Our deliverables leave the security measures at your stations out of every image and report, and we never publish imagery of a client's installations without the client's written permission.
 
 [Drone law in South Africa](/za/drone-regulations#sensitive-sites)
 :::

@@ -28,7 +28,7 @@ faq:
   - q: How do you handle the rainy season?
     a: Optical satellite imagery needs clear skies, and the south has a long rainy season, so we plan captures for clearer spells and work from the best recent archive scenes. Radar satellite comparisons can show larger changes, such as clearing and earthworks, even under rainy-season cloud; those flags are then followed up with optical imagery or a drone check.
   - q: Will you publish maps of our line or of the communities along it?
-    a: No. Results go only to the contacts you name, we never publish maps of your assets or of the settlements around them, and military and other sensitive sites are masked. What you share with regulators or host communities is your decision.
+    a: No. Results go only to the contacts you name, we never publish maps of your assets or of the settlements around them without your written permission, and military and other sensitive sites are masked. What you share with regulators or host communities is your decision.
   - q: Do you work on swamp and creek stretches?
     a: Yes, from satellite imagery, which needs no one on site. Structures under dense mangrove or tree canopy can be missed, and small works on water are hard to see, so the report says where the imagery limits what can be shown.
   - q: Can you tell us who is responsible for a site?
@@ -91,7 +91,7 @@ We buffer the route you supply in its UTM zone (31N, 32N or 33N across Nigeria),
 
 After the baseline, the route is re-surveyed on a schedule you agree with us. New and removed structures between dated surveys are flagged automatically and confirmed by a reviewer, with before-and-after views, and your team receives a notice after each survey saying what changed and where. Fresh digging, spoil, trenches and new tracks on or near the line are flagged the same way, so patrols know where to look. They do not replace patrols.
 
-In the dry season, bush burning can run up to above-ground installations such as manifolds, valve stations and pig traps. We send notices of satellite-detected fire hotspots near them, with gas flares masked out, and map the burnt area afterwards.
+In the dry season, bush burning can run up to above-ground installations such as manifolds, valve stations and pig traps. We send notices of satellite-detected fire hotspots near them and map the burnt area afterwards.
 ::::
 ::::col
 ### What you receive
@@ -111,13 +111,13 @@ In the dry season, bush burning can run up to above-ground installations such as
 
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/t9-rating-high" alt="Close satellite view of a pipeline route between km 5.5 and 6.0, with homesteads on both sides of the line inside the 50 m and 100 m bands and reviewer marks on each" caption="A stretch rated high: the T-9 replacement pipeline, Inhambane, Mozambique, km 5.5 to 6.0" badge="Reviewed · manual marks" size="half" credit="Our published sample is from Mozambique, shown with the route owner's permission. Imagery © Google, shown for illustration: it has no capture date and is not delivered survey imagery. Route, bands and marks: AfriScan."}
+:::figure{src="samples/t9-register-high" alt="Strip view of a 500 m pipeline stretch rated high: sixteen reviewer marks inside the area within 100 m of the stretch, two of them within 50 m of the line" caption="A stretch rated high: the T-9 replacement pipeline, Inhambane, Mozambique, km 5.5 to 6.0" badge="Reviewed · manual marks" size="half" credit="Our published sample is from Mozambique, shown with the route owner's permission. Drawn by AfriScan from the sample register; no imagery."}
 :::
 ::::
 ::::col
 ### Reading a register {#reading}
 
-This is how a stretch rated high looks in a delivered register: sixteen structures within 100 m of the line in one 500 m stretch, each marked by a reviewer and listed with its distance and band. On a Nigerian line the same view is measured to your right of way or licence strip, and the report names the imagery used and its capture date.
+This is a stretch rated high in the T-9 sample: sixteen structures within 100 m of one 500 m stretch, each listed with its distance and band. The T-9 sample uses the same register format and rating rule as a delivered survey; its marks were placed by a reviewer on a basemap shown for illustration. On a Nigerian line the same view is measured to your right of way or licence strip, and the report names the imagery used and its capture date.
 
 :::facts{cols="2"}
 - Sample route: 10.78 km, Mozambique
@@ -126,7 +126,7 @@ This is how a stretch rated high looks in a delivered register: sixteen structur
 - Within 100 m: 36 structures
 :::
 
-[See the full sample](/results) · [Request a sample report](/ng/contact?intent=sample-report&country=ng)
+[See the full sample](/results) · [Ask for a redacted sample report](/ng/contact?intent=sample-report&country=ng)
 ::::
 :::::
 
@@ -139,7 +139,7 @@ This is how a stretch rated high looks in a delivered register: sixteen structur
 ::::col
 Crude trunklines such as the Trans-Niger and Trans-Forcados lines cross the swamps, creeks and farmland of the Niger Delta to the export terminals. Gas networks such as the Escravos–Lagos Pipeline System run west towards Lagos, and new gas trunklines such as the Ajaokuta–Kaduna–Kano (AKK) line carry gas north through savannah and growing towns. Each of those settings changes differently: fishing settlements and creek landings in the swamp, farm clearings and new roads on dry land, and fast-growing towns where lines meet the road network.
 
-The survey is set up for the stretch, not for the country. Dense mangrove and tree canopy hide small structures, so swamp stretches lean on reviewer checks and radar comparisons; urban stretches need the finest imagery and the most review; savannah stretches are where new tracks and clearings show best.
+The survey is set up for the stretch, not for the country. Dense mangrove and tree canopy hide small structures, so swamp stretches lean on reviewer checks, with radar comparisons for larger clearing; small structures under canopy can be missed; urban stretches need the finest imagery and the most review; savannah stretches are where new tracks and clearings show best.
 ::::
 ::::col
 ### Planning around the rainy season {#rainy-season}
@@ -154,7 +154,7 @@ Radar satellite comparisons show larger changes, such as clearing, earthworks an
 ::::section{id="niger-delta" eyebrow="Niger Delta lines and facilities" title="Visible signs, flagged for checking" lead="Sites showing visible signs of artisanal refining, and oil-stained or dead vegetation near your pipelines and facilities, mapped and flagged for your security and environment teams to check."}
 :::::columns{split="2-1"}
 ::::col
-Around some Delta lines and facilities the question is not only what has been built, but what the ground shows. From dated imagery, reviewers look for the surface signs that go with artisanal refining sites and oil-impacted ground: clearings with dark-stained soil, pits and small ponds, stained or dead vegetation along a creek or beside the right of way, burn scars, and fresh tracks or landings that lead to them. Satellite-detected fire hotspots near your lines add a second signal, with gas flares masked out.
+Around some Delta lines and facilities the question is not only what has been built, but what the ground shows. From dated imagery, reviewers look for the surface signs that go with artisanal refining sites and oil-impacted ground: clearings with dark-stained soil, pits and small ponds, stained or dead vegetation along a creek or beside the right of way, burn scars, and fresh tracks or landings that lead to them. Satellite-detected fire hotspots near your lines add a second signal.
 
 Each site is flagged with its location, its distance to your line, the imagery date and the reviewer's note on what is visible, so your environment, security and field teams can decide where to check first. Repeat surveys show which sites are new, which have grown and which have gone.
 ::::
@@ -180,7 +180,7 @@ Where oil-impacted land and mangroves are being remediated, dated imagery shows 
 ::::
 ::::col
 :::callout{tone="note" title="The limits"}
-It tracks vegetation cover only. It is not a contamination measurement, a sampling programme or a clean-up certificate, and cloud can delay results. Copernicus Sentinel data are credited in every report.
+It tracks vegetation cover only. It is not a contamination measurement, a sampling programme or a clean-up certificate, and cloud can delay results. Copernicus Sentinel data are credited as their licence requires.
 :::
 ::::
 :::::

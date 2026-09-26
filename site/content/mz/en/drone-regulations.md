@@ -33,6 +33,10 @@ faq:
     a: No. The directive does not permit operations beyond visual line of sight. Corridors are flown in legs within sight of the pilot, up to 500 m away and at or below 400 ft, or from a moving vehicle that keeps the aircraft in sight, which needs geofencing and a demonstration flight.
   - q: Is ANAC the aviation authority?
     a: No. In Mozambique, ANAC is the Administração Nacional das Áreas de Conservação, which manages conservation areas. The civil aviation authority is IACM. A flight over a conservation area needs the written permission of the agency that manages it, as well as IACM's approval.
+cta:
+  title: Planning a drone survey in Mozambique?
+  text: We start from satellite imagery, which needs no flight, while the authorisations each flight needs are arranged. The proposal sets out which ones apply and how they fit the schedule.
+  button: Request a proposal
 ---
 
 ::::section{id="at-a-glance" eyebrow="At a glance" title="Three permissions, from three bodies" lead="The flight, the survey and the data are authorised separately. A drone survey is lawful only when all three are in place, together with the local permissions for each site."}
@@ -52,7 +56,7 @@ The entity for systematic cartography, after hearing Defence and Security, autho
 ::::section{id="who" tone="alt" eyebrow="Who authorises what" title="The bodies, and the rule each applies"}
 | Body | What it authorises or controls | Legal basis |
 |---|---|---|
-| **IACM**, Instituto de Aviação Civil de Moçambique | Aircraft registration, remote pilot licences, operator Letters of Approval, Certificates of Safety, airspace | Lei n.º 5/2016, de 14 de Junho (Lei da Aviação Civil), art. 12(3), as cited in [IACM circular CT-DRE-39-64-001-2024](https://www.iacm.gov.mz/app/uploads/2025/03/CT-DRE1-4.pdf); [DOS-09-2018](https://www.villagereach.org/wp-content/uploads/2019/07/VillageReach-RFP-Amendment-1-UAV-provider-Mozambique.pdf) |
+| **IACM**, Instituto de Aviação Civil de Moçambique. Its 2024 circulars are issued as "Autoridade de Aviação Civil de Moçambique" and keep the IACM acronym and website | Aircraft registration, remote pilot licences, operator Letters of Approval, Certificates of Safety, airspace | Lei n.º 5/2016, de 14 de Junho (Lei da Aviação Civil), art. 12(3), as cited in [IACM circular CT-DRE-39-64-001-2024](https://www.iacm.gov.mz/app/uploads/2025/03/CT-DRE1-4.pdf); [DOS-09-2018](https://www.villagereach.org/wp-content/uploads/2019/07/VillageReach-RFP-Amendment-1-UAV-provider-Mozambique.pdf) |
 | **Minister of National Defence** | Authorises the execution of aerial surveys and aerial filming; classifies and certifies the permitted devices | [Lei n.º 6/2024, art. 13(1)](https://archive.gazettes.africa/archive/mz/2024/mz-government-gazette-series-i-dated-2024-06-04-no-108.pdf) |
 | **Entity for systematic cartography**, after hearing Defence and Security | Authorises supplying and releasing the survey data to the users | Lei n.º 6/2024, art. 13(2) |
 | **CENACARTA**, Centro Nacional de Cartografia e Teledetecção | Coordinates and supervises aerial photographic surveys, requests their authorisation from the defence, security and air-transport bodies, and ensures their results are State property | [Diploma Ministerial n.º 105/2023, art. 6](https://archive.gazettes.africa/archive/mz/2023/mz-government-gazette-series-i-dated-2023-08-08-no-152.pdf) |
@@ -200,7 +204,7 @@ Reproducing and disseminating aerial photographs, photographic mosaics and ortho
 :::
 :::
 
-Sanctions include impoundment of the aircraft, fines, temporary bans and, where sanctions are ignored, the aircraft reverting to the State; civil and criminal liability are preserved (art. 16(2)–(3)). The law itself sets no fine amounts, and its fees are set by regulation (art. 17). The Council of Ministers approved the regulation on 17 December 2024 ([AIM, 17 December 2024](https://aimnews.org/2024/12/17/governo-aprova-regulamento-sobre-comercio-internacional-de-especies-ameacadas-de-extincao/)); obtain its text, fees and fine amounts from the Ministry of National Defence, CENACARTA or counsel.
+Sanctions include impoundment of the aircraft, fines, temporary bans and, where sanctions are ignored, the aircraft reverting to the State; civil and criminal liability are preserved (art. 16(2)–(3)). The law itself sets no fine amounts, and its fees are set by regulation (art. 17). The Council of Ministers approved the regulation on 17 December 2024 ([AIM report on the 17 December 2024 Council of Ministers session](https://aimnews.org/2024/12/17/governo-aprova-regulamento-sobre-comercio-internacional-de-especies-ameacadas-de-extincao/), which covers several of the session's decisions); obtain its text, fees and fine amounts from the Ministry of National Defence, CENACARTA or counsel.
 ::::
 
 ::::section{id="satellite" tone="alt" eyebrow="Satellite imagery" title="Does Lei n.º 6/2024 reach satellite-only work?"}
@@ -230,7 +234,7 @@ The directive allows no flights over military installations. Lei n.º 6/2024 res
 Flying within 5 km of an aerodrome needs a specific approval under the directive, and the Land Law protects a 100 m strip around airports and aerodromes (art. 8(i)). Check each corridor against the aerodromes near it.
 :::
 :::card{title="Conservation areas and the north" icon="tree"}
-Conservation areas are among the directive's restricted areas, so a flight needs the written permission of the managing agency, ANAC. In the northern provinces, expect the Defence authorisation to come with coordination with the security forces and the project's own security (art. 12(2)); satellite work lets the baseline start without a flight.
+Conservation areas are among the directive's restricted areas, so a flight needs the written permission of the agency that manages the area (ANAC for most national conservation areas). In the northern provinces, expect the Defence authorisation to come with coordination with the security forces and the project's own security (art. 12(2)); satellite work lets the baseline start without a flight.
 :::
 :::
 

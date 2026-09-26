@@ -6,18 +6,18 @@
       <p class="footer-note">{{ icon('user-check', 'icon icon-sm') }}<span>{{ t.footer.review }}</span></p>
       <p class="footer-note">{{ icon('drone', 'icon icon-sm') }}<span>{{ t.footer.drones }}</span></p>
     </div>
-    <nav class="footer-nav" aria-label="Footer">
+    <nav class="footer-nav" aria-label="{{ t.labels.footer_nav }}">
       {% if footer.explore %}
-      <div><p class="footer-title">{{ t.footer.explore }}</p><ul>{% for i in footer.explore %}<li><a href="{{ i.href }}">{{ i.label }}</a></li>{% endfor %}</ul></div>
+      <div><p class="footer-title">{{ t.footer.explore }}</p><ul>{% for i in footer.explore %}<li><a href="{{ i.href }}"{% if i.lang %} hreflang="{{ i.lang }}"{% endif %}>{{ i.label }}{% if i.badge %} <span class="lang-badge">{{ i.badge }}</span>{% endif %}</a></li>{% endfor %}</ul></div>
       {% endif %}
       {% if footer.industries %}
-      <div><p class="footer-title">{{ t.footer.industries }}</p><ul>{% for i in footer.industries %}<li><a href="{{ i.href }}">{{ i.label }}</a></li>{% endfor %}</ul></div>
+      <div><p class="footer-title">{{ t.footer.industries }}</p><ul>{% for i in footer.industries %}<li><a href="{{ i.href }}"{% if i.lang %} hreflang="{{ i.lang }}"{% endif %}>{{ i.label }}{% if i.badge %} <span class="lang-badge">{{ i.badge }}</span>{% endif %}</a></li>{% endfor %}</ul></div>
       {% endif %}
       {% if footer.solutions %}
-      <div><p class="footer-title">{{ t.footer.solutions }}</p><ul>{% for i in footer.solutions %}<li><a href="{{ i.href }}">{{ i.label }}</a></li>{% endfor %}</ul></div>
+      <div><p class="footer-title">{{ t.footer.solutions }}</p><ul>{% for i in footer.solutions %}<li><a href="{{ i.href }}"{% if i.lang %} hreflang="{{ i.lang }}"{% endif %}>{{ i.label }}{% if i.badge %} <span class="lang-badge">{{ i.badge }}</span>{% endif %}</a></li>{% endfor %}</ul></div>
       {% endif %}
       {% if footer.how or footer.resources %}
-      <div><p class="footer-title">{{ t.footer.how }}</p><ul>{% for i in footer.how + footer.resources %}<li><a href="{{ i.href }}">{{ i.label }}</a></li>{% endfor %}</ul></div>
+      <div><p class="footer-title">{{ t.footer.how }}</p><ul>{% for i in footer.how + footer.resources %}<li><a href="{{ i.href }}"{% if i.lang %} hreflang="{{ i.lang }}"{% endif %}>{{ i.label }}{% if i.badge %} <span class="lang-badge">{{ i.badge }}</span>{% endif %}</a></li>{% endfor %}</ul></div>
       {% endif %}
       <div>
         {% if footer.countries|length > 1 %}

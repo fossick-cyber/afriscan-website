@@ -163,7 +163,7 @@ Structures, land cover and the imagery history are mapped from dated satellite s
 Re-surveys on the schedule you set show new structures, clearing and construction, confirmed by a reviewer.
 :::
 :::step{title="Deliver to your team"}
-GIS layers and reports go to the contacts you name, with every imagery source and date stated and open data credited.
+GIS layers and reports go to the contacts you name, with every imagery source stated, and its date where the source gives one.
 :::
 :::
 ::::

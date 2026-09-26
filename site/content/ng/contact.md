@@ -15,7 +15,7 @@ faq:
   - q: Do you need a site visit or a drone flight to start?
     a: No. A survey in Nigeria starts from your route or boundary file and dated satellite imagery, open building datasets or imagery you already hold, so nobody travels and no aircraft flies. Drone detail is added only where a stretch needs it, subject to the NCAA and ONSA authorisations each job requires.
   - q: Can we send a route through an insecure area?
-    a: Yes. Satellite work needs no one on site. The route and the results go only to the contacts you name, military and other sensitive sites are masked, and we never publish maps of your assets or of the settlements around them.
+    a: Yes. Satellite work needs no one on site. The route and the results go only to the contacts you name, military and other sensitive sites are masked, and we never publish maps of your assets or of the settlements around them without your written permission.
   - q: Which date can the register reflect?
     a: The date the imagery was captured. For a cut-off date, a handover or the date a line was built, we look for dated scenes close to that date and tell you what exists before you commit. A new capture can be requested when the archive is too old; its date depends on satellite availability and weather.
   - q: Our security department sets rules for any work on the line. Can you follow them?

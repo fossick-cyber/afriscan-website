@@ -14,13 +14,13 @@
             {% if g.key == 'industries' %}
             <ul class="panel-list panel-list--rich">
               {% for i in g['items'] if i.tier == 1 %}
-              <li><a href="{{ i.href }}"{% if i.lang %} hreflang="{{ i.lang }}"{% endif %}>{% if i.icon %}{{ icon(i.icon, 'icon icon-sm') }}{% endif %}<span><strong>{{ i.label }}</strong>{% if i.blurb %}<small>{{ i.blurb }}</small>{% endif %}</span></a></li>
+              <li><a href="{{ i.href }}"{% if i.lang %} hreflang="{{ i.lang }}"{% endif %}>{% if i.icon %}{{ icon(i.icon, 'icon icon-sm') }}{% endif %}<span><strong>{{ i.label }}{% if i.badge %} <span class="lang-badge">{{ i.badge }}</span>{% endif %}</strong>{% if i.blurb %}<small>{{ i.blurb }}</small>{% endif %}</span></a></li>
               {% endfor %}
             </ul>
             {% set more = g['items']|selectattr('tier', 'ne', 1)|list %}
             {% if more %}
             <div class="panel-more"><p class="panel-title">{{ t.nav.more_industries }}</p>
-              <ul class="panel-list">{% for i in more %}<li><a href="{{ i.href }}"{% if i.lang %} hreflang="{{ i.lang }}"{% endif %}>{{ i.label }}</a></li>{% endfor %}</ul>
+              <ul class="panel-list">{% for i in more %}<li><a href="{{ i.href }}"{% if i.lang %} hreflang="{{ i.lang }}"{% endif %}>{{ i.label }}{% if i.badge %} <span class="lang-badge">{{ i.badge }}</span>{% endif %}</a></li>{% endfor %}</ul>
             </div>
             {% endif %}
             {% elif g.key == 'solutions' %}
@@ -29,7 +29,7 @@
               {% set its = g['items']|selectattr('group', 'equalto', sg.key)|list %}
               {% if its %}
               <div><p class="panel-title">{{ sg.name[lang_key] }}</p>
-                <ul class="panel-list">{% for i in its %}<li><a href="{{ i.href }}"{% if i.lang %} hreflang="{{ i.lang }}"{% endif %}>{{ i.label }}</a></li>{% endfor %}</ul>
+                <ul class="panel-list">{% for i in its %}<li><a href="{{ i.href }}"{% if i.lang %} hreflang="{{ i.lang }}"{% endif %}>{{ i.label }}{% if i.badge %} <span class="lang-badge">{{ i.badge }}</span>{% endif %}</a></li>{% endfor %}</ul>
               </div>
               {% endif %}
               {% endfor %}
@@ -39,7 +39,7 @@
             {% else %}
             <ul class="panel-list panel-list--rich">
               {% for i in g['items'] %}
-              <li><a href="{{ i.href }}"{% if i.lang %} hreflang="{{ i.lang }}" lang="{{ i.lang }}"{% endif %}><span><strong>{{ i.label }}</strong>{% if i.blurb %}<small>{{ i.blurb }}</small>{% endif %}</span></a></li>
+              <li><a href="{{ i.href }}"{% if i.lang %} hreflang="{{ i.lang }}" lang="{{ i.lang }}"{% endif %}><span><strong>{{ i.label }}{% if i.badge %} <span class="lang-badge">{{ i.badge }}</span>{% endif %}</strong>{% if i.blurb %}<small>{{ i.blurb }}</small>{% endif %}</span></a></li>
               {% endfor %}
             </ul>
             {% endif %}

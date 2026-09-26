@@ -7,7 +7,14 @@
     100
   ],
   "method": "Reviewer-marked structures (manual review), no automatic detection in this sample",
-  "imagery": "Google satellite basemap, shown for illustration; capture date not supplied by the provider",
+  "imagery": "Marks placed by a reviewer on a web basemap with no capture date; that basemap is not reproduced. Route views use Copernicus Sentinel-2 L2A of 2026-08-02 (10 m), location only.",
+  "sentinel2": {
+    "date": "2026-08-02",
+    "scenes": [
+      "S2B_36KYA_20260802_0_L2A",
+      "S2B_36KYB_20260802_0_L2A"
+    ]
+  },
   "marks_total": 59,
   "within_m": {
     "50": 11,
@@ -157,7 +164,17 @@
     "medium": 6,
     "low": 12
   },
+  "excerpt_km": [
+    5.0,
+    6.5
+  ],
   "register_excerpt": [
+    {
+      "id": "R20",
+      "km": 5.21,
+      "distance_m": 50,
+      "band": "0–50 m"
+    },
     {
       "id": "R21",
       "km": 5.3,
@@ -271,34 +288,48 @@
       "km": 6.09,
       "distance_m": 62,
       "band": "50–100 m"
-    },
-    {
-      "id": "R40",
-      "km": 6.11,
-      "distance_m": 125,
-      "band": "beyond 100 m"
     }
   ],
   "images": {
-    "t9-km5-6": [
-      1536,
-      1536
+    "t9-route-hero": [
+      2400,
+      1350
     ],
-    "t9-hero": [
-      3840,
-      1536
+    "t9-route-ratings": [
+      2142,
+      964
     ],
-    "t9-rating-high": [
-      768,
-      768
+    "t9-register-km5-6": [
+      1798,
+      789
     ],
-    "t9-rating-medium": [
-      768,
-      768
+    "t9-register-high": [
+      1170,
+      934
     ],
-    "t9-rating-low": [
-      768,
-      768
+    "t9-register-medium": [
+      1170,
+      934
+    ],
+    "t9-register-low": [
+      1170,
+      934
+    ],
+    "t9-register-km5-6-pt": [
+      1798,
+      789
+    ],
+    "t9-register-high-pt": [
+      1170,
+      934
+    ],
+    "t9-register-medium-pt": [
+      1170,
+      934
+    ],
+    "t9-register-low-pt": [
+      1170,
+      934
     ]
   },
   "source_job": "corridor_909497cd (manual review, complete)"

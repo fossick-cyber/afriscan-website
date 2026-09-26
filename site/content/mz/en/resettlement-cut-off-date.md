@@ -30,6 +30,10 @@ faq:
     a: Yes. The PDF report is available in Portuguese or English, with maps, the structure register and a photo of each structure, so the same document can go to your team, the district government and the bodies overseeing the process.
   - q: Do you identify the households?
     a: No. We map structures, not people. Where you need a planning figure, we estimate households from structure counts with the assumptions stated, for your team to replace with census data.
+cta:
+  title: Setting a cut-off date?
+  text: Tell us the footprint, the census window and the date the record must reflect. We reply with the dated imagery that exists for it and a written proposal.
+  button: Request a proposal
 ---
 
 ::::section{id="framework" eyebrow="What the rules ask for" title="Mozambique's resettlement regulation, the sector laws and PS5"}
@@ -68,7 +72,7 @@ Re-surveys of the project area and the resettlement villages, with new structure
 :::
 :::
 
-For a route or a line, the same register compares the options first: the alignment that crosses the fewest structures is the one that needs the smallest plan. See [pipelines](key:oil-gas) and [power lines](key:power-utilities) in Mozambique.
+For a route or a line, the same register compares the options first, so the land affected by each option can be weighed; the resettlement process decides what the plan needs. See [pipelines](key:oil-gas) and [power lines](key:power-utilities) in Mozambique.
 ::::
 
 ::::section{id="dated-imagery" eyebrow="The imagery" title="Why the date on the imagery matters"}

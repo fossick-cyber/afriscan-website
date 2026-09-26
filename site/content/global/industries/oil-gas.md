@@ -30,7 +30,7 @@ faq:
   - q: Can you support our class-location or population-density reviews?
     a: Yes. We supply structure counts within the corridor widths and unit lengths your engineers set, with reviewer categories that separate main buildings from outbuildings. The class study and its conclusions stay with your engineers.
   - q: Who sees our route files and results?
-    a: The contacts you name. We never publish a client's route, imagery or results without written permission, and we never publish maps of your assets or of the settlements around them. The T-9 route on this site is shown with the route owner's permission.
+    a: The contacts you name. We never publish a client's route, imagery or results without written permission, and we never publish maps of your assets or of the settlements around them without your written permission. The T-9 route on this site is shown with the route owner's permission.
 cta:
   title: Send us your route file
   text: "KML, KMZ, GeoJSON, Shapefile, GPX or GeoPackage, or we can draw it with you. Tell us the distances that matter and what the record is for, and we reply with a scope, an imagery plan and a written proposal."
@@ -105,9 +105,9 @@ After the baseline, the same route is re-surveyed on a schedule you agree with u
 :::
 ::::
 
-::::section{id="t9-sample" eyebrow="Honest proof" title="What a register looks like: the T-9 sample" lead="A reviewed sample from the T-9 replacement pipeline route in Inhambane Province, Mozambique, shown with the route owner's permission. The marks are shown exactly as the reviewer placed them."}
-:::figure{src="samples/t9-km5-6" alt="Satellite view of the T-9 route between km 5.0 and 6.3, with the route in orange, a red 50 m band, an amber 100 m band and reviewer marks on homesteads on both sides of the line" caption="T-9 replacement pipeline, km 5.0 to 6.3: route, 50 m and 100 m bands, and reviewer marks coloured by band" badge="Reviewed · manual marks" size="narrow" credit="Imagery © Google. The background is a Google satellite basemap shown for illustration: it has no capture date and is not delivered survey imagery. Route, bands, marks and IDs drawn by AfriScan from the review data."}
-Red marks are within 50 m of the line, amber marks between 50 m and 100 m, and teal marks beyond 100 m. The facilities near both ends of this route are the operator's own installations: part of the asset, not encroachment, and not in the register.
+::::section{id="t9-sample" eyebrow="A real sample" title="What a register looks like: the T-9 sample" lead="A reviewed sample from the T-9 replacement pipeline route in Inhambane Province, Mozambique, shown with the route owner's permission. The marks are manual reviewer marks, shown exactly as the reviewer placed them."}
+:::figure{src="samples/t9-register-km5-6" alt="Strip view of the T-9 route between km 5.0 and 6.5: the route as a straight orange line with red 50 m and amber 100 m bands on both sides, and twenty reviewer marks placed by chainage and distance; the three 500 m segments below are rated medium, high and high" caption="T-9 replacement pipeline, km 5.0 to 6.5: reviewer marks by chainage and distance from the line, and the rating of each 500 m" badge="Reviewed · manual marks" size="narrow" credit="Drawn by AfriScan from the sample register; no imagery. Distances across the route drawn at twice the along-route scale."}
+<span class="band band--a">Within 50 m</span> <span class="band band--b">50 to 100 m</span> <span class="band band--c">Beyond 100 m</span> The facilities near both ends of this route are the operator's own installations: part of the asset, not encroachment, and not in the register.
 :::
 
 :::facts{cols="4"}
@@ -225,7 +225,7 @@ Post-event work depends on imagery captured after the event and covers visible d
 
 **Drone surveys.** Orthophotos and elevation models of the stretches that need detail, flown by Afridrone, subject to the permits and authorisations each job requires.
 
-Open building datasets, such as Google Open Buildings, Microsoft Building Footprints and OpenStreetMap, give a first screen across long routes and are credited in every report that uses them. See [imagery and data sources](/imagery) for what each option can and cannot show.
+Open building datasets, such as Google Open Buildings, Microsoft Building Footprints and OpenStreetMap, give a first screen across long routes and are credited as their licences require. See [imagery and data sources](/imagery) for what each option can and cannot show.
 ::::
 ::::col
 :::solutions{keys="imagery,drone-surveys" cols="1"}
@@ -305,7 +305,7 @@ A person checks every automatic result, then each structure is measured, banded 
 :::
 :::
 
-More detail on [how it works](/features), the [methodology](/methodology) and [how we work](/how-we-work), including tenders and supplier onboarding.
+More detail on [how it works](/features), the [methodology](/methodology) and [how we work](/how-we-work), including tenders and supplier forms.
 ::::
 
 ::::section{id="scope" tone="alt" eyebrow="Honest scope" title="What we do, and what we don't"}

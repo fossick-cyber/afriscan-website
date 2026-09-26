@@ -65,7 +65,7 @@ Your own imagery first, then the commercial archives, with the capture date and 
 A new satellite capture for a time window, or a drone survey where one date or more detail matters, subject to the permits each flight requires.
 :::
 :::step{title="Name it in the report"}
-Every report states each image's source and capture date, and open data is credited as its licence requires.
+Every report states each image's source and, where the source provides it, the capture date. Open data is credited as its licence requires.
 :::
 :::
 ::::

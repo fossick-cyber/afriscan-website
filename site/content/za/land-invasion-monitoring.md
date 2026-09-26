@@ -1,14 +1,14 @@
 ---
 key: za-land-invasion
 template: solution
-title: Land Invasion & Servitude Encroachment Mapping | AfriScan
+title: New Structures on Servitude Land, South Africa | AfriScan
 description: New structures, cleared plots and tracks on servitude and reserve land in South Africa, found between dated surveys while they are still few.
-h1: "Land invasion on servitudes: new structures, found while they are few"
-crumb: Land invasion on servitudes
+h1: New structures on servitude land, found while they are few
+crumb: New structures on servitudes
 nav_group: solutions
 nav_subgroup: change
 nav_order: 20
-nav_label: Land invasion on servitudes
+nav_label: New structures on servitudes
 nav_blurb: New structures and cleared ground, found between dated surveys
 summary: Cleared plots, new tracks and new structures on servitude and reserve land, flagged between dated surveys and confirmed by a reviewer.
 icon: compare
@@ -123,7 +123,7 @@ The orange band is the servitude and the triangles are towers. Squares are struc
 | Radar satellite comparisons | Larger changes such as clearing and earthworks, even under rainy-season cloud | Not individual small structures; flagged areas are followed up with optical imagery or a drone check |
 | Drone checks we arrange | Detail on flagged stretches | Subject to the permits and authorisations each job requires; within 50 m of people or structures they need specific SACAA approval ([drone law](/za/drone-regulations#fifty-metres)) |
 
-Every report names its imagery and capture dates, and open data is credited as its licence requires. Map-service basemaps are never passed off as survey imagery.
+Every report names its imagery and, where the source provides it, the capture date. Map-service basemaps are never passed off as survey imagery.
 ::::
 
 ::::section{id="popia" eyebrow="POPIA" title="What the register is for, decided before the first survey"}

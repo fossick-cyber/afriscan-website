@@ -4,15 +4,15 @@ template: country_home
 title: Pipeline Right of Way Monitoring in Nigeria | AfriScan
 description: Structures, excavations and encroachment mapped on pipeline and power-line rights of way in Nigeria, from satellite and drone imagery and reviewed by a person.
 h1: Know what is changing on your right of way, before the next patrol does
-eyebrow: AfriScan Nigeria · Secure your land from the air, remotely
+eyebrow: AfriScan · Nigeria · Secure your land from the air, remotely
 lead: We map the structures, fresh excavations, cleared ground and tracks on the rights of way of your pipelines and power lines in Nigeria, measure each one to the line and show what changed between dated surveys. Satellite first, drone detail under the NCAA and ONSA authorisations each job requires, and a person reviews every result before it reaches you.
 buttons:
   - {label: Send us your route file, intent: proposal}
   - {label: See sample outputs, key: results}
 hero:
-  image: samples/t9-hero
-  alt: Satellite view of a gas pipeline route with 50 m and 100 m bands along the line and reviewer marks on homesteads on both sides
-  credit: "Our published sample, from Mozambique: a reviewed register on the T-9 replacement pipeline, Inhambane Province, with 50 m and 100 m bands and manual reviewer marks. Imagery © Google, shown for illustration."
+  image: samples/t9-route-hero
+  alt: Satellite view of bush, farmland and a gas field in Inhambane Province, Mozambique, with the T-9 pipeline route drawn in orange inside its 100 m band
+  credit: "Our published sample is from Mozambique: the T-9 replacement pipeline route, Inhambane Province, with its 100 m band, on a Copernicus Sentinel-2 scene of 2 August 2026. Contains modified Copernicus Sentinel data 2026."
   chips:
     - {title: "50 · 30 · 11 m", text: "NESIS rights of way for 330, 132 and 33 kV lines"}
     - {title: "Up to 100 ft", text: "Oil Pipelines Act restriction beyond the licence strip"}
@@ -40,7 +40,7 @@ faq:
   - q: Can you detect taps, leaks or oil theft?
     a: No. Imagery cannot see a tap, a leak or the condition of the pipe. We map what is visible at the surface, such as new structures, fresh digging, spoil, new tracks, cleared ground and visible signs of artisanal refining, and flag it for your teams to check.
   - q: Who sees our route and the results?
-    a: Only the contacts you name. We never publish maps of your assets or of the settlements around them, military and other sensitive sites are masked, and the Nigeria Data Protection Act 2023 applies to any personal data in the imagery.
+    a: Only the contacts you name. We never publish maps of your assets or of the settlements around them without your written permission, military and other sensitive sites are masked, and the Nigeria Data Protection Act 2023 applies to any personal data in the imagery.
   - q: Can the register be shared with host communities or regulators?
     a: That is your decision. The register records what stood where, and on which imagery date, so it can support community engagement, compensation enumeration, regulatory reporting and legal processes. Whether a structure is authorised is for you and the authorities to decide, not for us.
 ---
@@ -85,14 +85,14 @@ The operators' own reports show why the record matters. NNPC's monthly report fo
 ::::section{id="receive" eyebrow="What you receive" title="A register your right-of-way, community and GIS teams can use"}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/t9-km5-6" alt="Satellite view of a 1.3 km stretch of a pipeline route with 50 m and 100 m bands; reviewer marks labelled R21 to R40 sit on homesteads on both sides of the line" caption="Sample register view from Mozambique: the T-9 replacement pipeline, Inhambane, km 5.0 to 6.3" badge="Reviewed · manual marks" size="half" credit="Imagery © Google, shown for illustration: it has no capture date and is not delivered survey imagery. Route, bands and marks: AfriScan."}
+:::figure{src="samples/t9-register-km5-6" alt="Strip view of a 1.5 km stretch of the T-9 pipeline route with 50 m and 100 m bands on both sides of the line and twenty reviewer marks, R20 to R39, placed by chainage and distance; below, three 500 m segments rated medium, high and high" caption="Sample register view from Mozambique: the T-9 replacement pipeline, Inhambane, km 5.0 to 6.5" badge="Reviewed · manual marks" size="half" credit="Drawn by AfriScan from the sample register; no imagery."}
 :::
 ::::
 ::::col
 - **Each structure listed** with an ID, its distance to the line, its band, its chainage and its coordinates in WGS84 and in the route's UTM zone (31N, 32N or 33N in Nigeria).
 - **Every 500 m rated** high, medium or low for encroachment density, so the right-of-way team knows where to go first.
 - **Change between dated surveys:** new and removed structures, fresh digging and new tracks, flagged automatically and confirmed by a reviewer.
-- **The imagery named and dated** where the source gives a date, and open data credited as its licence requires.
+- **The imagery named**, and dated where the source gives a date.
 - **A PDF report and GIS layers** in GeoPackage, GeoJSON, KMZ and Shapefile, and an interactive map file that opens in a browser, including in the field.
 
 :::facts
@@ -102,7 +102,7 @@ The operators' own reports show why the record matters. NNPC's monthly report fo
 - Within 100 m: 36
 :::
 
-[See the full sample](/results) · [Request a sample report](/ng/contact?intent=sample-report&country=ng)
+[See the full sample](/results) · [Ask for a redacted sample report](/ng/contact?intent=sample-report&country=ng)
 ::::
 :::::
 ::::
@@ -138,7 +138,7 @@ AfriScan maps what is on the land: structures, cleared ground, excavations and t
 Building datasets and detection models propose; a reviewer confirms, corrects and adds. What the imagery cannot settle is listed for a ground check.
 :::
 :::card{title="Dated and credited" icon="file-check"}
-Every report names its imagery and capture dates. Map-service basemaps are never passed off as survey imagery.
+Every report names its imagery and, where the source provides it, the capture date. Map-service basemaps are never passed off as survey imagery.
 :::
 :::card{title="Scheduled, never “real‑time”" icon="clock"}
 Satellites and drones capture images on particular dates, so re-surveys follow a schedule agreed with you, with a notice of what changed and where.
@@ -174,7 +174,7 @@ Oil and gas contracts in Nigeria run under the Nigerian Oil and Gas Industry Con
 [Nigerian content and procurement notes](/ng/nigerian-content)
 ::::
 ::::col
-We respond to tenders, RFQs and RFPs, and complete supplier onboarding and vendor-qualification forms. Send the documents with your request, together with the portal or format your process uses.
+We respond to tenders, RFQs and RFPs. Send your supplier or prequalification forms with your request; the proposal states which registrations are in place for your contract and which are being arranged. Tell us the portal or format your process uses.
 
 [How we work](/how-we-work) · [Send tender documents](/ng/contact?intent=tender&country=ng)
 ::::

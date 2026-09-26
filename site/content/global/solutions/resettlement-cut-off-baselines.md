@@ -17,7 +17,7 @@ service:
   description: A dated register of the structures in a project footprint at the resettlement cut-off date, with imagery, coordinates, IDs and reviewer categories, and re-surveys after the cut-off date, supporting the census and asset inventory under IFC Performance Standard 5.
 og:
   headline: Resettlement cut-off-date baselines
-  subline: A dated register of the structures in your footprint, to support your census and asset inventory
+  subline: A dated register of the structures in your footprint that supports your census and asset inventory
 cta:
   title: Tell us about your project footprint and census timetable.
   text: Send the footprint or corridor, the planned census window and the date the record must reflect. We reply with an imagery plan and a written proposal.
@@ -38,7 +38,7 @@ faq:
 ::::section{id="what" eyebrow="What it is" title="A dated record of the footprint, before the questions start"}
 :::::columns{split="2-1"}
 ::::col
-Resettlement goes wrong in the gaps: between the ESIA baseline and the census, between the census and the start of works, and between one site visit and the next. New structures appear, some built in good faith and some in the hope of compensation, and without a dated record it is one account against another.
+Resettlement goes wrong in the gaps: between the ESIA baseline and the census, between the census and the start of works, and between one site visit and the next. New structures appear between the baseline, the census and the start of works, and without a dated record it is one account against another.
 
 IFC Performance Standard 5 recognises the problem. It expects a census to "discourage ineligible persons, such as opportunistic settlers, from claiming benefits" (para. 12), and it does not require a client "to compensate or assist those who encroach on the project area after the cut-off date for eligibility, provided the cut-off date has been clearly established and made public" (para. 23). That protection is only as good as your record of what was there.
 
@@ -87,7 +87,7 @@ The register uses the same IDs from start to finish, so the census team, the RAP
 ::::
 ::::col
 :::callout{tone="scope" title="Dated imagery only"}
-A cut-off record is only useful if its date can be shown. Every register names its imagery and capture date. We never build a cut-off record on map-service basemaps, and we tell you in the proposal which dates the imagery plan can realistically reach.
+A cut-off record is only useful if its date can be shown. Every register names its imagery and, where the source provides it, the capture date; a cut-off record is built only on imagery whose date is known. We never build a cut-off record on map-service basemaps, and we tell you in the proposal which dates the imagery plan can realistically reach.
 :::
 
 :::callout{tone="note" title="Portuguese for Mozambique"}
@@ -126,7 +126,7 @@ Every proposal names the services it includes. These are the ones this solution 
 ::::
 :::::
 
-We map structures, not people. Registers and maps of settlements go only to the contacts you name, and we never publish them.
+We map structures, not people. Registers and maps of settlements go only to the contacts you name, and we never publish them without your written permission.
 ::::
 
 ::::section{id="who" eyebrow="Who uses it" title="Resettlement and land teams, and the people who check their work"}

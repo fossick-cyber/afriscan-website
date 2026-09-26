@@ -32,6 +32,10 @@ faq:
     a: No. The satellite layers behind common web maps have no stated capture date, are often a mosaic of several dates, and change without notice. They can help plan fieldwork, but a record that depends on a date has to be built on imagery whose date can be shown.
   - q: Does the register tell us who is eligible for compensation?
     a: No. It records structures visible from above, with IDs, coordinates and imagery dates. Who lives in or uses a structure, who owns it and whether they are eligible are census, inventory and legal questions, answered in the field and through the project's grievance and consultation processes.
+cta:
+  title: Setting a cut-off date?
+  text: Tell us the footprint, the census window and the date the record must reflect. We reply with the dated imagery that exists for it and a written proposal.
+  button: Request a proposal
 ---
 
 ## What the standard asks for {#standard}

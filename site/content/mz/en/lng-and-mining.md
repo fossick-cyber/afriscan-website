@@ -93,7 +93,7 @@ Around sites like these, the line becomes a boundary and the question becomes a 
 :::::
 
 :::callout{tone="scope" title="In the north"}
-Satellite work needs no one on site, so a baseline can start where access is restricted. Results go only to the contacts you name, and we never publish maps of your site or the settlements around it. Any drone or ground element has to fit the project's own security arrangements, the operator's permission and the Defence authorisation for the survey.
+Satellite work needs no one on site, so a baseline can start where access is restricted. Results go only to the contacts you name, and we never publish maps of your site or the settlements around it without your written permission. Any drone or ground element has to fit the project's own security arrangements, the operator's permission and the Defence authorisation for the survey.
 :::
 ::::
 
@@ -125,7 +125,7 @@ For a concession we map the structures inside the boundary and in a ring around 
 ::::section{id="resettlement" tone="alt" eyebrow="Resettlement" title="A dated record before the census, at the cut-off date and after"}
 :::::columns{split="2-1"}
 ::::col
-Mozambique's resettlement regulation starts with identifying and delimiting the area, counting the families affected and recording its current occupation, and asks for at least four public consultations ([Decreto n.º 31/2012](https://documents1.worldbank.org/curated/en/644941485846310129/pdf/SFG2931-REVISED-RP-PORTUGUESE-P161351-Box402883B-PUBLIC-Disclosed-2-1-2017.pdf), arts. 19 and 23). Lenders add IFC Performance Standard 5: a census, and a cut-off date after which people who move into the project area are not entitled to compensation, provided the date has been clearly established and made public ([PS5, para. 23](https://www.ifc.org/content/dam/ifc/doc/2010/2012-ifc-performance-standard-5-en.pdf)).
+Mozambique's resettlement regulation starts with identifying and delimiting the area, counting the families affected and recording its current occupation, and asks for at least four public consultations ([Decreto n.º 31/2012](https://documents1.worldbank.org/curated/en/644941485846310129/pdf/SFG2931-REVISED-RP-PORTUGUESE-P161351-Box402883B-PUBLIC-Disclosed-2-1-2017.pdf), arts. 19 and 23). Lenders add IFC Performance Standard 5: a census and a cut-off date for eligibility. The client "is not required to compensate or assist those who encroach on the project area after the cut-off date for eligibility, provided the cut-off date has been clearly established and made public" ([PS5, para. 23](https://www.ifc.org/content/dam/ifc/doc/2010/2012-ifc-performance-standard-5-en.pdf)).
 
 We count and map the structures in the project area on set dates: before the census to size it, on the cut-off date as a dated record, and after it to show what has appeared since. The census, the consultations and the eligibility decisions stay with your resettlement team.
 

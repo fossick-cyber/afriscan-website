@@ -32,6 +32,11 @@ faq:
     a: Say in the scope what you need to do with it. For purchased satellite scenes, the licence decides who may use and share the imagery; for drone surveys, national law may also control who may receive and publish it, as Mozambique's Lei n.º 6/2024 does. Ask each bidder to state the licence terms and any authorisations for the imagery they will deliver.
   - q: How often should a right of way be re-surveyed?
     a: It depends on how fast the land around it changes and on the imagery supply, not on a fixed rule. Fast-growing peri-urban stretches may justify frequent re-surveys; remote stretches much less often. Ask for a cadence that matches the imagery that can realistically be obtained, and for each re-survey to use the same method and bands as the baseline.
+cta:
+  title: Writing a scope or a tender?
+  text: Send your draft scope or the tender documents. We reply with a written proposal that answers each item, or with the questions the scope still needs to settle.
+  button: Request a proposal
+  intent: tender
 ---
 
 ## Start with what the register is for {#purpose}

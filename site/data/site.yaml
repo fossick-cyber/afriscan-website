@@ -26,7 +26,7 @@ org:
     concessions and project sites from satellite and drone imagery. A person reviews every result
     before delivery, and results are delivered as PDF reports and GIS files.
   disambiguating: >-
-    AfriScan by Afridrone is the remote land and corridor monitoring service of Afridrone (afridr.one).
+    AfriScan is Afridrone’s land and corridor monitoring service; Afridrone (afridr.one) flies the drone work.
     It is not affiliated with Afriscan Construction in South Africa or Afriscan Kenya.
   knows_about:
     - Right-of-way encroachment

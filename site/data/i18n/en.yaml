@@ -36,6 +36,8 @@ cta:
 
 labels:
   faq: Frequently asked questions
+  breadcrumb: Breadcrumb
+  footer_nav: Footer
   related: Also useful
   used_in: Used in
   who_uses: Who uses it
@@ -141,6 +143,7 @@ form:
   error: We could not send your request just now. Sending it another way…
   privacy: Your request reaches us through FormSubmit, a form-delivery service.
   privacy_link: Read the privacy notice.
+  honeypot: Leave this field empty
   subject: New AfriScan enquiry
   next_title: What happens next
   next_steps:
@@ -150,7 +153,7 @@ form:
   send_title: What to send
   send_text: "The route or boundary file (KML, KMZ, GeoJSON, Shapefile, GPX or GeoPackage), the country and province, the distances to check, the date the record must reflect, the deliverables you need and your deadline. No file yet? Describe the location and we can draw the route with you."
   procurement_title: Procurement teams
-  procurement_text: Send your supplier onboarding form or tender documents with your request and we will complete them.
+  procurement_text: Send your supplier or prequalification forms, or the tender documents, with your request. The proposal states which registrations are in place for your contract and which are being arranged.
 
 notfound:
   title: Page not found | AfriScan
@@ -185,3 +188,15 @@ samples:
   within: "Structures within {b} m"
   rating: Rating
   ratings: {high: High, medium: Medium, low: Low}
+
+# How each section is named in this language (country menu, footer, selector, country buttons).
+sites:
+  global: "Global (English)"
+  mz-pt: "Moçambique (Português)"
+  mz-en: "Mozambique (English)"
+  za: "South Africa"
+  ng: "Nigeria"
+
+# Pages in another language that this language's pages link to (menus, footer, breadcrumbs, cards).
+# English pages link only to English pages and the country homes, so this list is empty.
+foreign_pages: {}

@@ -26,6 +26,10 @@ faq:
   - q: Do you deliver the basemap imagery shown in web maps?
     a: No. Map-service basemaps have no stated capture date and their terms do not make them survey imagery. We use them only for internal screening and planning.
 related: [imagery, drone-surveys, insight-satellite-or-drone]
+cta:
+  title: Not sure which imagery your route needs?
+  text: Tell us the date the record must reflect, the length of the route and any imagery you already hold. We reply with an imagery plan and what each option can and cannot show.
+  button: Request a proposal
 ---
 
 ::::section{id="statement" eyebrow="Our imagery statement" title="Every report names its imagery"}
@@ -72,7 +76,7 @@ Automatic structure detection needs very-high-resolution imagery. Coarser open s
 ::::
 
 ::::section{id="open-data" tone="alt" eyebrow="Open data and credits" title="Open datasets we use, and how we credit them"}
-Open data is credited as each licence requires: on this site, and in the reports and GIS files that use it. The full licence and credit text for each dataset is on [data sources and credits](/data-sources).
+Open data is credited as each licence requires. The full licence and credit text for each dataset is on [data sources and credits](/data-sources).
 
 | Dataset | What it gives us | Licence or credit |
 |---|---|---|

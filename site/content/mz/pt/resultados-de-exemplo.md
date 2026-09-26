@@ -11,9 +11,9 @@ nav_order: 10
 nav_label: Exemplo de resultados
 nav_blurb: Uma revisão do traçado do gasoduto T-9, em Inhambane
 eyebrow: Recursos
-lead: Resultados reais de uma revisão feita no traçado do gasoduto de substituição T-9, na província de Inhambane, mostrados com a autorização do proprietário do traçado. As marcações aparecem exactamente como o revisor as registou.
+lead: Resultados reais de uma revisão feita no traçado do gasoduto de substituição T-9, na província de Inhambane, mostrados com a autorização do proprietário do traçado. Todas as marcações são manuais, feitas por um revisor, e aparecem exactamente como foram registadas; a versão pública omite as coordenadas.
 buttons:
-  - {label: Pedir um relatório de exemplo, intent: sample-report}
+  - {label: Pedir o exemplo anonimizado, intent: sample-report}
   - {label: Como trabalhamos, key: how-we-work}
 og:
   headline: Exemplo de um levantamento de ocupações
@@ -25,13 +25,13 @@ cta:
   intent: proposal
 faq:
   - q: Este exemplo é detecção automática?
-    a: Não. Cada marcação deste exemplo foi colocada por um revisor sobre imagens de satélite; não se mostra nenhum resultado de detecção automática. Num levantamento para um cliente, as bases de dados abertas de edifícios e os modelos de segmentação propõem primeiro as construções, e um revisor confirma, corrige e acrescenta.
-  - q: Porque é que as imagens não têm data?
-    a: Esta revisão foi feita sobre um mapa de base de satélite da Google, que não indica quando as imagens foram captadas. Serve para um exemplo e para um rastreio interno, mas não para um registo que tenha de reflectir uma data. Os levantamentos que precisam de data usam imagens datadas, como um levantamento por drone, uma cena de satélite adquirida ou imagens georreferenciadas do cliente.
-  - q: Há construções na imagem sem marcação. Porquê?
-    a: A revisão registou as construções que o revisor confirmou na altura, dentro da área de pesquisa à volta do traçado. Construções sob árvores, coberturas que se confundem com o solo e o que fica fora da área de pesquisa não estão marcados. Um levantamento entregue é revisto sobre as imagens que indica, e o que não se resolve a partir do ar fica listado para verificação no terreno.
-  - q: Porque é que alguns quadrados ficam ligeiramente fora dos telhados?
-    a: As marcações do revisor são pontos. Os quadrados são desenhados à volta de cada ponto para se verem a esta escala, e um ponto colocado na beira de um telhado deixa o quadrado em parte sobre o terreno ao lado. As distâncias são medidas a partir do ponto.
+    a: Não. Cada marcação deste exemplo foi colocada por um revisor; não se mostra nenhum resultado de detecção automática. Num levantamento para um cliente, as bases de dados abertas de edifícios e os modelos de segmentação propõem primeiro as construções, e um revisor confirma, corrige e acrescenta.
+  - q: Porque é que esta página não mostra imagens de perto das construções?
+    a: O revisor marcou este exemplo sobre um mapa de base de satélite de um serviço cartográfico, na nossa ferramenta de revisão. Esses mapas de base não indicam a data de captação e servem apenas para rastreio, por isso nunca os publicamos nem os entregamos como imagens de levantamento. Esta página mostra o próprio registo, em vistas lineares, e o traçado sobre uma cena Copernicus Sentinel-2 datada, para localização. Os levantamentos que precisam de data usam imagens que se podem datar e entregar, como um levantamento por drone, uma cena de satélite adquirida ou imagens georreferenciadas do cliente.
+  - q: Porque é que o registo aparece numa faixa recta?
+    a: A vista linear endireita o traçado. Cada construção fica na sua distância ao longo do traçado e na sua distância à linha, com o lado norte da linha em cima. As distâncias na transversal estão desenhadas com o dobro da escala das distâncias ao longo do traçado, para que as faixas de 50 m e 100 m se leiam bem. É um gráfico do registo, não um mapa.
+  - q: Pode faltar alguma construção no exemplo?
+    a: Sim. A revisão registou as construções que o revisor confirmou na altura, dentro da área de pesquisa à volta do traçado. Construções sob árvores, coberturas que se confundem com o solo e o que fica fora da área de pesquisa não estão marcados. Um levantamento entregue é revisto sobre as imagens que indica, e o que não se resolve a partir do ar fica listado para verificação no terreno.
   - q: As instalações e os poços junto do traçado contam como ocupação?
     a: Não. As instalações perto das duas pontas deste traçado pertencem ao operador do gasoduto. As instalações do próprio operador fazem parte do activo, não são ocupação, e não entram no registo.
 related: [oil-gas, right-of-way-monitoring, change-detection]
@@ -52,33 +52,36 @@ related: [oil-gas, right-of-way-monitoring, change-detection]
 As contagens são cumulativas: «a menos de 100 m» inclui as 11 construções a menos de 50 m. As distâncias são medidas até ao traçado tal como foi fornecido, na respectiva zona UTM (36S). As outras 23 marcações ficam entre os 100 m e o limite da área de pesquisa.
 ::::
 
-::::section{id="mapa" tone="alt" eyebrow="Vista do mapa" title="Como o registo se vê no terreno" lead="O troço mais denso do traçado, onde a linha acompanha uma picada existente entre machambas e habitações. Cada marcação leva a referência usada na tabela abaixo."}
-:::figure{src="samples/t9-km5-6-pt" alt="Vista de satélite do traçado T-9 entre o km 5,0 e o km 6,3, com o traçado a laranja, a faixa de 50 m a vermelho, a faixa de 100 m a âmbar e as marcações do revisor R21 a R40 em habitações dos dois lados da linha" caption="Gasoduto de substituição T-9, km 5,0 a 6,3: traçado, faixas de 50 m e 100 m e marcações do revisor por faixa" badge="Revisto · marcação manual" size="wide" priority="true" credit="Imagens © Google. O fundo é um mapa de base de satélite da Google, mostrado para ilustração: não tem data de captação e não é imagem entregue num levantamento. Traçado, faixas, marcações e referências desenhados pela AfriScan a partir dos dados da revisão."}
-As marcações vermelhas estão a menos de 50 m da linha, as âmbar entre 50 e 100 m e as verde-azuladas além de 100 m.
+::::section{id="mapa" tone="alt" eyebrow="Vista do registo" title="O troço mais denso, construção a construção" lead="Do km 5,0 ao km 6,5, onde a linha acompanha uma picada existente entre machambas e habitações. Cada marcação fica na sua distância ao longo do traçado e na sua distância à linha, e leva a referência usada na tabela abaixo."}
+:::figure{src="samples/t9-register-km5-6-pt" alt="Vista linear do traçado T-9 entre o km 5,0 e o km 6,5: o traçado como uma linha recta cor de laranja, com as faixas de 50 m a vermelho e de 100 m a âmbar dos dois lados, e vinte marcações do revisor, R20 a R39, colocadas pela distância ao longo do traçado e pela distância à linha; em baixo, os três troços de 500 m classificados com densidade média (4), alta (16) e alta (7)" caption="Gasoduto de substituição T-9, km 5,0 a 6,5: marcações do revisor pela distância ao longo do traçado e pela distância à linha, com a classificação de cada troço de 500 m" badge="Revisto · marcação manual" size="wide" priority="true" credit="Desenhado pela AfriScan a partir do registo do exemplo. Sem imagens; as distâncias na transversal estão desenhadas com o dobro da escala longitudinal."}
+<span class="band band--a">Até 50 m</span> <span class="band band--b">50–100 m</span> <span class="band band--c">Além de 100 m</span> O lado norte da linha fica em cima.
 :::
 
 ### Excerto do registo deste troço
 
-A distância ao longo do traçado conta-se a partir do início da linha. O exemplo público omite as coordenadas; o registo entregue dá cada construção em WGS84 e em UTM.
+A distância ao longo do traçado conta-se a partir do início da linha. Este exemplo público omite as coordenadas. O registo entregue a um cliente dá cada construção em WGS84 e em UTM, e segue apenas para os contactos que o cliente indicar.
 
 :::register{data="t9"}
 :::
 ::::
 
 ::::section{id="trocos" eyebrow="Densidade de ocupação" title="Cada troço de 500 m, classificado" lead="A classificação é uma regra de contagem que indica onde enviar primeiro as equipas. Não é uma avaliação de segurança nem de integridade do gasoduto."}
+:::figure{src="samples/t9-route-ratings" alt="O traçado T-9 sobre uma cena de satélite Sentinel-2, com cerca de 10 km desde uma instalação de gás a oeste, passando por uma povoação, até uma zona húmida a leste; o traçado está colorido pela classificação: vermelho nos troços de densidade alta entre o km 4 e o km 6,5, âmbar nos de densidade média e cinzento nos de densidade baixa" caption="Todo o traçado, com cada troço de 500 m colorido pela classificação: vermelho alta, âmbar média, cinzento baixa" size="wide" credit="Traçado sobre uma cena Copernicus Sentinel-2 de 2 de Agosto de 2026 (contém dados Copernicus Sentinel modificados, 2026), mostrada para localização. Com píxeis de 10 m, a cena não mostra construções individuais; as classificações vêm do registo revisto, não desta cena."}
+:::
+
 :::segments{data="t9"}
-Cada troço é classificado a partir das construções dentro da faixa mais larga, neste traçado a de 100 m. Uma construção perto do limite entre dois troços conta nos dois, por isso a soma dos troços é maior do que o total do traçado.
+Cada troço é classificado a partir das construções dentro da faixa mais larga, neste traçado a de 100 m, medida a partir de qualquer ponto do troço. Uma construção perto do limite entre dois troços conta nos dois, por isso a soma dos troços é maior do que o total do traçado. Nas três vistas abaixo, a área contornada é a que a classificação conta; as marcações fora dela aparecem esbatidas.
 :::
 
 :::cards{cols="3"}
-:::figure{src="samples/t9-rating-high-pt" alt="Vista aproximada do km 5,5 ao km 6,0: habitações dos dois lados do traçado, dentro das faixas de 50 m e 100 m" caption="Alta · km 5,5 a 6,0" size="third" credit="Imagens © Google"}
-16 construções a menos de 100 m, onde o traçado passa entre habitações dos dois lados.
+:::figure{src="samples/t9-register-high-pt" alt="Vista linear do km 5,5 ao km 6,0, com densidade alta: dezasseis marcações do revisor dentro da área a menos de 100 m do troço, duas delas a menos de 50 m da linha; duas marcações fora dessa área aparecem esbatidas" caption="Alta · km 5,5 a 6,0" size="third" credit="Vista do registo; mesma escala nas três"}
+16 construções a menos de 100 m do troço, onde o traçado passa entre habitações dos dois lados. Três delas ficam logo depois das pontas do troço e contam também para o troço vizinho.
 :::
-:::figure{src="samples/t9-rating-medium-pt" alt="Vista aproximada à volta do km 9,0: duas marcações do revisor em pequenas parcelas dentro da faixa de 50 m, logo a norte do traçado" caption="Média · à volta do km 9,0" size="third" credit="Imagens © Google"}
-2 construções, ambas dentro da faixa de 50 m: poucas, mas perto da linha. Ficam no limite entre dois troços, por isso os troços do km 8,5 ao 9,0 e do km 9,0 ao 9,5 têm ambos densidade média.
+:::figure{src="samples/t9-register-medium-pt" alt="Vista linear do km 9,0 ao km 9,5, com densidade média: duas marcações do revisor dentro da faixa de 50 m, do lado norte da linha, logo depois do km 9,0" caption="Média · km 9,0 a 9,5" size="third" credit="Vista do registo; mesma escala nas três"}
+2 construções, ambas dentro da faixa de 50 m: poucas, mas perto da linha. Ficam logo depois do km 9,0, por isso o troço do km 8,5 ao 9,0 também tem densidade média.
 :::
-:::figure{src="samples/t9-rating-low-pt" alt="Vista aproximada à volta do km 8,0: o traçado atravessa mato e capim queimado, sem construções dentro de qualquer das faixas" caption="Baixa · km 7,5 a 8,5" size="third" credit="Imagens © Google"}
-Nenhuma construção a menos de 100 m em qualquer dos dois troços: uma faixa desimpedida entre mato e capim queimado.
+:::figure{src="samples/t9-register-low-pt" alt="Vista linear do km 7,5 ao km 8,0, com densidade baixa: as faixas de 50 m e 100 m sem marcações do revisor" caption="Baixa · km 7,5 a 8,0" size="third" credit="Vista do registo; mesma escala nas três"}
+Nenhuma construção a menos de 100 m: a linha atravessa mato e capim queimado.
 :::
 :::
 ::::
@@ -96,7 +99,7 @@ Um mapa autónomo dos resultados que abre num navegador. As camadas de resultado
 :::
 :::
 
-:::cta{title="Quer o relatório de exemplo completo?" text="Podemos enviar o PDF e os ficheiros SIG deste exemplo para que as equipas de SIG e de terras os abram." button="Pedir um relatório de exemplo" intent="sample-report"}
+:::cta{title="Quer abrir os ficheiros antes de uma proposta?" text="Peça o exemplo anonimizado: o relatório e as camadas SIG no formato da entrega, com o traçado generalizado, sem coordenadas e sem imagens de mapas de base, para que as equipas de SIG e de terras vejam como os ficheiros estão organizados." button="Pedir o exemplo anonimizado" intent="sample-report"}
 :::
 ::::
 

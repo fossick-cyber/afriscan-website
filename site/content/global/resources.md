@@ -12,6 +12,10 @@ lead: "Material you can forward to your integrity, land, ESIA and procurement co
 og:
   headline: Resources
   subline: Guides, country rules, a reviewed sample, the method and the FAQ
+cta:
+  title: Scoping a survey?
+  text: Send what you have so far, even a sketch of the route, and the question the record must answer. We reply with a scope and a written proposal.
+  button: Request a proposal
 ---
 
 ::::section{id="guides" eyebrow="Guides" title="Guides for land, integrity and procurement teams" lead="Written to be useful whoever you buy from: what the standards and the imagery can and cannot do, and what to ask for."}
@@ -79,7 +83,7 @@ Every open dataset and model we draw on, its licence and the credit we give.
 Imagery dates, review, bands, change, formats, permits, data and proposals.
 :::
 :::card{title="How we work" icon="clipboard" key="how-we-work"}
-Engagement models, what to send us, tenders, RFQs and supplier onboarding.
+Engagement models, what to send us, tenders, RFQs and supplier forms.
 :::
 :::
 ::::

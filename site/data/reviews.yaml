@@ -1,0 +1,44 @@
+# Human reviews a page needs before it can go live, and the pages published before theirs.
+#
+#   native_pt   every pt-MZ page: a native Mozambican reviewer signs the rendered page off
+#               (architecture.FINAL §6.1(3), §6.3(4)). Front matter: reviewed_on, reviewed_by_role.
+#   counsel     every country drone-law page (template: law) and the pages listed under
+#               counsel_required: counsel for that country reviews it (architecture.FINAL §6.3(5);
+#               ZA and NG brief copy rules). Front matter: counsel_reviewed_on, counsel_reviewed_by_role.
+#
+# The build FAILS on a page that needs a review and has neither the sign-off in its front matter nor
+# an entry below. The entries below are the pages the owner put live before these reviews happened
+# (OWNER_DECISIONS.md, 2026-09-26: "Just make it all live", go live once the automated checks pass);
+# the build prints one WARN per open review. When a real reviewer signs a page off, set the front-matter
+# fields on the page and delete its entry here in the same commit. Never invent a review, a reviewer or
+# a date, and never add a new page here to get it through the build: that needs the owner's decision.
+owner_decision: 2026-09-26
+
+counsel_required:
+  - /mz/pt/zona-de-proteccao-parcial-50-metros
+  - /mz/pt/fornecedor
+
+pending:
+  native_pt:
+    - /mz/pt/
+    - /mz/pt/como-trabalhamos
+    - /mz/pt/contacto
+    - /mz/pt/fornecedor
+    - /mz/pt/gasodutos-e-oleodutos
+    - /mz/pt/gnl-mineracao-e-grandes-projectos
+    - /mz/pt/lei-de-drones
+    - /mz/pt/levantamento-de-ocupacoes
+    - /mz/pt/linhas-de-transporte-de-energia
+    - /mz/pt/monitoria-periodica
+    - /mz/pt/reassentamento-data-de-corte
+    - /mz/pt/resultados-de-exemplo
+    - /mz/pt/sectores
+    - /mz/pt/solucoes
+    - /mz/pt/zona-de-proteccao-parcial-50-metros
+  counsel:
+    /mz/drone-regulations: Mozambican counsel
+    /mz/pt/lei-de-drones: Mozambican counsel
+    /mz/pt/zona-de-proteccao-parcial-50-metros: Mozambican counsel
+    /mz/pt/fornecedor: Mozambican counsel
+    /za/drone-regulations: South African aviation counsel
+    /ng/drone-regulations: Nigerian counsel, after NCAA answers the four written questions on its conflicting figures

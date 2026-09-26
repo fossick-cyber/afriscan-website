@@ -84,7 +84,7 @@ Every proposal names the services it includes. These are the ones this solution 
 :::catalogue{services="S27,S28,S29,S14"}
 :::
 
-Elevation screening uses Copernicus DEM data, and flood-exposure screening uses historical surface-water records such as JRC Global Surface Water, each credited in the report as its licence requires.
+Elevation screening uses Copernicus DEM data, and flood-exposure screening uses historical surface-water records such as JRC Global Surface Water, each credited as its licence requires.
 ::::
 
 ::::section{id="limits" tone="alt" eyebrow="Limits" title="What terrain and flood screening is not"}

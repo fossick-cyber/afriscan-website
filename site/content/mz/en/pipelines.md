@@ -133,10 +133,10 @@ In the dry season, *queimadas* can run up to above-ground installations such as 
 :::
 ::::
 
-::::section{id="t9-sample" eyebrow="Inhambane" title="What a register looks like: the T-9 sample" lead="A reviewed sample from the T-9 replacement pipeline route in Inhambane Province, shown with the route owner's permission. The marks are shown exactly as the reviewer placed them."}
+::::section{id="t9-sample" eyebrow="Inhambane" title="What a register looks like: the T-9 sample" lead="A reviewed sample from the T-9 replacement pipeline route in Inhambane Province, shown with the route owner's permission. The marks are manual reviewer marks, shown exactly as the reviewer placed them."}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/t9-rating-high" alt="Close satellite view of the T-9 route between km 5.5 and 6.0, with homesteads on both sides of the line inside the 50 m and 100 m bands and reviewer marks on each" caption="T-9, km 5.5 to 6.0: rated high, 16 structures within 100 m" badge="Reviewed · manual marks" size="half" credit="Imagery © Google, shown for illustration: it has no capture date and is not delivered survey imagery. Route, bands and marks: AfriScan."}
+:::figure{src="samples/t9-register-high" alt="Strip view of the T-9 route between km 5.5 and 6.0: sixteen reviewer marks inside the area within 100 m of the stretch, two of them within 50 m of the line, on both sides" caption="T-9, km 5.5 to 6.0: rated high, 16 structures within 100 m" badge="Reviewed · manual marks" size="half" credit="Drawn by AfriScan from the sample register; no imagery."}
 :::
 ::::
 ::::col

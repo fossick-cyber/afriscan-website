@@ -33,7 +33,7 @@ faq:
   - q: Podem classificar as construções?
     a: Sim. Um revisor classifica cada construção segundo o que a imagem mostra, como edifício principal, anexo, curral, construção em curso ou tipo de cobertura, e marca à mão onde a detecção automática não chega.
   - q: Como se trata uma reclamação sobre uma construção?
-    a: Para um ponto ou uma reclamação concretos, preparamos uma folha com cada imagem datada que cobre o local, para que a sua equipa veja o que lá existia em cada data. Pode ser reunida num dossiê documental, com impressões digitais dos ficheiros e um carimbo temporal independente, que apoia processos legais e comunitários.
+    a: Para um ponto ou uma reclamação concretos, preparamos uma folha com cada imagem datada que cobre o local, para que a sua equipa veja o que lá existia em cada data. Pode ser reunida num dossiê documental, com um código de verificação (hash SHA-256) de cada ficheiro e um carimbo temporal independente, que apoia processos legais e comunitários.
 ---
 
 ::::section{id="o-que-e" eyebrow="O que é" title="Um registo datado da área do projecto, antes de começarem as perguntas"}
@@ -80,7 +80,7 @@ Para uma reclamação concreta, uma folha com cada imagem datada do local, reuni
 - **A fonte e a data de cada imagem**, no relatório e nos ficheiros.
 - **Estimativas de agregados familiares** a partir das contagens de construções, com os pressupostos indicados, para planear o censo e as consultas.
 - **Um relatório PDF em português** ou em inglês, e camadas SIG para cruzar com o inventário de campo.
-- **Um dossiê documental**, quando for preciso: imagens datadas, registos e mapas com impressões digitais dos ficheiros e um carimbo temporal independente.
+- **Um dossiê documental**, quando for preciso: imagens datadas, registos e mapas com um código de verificação (hash SHA-256) de cada ficheiro e um carimbo temporal independente.
 ::::
 ::::col
 :::callout{tone="scope" title="Imagens com data, sempre"}

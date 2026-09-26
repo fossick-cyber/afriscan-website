@@ -28,6 +28,11 @@ faq:
     a: No. Part 21 lets only Nigerian citizens, permanent residents, Nigerian-incorporated companies whose aircraft are based and primarily used in Nigeria, and government bodies register a drone (21.3.1.1(a)). A foreign-registered drone needs proof of that registration and NCAA authorisation, and foreign operators need NCAA approval under Part 10.8 or a temporary authorisation.
   - q: What do you need from us to prepare a proposal?
     a: The route or boundary file, the states it crosses, the widths or zones to report, the date the record must reflect, the deliverables and the deadline. With a tender, send the documents and tell us the portal, the prequalification category and the Nigerian content requirements your process uses.
+cta:
+  title: Preparing a tender or a supplier file in Nigeria?
+  text: Send the tender documents, the prequalification category and your supplier forms. The proposal answers each requirement and states which registrations are in place for your contract.
+  button: Request a proposal
+  intent: tender
 ---
 
 ::::section{id="summary" eyebrow="In short" title="Four questions every supplier file should answer"}
@@ -118,7 +123,7 @@ Satellite-based mapping involves no flight, so none of the aviation approvals ap
 Imagery of rights of way and project areas can show identifiable homes, so a mapping contract is usually a data-processing contract too. Under the [Nigeria Data Protection Act 2023](https://placng.org/i/wp-content/uploads/2023/06/Nigeria-Data-Protection-Act-2023.pdf), a transfer of personal data out of Nigeria needs a recorded basis that gives adequate protection (s.41), a processor must tell the controller of a breach so that the controller can notify the Commission within 72 hours (s.40), and controllers or processors whose data are of particular value to Nigeria's economy, society or security can be designated "of major importance", which brings registration duties (ss.44 and 65). Put the processing and storage locations, the transfer basis, the breach procedure and the retention period in the contract. More in the [drone-law guide](/ng/drone-regulations#ndpa).
 ::::
 
-::::section{id="ask" tone="alt" eyebrow="For your supplier file" title="What to ask any supplier for, including us" lead="Every item here is something a Nigerian operator, TCN or a lender's adviser can ask to see. Ask for it with the proposal, not after award."}
+::::section{id="ask" tone="alt" eyebrow="For your supplier file" title="What to ask any supplier for" lead="Every item here is something a Nigerian operator, TCN or a lender's adviser can ask to see. Ask for it with the proposal, not after award."}
 :::steps{style="list"}
 :::step{title="The contracting entity"}
 Who signs and invoices: its CAC registration and RC number, its Nigerian ownership, and any Nigerian company it works with on the contract.
@@ -147,7 +152,7 @@ A written statement of what the service does not do: no security services, no le
 Every proposal is scoped to your route or site: the widths and zones to report, the imagery plan and its dates, the method, the review, the deliverables and the schedule. Where a scope includes drone work, the proposal lists the NCAA and ONSA approvals its flights need and when each must be in place. Where it touches the Nigerian content Schedule, the survey-notice question under the Survey Co-ordination Act or the NDPA, the proposal says so, so your compliance team can take a view before award.
 ::::
 ::::col
-We respond to tenders, RFQs and RFPs, and complete supplier onboarding and vendor-qualification forms. Send the documents with your request, and tell us the portal, the prequalification category and the Nigerian content requirements your process uses.
+We respond to tenders, RFQs and RFPs. Send your supplier or prequalification forms with your request; the proposal states which registrations are in place for your contract and which are being arranged. Tell us the portal, the prequalification category and the Nigerian content requirements your process uses.
 
 [How we work](/how-we-work) · [Send tender documents](/ng/contact?intent=tender&country=ng)
 ::::

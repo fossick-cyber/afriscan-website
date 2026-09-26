@@ -4,8 +4,8 @@
     <loc>https://afri-scan.com/mz/</loc>
     <lastmod>2026-09-26</lastmod>
     <image:image><image:loc>https://afri-scan.com/assets/img/diagrams-mz-strips-0cc969f4-1600.jpg</image:loc></image:image>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-km5-6-12b49810-1536.jpg</image:loc></image:image>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-hero-c9562af9-2400.jpg</image:loc></image:image>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-register-km5-6-627e6f1c-1798.jpg</image:loc></image:image>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-route-hero-cf6800bc-2400.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://afri-scan.com/mz/50m-protection-zone</loc>
@@ -26,12 +26,12 @@
   <url>
     <loc>https://afri-scan.com/mz/pipelines</loc>
     <lastmod>2026-09-26</lastmod>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-rating-high-fc339be5-768.jpg</image:loc></image:image>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-register-high-bca97499-1170.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://afri-scan.com/mz/power-lines</loc>
     <lastmod>2026-09-26</lastmod>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-rating-medium-d5b8fce6-768.jpg</image:loc></image:image>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-register-medium-a98f9315-1170.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://afri-scan.com/mz/procurement</loc>
@@ -41,8 +41,8 @@
     <loc>https://afri-scan.com/mz/pt/</loc>
     <lastmod>2026-09-26</lastmod>
     <image:image><image:loc>https://afri-scan.com/assets/img/diagrams-mz-strips-0cc969f4-1600.jpg</image:loc></image:image>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-km5-6-pt-5891d2d6-1536.jpg</image:loc></image:image>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-hero-c9562af9-2400.jpg</image:loc></image:image>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-register-km5-6-pt-07af766a-1798.jpg</image:loc></image:image>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-route-hero-cf6800bc-2400.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://afri-scan.com/mz/pt/como-trabalhamos</loc>
@@ -60,7 +60,7 @@
     <loc>https://afri-scan.com/mz/pt/gasodutos-e-oleodutos</loc>
     <lastmod>2026-09-26</lastmod>
     <image:image><image:loc>https://afri-scan.com/assets/img/diagrams-mz-strips-0cc969f4-1600.jpg</image:loc></image:image>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-km5-6-pt-5891d2d6-1536.jpg</image:loc></image:image>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-register-km5-6-pt-07af766a-1798.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://afri-scan.com/mz/pt/gnl-mineracao-e-grandes-projectos</loc>
@@ -91,10 +91,11 @@
   <url>
     <loc>https://afri-scan.com/mz/pt/resultados-de-exemplo</loc>
     <lastmod>2026-09-26</lastmod>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-km5-6-pt-5891d2d6-1536.jpg</image:loc></image:image>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-rating-high-pt-0452ee56-768.jpg</image:loc></image:image>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-rating-medium-pt-aab7f133-768.jpg</image:loc></image:image>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-rating-low-pt-4a9e9733-768.jpg</image:loc></image:image>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-register-km5-6-pt-07af766a-1798.jpg</image:loc></image:image>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-route-ratings-13013409-2142.jpg</image:loc></image:image>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-register-high-pt-22ed81bd-1170.jpg</image:loc></image:image>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-register-medium-pt-0f1a1727-1170.jpg</image:loc></image:image>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-register-low-pt-949bcb4a-1170.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://afri-scan.com/mz/pt/sectores</loc>

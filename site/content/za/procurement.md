@@ -30,6 +30,11 @@ faq:
     a: Tell us which imagery and on what terms. SANSA announced a single-licence, multi-user model for government imagery procurement in February 2026. Whether that licence allows a contractor to process the imagery for you is a question for its terms; where it does, we work on the imagery you supply rather than buying new scenes.
   - q: What do you need from us to prepare a proposal?
     a: The route, network or boundary file, the province, the servitude widths or zones to report, the date the record must reflect, the deliverables and the deadline. With a tender, send the documents, the portal and the reference number your process uses.
+cta:
+  title: Preparing a tender or a supplier file?
+  text: Send the tender or RFQ documents, the deadline and your supplier forms. The proposal answers each requirement and states which registrations are in place for your contract.
+  button: Request a proposal
+  intent: tender
 ---
 
 ::::section{id="summary" eyebrow="In short" title="Five questions every supplier file should answer"}
@@ -137,14 +142,14 @@ SANSA announced a single-licence, multi-user model for government satellite imag
 - An imagery statement: sources, capture dates, licence terms and credits
 - For any drone element: the company that will fly it, with its UASOC, OpSpec and Air Service Licence details
 - The data terms: who receives the results, where imagery and results are processed and stored, and for how long
-- Sample outputs, and a sample report on request
-- Written answers to your vendor-qualification questionnaire
+- Sample outputs, and a redacted sample report on request
+- A statement of which registrations are in place for your contract and which are being arranged
 :::
 ::::
 ::::col
 Tell us which registrations and certificates your process requires, and the reference of the tender or RFQ. The proposal names the entity that will contract and answers each requirement in writing.
 
-We respond to RFQs, tenders and requests for information, and complete supplier onboarding forms.
+We respond to RFQs, tenders and requests for information. Send your supplier or prequalification forms with your request; the proposal states which registrations are in place for your contract and which are being arranged.
 
 [Send tender documents](/za/contact?intent=tender&country=za) · [How we work](/how-we-work)
 ::::

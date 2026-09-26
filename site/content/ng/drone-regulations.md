@@ -35,6 +35,10 @@ faq:
     a: Only with a special authorisation. Part 21 lists "areas of high RF transmission/interference (e.g. radar sites, high tension wires)" among the operations that need one, requested at least 30 days ahead (21.9.6.21). Plan for it on any flight along a transmission line, or start from satellite imagery.
   - q: What happens after an incident?
     a: The operator notifies NCAA by the quickest available means, and a written report is due within 72 hours (21.9.6.19). Accidents also go to the Nigerian Safety Investigation Bureau (NSIB).
+cta:
+  title: Planning a drone survey in Nigeria?
+  text: We start from satellite imagery, which needs no flight, while the approvals each flight needs are arranged. The proposal sets out which ones apply and how they fit the schedule.
+  button: Request a proposal
 ---
 
 ::::section{id="at-a-glance" eyebrow="At a glance" title="Six things a commercial survey flight needs" lead="A drone survey in Nigeria is lawful only when every one of these is in place for that job. Most take weeks to arrange, so they belong in the plan from the first day."}

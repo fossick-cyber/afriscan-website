@@ -92,6 +92,7 @@ class Build:
         self.rules = load_yaml(SITE / "data/rules.yaml")
         self.glossary = load_yaml(SITE / "data/glossary/pt-MZ.yaml")
         self.redirects = load_yaml(SITE / "data/redirects.yaml")
+        self.reviews = load_yaml(SITE / "data/reviews.yaml")
         self.icons = load_yaml(SITE / "data/icons.yaml")
         self.law = {p.stem: load_yaml(p) for p in sorted(Path(law_dir).glob("*.yaml"))}
         self.samples = {p.stem: json.loads(p.read_text(encoding="utf-8"))
@@ -167,8 +168,6 @@ class Build:
             raise ContentError(f"{where}: no data/law/{meta['law']}.yaml for this law page")
         if template == "article" and not meta.get("published"):
             raise ContentError(f"{where}: an article needs 'published: YYYY-MM-DD'")
-        if lk == "mz-pt" and not meta.get("reviewed_on"):
-            self.warn(f"{url}: Portuguese page awaiting native Mozambican review (no reviewed_on)")
         return dict(meta=meta, body=body, src=f, where=where, loc_key=lk, loc=loc, t=self.i18n[loc["i18n"]],
                     slug=slug, url=url, abs_url=self.base + url, out=out, key=key, template=template,
                     status=status, hub=hub, section=section, title=meta["title"].strip(),
@@ -198,6 +197,23 @@ class Build:
             return cat["name"][lang]
         return p["h1"]
 
+    def label_in(self, q, lk, text=False):
+        """How page q is named where section lk links to it. A page in another language takes its label
+        (and card text) from that section's i18n `foreign_pages.<key>`; a missing entry fails the build,
+        so no English label reaches a Portuguese menu, footer, breadcrumb or card unnoticed."""
+        loc = self.locales[lk]
+        if q["lang2"] == loc["lang"][:2]:
+            return (self.label_of(q), q["meta"].get("summary") or q["description"]) if text else self.label_of(q)
+        fp = (self.i18n[loc["i18n"]].get("foreign_pages") or {}).get(q["key"]) or {}
+        if not fp.get("label") or not fp.get("blurb"):
+            self.err(f"data/i18n/{loc['i18n']}.yaml: foreign_pages.{q['key']} needs a label and a blurb "
+                     f"({q['url']} is linked from {lk} pages)")
+        label = fp.get("label") or self.label_of(q)
+        return (label, fp.get("blurb") or q["description"]) if text else label
+
+    def site_label(self, lk, viewer_lk):
+        return self.i18n[self.locales[viewer_lk]["i18n"]]["sites"][lk]
+
     def hub_page(self, group, lk):
         return self.hubs.get((group, lk)) or (self.hubs.get((group, "global")) if lk != "global" else None)
 
@@ -215,6 +231,8 @@ class Build:
         return href + ("?" + "&".join(f"{k}={v}" for k, v in q.items()) if q else "")
 
     def fmt_date(self, d, t):
+        if isinstance(d, int) or (isinstance(d, str) and re.fullmatch(r"\d{4}", d)):
+            return str(d)                       # year only, e.g. an Act known by its year and number
         if isinstance(d, str):
             d = dt.date.fromisoformat(d)
         return t["date_format"].format(d=d.day, month=t["months"][d.month - 1], y=d.year)
@@ -272,7 +290,7 @@ class Build:
         for lk in self.live_locales:
             target = self.find(p["key"], lk) or self.home_of(lk)
             loc = self.locales[lk]
-            links.append({"key": lk, "label": loc["label"], "lang": loc["lang"], "href": target["url"],
+            links.append({"key": lk, "label": self.site_label(lk, p["loc_key"]), "lang": loc["lang"], "href": target["url"],
                           "current": lk == p["loc_key"]})
         return links
 
@@ -292,14 +310,14 @@ class Build:
         if section:
             hub = self.hubs.get((section, lk)) or (self.hubs.get((section, "global")) if lk == "global" else None)
             if hub and hub is not p:
-                crumbs.append({"name": self.label_of(hub), "url": hub["url"]})
+                crumbs.append({"name": self.label_in(hub, lk), "url": hub["url"]})
         parent = p["meta"].get("parent")
         if parent:
             pp = self.resolve(parent, lk)
             if not pp:
                 self.err(f"{p['url']}: parent '{parent}' is not a built page key")
             elif pp["url"] not in {c["url"] for c in crumbs}:
-                crumbs.append({"name": self.label_of(pp), "url": pp["url"]})
+                crumbs.append({"name": self.label_in(pp, lk), "url": pp["url"]})
         crumbs.append({"name": self.label_of(p), "url": p["url"]})
         return crumbs
 
@@ -310,9 +328,14 @@ class Build:
         page_lang = self.locales[lk]["lang"]
 
         def item(p, label=None, blurb=None, **kw):
+            foreign = p["lang2"] != page_lang[:2]
+            if foreign and label is None:           # a page in another language: label from i18n foreign_pages
+                label, fblurb = self.label_in(p, lk, text=True)
+                blurb = fblurb if blurb is None else blurb
             d = {"label": label or self.label_of(p), "href": p["url"],
                  "blurb": blurb if blurb is not None else p["meta"].get("nav_blurb", ""),
-                 "lang": p["lang"] if p["lang2"] != page_lang[:2] else None}
+                 "lang": p["lang"] if foreign else None,
+                 "badge": t["nav"]["lang_badge"] if foreign and label and kw.get("key") else None}
             d.update(kw)
             return d
 
@@ -349,7 +372,7 @@ class Build:
                     seen.add(p["key"])
                     items.append(item(p))
             if gname == "countries":
-                homes = [item(self.home_of(k), self.locales[k]["label"], "", lang=None if self.locales[k]["lang"][:2] == page_lang[:2] else self.locales[k]["lang"])
+                homes = [item(self.home_of(k), self.site_label(k, lk), "", lang=None if self.locales[k]["lang"][:2] == page_lang[:2] else self.locales[k]["lang"])
                          for k in self.live_locales if k != "global"]
                 items = homes + items
             hub = self.hub_page(gname, lk)
@@ -557,7 +580,7 @@ class Build:
         limit = int(b.attrs.get("limit", 0) or 0)
         if limit:
             items = items[:limit]
-        cards = [{"title": self.label_of(q), "text": q["meta"].get("summary") or q["description"], "href": q["url"],
+        cards = [{"title": self.label_in(q, lk), "text": self.label_in(q, lk, text=True)[1], "href": q["url"],
                   "icon": q["meta"].get("icon"), "date": q["meta"].get("published")} for q in items]
         return {"cards": cards}
 
@@ -605,7 +628,7 @@ class Build:
             target = self.find(p["key"], k) if match else None
             if not target or target["noindex"]:
                 target = self.home_of(k)
-            sites.append({"label": self.locales[k]["label"], "href": target["url"], "lang": self.locales[k]["lang"]})
+            sites.append({"label": self.site_label(k, p["loc_key"]), "href": target["url"], "lang": self.locales[k]["lang"]})
         return {"sites": sites}
 
     def cmp_segments(self, p, b, ctx):
@@ -657,7 +680,8 @@ class Build:
                     fmt_date=lambda d: self.fmt_date(d, p["t"]), assets=self.asset_urls,
                     lang_key="pt" if p["lang2"] == "pt" else "en", catalogue=self.catalogue,
                     resolve=lambda k: self.resolve(k, lk), footer=self.footers[lk], today=self.today,
-                    region_js=self.region_js_url, thanks_url=self.thanks_url(p), label_of=self.label_of)
+                    region_js=self.region_js_url, thanks_url=self.thanks_url(p),
+                    label_of=lambda q: self.label_in(q, lk))
 
     def thanks_url(self, p):
         if p["lang2"] == "pt" and self.home_of("mz-pt"):
@@ -667,13 +691,13 @@ class Build:
     def footer_for(self, lk):
         nav = self.navs[lk]
         g = {x["key"]: x for x in nav}
-        explore = [{"label": x["label"], "href": x["href"]} for x in nav]
+        explore = [{"label": x["label"], "href": x["href"], "lang": None, "badge": None} for x in nav]
         return {"explore": explore,
                 "industries": g.get("industries", {}).get("items", []),
                 "solutions": self.footer_solutions(g.get("solutions", {}).get("items", [])),
                 "how": g.get("how", {}).get("items", []),
                 "resources": g.get("resources", {}).get("items", []),
-                "countries": [{"label": self.locales[k]["label"], "href": self.home_of(k)["url"],
+                "countries": [{"label": self.site_label(k, lk), "href": self.home_of(k)["url"],
                                "lang": self.locales[k]["lang"]} for k in self.live_locales]}
 
     def footer_solutions(self, items):
@@ -694,8 +718,8 @@ class Build:
                     continue          # catalogue item without a page yet: skip quietly
                 self.err(f"{p['url']}: related key '{k}' is not a built page")
                 continue
-            cards.append({"title": cat["name"][lang] if cat else self.label_of(tp),
-                          "text": cat["blurb"][lang] if cat else tp["description"],
+            cards.append({"title": cat["name"][lang] if cat else self.label_in(tp, p["loc_key"]),
+                          "text": cat["blurb"][lang] if cat else self.label_in(tp, p["loc_key"], text=True)[1],
                           "href": tp["url"], "icon": (cat or {}).get("icon") or tp["meta"].get("icon")})
         return cards
 
@@ -719,7 +743,7 @@ class Build:
                 continue
             found.append((rank, a["meta"].get("nav_order", 50), a["title"], a))
         found.sort(key=lambda x: x[:3])
-        return [{"title": self.label_of(a), "text": a["meta"].get("summary") or a["description"], "href": a["url"],
+        return [{"title": self.label_in(a, p["loc_key"]), "text": a["meta"].get("summary") or a["description"], "href": a["url"],
                  "icon": a["meta"].get("icon"), "eyebrow": a["meta"].get("eyebrow")} for *_, a in found[:6]]
 
     def country_row(self, p):
@@ -734,7 +758,7 @@ class Build:
             target = self.find(p["key"], k)
             if not target or target["noindex"]:
                 target = self.home_of(k)
-            sites.append({"label": self.locales[k]["label"], "href": target["url"], "lang": self.locales[k]["lang"]})
+            sites.append({"label": self.site_label(k, p["loc_key"]), "href": target["url"], "lang": self.locales[k]["lang"]})
         return sites
 
     def written_for(self, p):
@@ -830,7 +854,11 @@ class Build:
         region = p["loc"]["country_name"] or ""
         head = og.get("headline") or p["h1"]
         sub = og.get("subline") or p["t"]["footer"]["review"]
-        name = brand.card(self.dist / "assets/og", p["url"], head, sub, region, self.font, CACHE_DIR / "og")
+        try:
+            name = brand.card(self.dist / "assets/og", p["url"], head, sub, region, self.font, CACHE_DIR / "og")
+        except brand.CardTextError as e:
+            self.err(f"{p['url']}: {e} (og.headline / og.subline in the front matter)")
+            return {"url": f"{self.base}/assets/og/missing.jpg", "alt": og.get("alt") or head}
         return {"url": f"{self.base}/assets/og/{name}", "alt": og.get("alt") or head}
 
     # ------------------------------------------------------------------ JSON-LD
@@ -1246,13 +1274,59 @@ class Build:
                 if p["t"]["law"]["not_advice"] not in htmllib.unescape(p["html"]):
                     self.err(f"{p['url']}: law page must show the not-legal-advice line")
 
+    def check_reviews(self, pages):
+        """Native-PT and counsel reviews (data/reviews.yaml): a page that needs one and has neither the
+        sign-off in its front matter nor an entry on the owner's pending list fails the build."""
+        rv = self.reviews
+        pending = rv.get("pending") or {}
+        pt_pending, counsel_pending = set(pending.get("native_pt") or []), dict(pending.get("counsel") or {})
+        counsel_required = set(rv.get("counsel_required") or [])
+        seen = set()
+        for p in pages:
+            if p["status"] != "published":
+                continue
+            m, url = p["meta"], p["url"]
+            needs = []
+            if p["lang"] == "pt-MZ":
+                needs.append(("native_pt", "reviewed_on", "reviewed_by_role", pt_pending,
+                              "a native Mozambican review"))
+            if p["template"] == "law" or url in counsel_required:
+                needs.append(("counsel", "counsel_reviewed_on", "counsel_reviewed_by_role", counsel_pending,
+                              "a counsel review"))
+            for kind, on, by, pend, what in needs:
+                seen.add((kind, url))
+                if m.get(on):
+                    if not m.get(by):
+                        self.err(f"{url}: {on} is set without {by}")
+                    if url in pend:
+                        self.err(f"{url}: signed off ({on}) but still listed under pending.{kind} in data/reviews.yaml")
+                elif url in pend:
+                    self.warn(f"{url}: published before {what} (owner decision {rv.get('owner_decision')}; "
+                              f"data/reviews.yaml pending.{kind})")
+                else:
+                    self.err(f"{url}: needs {what} before it is published: set {on} and {by} after a real "
+                             f"sign-off, or keep it status: draft (data/reviews.yaml)")
+        for kind, pend in (("native_pt", pt_pending), ("counsel", counsel_pending)):
+            for url in sorted(pend):
+                if (kind, url) not in seen:
+                    self.warn(f"data/reviews.yaml: pending.{kind} lists {url}, which is not a published page that needs it")
+
+    def check_deploy_config(self):
+        """Cloudflare Pages must serve dist/, not the repository root (site/ sources would be public)."""
+        cfg = ROOT / "wrangler.toml"
+        if self.dist.resolve() != (ROOT / "dist").resolve():
+            return
+        text = cfg.read_text(encoding="utf-8") if cfg.exists() else ""
+        if not re.search(r'(?m)^pages_build_output_dir\s*=\s*"\./dist"\s*$', text):
+            self.err('wrangler.toml at the repository root must set pages_build_output_dir = "./dist"')
+
     # ------------------------------------------------------------------ main
     def check_i18n(self):
         def keys(d, pre=""):
             out = set()
             for k, v in d.items():
                 out.add(pre + k)
-                if isinstance(v, dict):
+                if isinstance(v, dict) and pre + k != "foreign_pages":   # each language lists its own
                     out |= keys(v, pre + k + ".")
             return out
 
@@ -1265,6 +1339,8 @@ class Build:
     def run(self):
         self.check_i18n()
         pages = self.read_pages()
+        self.check_reviews(pages)
+        self.check_deploy_config()
         if self.dist.exists():
             shutil.rmtree(self.dist)
         self.dist.mkdir(parents=True)
@@ -1401,6 +1477,23 @@ def selftest():
         print(f"{'PASS' if hit else 'FAIL'}  {'near-duplicate':15s} {hit[0][:105] if hit else 'no error raised'}")
         if not hit:
             failed.append("near-duplicate")
+        # whole new pages: a Portuguese page nobody has reviewed, a law page without counsel review, and a
+        # social-card headline too long to fit (the card must never drop words)
+        new_pages = {
+            "pt-unreviewed": ("mz/pt/pagina-nova.md", "---\ntitle: Página nova de teste | AfriScan\ndescription: Uma página portuguesa nova, sem revisão de um falante nativo, que a construção tem de recusar.\nh1: Página nova\n---\nTexto.\n", "needs a native Mozambican review"),
+            "law-unreviewed": ("za/drone-rules-copy.md", "---\ntitle: Drone Rules Copy for Testing | AfriScan\ndescription: A second South African law page with no counsel review, which the build must refuse to publish.\nh1: Drone rules copy\ntemplate: law\nlaw: za\n---\nText.\n", "needs a counsel review"),
+            "og-overflow": ("global/og-test.md", "---\ntitle: Social Card Overflow Test | AfriScan\ndescription: A page whose social-card headline is far too long to fit, which the build must refuse rather than cut.\nh1: Card test\nog:\n  headline: " + "A very long headline that goes on and on " * 4 + "\n---\nText.\n", "social card headline does not fit"),
+        }
+        for name, (rel, text, expect) in new_pages.items():
+            content = tmp / name / "content"
+            shutil.copytree(SITE / "content", content)
+            (content / rel).write_text(text, encoding="utf-8")
+            b = Build(content_dir=content, dist=tmp / name / "dist", quiet=True)
+            code = b.run()
+            hit = [e for e in b.errors if expect in e]
+            print(f"{'PASS' if code == 1 and hit else 'FAIL'}  {name:15s} {(hit or b.errors or ['no error raised'])[0][:105]}")
+            if not (code == 1 and hit):
+                failed.append(name)
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     print("selftest:", "all guards fired" if not failed else f"FAILED {failed}")

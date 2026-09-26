@@ -85,7 +85,7 @@ The comparison is an input to route selection, not the decision. It does not pro
 ::::col
 When the alignment is chosen, we produce a dated register of the structures on it: each with an ID, coordinates, distance to the centreline, band and, where scoped, a reviewer's category such as main building, outbuilding, livestock enclosure or under construction. Categories describe what the imagery shows; they do not establish use, ownership or value, and compensation needs ground verification.
 
-Where you supply the cadastral parcels, the register is also cut by property, so each landowner conversation starts from the same dated list. During negotiations, the route is re-surveyed on a schedule you set, and new structures are flagged and confirmed by a reviewer.
+Each landowner conversation can then start from the same dated list. During negotiations, the route is re-surveyed on a schedule you set, and new structures are flagged and confirmed by a reviewer.
 ::::
 ::::col
 :::callout{tone="note" title="For lender-financed lines"}
@@ -117,7 +117,6 @@ Where a line still needs authorisation, it runs under NEMA and the EIA Regulatio
 - Maps of each option with the structures coloured by band
 - Imagery history for contested parcels, with the dates of the scenes used
 - Once the route is fixed, a dated structure register with IDs, coordinates and, where scoped, reviewer categories
-- Extracts by property, where you supply the cadastral parcels
 - Estimated households with the assumptions stated, on request
 - A PDF report and GeoPackage, GeoJSON, KMZ and Shapefile layers
 :::

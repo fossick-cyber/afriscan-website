@@ -11,7 +11,7 @@ nav_order: 45
 nav_label: Compras e conformidade
 nav_blurb: Concursos, conteúdo local, dados e autorizações de drone
 eyebrow: Para equipas de compras
-lead: Esta página reúne o que uma equipa de compras, de conformidade ou de conteúdo local precisa de saber antes de contratar um levantamento em Moçambique, e o que pode pedir na proposta. Respondemos a concursos, pedidos de cotação e pedidos de proposta, e preenchemos os formulários de registo e de qualificação de fornecedores.
+lead: Esta página reúne o que uma equipa de compras, de conformidade ou de conteúdo local precisa de saber antes de contratar um levantamento em Moçambique, e o que pode pedir na proposta. Respondemos a concursos, pedidos de cotação e pedidos de proposta. Envie os formulários de registo ou de pré-qualificação de fornecedores com o pedido; a proposta indica que registos já estão feitos para o seu contrato e quais estão a ser tratados.
 buttons:
   - {label: Enviar documentos do concurso, intent: tender}
   - {label: Pedir proposta, intent: proposal}
@@ -27,8 +27,8 @@ cta:
 faq:
   - q: Respondem no formato do nosso concurso?
     a: Sim. Envie o caderno de encargos, os termos de referência ou o pedido de cotação, e respondemos no formato pedido, com o âmbito, o plano de imagens, o método, os produtos a entregar e o calendário.
-  - q: Preenchem questionários de qualificação de fornecedores?
-    a: Sim. Envie os formulários de registo, de qualificação ou de conformidade com o pedido, e devolvemo-los preenchidos com a proposta.
+  - q: E os questionários de qualificação de fornecedores?
+    a: Envie-os com o pedido, juntamente com os formulários de registo ou de conformidade. A proposta indica que registos já estão feitos para o seu contrato e quais estão a ser tratados.
   - q: Os levantamentos por satélite estão abrangidos pelas regras de conteúdo local?
     a: A Lei n.º 9/2026 aplica-se aos projectos de petróleo e gás e às entidades que contratam com eles, e inclui os «serviços de topografia» no regime de exclusividade. Se um levantamento por satélite ou por drone cabe nessa categoria num contrato concreto é uma questão para a sua equipa jurídica; a proposta descreve o serviço com o detalhe necessário para essa avaliação.
   - q: Que autorizações precisa um trabalho com drone?
@@ -43,7 +43,7 @@ faq:
 Respondemos a concursos, manifestações de interesse, pedidos de cotação e pedidos de proposta, no formato que o processo pede.
 :::
 :::card{title="Registo e qualificação" icon="clipboard"}
-Preenchemos os formulários de registo e de qualificação de fornecedores e os questionários de conformidade que acompanham o pedido.
+Envie os formulários de registo, de qualificação e de conformidade com o pedido. A proposta indica que registos já estão feitos para o seu contrato e quais estão a ser tratados.
 :::
 :::card{title="Uma proposta escrita" icon="check"}
 Cada proposta descreve o âmbito, o plano de imagens, o método, os produtos a entregar e o calendário, e, nos trabalhos com drone, as autorizações necessárias.
@@ -82,7 +82,7 @@ A [Lei n.º 9/2026, de 3 de Junho](https://www.inp.gov.mz/wp-content/uploads/202
 ::::section{id="dados" eyebrow="Dados" title="Como tratamos os dados do seu projecto"}
 :::cards{cols="3"}
 :::card{title="Nada publicado sem autorização" icon="lock"}
-Nunca publicamos o traçado, as imagens ou os resultados de um cliente sem autorização escrita, nem mapas dos seus activos ou dos assentamentos à volta deles.
+Sem a sua autorização escrita, nunca publicamos o traçado, as imagens ou os resultados de um cliente, nem mapas dos seus activos ou dos assentamentos à volta deles.
 :::
 :::card{title="Construções, não pessoas" icon="shield"}
 Os registos descrevem construções, terreno desmatado, escavações e picadas. Não incluem nomes, proprietários nem ocupantes.

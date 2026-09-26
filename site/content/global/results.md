@@ -10,9 +10,9 @@ nav_order: 10
 nav_label: Sample outputs
 nav_blurb: A reviewed sample from the T-9 pipeline route in Mozambique
 eyebrow: Resources
-lead: Real outputs from a reviewed sample on the T-9 replacement pipeline route in Inhambane Province, Mozambique, shown with the route owner's permission. The marks are shown exactly as the reviewer recorded them.
+lead: Real outputs from a reviewed sample on the T-9 replacement pipeline route in Inhambane Province, Mozambique, shown with the route owner's permission. Every mark is a reviewer's manual mark, drawn exactly as recorded, and the public version leaves out coordinates.
 buttons:
-  - {label: Request a sample report, intent: sample-report}
+  - {label: Ask for a redacted sample report, intent: sample-report}
   - {label: How the method works, key: methodology}
 og:
   headline: Sample encroachment survey outputs
@@ -24,13 +24,13 @@ cta:
   intent: proposal
 faq:
   - q: Is this sample automatic detection?
-    a: No. Every mark in this sample was placed by a reviewer on satellite imagery; no automatic detection result is shown. On a client survey, open building datasets and segmentation models propose structures first and a reviewer confirms, corrects and adds to them. See [how we detect, review and measure structures](/methodology).
-  - q: Why is the imagery not dated?
-    a: This sample was reviewed on a Google satellite basemap, which does not state when its images were captured. That is fine for a sample and for internal screening, but not for a record that must reflect a date. Client surveys that need a date use dated imagery, such as a drone survey, a purchased satellite scene or your own georeferenced imagery.
-  - q: Some structures on the imagery have no mark. Why?
-    a: The review recorded the structures the reviewer confirmed at the time, inside the search area around the route. Structures under tree cover, roofs that blend with the ground and anything outside the search area are not marked. A delivered survey is reviewed against the imagery it names, and anything that cannot be settled from the air is listed for a check on the ground.
-  - q: Why are the boxes slightly off some roofs?
-    a: Reviewer marks are points. The boxes are drawn around each point so they can be seen at this scale, and a point placed at the edge of a roof puts its box partly on the ground next to it. Distances are measured from the point.
+    a: No. Every mark in this sample was placed by a reviewer; no automatic detection result is shown. On a client survey, open building datasets and segmentation models propose structures first and a reviewer confirms, corrects and adds to them. See [how we detect, review and measure structures](/methodology).
+  - q: Why does this page show no close-up imagery of the structures?
+    a: The reviewer marked this sample on a web-map satellite basemap in our review tool. Web-map basemaps state no capture date and are used for screening only, so we never publish or deliver them as survey imagery. This page shows the register itself, drawn as strip views, and the route on a dated Copernicus Sentinel-2 scene for location. Client surveys that need a date use imagery that can be dated and delivered, such as a drone survey, a purchased satellite scene or your own georeferenced imagery.
+  - q: Why is the register drawn as a straight strip?
+    a: A strip view straightens the route so that each marked structure sits at its chainage (the distance along the route) and its distance from the line, with the north side of the line at the top. Distances across the route are drawn at twice the scale of distances along it, so the 50 m and 100 m bands can be read. It is a chart of the register, not a map.
+  - q: Could a structure be missing from the sample?
+    a: Yes. The review recorded the structures the reviewer confirmed at the time, inside the search area around the route. Structures under tree cover, roofs that blend with the ground and anything outside the search area are not marked. A delivered survey is reviewed against the imagery it names, and anything that cannot be settled from the air is listed for a check on the ground.
   - q: Are the plants and well pads on the route counted?
     a: No. The facilities near both ends of this route belong to the pipeline operator. An operator's own installations are part of the asset, not encroachment, and they are not in the register.
 related: [oil-gas, right-of-way-monitoring, insight-survey-scope]
@@ -51,33 +51,36 @@ related: [oil-gas, right-of-way-monitoring, insight-survey-scope]
 Counts are cumulative: "within 100 m" includes the 11 structures within 50 m. Distances are measured to the route as supplied, in its local UTM zone (36S). The other 23 marks lie between 100 m and the edge of the search area.
 ::::
 
-::::section{id="corridor-view" tone="alt" eyebrow="Map view" title="What the register looks like on the ground" lead="The densest stretch of the route, where it runs beside an existing track through farmland and homesteads. Each mark carries the register ID used in the table below."}
-:::figure{src="samples/t9-km5-6" alt="Satellite view of the T-9 route between km 5.0 and 6.3, with the route in orange, a red 50 m band, an amber 100 m band and reviewer marks R21 to R40 on homesteads on both sides of the line" caption="T-9 replacement pipeline, km 5.0 to 6.3: route, 50 m and 100 m buffers, and reviewer marks coloured by band" badge="Reviewed · manual marks" size="wide" priority="true" credit="Imagery © Google. The background is a Google satellite basemap shown for illustration: it has no capture date and is not delivered survey imagery. Route, buffers, marks and IDs drawn by AfriScan from the review data."}
-Red marks are within 50 m of the line, amber marks between 50 m and 100 m, and teal marks beyond 100 m.
+::::section{id="corridor-view" tone="alt" eyebrow="Register view" title="The densest stretch, structure by structure" lead="Km 5.0 to 6.5, where the route runs beside an existing track through farmland and homesteads. Each mark sits at its chainage and its distance from the line, and carries the register ID used in the table below."}
+:::figure{src="samples/t9-register-km5-6" alt="Strip view of the T-9 route between km 5.0 and 6.5: the route as a straight orange line with red 50 m and amber 100 m bands on both sides, and twenty reviewer marks, R20 to R39, placed by chainage and distance; the three 500 m segments below are rated medium (4), high (16) and high (7)" caption="T-9 replacement pipeline, km 5.0 to 6.5: reviewer marks by chainage and distance from the line, with the rating of each 500 m segment" badge="Reviewed · manual marks" size="wide" priority="true" credit="Drawn by AfriScan from the sample register. No imagery; distances across the route drawn at twice the along-route scale."}
+<span class="band band--a">Within 50 m</span> <span class="band band--b">50 to 100 m</span> <span class="band band--c">Beyond 100 m</span> The north side of the line is at the top.
 :::
 
 ### Register excerpt for this stretch
 
-Chainage is the distance along the route from its start. The public sample leaves out coordinates; the delivered register gives each structure in WGS84 and UTM.
+Chainage is the distance along the route from its start. This public sample leaves out coordinates. A client's delivered register gives each structure in WGS84 and UTM, and goes only to the contacts the client names.
 
 :::register{data="t9"}
 :::
 ::::
 
 ::::section{id="segments" eyebrow="Encroachment density" title="Every 500 m of route, rated" lead="The rating is a count rule that tells you where to send people first. It is not a safety or integrity assessment."}
+:::figure{src="samples/t9-route-ratings" alt="The T-9 route on a Sentinel-2 satellite scene, running about 10 km from a gas plant in the west, past a settlement, to a wetland in the east; the route is coloured by rating, red for the high stretches between km 4 and 6.5, amber for medium and grey for low" caption="The whole route, each 500 m coloured by its rating: red high, amber medium, grey low" size="wide" credit="Route on a Copernicus Sentinel-2 scene of 2 August 2026 (contains modified Copernicus Sentinel data 2026), shown for location. At 10 m per pixel the scene cannot show individual structures; the ratings come from the reviewed register, not from this scene."}
+:::
+
 :::segments{data="t9"}
-Each segment is rated from the structures within the widest buffer, 100 m on this route. A structure near a segment boundary counts in both segments it touches, so segment counts add up to more than the route total.
+Each segment is rated from the structures within the widest buffer, 100 m on this route, measured from any point of the segment. A structure near a segment boundary counts in both segments it touches, so segment counts add up to more than the route total. In the three views below, the outlined area is what the rating counts; marks outside it are faded.
 :::
 
 :::cards{cols="3"}
-:::figure{src="samples/t9-rating-high" alt="Close view of km 5.5 to 6.0: homesteads on both sides of the route inside the 50 m and 100 m bands" caption="High · km 5.5 to 6.0" size="third" credit="Imagery © Google"}
-16 structures within 100 m, where the route runs beside homesteads on both sides.
+:::figure{src="samples/t9-register-high" alt="Strip view of km 5.5 to 6.0 rated high: sixteen reviewer marks inside the area within 100 m of the stretch, two of them within 50 m of the line; two marks outside that area are faded" caption="High · km 5.5 to 6.0" size="third" credit="Register view; same scale in all three"}
+16 structures within 100 m of the stretch, where the route runs beside homesteads on both sides. Three of them stand just past its ends and count for the next stretch too.
 :::
-:::figure{src="samples/t9-rating-medium" alt="Close view around km 9.0: two reviewer marks on small plots inside the 50 m band, just north of the route" caption="Medium · around km 9.0" size="third" credit="Imagery © Google"}
-2 structures, both inside the 50 m band: few, but close to the line. They sit on the boundary between two segments, so km 8.5 to 9.0 and km 9.0 to 9.5 are both rated medium.
+:::figure{src="samples/t9-register-medium" alt="Strip view of km 9.0 to 9.5 rated medium: two reviewer marks inside the 50 m band on the north side of the line, just past km 9.0" caption="Medium · km 9.0 to 9.5" size="third" credit="Register view; same scale in all three"}
+2 structures, both inside the 50 m band: few, but close to the line. They stand just past km 9.0, so km 8.5 to 9.0 is rated medium too.
 :::
-:::figure{src="samples/t9-rating-low" alt="Close view around km 8.0: the route runs through bush and burnt grassland with no structures inside either buffer" caption="Low · km 7.5 to 8.5" size="third" credit="Imagery © Google"}
-No structures within 100 m in either segment: a cleared right of way through bush and burnt grassland.
+:::figure{src="samples/t9-register-low" alt="Strip view of km 7.5 to 8.0 rated low: the 50 m and 100 m bands with no reviewer marks" caption="Low · km 7.5 to 8.0" size="third" credit="Register view; same scale in all three"}
+No structures within 100 m: the line crosses bush and burnt grassland here.
 :::
 :::
 ::::
@@ -95,7 +98,7 @@ A self-contained map of the results that opens in a web browser. The result laye
 :::
 :::
 
-:::cta{title="Want the full sample report?" text="We can send the PDF and GIS files for this sample so your GIS and land teams can open them." button="Request a sample report" intent="sample-report"}
+:::cta{title="Want to open the files before a proposal?" text="Ask for the redacted sample: the report and GIS layers in the delivered format, with the route generalised, no coordinates and no basemap imagery, so your GIS and land teams can check how the files are built." button="Ask for a redacted sample" intent="sample-report"}
 :::
 ::::
 

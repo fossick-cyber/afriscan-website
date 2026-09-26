@@ -14,6 +14,10 @@ buttons:
 og:
   headline: Where we work
   subline: Mozambique, South Africa and Nigeria
+cta:
+  title: Working in Mozambique, South Africa or Nigeria?
+  text: Send the route or site and the province or state. We reply with the local rules that apply, an imagery plan and a written proposal.
+  button: Request a proposal
 ---
 
 ::::section{id="overview" eyebrow="As of 26 September 2026" title="What applies in each country" lead="A short orientation to the land rules our registers are measured against and the drone rules that shape a survey plan. It summarises public rules for information and is not legal advice; the sources are linked."}

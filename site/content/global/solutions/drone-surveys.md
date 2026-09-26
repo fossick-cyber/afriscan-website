@@ -5,7 +5,7 @@ title: Drone Orthophoto & Elevation Surveys | AfriScan
 description: Drone orthophotos, elevation models, point clouds and volumes for the stretches that need detail, subject to the permits and authorisations each job requires.
 h1: Drone orthophotos, elevation models and volumes where the detail matters
 eyebrow: Drone, imagery and custom detection
-lead: Satellite screening covers the whole route or site. Drone surveys then capture the stretches that need a closer look, a dated cut-off record, or a measurement of earthworks and stockpiles. Drone work is carried out by Afridrone, AfriScan's sister drone-services brand, subject to the permits and authorisations each job requires.
+lead: Satellite screening covers the whole route or site. Drone surveys then capture the stretches that need a closer look, a dated cut-off record, or a measurement of earthworks and stockpiles. AfriScan is Afridrone’s land and corridor monitoring service; Afridrone flies the drone work, subject to the permits and authorisations each job requires.
 used_in: [oil-gas, mining, power-utilities, rail-roads, renewables]
 buttons:
   - {label: Request a proposal, intent: proposal}
@@ -46,7 +46,7 @@ Every drone job is planned around the permits and authorisations that particular
 ::::
 ::::col
 :::callout{tone="legal" title="Permits are part of the plan"}
-We never assume a permit. Afridrone is working towards the operator approvals each country requires, and every drone proposal sets out the permits the flight needs and how they fit the schedule. [Afridrone](https://afridr.one/) is AfriScan's sister drone-services brand.
+We never assume a permit. Afridrone is working towards the operator approvals each country requires, and every drone proposal sets out the permits the flight needs and how they fit the schedule. AfriScan is [Afridrone](https://afridr.one/)’s land and corridor monitoring service; Afridrone flies the drone work.
 :::
 ::::
 :::::

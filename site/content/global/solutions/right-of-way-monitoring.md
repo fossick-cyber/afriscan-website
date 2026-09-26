@@ -94,7 +94,7 @@ Alongside the register, a survey can add the signals that tend to come before ne
 ::::section{id="deliverables" tone="alt" eyebrow="What you receive" title="Files your land, integrity and GIS teams can use straight away"}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/t9-km5-6" alt="Satellite view of a 1.3 km stretch of pipeline route with 50 m and 100 m buffer bands and labelled reviewer marks on homesteads on both sides of the line" caption="Sample register view: T-9 replacement pipeline, Inhambane, km 5.0 to 6.3" badge="Reviewed · manual marks" size="half" credit="Imagery © Google, shown for illustration: a basemap with no capture date, not delivered survey imagery. Route, buffers and marks: AfriScan."}
+:::figure{src="samples/t9-register-km5-6" alt="Strip view of a 1.5 km stretch of the T-9 pipeline route with 50 m and 100 m bands on both sides of the line and twenty reviewer marks, R20 to R39, placed by chainage and distance" caption="Sample register view: T-9 replacement pipeline, Inhambane, km 5.0 to 6.5" badge="Reviewed · manual marks" size="half" credit="Drawn by AfriScan from the sample register; no imagery."}
 :::
 ::::
 ::::col

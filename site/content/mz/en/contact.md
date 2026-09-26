@@ -15,7 +15,7 @@ faq:
   - q: Do you need a site visit or a drone flight to start?
     a: No. A survey in Mozambique starts from your route or boundary file and dated satellite imagery, open building datasets or imagery you already hold, so nobody travels and no aircraft flies. Drone detail is added only where a stretch needs it, subject to the IACM and Lei n.º 6/2024 authorisations each survey requires.
   - q: Can we send a route in a province where access is restricted?
-    a: Yes. Satellite work needs no one on site. The route and the results go only to the contacts you name, and we never publish maps of your assets or of the settlements around them.
+    a: Yes. Satellite work needs no one on site. The route and the results go only to the contacts you name, and we never publish maps of your assets or of the settlements around them without your written permission.
   - q: Which date can the register reflect?
     a: The date the imagery was captured. For a cut-off date or a line's construction date, we look for dated scenes close to that date and tell you what exists before you commit. A new capture can be requested when the archive is too old; its date depends on satellite availability and weather.
   - q: We have no route file yet. Can we still ask?

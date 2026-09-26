@@ -1,8 +1,8 @@
 # Nigeria: the instruments the drone-law and compliance page (/ng/drone-regulations) relies on.
 # Facts ONLY from regional/ng.FINAL.md (verified 2026-09-26 against the Official Gazette texts and
 # the regulators' own documents). Dates are the Gazette, signature or document dates given there, or
-# the commencement dates printed in the PLAC compilation (Official Secrets Act, Survey Co-ordination
-# Act). Items the brief marks [unverified] stay out: the NDPC GAID, the radio-licence issuer, the
+# the commencement date printed in the PLAC compilation (Survey Co-ordination Act). The Official
+# Secrets Act carries its year only (1962 No. 29), because the brief gives no day for it. Items the brief marks [unverified] stay out: the NDPC GAID, the radio-licence issuer, the
 # contents of NCAA's truncated "RPAS/UAV guidelines" PDF. Documents without a full date (NCAA-AC-GEN007
 # and NCAA's own April 2023 edition of Part 21, both "April 2023"; the RPAS Portal; the ONSA EUC
 # pages; the NDPA, whose commencement date is blank in the PLAC scan) are cited with links in the page
@@ -89,7 +89,7 @@ instruments:
   - id: official-secrets-act
     title: Official Secrets Act (1962 No. 29)
     identifier: Laws of the Federation of Nigeria 2004 (PLAC compilation)
-    date: 1962-09-13
+    date: 1962                      # year only: the brief gives no day for this Act
     url: https://lawsofnigeria.placng.org/view2.php?sn=421
     last_checked: 2026-09-26
     note: Photographing or recording protected places (s.2); penalties (s.7).

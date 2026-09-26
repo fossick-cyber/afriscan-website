@@ -14,7 +14,7 @@ buttons:
 service:
   name: Power-line servitude encroachment survey, South Africa
   type: Servitude encroachment survey, change detection and route baselines
-  description: Structures, fresh excavations and vegetation change inside the servitudes of transmission and distribution lines in South Africa, each measured to the line and grouped by 500 m stretch or by span, compared between dated surveys and reviewed by a person, with PDF reports and GIS layers.
+  description: Structures, fresh excavations and vegetation change inside the servitudes of transmission and distribution lines in South Africa, each measured to the line and grouped by 500 m stretch, compared between dated surveys and reviewed by a person, with PDF reports and GIS layers.
 og:
   headline: Power-line servitudes in South Africa, mapped from the air
   subline: Structures by distance to the line, change between surveys, reviewed by a person
@@ -24,8 +24,8 @@ faq:
     a: No. We show where structures stand in the servitude and how far each is from the line, and where tall vegetation stands, from drone elevation models where flown and open canopy-height data for wider context. None of that is a measured clearance to a conductor, which stays with your line engineers.
   - q: Which servitude widths do you use?
     a: The widths registered for each line, which vary by voltage and by servitude. Send the widths per line or section, or the servitude polygons from your GIS, together with any building line or company standard you work to. Up to six widths can be reported in one survey, each structure with its distance to the line and its band.
-  - q: Can you report by span rather than by distance along the line?
-    a: Yes. Send the tower positions with the route and the register groups structures by span between towers, as well as by 500 m stretch, so the list lines up with how your maintenance teams already work.
+  - q: Can the register line up with how our maintenance teams work?
+    a: Each listed structure carries its chainage along the line as well as its distance and band, and each 500 m stretch is rated, so your teams can sort and filter the register by the stretches and sections they already patrol.
   - q: Do you detect cable theft or tower vandalism?
     a: No. We flag fresh excavation, spoil and works visible at the surface near towers and along the servitude between surveys, so your teams know where to check. What happened there, and why, is for your field teams to establish.
   - q: We already fly drones along our lines. Can you work with that imagery?
@@ -75,7 +75,7 @@ The national Transmission Development Plan names servitude acquisition among its
 ::::section{id="servitudes" tone="alt" eyebrow="Transmission and distribution servitudes" title="A register of the structures inside the servitude, then what changed"}
 :::::columns{split="2-1"}
 ::::col
-We buffer the line route you supply in its UTM zone, at the widths registered for each servitude, and list each structure the review confirms with its distance to the line, its band, its chainage and its coordinates. Each 500 m stretch is rated for **encroachment density**, high, medium or low, by a count rule; with tower positions, the register also groups structures by span. The rating tells your servitude officers where to go first. It is not a safety or clearance rating.
+We buffer the line route you supply in its UTM zone, at the widths registered for each servitude, and list each structure the review confirms with its distance to the line, its band, its chainage and its coordinates. Each 500 m stretch is rated for **encroachment density**, high, medium or low, by a count rule. The rating tells your servitude officers where to go first. It is not a safety or clearance rating.
 
 Around substations and depots the line becomes a boundary: we list what stands inside the site and in a ring around it.
 
@@ -85,7 +85,7 @@ After the baseline, lines are re-surveyed on a schedule you agree with us. New a
 ### What you receive
 
 :::checklist
-- A servitude register: ID, distance to the line, band, span, chainage and coordinates
+- A servitude register: ID, distance to the line, band, chainage and coordinates
 - A density rating for each 500 m stretch, and a ranked list of stretches
 - Structures inside and around substations and depots
 - New and removed structures between surveys, with before-and-after views

@@ -4,15 +4,15 @@ template: country_home
 title: Protection Zone & Servitude Surveys, Mozambique | AfriScan
 description: Structures inside the 50 m partial protection zones of pipelines and power lines in Mozambique, mapped from the air and reviewed by a person.
 h1: Know what is built inside your protection zones in Mozambique
-eyebrow: AfriScan Mozambique · Secure your land from the air, remotely
+eyebrow: AfriScan · Mozambique · Secure your land from the air, remotely
 lead: We map the structures, cleared ground and fresh excavations inside the protection zones and servitudes of your pipelines, power lines and sites, measure each one to the line and deliver a dated register in Portuguese or English. Satellite first, drone detail where the permits allow, and a person reviews every result.
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: See the Inhambane sample, key: results}
 hero:
-  image: samples/t9-hero
-  alt: Satellite view of the T-9 replacement pipeline route in Inhambane Province, with 50 m and 100 m bands along the line and reviewer marks on homesteads on both sides
-  credit: "T-9 replacement pipeline, Inhambane Province: 50 m and 100 m bands and reviewer marks (manual). Imagery © Google, shown for illustration."
+  image: samples/t9-route-hero
+  alt: Satellite view of bush, farmland and a gas field in Inhambane Province, Mozambique, with the T-9 pipeline route drawn in orange inside its 100 m band
+  credit: "T-9 replacement pipeline route, Inhambane Province, with its 100 m band, on a Copernicus Sentinel-2 scene of 2 August 2026. Contains modified Copernicus Sentinel data 2026."
   chips:
     - {title: "50 · 100 · 200 m", text: "The strips in Mozambican law, and yours"}
     - {title: "Every 500 m", text: "Rated for encroachment density"}
@@ -40,7 +40,7 @@ faq:
   - q: Can you show which structures appeared after the line was built?
     a: Where dated imagery exists from before and after the date that matters, yes. We compare dated scenes, flag new and removed structures automatically and have a reviewer confirm each one. This matters under the Electricity Law, which owes no compensation to people who acquired their rights after the line was built (Lei n.º 12/2022, art. 43(10)). Archive coverage varies by place and year, and we tell you what exists before you commit.
   - q: Do you work near LNG plants or in the north?
-    a: Satellite work needs no one on site, so a baseline can start where access is slow or restricted. Results go only to the contacts you name, and we never publish maps of your sites or of the settlements around them. Drone flights near LNG plants, processing facilities or military sites need the operator's permission and Defence authorisation, and some sites cannot be overflown at all.
+    a: Satellite work needs no one on site, so a baseline can start where access is slow or restricted. Results go only to the contacts you name, and we never publish maps of your sites or of the settlements around them without your written permission. Drone flights near LNG plants, processing facilities or military sites need the operator's permission and Defence authorisation, and some sites cannot be overflown at all.
   - q: Will you publish our route or imagery?
     a: No. We never publish a client's route, imagery or results without written permission. Lei n.º 6/2024 also makes reproducing aerial photographs, mosaics or orthophotos without authorisation an infraction (art. 16(1)(c)), which is why this site shows no Mozambican drone orthophotos.
 ---
@@ -85,13 +85,13 @@ The chair of EDM, the national electricity utility, has described the *ocupaçã
 ::::section{id="receive" eyebrow="What you receive" title="A register your land, servitude and GIS teams can use"}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/t9-km5-6" alt="Satellite view of a 1.3 km stretch of the T-9 route with 50 m and 100 m bands; reviewer marks labelled R21 to R40 sit on homesteads on both sides of the line" caption="T-9 replacement pipeline, Inhambane: km 5.0 to 6.3" badge="Reviewed · manual marks" size="half" credit="Imagery © Google, shown for illustration: it has no capture date and is not delivered survey imagery. Route, bands and marks: AfriScan."}
+:::figure{src="samples/t9-register-km5-6" alt="Strip view of a 1.5 km stretch of the T-9 pipeline route with 50 m and 100 m bands on both sides of the line and twenty reviewer marks, R20 to R39, placed by chainage and distance; below, three 500 m segments rated medium, high and high" caption="Sample register view: T-9 replacement pipeline, Inhambane, km 5.0 to 6.5" badge="Reviewed · manual marks" size="half" credit="Drawn by AfriScan from the sample register; no imagery."}
 :::
 ::::
 ::::col
 - **Each structure listed** with an ID, its distance to the line, its band, its chainage and its coordinates in WGS84 and in the route's UTM zone (36S or 37S in Mozambique).
 - **Every 500 m rated** high, medium or low for encroachment density, so the servitude team knows where to go first.
-- **The imagery named and dated** where the source gives a date, and open data credited as its licence requires.
+- **The imagery named**, and dated where the source gives a date.
 - **A PDF report in Portuguese or English**, with maps, the segment table, a photo of each structure and the coordinate register.
 - **GIS layers** in GeoPackage, GeoJSON, KMZ and Shapefile, and an interactive map file that opens in a browser, including in the field.
 
@@ -102,7 +102,7 @@ The chair of EDM, the national electricity utility, has described the *ocupaçã
 - Within 100 m: 36
 :::
 
-[See the full Inhambane sample](/results) · [Request a sample report](/mz/contact?intent=sample-report&country=mz)
+[See the full Inhambane sample](/results) · [Ask for a redacted sample report](/mz/contact?intent=sample-report&country=mz)
 ::::
 :::::
 ::::
@@ -138,7 +138,7 @@ AfriScan maps what is on the land: structures, cleared ground, excavations and t
 Building datasets and detection models propose; a reviewer confirms, corrects and adds. What the imagery cannot settle is listed for a ground check.
 :::
 :::card{title="Dated and credited" icon="file-check"}
-Every report names its imagery and capture dates. Map-service basemaps are never passed off as survey imagery.
+Every report names its imagery and, where the source provides it, the capture date. Map-service basemaps are never passed off as survey imagery.
 :::
 :::card{title="Scheduled, never “real‑time”" icon="clock"}
 Satellites and drones capture images on particular dates, so re-surveys follow a schedule agreed with you, with a notice of what changed.
@@ -176,7 +176,7 @@ Oil and gas work in Mozambique runs under the local-content rules of the new Pet
 [Notes for procurement teams](/mz/procurement)
 ::::
 ::::col
-We respond to tenders, RFQs and RFPs, and complete supplier onboarding and vendor-qualification forms. Send the documents with your request; reports and deliverables are available in Portuguese or English.
+We respond to tenders, RFQs and RFPs. Send your supplier or prequalification forms with your request; the proposal states which registrations are in place for your contract and which are being arranged. Reports and deliverables are available in Portuguese or English.
 
 [How we work](/how-we-work) · [Request a proposal](/mz/contact?intent=tender&country=mz)
 ::::

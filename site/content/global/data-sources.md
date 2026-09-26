@@ -19,15 +19,19 @@ faq:
     a: We source very-high-resolution scenes from commercial archives and request new captures from commercial operators, choosing per job by date, season and cloud. The report names the imagery used, and the proposal sets out its licence terms for your use.
   - q: Why credit data that is free to use?
     a: Because the licences require it, and because it tells the reader where each part of a register came from. A footprint from an open dataset reflects the imagery that dataset used, which can be years older than your survey. The credit is part of reading the result correctly.
+cta:
+  title: Need to know which data a survey will use?
+  text: Every proposal names the imagery and the open datasets the work will use, with their dates where the source gives them and their licence terms. Send the route or site to get one.
+  button: Request a proposal
 ---
 
 ::::section{id="principles" eyebrow="How we treat data" title="Three rules"}
 :::cards{cols="3"}
 :::card{title="Named in every report" icon="file-text"}
-Every report names its imagery and, where the source provides it, the capture date, and lists the open datasets it drew on.
+Every report names its imagery and, where the source provides it, the capture date.
 :::
 :::card{title="Credited as each licence asks" icon="scale"}
-Open data is credited as each licence requires: on this site, and in the reports and GIS files that use it.
+The open datasets we use are listed below with the credit and licence text each one requires.
 :::
 :::card{title="Basemaps are not survey imagery" icon="eye"}
 Google, Bing and Esri web-map layers are used only to screen and plan. They are never delivered, and never the basis of a dated record.
@@ -71,7 +75,7 @@ Two open-source building-segmentation models from the humanitarian mapping commu
 ::::
 ::::col
 :::callout{tone="scope" title="Models propose; people decide"}
-Model output is a set of proposals. A reviewer confirms, removes and adds structures on the imagery before anything is delivered, and every mark records who placed it. How the sources are merged and checked is set out in the [methodology](/methodology#detection).
+Model output is a set of proposals. A reviewer confirms, removes and adds structures on the imagery before anything is delivered, and the register records, for each structure it lists, whether it was proposed automatically or added by the reviewer. How the sources are merged and checked is set out in the [methodology](/methodology#detection).
 :::
 ::::
 :::::
@@ -92,7 +96,8 @@ Orthophotos and scenes you send stay yours, and we never publish them without yo
 ::::
 
 ::::section{id="site-images" tone="alt" eyebrow="On this website" title="Images shown on this site"}
-- **The T-9 sample.** The views of the T-9 replacement pipeline route in Inhambane, Mozambique, are shown with the route owner's permission. Their background is a Google satellite basemap, credited "Imagery © Google" on each image and shown for illustration only: it has no capture date and is not delivered survey imagery. The route, buffers, reviewer marks and IDs are drawn by AfriScan from the review data.
+- **The T-9 sample.** The T-9 replacement pipeline route in Inhambane, Mozambique, is shown with the route owner's permission. Its reviewer marks appear only as register strip views, drawn by AfriScan from the sample register: no imagery and no coordinates. The route views and the page headers use a Copernicus Sentinel-2 scene of 2 August 2026 (contains modified Copernicus Sentinel data 2026), shown for location; at 10 m per pixel it cannot show individual structures.
+- **No map-service imagery.** No Google, Bing or Esri basemap imagery is shown on this site.
 - **Schematics.** Diagrams labelled "Schematic" are drawn by AfriScan with invented geometry to explain how a register is read. They are not real routes or sites.
 - **No people.** We show no photographs that identify anyone, and no client logos.
 

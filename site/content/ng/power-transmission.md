@@ -128,7 +128,7 @@ Cleared and regrown vegetation along the right of way is compared between dates 
 ::::
 ::::col
 :::callout{tone="note" title="The limits"}
-Vegetation mapping shows larger patches of change, not individual trees, and it is not a measured clearance to conductors. Fire notices are not an emergency or early-warning service: small, short-lived or cloud-covered fires can be missed. NASA FIRMS and Copernicus data are credited in every report.
+Vegetation mapping shows larger patches of change, not individual trees, and it is not a measured clearance to conductors. Fire notices are not an emergency or early-warning service: small, short-lived or cloud-covered fires can be missed. NASA FIRMS and Copernicus data are credited as their licences require.
 :::
 ::::
 :::::
@@ -151,7 +151,7 @@ Once the route is fixed, a dated baseline records the right of way with reviewer
 ::::section{id="energy-access" tone="alt" eyebrow="Mini-grids and energy access" title="Structure counts and estimated households for candidate communities" lead="Choosing and sizing mini-grid sites starts with a simple question: how many buildings are there, and how many households do they suggest? Dated imagery answers it for many communities before a field team visits one."}
 :::::columns{split="2-1"}
 ::::col
-The World Bank-financed Distributed Access through Renewable Energy Scale-up (DARES) project is implemented by the Rural Electrification Agency (REA). Approved on 14 December 2023, it supports privately owned and operated solar hybrid mini-grids in unserved and underserved areas, through a minimum subsidy tender and performance-based grants, alongside standalone solar systems ([World Bank, P179687](https://projects.worldbank.org/en/projects-operations/project-detail/P179687)).
+The World Bank-financed Distributed Access through Renewable Energy Scale-up (DARES) project is implemented by the Rural Electrification Agency (REA). Approved by the World Bank's Board on 14 December 2023, it supports privately owned and operated solar hybrid mini-grids in unserved and underserved areas, through a minimum subsidy tender and performance-based grants, alongside standalone solar systems ([World Bank, P179687](https://projects.worldbank.org/en/projects-operations/project-detail/P179687)).
 
 For developers and programme teams we provide:
 

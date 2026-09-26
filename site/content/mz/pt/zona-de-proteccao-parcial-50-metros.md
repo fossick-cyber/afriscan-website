@@ -63,7 +63,7 @@ A mesma lista inclui outras faixas que um traçado atravessa muitas vezes:
 | j) | instalações militares e outras instalações de defesa e segurança, com uma faixa de 100 m |
 | estradas | estradas primárias: faixa de 30 m; estradas secundárias e terciárias: faixa de 15 m |
 
-**O que isto significa no terreno.** Nas zonas de protecção parcial não se adquire o direito de uso e aproveitamento da terra (DUAT); podem apenas ser emitidas licenças especiais para actividades determinadas (artigo 9). Uma casa, uma machamba ou uma benfeitoria dentro da faixa de 50 m não assenta num DUAT, e cada construção nova é um caso a tratar pela equipa de servidões antes de se consolidar.
+**O que isto significa no terreno.** Nas zonas de protecção parcial não se adquire o direito de uso e aproveitamento da terra (DUAT); podem apenas ser emitidas licenças especiais para actividades determinadas (artigo 9). Na faixa não se adquire DUAT, apenas licenças especiais (artigo 9). Algumas construções são anteriores à infra-estrutura e podem existir licenças especiais, por isso o estatuto de cada uma cabe às entidades competentes. A faixa diz ao operador onde a lei protege a linha; não decide, por si só, o que acontece ao que já lá está. O registo diz o que está onde, e em que data, para que a equipa de servidões trate cada construção nova cedo.
 
 ## O petróleo: a Lei n.º 8/2026 {#lei-do-petroleo}
 
@@ -128,7 +128,7 @@ Até uma nova lei ser aprovada e publicada, vale a Lei n.º 19/97. Se as largura
 :::checklist
 - A priorização da equipa de servidões: onde estão as construções mais próximas do eixo
 - O plano de regularização da faixa e o diálogo com as comunidades
-- A prova do que existia em cada local na data das imagens, útil para aplicar a regra da Lei de Electricidade sobre direitos posteriores à linha
+- Um registo datado do que existia em cada local na data das imagens, útil para aplicar a regra da Lei de Electricidade sobre direitos posteriores à linha
 - A linha de base de um EIA ou de um plano de reassentamento
 :::
 ::::

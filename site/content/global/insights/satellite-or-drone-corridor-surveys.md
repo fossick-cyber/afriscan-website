@@ -32,6 +32,10 @@ faq:
     a: Optical satellite and drone imagery cannot see through cloud. Satellite archives have fewer usable scenes in cloudy months, and drones cannot fly in rain or strong wind. Radar satellites can show larger ground changes, such as clearing and earthworks, even under rainy-season cloud, and the flagged areas are checked on optical imagery or by drone when conditions allow.
   - q: We already fly our own drones. Do we need anything else?
     a: Possibly not. Send your georeferenced orthophotos and we run the same structure, change and corridor analysis on them. Satellite imagery is then useful for the stretches and dates your flights do not cover, and for the history before your programme started.
+cta:
+  title: Satellite, drone or both?
+  text: Send the route and the stretches that worry you. We propose satellite screening for the whole line and drone detail only where it adds something, subject to the permits each flight requires.
+  button: Request a proposal
 ---
 
 ## The short answer {#short-answer}

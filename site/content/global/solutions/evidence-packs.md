@@ -17,14 +17,14 @@ service:
   description: Dated imagery, structure registers and maps packaged with a SHA-256 fingerprint of each file and an independent timestamp, location sheets of every dated image covering a single point for grievances and claims, imagery history, cut-off-date registers and very-high-resolution archive scenes, supporting legal and community processes.
 og:
   headline: Evidence packs and location checks
-  subline: Dated records with file fingerprints and an independent timestamp, to support legal and community processes
+  subline: Dated records, sealed with file hashes and an independent timestamp, that support legal and community processes
 cta:
   title: Tell us what the record has to show, and to whom.
   text: A cut-off date, a handover, a contested location or a grievance log. We reply with the imagery that exists for your dates and a written proposal.
   button: Request a proposal
 faq:
   - q: Will a court or tribunal accept an evidence pack?
-    a: That is for your lawyers and the tribunal. We do not describe our packs as court-grade; they support legal and community processes. The fingerprints and timestamp show that the files existed at that time and have not changed since; they do not prove how or when the imagery was captured, which the pack records separately from each image's source.
+    a: Whether a court or tribunal accepts a pack is for your lawyers; it supports legal and community processes. The fingerprints and timestamp show that the files existed at that time and have not changed since; they do not prove how or when the imagery was captured, which the pack records separately from each image's source.
   - q: What does the timestamp actually prove?
     a: That the manifest of file fingerprints existed at the time stated by an independent timestamping authority, and therefore that each file in the pack is unchanged since then. The capture date of each image comes from its source, such as the drone survey log or the satellite scene metadata, and is recorded separately.
   - q: Can a location check settle a grievance?
@@ -32,7 +32,7 @@ faq:
   - q: Can you build a pack on map-service basemaps?
     a: "No. Basemaps carry no capture date, so they cannot show what was on the ground on a particular day. Evidence packs use dated imagery only: drone surveys, dated satellite scenes or your own imagery with a known date."
   - q: Who sees the pack?
-    a: Only the contacts you name. We never publish a client's evidence, registers or imagery, and what you share with authorities or communities is your decision.
+    a: Only the contacts you name. We never publish a client's evidence, registers or imagery without your written permission, and what you share with authorities or communities is your decision.
 ---
 
 ::::section{id="what" eyebrow="What it is" title="A record that can show when it was made"}

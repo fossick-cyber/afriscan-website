@@ -40,7 +40,7 @@ faq:
   - q: Podem apoiar os estudos de classe de localização?
     a: Sim. Fornecemos contagens de construções dentro das larguras e por unidade de comprimento que os seus engenheiros definirem, com categorias do revisor que separam edifícios principais de anexos. O estudo e as conclusões ficam com os seus engenheiros.
   - q: Quem vê os nossos ficheiros e resultados?
-    a: As pessoas que indicar. Nunca publicamos o traçado, as imagens ou os resultados de um cliente sem autorização escrita, nem mapas dos seus activos ou dos assentamentos à volta deles.
+    a: As pessoas que indicar. Sem a sua autorização escrita, nunca publicamos o traçado, as imagens ou os resultados de um cliente, nem mapas dos seus activos ou dos assentamentos à volta deles.
 ---
 
 ::::section{id="problema" eyebrow="O problema, nas palavras de quem gere a faixa" title="A terra ao longo de um gasoduto muda entre patrulhas" lead="A faixa de servidão de um gasoduto é longa, estreita e quase sempre sem ninguém a vê-la. O que nela se constrói torna-se o custo de alguém: um pedido de compensação, uma rubrica do plano de reassentamento, um atraso numa ligação ou uma disputa sobre quem chegou primeiro."}
@@ -110,10 +110,10 @@ Cada construção é medida até ao eixo e cada troço é classificado. O que a 
 :::::
 ::::
 
-::::section{id="exemplo-t9" tone="alt" eyebrow="Prova honesta" title="O que um registo mostra: o exemplo do T-9" lead="Uma revisão feita no traçado do gasoduto de substituição T-9, na província de Inhambane, mostrada com a autorização do proprietário do traçado. As marcações aparecem exactamente como o revisor as colocou."}
+::::section{id="exemplo-t9" tone="alt" eyebrow="Um exemplo real" title="O que um registo mostra: o exemplo do T-9" lead="Uma revisão feita no traçado do gasoduto de substituição T-9, na província de Inhambane, mostrada com a autorização do proprietário do traçado. As marcações aparecem exactamente como o revisor as colocou."}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/t9-km5-6-pt" alt="Vista de satélite de um troço de 1,3 km do traçado T-9 com as faixas de 50 m e 100 m e as marcações do revisor em habitações dos dois lados da linha" caption="Gasoduto de substituição T-9, km 5,0 a 6,3" badge="Revisto · marcação manual" size="half" credit="Imagens © Google, apenas para ilustração: sem data de captação e não entregues num levantamento. Traçado, faixas e marcações: AfriScan."}
+:::figure{src="samples/t9-register-km5-6-pt" alt="Vista linear de um troço de 1,5 km do traçado T-9, com as faixas de 50 m e 100 m dos dois lados da linha e vinte marcações do revisor colocadas pela distância ao longo do traçado e pela distância à linha; em baixo, três troços de 500 m com densidade média, alta e alta" caption="Gasoduto de substituição T-9, km 5,0 a 6,5" badge="Revisto · marcação manual" size="half" credit="Desenhado pela AfriScan a partir do registo do exemplo; sem imagens."}
 :::
 ::::
 ::::col

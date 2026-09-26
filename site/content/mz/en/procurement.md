@@ -28,6 +28,11 @@ faq:
     a: Yes. ESIA, RAP and engineering consultancies commission structure registers, route comparisons and GIS layers for their own reports, delivered in the formats their teams already use and in Portuguese or English.
   - q: What do you need from us to prepare a proposal?
     a: The route or boundary file, the province, the widths or zones to report, the date the record must reflect, the deliverables and the deadline. With a tender, send the documents and the portal or format your process uses.
+cta:
+  title: Preparing a tender or a supplier file?
+  text: Send the tender documents, the deadline and your supplier or prequalification forms. The proposal answers each requirement and states which registrations are in place for your contract.
+  button: Request a proposal
+  intent: tender
 ---
 
 ::::section{id="summary" eyebrow="In short" title="Four questions every supplier file should answer"}
@@ -124,8 +129,8 @@ The large energy buyers run their own supplier platforms, including the [Mozambi
 - An imagery statement: sources, capture dates, licence terms and credits
 - For any drone element: the company that will fly it and the authorisations each flight needs
 - The data terms: who receives the results, and the Lei n.º 6/2024 deposit and release steps for drone data
-- Sample outputs, and a sample report on request
-- Written answers to your vendor-qualification questionnaire
+- Sample outputs, and a redacted sample report on request
+- A statement of which registrations are in place for your contract and which are being arranged
 :::
 
 Reports and deliverables are available in Portuguese or English.

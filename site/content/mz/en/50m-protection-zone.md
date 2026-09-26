@@ -31,6 +31,10 @@ faq:
     a: That is not for a mapping company to decide. Some structures predate the line, special licences can exist, and the sector laws provide compensation and resettlement where people must move. A register records what stands where, and when; your land team and the authorities decide its status.
   - q: Will the new Land Law change the 50 m strip?
     a: The June 2024 draft keeps the 50 m strip for conduits but would allow the widths to be reduced or increased (art. 15(4)). The Council of Ministers approved a Land Law proposal on 28 October 2025; check the text the Assembleia da República adopts before relying on any width.
+cta:
+  title: Know what stands inside your 50 m strip.
+  text: 'Send the route or line and the widths that apply: 50 m, 100 m, the 200 m Pande–Temane safety zone or your concession''s. We reply with a scope and a written proposal.'
+  button: Request a proposal
 ---
 
 ## What the Land Law says {#land-law}

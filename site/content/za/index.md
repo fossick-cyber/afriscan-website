@@ -4,15 +4,15 @@ template: country_home
 title: Servitude Encroachment Monitoring, South Africa | AfriScan
 description: Structures, cleared ground and change inside power-line, pipeline, bulk-water, rail and road servitudes in South Africa, mapped from the air and reviewed.
 h1: Secure your servitudes from the air, remotely
-eyebrow: AfriScan South Africa · Servitudes, reserves and sites
+eyebrow: AfriScan · South Africa · Servitudes, reserves and sites
 lead: We map the structures, cleared ground, fresh excavations and tracks inside the servitudes of your power lines, pipelines, bulk-water mains and rail and road reserves, measure each one to the line and show what changed between dated surveys. Satellite first, your own drone imagery where you already fly, and a person reviews every result before it reaches you.
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: See sample outputs, key: results}
 hero:
-  image: samples/t9-hero
-  alt: Satellite view of a gas pipeline route with a 50 m and a 100 m band along the line and reviewer marks on homesteads on both sides
-  credit: "Our published sample: a reviewed register on the T-9 replacement pipeline, Inhambane Province, Mozambique, with 50 m and 100 m bands and manual reviewer marks. Imagery © Google, shown for illustration."
+  image: samples/t9-route-hero
+  alt: Satellite view of bush, farmland and a gas field in Inhambane Province, Mozambique, with the T-9 pipeline route drawn in orange inside its 100 m band
+  credit: "Our published sample is from Mozambique: the T-9 replacement pipeline route, Inhambane Province, with its 100 m band, on a Copernicus Sentinel-2 scene of 2 August 2026. Contains modified Copernicus Sentinel data 2026."
   chips:
     - {title: "Your servitude widths", text: "Measured to what is registered, or your standard"}
     - {title: "Every 500 m", text: "Rated for encroachment density"}
@@ -71,14 +71,14 @@ Once a structure is occupied, resolving an unlawful occupation runs through the 
 ::::section{id="receive" tone="alt" eyebrow="What you receive" title="A dated register your servitude, wayleave and GIS teams can use"}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/t9-km5-6" alt="Satellite view of a 1.3 km stretch of a pipeline route with 50 m and 100 m bands; reviewer marks labelled R21 to R40 sit on homesteads on both sides of the line" caption="Our published sample: T-9 replacement pipeline, Inhambane, Mozambique, km 5.0 to 6.3" badge="Reviewed · manual marks" size="half" credit="Imagery © Google, shown for illustration: it has no capture date and is not delivered survey imagery. Route, bands and marks: AfriScan."}
+:::figure{src="samples/t9-register-km5-6" alt="Strip view of a 1.5 km stretch of the T-9 pipeline route with 50 m and 100 m bands on both sides of the line and twenty reviewer marks, R20 to R39, placed by chainage and distance; below, three 500 m segments rated medium, high and high" caption="Our published sample: T-9 replacement pipeline, Inhambane, Mozambique, km 5.0 to 6.5" badge="Reviewed · manual marks" size="half" credit="Drawn by AfriScan from the sample register; no imagery."}
 :::
 ::::
 ::::col
-- **Each structure listed** with an ID, its distance to the line, its band, its chainage and its coordinates, in WGS84 and UTM, and on request in the Hartebeesthoek94 Lo system your GIS team works in.
+- **Each structure listed** with an ID, its distance to the line, its band, its chainage and its coordinates, in WGS84 and UTM.
 - **Every 500 m rated** high, medium or low for encroachment density, so your servitude officers know which stretches to visit first. It is a count rule, not a safety rating.
 - **New and removed structures** between dated surveys, flagged automatically and confirmed by a reviewer, with before-and-after views.
-- **The imagery named and dated** where the source gives a date, and open data credited as its licence requires.
+- **The imagery named**, and dated where the source gives a date.
 - **A PDF report** with maps, the segment table, a photo of each structure and the coordinate register, plus **GeoPackage, GeoJSON, KMZ and Shapefile** layers and an interactive map file that opens in a browser.
 
 [See the full sample](/results) · [How the rating works](/methodology)
@@ -129,7 +129,7 @@ Land baselines for REIPPPP sites and the connection lines and servitudes they ne
 :::card{title="New transmission routes" icon="route" key="route-site-selection"}
 Structure counts along alternative alignments and a dated baseline before servitude acquisition starts.
 :::
-:::card{title="Land invasion on servitudes" icon="compare" key="za-land-invasion"}
+:::card{title="New structures on servitudes" icon="compare" key="za-land-invasion"}
 New structures and cleared ground on servitude land, found between dated surveys while they are few.
 :::
 :::
@@ -145,7 +145,7 @@ AfriScan maps what is on the land: structures, cleared ground, excavations and t
 Building datasets and detection models propose; a reviewer confirms, corrects and adds. What imagery cannot settle is listed for a ground check.
 :::
 :::card{title="Dated and credited" icon="file-check"}
-Every report names its imagery and capture dates. Map-service basemaps are never passed off as survey imagery.
+Every report names its imagery and, where the source provides it, the capture date. Map-service basemaps are never passed off as survey imagery.
 :::
 :::card{title="Scheduled, never “real‑time”" icon="clock"}
 Satellites and drones capture images on particular dates, so re-surveys follow a schedule agreed with you, with a notice after each one.
@@ -183,7 +183,7 @@ Organs of state and state-owned companies buy through the Central Supplier Datab
 [Notes for procurement teams](/za/procurement)
 ::::
 ::::col
-We respond to RFQs and tenders and complete vendor-registration and qualification forms. Send the documents with your request, including any POPIA operator terms your organisation uses.
+We respond to RFQs and tenders. Send your supplier or prequalification forms with your request; the proposal states which registrations are in place for your contract and which are being arranged. Include any POPIA operator terms your organisation uses.
 
 [How we work](/how-we-work) · [Send tender documents](/za/contact?intent=tender&country=za)
 ::::

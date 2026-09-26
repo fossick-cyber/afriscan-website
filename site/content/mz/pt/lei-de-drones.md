@@ -117,7 +117,8 @@ Para um corredor, isto significa voar em troços de até 500 m com o drone à vi
 - Em espaço aéreo controlado, com plano de voo e NOTAM pedido através do IACM.
 - Sobre pessoas ou a menos de 50 m delas, só pessoas que fazem parte da operação.
 - A menos de 50 m de estruturas, com autorização escrita do proprietário e **nunca a menos de 5 m na horizontal e de 20 pés na vertical de cabos de alta tensão com corrente**.
-- Sobre estradas públicas ou a menos de 50 m delas, com autorização da polícia para descolar, aterrar ou sobrevoar.
+- Sobre ou numa estrada pública (categoria C2): autorização da polícia local, um cordão de 100 m de cada lado e atravessamento em ângulo recto, a 100 pés ou mais.
+- A menos de 50 m de uma estrada pública (categorias B, C1 e C2): pelo menos 10 m da estrada, delimitação geográfica (*geofencing*) e voo de dia, em condições visuais.
 - Em áreas restritas, proibidas ou perigosas, como zonas de rebentamento em minas e áreas de conservação, com autorização escrita da entidade que gere o espaço.
 ::::
 :::::

@@ -21,7 +21,7 @@ faq:
   - q: Podemos começar por uma parte do traçado?
     a: Sim. Muitos trabalhos começam por um troço, um local ou o limite de uma concessão, para que a sua equipa compare o registo com o que já conhece antes de levantarmos o resto. Os trabalhos adaptados às suas imagens, como um detector de edifícios à medida, são afinados e verificados numa parte da área antes de serem aplicados ao resto.
   - q: Respondem a concursos e a pedidos de proposta?
-    a: Sim. Envie os documentos do concurso, o caderno de encargos ou os termos de referência com o pedido, e respondemos no formato que o processo pede. Também preenchemos os formulários de registo e de qualificação de fornecedores.
+    a: Sim. Envie os documentos do concurso, o caderno de encargos ou os termos de referência com o pedido, e respondemos no formato que o processo pede. Envie os formulários de registo ou de pré-qualificação de fornecedores também; a proposta indica que registos já estão feitos para o seu contrato e quais estão a ser tratados.
   - q: Podem trabalhar integrados na equipa de uma consultora?
     a: Sim. As consultoras de EIA, de reassentamento e de engenharia podem encomendar registos de construções, comparações de traçados e camadas SIG para os seus próprios relatórios, entregues nos formatos que as suas equipas já usam.
   - q: Como é feita a proposta?
@@ -31,6 +31,10 @@ faq:
   - q: Publicam o nosso traçado ou os resultados?
     a: Não. Nunca publicamos o traçado, as imagens ou os resultados de um cliente sem autorização escrita.
 related: [right-of-way-monitoring, resettlement-cut-off-baselines, change-detection]
+cta:
+  title: Pronto para definir um levantamento ou responder a um concurso?
+  text: Envie o traçado ou o terreno, ou os documentos do concurso e o prazo. Respondemos com o âmbito e uma proposta escrita, no formato que o processo pede.
+  button: Pedir proposta
 ---
 
 ::::section{id="modelos" eyebrow="Modelos de contratação" title="Formas de trabalhar connosco" lead="A maioria dos clientes começa por um levantamento de base e acrescenta levantamentos periódicos. Outros chamam-nos para uma única decisão: uma data de corte, a escolha de um traçado ou um local em disputa."}
@@ -51,7 +55,7 @@ Ortofotomapas, modelos de elevação e verificações de perto dos troços assin
 Registos datados para a data de corte de um reassentamento, contagens de construções para alternativas de traçado e de local, e estimativas de agregados familiares para o planeamento.
 :::
 :::card{title="Dossiês documentais" icon="file-check" eyebrow="Registos"}
-Imagens datadas, registos e mapas reunidos com impressões digitais dos ficheiros e um carimbo temporal independente, para mostrar o que existia no terreno e quando. Apoiam processos legais e comunitários.
+Imagens datadas, registos e mapas reunidos com um código de verificação (hash SHA-256) de cada ficheiro e um carimbo temporal independente, para mostrar o que existia no terreno e quando. Apoiam processos legais e comunitários.
 :::
 :::
 ::::
@@ -136,7 +140,7 @@ Nunca publicamos o traçado, as imagens ou os resultados de um cliente sem autor
 ::::
 
 ::::section{id="compras" tone="alt" eyebrow="Para equipas de compras" title="Concursos, pedidos de cotação e registo de fornecedores"}
-Respondemos a concursos, pedidos de cotação e pedidos de proposta, e preenchemos os formulários de registo e de qualificação de fornecedores. Envie os documentos com o pedido e diga-nos que portal ou formato o seu processo utiliza.
+Respondemos a concursos, pedidos de cotação e pedidos de proposta. Envie os formulários de registo ou de pré-qualificação de fornecedores com o pedido; a proposta indica que registos já estão feitos para o seu contrato e quais estão a ser tratados. Diga-nos também que portal ou formato o seu processo utiliza.
 
 :::cta{title="Tem um concurso ou um pedido de cotação?" text="Envie os documentos e o prazo; respondemos no formato que o concurso pede." button="Enviar documentos do concurso" intent="tender"}
 :::

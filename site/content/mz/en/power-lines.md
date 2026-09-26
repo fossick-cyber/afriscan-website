@@ -49,7 +49,7 @@ A register of what stands in the servitude, measured to the axis and dated, lets
 ::::col
 :::cards{cols="1"}
 :::card{title="“Houses are going up under the line.”" icon="houses"}
-Structures inside the servitude, listed by distance to the axis and by span, with the stretches that are filling fastest shown first.
+Structures inside the servitude, listed by distance to the axis and by chainage, with the stretches that are filling fastest shown first.
 :::
 :::card{title="“Who was there before we built?”" icon="calendar"}
 A dated record, and a comparison with earlier imagery where it exists, for the question the Electricity Law makes decisive.
@@ -92,7 +92,7 @@ The Land Law adds its own strip: electricity and telecommunications lines, with 
 ::::col
 We buffer the line route in its UTM zone, list each structure inside the servitude with its distance to the axis, its band and its position along the line, and rate each 500 m for **encroachment density**: high where more than five structures stand inside the widest band, medium for one to five, low for none. It is a count rule that tells the servitude team where to go first, not a clearance or safety calculation.
 
-Re-surveys follow on a schedule agreed with you. New and removed structures between dated surveys are flagged automatically and confirmed by a reviewer, and a notice after each survey says which spans changed. Along the line we also map where vegetation has been cleared or has regrown, where tall vegetation stands inside the servitude, and where *queimadas* have burnt close to towers in the dry season.
+Re-surveys follow on a schedule agreed with you. New and removed structures between dated surveys are flagged automatically and confirmed by a reviewer, and a notice after each survey says which stretches changed. Along the line we also map where vegetation has been cleared or has regrown, where tall vegetation stands inside the servitude, and where *queimadas* have burnt close to towers in the dry season.
 ::::
 ::::col
 ### What you receive
@@ -133,7 +133,7 @@ The Electricity Law asks for the servitude to be registered in the land cadastre
 ::::section{id="sample" eyebrow="What a register looks like" title="The same register, on a line"}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/t9-rating-medium" alt="Close satellite view around km 9.0 of the T-9 pipeline route: two reviewer marks on small plots inside the 50 m band just north of the line" caption="Sample register detail: two structures inside the 50 m band" badge="Reviewed · manual marks" size="half" credit="T-9 replacement pipeline, Inhambane, shown with the route owner's permission. Imagery © Google, shown for illustration. Marks: AfriScan."}
+:::figure{src="samples/t9-register-medium" alt="Strip view of a 500 m stretch of the T-9 pipeline route rated medium: two reviewer marks inside the 50 m band on the north side of the line" caption="Sample register detail: two structures inside the 50 m band" badge="Reviewed · manual marks" size="half" credit="T-9 replacement pipeline, Inhambane, shown with the route owner's permission. Drawn by AfriScan from the sample register; no imagery."}
 :::
 ::::
 ::::col

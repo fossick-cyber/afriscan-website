@@ -31,6 +31,10 @@ faq:
   - q: Is the register a cadastral or legal survey?
     a: No. It records what stands on the ground, where, and how far from your line, on the imagery date. Boundaries, servitude diagrams and title are the work of professional land surveyors and the land authorities in each country. Our registers are designed to sit alongside that work, not to replace it.
 related: [right-of-way-monitoring, change-detection, insight-satellite-or-drone]
+cta:
+  title: Want the method applied to your ground?
+  text: Send a route or boundary and the distances that matter. The proposal states the imagery, the review steps and the limits for your area before any work starts.
+  button: Request a proposal
 ---
 
 ::::section{id="principles" eyebrow="In one paragraph" title="Automatic sources propose, a person decides"}
@@ -93,7 +97,7 @@ Open-source building-segmentation models from the humanitarian mapping community
 Where sources overlap, their results are merged so each structure is counted once. Each structure keeps a record of which sources found it and how confident each was, so a reviewer can see at a glance what the sources agree on and what they do not.
 :::
 :::step{title="Reviewer check" icon="user-check"}
-A reviewer works along the whole route or site on the imagery, in chainage order. Real structures are confirmed; bushes, rocks, shadows and bare patches are removed; structures every source missed are marked by hand; anything the imagery cannot settle goes to a "verify on the ground" list. On long routes several reviewers can share the work, and every mark records who placed it.
+A reviewer works along the whole route or site on the imagery, in chainage order. Real structures are confirmed; bushes, rocks, shadows and bare patches are removed; structures every source missed are marked by hand; anything the imagery cannot settle goes to a "verify on the ground" list. On long routes several reviewers can share the work, and the register records, for each structure it lists, whether it was proposed automatically or added by a reviewer.
 :::
 :::
 

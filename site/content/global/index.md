@@ -10,9 +10,9 @@ buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: See sample outputs, key: results}
 hero:
-  image: samples/t9-hero
-  alt: Satellite view of a pipeline route through farmland and villages, with 50 m and 100 m buffer bands and reviewer marks on nearby structures
-  credit: "T-9 replacement pipeline route, Inhambane, Mozambique: 50 m and 100 m buffers and reviewer marks. Imagery © Google."
+  image: samples/t9-route-hero
+  alt: Satellite view of bush, farmland and a gas field in Inhambane, Mozambique, with the T-9 pipeline route drawn in orange inside its 100 m band
+  credit: "T-9 replacement pipeline route, Inhambane, Mozambique, with its 100 m band, on a Copernicus Sentinel-2 scene of 2 August 2026. Contains modified Copernicus Sentinel data 2026."
   chips:
     - {title: "50 m · 100 m", text: "Structures listed by distance band"}
     - {title: "Every 500 m", text: "An encroachment-density rating"}
@@ -83,7 +83,7 @@ A person checks every result before it reaches you. You receive a PDF report in 
 ::::section{id="deliverables" eyebrow="What you receive" title="A register your land and GIS teams can use straight away"}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/t9-km5-6" alt="Satellite view of a 1.3 km stretch of pipeline route with 50 m and 100 m buffer bands; reviewer marks sit on houses on both sides of the line, labelled R21 to R40" caption="Sample: T-9 replacement pipeline, km 5.0 to 6.3" badge="Reviewed · manual marks" size="half" credit="Imagery © Google, shown for illustration. Route, buffers and marks: AfriScan."}
+:::figure{src="samples/t9-register-km5-6" alt="Strip view of a 1.5 km stretch of the T-9 pipeline route with 50 m and 100 m bands on both sides of the line and twenty reviewer marks, R20 to R39, placed by chainage and distance; below, three 500 m segments rated medium, high and high" caption="Sample register view: T-9 replacement pipeline, km 5.0 to 6.5" badge="Reviewed · manual marks" size="half" credit="Drawn by AfriScan from the sample register; no imagery."}
 :::
 ::::
 ::::col
@@ -100,7 +100,7 @@ A person checks every result before it reaches you. You receive a PDF report in 
 - Segments rated high: 4 of 22
 :::
 
-[See the full sample](/results) · [Request a sample report](/contact?intent=sample-report)
+[See the full sample](/results) · [Ask for a redacted sample report](/contact?intent=sample-report)
 ::::
 :::::
 ::::
@@ -120,7 +120,7 @@ AfriScan maps what is on the land: structures, cleared ground, excavations and t
 
 :::cards{cols="4"}
 :::card{title="Dated, credited sources" icon="file-check"}
-Every report names its sources and imagery dates. Map-service basemaps are never passed off as survey imagery, and open data is credited as its licence requires.
+Every report names its sources and, where the source provides it, the capture date. Map-service basemaps are never passed off as survey imagery, and open data is credited as its licence requires.
 :::
 :::card{title="Checked by a person" icon="user-check"}
 Automatic detection proposes; a reviewer confirms. Anything the imagery cannot settle is listed for a ground check.

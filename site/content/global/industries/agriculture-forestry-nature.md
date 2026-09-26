@@ -144,7 +144,7 @@ The EU Deforestation Regulation matters most for Nigerian cocoa, rubber and palm
 :::country-sites{match="page"}
 :::
 
-Open data we use for this work, such as Copernicus Sentinel, ESA WorldCover, Global Forest Watch alerts and NASA FIRMS, is credited in every report that uses it. See [imagery and data sources](/imagery#open-data).
+Open data we use for this work, such as Copernicus Sentinel, ESA WorldCover, Global Forest Watch alerts and NASA FIRMS, is credited as each licence requires. See [imagery and data sources](/imagery#open-data).
 ::::
 
 ::::section{id="scope" eyebrow="Honest scope" title="What we do, and what we don't"}

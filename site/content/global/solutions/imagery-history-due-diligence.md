@@ -32,7 +32,7 @@ faq:
   - q: Our insurer or lender wants to know what was there before. Can you help?
     a: "Yes, as a documented history for their assessment: what the imagery shows, on which dates, from which sources. It is not a valuation, a risk rating or a loss assessment."
   - q: Do you use web-map basemaps for the history?
-    a: No. Basemaps carry no capture date, so they cannot show when something happened. The history is built only from imagery and datasets with known dates, each named and credited in the report.
+    a: No. Basemaps carry no capture date, so they cannot show when something happened. The history is built only from imagery and datasets with known dates, each named in the report.
 ---
 
 ::::section{id="what" eyebrow="What it is" title="The land history nobody wrote down"}

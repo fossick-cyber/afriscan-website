@@ -1,0 +1,8 @@
+# Cloudflare Pages configuration for the afriscan-website project (Git-connected, production branch main).
+# With this file in the repository, Pages takes these settings from it on every Git build instead of
+# from the dashboard: it serves the generated site in dist/ (never the repository root, which holds the
+# site/ sources), and deploys the Pages Functions in functions/ at the repository root.
+# No build command: dist/ is built locally by site/build.py and committed.
+name = "afriscan-website"
+pages_build_output_dir = "./dist"
+compatibility_date = "2026-03-30"   # the project's current Functions compatibility date (dashboard, 2026-09-26)

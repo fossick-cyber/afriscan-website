@@ -12,6 +12,10 @@ buttons:
 og:
   headline: About AfriScan
   subline: Remote land monitoring for pipelines, power lines, concessions and project sites
+cta:
+  title: Working out whether we fit your project?
+  text: Tell us the route or site, the country and what the record is for. The proposal sets out the method, the imagery plan, who does what and which registrations apply to your contract.
+  button: Request a proposal
 ---
 
 ::::section{id="what-we-do" eyebrow="What we do" title="A dated record of what stands on your land"}
@@ -77,7 +81,7 @@ Drone surveys are subject to the permits and authorisations each job requires. E
 ::::section{id="afridrone" tone="alt" eyebrow="AfriScan and Afridrone" title="Two names, two roles"}
 :::::columns{split="1-1"}
 ::::col
-AfriScan is the land and corridor monitoring service of [Afridrone](https://afridr.one/), AfriScan's sister drone-services brand. AfriScan is the name for the survey, the register and the reports; Afridrone is the name for drone work.
+AfriScan is [Afridrone](https://afridr.one/)’s land and corridor monitoring service; Afridrone flies the drone work. AfriScan is the name for the survey, the register and the reports.
 
 Afridrone is working towards the operator approvals each country requires. Until a job's permits and authorisations are in place, that job is planned on satellite imagery or on the imagery you already hold.
 ::::
@@ -90,7 +94,7 @@ AfriScan by Afridrone is not affiliated with Afriscan Construction in South Afri
 ::::
 
 ::::section{id="work-with-us" eyebrow="Working together" title="How a project starts"}
-Send the route or boundary, the country and province, the distances that matter and what the record is for. We reply with a written proposal: scope, imagery plan, method, deliverables and schedule. We respond to tenders, RFQs and RFPs, and complete supplier onboarding and vendor-qualification forms: send them with your request. Many projects start with one stretch, one site or one concession boundary.
+Send the route or boundary, the country and province, the distances that matter and what the record is for. We reply with a written proposal: scope, imagery plan, method, deliverables and schedule. We respond to tenders, RFQs and RFPs. Send your supplier or prequalification forms with your request; the proposal states which registrations are in place for your contract and which are being arranged. Many projects start with one stretch, one site or one concession boundary.
 
 :::cards{cols="3"}
 :::card{title="How we work" icon="clipboard" key="how-we-work"}

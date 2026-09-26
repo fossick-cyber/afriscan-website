@@ -31,6 +31,10 @@ faq:
     a: No. It records the structures, cleared ground and tracks visible on dated imagery, with IDs and coordinates, so the enumeration team knows what to expect and every later claim can be checked against the same record. Who is entitled, and to how much, is decided through the enumeration, the Land Use Act process and, on lender-financed projects, the resettlement plan.
   - q: Do you need a drone permit to survey a right of way?
     a: Not for satellite-based work, which involves no flight and no site visit. Drone surveys need an NCAA operator certificate with ONSA security clearance, among other approvals, and can require notice to the Director of Federal Surveys. They are subject to the permits and authorisations each job requires.
+cta:
+  title: Need a dated register of your right of way?
+  text: Send the line, the right-of-way width and the stretches that worry you. We reply with a scope, an imagery plan and a written proposal.
+  button: Request a proposal
 ---
 
 ## Five stages, five records {#stages}

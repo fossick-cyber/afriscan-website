@@ -13,7 +13,7 @@
       <input type="hidden" name="industry" id="f-industry" value="">
       <input type="hidden" name="service" id="f-service" value="">
       <input type="hidden" name="site_section" value="{{ loc.label }}">
-      <div class="hp" aria-hidden="true"><label for="f-honey">Leave this field empty</label><input type="text" name="_honey" id="f-honey" tabindex="-1" autocomplete="off"></div>
+      <div class="hp" aria-hidden="true"><label for="f-honey">{{ f.honeypot }}</label><input type="text" name="_honey" id="f-honey" tabindex="-1" autocomplete="off"></div>
       <fieldset>
         <legend>{{ f.legend_you }}</legend>
         <div class="form-grid">

@@ -7,7 +7,7 @@ crumb: How we work
 section: how
 nav_group: how
 nav_order: 40
-nav_blurb: Engagement models, proposals, tenders and supplier onboarding
+nav_blurb: Engagement models, proposals, tenders and supplier forms
 eyebrow: Working with AfriScan
 lead: "Every engagement starts with your route or site and what the record is for. We reply with a written proposal: scope, imagery plan, method, deliverables and schedule. We also respond to tenders, RFQs and RFPs."
 buttons:
@@ -20,7 +20,7 @@ faq:
   - q: Can we start with part of the route?
     a: Yes. Many projects start with one stretch, one site or one concession boundary, so your team can check the register against what it knows before the rest is surveyed. Work tuned to your imagery, such as a custom detector, is tuned and checked on part of your area before it runs on the rest.
   - q: Do you respond to tenders and RFPs?
-    a: Yes. Send the tender documents or the RFQ with your request and we reply in the format the tender asks for. We also complete supplier onboarding and vendor-qualification forms.
+    a: Yes. Send the tender documents or the RFQ with your request and we reply in the format the tender asks for. Send your supplier or prequalification forms too; the proposal states which registrations are in place for your contract and which are being arranged.
   - q: Can you work as part of a consultancy's team?
     a: Yes. ESIA, RAP and engineering consultancies can commission structure registers, route comparisons and GIS layers for their own reports, delivered in the formats their teams already use.
   - q: How do you quote?
@@ -28,6 +28,10 @@ faq:
   - q: Will you publish our route or results?
     a: No. We never publish a client's route, imagery or results without written permission.
 related: [insight-survey-scope, right-of-way-monitoring, resettlement-cut-off-baselines]
+cta:
+  title: Ready to scope a survey or answer a tender?
+  text: Send the route or site, or the tender documents and the deadline. We reply with a scope and a written proposal in the format your process asks for.
+  button: Request a proposal
 ---
 
 ::::section{id="models" eyebrow="Engagement models" title="Ways to work with us" lead="Most clients start with a baseline and add re-surveys, or bring us in for one decision: a cut-off date, a route choice or a single contested location."}
@@ -78,8 +82,8 @@ Dated imagery, registers and maps packaged with file fingerprints and an indepen
 :::::
 ::::
 
-::::section{id="procurement" eyebrow="For procurement teams" title="Tenders, RFQs and supplier onboarding"}
-We respond to tenders, RFQs and RFPs, and we complete supplier onboarding and vendor-qualification forms. Send the documents with your request and tell us the portal or format your process uses.
+::::section{id="procurement" eyebrow="For procurement teams" title="Tenders, RFQs and supplier forms"}
+We respond to tenders, RFQs and RFPs. Send your supplier or prequalification forms with your request; the proposal states which registrations are in place for your contract and which are being arranged. Tell us the portal or format your process uses.
 
 :::callout{tone="scope" title="Data you send us"}
 We never publish a client's route, imagery or results without written permission. The only route shown on this site, the T-9 sample, is shown with the route owner's permission.

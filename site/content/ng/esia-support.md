@@ -30,7 +30,7 @@ faq:
   - q: Can you work as a subcontractor to our ESIA or RAP team?
     a: Yes. We supply structure baselines, estimated households, land-cover baselines and GIS layers for your own maps and reports, in the formats and coordinate reference system your team uses.
   - q: Can your evidence packs be used in legal proceedings?
-    a: They support legal and community processes; we never describe them as court-grade. File fingerprints and an independent timestamp show that the files existed at that time and have not changed since. They don't prove how the imagery was captured.
+    a: Whether a court or tribunal accepts a pack is for your lawyers; it supports legal and community processes. File fingerprints and an independent timestamp show that the files existed at that time and have not changed since. They don't prove how the imagery was captured.
   - q: How are household numbers produced?
     a: As estimates, from reviewed structure counts and stated persons-per-household assumptions. Every report sets the assumptions out, so your team can replace them with the figures from your own socio-economic survey.
 cta:

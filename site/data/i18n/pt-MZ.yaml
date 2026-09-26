@@ -36,6 +36,8 @@ cta:
 
 labels:
   faq: Perguntas frequentes
+  breadcrumb: Caminho de navegação
+  footer_nav: Rodapé
   related: Também útil
   used_in: Utilizado em
   who_uses: Quem utiliza
@@ -141,6 +143,7 @@ form:
   error: Não foi possível enviar o pedido neste momento. A tentar de outra forma…
   privacy: O seu pedido chega-nos através do FormSubmit, um serviço de envio de formulários.
   privacy_link: Leia o aviso de privacidade (em inglês).
+  honeypot: Deixe este campo em branco
   subject: Novo pedido AfriScan (PT)
   next_title: O que acontece a seguir
   next_steps:
@@ -150,13 +153,13 @@ form:
   send_title: O que enviar
   send_text: "O ficheiro do traçado ou do limite (KML, KMZ, GeoJSON, Shapefile, GPX ou GeoPackage), o país e a província, as distâncias a verificar, a data que o registo deve reflectir, os produtos de que precisa e o prazo. Ainda não tem ficheiro? Descreva a localização e desenhamos o traçado consigo."
   procurement_title: Equipas de compras
-  procurement_text: Enviem, com o pedido, o formulário de registo de fornecedor ou os documentos do concurso, e nós preenchemo-los.
+  procurement_text: Envie, com o pedido, o formulário de registo ou de pré-qualificação de fornecedor ou os documentos do concurso. A proposta indica que registos já estão feitos para o seu contrato e quais estão a ser tratados.
 
 notfound:
   title: Página não encontrada | AfriScan
   h1: Página não encontrada
   text: Esta página não existe ou foi movida. Estas páginas são um bom ponto de partida.
-  home: Início do AfriScan
+  home: Início da AfriScan
 
 thanks:
   title: Obrigado | AfriScan
@@ -185,3 +188,26 @@ samples:
   within: "Construções a menos de {b} m"
   rating: Classificação
   ratings: {high: Alta, medium: Média, low: Baixa}
+
+# Como cada secção é nomeada em português (menu Países, rodapé, selector, botões dos países).
+sites:
+  global: "Global (em inglês)"
+  mz-pt: "Moçambique (Português)"
+  mz-en: "Moçambique (em inglês)"
+  za: "África do Sul (em inglês)"
+  ng: "Nigéria (em inglês)"
+
+# Páginas em inglês para onde as páginas portuguesas remetem (menus, rodapé, caminho de navegação,
+# cartões). Cada chave é a chave de grupo (key) da página. Uma página inglesa ligada a partir de
+# /mz/pt/ sem entrada aqui faz falhar a construção do site.
+foreign_pages:
+  how-it-works: {label: "Como funciona, passo a passo (em inglês)", blurb: "Do ficheiro do traçado a um registo revisto"}
+  methodology: {label: "Metodologia e revisão (em inglês)", blurb: "Fontes, verificações do revisor, regras de distância e limites"}
+  imagery-data: {label: "Imagens e fontes de dados (em inglês)", blurb: "Cenas datadas, ortofotomapas de drone, as suas imagens e dados abertos"}
+  faq: {label: "Perguntas frequentes (em inglês)", blurb: "Datas das imagens, revisão, formatos, autorizações e propostas"}
+  about: {label: "Sobre a AfriScan (em inglês)", blurb: "Quem somos, como trabalhamos e a relação com a Afridrone"}
+  privacy: {label: "Aviso de privacidade (em inglês)", blurb: "Que dados recolhemos através deste site e do formulário"}
+  data-sources: {label: "Fontes de dados e créditos (em inglês)", blurb: "As licenças e os créditos de cada conjunto de dados abertos"}
+  drone-regulations: {label: "Regras de drones por país (em inglês)", blurb: "Moçambique, África do Sul e Nigéria, lado a lado"}
+  countries: {label: "Países (em inglês)", blurb: "Moçambique, África do Sul e Nigéria"}
+  resources: {label: "Recursos (em inglês)", blurb: "Guias, exemplos de resultados, perguntas frequentes e regras por país"}

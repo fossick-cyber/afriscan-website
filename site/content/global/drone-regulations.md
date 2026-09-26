@@ -32,6 +32,10 @@ faq:
     a: Weeks at least, and months where a new approval is needed. Nigeria's rules ask for an operator application at least 90 days before operations and special authorisations at least 30 days ahead; Mozambique's IACM aims to process a new operation approval in 90 to 120 days; survey and site permissions come on top. Satellite work can start while the drone permissions are arranged.
   - q: Does AfriScan or Afridrone hold these approvals?
     a: Not yet. Afridrone is working towards the operator approvals each country requires, and every drone proposal sets out the permits and authorisations that particular flight needs, who holds them and how they fit the schedule.
+cta:
+  title: Planning a drone survey?
+  text: We start from satellite imagery, which needs no flight, while the permits and authorisations each flight requires are arranged. The proposal sets out which ones apply and how they fit the schedule.
+  button: Request a proposal
 ---
 
 ::::section{id="at-a-glance" eyebrow="At a glance" title="Who regulates drone survey work" class="compare"}

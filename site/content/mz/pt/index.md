@@ -10,9 +10,9 @@ buttons:
   - {label: Pedir proposta, intent: proposal}
   - {label: Ver o exemplo do T-9, key: results}
 hero:
-  image: samples/t9-hero
-  alt: Vista de satélite de um traçado de gasoduto que atravessa machambas e aldeias, com as faixas de 50 m e 100 m e as marcações do revisor nas construções próximas
-  credit: "Traçado do gasoduto de substituição T-9, Inhambane, Moçambique: faixas de 50 m e 100 m e marcações do revisor. Imagens © Google, apenas para ilustração."
+  image: samples/t9-route-hero
+  alt: Vista de satélite de mato, machambas e de um campo de gás em Inhambane, com o traçado do gasoduto T-9 desenhado a cor de laranja dentro da sua faixa de 100 m
+  credit: "Traçado do gasoduto de substituição T-9, Inhambane, Moçambique, com a faixa de 100 m, sobre uma cena Copernicus Sentinel-2 de 2 de Agosto de 2026. Contém dados Copernicus Sentinel modificados (2026)."
   chips:
     - {title: "50 m · 100 m", text: "Construções listadas por faixa de distância"}
     - {title: "Troços de 500 m", text: "Densidade de ocupação em cada troço"}
@@ -73,12 +73,12 @@ Registos numa data conhecida, como a data de corte de um reassentamento, e dossi
 :::
 ::::
 
-::::section{id="lei" tone="alt" eyebrow="A faixa de 50 metros" title="A faixa de protecção já está na lei" lead="Três leis fixam uma faixa de 50 metros ao longo de gasodutos, oleodutos e linhas de energia, e um decreto acrescenta 200 metros no corredor Pande–Temane. O registo da AfriScan mede cada construção em relação a essas faixas."}
+::::section{id="lei" tone="alt" eyebrow="A faixa de 50 metros" title="A faixa de protecção já está na lei" lead="Três leis fixam faixas de até 50 metros ao longo de gasodutos, oleodutos e linhas de energia, e um decreto acrescenta 200 metros no corredor Pande–Temane. O registo da AfriScan mede cada construção em relação a essas faixas."}
 :::::columns{split="1-1"}
 ::::col
 - **[Lei n.º 19/97, de 1 de Outubro (Lei de Terras)](https://www.pdul.gov.mz/content/download/486/2635/file/Lei%20de%20Terras.pdf), artigo 8, alínea g):** são zonas de protecção parcial os terrenos ocupados por «instalações e condutores aéreos, superficiais, subterrâneos e submarinos de electricidade, de telecomunicações, petróleo, gás e água, com uma faixa confinante de 50 metros de cada lado». Nestas zonas não se adquire o direito de uso e aproveitamento da terra (DUAT), apenas licenças especiais (artigo 9).
 - **[Lei n.º 8/2026, de 3 de Junho (Lei do Petróleo)](https://www.inp.gov.mz/wp-content/uploads/2026/06/BR_104_I_SERIE_2.o_SUPLEMENTO_2026.pdf), artigo 75, n.º 3:** as áreas que circundam as infra-estruturas petrolíferas numa faixa de 50 metros são zonas de protecção parcial; a zona de segurança é fixada por regulamento (n.º 4).
-- **[Lei n.º 12/2022, de 11 de Julho (Lei de Electricidade)](https://arene.org.mz/wp-content/uploads/2022/08/Lei-de-Electricidade-2022.pdf), artigo 43:** servidão administrativa até 50 metros a partir do eixo da linha, averbada na concessão e registada no Cadastro de Terras e na Conservatória do Registo Predial. A compensação não é exigível a quem adquiriu os seus direitos depois de a infra-estrutura eléctrica ser implantada (n.º 10).
+- **[Lei n.º 12/2022, de 11 de Julho (Lei de Electricidade)](https://arene.org.mz/wp-content/uploads/2022/08/Lei-de-Electricidade-2022.pdf), artigo 43:** servidão administrativa de até 50 metros a partir do eixo da linha, com a largura a depender da tensão e de a zona ser rural ou urbana (n.º 5), averbada na concessão e registada no Cadastro de Terras e na Conservatória do Registo Predial. A compensação não é exigível a quem adquiriu os seus direitos depois de a infra-estrutura eléctrica ser implantada (n.º 10).
 - **[Decreto n.º 36/2001, de 20 de Novembro](https://faolex.fao.org/docs/pdf/moz50003.pdf):** no corredor do gasoduto do projecto Pande–Temane acresce uma zona de segurança de 200 metros de cada lado, onde a implantação de infra-estruturas depende do consentimento prévio do operador do projecto (artigos 2 e 3).
 ::::
 ::::col
@@ -115,7 +115,7 @@ Uma pessoa revê cada resultado antes da entrega. Recebe um relatório PDF em po
 ::::section{id="entregaveis" tone="alt" eyebrow="O que recebe" title="Um registo que as equipas de terras e de SIG podem usar de imediato"}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/t9-km5-6-pt" alt="Vista de satélite de um troço de 1,3 km do traçado com as faixas de 50 m e 100 m; as marcações do revisor assinalam casas dos dois lados da linha, com as referências R21 a R40" caption="Exemplo: gasoduto de substituição T-9, km 5,0 a 6,3" badge="Revisto · marcação manual" size="half" credit="Imagens © Google, apenas para ilustração. Traçado, faixas e marcações: AfriScan."}
+:::figure{src="samples/t9-register-km5-6-pt" alt="Vista linear de um troço de 1,5 km do traçado T-9, com as faixas de 50 m e 100 m dos dois lados da linha e vinte marcações do revisor, R20 a R39, colocadas pela distância ao longo do traçado e pela distância à linha; em baixo, três troços de 500 m com densidade média, alta e alta" caption="Exemplo de vista do registo: gasoduto de substituição T-9, km 5,0 a 6,5" badge="Revisto · marcação manual" size="half" credit="Desenhado pela AfriScan a partir do registo do exemplo; sem imagens."}
 :::
 ::::
 ::::col
@@ -132,7 +132,7 @@ Uma pessoa revê cada resultado antes da entrega. Recebe um relatório PDF em po
 - Troços com densidade alta: 4 de 22
 :::
 
-[Ver o exemplo completo](/mz/pt/resultados-de-exemplo) · [Pedir um relatório de exemplo](/mz/pt/contacto?intent=sample-report)
+[Ver o exemplo completo](/mz/pt/resultados-de-exemplo) · [Pedir o exemplo anonimizado](/mz/pt/contacto?intent=sample-report)
 ::::
 :::::
 ::::
@@ -164,7 +164,7 @@ A AfriScan mapeia o que está na terra: construções, terreno desmatado, escava
 
 :::cards{cols="4"}
 :::card{title="Fontes datadas e creditadas" icon="file-check"}
-Cada relatório indica as fontes e as datas das imagens. Os mapas de base de serviços cartográficos nunca são apresentados como imagens do levantamento, e os dados abertos são creditados como as licenças exigem.
+Cada relatório indica as fontes e, quando a fonte a regista, a data de captação. Os mapas de base de serviços cartográficos nunca são apresentados como imagens do levantamento, e os dados abertos são creditados como as licenças exigem.
 :::
 :::card{title="Verificado por uma pessoa" icon="user-check"}
 A detecção automática propõe; um revisor confirma. O que a imagem não permite decidir fica listado para verificação no terreno.
@@ -181,9 +181,9 @@ Os registos datados apoiam o diálogo com as comunidades, os processos legais e 
 ::::section{id="drones" eyebrow="Drones e autorizações" title="Satélite sem voos; drone com as autorizações de cada trabalho"}
 :::::columns{split="1-1"}
 ::::col
-O rastreio por satélite começa a partir do ficheiro do traçado, sem visita ao local e sem drone. Quando o satélite não chega, a Afridrone, a marca de serviços de drone associada à AfriScan, faz ortofotomapas e modelos de elevação dos troços assinalados, sujeitos às licenças e autorizações que cada trabalho exige.
+O rastreio por satélite começa a partir do ficheiro do traçado, sem visita ao local e sem drone. A AfriScan é o serviço de monitoria de terras e corredores da Afridrone, e é a Afridrone que faz os voos de drone. Quando o satélite não chega, a Afridrone faz ortofotomapas e modelos de elevação dos troços assinalados, sujeitos às licenças e autorizações que cada trabalho exige.
 
-Em Moçambique, um levantamento aéreo civil com drone precisa de várias autorizações: a aprovação da operação pelo IACM, a autorização do Ministro que superintende a área da Defesa Nacional para a execução do levantamento (Lei n.º 6/2024, de 4 de Junho, artigo 13, n.º 1) e a autorização da entidade de cartografia sistemática para a cedência dos dados a quem os encomendou (artigo 13, n.º 2). Os dados originais são propriedade do Estado (artigo 14), e reproduzir ou divulgar fotografias aéreas, mosaicos e ortofotos sem autorização é uma infracção (artigo 16).
+Em Moçambique, um levantamento aéreo civil com drone precisa de várias autorizações: a aprovação da operação pelo IACM, a autorização do Ministro que superintende a área da Defesa Nacional para a execução do levantamento (Lei n.º 6/2024, de 4 de Junho, artigo 13, n.º 1) e a autorização da entidade de cartografia sistemática, ouvidas a Defesa e a Segurança, para a cedência dos dados a quem os encomendou (artigo 13, n.º 2). Os dados originais são propriedade do Estado (artigo 14), e reproduzir ou divulgar fotografias aéreas, mosaicos e ortofotos sem autorização é uma infracção (artigo 16).
 
 Por isso cada proposta com drone indica as autorizações de que o voo precisa e o modo como se encaixam no calendário, e este site não mostra ortofotomapas de drone de Moçambique.
 ::::
@@ -191,7 +191,7 @@ Por isso cada proposta com drone indica as autorizações de que o voo precisa e
 :::callout{tone="legal" title="Quem autoriza o quê, em resumo"}
 - **IACM:** registo do drone, licença de piloto (RPL), carta de aprovação e certificado de segurança (Directiva DOS-09-2018).
 - **Ministério da Defesa Nacional:** autoriza a execução do levantamento (Lei n.º 6/2024, art. 13, n.º 1).
-- **Cartografia sistemática (CENACARTA):** autoriza a cedência dos dados e recebe o depósito dos dados processados (arts. 13, n.º 2, e 14).
+- **Entidade de cartografia sistemática** (na prática, através do CENACARTA): autoriza a cedência dos dados, ouvidas a Defesa e a Segurança (art. 13, n.º 2); o depósito dos dados processados faz-se junto das entidades de cartografia, de Defesa Nacional e de desenvolvimento geoespacial (art. 14, n.º 2).
 
 [Lei de drones em Moçambique: o guia](/mz/pt/lei-de-drones)
 :::
@@ -200,7 +200,7 @@ Por isso cada proposta com drone indica as autorizações de que o voo precisa e
 ::::
 
 ::::section{id="compras" tone="alt" eyebrow="Para equipas de compras" title="Concursos, pedidos de proposta e registo de fornecedores"}
-Respondemos a concursos, pedidos de cotação e pedidos de proposta, e preenchemos os formulários de registo e de qualificação de fornecedores. Envie os documentos com o pedido e diga-nos que portal ou formato o seu processo utiliza.
+Respondemos a concursos, pedidos de cotação e pedidos de proposta. Envie os formulários de registo ou de pré-qualificação de fornecedores com o pedido; a proposta indica que registos já estão feitos para o seu contrato e quais estão a ser tratados. Diga-nos também que portal ou formato o seu processo utiliza.
 
 :::cards{cols="3"}
 :::card{title="Informação para compras e conformidade" icon="clipboard" key="mz-procurement"}
