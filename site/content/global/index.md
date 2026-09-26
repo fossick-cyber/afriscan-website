@@ -80,7 +80,7 @@ A person checks every result before it reaches you. You receive a PDF report in 
 [How AfriScan maps structures along your corridor](/features)
 ::::
 
-::::section{id="deliverables" eyebrow="What you receive" title="A register your land and GIS teams can use the same day"}
+::::section{id="deliverables" eyebrow="What you receive" title="A register your land and GIS teams can use straight away"}
 :::::columns{split="1-1" align="center"}
 ::::col
 :::figure{src="samples/t9-km5-6" alt="Satellite view of a 1.3 km stretch of pipeline route with 50 m and 100 m buffer bands; reviewer marks sit on houses on both sides of the line, labelled R21 to R40" caption="Sample: T-9 replacement pipeline, km 5.0 to 6.3" badge="Reviewed · manual marks" size="half" credit="Imagery © Google, shown for illustration. Route, buffers and marks: AfriScan."}

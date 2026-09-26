@@ -1,0 +1,6 @@
+{% if sites %}
+<div class="btn-row country-sites">
+{% for s in sites %}<a class="btn btn-outline" href="{{ s.href }}" hreflang="{{ s.lang }}" lang="{{ s.lang }}">{{ s.label }}</a>{% endfor %}
+</div>
+{% endif %}
+{{ inner }}

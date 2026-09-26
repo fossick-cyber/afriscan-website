@@ -41,7 +41,10 @@ We never assume a permit. Afridrone is working towards the operator approvals ea
 ::::
 
 ::::section{id="language" tone="alt" eyebrow="Language" title="Reports in English or Portuguese"}
-Reports are available in English or Portuguese. Country pages for Mozambique (in Portuguese and English), South Africa and Nigeria set out the protection zones, servitude rules, procurement routes and drone regulations that apply in each, with sources and review dates.
+Reports are available in English or Portuguese.
+
+:::country-sites
+:::
 
 The [methodology](/methodology) and [imagery and data sources](/imagery) are the same in every country.
 ::::

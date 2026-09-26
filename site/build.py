@@ -66,6 +66,7 @@ COMPONENTS = {
     "register": {"required": {"data"}, "allowed": {"limit"}},
     "details": {"required": {"summary"}, "allowed": {"open"}},
     "lead": {"allowed": set()},
+    "country-sites": {"allowed": set()},
 }
 
 
@@ -282,6 +283,8 @@ class Build:
         crumbs = [{"name": t["home_crumb"], "url": "/"}]
         lk = p["loc_key"]
         home = self.home_of(lk)
+        if p["template"] == "country_home":
+            return crumbs + [{"name": p["loc"]["country_name"], "url": p["url"]}]
         if lk != "global" and home:
             crumbs.append({"name": p["loc"]["country_name"], "url": home["url"]})
         sec = p["hub"] and None
@@ -569,6 +572,11 @@ class Build:
                 continue
             rows.append({"cc": cc, "law": law, "guide": guide})
         return {"rows": rows}
+
+    def cmp_country_sites(self, p, b, ctx):
+        sites = [{"label": self.locales[k]["label"], "href": self.home_of(k)["url"], "lang": self.locales[k]["lang"]}
+                 for k in self.live_locales if k != "global"]
+        return {"sites": sites}
 
     def cmp_segments(self, p, b, ctx):
         data = self.samples.get(b.attrs["data"])
