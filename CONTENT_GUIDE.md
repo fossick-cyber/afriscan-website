@@ -145,7 +145,7 @@ Required on every page: `title`, `description`, `h1`.
 | `section` | Which hub this page sits under for breadcrumbs and `:::pages` lists: `industries`, `solutions`, `how`, `resources`, `countries`, `insights`. Industry, solution and article templates set it automatically. |
 | `hub` | Marks the page as the hub for a section (one per section and language): the target of the top-level menu item and a breadcrumb level. |
 | `parent` | Key of an extra breadcrumb parent. |
-| `nav_group` | Puts the page in a header menu: `how`, `countries`, `resources` (industries and solutions come from the catalogue automatically). Country-only pages can also join `industries` or `solutions`. |
+| `nav_group` | Puts the page in a header menu: `how`, `countries`, `resources` (industries and solutions come from the catalogue automatically). Country-only pages can also join `industries` (listed under More industries) or `solutions`; in `solutions`, set `nav_subgroup` to a catalogue solution group (`protect`, `baselines`, `change`, `capture`) to place the item in that column. |
 | `nav_order`, `nav_label`, `nav_blurb` | Menu order (low first), label and one-line description. |
 | `summary`, `icon` | Card text and icon when this page appears in a `:::pages` list. |
 | `related` | Keys shown as "Also useful" cards at the end. Catalogue keys without a page yet are skipped quietly; other unknown keys fail the build. |
@@ -186,13 +186,15 @@ Suggested keys and URLs. Industry and solution keys must match `data/catalogue.y
 | `oil-gas` | `/industries/oil-gas` | `/mz/pipelines` | `/mz/pt/gasodutos-e-oleodutos` | `/za/pipelines` | `/ng/oil-gas-pipelines` |
 | `power-utilities` | `/industries/power-utilities` | `/mz/power-lines` | `/mz/pt/linhas-de-transporte-de-energia` | `/za/power-lines` | `/ng/power-transmission` |
 | `mining` | `/industries/mining` | | | `/za/mining` | |
-| `project-finance-esia` | `/industries/project-finance-esia` | | | | `/ng/esia-support` |
+| `project-finance-esia` | `/industries/project-finance-esia` | | | `/za/esia-baselines` | `/ng/esia-support` |
 | `rail-roads` | `/industries/rail-roads` | | | `/za/rail-and-roads` | |
-| `renewables`, `agriculture-forestry-nature`, `government` | `/industries/<key>` | | | | |
+| `renewables` | `/industries/renewables` | | | `/za/renewables` | |
+| `agriculture-forestry-nature`, `government` | `/industries/<key>` | | | | |
 | `right-of-way-monitoring` | `/solutions/right-of-way-monitoring` | `/mz/protection-zone-survey` | `/mz/pt/levantamento-de-ocupacoes` | | |
 | `resettlement-cut-off-baselines` | `/solutions/resettlement-cut-off-baselines` | `/mz/resettlement-cut-off-date` | `/mz/pt/reassentamento-data-de-corte` | | `/ng/resettlement-compensation-baselines` |
 | `change-detection` | `/solutions/change-detection` | `/mz/repeat-surveys` | `/mz/pt/monitoria-periodica` | | |
 | `evidence-packs` | `/solutions/evidence-packs` | | | never on `/za/` | `/ng/incident-evidence` |
+| `route-site-selection` | `/solutions/route-site-selection` | | | `/za/transmission-route-baseline` | |
 | other solutions | `/solutions/<key>` (keys in catalogue.yaml) | | | | |
 | `mz-drone-law` | | `/mz/drone-regulations` | `/mz/pt/lei-de-drones` | | |
 | `mz-protection-zone` | | `/mz/50m-protection-zone` | `/mz/pt/zona-de-proteccao-parcial-50-metros` | | |
@@ -201,7 +203,7 @@ Suggested keys and URLs. Industry and solution keys must match `data/catalogue.y
 | `za-drone-law`, `ng-drone-law` | | | | `/za/drone-regulations` | `/ng/drone-regulations` |
 | `drone-regulations` | `/drone-regulations` (template `law_hub`) | | | | |
 
-Country-only pages (procurement, POPIA, NDPA, 50 m protection zone, etc.) take their own key and no cluster, except Mozambique's EN↔PT pairs.
+Country-only pages (procurement, POPIA, NDPA, 50 m protection zone, etc.) take their own key and no cluster, except Mozambique's EN↔PT pairs. South Africa's are `za-water-utilities` (`/za/water-utilities`), `za-land-invasion` (`/za/land-invasion-monitoring`), `za-popia` (`/za/popia`) and `za-procurement` (`/za/procurement`).
 
 **The country selector and the banner** appear automatically as soon as a second section has a home page. The banner (bottom of the screen, never a redirect) suggests the visitor's country site from `/geo`, with a time-zone fallback, and only offers sections that exist.
 

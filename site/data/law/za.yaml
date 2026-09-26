@@ -1,0 +1,131 @@
+# South Africa: the instruments behind /za/drone-regulations and /za/popia.
+# Facts ONLY from regional/za.FINAL.md and its full corrected brief za.verified.md (verified 2026-09-26).
+# Items the brief marks [unverified] stay out: CIPA's commencement, the POPIA Amendment Regulations
+# 2025, the G3/G4 code meanings, SANParks' national-parks position. No fee, fine or penalty amounts
+# are published here or on the pages (owner rule 1): link to the gazette instead.
+country_name: South Africa
+last_reviewed: 2026-09-26
+regulator:
+  name: South African Civil Aviation Authority (SACAA)
+  url: https://www.caa.co.za/industry-information/uas/
+summary:
+  regulator: South African Civil Aviation Authority (SACAA) for the operator certificate, aircraft and pilots; the Air Service Licensing Council for the Air Service Licence
+  instruments: Civil Aviation Regulations Parts 101 and 71, as substituted by the 26th Amendment (2023) and amended by the 33rd Amendment (21 August 2026); Air Services Licensing Act 115 of 1990
+instruments:
+  - id: caa-2009
+    title: Civil Aviation Act 13 of 2009
+    identifier: Notice 616, GG 32266
+    date: 2009-05-27
+    url: https://www.gov.za/sites/default/files/gcis_document/201409/32266616.pdf
+    last_checked: 2026-09-26
+    note: The Act SACAA works under; offences and penalties in s144.
+  - id: car-8th
+    title: Civil Aviation Regulations, 8th Amendment (Part 101 inserted)
+    identifier: GN R.444, GG 38830
+    date: 2015-05-27
+    url: https://www.gov.za/sites/default/files/gcis_document/201505/38830rg10437gon444.pdf
+    last_checked: 2026-09-26
+    note: The first drone rules, in effect from 1 July 2015, using the older terms ROC, RPL and RLA.
+  - id: car-26th
+    title: Civil Aviation Regulations, 26th Amendment (Parts 71 and 101 substituted)
+    identifier: GN R.3170, GG 48228
+    date: 2023-03-17
+    url: https://www.gov.za/sites/default/files/gcis_document/202303/48228rg11556gon3170.pdf
+    last_checked: 2026-09-26
+    note: Renamed the approvals (UASOC, UASLA, RPC, UASMT) and set today's operating rules.
+  - id: car-33rd
+    title: Civil Aviation Regulations, 33rd Amendment (Parts 71 and 101)
+    identifier: GN 7844, GG 55226
+    date: 2026-08-21
+    url: "https://caasanwebsitestorage.blob.core.windows.net/legal-documents/Promulgated%2033RD%20Amendment%20Regulation%202026%20(Final).pdf"
+    last_checked: 2026-09-26
+    note: UASOC validity of up to five years with annual OpSpec renewal (101.04.3); remote pilot certificate rewritten (Part 71).
+  - id: car-36th
+    title: Civil Aviation Regulations, 36th Amendment (Part 185, enforcement)
+    identifier: GN 7845, GG 55226
+    date: 2026-08-21
+    url: "https://caasanwebsitestorage.blob.core.windows.net/legal-documents/Promulgated%2036th%20Amendment%20Regulations,%202026%20-%20%2021%20Aug%202026%20(Final).pdf"
+    last_checked: 2026-09-26
+    note: Sanctions, spot fines and higher maximum administrative penalties.
+  - id: car-35th
+    title: Civil Aviation Regulations, 35th Amendment (Part 187, fees)
+    identifier: GN 7861, GG 55257
+    date: 2026-08-28
+    url: "https://caasanwebsitestorage.blob.core.windows.net/legal-documents/35th%20Amendment%20-%2055257%20-%20NationalGov%20-%2028%20Aug%202026%20ENG%20and%20AFR.pdf"
+    last_checked: 2026-09-26
+    note: The fee schedule in operation from 1 October 2026.
+  - id: tgm-101
+    title: SACAA Technical Guidance Material, Part 101 Operations Manual
+    identifier: TGM Part 101 (RPAS Operations Manual)
+    date: 2025-08-26
+    url: https://caasanwebsitestorage.blob.core.windows.net/flight-operations-tgm/TGM%20Part%20101%20RPAS%20Operations%20Manual.pdf
+    last_checked: 2026-09-26
+    note: Line-of-sight definitions, the on-site document list and the landowner permission "required for ALL flights".
+  - id: ca-101-20
+    title: SACAA form CA 101-20, notification of operations near sensitive sites or in restricted airspace
+    identifier: CA 101-20
+    date: 2026-03-17
+    url: https://caasanwebsitestorage.blob.core.windows.net/flight-operations-forms/CA%20101-20.pdf
+    last_checked: 2026-09-26
+  - id: ca-101-18
+    title: SACAA form CA 101-18, notification of operations at public events
+    identifier: CA 101-18
+    date: 2026-03-17
+    url: https://caasanwebsitestorage.blob.core.windows.net/flight-operations-forms/CA%20101-18.pdf
+    last_checked: 2026-09-26
+  - id: ca-101-17
+    title: SACAA form CA 101-17, UAS Letter of Approval renewal and re-issue
+    identifier: CA 101-17
+    date: 2025-08-26
+    url: https://caasanwebsitestorage.blob.core.windows.net/airworthiness-forms/CA%20101-17.pdf
+    last_checked: 2026-09-26
+  - id: fod-2023-001
+    title: SACAA General Notice FOD-2023/001, UAS occurrence reporting
+    identifier: FOD-2023/001
+    date: 2023-10-16
+    url: https://caasanwebsitestorage.blob.core.windows.net/flight-operations-document/Unmanned%20Aerial%20System%20Operator%20Certificate%20Holders%20with%20UAS%20Occurences.pdf
+    last_checked: 2026-09-26
+  - id: asla-1990
+    title: Air Services Licensing Act 115 of 1990
+    identifier: GG 12637 (as enacted)
+    date: 1990-07-13
+    url: https://www.gov.za/sites/default/files/gcis_document/201503/act-115-1990.pdf
+    last_checked: 2026-09-26
+    note: Air Service Licence conditions, including South African ownership and control (s16(4)), maintained at all times (s19).
+  - id: dot-3919-2026
+    title: Department of Transport, Notice 3919 of 2026 (air service licences granted and amended)
+    identifier: GN 3919, GG 54627
+    date: 2026-05-08
+    url: https://www.gov.za/sites/default/files/gcis_document/202605/54627gen3919.pdf
+    last_checked: 2026-09-26
+  - id: nem-paa
+    title: National Environmental Management, Protected Areas Act 57 of 2003
+    identifier: GG 26025 (s47, as enacted)
+    date: 2004-02-18
+    url: https://www.gov.za/sites/default/files/gcis_document/201409/a57-03.pdf
+    last_checked: 2026-09-26
+  - id: cipa-2019
+    title: Critical Infrastructure Protection Act 8 of 2019
+    identifier: GG 42866 (s26)
+    date: 2019-11-28
+    url: https://static.pmg.org.za/Critical_Infra_Protection_Act8of2019.pdf
+    last_checked: 2026-09-26
+  - id: popia
+    title: Protection of Personal Information Act 4 of 2013 (POPIA)
+    identifier: GG 37067
+    date: 2013-11-26
+    url: https://www.gov.za/sites/default/files/gcis_document/201409/3706726-11act4of2013protectionofpersonalinforcorrect.pdf
+    last_checked: 2026-09-26
+  - id: inforeg-prior-authorisation
+    title: Information Regulator, Guidance Note on applications for prior authorisation
+    identifier: Guidance note (POPIA ss57–58)
+    date: 2021-03-11
+    url: https://inforegulator.org.za/wp-content/uploads/2020/07/InfoRegSA-GuidanceNote-PriorAuthorisation-20210311-1.pdf
+    last_checked: 2026-09-26
+  - id: geomatics-2013
+    title: Geomatics Profession Act 19 of 2013
+    identifier: GG 37142 (s13)
+    date: 2013-12-10
+    url: https://www.sagc.org.za/pdf/legislation/Geomatics%20Profession%20Act%20-%20Act%2019%20of%202013.pdf
+    last_checked: 2026-09-26
+    note: Surveys for registrable diagrams and the fixing of registered boundaries are reserved to professional land surveyors (s13(2)(b)).

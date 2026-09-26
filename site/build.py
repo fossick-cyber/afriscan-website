@@ -331,7 +331,7 @@ class Build:
             for p in self.pages:              # country-only pages that join the group
                 if (p["loc_key"] == lk and p["meta"].get("nav_group") == gname and p["key"] not in self.cat_ind
                         and p["key"] not in self.cat_sol and not p["noindex"]):
-                    items.append(item(p, tier=2))
+                    items.append(item(p, tier=2, group=p["meta"].get("nav_subgroup")))
             hub = self.hub_page(gname, lk)
             if items or hub:
                 groups.append({"key": gname, "label": t["nav"][gname], "href": (hub or {"url": items[0]["href"]})["url"],
@@ -1338,13 +1338,26 @@ def selftest():
 
 
 def demo(out):
-    """Build the real content plus the template fixtures in tests/fixtures/demo into OUT (never deploy)."""
-    work = CACHE_DIR / "demo-content"
-    if work.exists():
-        shutil.rmtree(work)
+    """Build the real content plus the template fixtures in tests/fixtures/demo into OUT (never deploy).
+    Fixtures only fill gaps: a real page or law file with the same path always wins, so the demo keeps
+    building once a country section has its own pages."""
+    def overlay(src, dst):
+        for f in sorted(src.rglob("*")):
+            t = dst / f.relative_to(src)
+            if f.is_dir():
+                t.mkdir(parents=True, exist_ok=True)
+            elif not t.exists():
+                shutil.copy2(f, t)
+
+    work, law = CACHE_DIR / "demo-content", CACHE_DIR / "demo-law"
+    for d in (work, law):
+        if d.exists():
+            shutil.rmtree(d)
     shutil.copytree(SITE / "content", work)
-    shutil.copytree(SITE / "tests/fixtures/demo/content", work, dirs_exist_ok=True)
-    return Build(content_dir=work, dist=Path(out), law_dir=SITE / "tests/fixtures/demo/law").run()
+    overlay(SITE / "tests/fixtures/demo/content", work)
+    shutil.copytree(SITE / "data/law", law)
+    overlay(SITE / "tests/fixtures/demo/law", law)
+    return Build(content_dir=work, dist=Path(out), law_dir=law).run()
 
 
 def main():
