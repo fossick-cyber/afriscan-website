@@ -1,0 +1,67 @@
+# One entry per site section, in the order the country selector lists them.
+#   content   folder under site/content/
+#   prefix    URL prefix ("" for the global site). Section home = prefix + "/".
+#   hreflang  every code this section's pages carry. The first is the page's own locale; the rest
+#             are catch-alls (Google: "provide a catchall URL for geographically unspecified users").
+#   i18n      UI strings file in data/i18n/
+#   country   ISO code (null for global); country_name is in the section's own language
+global:
+  content: global
+  prefix: ""
+  lang: en-GB
+  hreflang: [en, x-default]
+  og_locale: en_GB
+  i18n: en
+  country: null
+  country_name: null
+  label: "Global (English)"
+  short: "Global"
+  sitemap: sitemap-global.xml
+mz-pt:
+  content: mz/pt
+  prefix: /mz/pt
+  lang: pt-MZ
+  hreflang: [pt-MZ, pt]
+  og_locale: pt_PT
+  i18n: pt-MZ
+  country: MZ
+  country_name: Moçambique
+  label: "Moçambique (Português)"
+  short: "Moçambique · PT"
+  sitemap: sitemap-mz.xml
+mz-en:
+  content: mz/en
+  prefix: /mz
+  lang: en-MZ
+  hreflang: [en-MZ]
+  og_locale: en_GB
+  i18n: en
+  country: MZ
+  country_name: Mozambique
+  label: "Mozambique (English)"
+  short: "Mozambique · EN"
+  sitemap: sitemap-mz.xml
+za:
+  content: za
+  prefix: /za
+  lang: en-ZA
+  hreflang: [en-ZA]
+  og_locale: en_GB
+  i18n: en
+  country: ZA
+  country_name: South Africa
+  label: "South Africa"
+  short: "South Africa"
+  sitemap: sitemap-za.xml
+ng:
+  content: ng
+  prefix: /ng
+  lang: en-NG
+  hreflang: [en-NG]
+  og_locale: en_GB
+  i18n: en
+  country: NG
+  country_name: Nigeria
+  label: "Nigeria"
+  short: "Nigeria"
+  sitemap: sitemap-ng.xml

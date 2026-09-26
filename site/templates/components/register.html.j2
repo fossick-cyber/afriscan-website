@@ -1,0 +1,13 @@
+{% set s = t.samples %}
+<div class="table-wrap" tabindex="0" role="region" aria-label="{{ s.register_label }}">
+<table class="register-table">
+  <thead><tr><th scope="col">{{ s.id }}</th><th scope="col">{{ s.chainage }}</th><th scope="col">{{ s.distance }}</th><th scope="col">{{ s.band }}</th><th scope="col">{{ s.source }}</th></tr></thead>
+  <tbody>
+  {% for r in rows %}
+    {% set b = 'a' if r.distance_m <= 50 else 'b' if r.distance_m <= 100 else 'c' %}
+    <tr><td><strong>{{ r.id }}</strong></td><td>{{ '%.2f'|format(r.km) }}</td><td>{{ r.distance_m }}</td><td><span class="band band--{{ b }}">{{ s['band_' ~ b] }}</span></td><td>{{ s.reviewer_mark }}</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{{ inner }}

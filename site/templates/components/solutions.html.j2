@@ -1,0 +1,12 @@
+<div class="cards cards--{{ a.get('cols', '4') }} cards--catalogue">
+{% for c in cards %}
+  {% set tag = 'a' if c.href else 'div' %}
+  <{{ tag }} class="card{% if c.href %} card--link{% endif %}"{% if c.href %} href="{{ c.href }}"{% endif %}>
+    {% if c.icon %}<span class="card-icon">{{ icon(c.icon) }}</span>{% endif %}
+    <h3>{{ c.title }}</h3>
+    <p>{{ c.text }}</p>
+    {% if c.href %}<span class="card-more">{{ t.labels.read }} {{ icon('arrow-right', 'icon icon-xs') }}</span>{% endif %}
+  </{{ tag }}>
+{% endfor %}
+</div>
+{{ inner }}

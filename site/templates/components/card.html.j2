@@ -1,0 +1,9 @@
+{% set tag = 'a' if href else 'div' %}
+<{{ tag }} class="card{% if href %} card--link{% endif %}"{% if href %} href="{{ href }}"{% endif %}>
+  {% if a.get('icon') %}<span class="card-icon">{{ icon(a.icon) }}</span>{% endif %}
+  {% if a.get('eyebrow') %}<p class="card-eyebrow">{{ a.eyebrow }}</p>{% endif %}
+  <h3>{{ md(a.title) }}</h3>
+  <div class="card-body">{{ inner }}</div>
+  {% if a.get('tag') %}<p class="card-tag">{{ a.tag }}</p>{% endif %}
+  {% if href %}<span class="card-more">{{ a.get('cta') or t.labels.read }} {{ icon('arrow-right', 'icon icon-xs') }}</span>{% endif %}
+</{{ tag }}>

@@ -1,0 +1,43 @@
+# Site-wide facts. Only facts the owner has confirmed belong here. Missing facts (legal entity,
+# address, phone, team, insurance, data location) are OMITTED, never filled with placeholders.
+base_url: https://afri-scan.com
+brand: AfriScan
+brand_full: AfriScan by Afridrone
+parent:
+  name: Afridrone
+  url: https://afridr.one/
+copyright_year: 2026
+
+# Contact form: FormSubmit endpoint and address exactly as the owner set them (do not change).
+form:
+  action: https://formsubmit.co/fossickpictures@gmail.com
+  ajax: https://formsubmit.co/ajax/fossickpictures@gmail.com
+
+# Date the country regulation pages are written "as of" (owner rule 2).
+law_as_of: 2026-09-26
+
+# Countries served (satellite work available in all three; drone work subject to permits).
+countries: [Mozambique, South Africa, Nigeria]
+
+# Organization JSON-LD (rule 11). Disambiguation from similarly named companies.
+org:
+  description: >-
+    AfriScan maps structures, cleared ground, excavations and change along pipelines, power lines,
+    concessions and project sites from satellite and drone imagery. A person reviews every result
+    before delivery, and results are delivered as PDF reports and GIS files.
+  disambiguating: >-
+    AfriScan by Afridrone is the remote land and corridor monitoring service of Afridrone (afridr.one).
+    It is not affiliated with Afriscan Construction in South Africa or Afriscan Kenya.
+  knows_about:
+    - Right-of-way encroachment
+    - Servitude and wayleave encroachment
+    - Partial protection zones
+    - Resettlement cut-off-date baselines
+    - Building footprint mapping
+    - Change detection between dated imagery
+    - Drone orthophoto surveys
+    - Buffer zone analysis
+  same_as:
+    - https://afridr.one/
+
+theme_color: "#0d1117"

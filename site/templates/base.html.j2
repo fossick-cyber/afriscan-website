@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}" data-country="{{ loc.country or '' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}">
+<link rel="canonical" href="{{ page.abs_url }}">
+{% for a in page.alternates %}
+<link rel="alternate" hreflang="{{ a.code }}" href="{{ a.href }}">
+{% endfor %}
+<meta name="robots" content="{{ 'noindex, follow' if page.noindex else 'index, follow, max-image-preview:large' }}">
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ assets['assets/css/site.css'] }}">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="{{ site.theme_color }}">
+<meta property="og:type" content="{{ 'article' if page.template == 'article' else 'website' }}">
+<meta property="og:site_name" content="{{ site.brand_full }}">
+<meta property="og:locale" content="{{ loc.og_locale }}">
+<meta property="og:url" content="{{ page.abs_url }}">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:image" content="{{ page.og_image.url }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="{{ page.og_image.alt }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:description" content="{{ page.description }}">
+<meta name="twitter:image" content="{{ page.og_image.url }}">
+<meta name="twitter:image:alt" content="{{ page.og_image.alt }}">
+{% if page.jsonld %}
+<script type="application/ld+json">{{ page.jsonld }}</script>
+{% endif %}
+<script src="{{ assets['assets/js/main.js'] }}" defer></script>
+{% if region_js %}
+<script src="{{ region_js }}" defer></script>
+{% endif %}
+</head>
+<body class="tpl-{{ page.template }}">
+<a class="skip-link" href="#main">{{ t.skip }}</a>
+{% include "partials/header.html.j2" %}
+<main id="main" tabindex="-1">
+{% block main %}{% endblock %}
+</main>
+{% include "partials/footer.html.j2" %}
+</body>
+</html>

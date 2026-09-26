@@ -1,0 +1,9 @@
+{% set bl = page.meta.get('buttons') or [] %}
+{% if bl %}
+<div class="btn-row">
+{% for b in bl %}
+  {% if b.intent is defined %}{% set href = contact(page, b.intent) %}{% elif b.key is defined %}{% set tp = resolve(b.key) %}{% set href = (tp.url if tp else '#') ~ (b.anchor if b.anchor is defined else '') %}{% else %}{% set href = b.href %}{% endif %}
+  <a class="btn{% if not loop.first or b.style is defined and b.style == 'outline' %} btn-outline{% endif %}{% if big is defined and big %} btn-lg{% endif %}" href="{{ href }}">{{ b.label }}</a>
+{% endfor %}
+</div>
+{% endif %}

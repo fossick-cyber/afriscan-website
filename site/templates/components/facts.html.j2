@@ -1,0 +1,3 @@
+<dl class="facts{% if a.get('cols') %} facts--{{ a['cols'] }}{% endif %}">
+{% for term, val in rows %}<div><dt>{{ term }}</dt><dd>{{ val }}</dd></div>{% endfor %}
+</dl>

@@ -1,0 +1,9 @@
+{% set tone = a.get('tone', 'note') %}
+{% set ic = a.get('icon') or {'note': 'info', 'scope': 'check', 'warn': 'alert', 'legal': 'scale'}.get(tone, 'info') %}
+<aside class="callout callout--{{ tone }}">
+  <span class="callout-icon">{{ icon(ic) }}</span>
+  <div class="flow">
+    {% if a.get('title') %}<p class="callout-title">{{ md(a.title) }}</p>{% endif %}
+    {{ inner }}
+  </div>
+</aside>

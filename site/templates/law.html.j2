@@ -1,0 +1,25 @@
+{% extends "base.html.j2" %}
+{% block main %}
+{% set extra_head %}<div class="law-meta"><p class="badge badge--date">{{ icon('calendar', 'icon icon-sm') }}{{ t.law.as_of.format(date=fmt_date(as_of)) }}</p><p class="law-disclaimer">{{ icon('scale', 'icon icon-sm') }}<span>{{ t.law.not_advice }}</span></p></div>{% endset %}
+{% include "partials/pagehead.html.j2" %}
+{{ page.body_html }}
+<section class="section section--alt" id="sources">
+  <div class="container">
+    <h2>{{ t.law.sources }}</h2>
+    <div class="table-wrap" tabindex="0" role="region" aria-label="{{ t.law.sources }}">
+      <table class="sources-table">
+        <thead><tr><th scope="col">{{ t.law.instrument }}</th><th scope="col">{{ t.law.reference }}</th><th scope="col">{{ t.law.date }}</th><th scope="col">{{ t.law.checked }}</th></tr></thead>
+        <tbody>
+        {% for i in law.instruments %}
+          <tr><td><a href="{{ i.url }}" rel="noopener">{{ i.title }}</a></td><td>{{ i.identifier }}</td><td>{{ fmt_date(i.date) }}</td><td>{{ fmt_date(i.last_checked) }}</td></tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <p class="law-foot">{{ t.law.last_reviewed }}: <time datetime="{{ law.last_reviewed }}">{{ fmt_date(law.last_reviewed) }}</time>. {{ t.law.not_advice }} {{ t.law.drone_note }}</p>
+  </div>
+</section>
+{% include "partials/related.html.j2" %}
+{% include "partials/faq.html.j2" %}
+{% include "partials/cta.html.j2" %}
+{% endblock %}

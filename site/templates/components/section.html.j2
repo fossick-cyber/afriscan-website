@@ -1,0 +1,12 @@
+<section class="section section--{{ tone }}{% if a.get('class') %} {{ a['class'] }}{% endif %}"{% if a.get('id') %} id="{{ a.id }}"{% endif %}>
+  <div class="container{% if a.get('width') == 'prose' %} container--prose{% endif %}">
+    {% if a.get('title') or a.get('eyebrow') or a.get('lead') %}
+    <header class="section-head">
+      {% if a.get('eyebrow') %}<p class="eyebrow">{{ a.eyebrow }}</p>{% endif %}
+      {% if a.get('title') %}<h2>{{ md(a.title) }}</h2>{% endif %}
+      {% if a.get('lead') %}<p class="section-lead">{{ md(a.lead) }}</p>{% endif %}
+    </header>
+    {% endif %}
+    <div class="flow">{{ inner }}</div>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+{% if page.related %}
+<section class="section section--{{ page.get('related_tone', 'alt') }} related">
+  <div class="container">
+    <h2>{{ page.meta.get('related_title') or t.labels.related }}</h2>
+    <div class="cards cards--3">
+    {% for c in page.related %}
+      <a class="card card--link" href="{{ c.href }}">
+        {% if c.icon %}<span class="card-icon">{{ icon(c.icon) }}</span>{% endif %}
+        <h3>{{ c.title }}</h3>
+        <p>{{ c.text }}</p>
+        <span class="card-more">{{ t.labels.read }} {{ icon('arrow-right', 'icon icon-xs') }}</span>
+      </a>
+    {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

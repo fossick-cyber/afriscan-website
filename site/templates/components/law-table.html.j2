@@ -1,0 +1,13 @@
+{% if rows %}
+<div class="table-wrap" tabindex="0" role="region" aria-label="{{ t.law.compare_title }}">
+<table class="law-table">
+  <thead><tr><th scope="col">{{ t.law.country }}</th><th scope="col">{{ t.law.regulator }}</th><th scope="col">{{ t.law.key_instruments }}</th><th scope="col">{{ t.law.last_reviewed }}</th><th scope="col">{{ t.law.guide }}</th></tr></thead>
+  <tbody>
+  {% for r in rows %}
+    <tr><th scope="row">{{ r.law.country_name }}</th><td>{{ md(r.law.summary.regulator if r.law.get('summary') else r.law.regulator.name) }}</td><td>{{ md(r.law.summary.instruments if r.law.get('summary') else '') }}</td><td>{{ fmt_date(r.law.last_reviewed) }}</td><td><a href="{{ r.guide.url }}">{{ label_of(r.guide) }}</a></td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endif %}
+{{ inner }}

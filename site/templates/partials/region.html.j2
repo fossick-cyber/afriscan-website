@@ -1,0 +1,11 @@
+<details class="region">
+  <summary><span class="sr-only">{{ t.region.choose }}: </span>{{ icon('globe', 'icon icon-sm') }}<span class="region-current">{{ loc.short }}</span>{{ icon('chevron-down', 'icon icon-xs') }}</summary>
+  <div class="region-menu">
+    <p class="region-title">{{ t.region.choose }}</p>
+    <ul>
+    {% for r in page.region_links %}
+      <li><a href="{{ r.href }}" hreflang="{{ r.lang }}" lang="{{ r.lang }}" data-region="{{ r.key }}"{% if r.current %} aria-current="page"{% endif %}>{{ r.label }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+</details>

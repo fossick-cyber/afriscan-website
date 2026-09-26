@@ -1,0 +1,9 @@
+{% extends "base.html.j2" %}
+{% block main %}
+{% set extra_head %}{% if page.used %}<p class="used-in"><span>{{ t.labels.used_in }}:</span> {% for u in page.used %}{% if u.href %}<a href="{{ u.href }}">{{ u.label }}</a>{% else %}{{ u.label }}{% endif %}{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}{% endset %}
+{% include "partials/pagehead.html.j2" %}
+{{ page.body_html }}
+{% include "partials/related.html.j2" %}
+{% include "partials/faq.html.j2" %}
+{% include "partials/cta.html.j2" %}
+{% endblock %}

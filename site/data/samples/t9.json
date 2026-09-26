@@ -1,0 +1,305 @@
+{
+  "route": "T-9 replacement pipeline",
+  "province": "Inhambane, Mozambique",
+  "route_length_km": 10.78,
+  "buffers_m": [
+    50,
+    100
+  ],
+  "method": "Reviewer-marked structures (manual review), no automatic detection in this sample",
+  "imagery": "Google satellite basemap, shown for illustration; capture date not supplied by the provider",
+  "marks_total": 59,
+  "within_m": {
+    "50": 11,
+    "100": 36
+  },
+  "segment_m": 500,
+  "rating_rule": {
+    "high_over": 5,
+    "buffer_m": 100
+  },
+  "segments": [
+    {
+      "from_m": 0,
+      "to_m": 500,
+      "count": 0,
+      "rating": "low"
+    },
+    {
+      "from_m": 500,
+      "to_m": 1000,
+      "count": 0,
+      "rating": "low"
+    },
+    {
+      "from_m": 1000,
+      "to_m": 1500,
+      "count": 0,
+      "rating": "low"
+    },
+    {
+      "from_m": 1500,
+      "to_m": 2000,
+      "count": 0,
+      "rating": "low"
+    },
+    {
+      "from_m": 2000,
+      "to_m": 2500,
+      "count": 0,
+      "rating": "low"
+    },
+    {
+      "from_m": 2500,
+      "to_m": 3000,
+      "count": 0,
+      "rating": "low"
+    },
+    {
+      "from_m": 3000,
+      "to_m": 3500,
+      "count": 0,
+      "rating": "low"
+    },
+    {
+      "from_m": 3500,
+      "to_m": 4000,
+      "count": 2,
+      "rating": "medium"
+    },
+    {
+      "from_m": 4000,
+      "to_m": 4500,
+      "count": 7,
+      "rating": "high"
+    },
+    {
+      "from_m": 4500,
+      "to_m": 5000,
+      "count": 6,
+      "rating": "high"
+    },
+    {
+      "from_m": 5000,
+      "to_m": 5500,
+      "count": 4,
+      "rating": "medium"
+    },
+    {
+      "from_m": 5500,
+      "to_m": 6000,
+      "count": 16,
+      "rating": "high"
+    },
+    {
+      "from_m": 6000,
+      "to_m": 6500,
+      "count": 7,
+      "rating": "high"
+    },
+    {
+      "from_m": 6500,
+      "to_m": 7000,
+      "count": 3,
+      "rating": "medium"
+    },
+    {
+      "from_m": 7000,
+      "to_m": 7500,
+      "count": 1,
+      "rating": "medium"
+    },
+    {
+      "from_m": 7500,
+      "to_m": 8000,
+      "count": 0,
+      "rating": "low"
+    },
+    {
+      "from_m": 8000,
+      "to_m": 8500,
+      "count": 0,
+      "rating": "low"
+    },
+    {
+      "from_m": 8500,
+      "to_m": 9000,
+      "count": 2,
+      "rating": "medium"
+    },
+    {
+      "from_m": 9000,
+      "to_m": 9500,
+      "count": 2,
+      "rating": "medium"
+    },
+    {
+      "from_m": 9500,
+      "to_m": 10000,
+      "count": 0,
+      "rating": "low"
+    },
+    {
+      "from_m": 10000,
+      "to_m": 10500,
+      "count": 0,
+      "rating": "low"
+    },
+    {
+      "from_m": 10500,
+      "to_m": 10781,
+      "count": 0,
+      "rating": "low"
+    }
+  ],
+  "segments_by_rating": {
+    "high": 4,
+    "medium": 6,
+    "low": 12
+  },
+  "register_excerpt": [
+    {
+      "id": "R21",
+      "km": 5.3,
+      "distance_m": 39,
+      "band": "0–50 m"
+    },
+    {
+      "id": "R22",
+      "km": 5.49,
+      "distance_m": 86,
+      "band": "50–100 m"
+    },
+    {
+      "id": "R23",
+      "km": 5.57,
+      "distance_m": 77,
+      "band": "50–100 m"
+    },
+    {
+      "id": "R24",
+      "km": 5.58,
+      "distance_m": 113,
+      "band": "beyond 100 m"
+    },
+    {
+      "id": "R25",
+      "km": 5.62,
+      "distance_m": 31,
+      "band": "0–50 m"
+    },
+    {
+      "id": "R26",
+      "km": 5.65,
+      "distance_m": 59,
+      "band": "50–100 m"
+    },
+    {
+      "id": "R27",
+      "km": 5.69,
+      "distance_m": 79,
+      "band": "50–100 m"
+    },
+    {
+      "id": "R28",
+      "km": 5.72,
+      "distance_m": 66,
+      "band": "50–100 m"
+    },
+    {
+      "id": "R29",
+      "km": 5.75,
+      "distance_m": 28,
+      "band": "0–50 m"
+    },
+    {
+      "id": "R30",
+      "km": 5.8,
+      "distance_m": 81,
+      "band": "50–100 m"
+    },
+    {
+      "id": "R31",
+      "km": 5.81,
+      "distance_m": 53,
+      "band": "50–100 m"
+    },
+    {
+      "id": "R32",
+      "km": 5.94,
+      "distance_m": 97,
+      "band": "50–100 m"
+    },
+    {
+      "id": "R33",
+      "km": 5.96,
+      "distance_m": 53,
+      "band": "50–100 m"
+    },
+    {
+      "id": "R34",
+      "km": 5.97,
+      "distance_m": 53,
+      "band": "50–100 m"
+    },
+    {
+      "id": "R35",
+      "km": 5.97,
+      "distance_m": 57,
+      "band": "50–100 m"
+    },
+    {
+      "id": "R36",
+      "km": 5.98,
+      "distance_m": 52,
+      "band": "50–100 m"
+    },
+    {
+      "id": "R37",
+      "km": 6.02,
+      "distance_m": 57,
+      "band": "50–100 m"
+    },
+    {
+      "id": "R38",
+      "km": 6.04,
+      "distance_m": 71,
+      "band": "50–100 m"
+    },
+    {
+      "id": "R39",
+      "km": 6.09,
+      "distance_m": 62,
+      "band": "50–100 m"
+    },
+    {
+      "id": "R40",
+      "km": 6.11,
+      "distance_m": 125,
+      "band": "beyond 100 m"
+    }
+  ],
+  "images": {
+    "t9-km5-6": [
+      1536,
+      1536
+    ],
+    "t9-hero": [
+      3840,
+      1536
+    ],
+    "t9-rating-high": [
+      768,
+      768
+    ],
+    "t9-rating-medium": [
+      768,
+      768
+    ],
+    "t9-rating-low": [
+      768,
+      768
+    ]
+  },
+  "source_job": "corridor_909497cd (manual review, complete)"
+}

@@ -1,0 +1,23 @@
+{% extends "base.html.j2" %}
+{% block main %}
+{% set hero = page.meta.get('hero') or {} %}
+<section class="hero">
+  {% if page.hero_picture %}<div class="hero-media">{{ page.hero_picture }}</div>{% endif %}
+  <div class="container hero-inner">
+    {% if page.meta.get('eyebrow') %}<p class="eyebrow">{{ page.meta.eyebrow }}</p>{% endif %}
+    <h1>{{ page.h1 }}</h1>
+    {% if page.lead_html %}<p class="hero-lead">{{ page.lead_html }}</p>{% endif %}
+    {% set big = true %}{% include "partials/buttons.html.j2" %}
+    {% if hero.get('chips') %}
+    <ul class="hero-chips">
+      {% for c in hero.chips %}<li><strong>{{ c.title }}</strong><span>{{ c.text }}</span></li>{% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  {% if hero.get('credit') %}<p class="hero-credit">{{ md(hero.credit) }}</p>{% endif %}
+</section>
+{{ page.body_html }}
+{% include "partials/related.html.j2" %}
+{% include "partials/faq.html.j2" %}
+{% include "partials/cta.html.j2" %}
+{% endblock %}

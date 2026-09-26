@@ -1,0 +1,6 @@
+<ul class="source-list">
+{% for i in instruments %}
+  <li><a href="{{ i.url }}" rel="noopener">{{ i.title }}</a> <span class="source-ref">{{ i.identifier }} · {{ fmt_date(i.date) }}</span>{% if i.get('note') %}<span class="source-note">{{ md(i.note) }}</span>{% endif %}</li>
+{% endfor %}
+</ul>
+{{ inner }}

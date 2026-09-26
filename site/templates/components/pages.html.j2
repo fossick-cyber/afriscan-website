@@ -1,0 +1,14 @@
+{% if cards %}
+<div class="cards cards--{{ a.get('cols', '3') }}">
+{% for c in cards %}
+  <a class="card card--link" href="{{ c.href }}">
+    {% if c.icon %}<span class="card-icon">{{ icon(c.icon) }}</span>{% endif %}
+    {% if c.date %}<p class="card-eyebrow">{{ fmt_date(c.date) }}</p>{% endif %}
+    <h3>{{ c.title }}</h3>
+    <p>{{ c.text }}</p>
+    <span class="card-more">{{ t.labels.read }} {{ icon('arrow-right', 'icon icon-xs') }}</span>
+  </a>
+{% endfor %}
+</div>
+{% endif %}
+{{ inner }}

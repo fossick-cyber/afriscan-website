@@ -1,0 +1,128 @@
+# House-rule guards. build.py checks every built page's text (visible text, <title>, meta
+# description, Open Graph text, image alt text and JSON-LD) against these patterns.
+#   level: error  -> the build fails
+#   level: warn   -> printed, build continues
+#   negatable     -> the match is ignored when a negation word appears just before it
+#                    ("never real-time", "not a certified survey", "we do not hold a licence").
+#   scope         -> all | en | pt-MZ | law (law pages only)
+# Portuguese vocabulary checks come from data/glossary/pt-MZ.yaml.
+# Owner rules: fhc-notes/website/OWNER_DECISIONS.md. Do not weaken a check to get a page through:
+# rewrite the page.
+
+negation_window: 48
+negations: [not, never, "no", nor, without, "isn't", "aren't", "don't", "doesn't", "won't", cannot, "can't",
+            neither, "rather than", "instead of", "nothing", "none", "não", nunca, nem, sem, "em vez de"]
+
+checks:
+  - id: placeholder
+    level: error
+    negatable: false
+    message: unfinished placeholder text (owner facts are omitted, never stubbed)
+    patterns:
+      - '\[OWNER'
+      - '\bTBD\b'
+      - '\bTODO\b'
+      - '(?i)\blorem\b'
+      - '\bXXX+\b'
+      - '(?i)\[placeholder'
+      - '\{\{|\}\}|\{%|%\}'
+      - ':::'
+
+  - id: pricing
+    level: error
+    negatable: false
+    message: no prices, rates or currency amounts on afri-scan.com (owner rule 1)
+    patterns:
+      - '(?i)(?:US\$|USD|MZN|ZAR|NGN|EUR|GBP|R\$|€|£|\$|₦)\s?\d'
+      - '(?i)\b\d[\d\s.,]*\s?(?:USD|MZN|ZAR|NGN|EUR|GBP|meticais|meticals?|rands?|naira|dollars?|d[oó]lares|euros?)\b'
+      - '\bR\s?\d{1,3}(?:[ ,.]\d{3})+\b'
+      - '(?i)\bR\s?\d+(?:[.,]\d+)?\s?(?:m|bn|k|million|billion|thousand)\b'
+      - '\b\d[\d .,]*\s?MT\b'
+      - '(?i)\b(?:pricing|price list|price tiers?|prices? from|per[- ]km rate|rate card|tabela de pre[çc]os|pre[çc]os)\b'
+      - '(?i)\bcota[çc][ãa]o por\b'
+
+  - id: price-word
+    level: warn
+    negatable: true
+    message: price wording; the site shows no prices (check the sentence)
+    patterns:
+      - '(?i)\bprice[sd]?\b'
+      - '(?i)\bpre[çc]o\b'
+
+  - id: certificates
+    level: error
+    negatable: true
+    message: never say or imply that AfriScan or Afridrone holds a drone certificate, licence, permit or clearance (owner rule 2)
+    patterns:
+      - '(?i)\bwe hold\b'
+      - '(?i)\blicensed\b'
+      - '(?i)\bcertified\b'
+      - '(?i)\bROC holder\b'
+      - '(?i)\bapproved operator\b'
+      - '(?i)\b(?:our|we have|we''ve|holds?|holding|obtained|secured|granted)\s+(?:an?\s+|the\s+|our\s+)?(?:ROC|UASOC|RPAS|remote pilot|operator certificate|air service licen[cs]e|letter of approval|drone (?:licen[cs]e|permit|certificate)|security clearance|ONSA clearance|end-user certificate)'
+      - '(?i)\b(?:somos|estamos)\s+(?:licenciad|certificad|autorizad|acreditad)\w*'
+      - '(?i)\b(?:detemos|possu[ií]mos|temos)\s+(?:a |as |o |os )?(?:licen[çc]as?|autoriza[çc](?:ão|ões)|certificados?|carta de aprova[çc][ãa]o)'
+      - '(?i)\boperador(?:es)?\s+(?:licenciad|certificad|autorizad)\w*'
+      - '(?i)\bpilotos?\s+(?:licenciad|certificad)\w*'
+
+  - id: overstatement
+    level: error
+    negatable: true
+    message: nothing physically impossible or overstated (owner rules 3, 5, 9)
+    patterns:
+      - '(?i)\breal[-\u2011 ]?time\b'
+      - '24/7'
+      - '(?i)\baround the clock\b'
+      - '(?i)\blive (?:detection|monitoring|imagery|feeds?|satellite|tracking|alerts?|view|data|updates?|scans?|intelligence)\b'
+      - '(?i)\binstant(?:ly|aneous(?:ly)?)?\b'
+      - '(?i)\bthrough (?:the )?clouds?\b'
+      - '(?i)\bcourt[- ]grade\b'
+      - '(?i)\bforensic\b'
+      - '(?i)\badmissible\b'
+      - '(?i)\blegally binding\b'
+      - '(?i)\bPS5[- ]compliant\b'
+      - '(?i)\breplaces? (?:the|your) census\b'
+      - '(?i)\bcontinuous(?:ly)?\b'
+      - '(?i)\bsurveillance\b'
+      - '(?i)\bin minutes\b'
+      - '(?i)\bhands[- ]off\b'
+      - '(?i)\bevery (?:building|structure|house|home|hut)s?\b'
+      - '(?i)\bguarantee[ds]?\s+(?:a |the )?(?:capture|revisit|delivery|imagery|date)'
+      - '(?i)\b(?:detect|identify|track|count|monitor)(?:s|ing|ed)?\s+(?:people|persons|individuals|vehicles|occupants|intruders|invaders)\b'
+      - '(?i)\b(?:intruders?|invaders?|illegal occupants|illegal miners|suspects)\b'
+      - '(?i)\b(?:thermal|lidar|multispectral|hyperspectral|infra-?red|RTK|survey[- ]grade|methane|gas[- ]leak|leak detection|night[- ]time imagery)\b'
+      - '(?i)\b(?:coming soon|on[- ]demand|roadmap|beta|pilot product|available soon|future release)\b'
+      - '(?i)\b(?:client portal|customer portal|log ?in|dashboards?|white[- ]label(?:led)?|SLA|API)\b'
+      - '(?i)\baccura\w*[^.]{0,40}\d+(?:[.,]\d+)?\s?%'
+      - '(?i)\d+(?:[.,]\d+)?\s?%\s*(?:accura|precis|recall|detection)'
+      - '(?i)\btrained on \d+'
+      - '(?i)\b(?:delivered|results?|reports?|turnaround|reply|respond)\w*\s+(?:with)?in\s+\d+\s*(?:hours?|days?|business days|working days|weeks?)\b'
+      - '(?i)\btempo real\b'
+      - '(?i)\bem direc?to\b'
+      - '(?i)\binstant[aâ]ne\w*'
+      - '(?i)\batrav[ée]s das? nuvens?\b'
+      - '(?i)\bvigil[âa]ncia\b'
+      - '(?i)\b24 ?horas por dia\b'
+      - '(?i)\bcontínu[ao]s?\b'
+      - '(?i)\bem breve\b|\bbrevemente\b'
+      - '(?i)\b(?:invasores?|ocupantes ilegais|garimpeiros ilegais)\b'
+      - '(?i)\bprova pericial\b'
+      - '(?i)\bsubstitui o censo\b'
+      - '(?i)\btodas? as (?:constru[çc][õo]es|casas|edif[íi]cios)\b'
+
+  - id: percent
+    level: warn
+    negatable: false
+    message: a percentage; make sure it is not an AfriScan performance figure
+    patterns:
+      - '\d\s?%'
+
+limits:
+  similarity_warn: 0.50
+  similarity_error: 0.70
+  title_max: 65
+  title_warn: 60
+  description_min: 70
+  description_max: 170
+  description_warn: 160
+  law_review_max_days: 120

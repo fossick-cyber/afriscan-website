@@ -1,0 +1,74 @@
+# Português de Moçambique (pt-MZ) for /mz/pt/. Style: Boletim da República, pre-AO90 spelling.
+# The build FAILS on `banned` (Brazilian forms) and WARNS on `ao90` (post-reform spellings, since the
+# site locks the pre-AO style). `preferred` is guidance for writers (not checked).
+# Source: fhc-notes/website/regional/mz.FINAL.md (Keywords, Copy rules) and architecture.FINAL.md §6.2.
+
+banned:            # regex -> use instead
+  '(?i)\bmonitoramentos?\b': "monitoria / monitorização"
+  '(?i)\bequipes?\b': "equipa"
+  '(?i)\bcontatos?\b': "contacto"
+  '(?i)\busu[áa]rios?\b': "utilizador"
+  '(?i)\bregistr(?:o|os|ar|ado|ada|ados|adas|amos)\b': "registo / registar / registado"
+  '(?i)\bconosco\b': "connosco"
+  '(?i)\bcelulares?\b': "telemóvel"
+  '(?i)\bplanejamentos?\b|\bplanejar\b': "planeamento / planear"
+  '(?i)\bgerenciamento\b|\bgerenciar\b|\bgerenciad[oa]s?\b': "gestão / gerir"
+  '(?i)\btreinamentos?\b': "formação / treino"
+  '(?i)\baterriss\w*': "aterragem / aterrar"
+  '(?i)\bdecolage[mn]s?\b|\bdecolar\b': "descolagem / descolar"
+  '(?i)\bcontrole de\b': "controlo de"
+  '(?i)\bde fato\b': "de facto"
+  '(?i)\bloteamentos?\b': "parcelamento / talhões"
+  '(?i)\b\w*(?:ômic|ônic|ômetr|ênero|êmic|ônim|ômen|ônom)\w*\b': "acento agudo (económico, electrónico, quilómetro, género, fenómeno)"
+  '(?i)\bótim[oa]s?\b': "óptimo"
+  '(?i)\bônibus\b': "autocarro"
+  '(?i)\bpedágios?\b': "portagem"
+  '(?i)\bxerox\b': "fotocópia"
+  '(?i)\bbanheiros?\b': "casa de banho"
+
+ao90:              # regex -> pre-AO form the site uses
+  '(?i)\bprote[çc][ãa]o\b': "protecção"
+  '(?i)\bprojetos?\b': "projecto"
+  '(?i)\bsetor(?:es)?\b': "sector / sectores"
+  '(?i)\binfraestruturas?\b': "infra-estrutura"
+  '(?i)\ba[çc][ãa]o\b|\ba[çc][õo]es\b': "acção / acções"
+  '(?i)\bdire[çc][ãa]o\b': "direcção"
+  '(?i)\beletric\w*|\bel[ée]tric\w*': "electricidade / eléctrico"
+  '(?i)\bdetet\w*|\bdete[çc][ãa]o\b': "detectar / detecção"
+  '(?i)\batua(?:l|is|lizad\w*|lizar)\b': "actual / actualizado"
+  '(?i)\bobjetivos?\b': "objectivo"
+  '(?i)\bativ(?:o|os|a|as|idade|idades)\b': "activo / actividade"
+  '(?i)\bafetad\w*|\bafetar\b': "afectado / afectar"
+  '(?i)\bexato\b|\bexata\b': "exacto"
+  '(?i)\bselecionad\w*|\bsele[çc][ãa]o\b': "seleccionado / selecção"
+  '(?i)\bcoletiv\w*': "colectivo"
+
+warn:              # usable, but check the register
+  '(?i)\bvocê\b': "prefer impersonal or 'a sua empresa' constructions"
+  '(?i)\barquivos?\b': "ficheiro (file); 'arquivo' only for archive"
+  '(?i)\bbaixar\b': "descarregar"
+  '(?i)\btelas?\b': "ecrã"
+  '(?i)\bcadastrar\b': "registar (the noun 'Cadastro' is fine: Cadastro Nacional de Terras)"
+  '(?i)\blinha de transmiss[ãa]o\b': "linha de transporte de energia (main term)"
+  '(?i)\binvas[ãa]o\b|\binvas[õo]es\b': "ocupação / ocupações (land, not people)"
+
+preferred:         # guidance only
+  - zona de protecção parcial (ZPP)
+  - zona de segurança
+  - faixa de servidão / faixa de protecção
+  - servidão administrativa
+  - linha de transporte de energia
+  - gasoduto / oleoduto
+  - construções (not "invasões")
+  - machambas
+  - benfeitorias
+  - agregado familiar
+  - DUAT, licença especial
+  - reassentamento, plano de reassentamento (PAR), data de corte, censo e inventário de bens
+  - EIA, linha de base
+  - ortofotomapa, levantamento aerofotogramétrico, cobertura aerofotográfica
+  - monitoria
+  - equipa, contacto, registo, utilizador, ficheiro, telemóvel, connosco
+  - "Numbers: decimal comma (0,5 m), thin space for thousands (14 500 km)"
+  - "Dates: 1 de Outubro de 1997 (months capitalised, pre-AO)"
+  - "Laws: Lei n.º 19/97, de 1 de Outubro (Lei de Terras)"

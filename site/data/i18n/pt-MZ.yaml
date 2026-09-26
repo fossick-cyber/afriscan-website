@@ -1,0 +1,181 @@
+# Textos da interface para /mz/pt/ (português de Moçambique, grafia do Boletim da República, pré-AO).
+# Revisão por um falante nativo moçambicano pendente. Mesmas chaves que en.yaml.
+lang_name: Português
+skip: Saltar para o conteúdo
+brand_by: by Afridrone
+home_crumb: AfriScan
+months: [Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
+date_format: "{d} de {month} de {y}"
+
+nav:
+  primary: Principal
+  industries: Sectores
+  solutions: Soluções
+  how: Como funciona
+  countries: Países
+  resources: Recursos
+  contact: Pedir proposta
+  contact_short: Pedir proposta
+  overview: Visão geral
+  menu_open: Abrir o menu
+  menu_close: Fechar o menu
+  show_submenu: "Mostrar o menu {label}"
+  more_industries: Mais sectores
+  lang_badge: EN
+
+region:
+  label: Site do país
+  choose: Escolha o site do país
+  current: Está aqui
+
+cta:
+  title: Saiba o que está construído na sua faixa de servidão antes que se torne um conflito.
+  text: Envie-nos o traçado ou o limite do terreno e as distâncias que lhe interessam. Respondemos com o âmbito do trabalho, um plano de imagens e uma proposta escrita.
+  button: Pedir proposta
+  secondary: Ver exemplos de resultados
+
+labels:
+  faq: Perguntas frequentes
+  related: Também útil
+  used_in: Utilizado em
+  who_uses: Quem utiliza
+  solutions_used: Como ajudamos
+  in_this_site: Neste site
+  read: Ler
+  open: Abrir
+  sample: Exemplo de resultado
+  reviewed_badge: Revisto · marcação manual
+  on_this_page: Nesta página
+  back_to_top: Voltar ao início
+  services_included: Serviços incluídos
+  last_updated: Última actualização
+
+footer:
+  tagline: Monitoria remota de terras para gasodutos, linhas de energia, concessões e locais de projecto.
+  review: Uma pessoa revê todos os resultados antes da entrega.
+  credits_title: Créditos dos dados
+  credits: "Contornos de edifícios: Google Open Buildings (CC BY 4.0), Microsoft Building Footprints (CDLA-Permissive-2.0) e © contribuidores do OpenStreetMap (ODbL). Os trabalhos de vegetação e cobertura do solo utilizam dados Copernicus Sentinel. A fonte de cada imagem é indicada junto da mesma."
+  explore: Explorar
+  industries: Sectores
+  solutions: Soluções
+  how: Como funciona
+  countries: Sites dos países
+  company: Empresa
+  afridrone: Afridrone, serviços de drone
+  contact: Pedir proposta
+  rights: Todos os direitos reservados.
+  drones: Os levantamentos por drone estão sujeitos às licenças e autorizações que cada trabalho exige.
+
+law:
+  as_of: "Situação a {date}"
+  not_advice: Esta página resume regras públicas, a título informativo. Não constitui aconselhamento jurídico.
+  sources: Fontes
+  instrument: Diploma
+  reference: Referência
+  date: Data
+  checked: Verificado em
+  last_reviewed: Última revisão
+  drone_note: Os levantamentos por drone estão sujeitos às licenças e autorizações que cada trabalho exige. O trabalho feito a partir de imagens de satélite não envolve voos de drone.
+  compare_title: Regras para drones, em resumo
+  regulator: Entidade reguladora
+  key_instruments: Principais diplomas
+  country: País
+  guide: Guia
+
+article:
+  published: Publicado
+  updated: Actualizado
+  min_read: "{n} min de leitura"
+  author: AfriScan
+
+form:
+  legend_you: Sobre si
+  legend_job: Sobre o traçado ou o terreno
+  name: Nome completo
+  email: E-mail profissional
+  org: Empresa ou organização
+  role: Função
+  roles:
+    - Terras e reassentamento
+    - Faixa de servidão ou integridade de activos
+    - HSE, EIA ou desempenho social
+    - Compras ou aprovisionamento
+    - Consultor de EIA ou de reassentamento (PAR)
+    - Financiador ou monitor independente
+    - Outra
+  country: País
+  countries: [Moçambique, África do Sul, Nigéria, Outro]
+  asset: O que precisa de levantar
+  assets:
+    - Gasoduto ou oleoduto
+    - Linha de energia
+    - Ferrovia ou estrada
+    - Concessão mineira
+    - Propriedade ou instalação
+    - Área de projecto ou de reassentamento
+    - Outro
+  size: Extensão aproximada (km) ou área (km²)
+  when: Quando precisa dos resultados?
+  needs: De que precisa?
+  needs_options:
+    - Registo de base das construções
+    - Levantamentos periódicos com avisos de alterações
+    - Registo na data de corte (reassentamento)
+    - Comparação de traçados ou de locais
+    - Levantamento por drone
+    - Outra coisa
+  message: Fale-nos do traçado ou do terreno
+  message_hint: Localização ou província, as larguras das faixas a verificar e a data que o registo deve reflectir.
+  heard: Como soube de nós?
+  heard_options: [Motor de pesquisa, LinkedIn, Evento, Recomendação, Portal de fornecedores ou concurso, Outro]
+  required: obrigatório
+  choose: Escolha…
+  submit: Enviar pedido
+  sending: A enviar…
+  success: Obrigado. O seu pedido foi enviado e responderemos por e-mail.
+  error: Não foi possível enviar o pedido neste momento. A tentar de outra forma…
+  privacy: O seu pedido chega-nos através do FormSubmit, um serviço de envio de formulários.
+  subject: Novo pedido AfriScan (PT)
+  next_title: O que acontece a seguir
+  next_steps:
+    - Respondemos por e-mail para confirmar o que precisamos de si.
+    - Uma breve conversa sobre o traçado ou o terreno, as distâncias que interessam e as imagens.
+    - "Uma proposta escrita: âmbito, plano de imagens, método, produtos a entregar e calendário."
+  send_title: O que enviar
+  send_text: "O ficheiro do traçado ou do limite (KML, KMZ, GeoJSON, Shapefile, GPX ou GeoPackage), o país e a província, as distâncias a verificar, a data que o registo deve reflectir, os produtos de que precisa e o prazo. Ainda não tem ficheiro? Descreva a localização e desenhamos o traçado consigo."
+  procurement_title: Equipas de compras
+  procurement_text: Enviem, com o pedido, o formulário de registo de fornecedor ou os documentos do concurso, e nós preenchemo-los.
+
+notfound:
+  title: Página não encontrada | AfriScan
+  h1: Página não encontrada
+  text: Esta página não existe ou foi movida. Estas páginas são um bom ponto de partida.
+  home: Início do AfriScan
+
+thanks:
+  title: Obrigado | AfriScan
+  h1: Obrigado, o seu pedido foi enviado
+  text: Recebemos o seu pedido e responderemos por e-mail. Se tiver um ficheiro do traçado ou do limite que não anexou, tenha-o à mão para a conversa inicial.
+  next: Enquanto espera
+
+samples:
+  register_label: Excerto do registo
+  id: ID
+  chainage: Distância ao longo do traçado (km)
+  distance: Distância ao traçado (m)
+  band: Faixa
+  source: Origem
+  reviewer_mark: Marcação do revisor
+  band_a: 0–50 m
+  band_b: 50–100 m
+  band_c: além de 100 m
+  seg_title: Densidade de ocupação por troço de 500 m
+  seg_desc: "{n} troços: {high} com densidade alta, {medium} média e {low} baixa. Os valores completos estão na tabela de troços."
+  high: "Alta: mais de {n} construções a menos de {b} m"
+  medium: "Média: 1 a {n}"
+  low: "Baixa: nenhuma"
+  seg_table: Tabela de troços
+  segment_km: Troço (km)
+  within: "Construções a menos de {b} m"
+  rating: Classificação
+  ratings: {high: Alta, medium: Média, low: Baixa}

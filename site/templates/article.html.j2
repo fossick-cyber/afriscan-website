@@ -1,0 +1,10 @@
+{% extends "base.html.j2" %}
+{% block main %}
+{% set words = page.body.split()|length %}
+{% set extra_head %}<p class="article-meta">{{ t.article.published }} <time datetime="{{ page.meta.published }}">{{ fmt_date(page.meta.published) }}</time>{% if page.meta.get('updated') %} · {{ t.article.updated }} <time datetime="{{ page.meta.updated }}">{{ fmt_date(page.meta.updated) }}</time>{% endif %} · {{ t.article.min_read.format(n=[1, (words / 220)|round|int]|max) }}</p>{% endset %}
+{% include "partials/pagehead.html.j2" %}
+<div class="article-body">{{ page.body_html }}</div>
+{% include "partials/related.html.j2" %}
+{% include "partials/faq.html.j2" %}
+{% include "partials/cta.html.j2" %}
+{% endblock %}

@@ -1,0 +1,290 @@
+# The public catalogue: industries, solutions (U-codes) and services (S-codes).
+# Source: fhc-notes/website/industries/INDUSTRIES.FINAL.md (§1-2, §5) and services.FINAL.md.
+# Every service is presented as available (owner decision). Hardware services (thermal, LiDAR,
+# multispectral, RTK/survey-grade, gas sensing) are deliberately absent.
+#
+# `key` is the hreflang cluster key: the global page and every country version of an industry or
+# solution page use it in front matter (`key: oil-gas`). Hubs, nav and footer read names and blurbs
+# from here and link each item to the page with that key in the visitor's section, falling back to
+# the global page. Items without any built page are listed without a link.
+# PT names are drafts in Mozambican Portuguese (pre-AO); a native reviewer must check them.
+
+industries:
+  - key: oil-gas
+    tier: 1
+    icon: pipeline
+    name: {en: "Oil & gas", pt: "Petróleo e gás"}
+    menu: {en: "Pipelines, rights of way, well pads, LNG and gas sites", pt: "Gasodutos, oleodutos, faixas de servidão, poços e instalações de GNL"}
+    blurb:
+      en: Structures in pipeline protection zones and rights of way, safety zones around plants and LNG sites, and fresh digging near your lines.
+      pt: Construções nas zonas de protecção e faixas de servidão de gasodutos e oleodutos, zonas de segurança à volta de centrais e instalações de GNL, e escavações recentes junto das condutas.
+  - key: mining
+    tier: 1
+    icon: mine
+    name: {en: "Mining", pt: "Mineração"}
+    menu: {en: "Concessions, tailings and hazard zones, resettlement, rehabilitation", pt: "Concessões, zonas de rejeitados e de perigo, reassentamento, reabilitação"}
+    blurb:
+      en: Concession edges and boundaries, structures in tailings and hazard zones, surface excavations, resettlement baselines and rehabilitation.
+      pt: Limites de concessões, construções em zonas de rejeitados e de perigo, escavações à superfície, registos de base para reassentamento e reabilitação.
+  - key: power-utilities
+    tier: 1
+    icon: power
+    name: {en: "Power & utilities", pt: "Energia e água"}
+    menu: {en: "Line servitudes and wayleaves, substations, bulk water, dams", pt: "Servidões de linhas, subestações, adutoras e barragens"}
+    blurb:
+      en: Line servitudes and wayleaves, vegetation and fire near lines, bulk water pipelines and dams, and routes for new lines.
+      pt: Servidões de linhas de transporte e distribuição, vegetação e queimadas junto das linhas, adutoras e barragens, e traçados de novas linhas.
+  - key: project-finance-esia
+    tier: 1
+    icon: clipboard
+    name: {en: "Project finance & ESIA", pt: "Financiamento, EIA e reassentamento"}
+    menu: {en: "Lenders, independent monitors, ESIA and RAP consultancies, resettlement teams", pt: "Financiadores, monitores independentes, consultores de EIA e de PAR"}
+    blurb:
+      en: Cut-off-date records, baselines for ESIA and RAP teams, and dated evidence between site visits for lenders and independent monitors.
+      pt: Registos na data de corte, linhas de base para equipas de EIA e de PAR, e informação datada entre visitas para financiadores e monitores independentes.
+  - key: rail-roads
+    tier: 2
+    icon: rail
+    name: {en: "Rail & roads", pt: "Ferrovias e estradas"}
+    menu: {en: "Road and rail reserves, building restriction areas, new alignments", pt: "Faixas de estradas e ferrovias, zonas de restrição, novos traçados"}
+    blurb:
+      en: Structures along railway and road corridors measured against their reserves and restriction strips, and dated baselines for new alignments.
+      pt: Construções ao longo de ferrovias e estradas medidas em relação às respectivas faixas de protecção, e registos datados para novos traçados.
+  - key: renewables
+    tier: 2
+    icon: sun
+    name: {en: "Renewables", pt: "Energias renováveis"}
+    menu: {en: "Solar and wind sites and their connection lines", pt: "Parques solares e eólicos e respectivas linhas de ligação"}
+    blurb:
+      en: Site histories, structures and land-use change on and around solar and wind sites and their connection lines, before and during construction.
+      pt: Histórico dos terrenos, construções e alterações do uso do solo em parques solares e eólicos e nas suas linhas de ligação, antes e durante a obra.
+  - key: agriculture-forestry-nature
+    tier: 2
+    icon: tree
+    name: {en: "Agriculture, forestry & nature", pt: "Florestas, agricultura e conservação"}
+    menu: {en: "Estates, plantations, protected areas and offsets", pt: "Propriedades, plantações, áreas de conservação e compensações"}
+    blurb:
+      en: Cleared ground, boundary change, new tracks and structures across estates, plantations, conservation areas and biodiversity offsets.
+      pt: Terreno desmatado, alterações nos limites, novos acessos e construções em propriedades, plantações, áreas de conservação e compensações de biodiversidade.
+  - key: government
+    tier: 2
+    icon: building
+    name: {en: "Government & public programmes", pt: "Governo e programas públicos"}
+    menu: {en: "Public land, settlement planning, energy access, recovery after floods", pt: "Terras públicas, planeamento, acesso à energia, recuperação após cheias"}
+    blurb:
+      en: Structure layers and estimated households for planning, and before-and-after mapping of public land, programmes and areas hit by floods or cyclones.
+      pt: Camadas de construções e estimativas de agregados familiares para planeamento, e mapeamento antes e depois em terras públicas, programas e zonas afectadas por cheias ou ciclones.
+
+solution_groups:
+  - key: protect
+    name: {en: "Protect corridors and sites", pt: "Proteger corredores e locais"}
+  - key: baselines
+    name: {en: "Baselines and records", pt: "Linhas de base e registos"}
+  - key: change
+    name: {en: "Change and environment", pt: "Alterações e ambiente"}
+  - key: capture
+    name: {en: "Drone, imagery and custom detection", pt: "Drone, imagens e detecção à medida"}
+
+solutions:
+  - key: right-of-way-monitoring
+    code: U1
+    group: protect
+    icon: corridor
+    name: {en: "Right-of-way & servitude monitoring", pt: "Monitoria de faixas de servidão"}
+    blurb:
+      en: A baseline register of structures by distance to your line, then re-surveys on a schedule agreed with you and a notice of what changed.
+      pt: Um registo de base das construções por distância à linha, seguido de levantamentos periódicos acordados consigo e de um aviso do que mudou.
+    services: [S01, S08, S09, S10, S18, S22, S13, S38, S45]
+  - key: encroachment-surveys
+    code: U2
+    group: protect
+    icon: boundary
+    name: {en: "Encroachment surveys", pt: "Levantamento de ocupações"}
+    blurb:
+      en: Structures inside a concession, site or boundary, in a ring around it, or both, mapped and listed so you can see where land is being occupied.
+      pt: Construções dentro de uma concessão, terreno ou limite, numa faixa à sua volta, ou em ambos, mapeadas e listadas para ver onde a terra está a ser ocupada.
+    services: [S02, S05, S06, S07, S17, S18]
+  - key: hazard-zone-registers
+    code: U6
+    group: protect
+    icon: shield
+    name: {en: "Hazard & safety-zone registers", pt: "Construções em zonas de segurança"}
+    blurb:
+      en: Structures inside the safety, tailings, blast or inundation zones your engineers define, each with its distance to the source.
+      pt: Construções dentro das zonas de segurança, de rejeitados, de explosão ou de inundação definidas pelos seus engenheiros, cada uma com a distância à origem.
+    services: [S03, S10, S09, S28, S35, S07]
+  - key: excavation-mapping
+    code: U11
+    group: protect
+    icon: excavation
+    name: {en: "Excavation & ground-disturbance mapping", pt: "Escavações e perturbação do terreno"}
+    blurb:
+      en: Pits, fresh digging, spoil heaps and new tracks mapped between dates, so your field teams know where to check.
+      pt: Covas, escavações recentes, montes de terra e novos acessos mapeados entre datas, para que as equipas de campo saibam onde verificar.
+    services: [S22, S21, S18, S12, S14]
+  - key: resettlement-cut-off-baselines
+    code: U3
+    group: baselines
+    icon: calendar
+    flagship: true
+    name: {en: "Resettlement cut-off-date baselines", pt: "Registo na data de corte para reassentamento"}
+    blurb:
+      en: A dated register of the structures in your project footprint at the cut-off date, to support your census and asset inventory under IFC Performance Standard 5.
+      pt: Um registo datado das construções na área do projecto na data de corte, para apoiar o censo e o inventário de bens segundo a Norma de Desempenho 5 da IFC.
+    services: [S31, S07, S06, S08, S09, S32, S35, S34, S43, S44]
+  - key: route-site-selection
+    code: U5
+    group: baselines
+    icon: route
+    flagship: true
+    name: {en: "Route & site selection", pt: "Comparação de traçados e locais"}
+    blurb:
+      en: Structure counts along alternative alignments or across candidate sites, so land impact is weighed before a route is fixed.
+      pt: Contagens de construções ao longo de traçados alternativos ou em locais candidatos, para pesar o impacto sobre a terra antes de fixar o traçado.
+    services: [S04, S27, S28, S33, S35, S36]
+  - key: imagery-history-due-diligence
+    code: U8
+    group: baselines
+    icon: history
+    name: {en: "Imagery history & land due diligence", pt: "Histórico de imagens e due diligence de terras"}
+    blurb:
+      en: What was on a parcel, route or site, and roughly when, from archived satellite imagery and open datasets.
+      pt: O que existia num terreno, traçado ou local, e aproximadamente quando, a partir de imagens de satélite de arquivo e de dados abertos.
+    services: [S33, S41, S36, S10, S32]
+  - key: evidence-packs
+    code: U7
+    group: baselines
+    icon: file-check
+    exclude: [za]
+    name: {en: "Evidence packs & grievance checks", pt: "Dossiês documentais e verificação de reclamações"}
+    blurb:
+      en: Dated imagery, registers and maps packaged with file fingerprints and an independent timestamp, to support legal and community processes.
+      pt: Imagens datadas, registos e mapas reunidos com impressões digitais dos ficheiros e um carimbo temporal independente, para apoiar processos legais e comunitários.
+    services: [S32, S34, S33, S31, S41]
+  - key: household-estimates
+    code: U13
+    group: baselines
+    icon: houses
+    name: {en: "Settlement & household estimates", pt: "Estimativas de agregados familiares"}
+    blurb:
+      en: Structure layers and estimated households for mini-grid sizing, service planning and consultation planning, with the assumptions stated.
+      pt: Camadas de construções e estimativas de agregados familiares para dimensionar mini-redes e planear serviços e consultas, com os pressupostos indicados.
+    services: [S05, S35, S10, S07, S06]
+  - key: change-detection
+    code: U4
+    group: change
+    icon: compare
+    name: {en: "Change detection & scheduled re-surveys", pt: "Detecção de alterações e levantamentos periódicos"}
+    blurb:
+      en: New and removed structures between dated surveys, flagged automatically and confirmed by a reviewer, with before-and-after views.
+      pt: Construções novas e desaparecidas entre levantamentos datados, assinaladas automaticamente e confirmadas por um revisor, com vistas de antes e depois.
+    services: [S08, S09, S10, S14, S16, S17]
+  - key: vegetation-land-cover-fire
+    code: U9
+    group: change
+    icon: leaf
+    name: {en: "Vegetation, land cover & fire", pt: "Vegetação, cobertura do solo e queimadas"}
+    blurb:
+      en: Where vegetation has been cleared, has regrown or has burnt along servitudes, estates and concessions, compared between dates.
+      pt: Onde a vegetação foi cortada, voltou a crescer ou ardeu ao longo de servidões, propriedades e concessões, comparando datas.
+    services: [S11, S12, S13, S15, S30, S36]
+  - key: terrain-flood-post-event
+    code: U10
+    group: change
+    icon: water
+    name: {en: "Terrain, flood & post-event mapping", pt: "Relevo, cheias e mapeamento após eventos"}
+    blurb:
+      en: Steep, erosion-prone and flood-exposed stretches highlighted, and before-and-after checks along your route after storms and floods.
+      pt: Troços íngremes, sujeitos a erosão ou expostos a cheias assinalados, e verificação de antes e depois ao longo do traçado após tempestades e cheias.
+    services: [S27, S28, S29, S14]
+  - key: drone-surveys
+    code: U14
+    group: capture
+    icon: drone
+    name: {en: "Drone surveys", pt: "Levantamentos por drone"}
+    blurb:
+      en: Orthophotos, elevation models and volumes where the detail matters, subject to the permits and authorisations each job requires.
+      pt: Ortofotomapas, modelos de elevação e volumes onde o detalhe conta, sujeitos às licenças e autorizações que cada trabalho exige.
+    services: [S37, S38, S16, S39, S30]
+  - key: imagery
+    code: U15
+    group: capture
+    icon: satellite
+    name: {en: "Imagery: yours, archive or new capture", pt: "Imagens: suas, de arquivo ou novas"}
+    blurb:
+      en: Analysis of the imagery you already hold, dated very-high-resolution archive scenes, or a new satellite capture of your site.
+      pt: Análise das imagens que já tem, cenas de arquivo datadas de muito alta resolução ou uma nova captação por satélite do seu local.
+    services: [S40, S41, S42]
+  - key: custom-detection
+    code: U12
+    group: capture
+    icon: target
+    name: {en: "Custom object detection", pt: "Detecção de objectos à medida"}
+    blurb:
+      en: Detection tuned to your imagery and to what matters on your land, checked on part of your area before it runs on the rest.
+      pt: Detecção adaptada às suas imagens e ao que importa no seu terreno, verificada numa parte da área antes de ser aplicada ao resto.
+    services: [S19, S20, S24, S25, S26]
+
+service_groups:
+  - key: structures
+    name: {en: "Encroachment and structure mapping", pt: "Ocupações e mapeamento de construções"}
+  - key: change
+    name: {en: "Change and repeat surveys", pt: "Alterações e levantamentos periódicos"}
+  - key: features
+    name: {en: "Detection of specific features", pt: "Detecção de elementos específicos"}
+  - key: terrain
+    name: {en: "Terrain, water and hazard screening", pt: "Relevo, água e zonas de perigo"}
+  - key: baselines
+    name: {en: "Land and social baselines", pt: "Linhas de base fundiárias e sociais"}
+  - key: capture
+    name: {en: "Drone and imagery", pt: "Drone e imagens"}
+  - key: delivery
+    name: {en: "Reports and delivery", pt: "Relatórios e entrega"}
+
+# `only`: shown only on these sections' pages. `exclude`: never shown on these sections' pages.
+services:
+  - {id: S01, group: structures, name: "Right-of-way encroachment survey", name_pt: "Levantamento de ocupações na faixa de servidão", line: "A register of the structures within the distances you choose from your pipeline, power line, road or railway. Each structure comes with its distance to the line and its coordinates, and each stretch of the route gets an encroachment-density rating."}
+  - {id: S02, group: structures, name: "Concession, site and boundary encroachment survey", name_pt: "Ocupações em concessões, terrenos e limites", line: "Structures inside your concession, site or land-use boundary, in a ring around it, or both, mapped and listed so you can see where land is being occupied."}
+  - {id: S03, group: structures, name: "Structures in hazard and impact zones", name_pt: "Estruturas em zonas de impacto e de segurança", line: "Structures inside the zones you define, such as tailings dam-break inundation areas, blast and exclusion zones, flood lines or safety setbacks, each listed with its location and distance to the source."}
+  - {id: S04, group: structures, name: "Route and site option comparison", name_pt: "Comparação de alternativas de traçado e de local", line: "Side-by-side structure counts along alternative pipeline, line or road alignments, or across candidate sites, so land impact can be weighed before a route is fixed."}
+  - {id: S05, group: structures, name: "Area-wide structure mapping", name_pt: "Mapeamento de estruturas em grandes áreas", line: "A GIS layer of structures across a whole district, concession or imagery survey, ready to load into your own mapping system."}
+  - {id: S06, group: structures, name: "Reviewer-led structure mapping", name_pt: "Mapeamento de estruturas por revisores", line: "Where automatic detection is not enough, such as dense villages, mixed tree cover or unusual roofs, AfriScan reviewers mark structures by hand on high-resolution imagery."}
+  - {id: S07, group: structures, name: "Structure categories and attributes", name_pt: "Categorias e atributos das estruturas", line: "A reviewer tags each structure with what the imagery shows, such as main building, outbuilding, livestock enclosure, under construction or roof type, for resettlement and planning registers."}
+  - {id: S08, group: change, name: "Change detection between dated surveys", name_pt: "Detecção de alterações entre levantamentos datados", line: "New and removed structures between two or more dated surveys, flagged automatically and confirmed by a reviewer, with before-and-after views of each change."}
+  - {id: S09, group: change, name: "Scheduled re-surveys with change notices", name_pt: "Levantamentos periódicos com avisos de alterações", line: "Your route or site re-surveyed on a schedule agreed with you, with an email to your team after each survey saying what has changed and where."}
+  - {id: S10, group: change, name: "Settlement growth trends", name_pt: "Tendências de crescimento dos assentamentos", line: "How built-up land has changed year by year around your assets, showing where settlement pressure is growing."}
+  - {id: S11, group: change, name: "Vegetation and land-cover change", name_pt: "Alterações da vegetação e da cobertura do solo", line: "Maps of where vegetation has been cleared, has regrown or has changed along servitudes, around plantations and forest estates, and across concessions, compared between dates."}
+  - {id: S12, group: change, name: "Forest-loss and ground-disturbance alerts", name_pt: "Alertas de perda florestal e de perturbação do terreno", line: "Regular notices of tree-cover loss and ground disturbance inside or near your estate or concession, drawn from global satellite alert systems and checked by our team."}
+  - {id: S13, group: change, name: "Fire hotspot and burn-scar watch", name_pt: "Focos de incêndio e áreas queimadas", line: "Notices of satellite-detected fire hotspots near your lines, pipelines, plantations and sites, and maps of burnt areas after the fire."}
+  - {id: S14, group: change, name: "All-weather radar change screening", name_pt: "Detecção de alterações por radar, mesmo com nuvens", line: "Radar satellite comparisons that show larger ground changes, such as clearing, earthworks and new large buildings, even under rainy-season cloud."}
+  - {id: S15, group: change, name: "Rehabilitation and revegetation tracking", name_pt: "Acompanhamento da reabilitação e revegetação", line: "Progress of revegetation on rehabilitated mine land, closed borrow pits and restored servitudes, tracked between dates."}
+  - {id: S16, group: change, name: "Construction and earthworks progress", name_pt: "Progresso de obras e de movimentos de terra", line: "Dated drone orthophotos and elevation models compared side by side, with maps of where ground has been cut or filled between visits."}
+  - {id: S17, group: change, name: "Boundary and perimeter change", name_pt: "Alterações nos limites e perímetros", line: "New structures, cleared ground and new tracks at your boundaries between dates, with fence lines and gates checked by a reviewer on drone imagery."}
+  - {id: S18, group: features, name: "Track and access-route mapping", name_pt: "Mapeamento de picadas e acessos", line: "New tracks and access roads into your concession, across your right of way or around your site, mapped between dates."}
+  - {id: S19, group: features, name: "Structure detector tuned to your imagery", name_pt: "Detector de edifícios adaptado às suas imagens", line: "A building detector tuned to your own drone or satellite imagery and to local building styles, checked on part of your area before it is used on the rest."}
+  - {id: S20, group: features, name: "Custom object detection", name_pt: "Detecção de objectos à medida", line: "Detection of the objects that matter on your land, trained on examples from your own imagery and reported alongside structures in your GIS files and reports."}
+  - {id: S21, group: features, name: "Artisanal mining and excavation mapping", name_pt: "Mapeamento de mineração artesanal e escavações", line: "Pits, disturbed ground, spoil heaps and water-filled excavations mapped inside and around your mining right or concession, with new sites flagged between dates."}
+  - {id: S22, group: features, name: "Excavation and third-party works on rights of way", name_pt: "Escavações e obras de terceiros na faixa de servidão", line: "Fresh digging, spoil heaps, trenches and earthworks on or near your pipeline or cable right of way, flagged between surveys so your field teams know where to check."}
+  - {id: S23, group: features, only: [ng], name: "Illegal refining and oil-impacted ground screening", name_pt: "", line: "Sites showing visible signs of artisanal refining, and oil-stained or dead vegetation near your pipelines and facilities, mapped and flagged for your security and environment teams to check."}
+  - {id: S24, group: features, name: "Tanks, containers and stored materials", name_pt: "Tanques, contentores e materiais armazenados", line: "An inventory of tanks, containers, stockpiles and laydown areas on your sites and along your corridors, compared between dates."}
+  - {id: S25, group: features, name: "Plant and equipment on site", name_pt: "Máquinas e equipamentos em obra", line: "Heavy equipment, such as excavators and trucks, visible at construction sites, laydown yards and unexplained earthworks, recorded on each survey date."}
+  - {id: S26, group: features, name: "Describe-what-to-find search", name_pt: "Pesquisa por descrição", line: "Tell us in words what to look for, and we search your imagery for it, with every result checked by a reviewer."}
+  - {id: S27, group: terrain, name: "Terrain, slope and erosion screening", name_pt: "Declives, relevo e erosão", line: "Steep, erosion-prone and drainage-crossing stretches of your route or site highlighted from elevation data, with drone elevation models for detail where flown."}
+  - {id: S28, group: terrain, name: "Flood-exposure screening", name_pt: "Exposição a cheias", line: "Structures, route segments and sites in historically flooded, low-lying or river-crossing areas, highlighted for planning and emergency preparedness."}
+  - {id: S29, group: terrain, name: "Post-event flood and damage mapping", name_pt: "Mapeamento de cheias e danos após eventos", line: "After a cyclone or flood, a map of the flooded area and a reviewer's before-and-after check of structures and assets along your route or site."}
+  - {id: S30, group: terrain, name: "Vegetation height in servitudes", name_pt: "Altura da vegetação na faixa de servidão", line: "Where tall vegetation stands inside your power-line or pipeline servitude, mapped from drone elevation models and open canopy-height data."}
+  - {id: S31, group: baselines, name: "Resettlement cut-off-date baseline", name_pt: "Registo de referência na data de corte (reassentamento)", line: "A dated record of the structures in the project footprint at the cut-off date, with imagery, coordinates and IDs, to support your census and asset inventory under IFC Performance Standard 5."}
+  - {id: S32, group: baselines, exclude: [za], name: "Evidence packs for legal and community processes", name_pt: "Dossiês documentais para processos legais e comunitários", line: "Dated imagery, structure registers and maps packaged with file fingerprints and an independent timestamp, so you can show what was on the ground and when."}
+  - {id: S33, group: baselines, name: "Imagery history and land due diligence", name_pt: "Histórico de imagens e due diligence de terras", line: "The documented history of a parcel, route or site from archived satellite imagery and open datasets: what was built, cleared or changed, and roughly when."}
+  - {id: S34, group: baselines, name: "Location check for grievances and claims", name_pt: "Verificação de reclamações num local", line: "For a single point or claim, a sheet of every dated image covering it, so your team can see what was there on each date."}
+  - {id: S35, group: baselines, name: "Household and population estimates", name_pt: "Estimativas de agregados familiares e população", line: "Estimated households and people from structure counts, for mini-grid sizing, service planning, consultation planning and health or census microplanning."}
+  - {id: S36, group: baselines, name: "Land-use and land-cover baseline", name_pt: "Linha de base de uso e cobertura do solo", line: "A baseline map of built-up land, cropland, bare ground, water and tree cover around your project, combined with our structure register."}
+  - {id: S37, group: capture, name: "Drone orthophoto and elevation survey", name_pt: "Levantamento por drone: ortofotomapa e modelos de elevação", line: "A georeferenced orthophoto, surface and terrain elevation models, a point cloud, a 3D model and a processing quality report from a drone survey of your site or corridor, subject to the permits and authorisations each job requires."}
+  - {id: S38, group: capture, name: "Drone checks of flagged areas", name_pt: "Verificação por drone das áreas assinaladas", line: "Satellite screening narrows the search, then drone flights over the flagged stretches capture the detail your team needs, subject to the permits each job requires."}
+  - {id: S39, group: capture, name: "Stockpile and earthworks volumes", name_pt: "Volumes de pilhas e de movimentos de terra", line: "Volumes of stockpiles, spoil heaps, borrow pits and cut-and-fill areas calculated from drone elevation models."}
+  - {id: S40, group: capture, name: "Analysis of your own imagery", name_pt: "Análise das suas próprias imagens", line: "Send the drone orthophotos or satellite scenes you already have, and we run the same structure, change and corridor analysis on them."}
+  - {id: S41, group: capture, name: "Very-high-resolution satellite imagery sourcing", name_pt: "Aquisição de imagens de satélite de muito alta resolução", line: "Dated, very-high-resolution satellite scenes of your area sourced from commercial archives, used in your analysis and delivered as imagery."}
+  - {id: S42, group: capture, name: "New satellite capture of your site", name_pt: "Nova captação por satélite do seu local", line: "A new very-high-resolution satellite capture of your site or corridor, requested from commercial operators for when archive imagery is too old. The capture date depends on satellite availability and weather."}
+  - {id: S43, group: delivery, name: "PDF reports in English or Portuguese", name_pt: "Relatórios PDF em português ou inglês", line: "Clear PDF reports with maps, route tables, a photo of each structure and a coordinate register, in English or Portuguese."}
+  - {id: S44, group: delivery, name: "GIS deliverables", name_pt: "Ficheiros SIG", line: "GeoPackage, GeoJSON, KMZ and Shapefile layers that open in QGIS, ArcGIS and Google Earth."}
+  - {id: S45, group: delivery, name: "Interactive map file", name_pt: "Mapa interactivo em ficheiro", line: "A self-contained interactive map of your results that your team can open in a web browser, including in the field."}

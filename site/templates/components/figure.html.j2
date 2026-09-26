@@ -1,0 +1,13 @@
+<figure class="figure figure--{{ size }}">
+  <div class="figure-media">
+    {{ picture }}
+    {% if a.get('badge') %}<span class="img-badge">{{ icon('user-check', 'icon icon-xs') }}{{ a.badge }}</span>{% endif %}
+  </div>
+  {% if a.get('caption') or a.get('credit') or inner|trim %}
+  <figcaption>
+    {% if a.get('caption') %}<span class="figure-caption">{{ md(a.caption) }}</span>{% endif %}
+    {% if inner|trim %}<div class="figure-text">{{ inner }}</div>{% endif %}
+    {% if a.get('credit') %}<span class="figure-credit">{{ md(a.credit) }}</span>{% endif %}
+  </figcaption>
+  {% endif %}
+</figure>

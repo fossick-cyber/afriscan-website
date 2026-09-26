@@ -1,0 +1,15 @@
+{% if page.faq %}
+<section class="section section--{{ page.get('faq_tone', 'alt') }}" id="faq">
+  <div class="container">
+    <h2>{{ page.meta.get('faq_title') or t.labels.faq }}</h2>
+    <div class="faq">
+    {% for f in page.faq %}
+      <details class="faq-item"{% if loop.first %} open{% endif %}>
+        <summary>{{ f.q }}</summary>
+        <div class="faq-a flow">{{ f.a }}</div>
+      </details>
+    {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

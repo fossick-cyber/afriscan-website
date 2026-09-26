@@ -1,0 +1,12 @@
+{% set href = a.get('href') or contact(page, a.get('intent', 'proposal')) %}
+<div class="inline-cta">
+  <div>
+    {% if a.get('title') %}<p class="inline-cta-title">{{ md(a.title) }}</p>{% endif %}
+    {% if a.get('text') %}<p>{{ md(a.text) }}</p>{% endif %}
+    {{ inner }}
+  </div>
+  <div class="btn-row">
+    <a class="btn" href="{{ href }}">{{ a.get('button') or t.cta.button }}</a>
+    {% if a.get('secondary') %}<a class="btn btn-outline btn-outline--dark" href="{{ a.secondary_href }}">{{ a.secondary }}</a>{% endif %}
+  </div>
+</div>

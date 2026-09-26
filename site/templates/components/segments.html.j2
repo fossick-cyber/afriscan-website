@@ -1,0 +1,36 @@
+{% set s = t.samples %}{% set W = 1000 %}{% set H = 150 %}{% set top = 22 %}{% set base = 104 %}
+{% set sid = 'seg-' ~ a.data %}
+<figure class="segments">
+  <div class="segments-chart">
+  <svg viewBox="0 0 {{ W }} {{ H }}" role="img" aria-labelledby="{{ sid }}-t {{ sid }}-d">
+    <title id="{{ sid }}-t">{{ s.seg_title }}</title>
+    <desc id="{{ sid }}-d">{{ s.seg_desc.format(n=segs|length, high=data.segments_by_rating.high, medium=data.segments_by_rating.medium, low=data.segments_by_rating.low) }}</desc>
+    <line class="seg-base" x1="0" x2="{{ W }}" y1="{{ base }}" y2="{{ base }}"></line>
+    {% for g in segs %}
+      {% set x = (g.from_m / total * W) %}{% set w = ((g.to_m - g.from_m) / total * W) - 4 %}
+      {% set h = (g.count / maxc * (base - top)) if g.count else 0 %}
+      {% if g.count %}<rect class="seg-bar seg--{{ g.rating }}" x="{{ '%.1f'|format(x + 2) }}" y="{{ '%.1f'|format(base - h) }}" width="{{ '%.1f'|format(w) }}" height="{{ '%.1f'|format(h) }}" rx="2"></rect>
+      <text class="seg-count" x="{{ '%.1f'|format(x + 2 + w / 2) }}" y="{{ '%.1f'|format(base - h - 6) }}" text-anchor="middle">{{ g.count }}</text>{% endif %}
+      <rect class="seg-strip seg--{{ g.rating }}" x="{{ '%.1f'|format(x + 2) }}" y="{{ base + 6 }}" width="{{ '%.1f'|format(w) }}" height="12" rx="2"></rect>
+    {% endfor %}
+    {% for km in range(0, (total // 1000) + 1, 2) %}
+      {% set tx = km * 1000 / total * W %}
+      <text class="seg-axis" x="{{ '%.1f'|format([[tx, 2]|max, W - 34]|min) }}" y="{{ H - 6 }}">{{ km }} km</text>
+    {% endfor %}
+  </svg>
+  </div>
+  <figcaption>
+    <ul class="seg-legend">
+      <li><span class="swatch seg--high"></span>{{ s.high.format(n=data.rating_rule.high_over, b=data.rating_rule.buffer_m) }} · {{ data.segments_by_rating.high }}</li>
+      <li><span class="swatch seg--medium"></span>{{ s.medium.format(n=data.rating_rule.high_over) }} · {{ data.segments_by_rating.medium }}</li>
+      <li><span class="swatch seg--low"></span>{{ s.low }} · {{ data.segments_by_rating.low }}</li>
+    </ul>
+    {% if inner|trim %}<div class="figure-text">{{ inner }}</div>{% endif %}
+  </figcaption>
+  <details class="disclosure seg-data"><summary>{{ s.seg_table }}</summary>
+    <div class="table-wrap" tabindex="0" role="region" aria-label="{{ s.seg_table }}">
+    <table><thead><tr><th scope="col">{{ s.segment_km }}</th><th scope="col">{{ s.within.format(b=data.rating_rule.buffer_m) }}</th><th scope="col">{{ s.rating }}</th></tr></thead>
+    <tbody>{% for g in segs %}<tr><td>{{ '%.1f'|format(g.from_m / 1000) }}–{{ '%.1f'|format(g.to_m / 1000) }}</td><td>{{ g.count }}</td><td>{{ s.ratings[g.rating] }}</td></tr>{% endfor %}</tbody></table>
+    </div>
+  </details>
+</figure>

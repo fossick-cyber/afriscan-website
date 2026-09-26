@@ -1,0 +1,13 @@
+<div class="catalogue">
+{% for g in groups %}
+  <div class="catalogue-group" id="services-{{ g.key }}">
+    <h3>{{ g.name }}</h3>
+    <ul class="service-list">
+    {% for s in g.services %}
+      <li id="{{ s.id|lower }}"><span class="service-name">{{ s.name }}</span><span class="service-line">{{ s.line }}</span></li>
+    {% endfor %}
+    </ul>
+  </div>
+{% endfor %}
+</div>
+{{ inner }}

@@ -1,0 +1,14 @@
+{% if page.cta %}
+<section class="cta-band">
+  <div class="container cta-inner">
+    <div>
+      <h2>{{ page.cta.title }}</h2>
+      <p>{{ page.cta.text }}</p>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn-lg" href="{{ page.cta.href }}">{{ page.cta.button }}</a>
+      {% if page.cta.secondary %}<a class="btn btn-lg btn-outline" href="{{ page.cta.secondary_href }}">{{ page.cta.secondary }}</a>{% endif %}
+    </div>
+  </div>
+</section>
+{% endif %}

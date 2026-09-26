@@ -1,0 +1,8 @@
+{% extends "base.html.j2" %}
+{% block main %}
+{% set extra_head %}<div class="law-meta"><p class="law-disclaimer">{{ icon('scale', 'icon icon-sm') }}<span>{{ t.law.not_advice }}</span></p></div>{% endset %}
+{% include "partials/pagehead.html.j2" %}
+{{ page.body_html }}
+{% include "partials/faq.html.j2" %}
+{% include "partials/cta.html.j2" %}
+{% endblock %}

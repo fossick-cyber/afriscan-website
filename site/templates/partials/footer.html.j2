@@ -1,0 +1,42 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="{{ (build.home_of(page.loc_key) or {'url': '/'}).url }}"><span class="logo-word">Afri<span>Scan</span></span><small>{{ t.brand_by }}</small></a>
+      <p>{{ t.footer.tagline }}</p>
+      <p class="footer-note">{{ icon('user-check', 'icon icon-sm') }}<span>{{ t.footer.review }}</span></p>
+      <p class="footer-note">{{ icon('drone', 'icon icon-sm') }}<span>{{ t.footer.drones }}</span></p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      {% if footer.explore %}
+      <div><p class="footer-title">{{ t.footer.explore }}</p><ul>{% for i in footer.explore %}<li><a href="{{ i.href }}">{{ i.label }}</a></li>{% endfor %}</ul></div>
+      {% endif %}
+      {% if footer.industries %}
+      <div><p class="footer-title">{{ t.footer.industries }}</p><ul>{% for i in footer.industries %}<li><a href="{{ i.href }}">{{ i.label }}</a></li>{% endfor %}</ul></div>
+      {% endif %}
+      {% if footer.solutions %}
+      <div><p class="footer-title">{{ t.footer.solutions }}</p><ul>{% for i in footer.solutions %}<li><a href="{{ i.href }}">{{ i.label }}</a></li>{% endfor %}</ul></div>
+      {% endif %}
+      {% if footer.how or footer.resources %}
+      <div><p class="footer-title">{{ t.footer.how }}</p><ul>{% for i in footer.how + footer.resources %}<li><a href="{{ i.href }}">{{ i.label }}</a></li>{% endfor %}</ul></div>
+      {% endif %}
+      <div>
+        {% if footer.countries|length > 1 %}
+        <p class="footer-title">{{ t.footer.countries }}</p>
+        <ul>{% for c in footer.countries %}<li><a href="{{ c.href }}" hreflang="{{ c.lang }}" lang="{{ c.lang }}">{{ c.label }}</a></li>{% endfor %}</ul>
+        {% endif %}
+        <p class="footer-title">{{ t.footer.company }}</p>
+        <ul>
+          <li><a href="{{ contact(page) }}">{{ t.footer.contact }}</a></li>
+          <li><a href="{{ site.parent.url }}">{{ t.footer.afridrone }}</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="container footer-credits">
+    <p class="footer-title">{{ t.footer.credits_title }}</p>
+    <p>{{ t.footer.credits }}</p>
+  </div>
+  <div class="container footer-bottom">
+    <p>© {{ site.copyright_year }} AfriScan by <a href="{{ site.parent.url }}">Afridrone</a>. {{ t.footer.rights }}</p>
+  </div>
+</footer>

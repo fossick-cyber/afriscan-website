@@ -1,0 +1,181 @@
+# UI strings for English sections (global, /mz/, /za/, /ng/). Every key must also exist in pt-MZ.yaml;
+# the build fails on a missing key.
+lang_name: English
+skip: Skip to content
+brand_by: by Afridrone
+home_crumb: AfriScan
+months: [January, February, March, April, May, June, July, August, September, October, November, December]
+date_format: "{d} {month} {y}"
+
+nav:
+  primary: Primary
+  industries: Industries
+  solutions: Solutions
+  how: How it works
+  countries: Countries
+  resources: Resources
+  contact: Request a proposal
+  contact_short: Get a proposal
+  overview: Overview
+  menu_open: Open menu
+  menu_close: Close menu
+  show_submenu: "Show the {label} menu"
+  more_industries: More industries
+  lang_badge: EN
+
+region:
+  label: Country site
+  choose: Choose a country site
+  current: You are here
+
+cta:
+  title: Know what stands inside your right of way, before it becomes a dispute.
+  text: Send us your route or site boundary and the distances that matter to you. We reply with a scope, an imagery plan and a written proposal.
+  button: Request a proposal
+  secondary: See sample outputs
+
+labels:
+  faq: Frequently asked questions
+  related: Also useful
+  used_in: Used in
+  who_uses: Who uses it
+  solutions_used: How we help
+  in_this_site: On this country site
+  read: Read
+  open: Open
+  sample: Sample output
+  reviewed_badge: Reviewed · manual marks
+  on_this_page: On this page
+  back_to_top: Back to top
+  services_included: Services included
+  last_updated: Last updated
+
+footer:
+  tagline: Remote land monitoring for pipelines, power lines, concessions and project sites.
+  review: A person reviews every result before delivery.
+  credits_title: Data credits
+  credits: "Building footprints: Google Open Buildings (CC BY 4.0), Microsoft Building Footprints (CDLA-Permissive-2.0) and © OpenStreetMap contributors (ODbL). Vegetation and land-cover work uses Copernicus Sentinel data. The source of every image is stated with the image."
+  explore: Explore
+  industries: Industries
+  solutions: Solutions
+  how: How it works
+  countries: Country sites
+  company: Company
+  afridrone: Afridrone drone services
+  contact: Request a proposal
+  rights: All rights reserved.
+  drones: Drone surveys are subject to the permits and authorisations each job requires.
+
+law:
+  as_of: "As of {date}"
+  not_advice: This page summarises public rules for information. It is not legal advice.
+  sources: Sources
+  instrument: Instrument
+  reference: Reference
+  date: Date
+  checked: Checked
+  last_reviewed: Last reviewed
+  drone_note: Drone surveys are subject to the permits and authorisations each job requires. Satellite-based work involves no drone flight.
+  compare_title: Drone rules at a glance
+  regulator: Regulator
+  key_instruments: Key instruments
+  country: Country
+  guide: Guide
+
+article:
+  published: Published
+  updated: Updated
+  min_read: "{n} min read"
+  author: AfriScan
+
+form:
+  legend_you: About you
+  legend_job: About the route or site
+  name: Full name
+  email: Work email
+  org: Organisation
+  role: Your role
+  roles:
+    - Land and resettlement
+    - Right of way or asset integrity
+    - HSE, ESIA or social performance
+    - Procurement or supply chain
+    - ESIA or RAP consultant
+    - Lender or independent monitor
+    - Other
+  country: Country
+  countries: [Mozambique, South Africa, Nigeria, Other]
+  asset: What needs surveying
+  assets:
+    - Pipeline
+    - Power line
+    - Rail or road
+    - Mining concession
+    - Estate or site
+    - Project or resettlement area
+    - Other
+  size: Approximate length (km) or area (km²)
+  when: When do you need results?
+  needs: What do you need?
+  needs_options:
+    - Baseline structure register
+    - Scheduled re-surveys and change notices
+    - Resettlement cut-off-date baseline
+    - Route or site option comparison
+    - Drone survey
+    - Something else
+  message: Tell us about the route or site
+  message_hint: Location or province, the buffer distances to check, and any date the record must reflect.
+  heard: How did you hear about us?
+  heard_options: [Search engine, LinkedIn, Event, Referral, Supplier portal or tender, Other]
+  required: required
+  choose: Choose…
+  submit: Send request
+  sending: Sending…
+  success: Thank you. Your request has been sent and we will reply by email.
+  error: We could not send your request just now. Sending it another way…
+  privacy: Your request reaches us through FormSubmit, a form-delivery service.
+  subject: New AfriScan enquiry
+  next_title: What happens next
+  next_steps:
+    - We reply by email to confirm what we need from you.
+    - A short scoping call about the route or site, the distances that matter and the imagery.
+    - "A written proposal: scope, imagery plan, method, deliverables and schedule."
+  send_title: What to send
+  send_text: "The route or boundary file (KML, KMZ, GeoJSON, Shapefile, GPX or GeoPackage), the country and province, the distances to check, the date the record must reflect, the deliverables you need and your deadline. No file yet? Describe the location and we can draw the route with you."
+  procurement_title: Procurement teams
+  procurement_text: Send your supplier onboarding form or tender documents with your request and we will complete them.
+
+notfound:
+  title: Page not found | AfriScan
+  h1: Page not found
+  text: That page does not exist or has moved. These pages are a good place to start.
+  home: AfriScan home
+
+thanks:
+  title: Thank you | AfriScan
+  h1: Thank you, your request has been sent
+  text: We have your request and will reply by email. If you have a route or boundary file you did not attach, keep it ready for the scoping call.
+  next: While you wait
+
+samples:
+  register_label: Register excerpt
+  id: ID
+  chainage: Chainage (km)
+  distance: Distance to route (m)
+  band: Band
+  source: Source
+  reviewer_mark: Reviewer mark
+  band_a: 0–50 m
+  band_b: 50–100 m
+  band_c: beyond 100 m
+  seg_title: Encroachment density per 500 m segment
+  seg_desc: "{n} segments: {high} high, {medium} medium, {low} low. Full values are in the segment table."
+  high: "High: more than {n} structures within {b} m"
+  medium: "Medium: 1 to {n}"
+  low: "Low: none"
+  seg_table: Segment table
+  segment_km: Segment (km)
+  within: "Structures within {b} m"
+  rating: Rating
+  ratings: {high: High, medium: Medium, low: Low}

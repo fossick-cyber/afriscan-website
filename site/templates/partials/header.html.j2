@@ -1,0 +1,60 @@
+{% set home = build.home_of(page.loc_key) %}
+{% set current = page.meta.get('nav_group') or page.hub or page.section %}
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="{{ home.url if home else '/' }}"><span class="logo-word">Afri<span>Scan</span></span><small>{{ t.brand_by }}</small></a>
+    <nav class="primary-nav" id="primary-nav" aria-label="{{ t.nav.primary }}">
+      <ul class="nav-list">
+      {% for g in nav %}
+        <li class="nav-item{% if g['items'] %} has-panel{% endif %}" data-group="{{ g.key }}">
+          <a class="nav-link" href="{{ g.href }}"{% if current == g.key %} aria-current="true"{% endif %}>{{ g.label }}</a>
+          {% if g['items'] %}
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="panel-{{ g.key }}" aria-label="{{ t.nav.show_submenu.format(label=g.label) }}">{{ icon('chevron-down') }}</button>
+          <div class="nav-panel nav-panel--{{ g.key }}" id="panel-{{ g.key }}">
+            {% if g.key == 'industries' %}
+            <ul class="panel-list panel-list--rich">
+              {% for i in g['items'] if i.tier == 1 %}
+              <li><a href="{{ i.href }}"{% if i.lang %} hreflang="{{ i.lang }}"{% endif %}>{% if i.icon %}{{ icon(i.icon, 'icon icon-sm') }}{% endif %}<span><strong>{{ i.label }}</strong>{% if i.blurb %}<small>{{ i.blurb }}</small>{% endif %}</span></a></li>
+              {% endfor %}
+            </ul>
+            {% set more = g['items']|selectattr('tier', 'ne', 1)|list %}
+            {% if more %}
+            <div class="panel-more"><p class="panel-title">{{ t.nav.more_industries }}</p>
+              <ul class="panel-list">{% for i in more %}<li><a href="{{ i.href }}"{% if i.lang %} hreflang="{{ i.lang }}"{% endif %}>{{ i.label }}</a></li>{% endfor %}</ul>
+            </div>
+            {% endif %}
+            {% elif g.key == 'solutions' %}
+            <div class="panel-groups">
+              {% for sg in catalogue.solution_groups %}
+              {% set its = g['items']|selectattr('group', 'equalto', sg.key)|list %}
+              {% if its %}
+              <div><p class="panel-title">{{ sg.name[lang_key] }}</p>
+                <ul class="panel-list">{% for i in its %}<li><a href="{{ i.href }}"{% if i.lang %} hreflang="{{ i.lang }}"{% endif %}>{{ i.label }}</a></li>{% endfor %}</ul>
+              </div>
+              {% endif %}
+              {% endfor %}
+              {% set other = g['items']|rejectattr('group')|list %}
+              {% if other %}<div><ul class="panel-list">{% for i in other %}<li><a href="{{ i.href }}">{{ i.label }}</a></li>{% endfor %}</ul></div>{% endif %}
+            </div>
+            {% else %}
+            <ul class="panel-list panel-list--rich">
+              {% for i in g['items'] %}
+              <li><a href="{{ i.href }}"{% if i.lang %} hreflang="{{ i.lang }}" lang="{{ i.lang }}"{% endif %}><span><strong>{{ i.label }}</strong>{% if i.blurb %}<small>{{ i.blurb }}</small>{% endif %}</span></a></li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+            <a class="panel-overview" href="{{ g.href }}">{{ t.nav.overview }}: {{ g.label }} {{ icon('arrow-right', 'icon icon-xs') }}</a>
+          </div>
+          {% endif %}
+        </li>
+      {% endfor %}
+      </ul>
+      <a class="btn nav-cta-mobile" href="{{ contact(page) }}">{{ t.nav.contact }}</a>
+    </nav>
+    <div class="header-actions">
+      {% if page.region_links|length > 1 %}{% include "partials/region.html.j2" %}{% endif %}
+      <a class="btn btn-sm header-cta" href="{{ contact(page) }}"><span class="cta-long">{{ t.nav.contact }}</span><span class="cta-short">{{ t.nav.contact_short }}</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="{{ t.nav.menu_open }}" data-label-open="{{ t.nav.menu_open }}" data-label-close="{{ t.nav.menu_close }}">{{ icon('menu', 'icon icon-open') }}{{ icon('close', 'icon icon-close') }}</button>
+    </div>
+  </div>
+</header>

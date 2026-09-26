@@ -1,0 +1,10 @@
+<section class="page-head{% if page.meta.get('head_image') %} page-head--image{% endif %}">
+  <div class="container">
+    {% include "partials/crumbs.html.j2" %}
+    {% if page.meta.get('eyebrow') %}<p class="eyebrow">{{ page.meta.eyebrow }}</p>{% endif %}
+    <h1>{{ page.h1 }}</h1>
+    {% if page.lead_html %}<p class="lead">{{ page.lead_html }}</p>{% endif %}
+    {% if extra_head is defined %}{{ extra_head }}{% endif %}
+    {% include "partials/buttons.html.j2" %}
+  </div>
+</section>

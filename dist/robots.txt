@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /geo
+
+Sitemap: https://afri-scan.com/sitemap.xml
