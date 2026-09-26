@@ -44,7 +44,7 @@
         <div class="field field--half"><label for="f-heard">{{ f.heard }}</label>
           <select id="f-heard" name="heard"><option value="">{{ f.choose }}</option>{% for o in f.heard_options %}<option>{{ o }}</option>{% endfor %}</select></div>
       </fieldset>
-      <p class="form-privacy">{{ icon('lock', 'icon icon-xs') }} {{ f.privacy }}</p>
+      <p class="form-privacy">{{ icon('lock', 'icon icon-xs') }} {{ f.privacy }}{% set pv = resolve('privacy') %}{% if pv and not pv.noindex %} <a href="{{ pv.url }}"{% if pv.lang2 != page.lang2 %} hreflang="{{ pv.lang }}"{% endif %}>{{ f.privacy_link }}</a>{% endif %}</p>
       <button type="submit" class="btn btn-lg">{{ icon('send', 'icon icon-sm') }}<span>{{ f.submit }}</span></button>
       <p class="form-status" id="formMsg" role="status" aria-live="polite"></p>
     </form>

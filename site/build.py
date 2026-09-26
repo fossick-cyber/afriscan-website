@@ -339,7 +339,8 @@ class Build:
         # how / resources: pages that set nav_group (this section first, then global by key)
         for gname in ("how", "countries", "resources"):
             items, seen = [], set()
-            cands = [p for p in self.pages if p["meta"].get("nav_group") == gname and not p["noindex"]]
+            cands = [p for p in self.pages if p["meta"].get("nav_group") == gname and not p["noindex"]
+                     and lang in (p["meta"].get("nav_langs") or [lang])]
             cands.sort(key=lambda p: (p["meta"].get("nav_order", 50), p["title"]))
             for p in cands:
                 if p["loc_key"] == lk or (p["loc_key"] == "global" and not self.find(p["key"], lk)):
@@ -746,6 +747,7 @@ class Build:
         ctx = self.page_ctx(p)
         if p["template"] == "law":
             ctx["law"] = self.law_for(p, m["law"])
+        if p["template"] in ("law", "law_hub"):
             ctx["as_of"] = m.get("as_of", self.site["law_as_of"])
         html = self.env.get_template(f"{p['template']}.html.j2").render(**ctx)
         html = re.sub(r"\n\s*\n+", "\n", html)
@@ -778,7 +780,8 @@ class Build:
         org_id, site_id = f"{B}/#org", f"{B}/#website"
         countries = [{"@type": "Country", "name": c} for c in self.site["countries"]]
         graph = []
-        if p["template"] == "home" and p["loc_key"] == "global":
+        is_about = p["key"] == "about" and p["loc_key"] == "global"
+        if (p["template"] == "home" and p["loc_key"] == "global") or is_about:
             o = self.site["org"]
             graph.append({"@type": "Organization", "@id": org_id, "name": self.site["brand"],
                           "alternateName": self.site["brand_full"], "url": f"{B}/",
@@ -787,6 +790,7 @@ class Build:
                           "description": " ".join(o["description"].split()),
                           "disambiguatingDescription": " ".join(o["disambiguating"].split()),
                           "areaServed": countries, "knowsAbout": o["knows_about"], "sameAs": o["same_as"]})
+        if p["template"] == "home" and p["loc_key"] == "global":
             graph.append({"@type": "WebSite", "@id": site_id, "url": f"{B}/", "name": self.site["brand"],
                           "alternateName": self.site["brand_full"],
                           "inLanguage": sorted({self.locales[k]["lang"] for k in self.live_locales}),
@@ -798,6 +802,9 @@ class Build:
             wp["@type"] = ["WebPage", "ContactPage"]
         if p["template"] in ("hub", "law_hub"):
             wp["@type"] = ["WebPage", "CollectionPage"]
+        if is_about:
+            wp["@type"] = ["WebPage", "AboutPage"]
+            wp["mainEntity"] = {"@id": org_id}
         graph.append(wp)
         svc = p["meta"].get("service", {})
         if svc is not False and (p["template"] in ("industry", "solution", "country_home") or svc):
@@ -823,6 +830,8 @@ class Build:
                           "datePublished": str(m["published"]), "dateModified": str(m.get("updated", m["published"])),
                           "author": {"@id": org_id}, "publisher": {"@id": org_id},
                           "image": p["og_image"]["url"], "mainEntityOfPage": {"@id": wp["@id"]}})
+        if p["template"] == "law_hub":
+            wp["lastReviewed"] = str(p["meta"].get("as_of", self.site["law_as_of"]))
         if p["template"] == "law":
             law = self.law_for(p, p["meta"]["law"])
             wp["lastReviewed"] = str(law["last_reviewed"])

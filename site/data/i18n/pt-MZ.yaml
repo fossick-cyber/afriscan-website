@@ -55,6 +55,7 @@ footer:
   review: Uma pessoa revê todos os resultados antes da entrega.
   credits_title: Créditos dos dados
   credits: "Contornos de edifícios: Google Open Buildings (CC BY 4.0), Microsoft Building Footprints (CDLA-Permissive-2.0) e © contribuidores do OpenStreetMap (ODbL). Os trabalhos de vegetação e cobertura do solo utilizam dados Copernicus Sentinel. A fonte de cada imagem é indicada junto da mesma."
+  credits_link: Créditos e licenças completos (em inglês).
   explore: Explorar
   industries: Sectores
   solutions: Soluções
@@ -135,6 +136,7 @@ form:
   success: Obrigado. O seu pedido foi enviado e responderemos por e-mail.
   error: Não foi possível enviar o pedido neste momento. A tentar de outra forma…
   privacy: O seu pedido chega-nos através do FormSubmit, um serviço de envio de formulários.
+  privacy_link: Leia o aviso de privacidade (em inglês).
   subject: Novo pedido AfriScan (PT)
   next_title: O que acontece a seguir
   next_steps:

@@ -146,7 +146,8 @@ Required on every page: `title`, `description`, `h1`.
 | `hub` | Marks the page as the hub for a section (one per section and language): the target of the top-level menu item and a breadcrumb level. |
 | `parent` | Key of an extra breadcrumb parent. |
 | `nav_group` | Puts the page in a header menu: `how`, `countries`, `resources` (industries and solutions come from the catalogue automatically). Country-only pages can also join `industries` (listed under More industries) or `solutions`; in `solutions`, set `nav_subgroup` to a catalogue solution group (`protect`, `baselines`, `change`, `capture`) to place the item in that column. |
-| `nav_order`, `nav_label`, `nav_blurb` | Menu order (low first), label and one-line description. |
+| `nav_order`, `nav_label`, `nav_blurb` | Menu order (low first), label and one-line description. The menu label is the `crumb` when there is one. |
+| `nav_langs` | Limit a global page's menu entry to sections in these languages, e.g. `[en]` keeps an English-only guide out of the `/mz/pt/` menus and footer. Default: every section. |
 | `summary`, `icon` | Card text and icon when this page appears in a `:::pages` list. |
 | `related` | Keys shown as "Also useful" cards at the end. Catalogue keys without a page yet are skipped quietly; other unknown keys fail the build. |
 | `used_in` | Solution pages: industry keys shown as "Used in:" under the H1. |
@@ -202,6 +203,9 @@ Suggested keys and URLs. Industry and solution keys must match `data/catalogue.y
 | `mz-procurement` | | `/mz/procurement` | `/mz/pt/fornecedor` | | |
 | `za-drone-law`, `ng-drone-law` | | | | `/za/drone-regulations` | `/ng/drone-regulations` |
 | `drone-regulations` | `/drone-regulations` (template `law_hub`) | | | | |
+| `about`, `privacy`, `data-sources` | `/about`, `/privacy`, `/data-sources` | | | | |
+
+Guides and insights take their own key and no cluster unless a true translation exists: the global ones are `insight-dated-imagery-cut-off` (`/insights/dated-imagery-cut-off-dates`), `insight-satellite-or-drone` and `insight-survey-scope`; the country ones are `mz-protection-zone`, `za-servitude-guide` (`/za/servitude-encroachment-guide`) and `ng-pipeline-row-guide` (`/ng/pipeline-right-of-way-guide`).
 
 Country-only pages (procurement, POPIA, NDPA, 50 m protection zone, etc.) take their own key and no cluster, except Mozambique's EN↔PT pairs. South Africa's are `za-water-utilities` (`/za/water-utilities`), `za-land-invasion` (`/za/land-invasion-monitoring`), `za-popia` (`/za/popia`) and `za-procurement` (`/za/procurement`).
 
@@ -218,11 +222,13 @@ Country-only pages (procurement, POPIA, NDPA, 50 m protection zone, etc.) take t
 | `industry` | Industry pages, global and country | Section defaults to `industries`. Service node. Brief: INDUSTRIES.FINAL §3–4 (hero, problem, sections with stable anchors, country context, how it works, honest-scope box, FAQ, CTA; 1,500–2,000 words global, 1,200–1,800 country). |
 | `solution` | Solution pages | Section `solutions`; `used_in` renders "Used in:" under the H1. Service node. Brief: INDUSTRIES.FINAL §5 (800–1,400 words). |
 | `law` | Country drone-law and compliance pages | Needs `law: <cc>`. Shows "As of 26 September 2026" and the not-legal-advice line in the head, and a Sources table built from `data/law/<cc>.yaml` at the end. JSON-LD carries `lastReviewed` and each instrument as a `Legislation` citation. |
-| `law_hub` | `/drone-regulations` | Use `:::law-table` to render one row per country that has a law page. |
-| `article` | Insights and country guides | Needs `published`. Shows the date and reading time; JSON-LD Article. Put them under `insights/` (global) or a country folder. |
+| `law_hub` | `/drone-regulations` | Use `:::law-table` to render one row per country that has a law page. Shows the "As of" badge and the not-legal-advice line like a law page; JSON-LD carries `lastReviewed`. Cite instruments with `:::sources{law="cc" ids="…"}`. |
+| `article` | Insights and country guides | Needs `published`. Shows the date and reading time; JSON-LD Article. Put them under `insights/` (global, `/insights/<slug>`, with `parent: resources` for the breadcrumb) or flat in a country folder (`/za/<slug>`). The `/resources` hub lists the global ones automatically. |
 | `hub` | Section hubs | Use `:::industries`, `:::solutions`, `:::pages` to list children. |
 | `contact` | `/contact`, `/mz/pt/contacto`, `/za/contact`… | The form is built from i18n strings; the body (optional) goes in the sidebar. Keep `cta: false`. The FormSubmit endpoint lives in `site.yaml` and must not change. The thank-you page is `/thanks` (English) or `/mz/pt/obrigado`. |
 | `page` | Anything else | |
+
+The footer's Company column links `/about` and `/privacy`, and the data-credits line links `/data-sources`, whenever pages with those keys exist; `/about` also carries the Organization JSON-LD (AboutPage). The contact form's privacy line links `/privacy`.
 
 404 and thank-you pages are generated from i18n strings (English everywhere; Portuguese under `/mz/pt/` once it has a home). They are noindex and never in the sitemap.
 
@@ -236,7 +242,7 @@ Body content outside a `section` is wrapped in a plain white section automatical
 
 | Component | Attributes (* required) | Renders |
 |---|---|---|
-| `section` | `id`, `tone` (`light` default, `alt`, `dark`, `brand`), `eyebrow`, `title`, `lead`, `width` (`prose`), `class` | A full-width band. Alternate `light` and `alt`; use `dark` sparingly (one per page). |
+| `section` | `id`, `tone` (`light` default, `alt`, `dark`, `brand`), `eyebrow`, `title`, `lead`, `width` (`prose`), `class` | A full-width band. Alternate `light` and `alt`; use `dark` sparingly (one per page). `class="compare"` gives multi-country tables readable columns on phones: they scroll sideways with the row label pinned. |
 | `cards` | `cols` (`2`, `3` default, `4`), `style` (`dark`, `plain`) | A responsive grid of the `card`, `figure` or other blocks inside it. |
 | `card` | `title`*, `icon`, `eyebrow`, `tag`, `href` or `key`, `cta` | A card; with `href`/`key` the whole card is a link. `key` may carry an anchor (`key="oil-gas#rights-of-way"`). A catalogue key with no page yet renders a plain card (no link) instead of failing; an anchor missing on an already-rendered target is dropped with a WARN. Other unknown keys fail the build. |
 | `steps` | `style` (`list` for a vertical list) | Numbered steps; put `step` blocks inside. |

@@ -28,13 +28,14 @@
         <ul>
           <li><a href="{{ contact(page) }}">{{ t.footer.contact }}</a></li>
           <li><a href="{{ site.parent.url }}">{{ t.footer.afridrone }}</a></li>
+          {% for k in ['about', 'privacy'] %}{% set cp = resolve(k) %}{% if cp and not cp.noindex %}<li><a href="{{ cp.url }}"{% if cp.lang2 != page.lang2 %} hreflang="{{ cp.lang }}" lang="{{ cp.lang }}"{% endif %}>{{ label_of(cp) }}</a></li>{% endif %}{% endfor %}
         </ul>
       </div>
     </nav>
   </div>
   <div class="container footer-credits">
     <p class="footer-title">{{ t.footer.credits_title }}</p>
-    <p>{{ t.footer.credits }}</p>
+    <p>{{ t.footer.credits }}{% set ds = resolve('data-sources') %}{% if ds and not ds.noindex %} <a href="{{ ds.url }}"{% if ds.lang2 != page.lang2 %} hreflang="{{ ds.lang }}"{% endif %}>{{ t.footer.credits_link }}</a>{% endif %}</p>
   </div>
   <div class="container footer-bottom">
     <p>© {{ site.copyright_year }} AfriScan by <a href="{{ site.parent.url }}">Afridrone</a>. {{ t.footer.rights }}</p>

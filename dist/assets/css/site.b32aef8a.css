@@ -429,6 +429,13 @@ tbody th { font-weight: 700; }
 .band--c { background: #d9f5ef; color: #115e59; }
 .register-table td:first-child { font-variant-numeric: tabular-nums; }
 .register-table td { font-variant-numeric: tabular-nums; }
+/* Opt-in (section class="compare"): multi-country tables keep readable columns on phones and scroll
+   sideways with the row label pinned. */
+@media (max-width: 760px) {
+  .compare .table-wrap table { min-width: 700px; }
+  .compare .table-wrap tr > :first-child { position: sticky; left: 0; z-index: 1; width: 112px; min-width: 112px; background: #fff; box-shadow: 1px 0 0 var(--line); }
+  .compare .table-wrap thead tr > :first-child { background: var(--bg-alt); }
+}
 
 /* ------------------------------------------------------------------ catalogue and sources */
 .catalogue { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 28px 44px; }
@@ -542,6 +549,7 @@ tbody th { font-weight: 700; }
 .footer-credits { margin-top: 44px; font-size: 0.86rem; }
 .footer-credits::before { content: ""; display: block; border-top: 1px solid var(--d-line); margin-bottom: 24px; }
 .footer-credits p:last-child { max-width: 60rem; }
+.footer-credits a { color: var(--d-text); }
 .footer-bottom { padding-block: 22px 28px; font-size: 0.86rem; }
 .footer-bottom a { color: var(--d-text); }
 @media (max-width: 960px) { .footer-grid { grid-template-columns: 1fr; } }

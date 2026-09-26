@@ -55,6 +55,7 @@ footer:
   review: A person reviews every result before delivery.
   credits_title: Data credits
   credits: "Building footprints: Google Open Buildings (CC BY 4.0), Microsoft Building Footprints (CDLA-Permissive-2.0) and © OpenStreetMap contributors (ODbL). Vegetation and land-cover work uses Copernicus Sentinel data. The source of every image is stated with the image."
+  credits_link: Full credits and licences.
   explore: Explore
   industries: Industries
   solutions: Solutions
@@ -135,6 +136,7 @@ form:
   success: Thank you. Your request has been sent and we will reply by email.
   error: We could not send your request just now. Sending it another way…
   privacy: Your request reaches us through FormSubmit, a form-delivery service.
+  privacy_link: Read the privacy notice.
   subject: New AfriScan enquiry
   next_title: What happens next
   next_steps:

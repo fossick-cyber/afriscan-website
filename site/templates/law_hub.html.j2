@@ -1,6 +1,6 @@
 {% extends "base.html.j2" %}
 {% block main %}
-{% set extra_head %}<div class="law-meta"><p class="law-disclaimer">{{ icon('scale', 'icon icon-sm') }}<span>{{ t.law.not_advice }}</span></p></div>{% endset %}
+{% set extra_head %}<div class="law-meta">{% if as_of is defined %}<p class="badge badge--date">{{ icon('calendar', 'icon icon-sm') }}{{ t.law.as_of.format(date=fmt_date(as_of)) }}</p>{% endif %}<p class="law-disclaimer">{{ icon('scale', 'icon icon-sm') }}<span>{{ t.law.not_advice }}</span></p></div>{% endset %}
 {% include "partials/pagehead.html.j2" %}
 {{ page.body_html }}
 {% include "partials/faq.html.j2" %}
