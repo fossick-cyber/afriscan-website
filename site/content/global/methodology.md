@@ -30,6 +30,7 @@ faq:
     a: They are not silently dropped or silently kept. A reviewer decides each one on the imagery; anything the imagery cannot settle goes to a "verify on the ground" list in the report, with its location and a photo crop.
   - q: Is the register a cadastral or legal survey?
     a: No. It records what stands on the ground, where, and how far from your line, on the imagery date. Boundaries, servitude diagrams and title are the work of professional land surveyors and the land authorities in each country. Our registers are designed to sit alongside that work, not to replace it.
+related: [right-of-way-monitoring, change-detection, insight-satellite-or-drone]
 ---
 
 ::::section{id="principles" eyebrow="In one paragraph" title="Automatic sources propose, a person decides"}

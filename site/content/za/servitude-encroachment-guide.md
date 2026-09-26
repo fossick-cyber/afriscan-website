@@ -18,6 +18,7 @@ buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: POPIA and aerial imagery, key: za-popia}
 related: [power-utilities, oil-gas, za-land-invasion]
+about: [home, power-utilities, oil-gas, rail-roads, za-water-utilities, za-land-invasion, za-popia, right-of-way-monitoring, encroachment-surveys, route-site-selection]
 og:
   headline: Servitude encroachment in South Africa
   subline: What servitude holders need to know, as of 26 September 2026

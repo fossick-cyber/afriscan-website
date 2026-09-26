@@ -49,6 +49,10 @@ labels:
   back_to_top: Back to top
   services_included: Services included
   last_updated: Last updated
+  guides: Guides
+  in_your_country: In your country
+  in_your_country_note: The local law, regulators and vocabulary for this service, on each country site.
+  written_for: Written for
 
 footer:
   tagline: Remote land monitoring for pipelines, power lines, concessions and project sites.

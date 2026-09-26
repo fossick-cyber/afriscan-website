@@ -133,6 +133,8 @@ Structure counts along alternative alignments and a dated baseline before servit
 New structures and cleared ground on servitude land, found between dated surveys while they are few.
 :::
 :::
+
+Environmental assessment practitioners, engineering consultancies and lenders' advisers: see [dated land baselines for ESIA and lender monitoring](key:project-finance-esia), delivered as layers for your own maps and reports.
 ::::
 
 ::::section{id="standard" tone="dark" eyebrow="Our standard" title="Land and assets, never people"}

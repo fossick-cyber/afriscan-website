@@ -6,6 +6,7 @@
 # Optional `title_pt`, `identifier_pt` and `note_pt` replace the English wording on /mz/pt/ pages
 # (build.py law_for); add them wherever a field is written in English.
 country_name: Mozambique
+country_name_pt: Moçambique
 last_reviewed: 2026-09-26
 regulator:
   name: Instituto de Aviação Civil de Moçambique (IACM)

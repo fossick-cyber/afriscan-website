@@ -34,6 +34,7 @@ faq:
     a: As marcações do revisor são pontos. Os quadrados são desenhados à volta de cada ponto para se verem a esta escala, e um ponto colocado na beira de um telhado deixa o quadrado em parte sobre o terreno ao lado. As distâncias são medidas a partir do ponto.
   - q: As instalações e os poços junto do traçado contam como ocupação?
     a: Não. As instalações perto das duas pontas deste traçado pertencem ao operador do gasoduto. As instalações do próprio operador fazem parte do activo, não são ocupação, e não entram no registo.
+related: [oil-gas, right-of-way-monitoring, change-detection]
 ---
 
 ::::section{id="resumo" eyebrow="O exemplo em resumo" title="Gasoduto de substituição T-9, Inhambane"}

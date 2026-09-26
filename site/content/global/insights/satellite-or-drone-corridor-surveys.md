@@ -3,6 +3,10 @@ key: insight-satellite-or-drone
 template: article
 published: 2026-09-26
 parent: resources
+nav_group: resources
+nav_langs: [en]
+nav_order: 42
+nav_blurb: When to use satellite, a drone or your own imagery
 title: Satellite or Drone for a Right-of-Way Survey? | AfriScan
 description: How to choose between satellite imagery, drone orthophotos and your own imagery for a pipeline, power-line or concession survey, and how to combine them.
 h1: Satellite or drone? Choosing imagery for a right-of-way survey
@@ -15,6 +19,7 @@ buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: Drone rules by country, key: drone-regulations}
 related: [imagery, drone-surveys, right-of-way-monitoring]
+about: [home, drone-surveys, imagery, route-site-selection, oil-gas, power-utilities, mining, renewables, mz-drone-law, za-drone-law, ng-drone-law]
 og:
   headline: Satellite or drone?
   subline: Six questions that decide the imagery plan for a corridor or concession survey

@@ -23,6 +23,8 @@ Preview (the local server does not map `/x` to `x.html` the way Cloudflare Pages
 ```bash
 python3 -m http.server 5091 --directory /home/claude/afriscan-site/dist --bind 127.0.0.1
 /opt/favhousecheck/.venv/bin/python3 site/tools/shoot.py http://127.0.0.1:5091 /tmp/shots / /results /za/   # 1440 + 390 screenshots, flags horizontal overflow
+/opt/favhousecheck/.venv/bin/python3 site/tools/check_dist.py dist                   # independent check of dist/: hreflang reciprocity, canonicals, sitemaps, links, anchors, JSON-LD, orphans
+/opt/favhousecheck/.venv/bin/python3 site/tools/crawl.py http://127.0.0.1:5091 dist  # crawl the preview from / and fetch every href, src, srcset and CSS url()
 ```
 
 Read the screenshots. A page is not done until it looks right at 1440 px and 390 px.
@@ -60,7 +62,8 @@ site/
   static/assets/      CSS, JS, font (copied; CSS and JS get content-hashed file names)
   images/             image masters; the build makes AVIF, WebP and JPEG at several widths
   tests/fixtures/     self-test and demo fixtures (never published)
-  tools/              make_samples.py (T-9 images), make_diagrams.py (schematics), shoot.py (screenshots)
+  tools/              make_samples.py (T-9 images), make_diagrams.py (schematics), shoot.py (screenshots),
+                      check_dist.py (independent dist checks), crawl.py (HTTP crawl of a preview)
 functions/geo.js      the one Pages Function: /geo returns the visitor's country for the banner
 dist/                 GENERATED site that Cloudflare Pages serves
 ```
@@ -150,6 +153,7 @@ Required on every page: `title`, `description`, `h1`.
 | `nav_langs` | Limit a global page's menu entry to sections in these languages, e.g. `[en]` keeps an English-only guide out of the `/mz/pt/` menus and footer. Default: every section. |
 | `summary`, `icon` | Card text and icon when this page appears in a `:::pages` list. |
 | `related` | Keys shown as "Also useful" cards at the end. Catalogue keys without a page yet are skipped quietly; other unknown keys fail the build. |
+| `about` | Articles only: the cluster keys the guide is about (industry, solution or country-only keys, plus `home` for the country homes). Every page with one of those keys then lists the guide in a **Guides** row under "Also useful" (same language only; this section's guides first, then global ones; global pages also list the country guides; at most six). Industry keys also render a "Written for:" line under the article's H1. Unknown keys fail the build. |
 | `used_in` | Solution pages: industry keys shown as "Used in:" under the H1. |
 | `faq` | List of `{q, a}` (answer in Markdown). Rendered as an FAQ section and FAQPage JSON-LD. Keep answers true, short and local. |
 | `faq_title`, `related_title` | Override those section headings. |
@@ -230,6 +234,8 @@ Country-only pages (procurement, POPIA, NDPA, 50 m protection zone, etc.) take t
 
 The footer's Company column links `/about` and `/privacy`, and the data-credits line links `/data-sources`, whenever pages with those keys exist; `/about` also carries the Organization JSON-LD (AboutPage). The contact form's privacy line links `/privacy`.
 
+**Automatic cross-links.** Under "Also useful", pages list the guides whose `about` names their key (see §3.2), and global solution pages add an **In your country** row: one button per country site, to that country's version of the service (same `key`) or else its home, skipping sections the catalogue excludes (evidence packs never link to `/za/`). Keep `about` lists short and honest: a guide belongs on a page only if a reader of that page would want it next.
+
 404 and thank-you pages are generated from i18n strings (English everywhere; Portuguese under `/mz/pt/` once it has a home). They are noindex and never in the sitemap.
 
 ---
@@ -248,7 +254,7 @@ Body content outside a `section` is wrapped in a plain white section automatical
 | `steps` | `style` (`list` for a vertical list) | Numbered steps; put `step` blocks inside. |
 | `step` | `title`*, `icon` | One step. |
 | `callout` | `tone` (`note`, `scope`, `warn`, `legal`), `title`, `icon` | A boxed note. Use `scope` for "what we do and don't do", `legal` for law notes. |
-| `columns` | `split` (`1-1`, `2-1`, `1-2`), `align` (`center`) | Two columns (stack below 900 px); put two `col` blocks inside. |
+| `columns` | `split` (`1-1`, `2-1`, `1-2`), `align` (`center`) | Two columns (stack below 900 px); put two `col` blocks inside. A table inside a column scrolls in its own box on phones, but full-width tables read better. |
 | `col` | `class` | One column. |
 | `figure` | `src`*, `alt`*, `caption`, `credit`, `badge`, `size` (`wide` default, `full`, `narrow`, `half`, `third`), `priority` (`true` for the first large image only), `sizes` | A responsive picture (AVIF/WebP/JPEG, width and height set). Body text inside becomes the caption text. |
 | `facts` | `cols` (`2`, `3`, `4`) | A grid of key facts from lines `- Term: value`. |
@@ -385,5 +391,6 @@ Every service in `catalogue.yaml` is presented as available now. No "coming soon
 - `site/build.py` shows **0 errors**; every warning is understood.
 - `--selftest` passes if you touched `build.py`, `rules.yaml` or the glossary.
 - Screenshots at 1440 and 390 read and fixed; `shoot.py` reports no overflow.
+- `check_dist.py` and `crawl.py` report 0 errors (they re-check hreflang, canonicals, sitemaps, links and JSON-LD independently of `build.py`).
 - `git diff --stat dist/` matches what you meant to change (the build is deterministic: rebuilding without source changes leaves `dist/` unchanged apart from sitemap dates of uncommitted files).
 - Commit source and `dist/` together. Do not push or deploy: that is a separate step.

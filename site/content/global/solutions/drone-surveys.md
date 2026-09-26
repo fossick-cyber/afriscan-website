@@ -97,7 +97,9 @@ A drone survey on a known date for a cut-off record, a handover baseline or an e
 :::
 :::
 
-Where a rule's reach is unsettled, such as whether Mozambique's Lei n.º 6/2024 applies to satellite-derived mapping or whether Nigeria's survey notice applies to drone orthophotos, we say so in the proposal and recommend your counsel confirms it. The wider country picture is on [where we work](/countries).
+Where a rule's reach is unsettled, such as whether Mozambique's Lei n.º 6/2024 applies to satellite-derived mapping or whether Nigeria's survey notice applies to drone orthophotos, we say so in the proposal and recommend your counsel confirms it.
+
+The full rules, with a checklist for clients and a dated source for each requirement, are in each country guide: [Mozambique](/mz/drone-regulations) ([em português](/mz/pt/lei-de-drones)), [South Africa](/za/drone-regulations) and [Nigeria](/ng/drone-regulations). The three are compared side by side in [drone survey rules by country](/drone-regulations), and the wider country picture is on [where we work](/countries).
 ::::
 
 ::::section{id="deliverables" tone="alt" eyebrow="What you receive" title="Survey files your engineers and GIS team can open"}

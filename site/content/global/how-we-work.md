@@ -27,26 +27,27 @@ faq:
     a: Every proposal is scoped to your route or site, the imagery it needs, the deliverables and the schedule. Send the route file and what you need to know, and the proposal will set out the whole scope in writing.
   - q: Will you publish our route or results?
     a: No. We never publish a client's route, imagery or results without written permission.
+related: [insight-survey-scope, right-of-way-monitoring, resettlement-cut-off-baselines]
 ---
 
 ::::section{id="models" eyebrow="Engagement models" title="Ways to work with us" lead="Most clients start with a baseline and add re-surveys, or bring us in for one decision: a cut-off date, a route choice or a single contested location."}
 :::cards{cols="3"}
-:::card{title="Baseline survey" icon="corridor" eyebrow="One-off"}
+:::card{title="Baseline survey" key="right-of-way-monitoring" icon="corridor" eyebrow="One-off"}
 A register of the structures within the distances you choose along a route, or inside and around a boundary, with each 500 m rated for encroachment density. The starting point for everything else.
 :::
-:::card{title="Scheduled re-surveys" icon="calendar" eyebrow="Recurring"}
+:::card{title="Scheduled re-surveys" key="change-detection" icon="calendar" eyebrow="Recurring"}
 Your route or site re-surveyed on a schedule agreed with you, with an email to your team after each survey saying what has changed and where.
 :::
-:::card{title="Change detection" icon="compare" eyebrow="Between dates"}
+:::card{title="Change detection" key="change-detection#how" icon="compare" eyebrow="Between dates"}
 New and removed structures between two or more dated surveys, flagged automatically and confirmed by a reviewer, with before-and-after views of each change.
 :::
-:::card{title="Drone surveys" icon="drone" eyebrow="Detail where needed"}
+:::card{title="Drone surveys" key="drone-surveys" icon="drone" eyebrow="Detail where needed"}
 Orthophotos, elevation models and close checks of flagged stretches, flown by Afridrone, subject to the permits and authorisations each job requires.
 :::
-:::card{title="ESIA and resettlement support" icon="clipboard" eyebrow="Project decisions"}
+:::card{title="ESIA and resettlement support" key="resettlement-cut-off-baselines" icon="clipboard" eyebrow="Project decisions"}
 Dated registers for a resettlement cut-off date, structure counts for route and site options, and estimated households for planning, for your team or your consultants.
 :::
-:::card{title="Evidence packs" icon="file-check" eyebrow="Records"}
+:::card{title="Evidence packs" key="evidence-packs" icon="file-check" eyebrow="Records"}
 Dated imagery, registers and maps packaged with file fingerprints and an independent timestamp, so you can show what was on the ground and when. They support legal and community processes.
 :::
 :::

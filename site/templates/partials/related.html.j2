@@ -1,6 +1,9 @@
-{% if page.related %}
+{% set guides = page.get('guides') or [] %}
+{% set country_row = page.get('country_row') or [] %}
+{% if page.related or guides or country_row %}
 <section class="section section--{{ page.get('related_tone', 'alt') }} related">
   <div class="container">
+    {% if page.related %}
     <h2>{{ page.meta.get('related_title') or t.labels.related }}</h2>
     <div class="cards cards--3">
     {% for c in page.related %}
@@ -12,6 +15,28 @@
       </a>
     {% endfor %}
     </div>
+    {% endif %}
+    {% if guides %}
+    <h2 class="related-sub">{{ t.labels.guides }}</h2>
+    <div class="cards cards--{{ {2: 2, 4: 4}.get(guides|length, 3) }}">
+    {% for c in guides %}
+      <a class="card card--link" href="{{ c.href }}">
+        {% if c.icon %}<span class="card-icon">{{ icon(c.icon) }}</span>{% endif %}
+        {% if c.eyebrow %}<p class="card-eyebrow">{{ c.eyebrow }}</p>{% endif %}
+        <h3>{{ c.title }}</h3>
+        <p>{{ c.text }}</p>
+        <span class="card-more">{{ t.labels.read }} {{ icon('arrow-right', 'icon icon-xs') }}</span>
+      </a>
+    {% endfor %}
+    </div>
+    {% endif %}
+    {% if country_row %}
+    <h2 class="related-sub">{{ t.labels.in_your_country }}</h2>
+    <p class="related-note">{{ t.labels.in_your_country_note }}</p>
+    <div class="btn-row country-sites">
+    {% for s in country_row %}<a class="btn btn-outline" href="{{ s.href }}" hreflang="{{ s.lang }}" lang="{{ s.lang }}">{{ s.label }}</a>{% endfor %}
+    </div>
+    {% endif %}
   </div>
 </section>
 {% endif %}

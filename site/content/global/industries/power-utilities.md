@@ -276,7 +276,7 @@ Transmission sits with TCN, distribution with the DisCos, regulation with NERC a
 :::country-sites{match="page"}
 :::
 
-Drone surveys are subject to the permits and authorisations each job requires, and Afridrone is working towards the operator approvals each country requires. The rules in each country are summarised on [where we work](/countries).
+Drone surveys are subject to the permits and authorisations each job requires, and Afridrone is working towards the operator approvals each country requires. The rules in each country are compared in [drone survey rules by country](/drone-regulations) and summarised on [where we work](/countries).
 ::::
 
 ::::section{id="how" tone="alt" eyebrow="How it works" title="From line route to reviewed register"}

@@ -36,7 +36,7 @@ og:
 :::
 
 :::callout{tone="legal" title="Drone permits and AfriScan"}
-We never assume a permit. Afridrone is working towards the operator approvals each country requires, and every drone proposal sets out the permits and authorisations that particular flight needs and how they fit the schedule. Satellite-based work involves no drone flight.
+We never assume a permit. Afridrone is working towards the operator approvals each country requires, and every drone proposal sets out the permits and authorisations that particular flight needs and how they fit the schedule. Satellite-based work involves no drone flight. The rules are compared side by side in [drone survey rules by country](/drone-regulations).
 :::
 ::::
 

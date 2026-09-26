@@ -30,6 +30,7 @@ faq:
     a: Não publicamos percentagens de exactidão, porque dependem das imagens, da cobertura arbórea e do tipo de construção de cada área. O que se mantém em cada trabalho é o método. Uma pessoa revê cada resultado; o que a imagem não permite decidir fica listado para verificação no terreno; e cada relatório indica as imagens e as datas usadas, para que qualquer pessoa possa verificar o registo.
   - q: Publicam o nosso traçado ou os resultados?
     a: Não. Nunca publicamos o traçado, as imagens ou os resultados de um cliente sem autorização escrita.
+related: [right-of-way-monitoring, resettlement-cut-off-baselines, change-detection]
 ---
 
 ::::section{id="modelos" eyebrow="Modelos de contratação" title="Formas de trabalhar connosco" lead="A maioria dos clientes começa por um levantamento de base e acrescenta levantamentos periódicos. Outros chamam-nos para uma única decisão: uma data de corte, a escolha de um traçado ou um local em disputa."}

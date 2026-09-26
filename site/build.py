@@ -567,7 +567,8 @@ class Build:
         if not law or p["lang2"] != "pt":
             return law
         loc = lambda i: {**i, **{k: i[k + "_pt"] for k in ("title", "identifier", "note") if i.get(k + "_pt")}}
-        return {**law, "instruments": [loc(i) for i in law.get("instruments", [])]}
+        return {**law, "country_name": law.get("country_name_pt") or law["country_name"],
+                "instruments": [loc(i) for i in law.get("instruments", [])]}
 
     def cmp_sources(self, p, b, ctx):
         law = self.law_for(p, b.attrs["law"])
@@ -698,6 +699,57 @@ class Build:
                           "href": tp["url"], "icon": (cat or {}).get("icon") or tp["meta"].get("icon")})
         return cards
 
+    def guides_for(self, p, skip_hrefs=()):
+        """Articles whose `about` lists this page's key, in the page's language: this section's first, then global
+        ones; global pages also list the country guides."""
+        if p["template"] in ("article", "home", "hub", "contact") or p["noindex"]:
+            return []
+        found = []
+        for a in self.pages:
+            if (a["template"] != "article" or a["noindex"] or a is p or a["lang2"] != p["lang2"]
+                    or a["url"] in skip_hrefs or p["key"] not in (a["meta"].get("about") or [])):
+                continue
+            if a["loc_key"] == p["loc_key"]:
+                rank = 0
+            elif a["loc_key"] == "global":
+                rank = 1
+            elif p["loc_key"] == "global":
+                rank = 2
+            else:
+                continue
+            found.append((rank, a["meta"].get("nav_order", 50), a["title"], a))
+        found.sort(key=lambda x: x[:3])
+        return [{"title": self.label_of(a), "text": a["meta"].get("summary") or a["description"], "href": a["url"],
+                 "icon": a["meta"].get("icon"), "eyebrow": a["meta"].get("eyebrow")} for *_, a in found[:6]]
+
+    def country_row(self, p):
+        """Global solution pages: one button per country site, to that country's version of the service or its home."""
+        if p["template"] != "solution" or p["loc_key"] != "global":
+            return []
+        exclude = (self.cat_sol.get(p["key"]) or {}).get("exclude", [])
+        sites = []
+        for k in self.live_locales:
+            if k == "global" or k in exclude:
+                continue
+            target = self.find(p["key"], k)
+            if not target or target["noindex"]:
+                target = self.home_of(k)
+            sites.append({"label": self.locales[k]["label"], "href": target["url"], "lang": self.locales[k]["lang"]})
+        return sites
+
+    def written_for(self, p):
+        """Articles: the industry pages (in the article's own section and language) that its `about` keys name."""
+        if p["template"] != "article":
+            return []
+        lang = "pt" if p["lang2"] == "pt" else "en"
+        out = []
+        for k in p["meta"].get("about") or []:
+            tp = self.resolve(k, p["loc_key"])
+            if tp and tp["template"] == "industry" and not tp["noindex"] and tp["lang2"] == p["lang2"]:
+                label = self.cat_ind[k]["name"][lang] if k in self.cat_ind else self.label_of(tp)
+                out.append({"label": label, "href": tp["url"]})
+        return out
+
     def used_in(self, p):
         lang = "pt" if p["lang2"] == "pt" else "en"
         out = []
@@ -725,11 +777,18 @@ class Build:
             if not f.get("q") or not f.get("a"):
                 self.err(f"{p['url']}: every faq item needs q and a")
         p["related"] = self.related_cards(p, m.get("related"))
+        for k in m.get("about") or []:
+            if k not in self.by_key:
+                self.err(f"{p['url']}: about key '{k}' is not a built page")
+        p["guides"] = self.guides_for(p, {c["href"] for c in p["related"]})
+        p["country_row"] = self.country_row(p)
+        p["written_for"] = self.written_for(p)
         tones = re.findall(r'<section class="section section--(\w+)', str(p["body_html"]))
         last = tones[-1] if tones else ("dark" if p["template"] in ("home", "country_home") else "light")
         flip = lambda t: "light" if t == "alt" else "alt"
         p["related_tone"] = flip(last)
-        p["faq_tone"] = flip(p["related_tone"] if m.get("related") else last)
+        has_related = p["related"] or p["guides"] or p["country_row"]
+        p["faq_tone"] = flip(p["related_tone"] if has_related else last)
         p["used"] = self.used_in(p)
         p["lead_html"] = self.md_inline(m.get("lead", "")) if m.get("lead") else ""
         hero = m.get("hero") or {}
@@ -1329,11 +1388,13 @@ def selftest():
         content = tmp / "dup" / "content"
         shutil.copytree(SITE / "content", content)
         shutil.copytree(SITE / "tests/fixtures/za-dup", content / "za", dirs_exist_ok=True)
-        _, body = split_front_matter((content / "global/results.md").read_text(encoding="utf-8"), "results")
+        # a whole-page copy (front matter included, so related cards and buttons match too) with a new title
+        meta, body = split_front_matter((content / "global/results.md").read_text(encoding="utf-8"), "results")
+        meta.update(title="Sample outputs South Africa | AfriScan", h1="Sample outputs in South Africa",
+                    description="A copy of the global sample page with a different title, which the build must refuse as a near duplicate.")
+        meta.pop("nav_group", None)
         (content / "za/results.md").write_text(
-            "---\nkey: results\ntitle: Sample outputs South Africa | AfriScan\n"
-            "description: A copy of the global sample page with a different title, which the build must refuse as a near duplicate.\n"
-            "h1: Sample outputs in South Africa\n---\n" + body, encoding="utf-8")
+            "---\n" + yaml.safe_dump(meta, allow_unicode=True, sort_keys=False) + "---\n" + body, encoding="utf-8")
         b = Build(content_dir=content, dist=tmp / "dup" / "dist", quiet=True)
         b.run()
         hit = [e for e in b.errors if "near-duplicate" in e]

@@ -27,6 +27,7 @@ faq:
     a: No, not for satellite work. Drone surveys need access to take-off points and are subject to the permits and authorisations each job requires, which we plan with you.
   - q: How often can a route be re-surveyed?
     a: On a schedule agreed with you. How often new imagery can be captured depends on satellite availability, cloud and, for drone work, on permits, so we set the cadence per project rather than promising a fixed interval.
+related: [right-of-way-monitoring, oil-gas, power-utilities]
 ---
 
 ::::section{id="steps" eyebrow="The process" title="Four steps from route file to register"}

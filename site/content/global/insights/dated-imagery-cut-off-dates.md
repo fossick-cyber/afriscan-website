@@ -19,6 +19,7 @@ buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: Resettlement cut-off baselines, key: resettlement-cut-off-baselines}
 related: [resettlement-cut-off-baselines, change-detection, evidence-packs]
+about: [home, resettlement-cut-off-baselines, project-finance-esia, mining, household-estimates, imagery-history-due-diligence, evidence-packs, mz-lng-mining]
 og:
   headline: Using dated imagery for IFC PS5 cut-off dates
   subline: What the standard asks, how to choose imagery around the date, and the limits

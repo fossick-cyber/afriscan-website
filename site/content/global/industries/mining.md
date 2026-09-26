@@ -263,7 +263,7 @@ Mineral titles are administered by the Mining Cadastre Office under the Nigerian
 :::country-sites{match="page"}
 :::
 
-Drone surveys are subject to the permits and authorisations each job requires, and Afridrone is working towards the operator approvals each country requires. The rules in each country are summarised on [where we work](/countries).
+Drone surveys are subject to the permits and authorisations each job requires, and Afridrone is working towards the operator approvals each country requires. The rules in each country are compared in [drone survey rules by country](/drone-regulations) and summarised on [where we work](/countries).
 ::::
 
 ::::section{id="how" eyebrow="How it works" title="From boundary file to reviewed register"}

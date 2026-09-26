@@ -49,6 +49,10 @@ labels:
   back_to_top: Voltar ao início
   services_included: Serviços incluídos
   last_updated: Última actualização
+  guides: Guias
+  in_your_country: No seu país
+  in_your_country_note: A lei, os reguladores e o vocabulário locais deste serviço, no site de cada país.
+  written_for: Escrito para
 
 footer:
   tagline: Monitoria remota de terras para gasodutos, linhas de energia, concessões e locais de projecto.

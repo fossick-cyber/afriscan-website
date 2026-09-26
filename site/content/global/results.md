@@ -33,6 +33,7 @@ faq:
     a: Reviewer marks are points. The boxes are drawn around each point so they can be seen at this scale, and a point placed at the edge of a roof puts its box partly on the ground next to it. Distances are measured from the point.
   - q: Are the plants and well pads on the route counted?
     a: No. The facilities near both ends of this route belong to the pipeline operator. An operator's own installations are part of the asset, not encroachment, and they are not in the register.
+related: [oil-gas, right-of-way-monitoring, insight-survey-scope]
 ---
 
 ::::section{id="at-a-glance" eyebrow="The sample at a glance" title="T-9 replacement pipeline, Inhambane"}

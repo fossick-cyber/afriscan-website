@@ -18,6 +18,7 @@ buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: Pipeline rights of way in Nigeria, key: oil-gas}
 related: [oil-gas, project-finance-esia, ng-drone-law]
+about: [home, oil-gas, right-of-way-monitoring, project-finance-esia, evidence-packs, ng-drone-law]
 og:
   headline: Pipeline rights of way in Nigeria
   subline: The law at each stage, and what a dated baseline records, as of 26 September 2026

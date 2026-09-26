@@ -576,3 +576,13 @@ tbody th { font-weight: 700; }
   .page-head, .hero { background: none !important; color: #000 !important; }
   .page-head::after, .hero::before, .hero-media { display: none !important; }
 }
+
+/* Guides and country rows under "Also useful" */
+.related .related-sub { margin-top: 48px; }
+.related > .container > .related-sub:first-child { margin-top: 0; }
+.related-sub + .cards { margin-top: 24px; }
+.related-note { margin-top: 8px; color: var(--text-dim); max-width: 62ch; }
+.related .country-sites { margin-top: 20px; }
+
+/* Grid items default to min-width:auto, so a wide table inside a column widened the page on phones */
+.columns > * { min-width: 0; }

@@ -286,7 +286,7 @@ Upstream assets sit with NUPRC, midstream and downstream pipeline licences with 
 :::country-sites{match="page"}
 :::
 
-The rules for drone flights in each country are summarised on [where we work](/countries). Drone surveys are subject to the permits and authorisations each job requires, and Afridrone is working towards the operator approvals each country requires.
+The rules for drone flights in each country are compared in [drone survey rules by country](/drone-regulations) and summarised on [where we work](/countries). Drone surveys are subject to the permits and authorisations each job requires, and Afridrone is working towards the operator approvals each country requires.
 ::::
 
 ::::section{id="how" eyebrow="How it works" title="From route file to reviewed register"}

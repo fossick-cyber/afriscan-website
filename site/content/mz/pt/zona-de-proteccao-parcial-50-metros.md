@@ -21,6 +21,7 @@ og:
   headline: A zona de protecção parcial de 50 metros
   subline: Lei de Terras, Lei do Petróleo, Lei de Electricidade e Pande–Temane, situação a 26 de Setembro de 2026
 related: [right-of-way-monitoring, mz-drone-law, resettlement-cut-off-baselines]
+about: [oil-gas, power-utilities, right-of-way-monitoring, hazard-zone-registers, resettlement-cut-off-baselines, change-detection, mz-lng-mining]
 cta:
   title: Saiba o que está dentro da sua faixa de 50 metros.
   text: Envie o traçado e as larguras que se aplicam, da lei ou do contrato de concessão. Respondemos com o âmbito, um plano de imagens e uma proposta escrita.

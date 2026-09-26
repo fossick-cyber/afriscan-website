@@ -21,6 +21,7 @@ og:
   headline: The 50 m partial protection zone
   subline: What Mozambican law sets along pipelines and power lines, as of 26 September 2026
 related: [oil-gas, power-utilities, mz-drone-law]
+about: [home, oil-gas, power-utilities, right-of-way-monitoring, hazard-zone-registers, resettlement-cut-off-baselines, mz-lng-mining]
 faq:
   - q: Is the 50 m counted from the pipe or from the edge of the servitude?
     a: The Land Law describes a strip of 50 m on each side of the installations and conduits (art. 8(g)); the Electricity Law counts its servitude from the line's axis (art. 43(4)). Which line a width is measured from is a question for your counsel and your concession terms. Our registers measure from the line in the route file you supply, so tell us what that line is and we set the bands to match.
