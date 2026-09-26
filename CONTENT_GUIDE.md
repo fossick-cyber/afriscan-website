@@ -191,6 +191,9 @@ Suggested keys and URLs. Industry and solution keys must match `data/catalogue.y
 | `evidence-packs` | `/solutions/evidence-packs` | | | never on `/za/` | `/ng/incident-evidence` |
 | other solutions | `/solutions/<key>` (keys in catalogue.yaml) | | | | |
 | `mz-drone-law` | | `/mz/drone-regulations` | `/mz/pt/lei-de-drones` | | |
+| `mz-protection-zone` | | `/mz/50m-protection-zone` | `/mz/pt/zona-de-proteccao-parcial-50-metros` | | |
+| `mz-lng-mining` | | `/mz/lng-and-mining` | `/mz/pt/gnl-mineracao-e-grandes-projectos` | | |
+| `mz-procurement` | | `/mz/procurement` | `/mz/pt/fornecedor` | | |
 | `za-drone-law`, `ng-drone-law` | | | | `/za/drone-regulations` | `/ng/drone-regulations` |
 | `drone-regulations` | `/drone-regulations` (template `law_hub`) | | | | |
 

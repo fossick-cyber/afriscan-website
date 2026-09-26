@@ -1,0 +1,102 @@
+# Mozambique: the instruments the drone-law and compliance pages rely on (/mz/drone-regulations and
+# /mz/pt/lei-de-drones share this file). Facts ONLY from regional/mz.FINAL.md (verified 2026-09-26).
+# Items the brief marks [unverified] stay out: the decree number of the Lei 6/2024 regulation, the
+# signed Portuguese DOS-09-2018 text, fee and fine amounts. Titles use the Boletim form, so the same
+# rows read correctly on the English and Portuguese pages.
+# Optional `title_pt`, `identifier_pt` and `note_pt` replace the English wording on /mz/pt/ pages
+# (build.py law_for); add them wherever a field is written in English.
+country_name: Mozambique
+last_reviewed: 2026-09-26
+regulator:
+  name: Instituto de Aviação Civil de Moçambique (IACM)
+  url: https://www.iacm.gov.mz/aeronaves-nao-tripulados/
+summary:
+  regulator: Instituto de Aviação Civil de Moçambique (IACM) for the flight; the Minister of National Defence for the aerial survey itself
+  instruments: IACM DOS-09-2018 (RPAS operations); Lei n.º 6/2024, de 4 de Junho (aerial surveys and the release of their data)
+instruments:
+  - id: lei-6-2024
+    title: Lei n.º 6/2024, de 4 de Junho (levantamentos e cinematografia aéreos para fins civis)
+    identifier: BR I Série n.º 108, pp. 1608–1610
+    date: 2024-06-04
+    url: https://archive.gazettes.africa/archive/mz/2024/mz-government-gazette-series-i-dated-2024-06-04-no-108.pdf
+    last_checked: 2026-09-26
+    note: Defence authorisation of the survey (art. 13(1)), authorisation to release the data (art. 13(2)), State ownership and deposit of the data (art. 14), infractions (art. 16).
+    note_pt: "Autorização do levantamento pela Defesa (art. 13, n.º 1), autorização da cedência dos dados (art. 13, n.º 2), propriedade do Estado e depósito dos dados (art. 14), infracções (art. 16)."
+  - id: dos-09-2018
+    title: IACM DOS-09-2018, RPAS Operations Guidance Material
+    identifier: DOS-09-2018 · English text annexed to VillageReach RFP Amendment 1 (2019)
+    identifier_pt: DOS-09-2018 · texto em inglês anexo à Adenda 1 do concurso da VillageReach (2019)
+    date: 2018-09-16
+    url: https://www.villagereach.org/wp-content/uploads/2019/07/VillageReach-RFP-Amendment-1-UAV-provider-Mozambique.pdf
+    last_checked: 2026-09-26
+    note: The only full text found is an unofficial English copy marked as a first draft; ask IACM for the signed Portuguese text.
+    note_pt: O único texto integral encontrado é uma cópia não oficial em inglês, apresentada como primeira versão; peça ao IACM o texto assinado em português.
+  - id: iacm-anuncio-vants
+    title: IACM, Anúncio VANTS
+    identifier: IACM public notice on drone owners and users
+    identifier_pt: Anúncio do IACM aos proprietários e utilizadores de drones
+    date: 2020-06-10
+    url: https://www.iacm.gov.mz/anuncio-vants/
+    last_checked: 2026-09-26
+  - id: iacm-ct-2024
+    title: IACM, Circular CT-DRE-39-64-001-2024
+    identifier: CT-DRE-39-64-001-2024 (cites Lei n.º 5/2016, de 14 de Junho, art. 12(3))
+    identifier_pt: CT-DRE-39-64-001-2024 (cita a Lei n.º 5/2016, de 14 de Junho, art. 12, n.º 3)
+    date: 2024-11-01
+    url: https://www.iacm.gov.mz/app/uploads/2025/03/CT-DRE1-4.pdf
+    last_checked: 2026-09-26
+  - id: decreto-26-2022
+    title: Decreto n.º 26/2022, de 6 de Junho (MOZ-CARs)
+    identifier: BR I Série n.º 107
+    date: 2022-06-06
+    url: https://www.iacm.gov.mz/app/uploads/2022/11/DECRETO.ELENCA.MOZ_.CARS_..pdf
+    last_checked: 2026-09-26
+    note: Lists Part 101 (remotely piloted aircraft systems) among the adopted MOZ-CARs; no Part 101 text is published on IACM's MOZ-CAR page.
+    note_pt: "Inclui a Parte 101 (sistemas de aeronaves remotamente pilotadas) entre as MOZ-CARs adoptadas; a página das MOZ-CAR do IACM não publica o texto da Parte 101."
+  - id: dm-105-2023
+    title: Diploma Ministerial n.º 105/2023, de 8 de Agosto (Regulamento Interno do CENACARTA)
+    identifier: BR I Série n.º 152
+    date: 2023-08-08
+    url: https://archive.gazettes.africa/archive/mz/2023/mz-government-gazette-series-i-dated-2023-08-08-no-152.pdf
+    last_checked: 2026-09-26
+    note: Art. 6 gives CENACARTA the coordination of aerial surveys and the request for their authorisation.
+    note_pt: "O artigo 6 atribui ao CENACARTA a coordenação dos levantamentos aéreos e o pedido da respectiva autorização."
+  - id: decreto-37-2009
+    title: Decreto n.º 37/2009, de 13 de Agosto (homologação de equipamentos), as cited by INCM
+    title_pt: Decreto n.º 37/2009, de 13 de Agosto (homologação de equipamentos), citado pelo INCM
+    identifier: INCM, Perguntas frequentes
+    date: 2009-08-13
+    url: https://www.incm.gov.mz/index.php/incm/perguntas-frequentes
+    last_checked: 2026-09-26
+  - id: lei-19-97
+    title: Lei n.º 19/97, de 1 de Outubro (Lei de Terras)
+    identifier: BR I Série n.º 40, 3.º Suplemento (7 October 1997)
+    identifier_pt: BR I Série n.º 40, 3.º Suplemento (7 de Outubro de 1997)
+    date: 1997-10-01
+    url: https://www.pdul.gov.mz/content/download/486/2635/file/Lei%20de%20Terras.pdf
+    last_checked: 2026-09-26
+    note: Art. 8 partial protection zones, including 100 m strips around airports and aerodromes (i) and military installations (j).
+    note_pt: "Artigo 8, zonas de protecção parcial, incluindo as faixas de 100 m à volta de aeroportos e aeródromos (alínea i)) e de instalações militares (alínea j))."
+  - id: lei-8-2026
+    title: Lei n.º 8/2026, de 3 de Junho (Lei do Petróleo)
+    identifier: BR I Série n.º 104, 2.º Suplemento
+    date: 2026-06-03
+    url: https://www.inp.gov.mz/wp-content/uploads/2026/06/BR_104_I_SERIE_2.o_SUPLEMENTO_2026.pdf
+    last_checked: 2026-09-26
+    note: Art. 6(1) special protection regime for strategic petroleum areas; art. 75(3) 50 m partial protection zone around petroleum infrastructure.
+    note_pt: "Artigo 6, n.º 1, regime especial de protecção das áreas petrolíferas estratégicas; artigo 75, n.º 3, zona de protecção parcial de 50 m à volta das infra-estruturas petrolíferas."
+  - id: decreto-36-2001
+    title: Decreto n.º 36/2001, de 20 de Novembro (zonas de protecção do projecto Pande–Temane)
+    identifier: BR I Série n.º 48, Suplemento (28 November 2001)
+    identifier_pt: BR I Série n.º 48, Suplemento (28 de Novembro de 2001)
+    date: 2001-11-20
+    url: https://faolex.fao.org/docs/pdf/moz50003.pdf
+    last_checked: 2026-09-26
+  - id: lei-9-2026
+    title: Lei n.º 9/2026, de 3 de Junho (Lei do Conteúdo Local)
+    identifier: BR I Série n.º 104, 3.º Suplemento
+    date: 2026-06-03
+    url: https://www.inp.gov.mz/wp-content/uploads/2026/06/BR_104_I_SERIE_3.o_SUPLEMENTO_2026.pdf
+    last_checked: 2026-09-26
+    note: Annex II lists "serviços de topografia" under the exclusivity regime of art. 28.
+    note_pt: "O Anexo II inclui os «serviços de topografia» no regime de exclusividade do artigo 28."

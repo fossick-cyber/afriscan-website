@@ -4,6 +4,7 @@ from dataclasses import dataclass, field
 
 import yaml
 from markdown_it import MarkdownIt
+from markdown_it.rules_core import replacements as _repl
 
 FRONT = re.compile(r"\A---[ \t]*\n(.*?)\n---[ \t]*\n?(.*)\Z", re.S)
 OPEN = re.compile(r"^(?P<fence>:{3,})(?P<name>[a-z][\w-]*)[ \t]*(?:\{(?P<attrs>.*)\})?[ \t]*$")
@@ -31,9 +32,20 @@ def split_front_matter(raw, path):
     return meta, m.group(2)
 
 
+def _replacements_keep_letters(state):
+    # Legal citations such as "art. 16(1)(c)" must not become "16(1)©", so the (c)/(r)/(tm)
+    # symbol replacements are dropped; dashes and ellipses are still typeset.
+    if not state.md.options.typographer:
+        return
+    for token in state.tokens:
+        if token.type == "inline" and token.children and _repl.RARE_RE.search(token.content):
+            _repl.replace_rare(token.children)
+
+
 def make_markdown():
     md = MarkdownIt("commonmark", {"html": True, "typographer": True})
     md.enable(["table", "replacements", "smartquotes"])
+    md.core.ruler.at("replacements", _replacements_keep_letters)
     md.options["quotes"] = "“”‘’"
     return md
 
