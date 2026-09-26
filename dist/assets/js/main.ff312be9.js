@@ -53,7 +53,7 @@
     if (!e.target.closest("details.region")) $$("details.region[open]").forEach(d => d.removeAttribute("open"));
     if (document.body.classList.contains("menu-open") && !e.target.closest(".site-header")) setMenu(false);
   });
-  window.addEventListener("resize", () => { if (window.innerWidth >= 1100) setMenu(false); }, { passive: true });
+  window.addEventListener("resize", () => { if (window.innerWidth >= 1200) setMenu(false); }, { passive: true });
 
   // ---------------------------------------------------------------- contact form (FormSubmit)
   const form = $("#contactForm");

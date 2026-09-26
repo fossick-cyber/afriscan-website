@@ -12,7 +12,7 @@
     <h2>{{ t.thanks.next }}</h2>
     <div class="cards cards--3">
     {% for q in links if q.key != 'contact' %}
-      <a class="card card--link" href="{{ q.url }}"><h3>{{ label_of(q) }}</h3><p>{{ q.description }}</p><span class="card-more">{{ t.labels.open }} {{ icon('arrow-right', 'icon icon-xs') }}</span></a>
+      <a class="card card--link" href="{{ q.url }}"><h3>{{ t.notfound.home if q.key == 'home' else label_of(q) }}</h3><p>{{ q.description }}</p><span class="card-more">{{ t.labels.open }} {{ icon('arrow-right', 'icon icon-xs') }}</span></a>
     {% endfor %}
     </div>
   </div>

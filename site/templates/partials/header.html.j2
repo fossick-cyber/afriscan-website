@@ -43,7 +43,7 @@
               {% endfor %}
             </ul>
             {% endif %}
-            <a class="panel-overview" href="{{ g.href }}">{{ t.nav.overview }}: {{ g.label }} {{ icon('arrow-right', 'icon icon-xs') }}</a>
+            {% if g.href not in g['items']|map(attribute='href')|list %}<a class="panel-overview" href="{{ g.href }}">{{ t.nav.overview }}: {{ g.label }} {{ icon('arrow-right', 'icon icon-xs') }}</a>{% endif %}
           </div>
           {% endif %}
         </li>

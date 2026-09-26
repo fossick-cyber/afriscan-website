@@ -17,6 +17,10 @@ hero:
     - {title: "50 m · 100 m", text: "Structures listed by distance band"}
     - {title: "Every 500 m", text: "An encroachment-density rating"}
     - {title: "PDF · GIS", text: "GeoPackage, GeoJSON, KMZ, Shapefile"}
+service:
+  name: Right-of-way encroachment survey
+  type: Encroachment survey and scheduled re-surveys
+  description: A register of the structures within the distances you choose from a pipeline, power line, road or railway, with distance to the line, coordinates and a 500 m encroachment-density rating, reviewed by a person and delivered as a PDF report and GeoPackage, GeoJSON, KMZ and Shapefile layers.
 og:
   headline: Secure your land from the air, remotely
   subline: Structures, excavations and change on pipelines, power lines and concessions, reviewed by a person

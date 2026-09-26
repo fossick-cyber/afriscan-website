@@ -1,0 +1,28 @@
+# DEMO FIXTURE for `build.py --demo` (template check). Facts from regional/za.FINAL.md, checked 2026-09-26.
+country_name: South Africa
+last_reviewed: 2026-09-26
+regulator:
+  name: South African Civil Aviation Authority (SACAA)
+  url: https://www.caa.co.za/
+summary:
+  regulator: South African Civil Aviation Authority (SACAA)
+  instruments: Civil Aviation Regulations Part 101, as substituted by the 26th Amendment (2023) and amended by the 33rd Amendment (2026)
+instruments:
+  - id: caa-2009
+    title: Civil Aviation Act 13 of 2009
+    identifier: Act 13 of 2009 (Notice 616, GG 32266)
+    date: 2009-05-27
+    url: https://www.gov.za/sites/default/files/gcis_document/201409/32266616.pdf
+    last_checked: 2026-09-26
+  - id: car-part101-26th
+    title: Civil Aviation Regulations, 26th Amendment (Part 101 substituted)
+    identifier: GN R.3170, GG 48228
+    date: 2023-03-17
+    url: https://www.gov.za/sites/default/files/gcis_document/202303/48228rg11556gon3170.pdf
+    last_checked: 2026-09-26
+  - id: car-33rd
+    title: Civil Aviation Regulations, 33rd Amendment
+    identifier: GN 7844, GG 55226
+    date: 2026-08-21
+    url: "https://caasanwebsitestorage.blob.core.windows.net/legal-documents/Promulgated%2033RD%20Amendment%20Regulation%202026%20(Final).pdf"
+    last_checked: 2026-09-26

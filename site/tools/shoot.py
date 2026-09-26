@@ -32,7 +32,7 @@ def main():
             for p in paths:
                 page.goto(base + local(p), wait_until="networkidle")
                 page.evaluate("""async () => { for (let y = 0; y < document.body.scrollHeight; y += 600) {
-                    window.scrollTo(0, y); await new Promise(r => setTimeout(r, 150)); } window.scrollTo(0, 0); }""")
+                    window.scrollTo({top: y, behavior: 'instant'}); await new Promise(r => setTimeout(r, 150)); } window.scrollTo({top: 0, behavior: 'instant'}); }""")
                 page.wait_for_load_state("networkidle")
                 page.wait_for_timeout(900)
                 stem = (p.strip("/").replace("/", "_") or "home") + f"-{name}"

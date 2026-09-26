@@ -79,7 +79,7 @@ def sha(data, n=8):
 
 class Build:
     def __init__(self, content_dir=SITE / "content", dist=ROOT / "dist", drafts=False, quiet=False,
-                 today=None):
+                 today=None, law_dir=SITE / "data/law"):
         self.content_dir, self.dist, self.drafts, self.quiet = content_dir, dist, drafts, quiet
         self.today = today or dt.date.today()
         self.errors, self.warnings = [], []
@@ -92,7 +92,7 @@ class Build:
         self.glossary = load_yaml(SITE / "data/glossary/pt-MZ.yaml")
         self.redirects = load_yaml(SITE / "data/redirects.yaml")
         self.icons = load_yaml(SITE / "data/icons.yaml")
-        self.law = {p.stem: load_yaml(p) for p in sorted((SITE / "data/law").glob("*.yaml"))}
+        self.law = {p.stem: load_yaml(p) for p in sorted(Path(law_dir).glob("*.yaml"))}
         self.samples = {p.stem: json.loads(p.read_text(encoding="utf-8"))
                         for p in sorted((SITE / "data/samples").glob("*.json"))}
         self.md = make_markdown()
@@ -932,9 +932,12 @@ class Build:
             m = re.search(r'<main\b[^>]*>(.*)</main>', html, re.S)
             html = m.group(1) if m else html
         html = re.sub(r"(?s)<(script|style|svg)\b.*?</\1>", " ", html)
-        attrs = " ".join(re.findall(r'\b(?:alt|title|aria-label|placeholder)="([^"]*)"', html))
+        attrs = " ¶ ".join(re.findall(r'\b(?:alt|title|aria-label|placeholder)="([^"]*)"', html))
+        # block boundaries become a pilcrow, so guard negation never reaches across blocks
+        html = re.sub(r"(?i)</(?:p|li|h[1-6]|td|th|dt|dd|summary|figcaption|div|section|header|a|button|option|label|legend)>|<br\s*/?>",
+                      " ¶ ", html)
         text = re.sub(r"<[^>]+>", " ", html)
-        return htmllib.unescape(" ".join((text + " " + attrs).split()))
+        return htmllib.unescape(" ".join((text + " ¶ " + attrs).split()))
 
     def guard_text(self, p):
         h = p["html"]
@@ -963,6 +966,7 @@ class Build:
 
     def negated(self, text, start):
         window = text[max(0, start - self.rules["negation_window"]):start].lower()
+        window = re.split(r"[.!?;:¶]\s|¶", window)[-1]          # only the current sentence counts
         return any(re.search(rf"(?<![\w']){re.escape(n)}(?![\w'])", window) for n in self.rules["negations"])
 
     def run_guards(self, p, text):
@@ -1094,7 +1098,7 @@ class Build:
     def check_similarity(self, built):
         lim = self.rules["limits"]
         idx = [p for p in built if not p["noindex"] and not p.get("special")]
-        sh = {p["url"]: self.shingles(self.visible_text(p["html"], main_only=True)) for p in idx}
+        sh = {p["url"]: self.shingles(self.visible_text(p["html"], main_only=True).replace("¶", " ")) for p in idx}
         for i, a in enumerate(idx):
             for b in idx[i + 1:]:
                 if a["loc_key"] == b["loc_key"] or a["lang2"] != b["lang2"]:
@@ -1206,58 +1210,84 @@ CACHE_DIR = SITE / ".cache"
 
 
 def selftest():
-    """Seed one mistake per guard into a scratch copy of the content and check the build catches each."""
+    """Seed one mistake per guard into a scratch copy of the content and check the build catches each.
+
+    The real content must build clean first; then every seeded mistake must fail the build with the
+    expected message."""
+    append = lambda sentence: lambda raw: raw.rstrip() + f"\n\n{sentence}\n"
+    drop = lambda field: lambda raw: "\n".join(l for l in raw.split("\n") if not l.startswith(field + ":"))
     cases = {
-        "price": ("global", "Our surveys start at US$ 1,200 per km."),
-        "currency-word": ("global", "A baseline costs 90 000 meticais."),
-        "placeholder": ("global", "Registered office: [OWNER: address]."),
-        "tbd": ("global", "Response time TBD."),
-        "cert": ("global", "Afridrone is a licensed drone operator in Mozambique."),
-        "we-hold": ("global", "We hold the SACAA ROC for this work."),
-        "realtime": ("global", "Real-time encroachment alerts for your pipeline."),
-        "court": ("global", "Our evidence packs are court-grade."),
-        "cloud": ("global", "Our optical imagery sees through cloud."),
-        "people": ("global", "We track people entering the right of way."),
-        "brazil": ("mz-pt", "A nossa equipe faz o monitoramento do gasoduto. Entre em contato conosco."),
-        "broken-link": ("global", "See [our method](/no-such-page)."),
-        "bad-anchor": ("global", "See [the FAQ](/faq#no-such-anchor)."),
+        "price":          ("global", append("Our surveys start at US$ 1,200 per km."), "[pricing]"),
+        "currency-word":  ("global", append("A baseline costs 90 000 meticais."), "[pricing]"),
+        "rand":           ("global", append("Budget R1 200 000 for the line."), "[pricing]"),
+        "pricing-word":   ("global", append("See our pricing for details."), "[pricing]"),
+        "placeholder":    ("global", append("Registered office: [OWNER: address]."), "[placeholder]"),
+        "tbd":            ("global", append("Response time TBD."), "[placeholder]"),
+        "lorem":          ("global", append("Lorem ipsum dolor sit amet."), "[placeholder]"),
+        "licensed":       ("global", append("Afridrone is a licensed drone operator in Mozambique."), "[certificates]"),
+        "certified":      ("global", append("Our certified pilots fly every survey."), "[certificates]"),
+        "we-hold":        ("global", append("We hold the SACAA ROC for this work."), "[certificates]"),
+        "roc-holder":     ("global", append("As an ROC holder in Nigeria we can fly anywhere."), "[certificates]"),
+        "realtime":       ("global", append("Real-time encroachment alerts for your pipeline."), "[overstatement]"),
+        "24-7":           ("global", append("We watch your corridor 24/7."), "[overstatement]"),
+        "live":           ("global", append("Live detection of new buildings."), "[overstatement]"),
+        "instant":        ("global", append("Instant reports for every route."), "[overstatement]"),
+        "cloud":          ("global", append("Our optical imagery sees through cloud."), "[overstatement]"),
+        "court":          ("global", append("Our evidence packs are court-grade."), "[overstatement]"),
+        "people":         ("global", append("We track people entering the right of way."), "[overstatement]"),
+        "accuracy":       ("global", append("Detection accuracy is 97% on African roofs."), "[overstatement]"),
+        "coming-soon":    ("global", append("Radar screening is coming soon."), "[overstatement]"),
+        "portal":         ("global", append("Log in to the client portal to see results."), "[overstatement]"),
+        "br-monitoring":  ("mz-pt", append("Fazemos o monitoramento do gasoduto."), "'monitoramento'"),
+        "br-equipe":      ("mz-pt", append("A nossa equipe responde."), "'equipe'"),
+        "br-contato":     ("mz-pt", append("Entre em contato conosco."), "'contato'"),
+        "broken-link":    ("global", append("See [our method](/no-such-page)."), "broken internal link"),
+        "bad-anchor":     ("global", append("See [the FAQ](/faq#no-such-anchor)."), "no id 'no-such-anchor'"),
+        "html-link":      ("global", append("See [results](/results.html)."), "without .html"),
+        "no-h1":          ("global", drop("h1"), "needs 'h1'"),
+        "no-description": ("global", drop("description"), "needs 'description'"),
+        "no-title":       ("global", drop("title"), "needs 'title'"),
     }
     (CACHE_DIR / "selftest").mkdir(parents=True, exist_ok=True)
     tmp = Path(tempfile.mkdtemp(prefix="run-", dir=CACHE_DIR / "selftest"))
     failed = []
     try:
-        for name, (lk, sentence) in cases.items():
+        clean = Build(dist=tmp / "clean" / "dist", quiet=True)
+        code = clean.run()
+        print(f"{'PASS' if code == 0 else 'FAIL'}  {'clean build':15s} {len(clean.errors)} errors on the real content")
+        if code:
+            failed.append("clean build")
+            for e in clean.errors[:10]:
+                print("      ", e)
+        for name, (lk, mutate, expect) in cases.items():
             content = tmp / name / "content"
             shutil.copytree(SITE / "content", content)
-            fx = SITE / "tests/fixtures"
             if lk == "mz-pt":
-                shutil.copytree(fx / "mz-pt", content / "mz/pt", dirs_exist_ok=True)
+                shutil.copytree(SITE / "tests/fixtures/mz-pt", content / "mz/pt", dirs_exist_ok=True)
                 target = content / "mz/pt/index.md"
             else:
-                target = content / "global/index.md"
-            raw = target.read_text(encoding="utf-8")
-            target.write_text(raw.rstrip() + f"\n\n{sentence}\n", encoding="utf-8")
+                target = content / "global/faq.md"
+            target.write_text(mutate(target.read_text(encoding="utf-8")), encoding="utf-8")
             b = Build(content_dir=content, dist=tmp / name / "dist", quiet=True)
             code = b.run()
-            hit = [e for e in b.errors]
+            hit = [e for e in b.errors if expect in e]
             ok = code == 1 and hit
-            print(f"{'PASS' if ok else 'FAIL'}  {name:14s} {hit[0][:110] if hit else 'no error raised'}")
+            print(f"{'PASS' if ok else 'FAIL'}  {name:15s} {(hit or b.errors or ['no error raised'])[0][:105]}")
             if not ok:
                 failed.append(name)
         # near-duplicate: an English country page that copies the global one
         content = tmp / "dup" / "content"
         shutil.copytree(SITE / "content", content)
         shutil.copytree(SITE / "tests/fixtures/za-dup", content / "za", dirs_exist_ok=True)
-        g = (content / "global/results.md").read_text(encoding="utf-8")
-        meta, body = split_front_matter(g, "results")
+        _, body = split_front_matter((content / "global/results.md").read_text(encoding="utf-8"), "results")
         (content / "za/results.md").write_text(
             "---\nkey: results\ntitle: Sample outputs South Africa | AfriScan\n"
             "description: A copy of the global sample page with a different title, which the build must refuse as a near duplicate.\n"
             "h1: Sample outputs in South Africa\n---\n" + body, encoding="utf-8")
         b = Build(content_dir=content, dist=tmp / "dup" / "dist", quiet=True)
-        code = b.run()
+        b.run()
         hit = [e for e in b.errors if "near-duplicate" in e]
-        print(f"{'PASS' if hit else 'FAIL'}  {'near-duplicate':14s} {hit[0][:110] if hit else 'no error raised'}")
+        print(f"{'PASS' if hit else 'FAIL'}  {'near-duplicate':15s} {hit[0][:105] if hit else 'no error raised'}")
         if not hit:
             failed.append("near-duplicate")
     finally:
@@ -1266,14 +1296,27 @@ def selftest():
     return 1 if failed else 0
 
 
+def demo(out):
+    """Build the real content plus the template fixtures in tests/fixtures/demo into OUT (never deploy)."""
+    work = CACHE_DIR / "demo-content"
+    if work.exists():
+        shutil.rmtree(work)
+    shutil.copytree(SITE / "content", work)
+    shutil.copytree(SITE / "tests/fixtures/demo/content", work, dirs_exist_ok=True)
+    return Build(content_dir=work, dist=Path(out), law_dir=SITE / "tests/fixtures/demo/law").run()
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--drafts", action="store_true", help="also build status: draft pages (never deploy this)")
     ap.add_argument("--selftest", action="store_true", help="check that every guard fails the build")
     ap.add_argument("--dist", default=str(ROOT / "dist"))
+    ap.add_argument("--demo", metavar="OUT", help="build content + template fixtures into OUT, for checking templates")
     args = ap.parse_args()
     if args.selftest:
         return selftest()
+    if args.demo:
+        return demo(args.demo)
     return Build(dist=Path(args.dist), drafts=args.drafts).run()
 
 
