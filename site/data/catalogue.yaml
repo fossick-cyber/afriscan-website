@@ -85,8 +85,10 @@ solution_groups:
   - key: capture
     name: {en: "Drone, imagery and custom detection", pt: "Drone, imagens e detecção à medida"}
 
+# `footer: true`: the solutions listed in the site footer (INDUSTRIES.FINAL §2.1).
 solutions:
   - key: right-of-way-monitoring
+    footer: true
     code: U1
     group: protect
     icon: corridor
@@ -96,6 +98,7 @@ solutions:
       pt: Um registo de base das construções por distância à linha, seguido de levantamentos periódicos acordados consigo e de um aviso do que mudou.
     services: [S01, S08, S09, S10, S18, S22, S13, S38, S45]
   - key: encroachment-surveys
+    footer: true
     code: U2
     group: protect
     icon: boundary
@@ -123,6 +126,7 @@ solutions:
       pt: Covas, escavações recentes, montes de terra e novos acessos mapeados entre datas, para que as equipas de campo saibam onde verificar.
     services: [S22, S21, S18, S12, S14]
   - key: resettlement-cut-off-baselines
+    footer: true
     code: U3
     group: baselines
     icon: calendar
@@ -133,6 +137,7 @@ solutions:
       pt: Um registo datado das construções na área do projecto na data de corte, para apoiar o censo e o inventário de bens segundo a Norma de Desempenho 5 da IFC.
     services: [S31, S07, S06, S08, S09, S32, S35, S34, S43, S44]
   - key: route-site-selection
+    footer: true
     code: U5
     group: baselines
     icon: route
@@ -171,6 +176,7 @@ solutions:
       pt: Camadas de construções e estimativas de agregados familiares para dimensionar mini-redes e planear serviços e consultas, com os pressupostos indicados.
     services: [S05, S35, S10, S07, S06]
   - key: change-detection
+    footer: true
     code: U4
     group: change
     icon: compare
@@ -198,6 +204,7 @@ solutions:
       pt: Troços íngremes, sujeitos a erosão ou expostos a cheias assinalados, e verificação de antes e depois ao longo do traçado após tempestades e cheias.
     services: [S27, S28, S29, S14]
   - key: drone-surveys
+    footer: true
     code: U14
     group: capture
     icon: drone

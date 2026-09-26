@@ -326,7 +326,8 @@ class Build:
                 p = self.resolve(c["key"], lk)
                 if p and not p["noindex"]:
                     items.append(item(p, c["name"][lang], (c.get("menu") or c["blurb"])[lang],
-                                      tier=c.get("tier", 1), group=c.get("group"), icon=c.get("icon")))
+                                      tier=c.get("tier", 1), group=c.get("group"), icon=c.get("icon"),
+                                      key=c["key"]))
             for p in self.pages:              # country-only pages that join the group
                 if (p["loc_key"] == lk and p["meta"].get("nav_group") == gname and p["key"] not in self.cat_ind
                         and p["key"] not in self.cat_sol and not p["noindex"]):
@@ -448,10 +449,20 @@ class Build:
     def cmp_card(self, p, b, ctx):
         href = b.attrs.get("href")
         if b.attrs.get("key"):
-            tp = self.resolve(b.attrs["key"], p["loc_key"])
+            key, _, frag = b.attrs["key"].partition("#")
+            tp = self.resolve(key, p["loc_key"])
             if not tp:
-                raise ContentError(f"{ctx['where']}: card key '{b.attrs['key']}' is not a built page")
+                if key in self.cat_ind or key in self.cat_sol:
+                    return {"href": None}      # catalogue item without a page yet: a plain card, as on hubs
+                raise ContentError(f"{ctx['where']}: card key '{key}' is not a built page")
             href = tp["url"]
+            if frag:
+                # pages render in content order, so a target that is already rendered can be checked
+                # here; an anchor it lacks is dropped (card links to the page top) with a warning.
+                if tp.get("html") and f'id="{frag}"' not in tp["html"]:
+                    self.warn(f"{p['url']}: card key '{b.attrs['key']}': no id '{frag}' on {tp['url']}; linking to the page")
+                else:
+                    href += "#" + frag
         return {"href": href}
 
     def cmp_facts(self, p, b, ctx):
@@ -640,11 +651,16 @@ class Build:
         explore = [{"label": x["label"], "href": x["href"]} for x in nav]
         return {"explore": explore,
                 "industries": g.get("industries", {}).get("items", []),
-                "solutions": [i for i in g.get("solutions", {}).get("items", [])][:8],
+                "solutions": self.footer_solutions(g.get("solutions", {}).get("items", [])),
                 "how": g.get("how", {}).get("items", []),
                 "resources": g.get("resources", {}).get("items", []),
                 "countries": [{"label": self.locales[k]["label"], "href": self.home_of(k)["url"],
                                "lang": self.locales[k]["lang"]} for k in self.live_locales]}
+
+    def footer_solutions(self, items):
+        """Solutions marked `footer: true` in catalogue.yaml, in catalogue order; else the first eight."""
+        flagged = {s["key"] for s in self.catalogue["solutions"] if s.get("footer")}
+        return [i for i in items if i.get("key") in flagged] if flagged else items[:8]
 
     def related_cards(self, p, keys):
         lang = "pt" if p["lang2"] == "pt" else "en"

@@ -46,7 +46,7 @@ site/
   data/
     site.yaml         brand, organisation JSON-LD, FormSubmit endpoint (do not change the endpoint)
     locales.yaml      the five sections: prefix, language, hreflang codes, selector labels
-    catalogue.yaml    industries, solutions (U-codes) and services (S01–S45): names, blurbs, keys
+    catalogue.yaml    industries, solutions (U-codes) and services (S01–S45): names, blurbs, keys; `footer: true` picks the footer solutions
     law/<cc>.yaml     drone-law instruments per country (mz, za, ng): the Sources tables come from here
     samples/t9.json   the T-9 sample register and segment ratings (written by tools/make_samples.py)
     i18n/en.yaml, i18n/pt-MZ.yaml   every interface string (nav, buttons, form, footer, 404…)
@@ -229,7 +229,7 @@ Body content outside a `section` is wrapped in a plain white section automatical
 |---|---|---|
 | `section` | `id`, `tone` (`light` default, `alt`, `dark`, `brand`), `eyebrow`, `title`, `lead`, `width` (`prose`), `class` | A full-width band. Alternate `light` and `alt`; use `dark` sparingly (one per page). |
 | `cards` | `cols` (`2`, `3` default, `4`), `style` (`dark`, `plain`) | A responsive grid of the `card`, `figure` or other blocks inside it. |
-| `card` | `title`*, `icon`, `eyebrow`, `tag`, `href` or `key`, `cta` | A card; with `href`/`key` the whole card is a link. |
+| `card` | `title`*, `icon`, `eyebrow`, `tag`, `href` or `key`, `cta` | A card; with `href`/`key` the whole card is a link. `key` may carry an anchor (`key="oil-gas#rights-of-way"`). A catalogue key with no page yet renders a plain card (no link) instead of failing; an anchor missing on an already-rendered target is dropped with a WARN. Other unknown keys fail the build. |
 | `steps` | `style` (`list` for a vertical list) | Numbered steps; put `step` blocks inside. |
 | `step` | `title`*, `icon` | One step. |
 | `callout` | `tone` (`note`, `scope`, `warn`, `legal`), `title`, `icon` | A boxed note. Use `scope` for "what we do and don't do", `legal` for law notes. |
