@@ -65,3 +65,17 @@ ng:
   label: "Nigeria"
   short: "Nigeria"
   sitemap: sitemap-ng.xml
+ug:
+  content: ug
+  prefix: /ug
+  lang: en-UG
+  hreflang: [en-UG]
+  og_locale: en_GB
+  i18n: en
+  country: UG
+  country_name: Uganda
+  label: "Uganda"
+  short: "Uganda"
+  sitemap: sitemap-ug.xml
+  region: East
+  status: live
