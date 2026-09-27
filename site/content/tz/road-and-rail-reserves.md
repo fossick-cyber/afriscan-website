@@ -7,7 +7,7 @@ description: Structures, excavations and cleared ground inside road reserves and
 h1: What is inside your road or railway reserve in Tanzania?
 crumb: Road and rail reserves
 eyebrow: Rail & roads · Tanzania
-lead: "Tanzanian law reserves land along roads and railways. The road reserve is for road development and expansion (Roads Act, 2007, s.29), and the Roads Management Regulations, 2009, as quoted by the High Court in 2022, set 60 m for trunk and regional roads, 30 m either side of the centre line. The railway reserve is 30 m either side of the track centre line, and building on the railway strip without authority is prohibited (Railways Act, ss.3 and 27). When a structure appeared, and whether land was in a reserve when it was granted, can decide a dispute. We map structures, excavations and cleared ground in reserve bands along roads, railways and fibre routes, dated and reviewed by a person."
+lead: "Tanzanian law reserves land along roads and railways. The road reserve is for road development and expansion (Roads Act, 2007, s.29), and the Roads Management Regulations, 2009, as quoted by the High Court in 2022, set 60 m for trunk and regional roads, 30 m either side of the centre line; a 2025 amendment (GN 528 of 2025) is listed, so confirm the current width with the road authority. The railway reserve is 30 m either side of the track centre line, and building on the railway strip without authority is prohibited (Railways Act, ss.3 and 27). When a structure appeared, and whether land was in a reserve when it was granted, can decide a dispute. We map structures, excavations and cleared ground in reserve bands along roads, railways and fibre routes, dated and reviewed by a person."
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: See sample outputs, key: results}
@@ -61,21 +61,21 @@ Whether a plot was inside the reserve when it was granted, and when a structure 
 | Reserve | Width and rule | Source |
 |---|---|---|
 | Road reserve (*hifadhi ya barabara*) | "Exclusive for the use of road development and expansion"; other uses must not hinder future road use | [Roads Act, 2007, Cap. 167](https://tanzlii.org/en/akn/tz/act/2007/13/eng@2021-07-14), s.29(1) |
-| Trunk and regional roads | 60 m, "thirty metres from either side of the centre of the road" | Roads Management Regulations, 2009 (GN 21 of 2009), as quoted by the High Court in 2022 |
+| Trunk and regional roads | 60 m, "thirty metres from either side of the centre of the road"; confirm against the 2025 amendment (GN 528 of 2025) | Roads Management Regulations, 2009 (GN 21 of 2009), as quoted by the High Court in 2022 |
 | Railway reserve | 30 m either side of the track centre line, "reserved for safety purpose" | [Railways Act, Cap. 170](https://tanzlii.org/en/akn/tz/act/2017/10/eng@2025-07-01), s.3 |
 | Railway strip | No farming, building, structures or works without authority | Railways Act, s.27 |
 | Sidings and bridges | A 30 m sidings reserve; bridge reserves of 60 m from the bank edge either side and 200 m from the structure centre | Railways Act, Second Schedule |
 
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="diagrams/tz-reserves" alt="Plan-view schematic, drawn to one scale, of a trunk road and a railway: each has a shaded reserve of 30 m on either side of its centre line, and square markers stand for structures, red inside the reserve and teal outside" caption="A trunk-road reserve and a railway reserve, drawn to one scale" credit="Schematic drawn by AfriScan for illustration; the structures are invented." size="half"}
+:::figure{src="diagrams/tz-reserves" alt="Plan-view schematic, drawn to one scale, of a trunk road and a railway: each has a shaded reserve of 30 m on either side of its centre line, and square markers stand for structures, red inside the reserve and teal outside" caption="A trunk-road reserve at the width in the 2009 Regulations and a railway reserve, drawn to one scale" credit="Schematic drawn by AfriScan for illustration; the structures are invented." size="half"}
 <span class="band band--a">Inside the reserve</span> <span class="band band--c">Outside</span>
 :::
 ::::
 ::::col
 ### Measured from the centre line {#centre-line}
 
-Both reserves run 30 m either side of the centre line: the road reserve under the Roads Management Regulations, 2009 for trunk and regional roads, and the railway reserve under the Railways Act, s.3. The register measures each structure's distance from the centre line you supply and reports whether it falls inside the reserve or in an outer band you set.
+The 2009 Regulations, as quoted by the High Court in 2022, set the trunk and regional road reserve at 30 m either side of the centre line, and the Railways Act, s.3, sets the railway reserve at 30 m either side of the track centre line. The register measures each structure's distance from the centre line you supply and reports whether it falls inside the reserve or in an outer band you set.
 
 **Check the road width before you rely on it.** A Roads Management (Amendment) Regulations, 2025 (GN 528 of 2025) is listed on TanzLII. We measure against the width you confirm for your road class, and against any wider reserve set for a particular road.
 ::::

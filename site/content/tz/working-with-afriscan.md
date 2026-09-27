@@ -21,13 +21,13 @@ faq:
   - q: Can a foreign firm be awarded a Tanzanian public tender?
     a: Yes, subject to the Public Procurement Act, 2023. A foreign tenderer selected as the lowest evaluated or best ranked must then register with the appropriate professional statutory body and prove its registration as an approved supplier, contractor or consultant (s.53(3)). Foreign consultancy bids are scored on the inclusion of local firms and experts (s.58), and above a threshold, foreign tenderers for works and non-consultancy services must form a joint venture with, or subcontract, local firms (s.62).
   - q: Which company will contract with us?
-    a: Each proposal names the contracting company, where it is registered and its local-content position for your contract. For mining work, a qualified Tanzanian company leads the contract and AfriScan supplies the imagery analysis to it; for petroleum work, the proposal shows how it meets the Petroleum Act, s.219.
+    a: Each proposal names the contracting company, where it is registered and its local-content position for your contract. For mining work, it sets out how the contract meets reg 8(6) of the Mining (Local Content) Regulations, naming the indigenous Tanzanian company and its equity share. For petroleum work, it shows how the contract meets the Petroleum Act, s.219.
   - q: Where will our data be processed and stored?
     a: The proposal says so, together with the retention period and how any transfer of personal data outside Tanzania is covered under the Personal Data Protection Act, ss.31–32. Our registers describe structures and carry no names; lists of project-affected persons stay with your team or your RAP consultant.
   - q: Can tender documents be in Kiswahili?
     a: Yes. Under the Public Procurement Act, 2023, tender documents are in Kiswahili or English (s.66). Our reports and GIS layers are in English.
   - q: Do you work everywhere in Tanzania?
-    a: Satellite work covers the whole country, with no one on site. Field and drone work is planned job by job against the approvals each job needs and current travel advice, and some areas, described below, are satellite-only. Our law notes cover Mainland Tanzania; Zanzibar has its own land laws, so work there is scoped separately.
+    a: Satellite work covers the whole country, with no one on site. Field and drone work is planned job by job against the approvals each job needs and current government travel advice; where that advice is against travel to an area, our work there is satellite-only. Our law notes cover Mainland Tanzania; Zanzibar has its own land laws, so work there is scoped separately.
 cta:
   title: Send your RFQ or tender with the route
   text: "Name the tender or RFQ number and the portal, attach any prequalification or vendor forms, and send the route or site file. We reply with the questions we need answered and a written proposal that names the contracting company and its local-content position."
@@ -83,7 +83,7 @@ Under the [Petroleum Act, Cap. 392](https://www.ewura.go.tz/uploads/documents/en
 ::::col
 ### Mining {#mining}
 
-Under the Mining (Local Content) Regulations, 2018, as amended, an indigenous Tanzanian company has at least 20 per cent citizen equity and Tanzanians in at least 80 per cent of executive and senior management posts and all other posts. A non-indigenous company supplying a licence holder or contractor must form a joint venture giving an indigenous Tanzanian company at least 20 per cent (reg 8(6)), and larger contracts are notified to the Mining Commission (reg 16). For mining work, a qualified Tanzanian company leads the contract and AfriScan supplies the imagery analysis to it. Check the current text with the [Mining Commission](https://www.tumemadini.go.tz/publications/regulations/).
+Under the Mining (Local Content) Regulations, 2018, as amended, an indigenous Tanzanian company has at least 20 per cent citizen equity and Tanzanians in at least 80 per cent of executive and senior management posts and all other posts. A non-indigenous company supplying a contractor, a subcontractor or a licensee must form a joint venture giving an indigenous Tanzanian company at least 20 per cent of the equity (reg 8(6)), and larger contracts are notified to the Mining Commission (reg 16). Each mining proposal sets out how it meets reg 8(6): the indigenous Tanzanian company and its equity share. Check the current text with the [Mining Commission](https://www.tumemadini.go.tz/publications/regulations/).
 
 [Mining in Tanzania](/tz/mining#local-content)
 ::::
@@ -129,12 +129,12 @@ GN 268 of 2026 regulation by regulation, with an 11-point checklist for anyone c
 ::::col
 Satellite mapping covers the whole of Tanzania with no one on site. Field and drone work is planned job by job, against the approvals each job needs and current government travel advice.
 
-Areas near the border with Mozambique's Cabo Delgado province are satellite-only for us: the UK government advises against all but essential travel within 20 km of that border ([FCDO travel advice, updated 19 May 2026](https://www.gov.uk/foreign-travel-advice/tanzania/safety-and-security)). Military sites, State House, prisons and other protected places are left out of every deliverable.
+Where current travel advice is against travel to an area, our work there is satellite-only, and we check that advice again when each job is planned. Military sites, State House, prisons and other protected places are left out of every deliverable.
 ::::
 ::::col
 :::callout{tone="scope" title="Scope, stated plainly"}
 - Satellite work: the whole country, remotely
-- Field and drone work: planned per job, never near the Cabo Delgado border band
+- Field and drone work: planned per job against current travel advice; satellite-only where it advises against travel
 - Law notes: Mainland Tanzania; Zanzibar has its own land laws and is scoped separately
 - Reports: English
 :::

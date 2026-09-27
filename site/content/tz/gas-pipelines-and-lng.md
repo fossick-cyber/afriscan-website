@@ -13,7 +13,7 @@ nav_blurb: Upstream safety zones, gas-line wayleaves and a coastal LNG site
 summary: Structures inside the wayleaves of high-pressure gas lines, the safety zones PURA sets around upstream wells and plants, and settlement change around a coastal LNG site since compensation.
 icon: layers
 eyebrow: Oil & gas · Tanzania · Natural gas
-lead: Tanzania's natural gas is processed in the south and carried by a high-pressure pipeline of about 551 km. Along that chain the land rules change. Upstream facilities, such as wells and upstream processing, sit inside safety zones whose extent PURA determines; transmission lines sit inside wayleaves the licensee acquires; and the site for a planned LNG plant on the southern coast was compensated years before any investment decision. We map what stands in each, and what has changed, from dated imagery reviewed by a person.
+lead: Tanzania's natural gas is processed in the south and carried by a high-pressure pipeline of about 551 km. Along that chain the land rules change. Upstream facilities, such as wells and upstream processing, sit inside safety zones whose extent PURA determines; transmission lines sit inside wayleaves the licensee acquires; and at the site for a planned LNG plant on the southern coast, the land title holder has completed the compensation process and the project awaits a final investment decision. Land around a site can change in the meantime. We map what stands in each, and what has changed, from dated imagery reviewed by a person.
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: See sample outputs, key: results}
@@ -55,7 +55,7 @@ The Petroleum Act puts "a safety zone surrounding every facility used for carryi
 A licensee secures rights of way for gas pipelines, subject to the Gas Utilisation Master Plan and in consultation with EWURA (s.185), and acquires wayleaves around existing and future gas infrastructure that owners on or bordering them must not interfere with (s.186).
 :::
 :::card{title="The LNG host area" icon="building" eyebrow="Land and lenders"}
-The site for a planned LNG plant on the southern coast was selected in 2013, and its land title holder has completed the compensation process. The project is awaiting a final investment decision; the land around it has kept changing.
+The site for a planned LNG plant on the southern coast was selected in 2013, and its land title holder has completed the compensation process. The project awaits a final investment decision, and land around a site can change while it waits.
 :::
 :::
 
@@ -99,7 +99,7 @@ The encroachment-density strip of our published sample, a high-pressure gas pipe
 :::::
 ::::
 
-::::section{id="lng" tone="alt" eyebrow="The LNG host area" title="Compensated, and waiting: what has changed since" lead="When a site is compensated years before construction, the gap between the compensation date and the investment decision is where land questions build up."}
+::::section{id="lng" tone="alt" eyebrow="The LNG host area" title="Compensated, and waiting: a dated record of any change" lead="Between compensation and an investment decision, land around a site can change, and that gap is where land questions build up."}
 :::::columns{split="2-1"}
 ::::col
 **An imagery history since selection.** From archived satellite imagery and open datasets, we document what was built, cleared or changed on and around the site, and roughly when, from the years around its selection and compensation to today. How much archive exists varies by place and year; the report says which dates it rests on.

@@ -13,7 +13,7 @@ buttons:
 service:
   name: Mining licence boundary and land-change mapping, Tanzania
   type: Boundary and perimeter change, excavation mapping, hazard-zone registers and rehabilitation tracking
-  description: Excavations, cleared ground, tracks and structures inside and around mining licence areas in Tanzania, measured against the licence boundary and the tailings and buffer zones the client's engineers define, compared between dated surveys, with rehabilitation tracking and resettlement baselines, reviewed by a person and delivered as a PDF report with GIS layers, working with a qualified Tanzanian company that leads the contract.
+  description: Excavations, cleared ground, tracks and structures inside and around mining licence areas in Tanzania, measured against the licence boundary and the tailings and buffer zones the client's engineers define, compared between dated surveys, with rehabilitation tracking and resettlement baselines, reviewed by a person and delivered as a PDF report with GIS layers.
 og:
   headline: Land change around mining licences in Tanzania
   subline: Pits, cleared ground, tracks and structures at licence boundaries, reviewed by a person
@@ -28,12 +28,12 @@ faq:
   - q: Does occupation of land inside a licence area give mineral rights?
     a: The Court of Appeal has held that it does not. In 2024 it affirmed that "a party cannot claim lawful ownership of mining property without a valid licence under the Mining Act, regardless of occupation or official correspondence" ([2024] TZCA 580), following an earlier decision to the same effect ([2018] TZCA 225). A dated map records what was on the ground and when; whether anyone has a right is for the law to decide.
   - q: How do the mining local-content rules affect this service?
-    a: A non-indigenous company that supplies a licence holder or contractor must form a joint venture with an indigenous Tanzanian company holding at least 20 per cent of it (Mining (Local Content) Regulations, reg 8(6)). For mining work, AfriScan therefore works with a qualified Tanzanian company that leads the contract, and each proposal sets out the structure and its local-content position. Check the current text of the regulations, which have been amended several times, with the Mining Commission or your counsel.
+    a: A non-indigenous company that supplies a contractor, a subcontractor or a licensee must form a joint venture with an indigenous Tanzanian company and give it at least 20 per cent of the equity (Mining (Local Content) Regulations, reg 8(6)). Each mining proposal sets out how it meets reg 8(6), naming the indigenous Tanzanian company and its equity share. Check the current text of the regulations, which have been amended several times, with the Mining Commission or your counsel.
   - q: Can you show rehabilitation progress for closure?
     a: We track how vegetation cover returns on rehabilitated land between dates, from Copernicus Sentinel imagery and drone orthophotos where they are flown. It shows the trend; it is not an ecological assessment, a closure certificate or the regulator's sign-off.
 cta:
   title: Send us the licence area and the zones that matter
-  text: "The licence boundary and any tailings, blast or buffer zones (KML, KMZ, GeoJSON, Shapefile or GeoPackage), the region, and what the record is for: boundary change, a resettlement baseline, rehabilitation or small-scale licence areas. We reply with a scope, an imagery plan and a written proposal that names the Tanzanian company leading the contract."
+  text: "The licence boundary and any tailings, blast or buffer zones (KML, KMZ, GeoJSON, Shapefile or GeoPackage), the region, and what the record is for: boundary change, a resettlement baseline, rehabilitation or small-scale licence areas. We reply with a scope, an imagery plan and a written proposal that sets out how it meets the mining local-content rules."
   button: Request a proposal
   secondary: Drone law in Tanzania
   secondary_href: /tz/drone-regulations
@@ -78,7 +78,7 @@ The courts have been clear that occupation does not create mineral rights. The C
 ::::col
 ### Small-scale licence areas {#small-scale}
 
-The Mining Commission oversees small-scale miners (*wachimbaji wadogo*), including licence holders who work under technical-support agreements under the *Kanuni za Msaada wa Kiufundi kwa Wamiliki wa Leseni Ndogo za Uchimbaji Madini, 2025*. In August 2026 it inspected 128 such projects, found 42 inactive and 86 with shortcomings, and gave them 30 days to correct them; it may revoke technical-support approvals ([Mining Commission, 26 August 2026](https://www.tumemadini.go.tz/pages/news/b32732ea-93aa-4937-bcc3-41ae201b8a6d/)).
+The Mining Commission oversees small-scale miners (*wachimbaji wadogo*), including licence holders who work under technical-support agreements under the *Kanuni za Msaada wa Kiufundi kwa Wamiliki wa Leseni Ndogo za Uchimbaji Madini, 2025*. It reported on 26 August 2026 that it had inspected 128 such projects, found 42 inactive and 86 with shortcomings, and given them 30 days to correct them; it may revoke technical-support approvals ([Mining Commission, 26 August 2026](https://www.tumemadini.go.tz/pages/news/b32732ea-93aa-4937-bcc3-41ae201b8a6d/)).
 
 Whether ground is being worked in a licence area, and what changed between two dates, is exactly what dated imagery shows. For the Commission and for technical-support partners, we map pits, disturbed ground, spoil and new tracks across small-scale licence areas and flag what is new between surveys, so inspections go where the ground has changed.
 ::::
@@ -142,7 +142,7 @@ The Mining (Local Content) Regulations, 2018 (GN 3 of 2018), as amended, set the
 - sole-sourced contracts, and competitive contracts above a set value, are notified to the Commission (reg 16);
 - since 2022, "contractor" and "mining activities" cover activities "within and outside Tanzania".
 
-In mining, AfriScan therefore works as a technology supplier: a qualified Tanzanian company leads the contract, and AfriScan supplies the imagery analysis, the review and the deliverables to it. Each proposal names the lead company and sets out its local-content position. The regulations have been amended several times, so check the current text with the Mining Commission or your counsel before a contract is signed.
+Each mining proposal sets out how it meets reg 8(6): the indigenous Tanzanian company and its equity share. The regulations have been amended several times, so check the current text with the Mining Commission or your counsel before a contract is signed.
 ::::
 ::::col
 :::callout{tone="note" title="Where to check"}
@@ -172,7 +172,7 @@ Fly only for the licence holder or with its written authority, with the launch a
 ::::section{id="how" eyebrow="How it works" title="From licence file to reviewed register"}
 :::steps
 :::step{title="Scope"}
-You send the licence boundary, the zones your engineers define and what the record is for. We agree the ring width, the imagery, the dates and the deliverables in a written proposal, with the Tanzanian company that leads the contract named.
+You send the licence boundary, the zones your engineers define and what the record is for. We agree the ring width, the imagery, the dates and the deliverables in a written proposal, which also sets out how it meets reg 8(6) of the Mining (Local Content) Regulations.
 :::
 :::step{title="Screen from satellite"}
 Excavations, structures, tracks and cleared ground are mapped across the licence area and its surroundings from dated satellite imagery or the imagery you hold.

@@ -65,7 +65,7 @@ An [amendment to the Civil Aviation (Security) Regulations, 2018](https://www.tc
 
 :::facts{cols="4"}
 - ROC application: at least 60 days before the operation (reg 46(5))
-- ROC validity: 12 months, then a fresh application (reg 48)
+- ROC validity: 12 months from issue or renewal; an expired ROC needs a fresh application (reg 48)
 - Category B risk assessment: at least 14 days ahead, for each operation (reg 6)
 - Height: at or below 400 ft above ground level (reg 30)
 - Separation: 50 m from people and structures not under the operator's control (reg 30)
@@ -123,7 +123,7 @@ The 14 days are a floor for every Category B job, not a one-off: plan a separate
 ::::section{id="operator" tone="alt" eyebrow="The operator" title="The RPAS Operator Certificate (ROC)" lead="Part IV of GN 268. No commercial operation may take place without a ROC, which authorises operations under the operations specifications attached to it (reg 45)."}
 :::::columns{split="2-1"}
 ::::col
-**Applying** (reg 46). The application goes on TCAA's prescribed form with a minimum equipment list, and it must reach TCAA "at least sixty days before the date of the intended operation" (46(5)). The certificate states "the authorised areas of operation" (46(3)(h)), so check that your site falls inside them.
+**Applying** (reg 46). The application goes on TCAA's prescribed form with a minimum equipment list. An application for a new ROC or a renewal is made "at least sixty days before the date of the intended operation" (46(5)). The certificate states "the authorised areas of operation" (46(3)(h)), so check that your site falls inside them.
 
 **What TCAA looks for** (reg 47). TCAA "may issue" a ROC if the applicant:
 
@@ -134,7 +134,7 @@ The 14 days are a floor for every Category B job, not a one-off: plan a separate
 
 A safety management system is required as well (45(4)), with a Flight Data Analysis Programme as part of it (reg 112), an accountable manager acceptable to TCAA and an operations manual following the Second Schedule (regs 52–53).
 
-**How long it lasts** (reg 48). Twelve months. An expired ROC needs a fresh application, not a renewal. TCAA inspects and tests the holders of a ROC during that time (reg 50).
+**How long it lasts** (reg 48). A ROC is "valid for 12 months from the date of issue or renewal" (48(1)), unless TCAA sets a shorter period or the ROC is suspended, revoked or surrendered before then. A ROC that has expired needs a fresh application (48(3)). TCAA inspects and tests the holders of a ROC during that time (reg 50).
 
 **Each job** (reg 54). Every commercial operation also needs its own authorisation from TCAA. The request (54(6)) covers the registration, airworthiness, ROC and pilot licence; the purpose, route, dates and performance; the C2 links and their coverage; navigation and detect-and-avoid equipment; emergency procedures; remote pilot stations and handovers; the payload; and "(u) proof of adequate insurance coverage". Documents in other languages need an English translation (54(7)), and a flight across a border needs the other State's authorisation too (54(2)–(3)).
 ::::
@@ -212,13 +212,13 @@ Ratings are added as the work needs them: type, instrument, night and instructor
 | Rule | What it takes to go beyond it |
 |---|---|
 | At or below **400 ft** above ground level | TCAA may approve private and commercial operations at "higher heights and lateral distances" (30(2)) |
-| Not "within the radius of **50 meters** from any person, vessel, vehicle or structure which is not under the control of the person in charge" | The same approval under 30(2) |
+| **50 m** from any person, vessel, vehicle or structure not under the control of the person in charge of the drone (30(1)(b)) | The same approval under 30(2) |
 | Visual meteorological conditions and **visual line of sight** | Beyond or extended visual line of sight only with a "special authorization" and a detect-and-avoid system (30(4)) |
 | Daylight | Night flights with TCAA's authorisation, lights and landing lights (reg 31) |
 | One drone at a time | Approval to fly more than one (reg 33) |
 | Not over open-air assemblies or crowds | Approval (reg 35) |
 
-TCAA may also impose additional security restrictions (30(9)).
+Reg 30(1)(b) itself says a person shall operate RPAS "within the radius of 50 meters from any person, vessel, vehicle or structure which is not under the control of the person in charge of the RPAS". We read it as a separation distance; confirm with TCAA how it applies to your operation. TCAA may also impose additional security restrictions (30(9)).
 
 ### The 50 m rule along a wayleave {#fifty-metres}
 
@@ -334,7 +334,7 @@ No aircraft is flown, so GN 268 does not apply to satellite screening, and we fo
 A principal place of business registered in Tanzania, with its BRELA certificate and TIN. For oil, gas and mining work, the operator's local-content status as well: the Petroleum Act, s.219, and the Mining (Local Content) Regulations set their own tests.
 :::
 :::step{title="A valid ROC that covers your site"}
-Issued within the last 12 months, with operations specifications and "authorised areas of operation" that include your wayleave or site.
+Issued or renewed within the last 12 months, with operations specifications and "authorised areas of operation" that include your wayleave or site.
 :::
 :::step{title="TCAA's authorisation for this operation"}
 Under reg 54, for this job. For Category B, the safety risk assessment submitted for approval at least 14 days ahead (reg 6(8)). TCAA says permits are usually location-specific.

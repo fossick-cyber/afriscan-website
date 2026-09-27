@@ -92,13 +92,13 @@ Dates also decide compensation. The High Court has held that developments made a
 A cross-border crude pipeline, most of its length in Tanzania, is nearing completion and moving into operation, and new cross-border refined-products pipelines are being planned. A products pipeline built in the 1960s runs through towns that have grown up around it.
 :::
 :::card{title="A growing grid" icon="power" eyebrow="Power"}
-New 400 kV and 220 kV lines and cross-border interconnectors are being built. A 345 km 400 kV line was reported 99 per cent complete in August 2026, and a World Bank-financed programme covers about 620 km of 400 kV line in the south-west.
+Tanzania's grid is growing, with new 400 kV and 220 kV lines and cross-border interconnectors. A 345 km 400 kV line was reported 99 per cent complete in August 2026, and a World Bank-financed programme covers about 620 km of 400 kV line in the south-west.
 :::
 :::card{title="Railway land acquisition" icon="rail" eyebrow="Rail"}
 A standard-gauge railway lot is acquiring land, with valuation, compensation and grave relocation along the route (*utwaaji wa ardhi*, *uhamishaji wa makaburi*).
 :::
 :::card{title="Small-scale licence areas" icon="mine" eyebrow="Mining"}
-The Mining Commission inspected 128 small-scale mining projects under technical-support agreements in August 2026, found 42 inactive and 86 with shortcomings, and gave 30 days to correct them.
+The Mining Commission reported on 26 August 2026 that it had inspected 128 small-scale mining projects under technical-support agreements, found 42 inactive and 86 with shortcomings, and given 30 days to correct them.
 :::
 :::
 
