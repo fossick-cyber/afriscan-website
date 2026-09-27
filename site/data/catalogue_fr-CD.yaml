@@ -97,7 +97,7 @@ solutions:
     name: "Levés par drone"
     blurb: Orthophotos, modèles d'élévation et volumes là où le détail compte, sous réserve des autorisations et habilitations de sécurité que chaque mission exige.
   imagery:
-    name: "Images : les vôtres, d'archive ou nouvelle prise de vue"
+    name: "Images : les vôtres, d'archive ou nouvelle prise de vue"
     blurb: L'analyse des images que vous détenez déjà, des scènes datées d'archive à très haute résolution ou une nouvelle prise de vue satellite de votre site.
   custom-detection:
     name: "Détection sur mesure"

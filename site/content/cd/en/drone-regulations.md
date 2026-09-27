@@ -14,7 +14,7 @@ nav_label: Drone law in the DRC
 nav_blurb: Art. 58 bis, the AAC, prohibited zones and a client checklist
 summary: The prior AAC authorisation every drone flight in the DRC needs, pilot licences, import, prohibited zones, penalties, who may be hired to fly, and an 11-point checklist for clients.
 eyebrow: Compliance · Democratic Republic of the Congo
-lead: "In the DRC, no drone may fly over the country or be operated there without prior authorisation from the Autorité de l'Aviation Civile (AAC). The rule is in art. 58 bis of Loi n° 10/014 on civil aviation, inserted by Loi n° 23/001 of 12 January 2023, and it has no weight threshold and no exemption by purpose. The AAC sets the operating conditions, but no procedure had been published by 27 September 2026. This guide sums up the published texts and what a client should check before commissioning a drone survey."
+lead: "In the DRC, no drone may fly over the country or be operated there without prior authorisation from the Autorité de l'Aviation Civile (AAC). The rule is in art. 58 bis of Loi n° 10/014 on civil aviation, inserted by Loi n° 23/001 of 12 January 2023, and it has no weight threshold and no exemption by purpose. The AAC sets the operating conditions, but no procedure had been published by 27 September 2026. This guide sums up the published texts and what a client should check before commissioning a drone survey."
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: Checklist for clients, href: "#checklist"}
@@ -32,7 +32,7 @@ faq:
   - q: Is a small drone exempt?
     a: "The text sets no threshold: \"aucun aéronef, télépiloté ou autonome\", no remotely piloted or autonomous aircraft, may fly without prior authorisation, whatever its weight or use. Exemptions are left to a regulation, and none had been published by 27 September 2026."
   - q: Can a foreign company carry out the survey?
-    a: "Art. 58 bis sets no nationality condition. But hiring a company for a drone survey is subcontracting, which Loi n° 17/001 reserves to Congolese-owned companies with their registered office in the DRC, unless ARSP grants a derogation. The realistic route is an eligible Congolese operator that obtains the AAC authorisations itself. See [subcontracting in the DRC](/cd/subcontracting)."
+    a: "Art. 58 bis sets no nationality condition. But hiring a company for a drone survey is subcontracting, which Loi n° 17/001 reserves to Congolese-owned companies with their registered office in the DRC, unless ARSP grants a derogation. The realistic route is an eligible Congolese operator that obtains the AAC authorisations itself. See [subcontracting in the DRC](/cd/subcontracting)."
   - q: How is a drone registered with the AAC?
     a: "The AAC website lists drone registration among its services, but no procedure, form or legal text was published there on 27 September 2026. Ask the AAC directly before any project, and ask in writing what your job requires."
   - q: Are beyond-visual-line-of-sight flights possible?
@@ -69,11 +69,11 @@ Deliberately overflying a prohibited or restricted zone is punishable by five to
 ::::section{id="who" tone="alt" eyebrow="Who does what" title="The authorities, and the rule each applies"}
 | Authority or party | What it authorises or controls | Basis |
 |---|---|---|
-| **AAC**, Autorité de l'Aviation Civile | Prior authorisation of every overflight or operation; conditions for the design, operation and movement of drones; licences; approval of training; import | [Loi n° 10/014, as amended by Loi n° 23/001](https://www.leganet.be/Legislation/Droit%20economique/transport/Loi.23.001.12.01.2023.html), arts 7, 58 bis, 58 ter, 104, 135 |
+| **AAC**, Autorité de l'Aviation Civile | Prior authorisation of every overflight or operation; conditions for the design, operation and movement of drones; licences; approval of training; import | [Loi n° 10/014, as amended by Loi n° 23/001](https://www.leganet.be/Legislation/Droit%20economique/transport/Loi.23.001.12.01.2023.html), arts 7, 58 bis, 58 ter, 104, 135 |
 | **AAC**, registration | The [AAC website](https://aac.cd/) lists drone registration among its services; no procedure had been published there by 27 September 2026 | Ask the AAC |
-| **Minister of Transport and AAC** | Servitudes around aerodromes, for "zones de dégagement" (obstacle clearance zones) | [Ordonnance-loi n° 62-330 of 27 September 1952](https://www.leganet.be/Legislation/Droit%20economique/transport/OL.62.330.27.09.1952.html) |
+| **Minister of Transport and AAC** | Servitudes around aerodromes, for "zones de dégagement" (obstacle clearance zones) | [Ordonnance-loi n° 62-330 of 27 September 1952](https://www.leganet.be/Legislation/Droit%20economique/transport/OL.62.330.27.09.1952.html) |
 | **Defence and security authorities** | Access to military, border and strategic zones | No published text found; treat as a real requirement |
-| **ARSP**, the subcontracting regulator | Who may be hired to carry out the survey | [Loi n° 17/001](https://www.leganet.be/Legislation/Droit%20civil/Dobligations/Loi.17.001.08.02.2017.html), art. 6 |
+| **ARSP**, the subcontracting regulator | Who may be hired to carry out the survey | [Loi n° 17/001](https://www.leganet.be/Legislation/Droit%20civil/Dobligations/Loi.17.001.08.02.2017.html), art. 6 |
 | **Holders of rights on the ground** | Site access: the concession holder, the line or rail operator, the occupiers | Written agreement for each job |
 
 The law does not apply to aircraft assigned to military purposes (art. 2). The AIP and NOTAMs, which list prohibited and restricted zones, could not be consulted online on 27 September 2026: obtain them directly before planning a flight.
@@ -82,7 +82,7 @@ The law does not apply to aircraft assigned to military purposes (art. 2). The A
 ::::section{id="text" eyebrow="The text" title="Articles 58 bis and 58 ter, and what surrounds them"}
 :::::columns{split="2-1"}
 ::::col
-Article 6 of [Loi n° 23/001 of 12 January 2023](https://www.leganet.be/Legislation/Droit%20economique/transport/Loi.23.001.12.01.2023.html) inserts a Chapter V into the civil aviation law, "Des aéronefs télépilotés, autonomes et des ballons aériens" (remotely piloted and autonomous aircraft, and balloons).
+Article 6 of [Loi n° 23/001 of 12 January 2023](https://www.leganet.be/Legislation/Droit%20economique/transport/Loi.23.001.12.01.2023.html) inserts a Chapter V into the civil aviation law, "Des aéronefs télépilotés, autonomes et des ballons aériens" (remotely piloted and autonomous aircraft, and balloons).
 
 > **Article 58 bis.** « Aucun aéronef, télépiloté ou autonome, aucun ballon aérien ne peut survoler le territoire de la République Démocratique du Congo, ni y être exploité sauf autorisation préalable délivrée par l'Autorité de l'Aviation Civile. Les dérogations aux dispositions de l'alinéa précédent sont fixées par voie réglementaire. »
 >
@@ -124,7 +124,7 @@ Ask the AAC before each job.
 
 "Le survol délibéré d'une zone interdite ou restreinte de survol par un aéronef est puni d'une servitude pénale de cinq à dix ans" and a fine (art. 177): deliberately overflying a prohibited or restricted zone carries five to ten years' penal servitude. The list of zones is in the AIP and the NOTAMs; expect it to include presidential and government sites in Kinshasa, military bases, borders and airports.
 
-Around aerodromes, Ordonnance-loi n° 62-330 creates servitudes "pour la création de zones de dégagement". Breaching them is punished under art. 183 bis; that provision concerns obstacles, not flights.
+Around aerodromes, Ordonnance-loi n° 62-330 creates servitudes "pour la création de zones de dégagement". Breaching them is punished under art. 183 bis; that provision concerns obstacles, not flights.
 
 ### Military sites and borders {#military-sites}
 
@@ -140,7 +140,7 @@ Armed drones are used in the east of the country, and the UK government advises 
 Where part of a perimeter can no longer be reached by the right holder's teams, only satellite imagery is used: no drone flies over an occupied or contested area.
 
 :::callout{tone="scope" title="Where we work"}
-We accept no work in North Kivu, South Kivu, Ituri, Haut-Uélé, Bas-Uélé, Tshopo, Maniema, Tanganyika, Haut-Lomami, Sud-Ubangi, Kwilu or Kwango, in the Kwamouth territory, or within 50 km of the border with the Central African Republic. [Why](/cd/#scope)
+We accept no work in North Kivu, South Kivu, Ituri, Haut-Uélé, Bas-Uélé, Tshopo, Maniema, Tanganyika, Haut-Lomami, Sud-Ubangi, Kwilu or Kwango, in the Kwamouth territory, or within 50 km of the border with the Central African Republic. [Why](/cd/#scope)
 :::
 ::::
 :::::
@@ -162,7 +162,7 @@ Civil aviation inspectors and the judicial police officers at airports and air n
 ::::section{id="who-may-fly" tone="alt" eyebrow="Who may fly" title="The subcontracting law decides who carries out the survey"}
 :::::columns{split="2-1"}
 ::::col
-Art. 58 bis sets no nationality condition. In practice the subcontracting law decides: hiring a company for a drone survey is subcontracting, which art. 6 of Loi n° 17/001 reserves to "entreprises à capitaux congolais promues par les congolais […] dont le siège social est situé sur le territoire national", Congolese-owned companies promoted by Congolese nationals with their registered office in the country.
+Art. 58 bis sets no nationality condition. In practice the subcontracting law decides: hiring a company for a drone survey is subcontracting, which art. 6 of Loi n° 17/001 reserves to "entreprises à capitaux congolais promues par les congolais […] dont le siège social est situé sur le territoire national", Congolese-owned companies promoted by Congolese nationals with their registered office in the country.
 
 A foreign company may step in only where expertise is unavailable or inaccessible, with proof, and "pour autant que l'activité ne dépasse pas six mois" (for no more than six months), or with an ARSP derogation. The realistic route is therefore an eligible Congolese drone operator that obtains the AAC authorisation itself, with the image analysis supplied by a technology provider.
 ::::
@@ -179,7 +179,7 @@ Eligibility, ARSP derogations, the 2026 law and the documents to ask a subcontra
 ::::section{id="checklist" eyebrow="Checklist for clients" title="Eleven points to check before a drone survey" lead="Ask the company that will carry out the survey for each of these in writing, for that specific job."}
 :::steps{style="list"}
 :::step{title="Its eligibility to subcontract"}
-The ARSP registration certificate or a derogation decision; the RCCM, national identification number, tax number, tax certificate and CNSS affiliation; proof of at least 51 % Congolese-held capital, Congolese-majority management and a majority-Congolese workforce (Arrêté ministériel n° 02/2021, art. 4).
+The ARSP registration certificate or a derogation decision; the RCCM, national identification number, tax number, tax certificate and CNSS affiliation; proof of at least 51 % Congolese-held capital, Congolese-majority management and a majority-Congolese workforce (Arrêté ministériel n° 02/2021, art. 4).
 :::
 :::step{title="The AAC's prior authorisation for this job"}
 The art. 58 bis authorisation, specifying the aircraft, the remote pilot, the area, the dates and the altitude.
@@ -194,13 +194,13 @@ The licence de télépilote (art. 104) and training with an organisation approve
 The AAC import authorisation (art. 7) and customs clearance, or an aircraft already lawfully in the country.
 :::
 :::step{title="Security clearances"}
-The written clearances the AAC or the province requires for the area. No flights near military sites, borders or airports (art. 177; Ordonnance-loi n° 62-330).
+The written clearances the AAC or the province requires for the area. No flights near military sites, borders or airports (art. 177; Ordonnance-loi n° 62-330).
 :::
 :::step{title="Consent of the rights holders"}
 Written agreement from the concession or emprise holder and from the occupiers of the land, including on any neighbouring concession the flight crosses.
 :::
 :::step{title="Insurance"}
-A policy with an insurer established in the DRC, as Loi n° 17/001 requires of subcontractors (art. 27).
+A policy with an insurer established in the DRC, as Loi n° 17/001 requires of subcontractors (art. 27).
 :::
 :::step{title="A data clause"}
 Who owns the imagery and where it is stored; no images of people, military sites or borders; no publication without consent; how personal data visible in the imagery is handled.

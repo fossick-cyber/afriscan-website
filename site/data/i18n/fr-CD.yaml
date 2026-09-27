@@ -1,7 +1,8 @@
 # Textes de l'interface pour /cd/fr/ (français de la République démocratique du Congo, registre
 # administratif). Mêmes clés que en.yaml : une clé absente fait échouer la construction du site.
 # Relecture par un locuteur natif congolais en attente (data/reviews.yaml, pending.native_fr_cd).
-# Typographie : espace fine insécable avant « ; : ? ! », guillemets « », nombres « 1 000 m ».
+# Typographie : espace fine insécable (U+202F) avant « ; ? ! » et dans les nombres (1 000 m) ; espace
+# insécable (U+00A0) avant « : » et à l'intérieur des guillemets. Les pages de content/cd/fr/ suivent la même règle.
 lang_name: Français
 skip: Aller au contenu
 brand_by: by Afridrone
@@ -32,7 +33,7 @@ region:
   # À décommenter à la fusion avec la branche gw-core, qui ajoute ces clés à en.yaml (la construction
   # d'aujourd'hui exige les mêmes clés dans chaque fichier ; celle de gw-core accepte leur absence).
   # stay: Rester sur ce site
-  # banner: "Vous êtes en {country} ? Consultez notre site pour ce pays."
+  # banner: "Vous êtes en {country} ? Consultez notre site pour ce pays."
 
 # Titres des régions (sélecteur de pays, menu Pays, /countries), eux aussi à décommenter à la fusion.
 # regions:
@@ -74,7 +75,7 @@ footer:
   tagline: Suivi à distance du foncier pour les pipelines, les lignes électriques, les concessions et les sites de projet.
   review: Un analyste vérifie chaque résultat avant la livraison.
   credits_title: Crédits des données
-  credits: "Empreintes de bâtiments : Google Open Buildings (CC BY 4.0), Microsoft Building Footprints (CDLA-Permissive-2.0) et © les contributeurs d'OpenStreetMap (ODbL). Les travaux sur la végétation et l'occupation du sol utilisent des données Copernicus Sentinel. La source de chaque image est indiquée avec l'image."
+  credits: "Empreintes de bâtiments : Google Open Buildings (CC BY 4.0), Microsoft Building Footprints (CDLA-Permissive-2.0) et © les contributeurs d'OpenStreetMap (ODbL). Les travaux sur la végétation et l'occupation du sol utilisent des données Copernicus Sentinel. La source de chaque image est indiquée avec l'image."
   credits_link: Crédits et licences complets (en anglais).
   explore: Explorer
   industries: Secteurs
@@ -136,8 +137,8 @@ form:
     - Zone de projet ou de réinstallation
     - Autre
   size: Longueur approximative (km) ou superficie (km²)
-  when: Pour quand vous faut-il les résultats ?
-  needs: De quoi avez-vous besoin ?
+  when: Pour quand vous faut-il les résultats ?
+  needs: De quoi avez-vous besoin ?
   needs_options:
     - Registre initial des constructions
     - Relevés périodiques et avis de changement
@@ -147,13 +148,13 @@ form:
     - Autre chose
   message: Parlez-nous du tracé ou du site
   message_hint: La province et la localisation, les distances à vérifier et la date que le registre doit refléter.
-  heard: Comment nous avez-vous connus ?
+  heard: Comment nous avez-vous connus ?
   heard_options: [Moteur de recherche, LinkedIn, Événement, Recommandation, Portail fournisseurs ou appel d'offres, Autre]
   required: obligatoire
   choose: Choisir…
   submit: Envoyer la demande
   sending: Envoi en cours…
-  success: Merci. Votre demande a bien été envoyée ; nous vous répondrons par e-mail.
+  success: Merci. Votre demande a bien été envoyée ; nous vous répondrons par e-mail.
   error: Impossible d'envoyer votre demande pour le moment. Nouvelle tentative par un autre moyen…
   privacy: Votre demande nous parvient par FormSubmit, un service d'acheminement de formulaires.
   privacy_link: Lire l'avis de confidentialité (en anglais).
@@ -163,9 +164,9 @@ form:
   next_steps:
     - Nous répondons par e-mail pour confirmer ce dont nous avons besoin.
     - Un court échange sur le tracé ou le site, les distances qui comptent et les images disponibles.
-    - "Une proposition écrite : périmètre, plan d'imagerie, méthode, livrables et calendrier."
+    - "Une proposition écrite : périmètre, plan d'imagerie, méthode, livrables et calendrier."
   send_title: Ce qu'il faut envoyer
-  send_text: "Le fichier du tracé ou des limites (KML, KMZ, GeoJSON, Shapefile, GPX ou GeoPackage), le pays et la province, les distances à vérifier, la date que le registre doit refléter, les livrables attendus et votre échéance. Pas encore de fichier ? Décrivez la localisation : nous dessinons le tracé avec vous."
+  send_text: "Le fichier du tracé ou des limites (KML, KMZ, GeoJSON, Shapefile, GPX ou GeoPackage), le pays et la province, les distances à vérifier, la date que le registre doit refléter, les livrables attendus et votre échéance. Pas encore de fichier ? Décrivez la localisation : nous dessinons le tracé avec vous."
   procurement_title: Équipes achats
   procurement_text: Joignez à votre demande vos formulaires fournisseur ou de préqualification, ou le dossier d'appel d'offres. La proposition indique, pour votre contrat, les pièces disponibles et celles en cours.
 
@@ -193,10 +194,10 @@ samples:
   band_b: 50–100 m
   band_c: au-delà de 100 m
   seg_title: Densité de constructions par tronçon de 500 m
-  seg_desc: "{n} tronçons : {high} à densité élevée, {medium} moyenne et {low} faible. Les valeurs complètes figurent dans le tableau des tronçons."
-  high: "Élevée : plus de {n} constructions à moins de {b} m"
-  medium: "Moyenne : de 1 à {n}"
-  low: "Faible : aucune"
+  seg_desc: "{n} tronçons : {high} à densité élevée, {medium} moyenne et {low} faible. Les valeurs complètes figurent dans le tableau des tronçons."
+  high: "Élevée : plus de {n} constructions à moins de {b} m"
+  medium: "Moyenne : de 1 à {n}"
+  low: "Faible : aucune"
   seg_table: Tableau des tronçons
   segment_km: Tronçon (km)
   within: "Constructions à moins de {b} m"
@@ -248,7 +249,7 @@ foreign_pages:
   solutions: {label: "Solutions (en anglais)", blurb: "Relevés d'emprise, registres initiaux, détection des changements et drones"}
   insight-dated-imagery-cut-off: {label: "Images datées et date butoir (en anglais)", blurb: "Ce qu'une image datée peut établir à la date butoir d'un recensement"}
   insight-survey-scope: {label: "Cadrer un relevé d'emprise (en anglais)", blurb: "Largeurs, dates et livrables à fixer avant de commander"}
-  insight-satellite-or-drone: {label: "Satellite ou drone ? (en anglais)", blurb: "Quand l'image satellite suffit, et quand un drone apporte le détail"}
+  insight-satellite-or-drone: {label: "Satellite ou drone ? (en anglais)", blurb: "Quand l'image satellite suffit, et quand un drone apporte le détail"}
   oil-gas: {label: "Pétrole et gaz (en anglais)", blurb: "Constructions dans les emprises des pipelines"}
   mining: {label: "Mines (en anglais)", blurb: "Concessions, fosses et bandes de protection"}
   power-utilities: {label: "Électricité (en anglais)", blurb: "Constructions et végétation sous les lignes"}

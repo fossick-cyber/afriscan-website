@@ -88,23 +88,23 @@ A dated map of pits on both sides of a boundary documents the state of the groun
 :::::
 ::::
 
-::::section{id="article-279" eyebrow="Structures nearby" title="Article 279: what lies within 800 and 1,000 metres of your works"}
+::::section{id="article-279" eyebrow="Structures nearby" title="Article 279: what lies within 800 and 1,000 metres of your works"}
 :::::columns{split="1-1"}
 ::::col
-[Article 279 of the Mining Code](https://www.leganet.be/Legislation/Droit%20economique/Code%20Minier/Code_minier.pdf), as amended by [Loi n° 18/001 of 9 March 2018](https://www.leganet.be/Legislation/Droit%20economique/Code%20Minier/Loi.18.001.09.03.2018.html), sets out the land a mining right holder may not occupy without consent.
+[Article 279 of the Mining Code](https://www.leganet.be/Legislation/Droit%20economique/Code%20Minier/Code_minier.pdf), as amended by [Loi n° 18/001 of 9 March 2018](https://www.leganet.be/Legislation/Droit%20economique/Code%20Minier/Loi.18.001.09.03.2018.html), sets out the land a mining right holder may not occupy without consent.
 
 **Without the consent of the owner or lawful occupant**, nobody may occupy land within:
-- **1,000 m** of houses or buildings, whether "occupés, inoccupés ou temporairement inoccupés" (occupied, unoccupied or temporarily unoccupied);
-- **800 m** of land hoed and ploughed for farm crops;
-- **800 m** of a cattle farm, a reservoir, a hydroelectric dam or a private water reserve.
+- **1,000 m** of houses or buildings, whether "occupés, inoccupés ou temporairement inoccupés" (occupied, unoccupied or temporarily unoccupied);
+- **800 m** of land hoed and ploughed for farm crops;
+- **800 m** of a cattle farm, a reservoir, a hydroelectric dam or a private water reserve.
 
-**Without the consent of the competent authorities**, nobody may occupy, among others, land within 800 m of a village, town or city, within 500 m of a hydroelectric dam or a State building, close to national defence installations, forming part of an airport or reserved for a railway project, nor a street, road or motorway, a national park or a tourist site. The governor may also set protection perimeters.
+**Without the consent of the competent authorities**, nobody may occupy, among others, land within 800 m of a village, town or city, within 500 m of a hydroelectric dam or a State building, close to national defence installations, forming part of an airport or reserved for a railway project, nor a street, road or motorway, a national park or a tourist site. The governor may also set protection perimeters.
 
-These distances protect occupants against mining occupation. They do not make a house built near a mine unlawful. The 2018 amendment widened them considerably: the 1,000 m distance from houses was 180 m in the 2002 text, and the 800 m distance from cultivated land was 45 m.
+These distances protect occupants against mining occupation. They do not make a house built near a mine unlawful. The 2018 amendment widened them considerably: the 1,000 m distance from houses was 180 m in the 2002 text, and the 800 m distance from cultivated land was 45 m.
 ::::
 ::::col
-:::figure{src="diagrams/cd-art279" alt="Schematic: the area a right holder plans to occupy, in orange, inside its permit shown as a dashed line, surrounded by two lines at 800 and 1,000 metres; houses within 1,000 metres in red, those beyond in dark teal, fields within 800 metres in dark green, one field beyond in pale green and a water point in blue" caption="Schematic: an inventory around planned works" size="half" credit="Schematic drawn by AfriScan for illustration; not a real site."}
-In orange, the area the right holder plans to occupy; the dashed line is the permit boundary. The dark orange line is at 800 m and the red line at 1,000 m. Houses in red are within 1,000 m, those in dark teal beyond it; fields in dark green are within 800 m; the blue dot is a water point.
+:::figure{src="diagrams/cd-art279" alt="Schematic: the area a right holder plans to occupy, in orange, inside its permit shown as a dashed line, surrounded by two lines at 800 and 1,000 metres; houses within 1,000 metres in red, those beyond in dark teal, fields within 800 metres in dark green, one field beyond in pale green and a water point in blue" caption="Schematic: an inventory around planned works" size="half" credit="Schematic drawn by AfriScan for illustration; not a real site."}
+In orange, the area the right holder plans to occupy; the dashed line is the permit boundary. The dark orange line is at 800 m and the red line at 1,000 m. Houses in red are within 1,000 m, those in dark teal beyond it; fields in dark green are within 800 m; the blue dot is a water point.
 :::
 ::::
 :::::
@@ -112,8 +112,8 @@ In orange, the area the right holder plans to occupy; the dashed line is the per
 ### What you receive {#inventory}
 
 :::checklist
-- A list of the houses and buildings within 1,000 m of the planned work area, each with its coordinates, its distance and the image date
-- The cultivated fields, water points and villages within 800 m
+- A list of the houses and buildings within 1,000 m of the planned work area, each with its coordinates, its distance and the image date
+- The cultivated fields, water points and villages within 800 m
 - Structures that are new or gone since the previous survey, confirmed by an analyst
 - A table by band and by sector of the perimeter, and GIS files for your teams
 :::
@@ -161,7 +161,7 @@ What was built, cleared or dug on a parcel, and roughly when, from the satellite
 ::::col
 ### The ESIA initial state {#initial-state}
 
-[Décret n° 14/019 of 2 August 2014](https://www.leganet.be/Legislation/Droit%20administratif/Environnement/D.19.019.02.08.214.htm) requires a prior environmental and social impact study for any mining project, including "l'inventaire précis et détaillé de l'état initial du site, de son environnement naturel, socio-économique et humain" (art. 19): a precise and detailed inventory of the site's natural, socio-economic and human initial state. Approval takes the form of a Certificat Environnemental, and an audit comes before its renewal. A dated register of structures, fields and land cover around the site feeds that initial state and lets you compare it from one audit to the next.
+[Décret n° 14/019 of 2 August 2014](https://www.leganet.be/Legislation/Droit%20administratif/Environnement/D.19.019.02.08.214.htm) requires a prior environmental and social impact study for any mining project, including "l'inventaire précis et détaillé de l'état initial du site, de son environnement naturel, socio-économique et humain" (art. 19): a precise and detailed inventory of the site's natural, socio-economic and human initial state. Approval takes the form of a Certificat Environnemental, and an audit comes before its renewal. A dated register of structures, fields and land cover around the site feeds that initial state and lets you compare it from one audit to the next.
 ::::
 ::::col
 ### Dated records {#records}

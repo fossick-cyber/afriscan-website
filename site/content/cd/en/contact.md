@@ -25,7 +25,7 @@ faq:
 ### For a survey in the DRC
 
 - **The province and territory**, so we can check the imagery available. We accept no work in the provinces outside our [scope](/cd/#scope); give the province in your message and choose "Other" in the country list.
-- **The distances to measure:** 25 m on each side of a high-voltage line, the width of a rail or road emprise, 800 m and 1,000 m around planned works on a mining perimeter, or the widths in your specification. Up to six distances in one survey.
+- **The distances to measure:** 25 m on each side of a high-voltage line, the width of a rail or road emprise, 800 m and 1,000 m around planned works on a mining perimeter, or the widths in your specification. Up to six distances in one survey.
 - **The reference date:** if the register is for a cut-off date, tell us the date; the choice of imagery depends on it.
 - **Satellite only, or drone detail too:** a drone survey needs the AAC's prior authorisation and the security clearances for the area, and the proposal builds them into the schedule. See [drone law in the DRC](/cd/drone-regulations).
 - **Report language:** PDF reports are delivered in English.

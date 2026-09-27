@@ -1,24 +1,24 @@
 ---
 key: cd-subcontracting
 title: DRC Subcontracting Law and ARSP for Foreign Firms | AfriScan
-description: "Loi n° 17/001, amended in 2026, reserves subcontracting in the DRC to Congolese-owned firms. What it requires, and how AfriScan works as a technology supplier."
+description: "Loi n° 17/001, amended in 2026, reserves subcontracting in the DRC to Congolese-owned firms. What it requires, and how AfriScan works as a technology supplier."
 h1: "For procurement teams: the DRC subcontracting law, and where we fit"
 crumb: Subcontracting
 section: how
 nav_group: how
 nav_order: 47
 nav_label: Subcontracting in the DRC
-nav_blurb: Loi n° 17/001, ARSP and our role as a supplier
-summary: What Loi n° 17/001, as amended by Loi n° 26/017 of 30 June 2026, requires of principals and subcontractors in the DRC, ARSP eligibility and derogations, and AfriScan's role as a technology supplier to an eligible Congolese company.
+nav_blurb: Loi n° 17/001, ARSP and our role as a supplier
+summary: What Loi n° 17/001, as amended by Loi n° 26/017 of 30 June 2026, requires of principals and subcontractors in the DRC, ARSP eligibility and derogations, and AfriScan's role as a technology supplier to an eligible Congolese company.
 icon: clipboard
 eyebrow: For procurement teams · DR Congo
-lead: "In the DRC, subcontracting is reserved to Congolese-owned companies with their registered office in the country, unless the Autorité de Régulation de la Sous-traitance dans le secteur Privé (ARSP) grants a derogation. This page sums up what Loi n° 17/001 of 8 February 2017, as amended by Loi n° 26/017 of 30 June 2026, requires of a principal and its subcontractors, and where AfriScan fits: a technology supplier working alongside an eligible Congolese company. A summary of public rules as of 27 September 2026, for orientation; it is not legal advice."
+lead: "In the DRC, subcontracting is reserved to Congolese-owned companies with their registered office in the country, unless the Autorité de Régulation de la Sous-traitance dans le secteur Privé (ARSP) grants a derogation. This page sums up what Loi n° 17/001 of 8 February 2017, as amended by Loi n° 26/017 of 30 June 2026, requires of a principal and its subcontractors, and where AfriScan fits: a technology supplier working alongside an eligible Congolese company. A summary of public rules as of 27 September 2026, for orientation; it is not legal advice."
 buttons:
   - {label: Send tender documents, intent: tender}
   - {label: Drone law in the DRC, key: cd-drone-law}
 og:
   headline: The DRC subcontracting law, and where we fit
-  subline: Loi n° 17/001, Loi n° 26/017 and ARSP, as of 27 September 2026
+  subline: Loi n° 17/001, Loi n° 26/017 and ARSP, as of 27 September 2026
 related: [cd-drone-law, how-we-work]
 faq:
   - q: Is AfriScan a Congolese company?
@@ -30,7 +30,7 @@ faq:
   - q: How much of a contract may be subcontracted?
     a: "\"Est interdite, la sous-traitance de plus de quarante pourcent de la valeur globale d'un marché\" (art. 11): no more than 40 % of a contract's total value may be subcontracted. The 2026 amending law adds a penalty for exceeding it."
   - q: Can a foreign company obtain a derogation?
-    a: "Yes, from ARSP. A derogation normally lasts six months at most, but some may be granted permanently or for longer because of the specific nature of certain markets. The request, from the principal or the subcontractor, includes a justification, a training policy and, for a contract of more than six months, proof of a representation in the DRC; the beneficiary formally undertakes to train Congolese staff (Arrêté ministériel n° 03/2021)."
+    a: "Yes, from ARSP. A derogation normally lasts six months at most, but some may be granted permanently or for longer because of the specific nature of certain markets. The request, from the principal or the subcontractor, includes a justification, a training policy and, for a contract of more than six months, proof of a representation in the DRC; the beneficiary formally undertakes to train Congolese staff (Arrêté ministériel n° 03/2021)."
   - q: What happens if a principal breaches art. 6?
     a: "The law provides for a fine and a temporary closure of up to six months, and the contract is \"nul de plein droit\", void by operation of law (art. 28). In September 2026 ARSP ordered several mining companies to end contracts with ineligible subcontractors."
 cta:
@@ -43,10 +43,10 @@ cta:
 ::::section{id="at-a-glance" eyebrow="At a glance" title="Four questions every supplier file has to settle"}
 :::cards{cols="4"}
 :::card{title="Who may subcontract" icon="flag"}
-Congolese-owned companies, promoted by Congolese nationals, with their registered office in the DRC (Loi n° 17/001, art. 6), unless ARSP grants a derogation.
+Congolese-owned companies, promoted by Congolese nationals, with their registered office in the DRC (Loi n° 17/001, art. 6), unless ARSP grants a derogation.
 :::
 :::card{title="Who is eligible" icon="file-check"}
-At least 51 % of the capital held by Congolese nationals, and Congolese-majority management and staff (Arrêté ministériel n° 02/2021, art. 4).
+At least 51 % of the capital held by Congolese nationals, and Congolese-majority management and staff (Arrêté ministériel n° 02/2021, art. 4).
 :::
 :::card{title="How much of the contract" icon="scale"}
 No more than 40 % of a contract's total value subcontracted (art. 11), with each subcontractor accepted by the project owner (art. 17).
@@ -57,8 +57,8 @@ In the DRC, AfriScan supplies the image analysis and the registers to an eligibl
 :::
 ::::
 
-::::section{id="law" tone="alt" width="prose" eyebrow="The law" title="The articles of Loi n° 17/001 that matter"}
-[Loi n° 17/001 of 8 February 2017](https://www.leganet.be/Legislation/Droit%20civil/Dobligations/Loi.17.001.08.02.2017.html), which sets the rules for subcontracting in the private sector, aims "à promouvoir les petites et moyennes entreprises à capitaux congolais" and "à protéger la main-d'œuvre nationale": to promote Congolese-owned small and medium enterprises and protect the national workforce (art. 1). It applies in every sector and covers related activities, ancillary activities and part of the main activity (art. 2). A related activity is "tout service, toute production dont l'entreprise a besoin et qui sont liés à la réalisation de l'activité principale", any service or production a company needs that is linked to carrying out its main activity (art. 3).
+::::section{id="law" tone="alt" width="prose" eyebrow="The law" title="The articles of Loi n° 17/001 that matter"}
+[Loi n° 17/001 of 8 February 2017](https://www.leganet.be/Legislation/Droit%20civil/Dobligations/Loi.17.001.08.02.2017.html), which sets the rules for subcontracting in the private sector, aims "à promouvoir les petites et moyennes entreprises à capitaux congolais" and "à protéger la main-d'œuvre nationale": to promote Congolese-owned small and medium enterprises and protect the national workforce (art. 1). It applies in every sector and covers related activities, ancillary activities and part of the main activity (art. 2). A related activity is "tout service, toute production dont l'entreprise a besoin et qui sont liés à la réalisation de l'activité principale", any service or production a company needs that is linked to carrying out its main activity (art. 3).
 
 - **Art. 6:** "L'activité de sous-traitance est réservée aux entreprises à capitaux congolais promues par les congolais, quelle que soit leur forme juridique, dont le siège social est situé sur le territoire national." Where expertise is unavailable or inaccessible, with proof, the principal may use a foreign company "pour autant que l'activité ne dépasse pas six mois ; à défaut, elle crée une société de droit congolais": for no more than six months, failing which it sets up a company under Congolese law.
 - **Art. 7:** unless the contract says otherwise, a subcontractor may subcontract, but the second-tier subcontractor meets the same formal and substantive conditions as the first.
@@ -70,13 +70,13 @@ In the DRC, AfriScan supplies the image analysis and the registers to an eligibl
 - **Art. 27:** subcontractors insure "auprès des sociétés d'assurances installées en République Démocratique du Congo", with insurers established in the DRC.
 - **Art. 28:** using a subcontractor in breach of art. 6 is punished by a fine and a temporary closure of up to six months, and the contract is "nul de plein droit".
 
-In mining, art. 108 quinquies of the Mining Code applies the subcontracting law to mining subcontracting. In hydrocarbons, Loi n° 15/012 of 1 August 2015 gives priority "aux entreprises locales dans le cadre de la sous-traitance à qualités techniques et conditions commerciales égales": to local companies, where technical quality and commercial terms are equal (art. 7).
+In mining, art. 108 quinquies of the Mining Code applies the subcontracting law to mining subcontracting. In hydrocarbons, Loi n° 15/012 of 1 August 2015 gives priority "aux entreprises locales dans le cadre de la sous-traitance à qualités techniques et conditions commerciales égales": to local companies, where technical quality and commercial terms are equal (art. 7).
 
 [ARSP's sector guide](https://www.arsp.cd/api/files/attachments/15), in its chapter on mines and quarries, lists drilling, geophysical surveys, geochemical prospecting, sampling and the preparation of feasibility studies among the activities that are subcontracting "en cas d'externalisation", when they are externalised.
 ::::
 
-::::section{id="law-2026" width="prose" eyebrow="The 2026 law" title="Loi n° 26/017 of 30 June 2026"}
-[Loi n° 26/017 of 30 June 2026](https://www.arsp.cd/api/files/attachments/140) amends and supplements Loi n° 17/001. Published in the Journal Officiel (special issue of 8 July 2026), it came into force on promulgation (art. 5). Subcontracting authorisations granted earlier remain valid until they expire (art. 3).
+::::section{id="law-2026" width="prose" eyebrow="The 2026 law" title="Loi n° 26/017 of 30 June 2026"}
+[Loi n° 26/017 of 30 June 2026](https://www.arsp.cd/api/files/attachments/140) amends and supplements Loi n° 17/001. Published in the Journal Officiel (special issue of 8 July 2026), it came into force on promulgation (art. 5). Subcontracting authorisations granted earlier remain valid until they expire (art. 3).
 
 In its decisions, ARSP summarises the amended art. 6 as "réservant la sous-traitance aux sociétés à capitaux congolais dont le siège social est situé sur le territoire national, sauf dérogation". Among the provisions read:
 - a penalty on the share of a contract subcontracted beyond 40 %;
@@ -91,7 +91,7 @@ Only some columns of the Journal Officiel could be read: have your counsel check
 ::::col
 ### Eligibility {#eligibility-am-02}
 
-[Arrêté ministériel n° 02/2021](https://www.leganet.be/Legislation/Droit%20civil/Dobligations/AM.02.06.01.2021.htm) (art. 4) asks a company for:
+[Arrêté ministériel n° 02/2021](https://www.leganet.be/Legislation/Droit%20civil/Dobligations/AM.02.06.01.2021.htm) (art. 4) asks a company for:
 - articles of association showing capital "détenu majoritairement par des congolais", at least 51 % Congolese-held;
 - a Congolese majority in the administrative or management bodies;
 - a majority-Congolese workforce;
@@ -102,7 +102,7 @@ A consortium of Congolese and foreign parties is eligible "que si au moins 51 % 
 ::::col
 ### Derogations {#derogations}
 
-[Arrêté ministériel n° 03/2021](https://www.leganet.be/Legislation/Droit%20civil/Dobligations/AM.06.01.2021.htm) governs ARSP derogations:
+[Arrêté ministériel n° 03/2021](https://www.leganet.be/Legislation/Droit%20civil/Dobligations/AM.06.01.2021.htm) governs ARSP derogations:
 - six months at most as a rule, but "certaines dérogations peuvent être accordées par l'ARSP de manière permanente ou pour une durée supérieure à six mois" (art. 3);
 - a request from the principal or the subcontractor, with the articles of association, the RCCM or equivalent, social-security and tax documents, a justification, a training policy and, for a contract of more than six months, "la preuve d'une représentation en RDC pour les sociétés étrangères" (art. 4);
 - a formal commitment to train Congolese staff (art. 5);
@@ -115,7 +115,7 @@ A consortium of Congolese and foreign parties is eligible "que si au moins 51 % 
 ::::section{id="afriscan" eyebrow="How AfriScan works in the DRC" title="A technology supplier, alongside an eligible Congolese company"}
 :::::columns{split="2-1"}
 ::::col
-AfriScan is not a Congolese company. In the DRC we therefore work as a technology supplier to a Congolese company that is eligible under Loi n° 17/001 and Arrêté ministériel n° 02/2021 and holds the contract:
+AfriScan is not a Congolese company. In the DRC we therefore work as a technology supplier to a Congolese company that is eligible under Loi n° 17/001 and Arrêté ministériel n° 02/2021 and holds the contract:
 - **the prime contractor** signs the contract, is accepted by the project owner and manages the relationship with it;
 - **AfriScan** supplies the image analysis, the registers of structures and changes, the GIS files and the report, each checked by an analyst;
 - **any field or drone work** is carried out by an eligible Congolese company, subject to the approvals and security clearances each job requires, including the AAC's prior authorisation.
