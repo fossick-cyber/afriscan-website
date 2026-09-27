@@ -20,6 +20,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
@@ -52,6 +53,7 @@ I18N_FALLBACK = ("regions", "sites", "region.stay", "region.banner")
 LANG_NAMES = {"en": "English", "pt": "Português", "fr": "Français"}   # only for a draft section with no i18n file
 THANKS_SLUGS = {"pt": "obrigado", "fr": "merci"}                     # thank-you page per language (English: thanks)
 DRAFT_BANNER = "Draft: not published"
+TABLE_LABEL = {"pt": "Tabela", "fr": "Tableau"}                       # aria-label of the scrolling table box
 
 # Components usable in content bodies:  :::name{attr="value"} ... :::
 COMPONENTS = {
@@ -248,6 +250,17 @@ class Build:
                 return v
         return None
 
+    def cat_lang(self, lang2):
+        """The data/catalogue.yaml language key for a page language: its own when every industry, solution
+        and service group has it (en, pt; fr once written), else en."""
+        if not hasattr(self, "_cat_langs"):
+            dicts = [d for c in self.catalogue["industries"] + self.catalogue["solutions"]
+                     for d in (c["name"], c["blurb"], c.get("menu") or c["blurb"])]
+            dicts += [g["name"] for g in self.catalogue.get("service_groups", []) + self.catalogue.get("solution_groups", [])
+                      if isinstance(g.get("name"), dict)]
+            self._cat_langs = set.intersection(*(set(d) for d in dicts)) if dicts else {"en"}
+        return lang2 if lang2 in self._cat_langs else "en"
+
     def lang_name(self, lk):
         loc = self.locales[lk]
         if loc["i18n"] in self.i18n:
@@ -430,7 +443,7 @@ class Build:
             return m["crumb"]
         if m.get("nav_label"):
             return m["nav_label"]
-        lang = "pt" if p["lang2"] == "pt" else "en"
+        lang = self.cat_lang(p["lang2"])
         cat = self.cat_ind.get(p["key"]) or self.cat_sol.get(p["key"])
         if cat:
             return cat["name"][lang]
@@ -457,8 +470,14 @@ class Build:
 
     def by_region(self, items, viewer_lk, key="section"):
         """Items that carry a section key, as (items with no region, i.e. global) and region groups in REGIONS
-        order; countries by English name within a region, a country's sections in data/locales.yaml order."""
+        order. Within a region, countries sort by how the viewer's language names them (the label of the
+        country's first section in data/locales.yaml, accents folded); a country's sections stay together,
+        in data/locales.yaml order."""
         order = list(self.locales)
+        first = {}
+        for k in order:
+            first.setdefault(self.locales[k]["country"], k)
+        fold = lambda s: "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c)).casefold()
         top, groups = [], defaultdict(list)
         for it in items:
             region = self.locales[it[key]].get("region")
@@ -466,7 +485,7 @@ class Build:
         out = []
         for r in REGIONS:
             if groups[r]:
-                its = sorted(groups[r], key=lambda it: ((self.country_of(it[key]) or {}).get("name", ""),
+                its = sorted(groups[r], key=lambda it: (fold(self.site_label(first[self.locales[it[key]]["country"]], viewer_lk)),
                                                         order.index(it[key])))
                 out.append({"key": r.lower(), "region": r, "title": self.tr(viewer_lk, "regions", r), "items": its})
         return top, out
@@ -588,9 +607,9 @@ class Build:
 
     # ------------------------------------------------------------------ navigation
     def nav_for(self, lk):
-        lang = "pt" if self.locales[lk]["lang"].startswith("pt") else "en"
-        t = self.t_of(lk)
         page_lang = self.locales[lk]["lang"]
+        lang = self.cat_lang(page_lang[:2])
+        t = self.t_of(lk)
 
         def item(p, label=None, blurb=None, **kw):
             foreign = p["lang2"] != page_lang[:2]
@@ -628,7 +647,7 @@ class Build:
         for gname in ("how", "countries", "resources"):
             items, seen = [], set()
             cands = [p for p in self.pages if p["meta"].get("nav_group") == gname and not p["noindex"]
-                     and lang in (p["meta"].get("nav_langs") or [lang])]
+                     and page_lang[:2] in (p["meta"].get("nav_langs") or [page_lang[:2]])]
             cands.sort(key=lambda p: (p["meta"].get("nav_order", 50), p["title"]))
             for p in cands:
                 if p["loc_key"] == lk or (p["loc_key"] == "global" and not self.find(p["key"], lk)):
@@ -687,7 +706,7 @@ class Build:
         flush_default()
         html = "\n".join(out)
         html = add_heading_ids(html, used_ids)
-        html = wrap_tables(html, "Tabela" if p["lang2"] == "pt" else "Table")
+        html = wrap_tables(html, TABLE_LABEL.get(p["lang2"], "Table"))
         html = self.resolve_key_links(p, html)
         return html
 
@@ -768,7 +787,7 @@ class Build:
         return {"rows": rows}
 
     def _cards_from_catalogue(self, p, items):
-        lang = "pt" if p["lang2"] == "pt" else "en"
+        lang = self.cat_lang(p["lang2"])
         cards = []
         for c in items:
             if p["loc_key"] in c.get("exclude", []):
@@ -804,7 +823,7 @@ class Build:
         return {"cards": self._cards_from_catalogue(p, items)}
 
     def services_for(self, p, ids=None, groups=None):
-        lang = "pt" if p["lang2"] == "pt" else "en"
+        lang = self.cat_lang(p["lang2"])
         out = []
         for s in self.catalogue["services"]:
             if ids and s["id"] not in ids:
@@ -815,13 +834,13 @@ class Build:
                 continue
             if p["loc_key"] in s.get("exclude", []):
                 continue
-            name = s.get("name_pt") if lang == "pt" and s.get("name_pt") else s["name"]
-            line = s.get("line_pt") if lang == "pt" and s.get("line_pt") else s["line"]
+            name = (s.get(f"name_{p['lang2']}") if p["lang2"] != "en" else None) or s["name"]
+            line = (s.get(f"line_{p['lang2']}") if p["lang2"] != "en" else None) or s["line"]
             out.append({"id": s["id"], "name": name, "line": line, "group": s["group"]})
         return out
 
     def cmp_catalogue(self, p, b, ctx):
-        lang = "pt" if p["lang2"] == "pt" else "en"
+        lang = self.cat_lang(p["lang2"])
         ids = [x.strip() for x in b.attrs["services"].split(",")] if b.attrs.get("services") else None
         groups = [x.strip() for x in b.attrs["groups"].split(",")] if b.attrs.get("groups") else None
         if ids:
@@ -853,12 +872,13 @@ class Build:
         return {"cards": cards}
 
     def law_for(self, p, cc):
-        """data/law/<cc>.yaml with each instrument's optional title_pt / identifier_pt / note_pt used on PT pages."""
-        law = self.law.get(cc)
-        if not law or p["lang2"] != "pt":
+        """data/law/<cc>.yaml with each instrument's optional title_<lang> / identifier_<lang> / note_<lang>
+        (title_pt on PT pages, title_fr on FR pages…) used instead of the English wording."""
+        law, sfx = self.law.get(cc), "_" + p["lang2"]
+        if not law or p["lang2"] == "en":
             return law
-        loc = lambda i: {**i, **{k: i[k + "_pt"] for k in ("title", "identifier", "note") if i.get(k + "_pt")}}
-        return {**law, "country_name": law.get("country_name_pt") or law["country_name"],
+        loc = lambda i: {**i, **{k: i[k + sfx] for k in ("title", "identifier", "note") if i.get(k + sfx)}}
+        return {**law, "country_name": law.get("country_name" + sfx) or law["country_name"],
                 "instruments": [loc(i) for i in law.get("instruments", [])]}
 
     def cmp_sources(self, p, b, ctx):
@@ -909,8 +929,8 @@ class Build:
                 by_cc.setdefault(self.locales[k]["country"], []).append(k)
         entries = []
         for cc, secs in by_cc.items():
-            home = self.home_of(secs[0])
             same = next((k for k in secs if self.locales[k]["lang"][:2] == p["lang2"]), None)
+            home = self.home_of(same or secs[0])          # the reader's language where the country has it
             title = (self.country_of(secs[0]) or {}).get("name") if p["lang2"] == "en" else None
             title = title or (self.locales[same]["country_name"] if same else self.site_label(secs[0], lk))
             entries.append({"section": secs[0], "title": title, "href": home["url"], "lang": home["lang"],
@@ -968,7 +988,7 @@ class Build:
         return dict(page=p, loc=p["loc"], t=p["t"], site=self.site, nav=self.navs[lk], build=self,
                     icon=self.icon, md=self.md_inline, mdblock=self.md_block, contact=self.contact_url,
                     fmt_date=lambda d: self.fmt_date(d, p["t"]), assets=self.asset_urls,
-                    lang_key="pt" if p["lang2"] == "pt" else "en", catalogue=self.catalogue,
+                    lang_key=self.cat_lang(p["lang2"]), catalogue=self.catalogue,
                     resolve=lambda k: self.resolve(k, lk), footer=self.footers[lk], today=self.today,
                     region_js=self.region_js_url, thanks_url=self.thanks_url(p),
                     label_of=lambda q: self.label_in(q, lk))
@@ -1007,7 +1027,7 @@ class Build:
         return [i for i in items if i.get("key") in flagged] if flagged else items[:8]
 
     def related_cards(self, p, keys):
-        lang = "pt" if p["lang2"] == "pt" else "en"
+        lang = self.cat_lang(p["lang2"])
         cards = []
         for k in keys or []:
             tp = self.resolve(k, p["loc_key"])
@@ -1067,7 +1087,7 @@ class Build:
         """Articles: the industry pages (in the article's own section and language) that its `about` keys name."""
         if p["template"] != "article":
             return []
-        lang = "pt" if p["lang2"] == "pt" else "en"
+        lang = self.cat_lang(p["lang2"])
         out = []
         for k in p["meta"].get("about") or []:
             tp = self.resolve(k, p["loc_key"])
@@ -1077,7 +1097,7 @@ class Build:
         return out
 
     def used_in(self, p):
-        lang = "pt" if p["lang2"] == "pt" else "en"
+        lang = self.cat_lang(p["lang2"])
         out = []
         for k in p["meta"].get("used_in", []) or []:
             if k not in self.cat_ind:
@@ -1848,13 +1868,14 @@ class Build:
                 leak(name, "sitemap entry", u, lk)
             elif u.rsplit("/", 1)[-1] in draft_maps:
                 leak(name, "sitemap entry", u, next(k for k in draft if self.locales[k]["sitemap"] == u.rsplit("/", 1)[-1]))
-        rules = [("data/redirects.yaml", r[1]) for r in self.redirects]
+        for src, dst, _ in self.redirects:
+            if lk := in_draft(dst):
+                self.warn(f"data/redirects.yaml: {src} -> {dst} is left out of _redirects while {lk} is a draft section")
         if (self.dist / "_redirects").exists():
-            rules += [("_redirects", line.split()[1]) for line in (self.dist / "_redirects").read_text(encoding="utf-8").splitlines()
-                      if len(line.split()) >= 2 and not line.startswith("#")]
-        for where, target in rules:
-            if lk := in_draft(target):
-                leak(where, "_redirects target", target, lk)
+            for line in (self.dist / "_redirects").read_text(encoding="utf-8").splitlines():
+                parts = line.split()
+                if len(parts) >= 2 and not line.startswith("#") and (lk := in_draft(parts[1])):
+                    leak("_redirects", "_redirects target", f"{parts[0]} -> {parts[1]}", lk)
         if (self.dist / "_headers").exists():
             for line in (self.dist / "_headers").read_text(encoding="utf-8").splitlines():
                 if line.startswith("/") and (lk := in_draft(line.strip().rstrip("*"))):
@@ -1991,6 +2012,10 @@ def selftest():
         "withdrawn":      ("global", append("Our sample is the QX-07 line."), "[withdrawn-name]"),
         "withdrawn-pt":   ("mz-pt", append("A amostra fica em Heron–Crest."), "[withdrawn-name]"),
         "withdrawn-id":   ("global", append("## Earlier view {#qx7-route}\n\nText."), "[withdrawn-name]"),
+        "withdrawn-dot":  ("global", append("Our sample is the QX.7 line."), "[withdrawn-name]"),
+        "svg-text":       ("global", append('<svg viewBox="0 0 120 20" role="img"><text x="0" y="14">Real-time alerts</text></svg>'),
+                           "[overstatement]"),
+        "draft-link":     ("global", append("See [our Zambia site](/zm/)."), "[draft-leak]"),
         "law-only-name":  ("global", append("Our sample is near the Morlock field."), "[withdrawn-name]"),
         "on-sample-page": ("global/results.md", append("See regulation 12/3456."), "[withdrawn-name]"),
         "law-page-ok":    ("mz/en/50m-protection-zone.md", append("The Morlock corridor has its own zone."), None),
@@ -2090,10 +2115,111 @@ def selftest():
             print(f"{'PASS' if code == 1 and hit else 'FAIL'}  {name:15s} {(hit or b.errors or ['no error raised'])[0][:105]}")
             if not (code == 1 and hit):
                 failed.append(name)
+        failed += selftest_drafts(make, tmp)
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     print("selftest:", "all guards fired" if not failed else f"FAILED {failed}")
     return 1 if failed else 0
+
+
+def selftest_drafts(make, tmp):
+    """Draft sections (data/locales.yaml status: draft). A normal build never builds them and nothing it
+    publishes may point into one; a --drafts build marks their pages and never writes into a dist/.
+    Each seeded leak stands for a regression in one place that could publish a pointer to a draft."""
+    draft = next((lk for lk, l in load_yaml(SITE / "data/locales.yaml").items() if l.get("status") == "draft"), None)
+    if not draft:
+        print("SKIP  draft sections: every section in data/locales.yaml is live")
+        return []
+    loc = load_yaml(SITE / "data/locales.yaml")[draft]
+    home, code = loc["prefix"] + "/", loc["hreflang"][0]
+    fixture = SITE / "tests/fixtures/demo/content" / loc["content"] / "index.md"
+
+    def with_home(content):
+        (content / loc["content"]).mkdir(parents=True, exist_ok=True)
+        shutil.copy2(fixture, content / loc["content"] / "index.md")
+
+    def wrap(b, method, after):
+        orig = getattr(b, method)
+        setattr(b, method, lambda *a, **k: after(orig(*a, **k), *a))
+
+    def add_item(result, item):
+        if result.get("groups"):
+            result["groups"][0]["items"] = result["groups"][0]["items"] + [item]
+        return result
+
+    def append_to(b, name, text):
+        f = b.dist / name
+        f.write_text(f.read_text(encoding="utf-8").replace("</urlset>", text + "</urlset>") if name.endswith(".xml")
+                     else f.read_text(encoding="utf-8") + text, encoding="utf-8")
+
+    def strip_draft_marks(b, what):
+        def after(_, p):
+            if p.get("draft"):
+                p["html"] = (p["html"].replace(DRAFT_BANNER, "") if what == "banner" else
+                             p["html"].replace('content="noindex, nofollow"', 'content="index, follow"'))
+        wrap(b, "render_page", after)
+
+    item = {"section": draft, "key": draft, "label": loc["label"], "title": loc["label"], "href": home, "lang": code,
+            "text": "", "langs": "", "links": [], "current": False, "draft": False}
+    fake = tmp / "fake-checkout"
+    (fake / "site").mkdir(parents=True, exist_ok=True)
+    (fake / "site/build.py").write_text("", encoding="utf-8")
+    # name: (drafts, dist, add the draft home, patch, expected error or None for a clean build)
+    cases = {
+        "draft-home-ok":   (False, None, True, None, None),
+        "drafts-empty-ok": (True, None, False, None, None),
+        "drafts-ok":       (True, None, True, None, None),
+        "drafts-in-dist":  (True, ROOT / "dist", False, None, "--drafts never writes"),
+        "drafts-in-other": (True, fake / "dist/preview", False, None, "--drafts never writes"),
+        "draft-built":     (False, None, True, lambda b: setattr(b, "section_built", lambda lk: True),
+                            "a file in a draft section"),
+        "draft-hreflang":  (False, None, False, lambda b: wrap(b, "alternates", lambda r, p: r and r + [
+                                {"code": code, "href": b.base + home}]), "hreflang alternate"),
+        "draft-menu":      (False, None, False, lambda b: wrap(b, "region_links", lambda r, p: r + [item]),
+                            "region-menu item"),
+        "draft-sites":     (False, None, False, lambda b: wrap(b, "cmp_country_sites", lambda r, *a: add_item(r, item)),
+                            "country-sites button"),
+        "draft-countries": (False, None, False, lambda b: wrap(b, "cmp_countries", lambda r, *a: add_item(r, item)),
+                            "/countries entry"),
+        "draft-jsonld":    (False, None, False, lambda b: wrap(b, "served_countries", lambda r: r + [
+                                (b.country_of(draft) or {}).get("name", loc["country_name"])]), "JSON-LD reference"),
+        "draft-sitemap":   (False, None, False, lambda b: wrap(b, "write_sitemaps", lambda r: append_to(
+                                b, "sitemap-global.xml", f"  <url>\n    <loc>{b.base}{home}</loc>\n  </url>\n")),
+                            "sitemap entry"),
+        "draft-redirect":  (False, None, False, lambda b: wrap(b, "write_site_files", lambda r: append_to(
+                                b, "_redirects", f"/old-{draft} {home} 301\n")), "_redirects target"),
+        "draft-headers":   (False, None, False, lambda b: wrap(b, "write_site_files", lambda r: append_to(
+                                b, "_headers", f"\n{loc['prefix']}/*\n  Content-Language: {loc['lang']}\n")),
+                            "_headers rule"),
+        "draft-banner":    (True, None, True, lambda b: setattr(b, "banner_sections", lambda: [
+                                k for k in b.live_locales if b.locales[k]["country"]]), "geo banner"),
+        "draft-unmarked":  (True, None, True, lambda b: strip_draft_marks(b, "banner"), "“Draft: not published” banner"),
+        "draft-indexed":   (True, None, True, lambda b: strip_draft_marks(b, "robots"), "must be noindex"),
+    }
+    failed = []
+    for name, (drafts, dist, add_home, patch, expect) in cases.items():
+        content = tmp / name / "content"
+        shutil.copytree(SITE / "content", content)
+        if add_home:
+            with_home(content)
+        b = make(content_dir=content, dist=dist or tmp / name / "dist", drafts=drafts)
+        if patch:
+            patch(b)
+        code_ = b.run()
+        if expect is None:
+            sec_dir = b.dist / loc["prefix"].lstrip("/")
+            stray = [] if drafts or not sec_dir.exists() else list(sec_dir.rglob("*"))
+            ok = code_ == 0 and not stray
+            hit = [f"builds clean ({len(b.errors)} errors" + (f", {len(stray)} files under {home}" if stray else "") + ")"]
+        else:
+            hit = [e for e in b.errors if expect in e]
+            ok = code_ == 1 and hit
+        print(f"{'PASS' if ok else 'FAIL'}  {name:15s} {(hit or b.errors or ['no error raised'])[0][:105]}")
+        if not ok:
+            failed.append(name)
+            for e in b.errors[:5]:
+                print("      ", e)
+    return failed
 
 
 def demo(out):

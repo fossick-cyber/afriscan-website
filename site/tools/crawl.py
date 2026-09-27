@@ -1,16 +1,19 @@
 #!/usr/bin/env python3
 """Crawl a local preview of dist/ over HTTP and check every internal href and src.
 
-Usage: crawl.py http://127.0.0.1:5091 [dist_dir]
+    /opt/favhousecheck/.venv/bin/python3 site/tools/crawl.py http://127.0.0.1:5080 [DIST] [--drafts]
 
 python -m http.server does not map /x to x.html the way Cloudflare Pages does (it answers /x with
 a folder listing when a folder x/ exists), so extension-less paths are fetched as /x.html.
 Stylesheets are fetched and their url(...) references
-checked too. Pages in dist/ that the crawl never reaches are reported.
+checked too. Pages in dist/ that the crawl never reaches are reported, and so is every page the crawl
+reaches in a section that data/locales.yaml marks status: draft (unless --drafts: a drafts preview).
 """
+import argparse
 import os
 import re
 import sys
+from pathlib import Path
 import urllib.error
 import urllib.request
 from html.parser import HTMLParser
@@ -43,9 +46,29 @@ class Links(HTMLParser):
             self.refs.append(("meta", a.get("content")))
 
 
+SPECIAL = ("404", "thanks", "obrigado", "merci")    # generated 404 and thank-you pages: linked from no page
+
+
+def section_prefixes(data_dir):
+    """{URL prefix: (section, is_draft)} from data/locales.yaml ({} if PyYAML or the file is missing)."""
+    try:
+        import yaml
+        loc = yaml.safe_load(Path(data_dir, "locales.yaml").read_text(encoding="utf-8"))
+    except (ImportError, OSError):
+        return {}
+    return {l["prefix"] + "/": (k, l.get("status", "live") != "live") for k, l in loc.items()}
+
+
 def main():
-    base = sys.argv[1].rstrip("/")
-    dist = sys.argv[2] if len(sys.argv) > 2 else "dist"
+    here = Path(__file__).resolve().parents[1]
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("base", help="preview origin, e.g. http://127.0.0.1:5080")
+    ap.add_argument("dist", nargs="?", default="dist", help="the directory the preview serves (default: ./dist)")
+    ap.add_argument("--drafts", action="store_true", help="the preview is a build.py --drafts build")
+    ap.add_argument("--data", default=str(here / "data"), help="site/data with locales.yaml (default: %(default)s)")
+    args = ap.parse_args()
+    base, dist = args.base.rstrip("/"), args.dist
+    sections = section_prefixes(args.data)
     status, cache = {}, {}
 
     def fetch(path):
@@ -132,9 +155,13 @@ def main():
                     built.add("/" + rel[:-10])
                 else:
                     built.add("/" + rel[:-5])
-    unreached = sorted(u for u in built - seen if not u.endswith("/404") and u not in ("/thanks", "/mz/pt/obrigado"))
+    unreached = sorted(u for u in built - seen if u.rstrip("/").rsplit("/", 1)[-1] not in SPECIAL)
     for u in unreached:
         errors.append(f"{u}: built but not reachable by crawling from /")
+    for u in sorted(seen) if not args.drafts else []:
+        pre = max((p for p in sections if u.startswith(p)), key=len, default=None)
+        if pre and sections[pre][1]:
+            errors.append(f"{u}: reached by crawling, but it is in the draft section {sections[pre][0]}")
     print(f"crawled {len(seen)} pages, checked {checked_assets} asset refs and {len(frag_refs)} anchors")
     for e in errors:
         print("ERROR", e)

@@ -234,7 +234,7 @@ main:focus { outline: none; }
     width: auto; min-width: 0; max-width: none;
   }
   .region-groups { grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); }
-  .region-menu a { padding: 11px 10px; }
+  .region-menu a { padding: 11px 10px; min-height: 44px; }
 }
 @media (max-width: 560px) {
   .logo { flex-direction: column; gap: 0; line-height: 1.05; }
@@ -591,7 +591,11 @@ tbody th { font-weight: 700; }
 .footer-title { color: #fff; font-weight: 750; font-size: 0.78rem; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 12px; }
 .footer-nav ul { list-style: none; padding: 0; }
 .footer-nav ul + .footer-title { margin-top: 24px; }
-.footer-sub { color: var(--d-dim); font-size: 0.72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin: 14px 0 8px; }
+/* Country sites: a full-width block under the columns, one column per region */
+.footer-countries { grid-column: 1 / -1; border-top: 1px solid var(--d-line); padding-top: 24px; }
+.footer-country-top { margin-bottom: 16px; }
+.footer-country-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 18px 28px; }
+.footer-sub { color: var(--d-dim); font-size: 0.72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 10px; opacity: .85; }
 .footer-nav li + li { margin-top: 8px; }
 .footer-nav a { color: var(--d-dim); text-decoration: none; }
 .footer-nav a:hover { color: #fff; text-decoration: underline; }
@@ -652,6 +656,15 @@ tbody th { font-weight: 700; }
 .country-card h4 a:hover { color: var(--accent-strong); text-decoration: underline; }
 .country-card-links { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: auto; padding-top: 6px; }
 .flow .country-card-links a, .country-card-links a { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; font-weight: 650; font-size: 0.92rem; color: var(--accent-strong); text-decoration: none; }
+/* phones: two compact cards a row (name, languages, links), so fifteen countries stay a short list */
+@media (max-width: 640px) {
+  .countries-directory .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .country-card { padding: 14px 14px 8px; }
+  .country-card .country-card-text { display: none; }
+  .country-card .card-eyebrow { font-size: 0.68rem; letter-spacing: .06em; }
+  .country-card-links { gap: 0 14px; }
+  .country-card .card-more { min-height: 36px; }
+}
 
 /* Draft preview builds only (build.py --drafts) */
 /* fixed, so it takes no room from the sticky header, the drawer or the country menu, and stays in view */
