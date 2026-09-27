@@ -5,8 +5,10 @@
 
   // ---------------------------------------------------------------- mobile menu
   const toggle = $(".menu-toggle");
+  const closeRegion = () => $$("details.region[open]").forEach(d => d.removeAttribute("open"));
   const setMenu = open => {
     if (!toggle) return;
+    if (open) closeRegion();
     document.body.classList.toggle("menu-open", open);
     toggle.setAttribute("aria-expanded", String(open));
     toggle.setAttribute("aria-label", open ? toggle.dataset.labelClose : toggle.dataset.labelOpen);
@@ -48,10 +50,21 @@
       toggle.focus();
     }
   });
-  document.addEventListener("click", e => {
+  // pointerdown, not click: iOS Safari sends no click to the document for a tap on plain content.
+  document.addEventListener("pointerdown", e => {
     if (!e.target.closest(".nav-item")) closePanels();
-    if (!e.target.closest("details.region")) $$("details.region[open]").forEach(d => d.removeAttribute("open"));
+    if (!e.target.closest("details.region")) closeRegion();
     if (document.body.classList.contains("menu-open") && !e.target.closest(".site-header")) setMenu(false);
+  });
+  $$("details.region").forEach(d => {
+    d.addEventListener("toggle", () => {
+      if (!d.open) return;
+      setMenu(false);
+      closePanels();
+    });
+    d.addEventListener("focusout", e => {
+      if (e.relatedTarget && !d.contains(e.relatedTarget)) d.removeAttribute("open");
+    });
   });
   window.addEventListener("resize", () => { if (window.innerWidth >= 1200) setMenu(false); }, { passive: true });
 

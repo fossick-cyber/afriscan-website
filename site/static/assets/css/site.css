@@ -170,7 +170,7 @@ main:focus { outline: none; }
 .region summary::-webkit-details-marker { display: none; }
 .region summary:hover { color: #fff; border-color: rgba(255, 255, 255, .3); }
 .region[open] summary .icon-xs { transform: rotate(180deg); }
-.region-menu { position: absolute; right: 0; top: calc(100% + 10px); z-index: 110; min-width: 250px; background: var(--ink-2); border: 1px solid var(--d-line); border-radius: var(--radius); box-shadow: 0 20px 40px rgba(0, 0, 0, .45); padding: 12px; }
+.region-menu { position: absolute; right: 0; top: calc(100% + 10px); z-index: 110; min-width: 250px; max-width: calc(100vw - 24px); background: var(--ink-2); border: 1px solid var(--d-line); border-radius: var(--radius); box-shadow: 0 20px 40px rgba(0, 0, 0, .45); padding: 12px; }
 .region-title { font-size: 0.72rem; font-weight: 750; letter-spacing: 0.12em; text-transform: uppercase; color: var(--d-dim); padding: 2px 8px 8px; }
 .region-menu ul { list-style: none; padding: 0; }
 .region-menu li + li { margin-top: 2px; }
@@ -200,15 +200,31 @@ main:focus { outline: none; }
   .panel-overview { margin-left: 6px; }
   .nav-cta-mobile { display: flex; margin-top: 22px; }
 }
+/* Below 700 px the globe is icon-only and sits mid-header, so a menu anchored to it would run off
+   the left edge: the menu becomes a panel across the screen, under the header. The header is not
+   blurred below 1200 px, so position: fixed is relative to the viewport. */
+@media (max-width: 700px) {
+  .region summary { padding: 8px; }
+  .region-current, .region summary .icon-xs { display: none; }
+  .region-menu {
+    position: fixed; left: 12px; right: 12px; top: calc(var(--header-h) + 8px);
+    min-width: 0; max-width: none; max-height: calc(100vh - var(--header-h) - 20px);
+    overflow-y: auto; overscroll-behavior: contain;
+  }
+  @supports (height: 100dvh) { .region-menu { max-height: calc(100dvh - var(--header-h) - 20px); } }
+  .region-menu a { padding: 11px 10px; }
+}
 @media (max-width: 560px) {
   .logo { flex-direction: column; gap: 0; line-height: 1.05; }
   .logo small { font-size: 0.68rem; }
-  .header-inner { gap: 10px; }
-  .header-actions { gap: 8px; margin-left: auto; }
+  .header-inner { gap: 8px; }
+  .header-actions { gap: 6px; margin-left: auto; }
   .header-cta .cta-long { display: none; }
   .header-cta .cta-short { display: inline; }
-  .region summary { padding: 8px; }
-  .region-current, .region summary .icon-xs { display: none; }
+}
+/* Logo, globe, short CTA and menu button need about 355 px; the drawer repeats the CTA. */
+@media (max-width: 359px) {
+  .header-cta { display: none; }
 }
 
 /* ------------------------------------------------------------------ hero (home, country homes) */
