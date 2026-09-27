@@ -82,7 +82,7 @@ The [Minerals Regulation Commission Act 2024](https://www.parliament.gov.zm/site
 | Cleared or cropped land | 45 m | The owner or occupier |
 | A cattle dip tank, dam or private water | 90 m | The owner or occupier |
 | A building or dam owned by the Republic | 90 m | The appropriate authority |
-| Any railway track, or railway land | 100 m | The railway administration |
+| Railway land, or within 100 m of any railway track | 100 m from the track | The railway administration |
 | City, municipal or district boundaries | 60 m | The local authority |
 | Village or customary land | | The chief and the local authority for the district |
 

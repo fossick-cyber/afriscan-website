@@ -13,7 +13,7 @@ nav_blurb: Widths, consents and a checklist for wayleave holders in Zambia
 summary: The 2026 wayleave widths, the pipeline siting rules, the railway strip, road reserves, mining consent distances, protected areas, data protection and a checklist for wayleave holders.
 icon: scale
 eyebrow: Guide · Zambia
-lead: "A wayleave gives a power line, pipeline or railway a right across land that others go on using. This guide is for wayleave and land officers, engineers, ESIA and RAP consultants and their counsel: what each kind of strip is, which widths and consents Zambian law sets, where the gaps are, and what records to keep before the next structure goes up. A summary of public rules, last reviewed 27 September 2026; it is not legal advice."
+lead: "A wayleave gives a power line, pipeline or railway a right across land that is often still farmed and lived on beside the strip. This guide is for wayleave and land officers, engineers, ESIA and RAP consultants and their counsel: what each kind of strip is, which widths and consents Zambian law sets, where the gaps are, and what records to keep before the next structure goes up. A summary of public rules, last reviewed 27 September 2026; it is not legal advice."
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: Drone law in Zambia, key: zm-drone-law}
@@ -26,7 +26,7 @@ faq:
   - q: Is a structure inside a wayleave always unlawful?
     a: Not necessarily. The Electricity Act prohibits a building or structure that is "likely to interfere" with a line without the licensee's permission, the Tanzania-Zambia Railway Act prohibits building on the railway strip without the Authority's written permission, and consents under the Minerals Regulation Commission Act can be given. Whether a particular structure has permission, predates the wayleave or must move is for the licensee, the authority, the landowner and, if it comes to that, the courts. A register records what stands where, how far from the line and since when.
   - q: Do the 2026 Regulations make existing lines wider?
-    a: No. Existing approved installations need not be modified unless safety requires it (reg. 6). The Regulations set the minimum widths for lines and apply across the electricity supply industry, and a shared wayleave narrower than the Schedule needs the ERB's prior written approval (reg. 5(2)).
+    a: Not by themselves. An existing approved installation need not be modified to comply unless safety requires it (reg. 6), but an addition, alteration or replacement must comply with the Schedule. How the minimum widths apply to the wayleave of an existing line is a question for your legal team; we measure at whichever widths you choose. The Regulations set the minimum widths for lines and apply across the electricity supply industry, and a shared wayleave narrower than the Schedule needs the ERB's prior written approval (reg. 5(2)).
   - q: Can your survey tell us exactly where our wayleave boundary is?
     a: No. We measure structures against the centreline, the wayleave polygon or the reserve boundary you supply, at the widths you choose. Where a boundary must be fixed on the ground, that is a land surveyor's work, and the Land Survey Act requires the Surveyor-General's written permission before aerial photography is used for land survey.
   - q: What should we keep when a new wayleave is acquired?
@@ -41,7 +41,7 @@ cta:
 
 In Zambia, "wayleave" is the everyday word for the strip of land a line needs, and the 2026 electricity regulations give it a legal meaning: "a parcel of land with a predetermined uniform width over its length". The definition covers easements and wayleave agreements, statutory wayleaves under ss.22–23 of the Electricity Act, and wayleaves over State-leased or customary land under the Lands Act ([SI No. 2 of 2026](https://www.erb.org.zm/wp-content/uploads/Electricity-Wayleave-and-Clearances-Regulation-2026.pdf)).
 
-Other assets use other words. A pipeline has a right of way, which the Energy Regulation Board defines as easements "agreed and signed upon by both the landowner and Pipeline Company". A railway has its strip or reserve, a road its reserve, and a mine its licence area and the consent distances around its workings. The land underneath usually stays with its owner or occupier, often under customary tenure in a chiefdom, and goes on being farmed, grazed and lived on around the line. That is why structures appear in wayleaves between inspections, and why the records matter.
+Other assets use other words. A pipeline has a right of way, which the Energy Regulation Board defines as easements "agreed and signed upon by both the landowner and Pipeline Company". A railway has its strip or reserve, a road its reserve, and a mine its licence area and the consent distances around its workings. Seasonal crops below 2 m may still be grown in a ZESCO wayleave, and the land beside the strip goes on being farmed and lived on. That is why structures appear in wayleaves between inspections, and why the records matter.
 
 | Strip | The rule | Width or distance |
 |---|---|---|
@@ -141,7 +141,7 @@ A request to the owner under s.26, then the planning authority; for a railway st
 :::step{title="Respect protected sites"}
 Know which of your corridors and installations are declared protected, work there only with the operator's authority, and mask security sites.
 :::
-:::step{title="Keep personal data in Zambia"}
+:::step{title="Personal data under s.70"}
 Registration with the Data Protection Commission, storage under s.70, and names kept apart from the structure register.
 :::
 :::

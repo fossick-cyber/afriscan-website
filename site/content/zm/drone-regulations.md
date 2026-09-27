@@ -302,8 +302,8 @@ Drones bought in Zambia come only from ZCAA-approved resellers (18.1.7). A drone
 :::card{title="Security sites masked" icon="lock"}
 Cap. 125 s.9 lets the Minister order an occupier to safeguard information about a protected place or area, and the State Security Act covers records made for prejudicial purposes. Deliverables leave protected and security sites out unless the occupier authorises otherwise.
 :::
-:::card{title="Personal data stays in Zambia" icon="shield"}
-Imagery of homes linked to names, census lists or grievance files is personal data under the [Data Protection Act 2021](https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%203%20The%20Data%20Protection%20Act%202021_0.pdf): registration with the Data Protection Commission (s.19), storage in Zambia (s.70), transfers only on the s.71 conditions and breach notice to the Commissioner within 24 hours (s.49).
+:::card{title="Personal data and storage in Zambia" icon="shield"}
+Imagery of homes linked to names, census lists or grievance files is personal data under the [Data Protection Act 2021](https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%203%20The%20Data%20Protection%20Act%202021_0.pdf): registration with the Data Protection Commission (s.19), storage in Zambia unless an exception applies (s.70), transfers only on the s.71 conditions and breach notice to the Commissioner within 24 hours (s.49).
 :::
 :::
 

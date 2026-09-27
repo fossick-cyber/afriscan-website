@@ -42,7 +42,7 @@ faq:
   - q: Do you detect vandalism or theft on lines and pipelines?
     a: No. Satellites cannot see theft, vandalism or people. We map land change, such as new structures, fresh excavations, cleared ground and new tracks, so your patrols know where to look first.
   - q: How is personal data handled under the Data Protection Act?
-    a: Our registers describe structures, not people, and carry no names. Imagery of homes becomes personal data once it is linked to names, census lists or grievance files, and the Data Protection Act 2021 then requires registration and storage in Zambia unless an exception applies. Each proposal sets out the controller and processor roles, where project data will be stored and how results are shared. See [working with AfriScan in Zambia](/zm/procurement#data).
+    a: Our registers describe structures, not people, and carry no names. Imagery of homes linked to names, census lists or grievance files is personal data under the Data Protection Act 2021, which requires registration and storage in Zambia unless an exception applies; whether any other layer is personal data for your project is for your data protection officer or counsel. Each proposal sets out the controller and processor roles, where project data will be stored and how results are shared. See [working with AfriScan in Zambia](/zm/procurement#data).
   - q: Is the register a land survey?
     a: No. The Land Survey Act requires the Surveyor-General's written permission before aerial photography is used for land survey, and our registers are not land surveys or cadastral plans. They are monitoring and planning records built from imagery, which show your surveyors and wayleave officers where to look.
 ---
@@ -174,7 +174,7 @@ The six approvals, the 2026 circulars, the 50 m rules, protected places and an 1
 ::::section{id="working-with-us" eyebrow="For procurement and compliance teams" title="Tenders, local content and data"}
 :::::columns{split="1-1"}
 ::::col
-Public tenders in Zambia limit open national bidding to citizen and local bidders, mining companies must reserve a growing share of their procurement for local companies under SI 68 of 2025, and the Data Protection Act 2021 requires personal data to be processed and stored in Zambia, with narrow exceptions. Our notes set out what applies to this kind of service, where the main public buyers advertise, and what to ask any supplier for.
+Public tenders in Zambia limit open national bidding to citizen and local bidders, mining companies must reserve a growing share of their procurement for local companies under SI 68 of 2025, and the Data Protection Act 2021 requires personal data to be processed and stored in Zambia, with exceptions the Minister may prescribe. Our notes set out what applies to this kind of service, where the main public buyers advertise, and what to ask any supplier for.
 
 [Working with AfriScan in Zambia](/zm/procurement)
 ::::
