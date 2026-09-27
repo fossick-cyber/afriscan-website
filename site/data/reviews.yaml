@@ -43,14 +43,16 @@ pending:
   # native_fr_cd: every fr-CD page, for a native Congolese French reviewer.
   # owner decision 2026-09-27: publish before review
   native_fr_cd:
-    - /cd/fr/
-    - /cd/fr/concessions-minieres
-    - /cd/fr/contact
-    - /cd/fr/corridors-ferroviaires-et-routiers
-    - /cd/fr/emprises-lignes-electriques
-    - /cd/fr/loi-sur-les-drones
-    - /cd/fr/reinstallation-date-butoir
-    - /cd/fr/sous-traitance
+    owner_decision: 2026-09-27
+    pages:
+      - /cd/fr/
+      - /cd/fr/concessions-minieres
+      - /cd/fr/contact
+      - /cd/fr/corridors-ferroviaires-et-routiers
+      - /cd/fr/emprises-lignes-electriques
+      - /cd/fr/loi-sur-les-drones
+      - /cd/fr/reinstallation-date-butoir
+      - /cd/fr/sous-traitance
   counsel:
     /mz/drone-regulations: Mozambican counsel
     /mz/pt/lei-de-drones: Mozambican counsel
@@ -59,8 +61,8 @@ pending:
     /za/drone-regulations: South African aviation counsel
     /ng/drone-regulations: Nigerian counsel, after NCAA answers the four written questions on its conflicting figures
     # owner decision 2026-09-27: publish before review
-    /cd/fr/loi-sur-les-drones: DR Congo counsel
-    /cd/drone-regulations: DR Congo counsel
-    /cd/fr/sous-traitance: DR Congo counsel
-    /cd/subcontracting: DR Congo counsel
-    /cd/fr/emprises-lignes-electriques: DR Congo counsel
+    /cd/fr/loi-sur-les-drones: {reviewer: DR Congo counsel, owner_decision: 2026-09-27}
+    /cd/drone-regulations: {reviewer: DR Congo counsel, owner_decision: 2026-09-27}
+    /cd/fr/sous-traitance: {reviewer: DR Congo counsel, owner_decision: 2026-09-27}
+    /cd/subcontracting: {reviewer: DR Congo counsel, owner_decision: 2026-09-27}
+    /cd/fr/emprises-lignes-electriques: {reviewer: DR Congo counsel, owner_decision: 2026-09-27}

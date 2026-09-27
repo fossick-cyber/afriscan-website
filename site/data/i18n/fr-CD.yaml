@@ -29,6 +29,18 @@ region:
   label: Site pays
   choose: Choisir un site pays
   current: Vous êtes ici
+  # À décommenter à la fusion avec la branche gw-core, qui ajoute ces clés à en.yaml (la construction
+  # d'aujourd'hui exige les mêmes clés dans chaque fichier ; celle de gw-core accepte leur absence).
+  # stay: Rester sur ce site
+  # banner: "Vous êtes en {country} ? Consultez notre site pour ce pays."
+
+# Titres des régions (sélecteur de pays, menu Pays, /countries), eux aussi à décommenter à la fusion.
+# regions:
+#   Southern: Afrique australe
+#   East: Afrique de l'Est
+#   West: Afrique de l'Ouest
+#   Central: Afrique centrale
+#   North: Afrique du Nord
 
 cta:
   title: Sachez ce qui se trouve dans votre emprise avant que cela ne devienne un litige.
@@ -142,7 +154,7 @@ form:
   submit: Envoyer la demande
   sending: Envoi en cours…
   success: Merci. Votre demande a bien été envoyée ; nous vous répondrons par e-mail.
-  error: Impossible d'envoyer votre demande pour le moment. Nouvel essai par un autre moyen…
+  error: Impossible d'envoyer votre demande pour le moment. Nouvelle tentative par un autre moyen…
   privacy: Votre demande nous parvient par FormSubmit, un service d'acheminement de formulaires.
   privacy_link: Lire l'avis de confidentialité (en anglais).
   honeypot: Laissez ce champ vide

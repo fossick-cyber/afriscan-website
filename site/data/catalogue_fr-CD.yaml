@@ -47,6 +47,15 @@ solution_groups:
   change: "Changements et environnement"
   capture: "Drones, images et détection sur mesure"
 
+service_groups:
+  structures: "Constructions dans les emprises et les périmètres"
+  change: "Changements et relevés périodiques"
+  features: "Détection d'éléments précis"
+  terrain: "Relief, eau et zones de danger"
+  baselines: "États initiaux fonciers et sociaux"
+  capture: "Drones et images"
+  delivery: "Rapports et livraison"
+
 solutions:
   right-of-way-monitoring:
     name: "Suivi des emprises et des servitudes"
