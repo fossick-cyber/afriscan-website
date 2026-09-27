@@ -30,7 +30,7 @@ faq:
   - q: Can you produce the crop identification map?
     a: No. Act 703 s.72(5) asks the lease holder to survey the crops and produce the crop identification map in the presence of the occupier and the land-valuation agency. We can supply a dated land-cover layer, showing cropland, tree cover and built-up land, to help plan that survey.
   - q: How do you work with local-content rules on a mine?
-    a: The Minerals Commission's list reserves ground-based survey and mapping for mines to firms incorporated in Ghana with exclusively Ghanaian directors and shareholders. On a mining lease, AfriScan therefore works as the technology supplier to a qualifying Ghanaian firm, which holds the contract with you. Tell us if you already work with one.
+    a: Item 35 of the Minerals Commission's list, "Geophysical Ground-based Survey; Mapping, Pitting and Trenching", is reserved to firms incorporated in Ghana with exclusively Ghanaian directors and shareholders. Whether it reaches remote satellite analysis is a question for counsel, so on a mining lease AfriScan works as the technology supplier to a qualifying Ghanaian firm, which holds the contract with you. Tell us if you already work with one.
 cta:
   title: Send your lease boundary
   text: "Send the lease or concession boundary (Shapefile, GeoPackage, KML or GeoJSON), the ring you want around it, the dates the record should cover and what it is for: an expansion, a renewal, a cut-off date or reclamation. We reply with a scope, an imagery plan and a written proposal."
@@ -128,7 +128,7 @@ Each structure in the register is placed in one of three groups: inside the leas
 ::::col
 Galamsey leaves marks that imagery can show: pits and trenches, spoil heaps, water-filled excavations and washing sites, cleared ground, new footpaths and tracks, and discoloured water in the streams and rivers downstream. We map them inside your lease and around it, flag new sites between dated surveys, and give your land, environment and community teams a ranked list of places to check.
 
-Detection of pits and spoil is tuned and checked on part of your area before it runs on the rest, and every flagged site is confirmed by a reviewer. Global ground-disturbance alerts add a regular screen between surveys, and when cloud hides the ground, radar comparisons show larger changes, such as clearing and earthworks, even under rainy-season cloud. Drone checks of flagged areas capture more detail, subject to the GCAA authorisations and security clearances each job requires.
+Detection of pits and spoil is tuned and checked on part of your area before it runs on the rest, and every flagged site is confirmed by a reviewer. Ground-disturbance alerts from Global Forest Watch add a regular screen between surveys; an alert is an indication to check, not proof, and it will not catch every disturbance. When cloud hides the ground, radar comparisons from Copernicus Sentinel-1 data show larger changes, such as clearing and earthworks, even under rainy-season cloud, but not individual small structures, so flagged areas are followed up with optical imagery or drone checks. Drone checks capture more detail, subject to the GCAA authorisations and security clearances each job requires.
 ::::
 ::::col
 :::callout{tone="scope" title="Land and water, never people"}
@@ -142,7 +142,7 @@ We describe the ground: where it has been dug, cleared or flooded, when it chang
 ::::
 
 ::::section{id="forest-and-water" eyebrow="Forest reserves and river buffers" title="The edges that environmental permits care about"}
-Many leases border forest reserves or are crossed by rivers. We map where tree cover has been lost or has regrown along a reserve edge, where the ground beside a river has been cleared or dug, and how land cover inside your buffer zones changes between dates, from Copernicus Sentinel data and, where they exist, very-high-resolution scenes. Forest-loss alerts from global satellite systems are checked by our team before they reach you.
+Many leases border forest reserves or are crossed by rivers. We map where tree cover has been lost or has regrown along a reserve edge, where the ground beside a river has been cleared or dug, and how land cover inside your buffer zones changes between dates, from Copernicus Sentinel data and, where they exist, very-high-resolution scenes. Regular forest-loss alerts from Global Forest Watch are checked by our team before they reach you; they are indications to check, not proof, and will not catch every change.
 
 The Environmental Assessment Regulations 2025 (L.I. 2504) list forest reserves, water bodies and sacred groves among the features a baseline location map must show, so the same layers feed your environmental permit work.
 

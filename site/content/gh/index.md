@@ -42,7 +42,7 @@ faq:
   - q: Can the register be shared with chiefs, the District Assembly or the people along the line?
     a: That is your decision. A neutral, dated map of what stood where is often the starting point for engagement with traditional authorities and communities, for compensation processes and for grievance handling. We never publish maps of your assets or of the settlements around them without your written permission.
   - q: Do you work through Ghanaian firms?
-    a: Where the rules call for it, yes. On mining leases, the Minerals Commission's Local Procurement List reserves mapping for mines to firms incorporated in Ghana with exclusively Ghanaian directors and shareholders, so AfriScan works there as the technology supplier to a qualifying Ghanaian firm, which holds the contract. Where your own survey team already flies drones, we run our analysis on its imagery. [Working with AfriScan in Ghana](/gh/working-with-afriscan) sets out the rules.
+    a: Where the rules call for it, yes. On mining leases, item 35 of the Minerals Commission's Local Procurement List, "Geophysical Ground-based Survey; Mapping, Pitting and Trenching", is reserved to firms incorporated in Ghana with exclusively Ghanaian directors and shareholders. Whether it reaches remote satellite analysis is a question for counsel, so AfriScan works there as the technology supplier to a qualifying Ghanaian firm, which holds the contract. Where your own survey team already flies drones, we run our analysis on its imagery. [Working with AfriScan in Ghana](/gh/working-with-afriscan) sets out the rules.
 ---
 
 ::::section{tone="dark" class="home-strip"}
@@ -169,12 +169,12 @@ The GCAA approvals, the five-phase certification path, the no-fly zones, the rul
 ::::section{id="working-in-ghana" tone="alt" eyebrow="For procurement and compliance teams" title="Local content, supplier registration and data protection"}
 :::::columns{split="1-1"}
 ::::col
-Mining contracts in Ghana follow the Minerals Commission's Local Procurement List, which reserves ground-based survey and mapping for mines to firms incorporated in Ghana with exclusively Ghanaian directors and shareholders. Upstream petroleum service companies need a Petroleum Commission permit, public buyers procure through GHANEPS, and organisations that process personal data register with the Data Protection Commission. Our notes set out what each rule means for mapping and drone work, and what to ask any supplier for.
+Mining contracts in Ghana follow the Minerals Commission's Local Procurement List, which reserves "Geophysical Ground-based Survey; Mapping, Pitting and Trenching" (item 35) to firms incorporated in Ghana with exclusively Ghanaian directors and shareholders; whether that reaches remote satellite analysis is a question for counsel. Upstream petroleum service companies need a Petroleum Commission permit, public buyers procure through GHANEPS, and organisations that process personal data register with the Data Protection Commission. Our notes set out what each rule means for mapping and drone work, and what to ask any supplier for.
 
 [Working with AfriScan in Ghana](/gh/working-with-afriscan)
 ::::
 ::::col
-We respond to tenders, RFQs and requests for proposals. Send your supplier or prequalification forms with your request; the proposal states which registrations are in place for your contract, which are being arranged, and which Ghanaian firm holds the contract where local-content rules require one.
+We respond to tenders, RFQs and requests for proposals. Send your supplier or prequalification forms with your request; the proposal names the company that holds each registration your contract needs, and the Ghanaian firm that holds the contract where local-content rules require one.
 
 [How we work](/how-we-work) · [Send tender documents](/gh/contact?intent=tender&country=gh)
 ::::
@@ -184,7 +184,7 @@ We respond to tenders, RFQs and requests for proposals. Send your supplier or pr
 ::::section{id="field-scope" eyebrow="Where we send people" title="Remote first, and field work only where it is safe"}
 :::::columns{split="2-1"}
 ::::col
-Most of our work in Ghana needs no one on site. Where a ground check or a drone flight is planned, we do not send field teams or fly in the areas covered by the UK and US governments' travel warnings: the Bawku Municipal area and the North East Region, the northern border areas of the Upper East and Upper West regions, and the Savannah Region west of the N12, including the road corridors the UK advice names. Nor do we send crews or drones to sites where enforcement operations are under way.
+Most of our work in Ghana needs no one on site. Where a ground check or a drone flight is planned, we do not send field teams or fly in the areas covered by the UK and US governments' travel warnings: the Bawku Municipal area and the North East Region; the Nasia–Walewale–Bolgatanga and Bolgatanga–Zebilla–Bawku–Pulmankom roads and their corridors, which the UK advice names; the northern border areas of the Upper East and Upper West regions; and the Savannah Region west of the N12. Nor do we send crews or drones to sites where enforcement operations are under way.
 ::::
 ::::col
 :::callout{tone="scope" title="Ask about satellite-only work"}

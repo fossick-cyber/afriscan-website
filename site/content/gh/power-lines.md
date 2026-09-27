@@ -28,7 +28,7 @@ faq:
   - q: Can a drone survey the line instead?
     a: Only with a special authorisation, because Part 28 of the Ghana Civil Aviation Directives lists areas of high radio interference, such as high-tension wires, among the operations that need one. Flights within 30 m of buildings, vehicles or groups of people also need explicit permission. A satellite register comes first, and drone checks follow on the stretches that need them, subject to the GCAA authorisations and security clearances each job requires.
   - q: Can you show vegetation growing into the right of way?
-    a: Yes. We map where vegetation has regrown or been cleared inside the corridor between dates, and where tall vegetation stands, from drone elevation models where flown and open canopy-height data elsewhere. Burnt areas after bush fires are mapped from satellite data too.
+    a: Yes. We map where vegetation has regrown or been cleared inside the corridor between dates, and where tall vegetation stands, from drone elevation models where flown and open canopy-height data elsewhere. The open data is older in places, so a drone survey gives the current picture, and none of it is a measured clearance to a conductor. Burnt areas after bush fires are mapped from satellite data too.
   - q: Can the register support compensation claims?
     a: "It supports them with a neutral, dated record: which structures stood inside the strip on which imagery date, and which appeared later. Who is entitled to compensation, and how much, is decided by the line owner, valuers and the process the law sets out; the register does not settle ownership, use or value."
 cta:
@@ -114,9 +114,9 @@ We map land, not people. We do not produce lists of occupants, identify anyone o
 ::::section{id="vegetation-fire" eyebrow="Vegetation and bush burning" title="Where the corridor has regrown, and where it has burnt"}
 :::::columns{split="1-1"}
 ::::col
-We map where vegetation inside the corridor has been cleared or has regrown between dates, from Copernicus Sentinel data and very-high-resolution scenes, and where tall vegetation stands close to the conductors, from drone elevation models where flown and open canopy-height data elsewhere. The results come as layers your vegetation-management contractors can use to plan clearing by stretch.
+We map where vegetation inside the corridor has been cleared or has regrown between dates, from Copernicus Sentinel data and very-high-resolution scenes, and where tall vegetation stands close to the conductors, from drone elevation models where flown and open canopy-height data elsewhere. The open data is older in places, so a drone survey gives the current picture, and none of it is a measured clearance to the conductors. The results come as layers your vegetation-management contractors can use to plan clearing by stretch.
 
-Satellite-detected fire hotspots near the line are passed on as notices, and burnt areas are mapped after the fire, so the line team knows which stretches to inspect.
+Satellite-detected fire hotspots from NASA FIRMS, filtered to the buffers around the line and checked by a reviewer, are passed on as notices, and burnt areas are mapped after the fire, so the line team knows which stretches to inspect. The notices are not an emergency or early-warning service, and small, short-lived or cloud-covered fires can be missed.
 ::::
 ::::col
 :::solutions{keys="vegetation-land-cover-fire" cols="1"}

@@ -25,14 +25,14 @@ faq:
   - q: Who holds the contract on a mining lease?
     a: A firm incorporated in Ghana with exclusively Ghanaian directors and shareholders, as item 35 requires, holds the contract with the lease holder. AfriScan supplies the imagery analysis, the reviewed registers and the GIS layers to that firm. If you already work with a qualifying Ghanaian survey or GIS firm, tell us in your request.
   - q: Which registrations do you hold in Ghana?
-    a: The proposal for your contract states which registrations are in place for it, which are being arranged, and which company holds each one, whether that is supplier registration on GHANEPS or the PPA Supplier Portal, a Petroleum Commission permit, Data Protection Commission registration or a drone operator certificate. Ask for the evidence with the proposal.
+    a: None yet. AfriScan does not hold any Ghanaian registration, permit or aviation approval today; registration is being worked towards, and Afridrone is working towards the GCAA authorisations that drone work in Ghana needs. For each contract, the proposal names the company that holds each registration the contract needs, such as supplier registration on GHANEPS or the PPA Supplier Portal, a Petroleum Commission permit or Data Protection Commission registration, and, for any drone element, the Ghana-registered company whose GCAA ROC covers the flights. Ask for the evidence with the proposal.
   - q: Can you work under an upstream petroleum contract?
     a: Service companies working for upstream operators need a Petroleum Commission permit before operations start. For an upstream contract, the proposal states which company holds the permit and contracts with you. The Commission's local-content guidance lists joint ventures, channel partnerships and strategic alliances among the routes for local participation.
   - q: Where are imagery and results processed and stored?
     a: The proposal and the data terms say so for your project, including any country outside Ghana to which data is transferred, because the Data Protection Commission's registration asks for exactly that. Registers record structures and coordinates, not names.
 cta:
   title: Preparing a tender or a supplier file?
-  text: Send the tender or RFQ documents, the deadline and your supplier forms. The proposal answers each requirement and states which registrations are in place for your contract.
+  text: Send the tender or RFQ documents, the deadline and your supplier forms. The proposal answers each requirement and names the company that holds each registration your contract needs.
   button: Request a proposal
   intent: tender
 ---
@@ -46,7 +46,7 @@ On a mining lease, a Ghanaian firm that meets the local procurement list's owner
 The Petroleum Commission permit for upstream work, and an environmental permit where the project itself is an undertaking listed in L.I. 2504.
 :::
 :::card{title="Where is the supplier registered?" icon="clipboard"}
-GHANEPS for government procurement, the PPA Supplier Portal, and company registration with GIPA where a foreign-owned enterprise is involved.
+GHANEPS for government procurement, the PPA Supplier Portal, and company registration with GIPA, renewed every year.
 :::
 :::card{title="Who flies the drone?" icon="drone"}
 If the scope includes drone work, a company registered in Ghana whose GCAA ROC and Operations Specifications cover the job.
@@ -104,7 +104,7 @@ Public bodies buy under the Public Procurement Act 2003 (Act 663), as amended by
 ::::col
 State utilities and agencies publish their own adverts and tenders as well. Tell us the portal, the tender reference and the prequalification category your process uses, and send any supplier forms with your request.
 
-We respond to tenders, RFQs and requests for information; the proposal states which registrations are in place for your contract and which are being arranged.
+We respond to tenders, RFQs and requests for information; the proposal names the company that holds each registration your contract needs.
 ::::
 :::::
 ::::
@@ -153,7 +153,7 @@ Aerial and satellite imagery of homes and compounds can contain personal data. T
 :::
 ::::
 ::::col
-Tell us which registrations and certificates your process requires, and the reference of the tender or RFQ. The proposal answers each requirement in writing and states which registrations are in place for your contract and which are being arranged.
+Tell us which registrations and certificates your process requires, and the reference of the tender or RFQ. The proposal answers each requirement in writing and names the company that holds each registration your contract needs.
 
 [Send tender documents](/gh/contact?intent=tender&country=gh) · [How we work](/how-we-work) · [Mining leases in Ghana](/gh/mining-concessions)
 ::::

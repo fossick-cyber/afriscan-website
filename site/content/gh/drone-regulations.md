@@ -73,7 +73,7 @@ Explicit permission for flights within 30 m of buildings, vehicles or groups of 
 | **NCA**, National Communications Authority | Approval where a drone does not use the standard 2.4 or 5.8 GHz control frequencies | [GCAA RPAS FAQs](https://www.gcaa.com.gh/web/wp-content/uploads/2023/RPAS/RPAS%20FAQs.pdf), Q9–10 |
 | **Ghana Customs** (Ghana Revenue Authority) | Clears an imported drone on the GCAA's Clearance Authorization Letter | [AC 28-12](https://www.gcaa.com.gh/web/wp-content/uploads/2025/RPAS/AC%2028-12%20-%20RPAS%20IMPORTATION%20PROCESS%20-%20Clean.pdf), §4.1C |
 | **Data Protection Commission** | Registration of anyone processing personal data in Ghana, including foreign companies | [DPC registration](https://dpc.gov.gh/registration/); Act 843, s.27(1) |
-| **Minerals Commission** | The local procurement list that governs who may do mapping and survey work for mines | [6th-edition list](https://www.mincom.gov.gh/wp-content/uploads/2025/02/Local-Content-Sixth-Edition-2025.pdf), items 35 and 36 |
+| **Minerals Commission** | The local procurement list, whose items 35 and 36 set Ghanaian-ownership conditions for the survey and mapping services they name | [6th-edition list](https://www.mincom.gov.gh/wp-content/uploads/2025/02/Local-Content-Sixth-Edition-2025.pdf), items 35 and 36 |
 | **Petroleum Commission** | Permits for service companies working in upstream petroleum | [Permit requirements](https://petrocom.gov.gh/initial-registration-permit/) |
 
 Applications to the GCAA go to the Director-General, for the attention of the Director, Safety Regulation (AC 28-12, §4.1A).
