@@ -61,7 +61,7 @@ Part XI of the Land Act lets the Minister create public rights of way. One creat
 
 ## Village land {#village-land}
 
-Much of the land corridors cross is village land under the Village Land Act, Cap. 114. The President may transfer village land to general or reserved land "for public interest", which "shall include investments, of national interest" (s.4):
+Where a corridor crosses village land, the Village Land Act, Cap. 114, applies. The President may transfer village land to general or reserved land "for public interest", which "shall include investments, of national interest" (s.4):
 
 - the Minister gazettes a notice with a date at least 90 days away, and the village council informs the villagers affected;
 - representations may be made;

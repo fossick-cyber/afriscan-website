@@ -58,8 +58,6 @@ Whether a plot was inside the reserve when it was granted, and when a structure 
 ::::
 
 ::::section{id="law" tone="alt" eyebrow="The law in Tanzania" title="Reserve widths set in law" lead="A summary of the public rules as of 27 September 2026, for orientation. It is not legal advice; our wayleave-law guide has the detail and the sources."}
-:::::columns{split="2-1"}
-::::col
 | Reserve | Width and rule | Source |
 |---|---|---|
 | Road reserve (*hifadhi ya barabara*) | "Exclusive for the use of road development and expansion"; other uses must not hinder future road use | [Roads Act, 2007, Cap. 167](https://tanzlii.org/en/akn/tz/act/2007/13/eng@2021-07-14), s.29(1) |
@@ -68,12 +66,18 @@ Whether a plot was inside the reserve when it was granted, and when a structure 
 | Railway strip | No farming, building, structures or works without authority | Railways Act, s.27 |
 | Sidings and bridges | A 30 m sidings reserve; bridge reserves of 60 m from the bank edge either side and 200 m from the structure centre | Railways Act, Second Schedule |
 
-**Check the road width before you rely on it.** A Roads Management (Amendment) Regulations, 2025 (GN 528 of 2025) is listed on TanzLII. We measure against the width you confirm for your road class.
+:::::columns{split="1-1" align="center"}
+::::col
+:::figure{src="diagrams/tz-reserves" alt="Plan-view schematic, drawn to one scale, of a trunk road and a railway: each has a shaded reserve of 30 m on either side of its centre line, and square markers stand for structures, red inside the reserve and teal outside" caption="A trunk-road reserve and a railway reserve, drawn to one scale" credit="Schematic drawn by AfriScan for illustration; the structures are invented." size="half"}
+<span class="band band--a">Inside the reserve</span> <span class="band band--c">Outside</span>
+:::
 ::::
 ::::col
-:::figure{src="diagrams/tz-reserves" alt="Plan-view schematic, drawn to one scale, of a trunk road and a railway: each has a shaded reserve of 30 m on either side of its centre line, and square markers stand for structures, red inside the reserve and teal outside" caption="A trunk-road reserve and a railway reserve, drawn to one scale" credit="Schematic drawn by AfriScan for illustration; the structures are invented." size="full"}
-Each reserve runs 30 m either side of the centre line: the road reserve under the Roads Management Regulations, 2009 for trunk and regional roads, and the railway reserve under the Railways Act, s.3. <span class="band band--a">Inside the reserve</span> <span class="band band--c">Outside</span>
-:::
+### Measured from the centre line {#centre-line}
+
+Both reserves run 30 m either side of the centre line: the road reserve under the Roads Management Regulations, 2009 for trunk and regional roads, and the railway reserve under the Railways Act, s.3. The register measures each structure's distance from the centre line you supply and reports whether it falls inside the reserve or in an outer band you set.
+
+**Check the road width before you rely on it.** A Roads Management (Amendment) Regulations, 2025 (GN 528 of 2025) is listed on TanzLII. We measure against the width you confirm for your road class, and against any wider reserve set for a particular road.
 ::::
 :::::
 ::::
@@ -81,7 +85,7 @@ Each reserve runs 30 m either side of the centre line: the road reserve under th
 ::::section{id="dates" eyebrow="Why dates decide reserve cases" title="What the courts have looked at"}
 :::::columns{split="1-1"}
 ::::col
-**Roads.** In a 2022 case, as summarised on TanzLII, the High Court held a demolition within the statutory road reserve lawful, and held that title documents and permits did not displace the reserve ([2022] TZHCLandD 282). The statute, not the paperwork, fixed the reserve.
+**Roads.** In a 2022 case, as summarised on TanzLII, the High Court held a demolition within the statutory road reserve lawful, and held that title documents and permits did not displace the reserve ([2022] TZHCLandD 282). On that summary, the statutory reserve prevailed over the paperwork.
 
 **Railways.** A 2023 High Court decision that occupants within the railway reserve were trespassers, not entitled to compensation, is under appeal (Civil Appeal No. 61 of 2024). In 2021 the Court of Appeal held that the land-allocating authority must be joined where the validity of a title and its inclusion in the railway reserve are in issue ([2021] TZCA 198). Neither settles the compensation question.
 ::::
