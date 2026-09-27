@@ -72,15 +72,15 @@ ZETDC's Client Charter asks the public to "Report any vandalism, damage and thef
 ::::section{id="clearances" tone="alt" eyebrow="The clearances" title="The S.I. 177 wayleave clearances, and the mining setbacks beside them"}
 The Electricity (Public Safety) Regulations, 2018 (S.I. 177 of 2018) set the clearances in their Fourth Schedule, "Wayleave Clearance (m) either side from the outermost conductor". Placing an object, carrying on a business or activity, farming or building inside them needs the written authorisation of the distributor responsible for the energised conductor (s.9(1)–(2)), and a contravention carries a fine of up to level 5 ([S.I. 177 of 2018](https://www.veritaszim.net/node/3234)).
 
-| Voltage | Wayleave clearance, either side of the outermost conductor | No prospecting or mining within, from the centre line (Mines and Minerals Act s.34(8)) |
+| Voltage | Wayleave clearance (S.I. 177) | Mining setback (s.34(8)) |
 |---|---|---|
-| 11 kV and 22 kV | 5 m | 10 m |
+| 11 and 22 kV | 5 m | 10 m |
 | 33 kV | 7.5 m | 10 m |
-| 66 kV and 88 kV | 15 m | 25 m |
+| 66 and 88 kV | 15 m | 25 m |
 | 132 kV | 15 m | 25 m |
-| 330 kV and 400 kV | 30 m | 40 m |
+| 330 and 400 kV | 30 m | 40 m |
 
-The two rules are measured differently. The wayleave clearance runs from the outermost conductor, so the strip on the ground depends on the tower or pole geometry; we work from your conductor positions, your tower types or your wayleave polygons rather than a single width from the centre line. The mining setback runs from the centre line, and the Act adds 10 m around pole- or ground-mounted transformers under 300 kVA and 25 m around other transformers, substations and electrical equipment or buildings ([Mines and Minerals Act](https://web.archive.org/web/20251006131822/https://zimlii.org/akn/zw/act/1961/38/eng@2016-12-31)).
+The two rules are measured differently. The wayleave clearance runs either side of the outermost conductor, so the strip on the ground depends on the tower or pole geometry; we work from your conductor positions, your tower types or your wayleave polygons rather than a single width from the centre line. The Mines and Minerals Act's setback, within which no prospecting or mining may take place, runs from the centre line, and the Act adds 10 m around pole- or ground-mounted transformers under 300 kVA and 25 m around other transformers, substations and electrical equipment or buildings ([Mines and Minerals Act](https://web.archive.org/web/20251006131822/https://zimlii.org/akn/zw/act/1961/38/eng@2016-12-31)).
 
 :::callout{tone="legal" title="Checked 27 September 2026"}
 The clearances were read from the gazetted page of S.I. 177 of 2018, whose Arrangement of Sections calls the table the Third Schedule. The Electricity Act's own provisions on wayleave acquisition were not available to us, so we do not summarise them. This is a summary, not legal advice.
@@ -158,7 +158,7 @@ Dated scenes either side of a clearing campaign, so the record shows which spans
 ::::col
 High-voltage transmission lines are First Schedule projects under the Environmental Management Act and need an EMA certificate before they are built (s.97). Lender-financed work adds its own requirements. The terms of reference ZETDC published in May 2026 for World Bank-funded solar site studies scope an ESIA, a resettlement action plan where needed and technical studies "for at least two (2) Solar PV plants including the right of way for the grid connection". Where a plan is needed, they ask for cut-off dates, the approximate number of affected structures, photographs and GIS coordinates of each potentially affected entity, and the use of aerial photos and satellite imagery, and they want a qualified land surveyor to sign off the topographic survey ([ZETDC terms of reference](https://www.zetdc.co.zw/wp-content/uploads/2026/05/Terms-of-Reference-ToR_Environmental-Social-and-Tecvhnical-Site-Studies_ZREP-TA-Project.pdf)).
 
-For a new line or connection we compare the structures along alternative alignments, screen slope, drainage crossings and flood exposure, and pull the imagery history of contested parcels. Once the route is fixed, a dated register supports landowner engagement and the cut-off-date records; it does not replace the census, and it is not the certified topographic survey.
+For a new line or connection we compare the structures along alternative alignments, screen slope, drainage crossings and flood exposure, and pull the imagery history of contested parcels. Once the route is fixed, a dated register supports landowner engagement and the cut-off-date records; it does not replace the census or stand in for the topographic survey.
 
 Rehabilitation programmes change the network too: the Ministry of Energy and Power Development reports AfDB-funded rehabilitation of transmission and distribution in the Midlands and Manicaland ([Ministry, December 2025](https://www.energy.gov.zw/?p=2212)). A baseline taken before the works, and a survey after them, show what changed inside the wayleave.
 ::::

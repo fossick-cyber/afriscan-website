@@ -5,7 +5,7 @@ title: Wayleave & Pipeline Reserve Mapping in Zimbabwe | AfriScan
 description: Structures, excavations and land change mapped in power-line wayleaves, pipeline reserves, rail and road reserves and mining locations in Zimbabwe.
 h1: Know what is being built inside your wayleaves, reserves and mining locations
 eyebrow: AfriScan · Zimbabwe · Wayleaves, reserves and mining land
-lead: We map structures, excavations, cleared ground and new tracks along power lines, pipelines, railways and roads, and across mining locations and project sites in Zimbabwe. Each structure gets coordinates and its distance to your line or boundary, each 500 m of route gets an encroachment-density rating, and dated surveys show what is new. Satellite first, and a person reviews every result before the PDF report and GIS files reach your wayleave, land and community teams.
+lead: We map structures, excavations, cleared ground and new tracks along power lines, pipelines, railways and roads, and across mining locations and project sites in Zimbabwe. Each structure gets coordinates and its distance to your line or boundary, each 500 m of route gets an encroachment-density rating, and dated surveys show what is new. Satellite first, and a person reviews every result before it reaches your teams.
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: See sample outputs, key: results}
@@ -15,7 +15,7 @@ hero:
   credit: "Our published sample is from Mozambique: the route of a high-pressure gas pipeline, with its 100 m band, on a Copernicus Sentinel-2 scene of 2 August 2026. Contains modified Copernicus Sentinel data 2026."
   chips:
     - {title: "5 m to 30 m", text: "S.I. 177 wayleave clearances, 11 kV to 400 kV"}
-    - {title: "125 m", text: "No mining or blasting either side of a pipeline"}
+    - {title: "125 m", text: "Either side of a pipeline: no mining or blasting"}
     - {title: "Every 500 m", text: "Rated for encroachment density"}
 service:
   name: Wayleave, pipeline-reserve and mining-location surveys in Zimbabwe
@@ -174,7 +174,7 @@ Imagery of prohibited or protected places is never published, and nothing about 
 ::::col
 **Satellite and your own imagery.** A survey starts from your route or boundary file and dated satellite imagery, open building datasets or the orthophotos you already hold. No one travels and no aircraft flies, however long the line, so the survey covers the whole route before anyone decides where to send a team.
 
-**Drone detail.** Commercial drone work in Zimbabwe needs CAAZ approvals for the operator, each aircraft and each pilot, an Air Services Permit, written approvals from landowners and local authorities, and the security clearances CAAZ's application refers to. Drone surveys are subject to the CAAZ approvals and security clearances each operation requires. Afridrone is working towards the approvals Zimbabwe requires, and every drone proposal names the company that will fly and its approvals.
+**Drone detail.** Where a stretch needs more detail than satellite shows, drone surveys are subject to the CAAZ approvals and security clearances each operation requires. In Zimbabwe that means CAAZ approvals for the operator, each aircraft and each pilot, an Air Services Permit, written approvals from landowners and local authorities, and the security clearances CAAZ's application refers to. Afridrone is working towards the approvals Zimbabwe requires, and every drone proposal names the company that will fly and its approvals.
 
 **Imagery you already fly.** CAAZ's 2025 annual report records 54 drones over 2 kg registered that year. If your team or a Zimbabwean contractor already flies your assets, send the orthophotos: we run the structure, change and corridor analysis on them.
 ::::
