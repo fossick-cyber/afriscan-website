@@ -113,7 +113,7 @@ Cada construção é medida até ao eixo e cada troço é classificado. O que a 
 ::::section{id="exemplo" tone="alt" eyebrow="Um exemplo real" title="O que um registo mostra: o exemplo de um gasoduto" lead="Uma revisão feita no traçado de um gasoduto de alta pressão em Moçambique, mostrada com a autorização do proprietário do traçado. As marcações aparecem sobre imagens de satélite Google, exactamente como o revisor as colocou."}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::sample-gallery{data="sample-pipeline-google" views="D" overview="false" cols="1" size="half" legend="false"}
+:::sample-gallery{data="sample-pipeline-google" views="D" overview="false" cols="1" size="half"}
 :::
 ::::
 ::::col

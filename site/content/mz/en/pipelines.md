@@ -136,7 +136,7 @@ In the dry season, *queimadas* can run up to above-ground installations such as 
 ::::section{id="sample" eyebrow="A real sample" title="What a register looks like: a sample from a gas pipeline" lead="A reviewed sample from the route of a high-pressure gas pipeline in Mozambique, shown with the route owner's permission. The marks are manual reviewer marks, shown on Google satellite imagery exactly as the reviewer placed them."}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::sample-gallery{data="sample-pipeline-google" views="D" overview="false" cols="1" size="half" legend="false"}
+:::sample-gallery{data="sample-pipeline-google" views="D" overview="false" cols="1" size="half"}
 :::
 ::::
 ::::col
