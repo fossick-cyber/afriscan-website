@@ -65,3 +65,17 @@ ng:
   label: "Nigeria"
   short: "Nigeria"
   sitemap: sitemap-ng.xml
+gh:
+  content: gh
+  prefix: /gh
+  lang: en-GH
+  hreflang: [en-GH]
+  og_locale: en_GB
+  i18n: en
+  country: GH
+  country_name: Ghana
+  label: "Ghana"
+  short: "Ghana"
+  sitemap: sitemap-gh.xml
+  status: live
+  region: West
