@@ -34,7 +34,7 @@ Every report names its imagery and, where the source provides it, the capture da
 The open datasets we use are listed below with the credit and licence text each one requires.
 :::
 :::card{title="Basemaps are not survey imagery" icon="eye"}
-Google, Bing and Esri web-map layers are used only to screen and plan. They are never delivered, and never the basis of a dated record.
+Google, Bing and Esri web-map layers are used to screen and plan, and Google's to show the pipeline sample on this site with its attribution. They are never delivered, and never the basis of a dated record.
 :::
 :::
 ::::
@@ -96,8 +96,8 @@ Orthophotos and scenes you send stay yours, and we never publish them without yo
 ::::
 
 ::::section{id="site-images" tone="alt" eyebrow="On this website" title="Images shown on this site"}
-- **The sample pipeline.** The route of a high-pressure gas pipeline in Mozambique is shown with the route owner's permission. Its reviewer marks appear only as register strip views, drawn by AfriScan from the sample register: no imagery and no coordinates. The route views and the page headers use a Copernicus Sentinel-2 scene of 2 August 2026 (contains modified Copernicus Sentinel data 2026), shown for location; at 10 m per pixel it cannot show individual structures.
-- **No map-service imagery.** No Google, Bing or Esri basemap imagery is shown on this site.
+- **The sample pipeline.** The route of a high-pressure gas pipeline in Mozambique is shown with the route owner's permission. Its reviewer marks appear as register strip views, drawn by AfriScan from the sample register, and on Google satellite imagery, the imagery the review used. No coordinates are published. The route views and the page headers use a Copernicus Sentinel-2 scene of 2 August 2026 (contains modified Copernicus Sentinel data 2026), shown for location; at 10 m per pixel it cannot show individual structures.
+- **Google imagery, for the sample only.** The sample's overview and close-ups on the [sample outputs](/results) page are on Google satellite imagery, shown with permission and credited "Imagery © Google" on each image and in its caption. Google states no capture date for this imagery, so the views show where each mark sits, not when a structure appeared. No Bing or Esri imagery is shown on this site.
 - **Schematics.** Diagrams labelled "Schematic" are drawn by AfriScan with invented geometry to explain how a register is read. They are not real routes or sites.
 - **No people.** We show no photographs that identify anyone, and no client logos.
 
