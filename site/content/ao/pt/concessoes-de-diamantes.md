@@ -49,7 +49,7 @@ Abrem-se covas e caminhos, desmata-se terreno para lavras e para novas construç
 Covas, montes de terra, escavações com água e terreno revolvido dentro e à volta da concessão, com os locais novos assinalados entre datas.
 :::
 :::card{title="Caminhos e acessos novos" icon="route"}
-Caminhos e picadas que entram na concessão ou atravessam as zonas, mapeados entre datas, para planear a gestão dos acessos e a manutenção das estradas.
+Caminhos e acessos que entram na concessão ou atravessam as zonas, mapeados entre datas, para planear a gestão dos acessos e a manutenção das estradas.
 :::
 :::card{title="Construções junto dos limites" icon="houses"}
 As construções dentro de cada zona, com a distância ao limite dos jazigos ou das instalações, e o crescimento de aldeias e bairros entre levantamentos.
