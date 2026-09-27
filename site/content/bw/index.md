@@ -1,7 +1,7 @@
 ---
 key: home
 template: country_home
-title: Servitude Encroachment Mapping in Botswana | AfriScan
+title: Servitude & Lease-Area Mapping in Botswana | AfriScan
 description: Structures, excavations and land change mapped in power-line servitudes, road reserves and mining lease areas in Botswana, reviewed by a person, as PDF and GIS.
 h1: Know what is changing inside your servitudes and lease areas in Botswana
 eyebrow: AfriScan · Botswana · Servitudes, road reserves and lease areas
@@ -14,8 +14,8 @@ hero:
   alt: Satellite view of bush and farmland in Mozambique, with the route of a high-pressure gas pipeline drawn in orange inside its 100 m band
   credit: "Our published sample is from Mozambique: the route of a high-pressure gas pipeline, with its 100 m band, on a Copernicus Sentinel-2 scene of 2 August 2026. Contains modified Copernicus Sentinel data 2026."
   chips:
-    - {title: "30 m · 15 m", text: "Typical rights of way on new 66 kV and 33 kV lines"}
-    - {title: "Grazing only", text: "No cultivation or buildings in those servitudes"}
+    - {title: "30 m · 15 m", text: "Typical rights of way of 66 kV and 33 kV lines in a World Bank-financed BPC project"}
+    - {title: "Grazing only", text: "No cultivation or built infrastructure in those servitudes"}
     - {title: "Every 500 m", text: "Rated for encroachment density"}
 service:
   name: Servitude, road-reserve and lease-area mapping in Botswana
@@ -62,7 +62,7 @@ A mining licence application needs surface rights from the land authority or lan
 :::
 :::
 
-BPC's integrated report for the year to 31 March 2024 records that "Wayleave risks and material availability issues were prevalent throughout the year" ([BPC Integrated Report 2023/2024](https://www.bpc.bw/wp-content/uploads/2026/01/BPC-IR2024-2025-web.pdf)). A dated record of what stands along a route, made before the route is fixed and repeated after, is what later wayleave, compensation and community discussions go back to.
+Where a new line, road or mine needs land, a dated record of what stands there, made before the route or footprint is fixed and repeated afterwards, is what later wayleave, compensation and community discussions go back to. See [resettlement cut-off-date baselines](key:resettlement-cut-off-baselines) and [route and site selection](key:route-site-selection).
 ::::
 
 ::::section{id="receive" tone="alt" eyebrow="What you receive" title="A dated register your servitude, land and GIS teams can use"}
@@ -166,6 +166,19 @@ Who approves what, the operator certificate, the two sets of pilot-licence rules
 
 [Drone law in Botswana](/bw/drone-regulations)
 :::
+::::
+:::::
+::::
+
+::::section{id="procurement" tone="alt" eyebrow="For procurement and compliance teams" title="Citizen reservation, supplier registration and tenders"}
+:::::columns{split="1-1"}
+::::col
+Ministries, councils, Land Boards and parastatals buy under the Public Procurement Act, 2021, in force since 14 April 2022. Section 76 reserves works, services and supplies procurement for citizens or citizen contractors, with reservation schemes prescribed for different areas, and accounting officers must satisfy themselves that no suitable citizen contractor is available before engaging others ([PPRA, quoted by BOPA, 26 April 2023](https://dailynews.gov.bw/news-detail/72749)). Suppliers register with the Public Procurement Regulatory Authority on its [Integrated Procurement Management System](https://ipms.ppadb.co.bw/login), by registration code and by citizen-ownership category: wholly citizen-owned, majority or minority citizen-owned, or wholly foreign-owned.
+::::
+::::col
+We respond to RFQs and tenders. Send the tender or RFQ number and any supplier or prequalification forms with your request, and tell us whether the procurement is reserved for citizen contractors. The proposal states which registrations are in place for your contract and which are being arranged. If your organisation buys through its own supplier portal, name it.
+
+[How we work](/how-we-work) · [Send tender documents](/bw/contact?intent=tender&country=bw)
 ::::
 :::::
 ::::
