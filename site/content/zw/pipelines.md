@@ -87,6 +87,8 @@ Read from the amending Act and the Bill's memorandum. The principal Act was not 
 
 :::callout{tone="note" title="The Mines and Minerals Act too"}
 Without the pipeline owner's consent, no prospecting or mining within 25 m of asbestos pipelines over 30 cm in diameter, or 5 m of any other pipeline (s.34(7)). The 2026 rule is wider; how the two interact is for counsel to confirm.
+
+[Mining locations in Zimbabwe](/zw/mining)
 :::
 ::::
 :::::
