@@ -52,7 +52,9 @@ site/
                       services carry `name_pt` and `line_pt` for /mz/pt/ pages
     law/<cc>.yaml     drone-law instruments per country (mz, za, ng): the Sources tables come from here; optional
                       `title_pt`, `identifier_pt`, `note_pt` replace English wording on /mz/pt/ pages
-    samples/sample-pipeline.json   the sample pipeline's register and segment ratings (written by tools/make_samples.py)
+    samples/sample-pipeline.json   the sample pipeline's register, segment ratings and the text drawn on its images
+    samples/sample-pipeline-google.json   the Google-imagery views: frames, counts, captions, alt text, attribution
+                                   (both written by tools/make_samples.py; never edit them by hand)
     i18n/en.yaml, i18n/pt-MZ.yaml   every interface string (nav, buttons, form, footer, 404…)
     glossary/pt-MZ.yaml             Mozambican Portuguese: banned Brazilian forms, AO90 warnings, preferred terms
     rules.yaml        the guard patterns
@@ -62,6 +64,7 @@ site/
   templates/          Jinja2 page templates, partials and components
   static/assets/      CSS, JS, font (copied; CSS and JS get content-hashed file names)
   images/             image masters; the build makes AVIF, WebP and JPEG at several widths
+    samples/google/   the only place for masters on Google imagery (declared in a data/samples file, see §8)
   tests/fixtures/     self-test and demo fixtures (never published)
   tools/              make_samples.py (sample pipeline images), make_diagrams.py (schematics), shoot.py (screenshots),
                       check_dist.py (independent dist checks), crawl.py (HTTP crawl of a preview)
@@ -272,6 +275,7 @@ Body content outside a `section` is wrapped in a plain white section automatical
 | `law-table` | | The cross-country drone-law comparison (law hub). |
 | `segments` | `data`* | The 500 m encroachment-density chart from `data/samples/<data>.json`. |
 | `register` | `data`*, `limit` | The register excerpt table from the same file. |
+| `sample-gallery` | `data`*, `views`, `overview`, `cols`, `size`, `priority`, `legend` | Sample views on satellite imagery from `data/samples/<data>.json` (§8.1): the overview, then the close-ups, each with its caption, count, review badge and credit in the page's language, then a legend and the notes. `views="C,D"` picks and orders close-ups (default all); `overview="false"` drops the overview; `cols="1"` stacks them (with `size="wide"` or `"half"`), default two columns; `legend="false"` drops the HTML legend; `priority="true"` only when it holds the first large image. Text inside the block becomes an extra note. |
 | `details` | `summary`*, `open` (`true`) | A collapsible block. |
 | `lead` | | Larger intro text. |
 | `country-sites` | `match` (`page`) | Buttons to each country site that exists (renders nothing until one does). With `match="page"` each button goes to that country's version of the current page (same `key`), else to the country home. |
@@ -302,13 +306,26 @@ Tables: ordinary Markdown tables; the build wraps them in a scrollable box so th
 
 What may be shown:
 - **The sample pipeline**: yes, the owner has permission to show it, but never by name (owner decision of 27 September 2026 in `OWNER_DECISIONS.md`, which lists the names). Call it only "a high-pressure gas pipeline in Mozambique" (PT: "um gasoduto de alta pressão em Moçambique"), or "the pipeline sample" once introduced. No route, field, operator or province name, in copy, captions, alt text, headings, buttons, FAQ answers, JSON-LD, social cards, file names, anchors or URLs. Law facts that name other infrastructure stay on the law pages (the 50 m protection-zone guides, key `mz-protection-zone`, and the drone-law pages) and are never linked to the sample; elsewhere describe the zone without the name ("a 200 m safety zone where a decree sets one") and link the guide. The build enforces this (`withdrawn_names`, next section). Captions must be honest: manual marks are "Reviewed · manual marks", never "AI detection" or "live"; the operator's own plants and well pads are never "encroachment". Do not name the client company or use its logo. The site never offers the sample's PDF or GIS files; sample-report requests get a redacted sample.
-- **Google, Bing or Esri basemap imagery: never on this site.** The app's review of the sample used Google tiles, which Google's terms do not allow in published material, so the sample views are register strip views drawn from the register alone (no imagery, no coordinates) and the route on a dated Copernicus Sentinel-2 scene (credit "Contains modified Copernicus Sentinel data 2026"). 10 m Sentinel-2 pixels cannot show structures: never draw marks on it.
+- **Google satellite imagery: only as the sample views, with the attribution** (owner decision of 27 September 2026). The reviewer marked the sample on Google satellite imagery, and the owner has permission to show it. Every image on Google imagery carries "Imagery © Google" (PT "Imagens © Google") drawn on the image, bottom right, and again in the caption or credit of the figure that shows it; captions say the marks are reviewer marks, not automatic detections, and that a person reviewed every result. Google states no capture date for its imagery, so never date it and never present it as delivered survey imagery. Bing and Esri basemaps stay off the site. The route overview for location and ratings uses a dated Copernicus Sentinel-2 scene (credit "Contains modified Copernicus Sentinel data 2026"); 10 m Sentinel-2 pixels cannot show structures, so never draw marks on it.
 - **Drone orthophotos or mosaics of Mozambique**: not without the Lei n.º 6/2024 authorisation (art. 16(1)(c) makes unauthorised reproduction an infraction). Ask the owner first.
 - No flags, coats of arms, regulator or client logos, stock photos of people, or images that identify anyone.
 
-`site/tools/make_samples.py` rebuilds the sample pipeline images (`samples/sample-pipeline-register-*` in English and `-pt`, `samples/sample-pipeline-route-hero`, `samples/sample-pipeline-route-ratings`) and `data/samples/sample-pipeline.json` from the app's stored job (read-only) and a Sentinel-2 L2A window read once from the public sentinel-cogs bucket (cached in `site/.cache/s2/`).
+`site/tools/make_samples.py` rebuilds every sample pipeline image and both data files from the app's stored job (read-only): the register strip views (`samples/sample-pipeline-register-*`, English and `-pt`), the Sentinel-2 route views (`samples/sample-pipeline-route-hero`, `-route-ratings`, from a window read once from the public sentinel-cogs bucket and cached in `site/.cache/s2/`), and the Google views (`samples/google/pipeline-overview` and `pipeline-view-a` to `-f`, English and `-pt`). See §8.1.
 
-Portuguese pages must not show English inside a picture. `make_samples.py` draws the register views in both languages (`-pt` suffix); `site/tools/make_pt_images.py` reuses `make_diagrams.py` unchanged and writes `diagrams/corridor-pt` and `diagrams/area-ring-pt`. Rerun it whenever the English diagrams change. The Sentinel-2 route views carry no words and serve both languages. `diagrams/mz-strips` has no words and serves both languages.
+### 8.1 Sample views on Google imagery
+
+```bash
+/opt/favhousecheck/.venv/bin/python3 site/tools/make_samples.py [--tiles DIR] [--no-fetch]
+```
+
+- **Source.** The marks are the reviewer's, from the job's final GIS output (`gis/building.geojson`, every feature `source: manual`); the tool refuses anything else. The route is the job's uploaded route. Close-ups are 600 by 400 m, north up, from zoom-20 tiles; the overview uses zoom 16. Tiles come from the app's tile cache (`/opt/favhousecheck/sat_cache/google`, read-only); the zoom-20 tiles there show the same imagery as the zoom-18 chunks the review used. Missing tiles are fetched once, one request at a time with a plain browser User-Agent and nothing about the requester, and kept in `--tiles` (default `site/.cache/google-tiles/`, never committed). `--no-fetch` fails instead of fetching.
+- **What is drawn.** The centreline, the 50 m and 100 m bands, a ring on each reviewer mark coloured by its band (dots on the overview), a legend, a north arrow and scale bar, and the attribution bottom right. No names, coordinates, chainage or place names on the images. The tool refuses a frame where a ring would hide under the legend, the scale bar or the attribution, and moves the legend to the other top corner (the same corner in both languages) when it has to.
+- **Honest text, computed.** Each view's caption (its chainage), count text ("5 reviewer-marked structures within 100 m…"), alt text and credit come from the data; the gallery adds how many of the route's structures within 100 m the views on the page show. The scene sentence in each alt text (`G_SCENE`) is written by a person from the image: read every image after changing `G_VIEWS` and rewrite it.
+- **Clean files.** Masters are saved from the pixels alone: no EXIF, XMP, GPS, ICC profile or comment. The build refuses any `images/samples/` master that carries metadata.
+- **Deterministic.** The same tiles give byte-identical files; rerunning changes nothing.
+- **Other pages** show the views with `:::sample-gallery{data="sample-pipeline-google" …}` (§6), never with a hand-made figure. A Portuguese page gets the `-pt` images and Portuguese text automatically. A section in another language needs its strings added to `GSTR` in `make_samples.py` (and a rerun) first; until then the component fails the build with that instruction.
+
+Portuguese pages must not show English inside a picture. `make_samples.py` draws the register views and the Google views in both languages (`-pt` suffix); `site/tools/make_pt_images.py` reuses `make_diagrams.py` unchanged and writes `diagrams/corridor-pt` and `diagrams/area-ring-pt`. Rerun it whenever the English diagrams change. The Sentinel-2 route views carry no words and serve both languages. `diagrams/mz-strips` has no words and serves both languages.
 
 **Schematics:** `site/tools/make_diagrams.py` draws `images/diagrams/corridor` and `images/diagrams/area-ring`, labelled "Schematic", with invented geometry whose counts follow the survey rules. The images carry no legend, so the page gives it in the caption with the band chips (`<span class="band band--a">Within 50 m</span>`, `band--b`, `band--c`), which stay readable on a phone. Credit them "Schematic drawn by AfriScan for illustration".
 
@@ -332,6 +349,9 @@ The build checks the rendered text of every page: visible text, `<title>`, meta 
 | Links | Broken internal link, missing `#anchor`, `.html` links, relative links, `key:` that resolves nowhere | Use clean root-relative URLs or `key:` links. |
 | Near-duplicates | Two same-language pages in different sections that share 70 % or more of their 5-word runs (warn at 50 %): cluster members, and country pages of the same template | Write country substance: local law, regulators, programmes, vocabulary, FAQs. A country page that cannot meet the minimum is not built. |
 | Withdrawn names (owner decision, 27 September 2026) | A name in `withdrawn_names` in `data/rules.yaml`, which keeps them as digests (the names themselves are in `OWNER_DECISIONS.md`, outside this repo): some fail everywhere, some outside the law pages, some on pages that show an `images/samples/` picture. Checked in the page text and also in file names, URLs, anchors and redirect rules | "a high-pressure gas pipeline in Mozambique" (PT "um gasoduto de alta pressão em Moçambique"); "a 200 m safety zone where a decree sets one", with a link to the 50 m guide. Add a name with `build.py --name-digest "<name>"` |
+| Google imagery (owner decision, 27 September 2026) | A master in `images/samples/google/` that no `data/samples/*.json` declares with `imagery.provider: google`; a declared image whose drawn text or credit lacks the attribution; a page that shows one outside a `<figure>` whose caption or credit carries "Imagery © Google" (PT "Imagens © Google"); a page that shows the other language's version | `:::sample-gallery`, or a figure whose credit starts with the attribution. Rerun `make_samples.py` after any change to the views |
+| Image metadata | Any `images/samples/` master with EXIF, XMP, GPS, ICC or a comment | Rerun `make_samples.py`, which saves the pixels alone |
+| Text on images | The words drawn on sample images (`drawn_text` and `image_text` in `data/samples/*.json`) go through the page guards of every page that shows them, and through the withdrawn-names guard for every image | Change the strings in `make_samples.py` and rerun it |
 | Redirects | A rule whose source is a built page, or whose source (or splat) would hide a published file | Pick a source no current file starts with |
 | Law pages | Missing not-legal-advice line, instruments without `id/title/identifier/date/url/last_checked`, non-https sources; warns when `last_reviewed` is over 120 days old | Keep `data/law/<cc>.yaml` complete and current. |
 

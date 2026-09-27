@@ -106,11 +106,10 @@ def context(build, p, b, ctx):
     two = cols == "2" and len(ids) > 1
     overview = fig(data["overview"], SIZES["wide"], True) if show_overview else None
     views = [fig(by_id[i], SIZES["2" if two else size], not overview and n == 0) for n, i in enumerate(ids)]
-    summary = None
-    if data.get("within_100_total") and strings.get("summary"):
+    summary = None                  # one view already gives its own count in its figure text
+    if len(ids) > 1 and data.get("within_100_total") and strings.get("summary"):
         shown = len({r for i in ids for r in by_id[i].get("within_100_ids") or []})
-        summary = strings["summary" if len(ids) > 1 else "summary_one"].format(shown=shown,
-                                                                               total=data["within_100_total"])
+        summary = strings["summary"].format(shown=shown, total=data["within_100_total"])
     return {"g": {"overview": overview, "views": views, "two": two, "size": size, "s": strings, "summary": summary,
                   "legend": a.get("legend", "true") == "true"}}
 
@@ -133,7 +132,8 @@ def check(build, built, name_candidates, name_digest):
         if att not in info["credit"]:
             err(f"{where}: [google-imagery] the credit does not carry {att!r}")
     # every master in the Google folder is declared, and none carries metadata
-    folder = SITE / "images" / GOOGLE_DIR
+    root = getattr(build, "sample_images_root", None) or SITE / "images"      # the self-test points it elsewhere
+    folder = root / GOOGLE_DIR
     for f in sorted(folder.glob("*")) if folder.exists() else []:
         name = f"{GOOGLE_DIR}/{f.stem}"
         if f.suffix.lower() not in (".jpg", ".jpeg", ".png", ".webp"):
@@ -141,12 +141,12 @@ def check(build, built, name_candidates, name_digest):
         if name not in gi:
             err(f"site/images/{name}{f.suffix}: [google-imagery] not declared in any data/samples/*.json with "
                 f"imagery.provider \"google\" and its attribution (rerun site/tools/make_samples.py)")
-    for f in sorted((SITE / "images" / "samples").rglob("*")):
+    for f in sorted((root / "samples").rglob("*")):
         if f.suffix.lower() in (".jpg", ".jpeg", ".png", ".webp"):
             with Image.open(f) as im:
                 extra = sorted(set(im.info) - CLEAN_INFO)
                 if extra or len(im.getexif()):
-                    err(f"site/images/{f.relative_to(SITE / 'images')}: [image-metadata] strip {extra or ['exif']} "
+                    err(f"site/images/{f.relative_to(root)}: [image-metadata] strip {extra or ['exif']} "
                         f"(tools/make_samples.py saves masters without metadata)")
     # pages: each Google image inside a figure that carries the page language's attribution
     stems = {name.replace("/", "-"): info for name, info in gi.items()}
@@ -207,13 +207,15 @@ def selftest(make, tmp, site):
     failed = []
     fig = ':::figure{src="samples/google/pipeline-view-a" alt="A satellite view" caption="A view of the route"}\n:::'
 
-    def run(name, expect, content_mut=None, data_mut=None):
+    def run(name, expect, content_mut=None, data_mut=None, page="global/faq.md", images=None):
         content = tmp / name / "content"
         shutil.copytree(site / "content", content)
         if content_mut:
-            f = content / "global/faq.md"
+            f = content / page
             f.write_text(content_mut(f.read_text(encoding="utf-8")), encoding="utf-8")
         b = make(content_dir=content, dist=tmp / name / "dist")
+        if images:
+            b.sample_images_root = images(tmp / name / "images")
         if data_mut:
             data_mut(b.samples)
         code = b.run()
@@ -231,4 +233,19 @@ def selftest(make, tmp, site):
         data_mut=lambda s: s[g]["views"][2]["drawn_text"]["en"].append("QX-7 line"))
     run("image-claim", "[overstatement]", data_mut=lambda s: s["sample-pipeline"]["image_text"][
         "samples/sample-pipeline-register-km5-6"].append("Live monitoring"))
+    # the English version of a Google view on a Portuguese page, even with the Portuguese credit
+    fig_en = (':::figure{src="samples/google/pipeline-view-a" alt="Uma vista de satélite" caption="Vista A" '
+              'credit="Imagens © Google"}\n:::')
+    run("google-lang", "use the 'pt' one", page="mz/pt/resultados-de-exemplo.md",
+        content_mut=lambda raw: raw.rstrip() + "\n\n" + fig_en + "\n")
+
+    def with_exif(root):
+        shutil.copytree(site / "images/samples", root / "samples")
+        im = Image.new("RGB", (8, 8))
+        exif = Image.Exif()
+        exif[0x0110] = "Seeded camera model"
+        im.save(root / "samples/seeded-metadata.jpg", exif=exif)
+        return root
+
+    run("image-metadata", "[image-metadata]", images=with_exif)
     return failed

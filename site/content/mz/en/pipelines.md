@@ -133,10 +133,10 @@ In the dry season, *queimadas* can run up to above-ground installations such as 
 :::
 ::::
 
-::::section{id="sample" eyebrow="A real sample" title="What a register looks like: a sample from a gas pipeline" lead="A reviewed sample from the route of a high-pressure gas pipeline in Mozambique, shown with the route owner's permission. The marks are manual reviewer marks, shown exactly as the reviewer placed them."}
+::::section{id="sample" eyebrow="A real sample" title="What a register looks like: a sample from a gas pipeline" lead="A reviewed sample from the route of a high-pressure gas pipeline in Mozambique, shown with the route owner's permission. The marks are manual reviewer marks, shown on Google satellite imagery exactly as the reviewer placed them."}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/sample-pipeline-register-high" alt="Strip view of the pipeline route between km 5.5 and 6.0: sixteen reviewer marks inside the area within 100 m of the stretch, two of them within 50 m of the line, on both sides" caption="Km 5.5 to 6.0: rated high, 16 structures within 100 m" badge="Reviewed · manual marks" size="half" credit="Drawn by AfriScan from the sample register; no imagery."}
+:::sample-gallery{data="sample-pipeline-google" views="D" overview="false" cols="1" size="half" legend="false"}
 :::
 ::::
 ::::col
@@ -151,7 +151,7 @@ In the dry season, *queimadas* can run up to above-ground installations such as 
 
 The densest stretches are where the route runs beside an existing track through farmland and homesteads; the quietest cross bush and burnt grassland. The facilities near both ends of the route are the operator's own installations: part of the asset, not encroachment, and not in the register.
 
-[The full sample, with the register excerpt and the density chart](/results)
+[The full sample, with the whole route and more close-ups on imagery, the register excerpt and the density chart](/results)
 ::::
 :::::
 ::::

@@ -25,8 +25,7 @@
       "badge": "Reviewed · manual marks",
       "rings": "Rings: structures marked by a reviewer",
       "note": "Each ring is centred on a mark the reviewer placed. Roofs without a ring were not marked in this review: the views show the sample's marks exactly as recorded, with nothing added.",
-      "summary": "Together the close-ups show {shown} of the {total} reviewer-marked structures within 100 m of the route.",
-      "summary_one": "This close-up shows {shown} of the {total} reviewer-marked structures within 100 m of the route."
+      "summary": "Together the close-ups show {shown} of the {total} reviewer-marked structures within 100 m of the route."
     },
     "pt": {
       "attribution": "Imagens © Google",
@@ -37,8 +36,7 @@
       "badge": "Revisto · marcação manual",
       "rings": "Círculos: construções marcadas pelo revisor",
       "note": "Cada círculo está centrado numa marcação feita pelo revisor. As coberturas sem círculo não foram marcadas nesta revisão: as vistas mostram as marcações do exemplo exactamente como foram registadas, sem acrescentos.",
-      "summary": "No conjunto, as vistas de perto mostram {shown} das {total} construções marcadas pelo revisor a menos de 100 m do traçado.",
-      "summary_one": "Esta vista de perto mostra {shown} das {total} construções marcadas pelo revisor a menos de 100 m do traçado."
+      "summary": "No conjunto, as vistas de perto mostram {shown} das {total} construções marcadas pelo revisor a menos de 100 m do traçado."
     }
   },
   "shown_within_100": 34,

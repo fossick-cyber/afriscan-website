@@ -12,6 +12,12 @@ python3 -m http.server 5091 --directory dist --bind 127.0.0.1   # preview (open 
 
 Writers: read **[CONTENT_GUIDE.md](CONTENT_GUIDE.md)** before adding or editing pages.
 
+Sample images (read-only against the app; deterministic; Google tiles missing from the app's cache are fetched once, politely, into `--tiles`):
+
+```bash
+/opt/favhousecheck/.venv/bin/python3 site/tools/make_samples.py --tiles site/.cache/google-tiles   # then read every image it wrote
+```
+
 ## Layout
 
 | Path | What it is |
@@ -20,7 +26,7 @@ Writers: read **[CONTENT_GUIDE.md](CONTENT_GUIDE.md)** before adding or editing 
 | `site/content/` | One file per page, per section: `global/`, `mz/en/`, `mz/pt/`, `za/`, `ng/` |
 | `site/data/` | Facts and strings: site/organisation, locales, catalogue, drone-law instruments, i18n, pt-MZ glossary, guard rules, redirects, icons, sample data |
 | `site/templates/`, `site/static/` | Page templates, components, CSS, JS, self-hosted Inter font (OFL) |
-| `site/images/` | Image masters (the sample pipeline views are rebuilt from the app's stored job by `site/tools/make_samples.py`) |
+| `site/images/` | Image masters. The sample pipeline views (register strips, Sentinel-2 route views, and the reviewer's marks on Google imagery in `images/samples/google/`) are rebuilt from the app's stored job by `site/tools/make_samples.py` (CONTENT_GUIDE §8.1) |
 | `functions/geo.js` | `GET /geo` returns the visitor's country for the country-site banner |
 | `functions/_middleware.js` | Host redirects: `www.afri-scan.com` and `afriscan-website.pages.dev` → `https://afri-scan.com` (301, path and query kept); preview hosts pass through. `dist/_routes.json` keeps `/assets/*` out of Functions |
 | `wrangler.toml` | Pages project settings read on every Git build: `pages_build_output_dir = "./dist"` |

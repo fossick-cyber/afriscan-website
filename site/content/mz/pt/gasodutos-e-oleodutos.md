@@ -110,10 +110,10 @@ Cada construção é medida até ao eixo e cada troço é classificado. O que a 
 :::::
 ::::
 
-::::section{id="exemplo" tone="alt" eyebrow="Um exemplo real" title="O que um registo mostra: o exemplo de um gasoduto" lead="Uma revisão feita no traçado de um gasoduto de alta pressão em Moçambique, mostrada com a autorização do proprietário do traçado. As marcações aparecem exactamente como o revisor as colocou."}
+::::section{id="exemplo" tone="alt" eyebrow="Um exemplo real" title="O que um registo mostra: o exemplo de um gasoduto" lead="Uma revisão feita no traçado de um gasoduto de alta pressão em Moçambique, mostrada com a autorização do proprietário do traçado. As marcações aparecem sobre imagens de satélite Google, exactamente como o revisor as colocou."}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/sample-pipeline-register-km5-6-pt" alt="Vista linear de um troço de 1,5 km do traçado do gasoduto, com as faixas de 50 m e 100 m dos dois lados da linha e vinte marcações do revisor colocadas pela distância ao longo do traçado e pela distância à linha; em baixo, três troços de 500 m com densidade média, alta e alta" caption="O gasoduto do exemplo, km 5,0 a 6,5" badge="Revisto · marcação manual" size="half" credit="Desenhado pela AfriScan a partir do registo do exemplo; sem imagens."}
+:::sample-gallery{data="sample-pipeline-google" views="D" overview="false" cols="1" size="half" legend="false"}
 :::
 ::::
 ::::col
@@ -128,7 +128,7 @@ Cada construção é medida até ao eixo e cada troço é classificado. O que a 
 
 As instalações do operador perto das duas pontas do traçado fazem parte do activo: não são ocupação e não entram no registo. Neste exemplo todas as marcações são do revisor; num levantamento para um cliente, a detecção automática propõe primeiro e o revisor confirma.
 
-[Ver o exemplo completo](/mz/pt/resultados-de-exemplo)
+[Ver o exemplo completo, com todo o traçado e mais vistas de perto sobre imagens, o excerto do registo e a densidade por troço](/mz/pt/resultados-de-exemplo)
 ::::
 :::::
 ::::

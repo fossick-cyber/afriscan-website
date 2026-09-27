@@ -444,8 +444,6 @@ GSTR = {
                  "review: the views show the sample's marks exactly as recorded, with nothing added."),
         "summary": ("Together the close-ups show {shown} of the {total} reviewer-marked structures within 100 m of "
                     "the route."),
-        "summary_one": ("This close-up shows {shown} of the {total} reviewer-marked structures within 100 m of the "
-                        "route."),
         "caption": "View {k} · km {a} to {b}",
         "credit": ("Imagery © Google, capture date not stated. Reviewer marks only, no automatic detections: "
                    "a person reviewed every result."),
@@ -463,8 +461,6 @@ GSTR = {
                  "registadas, sem acrescentos."),
         "summary": ("No conjunto, as vistas de perto mostram {shown} das {total} construções marcadas pelo revisor a "
                     "menos de 100 m do traçado."),
-        "summary_one": ("Esta vista de perto mostra {shown} das {total} construções marcadas pelo revisor a menos de "
-                        "100 m do traçado."),
         "caption": "Vista {k} · km {a} a {b}",
         "credit": ("Imagens © Google, sem data de captação indicada. Só marcações do revisor, sem detecções "
                    "automáticas: uma pessoa reviu todos os resultados."),
@@ -908,7 +904,7 @@ def google_views(line, marks, tiles):
     ids100 = {i for v in data["views"] for i in v["within_100_ids"]}
     data["shown_within_100"] = len(ids100)
     for lang in GSTR:
-        data["strings"][lang].update(summary=GSTR[lang]["summary"], summary_one=GSTR[lang]["summary_one"])
+        data["strings"][lang]["summary"] = GSTR[lang]["summary"]
     first, last = G_VIEWS[0][0], G_VIEWS[-1][0]
     ov = {"id": "overview", "src": {}, "alt": {}, "caption": {}, "credit": {}, "drawn_text": {}}
     for lang, sfx in (("en", ""), ("pt", "-pt")):
