@@ -98,7 +98,7 @@ L'[article 279 du Code minier](https://www.leganet.be/Legislation/Droit%20econom
 
 **Sans le consentement des autorités compétentes**, nul ne peut notamment occuper un terrain situé à moins de 800 m d'un village, d'une cité, d'une commune ou d'une ville, à moins de 500 m d'un barrage hydroélectrique ou d'un bâtiment de l'État, proche des installations de la défense nationale, faisant partie d'un aéroport ou réservé à un projet de chemin de fer, ni une route, un parc national ou un site touristique. Le gouverneur peut en outre fixer des périmètres de protection.
 
-Ces distances protègent les occupants contre l'occupation minière. Elles ne rendent pas illicite une maison construite près d'une mine.
+Ces distances protègent les occupants contre l'occupation minière. Elles ne rendent pas illicite une maison construite près d'une mine. La modification de 2018 les a nettement élargies : la distance aux maisons était de 180 m dans le texte de 2002, et celle aux terres cultivées de 45 m.
 ::::
 ::::col
 :::figure{src="diagrams/cd-art279" alt="Schéma : la zone qu'un titulaire prévoit d'occuper, en orange, à l'intérieur de son permis en pointillés, entourée de deux lignes à 800 et 1 000 mètres ; les maisons à moins de 1 000 mètres en rouge, celles au-delà en vert sombre, les champs à moins de 800 mètres en vert foncé, un champ au-delà en vert pâle et un point d'eau en bleu" caption="Schéma : un inventaire autour des travaux prévus" size="half" credit="Schéma dessiné par AfriScan à titre d'illustration ; ce n'est pas un site réel."}

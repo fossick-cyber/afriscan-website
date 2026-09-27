@@ -157,7 +157,7 @@ Aucun tracé, aucune image et aucun résultat n'est publié sans votre accord é
 ::::col
 Pour des raisons de sécurité et de santé publique, nous n'acceptons aucune mission, ni par satellite, ni par drone, ni sur le terrain, dans les provinces du Nord-Kivu, du Sud-Kivu, de l'Ituri, du Haut-Uélé, du Bas-Uélé, de la Tshopo, du Maniema, du Tanganyika, du Haut-Lomami, du Sud-Ubangi, du Kwilu et du Kwango, ni dans le territoire de Kwamouth ou à moins de 50 km de la frontière avec la République centrafricaine.
 
-Cette liste suit les conseils aux voyageurs du [gouvernement britannique](https://www.gov.uk/foreign-travel-advice/democratic-republic-of-the-congo) et du [ministère français de l'Europe et des Affaires étrangères](https://www.diplomatie.gouv.fr/fr/information-par-pays/republique-democratique-du-congo/conseils-aux-voyageurs-securite), et les provinces touchées par l'épidémie de maladie à virus Ebola signalée par l'[OMS](https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON617), tels que publiés au 27 septembre 2026.
+Cette liste suit les conseils aux voyageurs du [gouvernement britannique](https://www.gov.uk/foreign-travel-advice/democratic-republic-of-the-congo) et du [ministère français de l'Europe et des Affaires étrangères](https://www.diplomatie.gouv.fr/fr/information-par-pays/republique-democratique-du-congo/conseils-aux-voyageurs-securite), et les provinces touchées par l'épidémie de maladie à virus Ebola signalée par l'[OMS](https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON617) et par la France, tels que publiés au 27 septembre 2026.
 ::::
 ::::col
 :::callout{tone="scope" title="Ailleurs dans le pays"}

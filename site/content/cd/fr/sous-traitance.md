@@ -144,4 +144,6 @@ Trois points de chaque montage relèvent d'un conseil : la qualification d'une a
 
 :::sources{law="cd" ids="loi-17-001,loi-26-017,am-02-2021,am-03-2021"}
 :::
+
+Dernière vérification : 27 septembre 2026. Cette page résume des règles publiques à titre d'information. Elle ne constitue pas un avis juridique.
 ::::
