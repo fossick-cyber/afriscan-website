@@ -168,7 +168,7 @@ Se é necessária, além da autorização especial da ANAC, uma autorização da
 11. No **sector petrolífero**, se o serviço consta da lista de exclusividade da ANPG e, nesse caso, um fornecedor que seja sociedade comercial angolana.
 ::::
 
-::::section{id="como-trabalhamos" eyebrow="9. Como trabalhamos" title="Satélite por defeito; drone só com as autorizações de cada operação"}
+::::section{id="como-trabalhamos" eyebrow="9. Como trabalhamos" title="Satélite por defeito; drone só com as autorizações e credenciações de segurança de cada operação"}
 :::::columns{split="2-1"}
 ::::col
 Por defeito, trabalhamos com imagens de satélite, bases de dados abertas de edifícios e as imagens que a sua empresa já tem. Nenhuma aeronave voa, por isso as autorizações desta página não se aplicam a esse trabalho.
