@@ -174,7 +174,7 @@ The six approvals, the 2026 circulars, the 50 m rules, protected places and an 1
 ::::section{id="working-with-us" eyebrow="For procurement and compliance teams" title="Tenders, local content and data"}
 :::::columns{split="1-1"}
 ::::col
-Public tenders in Zambia limit open national bidding to citizen and local bidders, mining companies must reserve a growing share of their procurement for local companies under SI 68 of 2025, and the Data Protection Act 2021 requires personal data to be stored in Zambia. Our notes set out what applies to this kind of service, where the main public buyers advertise, and what to ask any supplier for.
+Public tenders in Zambia limit open national bidding to citizen and local bidders, mining companies must reserve a growing share of their procurement for local companies under SI 68 of 2025, and the Data Protection Act 2021 requires personal data to be processed and stored in Zambia, with narrow exceptions. Our notes set out what applies to this kind of service, where the main public buyers advertise, and what to ask any supplier for.
 
 [Working with AfriScan in Zambia](/zm/procurement)
 ::::

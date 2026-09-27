@@ -29,7 +29,7 @@ faq:
   - q: Does a satellite mapping contract raise the drone-approval questions?
     a: No. The ROC, the Air Services Permit, the special authorisation and the Air Force clearance apply only where an aircraft is flown. Where a scope includes drone work, the proposal separates it, names the Zambian company that will fly it and gives its approval details, so your evaluation can treat each part on its own terms.
   - q: Where will our project data be stored?
-    a: The Data Protection Act requires personal data to be processed and stored in Zambia (s.70), and storage abroad needs a separate authorisation from the Data Protection Commission. Our registers carry structure IDs and coordinates rather than names, and each proposal states the controller and processor roles and where project data will be processed and stored for your contract.
+    a: The Data Protection Act requires personal data to be processed and stored in Zambia (s.70), with exceptions only for categories the Minister prescribes, and the Data Protection Commission's registration guide says storage abroad needs a separate authorisation. Our registers carry structure IDs and coordinates rather than names, and each proposal states the controller and processor roles and where project data will be processed and stored for your contract.
   - q: What do you need from us to prepare a proposal?
     a: The route, network or boundary file, the province and district, the widths or zones to report, the date the record must reflect, the deliverables and the deadline. With a tender, send the documents, the portal and the reference number your process uses, and any supplier-registration or data-protection forms.
 cta:
