@@ -2,7 +2,7 @@
 key: mining
 template: industry
 title: "Concessões de Diamantes em Angola: Zonas Mineiras | AfriScan"
-description: "Escavações, terreno desmatado, caminhos e construções nas zonas restritas e de protecção de concessões mineiras em Angola, entre datas e revistos por uma pessoa."
+description: "Escavações, terreno desmatado, caminhos e construções nas zonas restritas e de protecção de concessões mineiras em Angola, entre datas, revistos por uma pessoa."
 h1: Alterações no terreno nas zonas restritas e de protecção da sua concessão
 crumb: Concessões mineiras
 eyebrow: Mineração e diamantes · Angola
