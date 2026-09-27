@@ -88,7 +88,7 @@ tz:
   name: Tanzania
   region: East
   languages: [en]
-  status: launching
+  status: live
   timezones: [Africa/Dar_es_Salaam]
 ug:
   name: Uganda

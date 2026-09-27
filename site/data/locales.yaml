@@ -113,7 +113,7 @@ tz:
   label: "Tanzania"
   short: "Tanzania"
   sitemap: sitemap-tz.xml
-  status: draft
+  status: live
   region: East
 ke:
   content: ke

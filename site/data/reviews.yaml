@@ -30,6 +30,8 @@ counsel_required:
   # Zambia: the wayleave guide and the procurement page state the law, so counsel reviews them too
   - /zm/wayleave-guide
   - /zm/procurement
+  # Tanzania: the wayleave-law guide is an article rather than a law page, but it states the law, so counsel reviews it too
+  - /tz/wayleave-law
 
 pending:
   native_pt:
@@ -75,3 +77,8 @@ pending:
       /ke/drone-regulations: Kenyan counsel
       /ke/wayleave-law-guide: Kenyan counsel
       /ke/data-protection: Kenyan counsel
+  counsel_tz:
+    owner_decision: 2026-09-27
+    pages:
+      /tz/drone-regulations: Tanzanian counsel
+      /tz/wayleave-law: Tanzanian counsel
