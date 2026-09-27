@@ -65,3 +65,17 @@ ng:
   label: "Nigeria"
   short: "Nigeria"
   sitemap: sitemap-ng.xml
+bw:
+  content: bw
+  prefix: /bw
+  lang: en-BW
+  hreflang: [en-BW]
+  og_locale: en_GB
+  i18n: en
+  country: BW
+  country_name: Botswana
+  label: "Botswana"
+  short: "Botswana"
+  sitemap: sitemap-bw.xml
+  status: live
+  region: Southern

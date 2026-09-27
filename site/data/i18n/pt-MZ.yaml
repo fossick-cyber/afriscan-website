@@ -196,6 +196,7 @@ sites:
   mz-en: "Moçambique (em inglês)"
   za: "África do Sul (em inglês)"
   ng: "Nigéria (em inglês)"
+  bw: "Botswana (em inglês)"
 
 # Páginas em inglês para onde as páginas portuguesas remetem (menus, rodapé, caminho de navegação,
 # cartões). Cada chave é a chave de grupo (key) da página. Uma página inglesa ligada a partir de
