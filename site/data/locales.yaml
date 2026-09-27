@@ -127,7 +127,7 @@ ke:
   label: "Kenya"
   short: "Kenya"
   sitemap: sitemap-ke.xml
-  status: draft
+  status: live
   region: East
 gh:
   content: gh

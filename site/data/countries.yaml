@@ -82,7 +82,7 @@ ke:
   name: Kenya
   region: East
   languages: [en]
-  status: launching
+  status: live
   timezones: [Africa/Nairobi]
 tz:
   name: Tanzania
