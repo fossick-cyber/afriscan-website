@@ -27,8 +27,8 @@ faq:
     a: >-
       As close to it as dated imagery allows. The register is tied to the capture date of the scenes we use,
       so we search the archives for scenes near your cut-off or census date and tell you what exists before
-      you commit. Where the archive has nothing close enough, a new capture can be ordered; when it happens
-      depends on the satellites' schedules and on cloud in the rainy season.
+      you commit. Where the cut-off date is still ahead, a new capture can be requested for it; when it
+      happens depends on the satellites' schedules and on cloud in the rainy season.
   - q: We have no route file yet. Can we still ask?
     a: >-
       Yes. Describe the line or road, the districts it crosses and the trading centres or substations along
