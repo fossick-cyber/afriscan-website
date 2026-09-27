@@ -41,7 +41,7 @@ instruments:
     note: Saved by the 2017 Act; none of its operations covers remotely piloted aircraft.
   - id: land-survey-act
     title: Land Survey Act
-    identifier: Cap. 59:03, consolidated to 31 December 2017
+    identifier: Cap. 59:03, consolidated text
     date: 2017-12-31
     url: https://malawilii.org/akn/mw/act/1952/14/eng@2017-12-31
     last_checked: 2026-09-27
@@ -76,7 +76,7 @@ instruments:
     note: Lists unmanned aerial systems among national security or defence related items.
   - id: communications-act-2016
     title: Communications Act 2016
-    identifier: s.96 (type approval)
+    identifier: Act No. 34 of 2016, s.96 (type approval)
     date: 2016
     url: https://malawilii.org/akn/mw/act/2016/34/eng@2017-12-31
     last_checked: 2026-09-27
@@ -89,7 +89,7 @@ instruments:
     note: Breach notice (ss.36–37), transfers out of Malawi (ss.38–40), registration (s.41).
   - id: electricity-act
     title: Electricity Act
-    identifier: Cap. 73:01, consolidated to 31 December 2017
+    identifier: Cap. 73:01, consolidated text
     date: 2017-12-31
     url: https://malawilii.org/akn/mw/act/2004/22/eng@2017-12-31
     last_checked: 2026-09-27
@@ -103,11 +103,11 @@ instruments:
     note: Published 31 May 2024. Its commencement and its effect on ss.39 and 41 were not confirmed for these pages.
   - id: public-roads-act
     title: Public Roads Act
-    identifier: Cap. 69:02, consolidated to 31 December 2017
+    identifier: Cap. 69:02, consolidated text
     date: 2017-12-31
     url: https://malawilii.org/akn/mw/act/1962/11/eng@2017-12-31
     last_checked: 2026-09-27
-    note: Road-reserve widths and written consent (s.10), new road reserves (s.28), encroachment and removal notices (s.36).
+    note: Road-reserve widths and written consent (s.10(6)); encroachment and removal notices (s.36(4)).
   - id: public-roads-amendment-2017
     title: Public Roads (Amendment) Act 2017
     identifier: Act No. 8 of 2017
@@ -116,14 +116,14 @@ instruments:
     last_checked: 2026-09-27
   - id: land-act-2016
     title: Land Act 2016
-    identifier: Act No. 16 of 2016 (Cap. 57:01), consolidated to 31 December 2017
+    identifier: Act No. 16 of 2016 (Cap. 57:01), consolidated text
     date: 2017-12-31
     url: https://malawilii.org/akn/mw/act/2016/16/eng@2017-12-31
     last_checked: 2026-09-27
     note: Acquisition of unallocated customary land for public utility (s.17) and compensation (s.18). A 2022 amendment, in force 1 July 2022, was not reviewed for these pages.
   - id: lands-acquisition-act
     title: Lands Acquisition and Compensation Act
-    identifier: Cap. 58:04, consolidated to 31 December 2017
+    identifier: Cap. 58:04, consolidated text
     date: 2017-12-31
     url: https://malawilii.org/akn/mw/act/1970/21/eng@2017-12-31
     last_checked: 2026-09-27

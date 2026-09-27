@@ -18,7 +18,7 @@ service:
 og:
   headline: Road and rail reserves in Malawi, mapped against the legal width
   subline: Structures, cleared ground and excavations, and what changed between dated surveys
-related: [route-site-selection, change-detection, resettlement-cut-off-baselines, power-utilities]
+related: [route-site-selection, resettlement-cut-off-baselines, power-utilities]
 faq:
   - q: Do you measure from the centre line or the reserve edge?
     a: >-

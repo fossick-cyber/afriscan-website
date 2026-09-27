@@ -18,7 +18,7 @@ service:
 og:
   headline: Power-line wayleaves in Malawi, mapped and dated
   subline: Structures by distance to the line, and what is new since the last survey or the census
-related: [route-site-selection, resettlement-cut-off-baselines, vegetation-land-cover-fire, rail-roads]
+related: [route-site-selection, vegetation-land-cover-fire, rail-roads]
 faq:
   - q: What wayleave width do you measure to?
     a: >-

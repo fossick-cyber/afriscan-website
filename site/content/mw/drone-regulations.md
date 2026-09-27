@@ -126,7 +126,7 @@ The Aviation Regulations 2013, saved by s.96(3) of the 2017 Act "until replaced"
 ::::col
 ### Scope {#scope-of-the-act}
 
-"'aircraft' means any machine that can derive support in the atmosphere from the reactions of the air other than the reactions of the air against the earth's surface" (s.2). That covers multirotor and fixed-wing drones, and the Act's definition of "accident" mentions "the case of an unmanned aircraft". "Aerial work" is an operation using an aircraft "for specialized services such as agriculture, construction, photography, surveying, observation and patrol".
+The Act defines "aircraft" as "any machine that can derive support in the atmosphere from the reactions of the air other than the reactions of the air against the earth's surface" (s.2). That covers multirotor and fixed-wing drones, and the Act's definition of "accident" mentions "the case of an unmanned aircraft". "Aerial work" is an operation using an aircraft "for specialized services such as agriculture, construction, photography, surveying, observation and patrol".
 
 ### Authorisation {#authorisation}
 
