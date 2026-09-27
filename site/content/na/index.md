@@ -5,7 +5,7 @@ title: Servitude & Licence-Area Mapping in Namibia | AfriScan
 description: Structures, cleared ground and land change mapped along power-line servitudes, road reserves and pipelines, and across licence areas in Namibia. Human-reviewed.
 h1: Know what is changing inside your servitudes and licence areas in Namibia
 eyebrow: AfriScan · Namibia · Secure your land from the air, remotely
-lead: We map structures, excavations, cleared ground, new tracks and vegetation change along power lines, pipelines, roads and railways, and across mining, petroleum and green-hydrogen licence areas in Namibia. Each structure gets coordinates and its distance to your line or boundary, each stretch of route gets a density rating, and dated surveys show what is new. Satellite first, your own drone imagery where you already fly, and a person reviews every result before you receive the PDF report and GIS files.
+lead: We map the structures, excavations, cleared ground, tracks and vegetation change along your power lines, roads and railways and across mining, petroleum and green-hydrogen licence areas in Namibia, measure each one to your line or boundary and show what changed between dated surveys. Satellite first, your own drone imagery where you already fly, and a person reviews every result before it reaches you.
 buttons:
   - {label: Send your route or boundary, intent: proposal}
   - {label: See sample outputs, key: results}
@@ -114,7 +114,7 @@ In Namibia "resettlement" usually means the land-reform programme. Where we writ
 ::::section{id="your-imagery" tone="alt" eyebrow="Works with the drones you already fly" title="Your orthophotos, our registers and change layers"}
 :::::columns{split="2-1"}
 ::::col
-Utilities and mines in Namibia already fly drones for inspection and mapping. The flying is rarely the bottleneck. Turning each campaign's orthophotos into a list of what is new, where, and how close it is to the line or boundary is.
+Many utilities and mines already fly drones for inspection and mapping. The flying is rarely the bottleneck. Turning each campaign's orthophotos into a list of what is new, where, and how close it is to the line or boundary is.
 
 Send the orthophotos or GeoTIFFs you already hold. We run the structure, change and corridor analysis on them, a person reviews every result, and you receive the register, the segment ratings and the GIS layers. Between your flights, dated satellite scenes, where they exist for the area, show what has changed since the last one.
 ::::
@@ -153,7 +153,7 @@ Results go only to the contacts you name. Defence sites and signal stations are 
 ::::section{id="drones" eyebrow="Satellite first, drones under Part 101" title="Two routes to the picture, and the rules for each"}
 :::::columns{split="2-1"}
 ::::col
-**Satellite and your own imagery.** A survey starts from your route or boundary file and dated satellite imagery, open building datasets or the orthophotos you already hold. No aircraft flies, nobody needs a landowner letter, and diamond areas, national parks and remote farms are covered the same way as the rest of the route.
+**Satellite and your own imagery.** A survey starts from your route or boundary file and dated satellite imagery, open building datasets or the orthophotos you already hold. No aircraft flies and nobody needs to enter the land, so diamond areas, national parks and remote farms are covered the same way as the rest of the route.
 
 **Drone detail.** Where a stretch needs more detail than satellite imagery shows, a drone survey captures it, subject to the approvals and security clearances each job requires. In Namibia that means an NCAA RPAS Letter of Approval under NAMCAR Part 101 for each operation, applied for at least 30 days ahead, pilots with NCAA remote pilot certificates, and an RPAS Operator Certificate for any flight beyond visual line of sight, which the NCAA issues only to Namibian persons and companies. Flights over private property need the owner's permission, and parks, diamond areas and restricted airspace need their own.
 

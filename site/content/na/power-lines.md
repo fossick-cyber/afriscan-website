@@ -86,7 +86,7 @@ Red: an 80 m servitude, 40 m either side of the line, narrowing to 25 m either s
 
 The [Namibian Electricity Safety Code](https://www.ecb.org.na/wp-content/uploads/2022/07/Namibia-Electricity-Safety-Code.pdf) (GN 200 of 2011, in operation since 31 October 2012) sets, in Table 1, "the minimum distance between live conductors and such structures" for structures that are not part of the power line:
 
-| Line voltage | Minimum clearance, live conductor to structure |
+| Line voltage | Minimum clearance |
 |---|---|
 | Up to 33 kV | 3.0 m |
 | 66 kV | 3.2 m |

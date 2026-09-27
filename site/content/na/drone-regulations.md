@@ -313,7 +313,7 @@ Counsel's view on whether an air service licence is needed for the job.
 ::::section{id="afriscan" tone="alt" eyebrow="How we work" title="AfriScan and drone work in Namibia"}
 :::::columns{split="1-1"}
 ::::col
-We start from satellite imagery and the imagery you already hold. A satellite survey needs no aircraft, no flight plan and no landowner letters, so it can cover a whole servitude, road reserve or licence area, including diamond areas and parks, before anyone decides whether a drone is worth sending. Where your own teams already fly, we run the same structure, change and corridor analysis on your orthophotos.
+We start from satellite imagery and the imagery you already hold. A satellite survey needs no aircraft and no flight plan, and nobody enters the land, so it can cover a whole servitude, road reserve or licence area, including diamond areas and parks, before anyone decides whether a drone is worth sending. Where your own teams already fly, we run the same structure, change and corridor analysis on your orthophotos.
 
 Drone surveys are subject to the approvals and security clearances each job requires. Afridrone is working towards the approvals Namibia requires. Every AfriScan proposal with a drone element names the company that will fly it, with its Letter of Approval and, for flights beyond sight, its Operator Certificate number, so your team can check them against this page.
 ::::
