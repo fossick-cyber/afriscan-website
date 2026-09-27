@@ -1,11 +1,11 @@
 ---
 key: mining
 template: industry
-title: "Concessões de Diamantes em Angola: Zonas Mineiras | AfriScan"
+title: "Concessões Mineiras em Angola: Zonas Restritas | AfriScan"
 description: "Escavações, terreno desmatado, caminhos e construções nas zonas restritas e de protecção de concessões mineiras em Angola, entre datas, revistos por uma pessoa."
 h1: Alterações no terreno nas zonas restritas e de protecção da sua concessão
 crumb: Concessões mineiras
-eyebrow: Mineração e diamantes · Angola
+eyebrow: Mineração · Angola
 lead: Um inventário datado das escavações, do terreno desmatado, dos caminhos e das construções dentro e à volta da sua concessão, medido em relação às zonas que o Código Mineiro prevê e comparado entre levantamentos. Serve a gestão da concessão, a segurança das operações e o diálogo com as autoridades e as comunidades. Mapeamos o terreno, nunca pessoas, e uma pessoa revê cada resultado antes da entrega.
 buttons:
   - {label: Enviar os limites da concessão, intent: proposal}
@@ -31,14 +31,14 @@ faq:
     a: Não. Só se vê o que está à superfície. Poços cobertos, galerias e o que está debaixo da vegetação densa ficam fora do que as imagens de satélite e de drone mostram.
   - q: Medem as zonas a partir dos nossos limites?
     a: Sim. Trabalhamos a partir dos polígonos que nos enviar, da concessão, dos jazigos e das instalações, e medimos as distâncias que indicar, como 1 km e 5 km. As zonas reais são fixadas para cada área; se a zona de protecção da sua concessão já foi definida, envie-nos o limite oficial e usamos esse. Não verificamos títulos nem demarcamos limites.
-  - q: Trabalham na Lunda Norte e na Lunda Sul?
+  - q: Trabalham em todas as províncias?
     a: Não fazemos trabalho de campo nem voos de drone nas províncias da Lunda Norte e da Lunda Sul, nem na província de Cabinda fora da cidade de Cabinda, em linha com os avisos de viagem em vigor. Nas outras províncias, qualquer trabalho de campo começa por uma avaliação do risco de minas e engenhos por explodir, feita com o projecto.
   - q: O registo serve para um programa de reagrupamento residencial?
     a: Serve para o preparar e para o acompanhar, não para o substituir. Uma contagem datada das construções nas zonas mostra a dimensão do trabalho e o que surgiu depois da data de referência. O recenseamento, a consulta às comunidades e o programa, que o Governador Provincial aprova com os representantes das comunidades (Código Mineiro, artigo 207.º), cabem ao titular e às autoridades.
   - q: Podem voar um drone sobre a concessão?
     a: Só com o consentimento escrito do titular do direito mineiro e a autorização especial da ANAC (Lei da Aviação Civil, artigo 16.º-A). Entrar numa zona restrita exige ainda a comunicação formal prévia ao titular e às autoridades policiais locais (Código Mineiro, artigo 201.º, n.º 2). Os levantamentos com drone estão sujeitos às autorizações e credenciações de segurança exigidas para cada operação.
   - q: Publicam imagens da concessão?
-    a: Não. Os resultados vão apenas para os contactos que a sua empresa indicar, e nunca publicamos imagens de unidades de tratamento de diamantes, nem de qualquer outra instalação mineira, sem autorização escrita.
+    a: Não. Os resultados vão apenas para os contactos que a sua empresa indicar, e nunca publicamos imagens de instalações mineiras sem autorização escrita.
 ---
 
 ::::section{id="problema" eyebrow="O problema" title="Zonas fixadas no papel, terreno que muda todos os meses" lead="Uma concessão mineira ocupa uma área que nenhuma equipa consegue percorrer com regularidade, e as zonas à volta dos jazigos e das instalações são ainda maiores. O que muda nelas entre duas visitas raramente chega ao escritório a tempo."}
@@ -122,7 +122,7 @@ Por isso o inventário descreve o terreno com categorias neutras, como escavaç�
 ::::section{id="drones" tone="alt" eyebrow="Drones e acesso" title="Primeiro o satélite; o drone só com o consentimento do titular e a autorização da ANAC"}
 :::::columns{split="2-1"}
 ::::col
-O rastreio por satélite cobre toda a concessão e as suas zonas sem voos e sem ninguém no terreno. Quando uma área assinalada precisa de mais detalhe, propomos um levantamento com drone, com ortofotomapa e modelo de elevação, sujeito às autorizações exigidas para cada operação: a autorização especial da ANAC para os voos (Lei da Aviação Civil, artigo 16.º-A), o consentimento escrito do titular do direito mineiro e, antes de entrar numa zona restrita, a comunicação formal ao titular e às autoridades policiais locais (Código Mineiro, artigo 201.º, n.º 2).
+O rastreio por satélite cobre toda a concessão e as suas zonas sem voos e sem ninguém no terreno. Quando uma área assinalada precisa de mais detalhe, propomos um levantamento com drone, com ortofotomapa e modelo de elevação, sujeito às autorizações e credenciações de segurança exigidas para cada operação, entre as quais a autorização especial da ANAC para os voos (Lei da Aviação Civil, artigo 16.º-A), o consentimento escrito do titular do direito mineiro e, antes de entrar numa zona restrita, a comunicação formal ao titular e às autoridades policiais locais (Código Mineiro, artigo 201.º, n.º 2).
 
 A Afridrone está a trabalhar para obter as autorizações de operador que cada país exige. Cada proposta com drone indica quem voa, com que autorizações e com que prazo. Se a sua equipa já voa drones na concessão, analisamos essas imagens com o mesmo método.
 ::::

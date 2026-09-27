@@ -142,7 +142,7 @@ Depois das operações, um novo levantamento mostra o que mudou nos mesmos locai
 ::::
 
 ::::section{id="conteudo-local" eyebrow="Conteúdo local" title="Antes de contratar um serviço para o sector petrolífero"}
-No sector petrolífero, o Decreto Presidencial n.º 271/20 cria regimes de exclusividade, de preferência e de concorrência para os fornecedores, e os bens e serviços da lista de exclusividade só podem ser fornecidos por sociedades comerciais angolanas. A ANPG define as listas todos os anos e publica-as no seu sítio. Quando a lei reserva um serviço a sociedades comerciais angolanas, essa parte do trabalho é contratada através de uma empresa angolana, que a proposta identifica. [Conteúdo local e compras](/ao/pt/conteudo-local)
+No sector petrolífero, o Decreto Presidencial n.º 271/20 cria regimes de exclusividade, de preferência e de concorrência para os fornecedores, e os bens e serviços da lista de exclusividade só podem ser fornecidos por sociedades comerciais angolanas. A ANPG define as listas todos os anos e publica-as no seu sítio. Se o serviço constar da lista de exclusividade, a proposta indica como o trabalho pode ser contratado nessas condições. [Conteúdo local e compras](/ao/pt/conteudo-local)
 ::::
 
 ::::section{id="ambito" tone="alt" eyebrow="Âmbito honesto" title="O que fazemos, e o que não fazemos"}

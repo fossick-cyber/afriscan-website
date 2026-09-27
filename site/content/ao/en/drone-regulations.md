@@ -13,7 +13,7 @@ nav_order: 20
 nav_label: Drone law in Angola
 nav_blurb: ANAC's special authorisation, aerial work and data
 eyebrow: Angola · Drone regulations
-lead: "In Angola, no aircraft able to fly without a pilot may fly over Angolan territory without a special authorisation from the Autoridade Nacional da Aviação Civil (ANAC), under article 16.º-A of the Civil Aviation Law (Lei n.º 14/19, altered and republished by Lei n.º 31/21). Aerial photography, photogrammetry and aerial topography are specialised aerial services whose requirements ANAC sets. This page summarises the published rules, with a source for each."
+lead: "In Angola, no aircraft able to fly without a pilot may fly over Angolan territory without a special authorisation from the Autoridade Nacional da Aviação Civil (ANAC), under article 16.º-A of the Civil Aviation Law (Lei n.º 14/19, amended and republished by Lei n.º 31/21). Aerial photography, photogrammetry and aerial topography are specialised aerial services whose requirements ANAC sets. This page summarises the published rules, with a source for each."
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: See the sources, href: "#sources"}
@@ -27,7 +27,7 @@ cta:
   button: Request a proposal
 faq:
   - q: Does a small drone, under 25 kg, need an authorisation too?
-    a: Yes. Article 16.º-A of the Civil Aviation Law makes no exception for weight or purpose. In its homologation block for remotely piloted aircraft (RPA), ANAC's 2023 fee schedule has lines for two weight classes, up to 25 kg and from 25 to 150 kg, each with ownership registration, a registration (matrícula) certificate and an airworthiness certificate. The technical rules behind those lines are not published on ANAC's regulations page, so confirm with ANAC what each operation needs.
+    a: Yes. Article 16.º-A of the Civil Aviation Law makes no exception for weight or purpose. In block 9.3 ("taxas por homologação") of ANAC's 2023 fee schedule, next to the lines for remotely piloted aircraft (RPA), there are two weight classes (up to 25 kg and from 25 to 150 kg), each with ownership registration, a registration (matrícula) certificate and an airworthiness certificate. Those lines don't say "RPA" themselves, but their position suggests they are RPA classes. The technical rules behind those lines are not published on ANAC's regulations page, so confirm with ANAC what each operation needs.
   - q: Does a company flying drones over its own concession need an authorisation?
     a: Yes. The special authorisation in article 16.º-A applies to every flight. Aerial work for the operator's own benefit is a private aerial service (articles 56.º and 57.º of the Civil Aviation Law), and ANAC sets its requirements too. ANAC's 2026 draft sport-aviation regulation would also require a specific ANAC authorisation for any use that is not sport or leisure.
   - q: Can a foreign company carry out the survey?
@@ -57,8 +57,8 @@ INAVIC no longer exists. Lei n.º 28/21 folded INAVIC's powers and acts into ANA
 :::
 ::::
 
-::::section{id="civil-aviation-law" tone="alt" eyebrow="2. The Civil Aviation Law" title="The articles a drone survey has to meet" lead="Lei n.º 14/19 was altered and republished by Lei n.º 31/21 of 20 December 2021, in the Diário da República, I Série, n.º 238. Lei n.º 31/21 replaced the term “VANT” with “Sistemas de Aeronaves Pilotadas Remotamente” throughout (article 4.º(2)) and added, among others, article 16.º-A."}
-- **Article 16.º-A(1):** "Nenhuma aeronave capaz de navegar sem piloto pode sobrevoar o território angolano sem autorização especial da Autoridade Nacional da Aviação Civil" (no aircraft able to fly without a pilot may fly over Angolan territory without ANAC's special authorisation). Paragraph 2 gives ANAC the approval of the provisions for their safe navigation. No open category is published: every flight needs the authorisation.
+::::section{id="civil-aviation-law" tone="alt" eyebrow="2. The Civil Aviation Law" title="The articles a drone survey has to meet" lead="Lei n.º 14/19 was amended and republished by Lei n.º 31/21 of 20 December 2021, in the Diário da República, I Série, n.º 238. Lei n.º 31/21 replaced the term “VANT” with “Sistemas de Aeronaves Pilotadas Remotamente” throughout (article 4.º(2)) and added, among others, article 16.º-A."}
+- **Article 16.º-A(1):** "Nenhuma aeronave capaz de navegar sem piloto pode sobrevoar o território angolano sem autorização especial da Autoridade Nacional da Aviação Civil" (no aircraft able to fly without a pilot may fly over Angolan territory without ANAC's special authorisation). Paragraph 2 makes ANAC responsible for approving the rules for their safe operation. No open category is published: every flight needs the authorisation.
 - **Article 11(1)(ii):** ANAC licenses and controls the use of unmanned aircraft systems, "acautelando o seu uso indevido" (guarding against their misuse).
 - **Articles 54 and 55:** specialised aerial services include aerial photography, aerial photogrammetry, aerial cinematography, aerial topography, and prospecting and detection of natural features. Their requirements are set "por acto próprio" of ANAC.
 - **Articles 56 and 57:** aerial work for the operator's own benefit is a private aerial service, whose requirements ANAC also sets.
@@ -73,9 +73,9 @@ The law defines unmanned aircraft (UA), remotely piloted aircraft (RPA) and thei
 ::::section{id="fee-schedule" eyebrow="3. What the fee schedule shows" title="A registration and licensing regime exists, but its technical rules are not published"}
 :::::columns{split="2-1"}
 ::::col
-[ANAC's fee regulation](https://doc.anac.ao/share/s/uYJ4VC35S66DfDW8i5WtYw), in the Diário da República, II Série, n.º 7, of 11 January 2023, shows which acts ANAC performs for remotely piloted aircraft. Its block 9.3, "taxas por homologação", has:
+[ANAC's fee regulation](https://doc.anac.ao/share/s/uYJ4VC35S66DfDW8i5WtYw), in the Diário da República, II Série, n.º 7, of 11 January 2023, shows which acts ANAC performs for remotely piloted aircraft. Its block 9.3, "taxas por homologação", also has lines on approving modifications to type certificates. Among its lines are:
 
-- two weight classes, up to 25 kg and from 25 to 150 kg, each with ownership registration, a registration (matrícula) certificate and an airworthiness certificate;
+- two weight classes (up to 25 kg and from 25 to 150 kg), each with ownership registration, a registration (matrícula) certificate and an airworthiness certificate; these lines don't say "RPA" themselves, but their position, next to the RPA lines, suggests they are RPA classes;
 - RPA inspections;
 - RPA pilot licences and RPA pilot-training certificates;
 - approval of RPA construction and authorisation of experimental flights.

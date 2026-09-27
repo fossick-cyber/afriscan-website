@@ -130,7 +130,7 @@ After the operations, a re-survey of the same places shows what changed: tracks 
 ::::
 
 ::::section{id="local-content" tone="alt" eyebrow="Local content" title="Before you contract a service for the petroleum sector"}
-Decree 271/20 sets exclusivity, preference and competition regimes for suppliers to Angola's petroleum sector, and goods and services on the exclusivity list may be supplied only by Angolan commercial companies. ANPG defines the lists each year and publishes them on its website. Where the law reserves a service to Angolan commercial companies, that part of the work is contracted through an Angolan company, which the proposal names. Our [local-content notes (in Portuguese)](/ao/pt/conteudo-local) set out the rules.
+Decreto Presidencial n.º 271/20 sets exclusivity, preference and competition regimes for suppliers to Angola's petroleum sector, and goods and services on the exclusivity list may be supplied only by Angolan commercial companies. ANPG defines the lists each year and publishes them on its website. If the service is on the exclusivity list, the proposal sets out how the work can be contracted under those rules. Our [local-content notes (in Portuguese)](/ao/pt/conteudo-local) set out the rules.
 ::::
 
 ::::section{id="scope" eyebrow="Honest scope" title="What we do, and what we don't"}

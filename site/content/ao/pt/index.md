@@ -5,7 +5,7 @@ title: Monitorização de Faixas de Servidão em Angola | AfriScan
 description: "Localizamos construções na faixa de 30 m de oleodutos, gasodutos e linhas eléctricas em Angola e alterações no terreno em concessões. SIG e PDF em português."
 h1: Saiba o que está construído na sua faixa de servidão
 eyebrow: AfriScan by Afridrone · Angola
-lead: Localizamos as casas e as outras construções ao longo de oleodutos, gasodutos, linhas de transporte de electricidade e caminhos-de-ferro, e mapeamos as alterações no terreno em concessões mineiras e áreas de projecto. Cada construção é medida até ao eixo e agrupada por faixa, uma pessoa revê cada resultado, e recebe ficheiros SIG e um relatório em português. Primeiro o satélite; o drone só onde o detalhe o exigir.
+lead: Localizamos as casas e as outras construções ao longo de oleodutos, gasodutos, linhas de transporte de electricidade e caminhos-de-ferro, e mapeamos as alterações no terreno em concessões mineiras e áreas de projecto. Cada construção é medida até ao eixo e agrupada por faixa, uma pessoa revê cada resultado, e a sua empresa recebe ficheiros SIG e um relatório em português. Primeiro o satélite; o drone só onde o detalhe o exigir.
 buttons:
   - {label: Pedir proposta, intent: proposal}
   - {label: Ver um exemplo de resultados, href: /mz/pt/resultados-de-exemplo}
@@ -137,7 +137,7 @@ Construções na faixa de 30 m, à volta de terminais e refinarias e ao longo de
 :::card{title="Linhas de transporte de electricidade" icon="power" key="power-utilities"}
 Construções e alterações nas zonas de servidão das linhas existentes, e a comparação de traçados e o registo prévio para linhas novas e interligações.
 :::
-:::card{title="Concessões mineiras e de diamantes" icon="mine" key="mining"}
+:::card{title="Concessões mineiras" icon="mine" key="mining"}
 Escavações, terreno desmatado, caminhos e construções nas zonas restritas e de protecção previstas no Código Mineiro.
 :::
 :::card{title="Caminhos-de-ferro e estradas" icon="rail" key="rail-roads"}

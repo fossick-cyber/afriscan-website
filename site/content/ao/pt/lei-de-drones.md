@@ -27,7 +27,7 @@ cta:
   button: Pedir proposta
 faq:
   - q: Um drone pequeno, com menos de 25 kg, também precisa de autorização?
-    a: Sim. O artigo 16.º-A da Lei da Aviação Civil não distingue pesos nem finalidades. No bloco de homologação das aeronaves pilotadas remotamente (RPA), a tabela de taxas da ANAC de 2023 tem linhas para duas classes de peso, até 25 kg e de 25 a 150 kg, cada uma com registo de propriedade, certificado de matrícula e certificado de navegabilidade. As regras técnicas por trás dessas linhas não estão publicadas na página de regulamentação da ANAC, por isso os requisitos de cada operação devem ser confirmados com a ANAC.
+    a: Sim. O artigo 16.º-A da Lei da Aviação Civil não distingue pesos nem finalidades. No bloco 9.3 («taxas por homologação») da tabela de taxas da ANAC de 2023, junto das linhas de RPA, há duas classes de peso (até 25 kg e de 25 a 150 kg), cada uma com registo de propriedade, certificado de matrícula e certificado de navegabilidade. Essas linhas não dizem «RPA», mas pela sua posição lêem-se como classes de RPA. As regras técnicas por trás dessas linhas não estão publicadas na página de regulamentação da ANAC, por isso os requisitos de cada operação devem ser confirmados com a ANAC.
   - q: Uma empresa que voa drones na sua própria concessão precisa de autorização?
     a: Sim. A autorização especial do artigo 16.º-A aplica-se a qualquer voo. O trabalho aéreo feito em benefício do próprio operador é um serviço aéreo privado (artigos 56.º e 57.º da Lei da Aviação Civil), cujos requisitos a ANAC também fixa. O projecto de regulamento de aviação desportiva posto em consulta em 2026 prevê ainda uma autorização específica da ANAC para qualquer utilização que não seja desportiva.
   - q: Uma empresa estrangeira pode fazer o levantamento?
@@ -73,9 +73,9 @@ A lei define as aeronaves não tripuladas (UA), as aeronaves remotamente pilotad
 ::::section{id="taxas" eyebrow="3. O que a tabela de taxas mostra" title="Um regime de registo e licenças existe, mas as regras técnicas não estão publicadas"}
 :::::columns{split="2-1"}
 ::::col
-O [Regulamento de Taxas da ANAC](https://doc.anac.ao/share/s/uYJ4VC35S66DfDW8i5WtYw), publicado no Diário da República, II Série, n.º 7, de 11 de Janeiro de 2023, mostra que tipos de actos a ANAC pratica para as aeronaves pilotadas remotamente. No bloco 9.3, «taxas por homologação», estão:
+O [Regulamento de Taxas da ANAC](https://doc.anac.ao/share/s/uYJ4VC35S66DfDW8i5WtYw), publicado no Diário da República, II Série, n.º 7, de 11 de Janeiro de 2023, mostra que tipos de actos a ANAC pratica para as aeronaves pilotadas remotamente. O bloco 9.3, «taxas por homologação», também tem linhas sobre a aprovação de modificações a certificados de tipo. Nele estão, entre outras:
 
-- duas classes de peso, até 25 kg e de 25 a 150 kg, cada uma com registo de propriedade, certificado de matrícula e certificado de navegabilidade;
+- duas classes de peso (até 25 kg e de 25 a 150 kg), cada uma com registo de propriedade, certificado de matrícula e certificado de navegabilidade; estas linhas não dizem «RPA», mas pela sua posição, junto das linhas de RPA, lêem-se como classes de RPA;
 - as inspecções de RPA;
 - as licenças de piloto de RPA e os certificados de treino de pilotos de RPA;
 - a aprovação da construção de RPA e a autorização de voos experimentais.

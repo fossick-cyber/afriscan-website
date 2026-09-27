@@ -15,7 +15,7 @@ faq:
   - q: Which widths should we give you?
     a: The ones the record has to reflect. Angola's Land Law ties a 30 m strip on each side to electricity, water, telecommunications, oil and gas installations and conductors (Lei n.º 9/04, article 27(7)(g)). If your concession contract, a constituted servitude or your own standard sets other widths, give them too; one survey can report up to six distances. For a mining concession, send the polygons of the deposits and plants, and we measure the zones from them.
   - q: Do you need a site visit or a drone flight to start?
-    a: No. A survey starts from your route or boundary file and dated satellite imagery, open building datasets or imagery you already hold, so nobody travels and no aircraft flies. Drone detail is added only where a stretch needs it, subject to ANAC's special authorisation and the other authorisations each operation requires.
+    a: No. A survey starts from your route or boundary file and dated satellite imagery, open building datasets or imagery you already hold, so nobody travels and no aircraft flies. Drone detail is added only where a stretch needs it, subject to the approvals and security clearances each job requires, starting with ANAC's special authorisation.
   - q: We have no route file yet. Can we still ask?
     a: Yes. Give the province, the municipality and the start and end points, or send tower, valve or kilometre-post coordinates, and we draw the route with you and send it back for your confirmation before any survey runs.
   - q: Can the report be in Portuguese for our Angolan team and in English for the lender?

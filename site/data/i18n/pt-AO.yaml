@@ -138,7 +138,7 @@ form:
   needs: De que precisa?
   needs_options:
     - Registo de base das construções
-    - Levantamentos periódicos com avisos de alterações
+    - Levantamentos periódicos com relatório de alterações
     - Registo na data de corte (realojamento)
     - Comparação de traçados ou de locais
     - Levantamento com drone
@@ -165,7 +165,7 @@ form:
   send_title: O que enviar
   send_text: "O ficheiro do traçado ou do limite (KML, KMZ, GeoJSON, Shapefile, GPX ou GeoPackage), o país e a província, as larguras a verificar, a data que o registo deve reflectir, os produtos de que precisa e o prazo. Ainda não tem ficheiro? Descreva a localização e desenhamos o traçado consigo."
   procurement_title: Equipas de compras
-  procurement_text: Envie, com o pedido, o formulário de registo ou de pré-qualificação de fornecedor ou os documentos do concurso. A proposta indica que registos já estão feitos para o seu contrato e quais estão a ser tratados.
+  procurement_text: Envie, com o pedido, o formulário de registo ou de pré-qualificação de fornecedor ou os documentos do concurso. A proposta indica que registos o seu processo exige e em que ponto está cada um.
 
 notfound:
   title: Página não encontrada | AfriScan

@@ -38,8 +38,6 @@ faq:
 ---
 
 ::::section{id="problema" eyebrow="O problema" title="A ocupação das zonas de servidão começa com uma casa" lead="Uma linha de transporte atravessa centenas de quilómetros de lavras, aldeias e periferias de cidades. Uma construção debaixo dos condutores é um risco para quem lá vive, uma dificuldade para a manutenção e, mais tarde, um processo de indemnização."}
-A própria concessionária pública da rede nacional de transporte, a RNT-EP, tem feito campanhas de sensibilização contra «a ocupação desordenada das zonas onde estão implantados equipamentos eléctricos» e pelo «respeito pelas zonas de servidão das Linhas de Transporte», como as realizadas no Huambo e no Bié em Julho de 2026 ([RNT-EP, 28 de Julho de 2026](https://www.rnt.co.ao/noticias/rnt-ep-promove-campanhas-de-sensibilizacao-para-preservacao-das-infra-estruturas-electricas-no-huambo-e-bie/)).
-
 Entre duas inspecções, as construções aparecem, os caminhos abrem-se até às torres e as queimadas avançam sobre a faixa. A AfriScan dá à equipa de linhas uma imagem datada e revista do que está dentro de cada faixa, e do que mudou desde o último levantamento.
 
 :::cards{cols="3"}
@@ -90,7 +88,7 @@ Saber o que existe em cada faixa, e desde quando, poupa tempo na constituição 
 ::::
 
 ::::section{id="linhas-novas" tone="alt" eyebrow="Linhas novas e interligações" title="Antes de fixar o traçado e de negociar as servidões"}
-Quando uma linha nova de alta tensão ou uma interligação com um país vizinho passa pelo procedimento de avaliação de impacte ambiental do [Decreto Presidencial n.º 117/20](https://anrm.gov.ao/wp-content/uploads/2025/08/DP-117-20-de-22-de-Abril-Novo-Regulamento-Geral-de-Avaliacao-de-Impacte-Ambiental-e-do-Procedimento-de-Licenciamento-Ambiental.pdf), com o EPDA, o EIAS e a consulta pública, a equipa do projecto precisa de saber, em cada fase, quantas construções e lavras cada traçado toca.
+Quando uma linha nova de alta tensão ou uma interligação com um país vizinho passa pelo procedimento de avaliação de impacte ambiental do [Decreto Presidencial n.º 117/20](https://anrm.gov.ao/wp-content/uploads/2025/08/DP-117-20-de-22-de-Abril-Novo-Regulamento-Geral-de-Avaliacao-de-Impacte-Ambiental-e-do-Procedimento-de-Licenciamento-Ambiental.pdf), a equipa do projecto precisa de saber, em cada fase, quantas construções e lavras cada traçado toca.
 
 :::steps
 :::step{title="Comparar traçados" icon="route"}

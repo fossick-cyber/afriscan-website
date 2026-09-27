@@ -28,7 +28,7 @@ faq:
   - q: Os levantamentos por satélite estão na lista de exclusividade da ANPG?
     a: A ANPG elabora e publica as listas todos os anos, e o que consta de cada lista pode mudar. Não afirmamos que os serviços de levantamento, cartografia ou detecção remota estejam ou não numa lista. Consulte a lista em vigor no sítio da ANPG; a proposta descreve o serviço com o detalhe necessário para a sua equipa jurídica fazer essa avaliação.
   - q: E se o serviço estiver na lista de exclusividade?
-    a: Nesse caso, a lei só permite que o serviço seja fornecido por uma sociedade comercial angolana, isto é, com sede em Angola e capital social detido na totalidade por cidadãos ou sociedades angolanas (Decreto Presidencial n.º 271/20, artigos 3.º, alínea q), e 11.º, n.º 1). Trabalhamos através de uma empresa angolana que cumpra essa definição, e a proposta identifica-a e diz que parte do trabalho lhe cabe.
+    a: Nesse caso, a lei só permite que o serviço seja fornecido por uma sociedade comercial angolana, isto é, com sede em Angola e capital social detido na totalidade por cidadãos ou sociedades angolanas (Decreto Presidencial n.º 271/20, artigos 3.º, alínea q), e 11.º, n.º 1). Se o serviço constar da lista de exclusividade, a proposta indica como o trabalho pode ser contratado nessas condições.
   - q: A AfriScan está registada nos portais de fornecedores?
     a: Esta página não afirma registos. A proposta indica, para o seu processo, que registos são exigidos e em que ponto está cada um. Envie os formulários de registo ou de pré-qualificação com o pedido.
   - q: Que autorizações precisa um trabalho com drone?
@@ -83,7 +83,7 @@ A [página de conteúdo local da ANPG](https://www.anpg.co.ao/conteudo-local) te
 
 ::::section{id="como-trabalhamos" eyebrow="Como trabalhamos com estas regras" title="O que a proposta diz sobre conteúdo local"}
 - **O serviço, descrito com detalhe:** o que é feito a partir de imagens de satélite, o que exigiria voos de drone e o que fica com as equipas do cliente, para a sua equipa jurídica poder ver se o serviço cai num dos regimes.
-- **Quem contrata:** quando a lei reserva o serviço a sociedades comerciais angolanas, trabalhamos através de uma empresa angolana que cumpra essa definição; a proposta identifica-a e diz que parte do trabalho lhe cabe.
+- **Quem contrata:** se o serviço constar da lista de exclusividade, a proposta indica como o trabalho pode ser contratado nessas condições.
 - **Os registos:** a proposta indica que registos o seu processo exige, na ANPG, nos portais de fornecedores das empresas petrolíferas ou no cadastro da contratação pública, e em que ponto está cada um. Esta página não afirma registos.
 - **Os dados:** que dados pessoais o trabalho envolve, onde ficam e quem os pode ver (veja a secção sobre dados, abaixo).
 ::::

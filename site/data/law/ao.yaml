@@ -17,7 +17,7 @@ regulator:
   url: https://www.anac.ao/ao/legislacao-e-regulamentacao/leis/
 summary:
   regulator: Autoridade Nacional da Aviação Civil (ANAC), which took over INAVIC's powers in 2021; a special ANAC authorisation for every unmanned flight
-  instruments: Lei da Aviação Civil (Lei n.º 14/19, altered and republished by Lei n.º 31/21), art. 16.º-A; Lei n.º 28/21 (ANAC)
+  instruments: Lei da Aviação Civil (Lei n.º 14/19, amended and republished by Lei n.º 31/21), art. 16.º-A; Lei n.º 28/21 (ANAC)
 instruments:
   - id: lei-31-21
     title: Lei n.º 31/21, de 20 de Dezembro (altera e republica a Lei n.º 14/19, Lei da Aviação Civil)
@@ -41,8 +41,8 @@ instruments:
     date: 2023-01-11
     url: https://doc.anac.ao/share/s/uYJ4VC35S66DfDW8i5WtYw
     last_checked: 2026-09-27
-    note: "Homologation lines for RPAs (block 9.3: registration, matrícula and airworthiness certificates, inspections, RPA pilot licences, pilot-training certificates) and generic aerial-work lines (5.16, 5.19, 5.27.1). This site quotes no amounts."
-    note_pt: "Linhas de homologação de RPA (bloco 9.3: registo, certificados de matrícula e de navegabilidade, inspecções, licenças de piloto de RPA, certificados de treino de pilotos) e linhas genéricas de trabalho aéreo (5.16, 5.19, 5.27.1). Este site não indica valores."
+    note: "Homologation block 9.3: RPA lines (inspections, RPA pilot licences, pilot-training certificates, construction approval) next to two weight classes with registration, matrícula and airworthiness certificates, which read as RPA classes from their position; plus generic aerial-work lines (5.16, 5.19, 5.27.1). This site quotes no amounts."
+    note_pt: "Bloco de homologação 9.3: linhas de RPA (inspecções, licenças de piloto de RPA, certificados de treino de pilotos, aprovação da construção) junto de duas classes de peso com registo e certificados de matrícula e de navegabilidade, que pela sua posição se lêem como classes de RPA; e linhas genéricas de trabalho aéreo (5.16, 5.19, 5.27.1). Este site não indica valores."
   - id: anac-cp-003-2026
     title: ANAC, Consulta Pública n.º 003/2026, Projecto de Regulação de Aviação Desportiva
     identifier: Consultation 29/05/2026 to 13/06/2026 (closed)

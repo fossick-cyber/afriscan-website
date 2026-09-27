@@ -119,7 +119,7 @@ Structures and land change in the servitudes of existing lines, and route compar
 :::card{title="Railways and roads" icon="rail" key="rail-roads"}
 A dated register of structures along the track, for rehabilitation works, new branches, servitudes and resettlement, and change after floods.
 :::
-:::card{title="Mining and diamond concessions" icon="mine" key="mining"}
+:::card{title="Mining concessions" icon="mine" key="mining"}
 Excavations, cleared ground, tracks and structures inside the restricted and protection zones the Mining Code provides for, compared between dates.
 :::
 :::card{title="ESIA and resettlement consultants" icon="clipboard" key="resettlement-cut-off-baselines"}
@@ -130,7 +130,7 @@ Dated, reviewed registers a lender's environmental and social team can check aga
 :::
 :::
 
-Our Angola guide to mining zones is in Portuguese: [concessões de diamantes e zonas mineiras](/ao/pt/concessoes-de-diamantes). So is the guide to [power-line servitudes](/ao/pt/linhas-de-transporte-de-electricidade).
+Our Angola guide to mining zones is in Portuguese: [concessões mineiras e zonas restritas](/ao/pt/concessoes-mineiras). So is the guide to [power-line servitudes](/ao/pt/linhas-de-transporte-de-electricidade).
 ::::
 
 ::::section{id="resettlement" eyebrow="Resettlement and ESIA" title="Dated registers for cut-off dates, expropriation and regrouping"}
