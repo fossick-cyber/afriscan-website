@@ -41,7 +41,7 @@ faq:
   - q: Is CAAB's 2016 bye-law still in force?
     a: That has not been settled publicly. CAAB still publishes Bye-Law 07 of 2016, and S.I. No. 71 of 2024 neither mentions nor revokes it, but a 2022 circular said its list applied until 6 June 2023 and CAAB's current drone page leaves the list out. Until CAAB confirms the position in writing, plan as if the restricted areas apply and ask for written special permission where the work needs it.
   - q: Can a drone follow an interconnector across the border?
-    a: No. CAAB's page says a drone registered in Botswana is not permitted to cross international boundaries, and a flight into or out of Botswana needs the other State's authorisation as well as CAAB's (reg. 46(2) and (3)). Survey each side of a border under its own country's rules.
+    a: No. CAAB's page says a drone registered in Botswana is not permitted to cross international boundaries, a flight out of Botswana needs the authorisation of the State of destination and of any State it overflies, and a flight into Botswana needs CAAB's (reg. 46(2) and (3)). Survey each side of a border under its own country's rules.
 ---
 
 ::::section{id="at-a-glance" eyebrow="At a glance" title="Six checks before a commercial drone job" lead="The owner, each drone, the operator, each operation and each pilot are approved separately, and the people behind them are vetted. A commercial drone job is lawful only when all of them are in place and the landowner has consented to the take-off site."}
@@ -217,7 +217,7 @@ Along a line that crosses tribal land, state land and freehold farms, the consen
 | **Controlled airspace** | Prior authorisation from the air traffic control unit with jurisdiction, and two-way communication with the air navigation service provider | 21(1) |
 | **Prohibited and restricted areas** | Never in prohibited areas; restricted and danger areas, or any other area CAAB notifies, only with CAAB's written permission and conditions | 20 |
 | **Crowds** | Not over an open-air assembly of people not taking part in the operation | 29 |
-| **Borders** | CAAB: a drone registered in Botswana "is not permitted to cross International Boundaries". A flight out of Botswana needs the other State's authorisation, and a flight into it CAAB's | 46(2)–(3) |
+| **Borders** | CAAB: a drone registered in Botswana "is not permitted to cross International Boundaries". A flight out of Botswana needs the authorisation of the State of destination and of any State it overflies, and a flight into it CAAB's | 46(2)–(3) |
 | **In the air** | One pilot, one drone (27); yield the right of way to all aircraft and vehicles (28); command and control at all times (33); incidents reported under the safety-management and accident-investigation regulations (31) | 27–33 |
 
 Regulations 21(2) and 35 sit side by side in the text, one without an exception and one with a permission route: ask CAAB how they apply to your route. CAAB lists Sir Seretse Khama (Gaborone), Maun, P. G. Matante (Francistown) and Kasane as international airports, and also runs Selebi-Phikwe and Ghanzi; a long line can pass within 10 km of several. The prohibited, restricted and danger areas are published in CAAB's aeronautical information publication, which [CAAB's Aeronautical Information Services](https://www.caab.co.bw/aip-aip-sup-airac/) sell by subscription.
@@ -274,7 +274,7 @@ We found no drone rule specific to mines. The mine's site rules and consent appl
 The bye-law bars flights over national game parks and wildlife sanctuaries, over tourism facilities and over wildlife in a way that may disturb it. Ask CAAB and the Department of Wildlife and National Parks before planning a flight in or near one.
 :::
 :::card{title="Fuel depots and security installations" icon="shield"}
-The bye-law's restriction on Government facilities, "including, military and security installations", and any prohibited or restricted airspace in the AIP apply. Treat fuel depots and military sites as sensitive and plan with CAAB.
+Prohibited or restricted airspace in the AIP applies, and, if the bye-law still applies, so may its restriction on Government facilities, "including, military and security installations". Treat fuel depots and military sites as sensitive and plan with CAAB.
 :::
 :::card{title="Roads" icon="route"}
 The bye-law bars take-off, landing and flight over major public roads and over moving traffic. Lines that share road servitudes are therefore harder to fly than lines across open land.
@@ -321,10 +321,10 @@ Whether CAAB also requires these of drone operators, or treats the ROC and the a
 ::::section{id="data" eyebrow="Beyond aviation" title="Privacy, personal data, land surveys and satellite work"}
 :::cards{cols="2"}
 :::card{title="Privacy under the regulations" icon="lock"}
-A camera operator must "operate it in a responsible way to respect the privacy of others". Regulation 101 also bars using a drone to observe a person without their consent or private property without the owner's consent, and to photograph or film an individual without consent in order to publish it, with exceptions for newsgathering and public events. Along a corridor, that means the asset owner's and landowners' consent, flights for land and asset mapping, and no published images of identifiable people.
+A camera operator must "operate it in a responsible way to respect the privacy of others". Regulation 101 also bars using a drone to monitor or keep watch on a person without their consent, or on private property without the owner's consent, and to photograph or film an individual without consent in order to publish it, with exceptions for newsgathering and public events. Along a corridor, that means the asset owner's and landowners' consent, flights for land and asset mapping, and no published images of identifiable people.
 :::
 :::card{title="The Data Protection Act, 2024" icon="file-text"}
-Imagery of homes linked to names, resettlement census lists and grievance records are personal data. The Minister for State President told Parliament that implementation of the Data Protection Act started on 14 January 2025, and that the Information and Data Protection Commission would publish its address once it has permanent premises ([BOPA, 29 July 2025](https://dailynews.gov.bw/news-detail/87795)). Have counsel check its duties for your project files.
+Imagery of homes linked to names, resettlement census lists and grievance records are personal data in the ordinary sense; counsel should confirm how the Act treats them. The Minister for State President told Parliament that implementation of the Data Protection Act started on 14 January 2025, and that the Information and Data Protection Commission would publish its address once it has permanent premises ([BOPA, 29 July 2025](https://dailynews.gov.bw/news-detail/87795)). Have counsel check its duties for your project files.
 :::
 :::card{title="Orthophotos are not cadastral surveys" icon="ruler"}
 The Department of Surveys and Mapping regulates cadastral surveying and approves cadastral surveys to facilitate the registration of title under the Land Survey Act (Cap. 33:01) ([Ministry of Lands and Agriculture](https://www.gov.bw/ministries/ministry-lands-and-agriculture)). Drone and satellite registers support that work; they do not replace it.

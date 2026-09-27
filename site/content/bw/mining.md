@@ -105,7 +105,7 @@ The Minister says the Mines and Minerals (Amendment) Act, 2024, enacted in Octob
 ::::
 ::::col
 :::callout{tone="note" title="Concession oversight, in the Ministry's words"}
-As part of optimised regulation of small mines, the Ministry of Minerals and Energy means "to increase monitoring of concessions through the use of new technology such as drones", which it says can also give feedback on "the actual amount of material that has been mined" (Committee of Supply speech, 4 March 2026).
+As part of optimised regulation of small mines, the Ministry of Minerals and Energy plans "to increase monitoring of concessions through the use of new technology such as drones", which it says can also give feedback on "the actual amount of material that has been mined" (Committee of Supply speech, 4 March 2026).
 
 We map the extent of disturbed ground between dates from satellite imagery, and calculate volumes from drone elevation models where they exist. Volumes are indicative, not certified.
 :::
@@ -149,7 +149,7 @@ The Minister's March 2026 speech lists mines under care and maintenance or in li
 ::::section{id="drones" tone="alt" eyebrow="Your drone imagery, and drone surveys" title="Drones on and around mine sites"}
 :::::columns{split="2-1"}
 ::::col
-We found no drone rule specific to mines in Botswana. The general rules apply: the Civil Aviation (Remotely Piloted Aircraft) Regulations, 2024 require the consent of "the relevant Authority" to launch or recover a drone from any public or private property (reg. 100), CAAB's checklist asks commercial operators for the property owner's letter of authorisation, and each commercial operation needs its own CAAB authorisation, including a security review of how the camera will be used. Where a lease area takes in a game park or wildlife sanctuary, CAAB's 2016 bye-law, whose status after 2024 is to be confirmed with CAAB, restricts flights over it and over wildlife.
+We found no drone rule specific to mines in Botswana. The general rules apply: the Civil Aviation (Remotely Piloted Aircraft) Regulations, 2024 require the consent of "the relevant Authority" to launch or recover a drone from any public or private property (reg. 100), CAAB's checklist asks commercial operators for the property owner's letter of authorisation, and each commercial operation needs its own CAAB authorisation, including a security review of how the camera will be used. Where a lease area takes in a game park or wildlife sanctuary, CAAB's 2016 bye-law, whose status after 2024 is to be confirmed with CAAB, bars flights over national game parks and wildlife sanctuaries, and over wildlife in a way that may disturb it, so it may apply there too.
 
 If your survey team already flies the mine, send the orthophotos and we run the analysis on them. New drone surveys are subject to the approvals and security clearances each job requires.
 ::::

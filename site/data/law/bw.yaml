@@ -84,11 +84,12 @@ instruments:
     last_checked: 2026-09-27
     note: Security vetting form SV 1, fingerprints and the property owner's letter of authorisation for commercial operation.
   - id: bocra-type-approval
-    title: BOCRA, type approval of communications equipment (Communications Regulatory Authority Act, 2012, s.84)
-    identifier: BOCRA web page
+    title: Communications Regulatory Authority Act, 2012 (type approval, s.84)
+    identifier: Act of 2012, s.84
     date: 2012
     url: https://www.bocra.org.bw/type-approval
     last_checked: 2026-09-27
+    note: Linked to BOCRA's type-approval page.
   - id: ppra-codes
     title: PPRA, list of contractor registration codes
     identifier: CRE.WI.05 Rev 06
