@@ -58,7 +58,7 @@ On the typical designs for BPC's World Bank-financed 66 kV and 33 kV lines, the 
 Placing power, water or communication lines inside a road reserve needs an "Access Control to Road Reserve Space (Wayleave)" permit, and the A1 drawings sent with the application must show the utilities already in the reserve or close to it ([gov.bw](https://www.gov.bw/transport/access-control-road-reserve-space-wayleave)).
 :::
 :::card{title="Mining: surface rights first" icon="mine" eyebrow="Mining licence"}
-A mining licence application needs surface rights from the land authority or landowner, with a stamped sketch plan showing coordinates, environmental authorisation from the Department of Environmental Affairs and archaeological clearance ([gov.bw](https://www.gov.bw/mining/mining-license-application)). The Minister of Minerals and Energy says the Mines and Minerals (Amendment) Act, 2024 came into force in October 2025 with revised penalties ([BOPA, 25 August 2026](https://dailynews.gov.bw/news-detail/92924)).
+A mining licence application needs surface rights from the land authority or landowner, with a stamped sketch plan showing coordinates, environmental authorisation from the Department of Environmental Affairs and archaeological clearance ([gov.bw](https://www.gov.bw/mining/mining-license-application)). The Minister of Minerals and Energy says the Mines and Minerals (Amendment) Act, 2024, enacted in October 2025 and now in force, brought revised penalties ([BOPA, 25 August 2026](https://dailynews.gov.bw/news-detail/92924)).
 :::
 :::
 
@@ -118,13 +118,10 @@ Land-cover and structure baselines for environmental assessment practitioners, R
 A line, road reserve, pipeline route or lease boundary in any common GIS format, with the widths or zones that matter. No file yet? Send pole, beacon or kilometre coordinates and we draw it with you.
 :::
 :::step{title="Satellite screening"}
-Structures, cleared ground and tracks are mapped along the whole route or area from dated satellite imagery, open building datasets or imagery you already hold.
+Structures, cleared ground and tracks are mapped along the whole route or area from dated satellite imagery, open building datasets or imagery you already hold. Drone detail is added only for the stretches that need it, subject to the CAAB approvals and security clearances each job requires.
 :::
 :::step{title="A person reviews every result"}
 A reviewer confirms, corrects and adds to what the detection models and datasets propose. What the imagery cannot settle is listed for a ground check.
-:::
-:::step{title="Drone detail where needed"}
-Only for the stretches that need it, subject to the CAAB approvals and security clearances each job requires.
 :::
 :::step{title="Report and GIS files"}
 The PDF report and layers go to the contacts you name. Re-surveys follow the schedule you agree with us.

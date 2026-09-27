@@ -4,7 +4,7 @@ template: industry
 slug: power-lines
 title: Power-Line Servitude Encroachment in Botswana | AfriScan
 description: Structures, ploughed fields and cleared ground inside 33 kV to 400 kV power-line servitudes in Botswana, measured to the line, dated and reviewed by a person.
-h1: Structures, fields and vegetation inside power-line servitudes in Botswana, mapped and dated
+h1: What stands and grows inside power-line servitudes in Botswana
 crumb: Power lines
 eyebrow: Power transmission · Botswana
 lead: A dated register of what stands and grows inside your line servitudes, from the 400 kV backbone down to 66 kV sub-transmission and 33 kV distribution. Each structure is measured to the line, ploughed and cleared ground inside the servitude is mapped, each 500 m stretch is rated, and anything new since the last survey is flagged. For new lines and substations, a baseline before the route is fixed. Satellite first, and a person reviews every result.
