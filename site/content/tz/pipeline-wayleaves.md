@@ -81,7 +81,7 @@ Environmental and social monitoring on a lender-financed line asks what has chan
 
 **Safety zones are upstream.** The Petroleum Act's s.203 safety zones, whose extent PURA determines, sit in the Part on upstream operations. They surround wells and upstream processing, not crude or products pipelines and their pump stations. For gas fields, gas transmission lines and the LNG site, see [gas pipelines and LNG in Tanzania](/tz/gas-pipelines-and-lng).
 
-We found no single statutory width for a pipeline wayleave, so we report the bands you set from your own acquisition, agreement or company standard. [Wayleave law in Tanzania](/tz/wayleave-law#petroleum)
+We found no single statutory width for a pipeline wayleave, so we report the bands you set from your own acquisition, agreement or company standard. In Swahili documents a crude-oil pipeline is *bomba la mafuta ghafi*. [Wayleave law in Tanzania](/tz/wayleave-law#petroleum)
 ::::
 
 ::::section{id="register" eyebrow="What we map along the line" title="A register of what stands in the wayleave, then what changed"}

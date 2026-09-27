@@ -90,7 +90,7 @@ Under the Mining (Local Content) Regulations, 2018, as amended, an indigenous Ta
 :::::
 ::::
 
-::::section{id="data" tone="alt" eyebrow="Personal data" title="The Personal Data Protection Act, Cap. 44" lead="English version GN 395B of 13 June 2023. It applies in Mainland Tanzania and Tanzania Zanzibar, except for non-Union matters in Zanzibar."}
+::::section{id="data" tone="alt" eyebrow="Personal data" title="The Personal Data Protection Act, Cap. 44" lead="English version GN 395B of 13 June 2023. Personal data are *taarifa binafsi*, and the regulator is the Personal Data Protection Commission (PDPC, *Tume ya Ulinzi wa Taarifa Binafsi*). It applies in Mainland Tanzania and Tanzania Zanzibar, except for non-Union matters in Zanzibar."}
 :::::columns{split="2-1"}
 ::::col
 - **Registration first.** "A person shall not collect or process personal data without being registered as a data controller or a data processor under this Act" (s.14(1)). Private organisations register online with a BRELA certificate, a TIN certificate and an audited financial report, and introduce their Data Protection Officer by letter ([PDPC registration](https://pdpc.go.tz/services/registration/)).

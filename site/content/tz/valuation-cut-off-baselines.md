@@ -41,7 +41,7 @@ cta:
   secondary_href: /tz/wayleave-law#compensation
 ---
 
-::::section{id="dates" eyebrow="Why the date decides" title="Compensation in Tanzania follows the valuation" lead="We found no stand-alone Tanzanian resettlement statute. Compensation runs through the Land Act, the Land Acquisition Act, the Village Land Act and the valuation law, and on lender-financed projects through IFC Performance Standard 5. Each of them turns on dates."}
+::::section{id="dates" eyebrow="Why the date decides" title="Compensation in Tanzania follows the valuation" lead="We found no stand-alone Tanzanian resettlement statute. Compensation (*fidia*) and valuation (*tathmini*) run through the Land Act, the Land Acquisition Act, the Village Land Act and the valuation law, and on lender-financed projects through IFC Performance Standard 5. Each of them turns on dates."}
 :::cards{cols="3"}
 :::card{title="Prompt payment within six months" icon="calendar" eyebrow="Valuation Act, Cap. 138"}
 Section 52 of the [Valuation and Valuers Registration Act](https://tanzlii.org/en/akn/tz/act/2016/7/eng@2023-12-31) defines "prompt payment of compensation" as "payment of compensation within six months after" the valuation is approved.

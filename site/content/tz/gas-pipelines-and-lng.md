@@ -80,7 +80,7 @@ Well pads, field pipelines, processing plants, camps and yards are part of the a
 :::::
 ::::
 
-::::section{id="transmission" eyebrow="Gas transmission" title="The high-pressure gas line and its wayleave" lead="A high-pressure natural-gas pipeline of about 551 km runs from a processing plant in the south, and gas is distributed in Dar es Salaam, including compressed natural gas connections. A new line from a southern gas field to the processing plant was contracted in July 2025."}
+::::section{id="transmission" eyebrow="Gas transmission" title="The high-pressure gas line and its wayleave" lead="A high-pressure natural-gas pipeline (*bomba la gesi asilia*) of about 551 km runs from a processing plant in the south, and gas is distributed in Dar es Salaam, including compressed natural gas connections. A new line from a southern gas field to the processing plant was contracted in July 2025."}
 :::::columns{split="1-1"}
 ::::col
 This is the closest match to our published sample, a high-pressure gas pipeline in Mozambique. The survey follows the same steps: the route in its UTM zone, the bands you set inside and around the wayleave, each structure the review confirms with its distance and band, and each 500 m stretch rated for encroachment density.

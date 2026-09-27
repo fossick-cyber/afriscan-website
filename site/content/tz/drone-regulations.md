@@ -237,7 +237,7 @@ A pipeline or power-line wayleave that runs past homes, shops and farm buildings
 >
 > "(2) The RPAS pilot or the owner shall seek permission or notify the appropriate authorities, as well as people around the area before starting the operations."
 
-**Privacy** (reg 87). Cameras must be operated "in a responsible way to respect the privacy of others". Under reg 87 no one may use a drone to conduct surveillance of a person without that person's consent, or of private real property without the owner's consent, and no one may photograph or film an individual without consent to publish or publicly disseminate the images, except for newsgathering or events open to the public.
+**Privacy** (reg 87). Cameras must be operated "in a responsible way to respect the privacy of others". Under reg 87 no one may use a drone to “conduct surveillance of” a person without that person's consent, or of private real property without the owner's consent, and no one may photograph or film an individual without consent to publish or publicly disseminate the images, except for newsgathering or events open to the public.
 
 Whether a corridor mapping flight over private plots falls within reg 87's rule on private property is a question for counsel. Until it is settled, plan on the owner's written consent for each plot flown.
 
