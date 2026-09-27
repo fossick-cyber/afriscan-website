@@ -3,7 +3,7 @@ key: oil-gas
 template: industry
 slug: pipelines
 title: Pipeline Right of Way & Route Baselines, Zambia | AfriScan
-description: Route-option structure counts, settlement distances and dated right-of-way baselines for new and existing petroleum pipelines in Zambia, following ERB guidelines.
+description: Structure counts along route options, settlement distances and dated right-of-way baselines for new and existing petroleum pipelines in Zambia, per ERB rules.
 h1: Route baselines and right-of-way monitoring for petroleum pipelines in Zambia
 crumb: Pipelines
 eyebrow: Oil & gas · Zambia · Pipelines and fuel corridors
@@ -131,7 +131,7 @@ Structures are coloured by band: <span class="band band--a">Within 50 m</span> <
 ::::section{id="protected-corridors" tone="alt" eyebrow="Protected corridors" title="Pipelines that are declared protected areas"}
 :::::columns{split="2-1"}
 ::::col
-Some pipeline corridors and installations in Zambia are declared protected areas or places under the [Protected Places and Areas Act (Cap. 125)](https://www.parliament.gov.zm/sites/default/files/documents/acts/Protected%20Places%20and%20Areas%20Act.pdf). The consolidated text on Parliament's site prints the Protected Areas (Tanzama Oil Pipeline) Order of 1970, which covers "all that area along the Tanzama Oil Pipeline lying within 137.16 metres on each side", orders making two pumping stations protected places with protected areas 91.44 m beyond their fences, and an order for the land around the oil refinery at Ndola. Whether each order is still in force in the 2019 Revised Edition is for Zambian counsel to confirm.
+Some pipeline corridors and installations in Zambia are declared protected areas or places under the [Protected Places and Areas Act (Cap. 125)](https://www.parliament.gov.zm/sites/default/files/documents/acts/Protected%20Places%20and%20Areas%20Act.pdf). The consolidated text on Parliament's site prints an order of 1970 (SI 195 of 1970) that makes the land within 137.16 m on each side of the oil pipeline to Tanzania a protected area, orders making two of its pumping stations protected places with protected areas 91.44 m beyond their fences, and an order for the land around the oil refinery at Ndola. Whether each order is still in force in the 2019 Revised Edition is for Zambian counsel to confirm.
 
 In a protected area, anyone present must follow an authorised officer's directions; a protected place may not be entered without a pass. We work on such corridors only for, or with the written authority of, the operator, and security sites are masked in every deliverable.
 ::::
