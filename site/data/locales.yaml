@@ -225,7 +225,7 @@ zw:
   label: "Zimbabwe"
   short: "Zimbabwe"
   sitemap: sitemap-zw.xml
-  status: draft
+  status: live
   region: Southern
 mw:
   content: mw

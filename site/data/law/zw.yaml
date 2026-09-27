@@ -1,0 +1,81 @@
+# Zimbabwe: the instruments behind /zw/drone-regulations.
+# Facts ONLY from regional/zw.FINAL.md (verified 2026-09-27 against the gazetted texts and CAAZ's own
+# documents; zw.verified.md has the same content). Items the brief marks [unverified] or [not retrieved]
+# stay out: the key-point list, AIP ENR 5.1, CAAZ's Implementing Standards, POTRAZ type approval, the
+# 1998 ZESA Electrical Safety Rules, whether Protected Places and Areas Act directions reach overflight.
+# No fee, fine-level value or other amount of money is published (owner rule 1): the S.I. 271 fee
+# schedule stays internal. Documents the brief gives without a date (the CAAZ online application and
+# FAQ, the Official Secrets Act, the Land Survey Act, the Civil Aviation Act) are linked in the page
+# body instead of this table. The Protected Places and Areas Act and the Mines and Minerals Act are
+# cited from ZimLII's consolidated texts through the Internet Archive, because zimlii.org refuses
+# direct requests; the date given is the consolidation date.
+country_name: Zimbabwe
+last_reviewed: 2026-09-27
+regulator:
+  name: Civil Aviation Authority of Zimbabwe (CAAZ)
+  url: https://www.caaz.co.zw/legislation/
+summary:
+  regulator: Civil Aviation Authority of Zimbabwe (CAAZ) for aircraft, pilots and the operator certificate; the Ministry responsible for Transport for the Air Services Permit; security clearances from the Ministries of Defence and ICT
+  instruments: Civil Aviation (Remotely Piloted Aircraft) Regulations, 2018 (S.I. 271 of 2018); Civil Aviation Act [Chapter 13:16]
+instruments:
+  - id: si-271-2018
+    title: Civil Aviation (Remotely Piloted Aircraft) Regulations, 2018
+    identifier: S.I. 271 of 2018
+    date: 2018-12-14
+    url: https://www.caaz.co.zw/download/remotely-piloted-aircraft-si-271-of-2018/
+    last_checked: 2026-09-27
+    note: Letter of approval and registration (ss.4–6), temporary import (s.7), remote pilot licence (ss.8–14), RPAS Operator Certificate (ss.15–21), operator duties (ss.22–28) and the operating rules of Part V (ss.30–55).
+  - id: ca-amendment-2024
+    title: Civil Aviation Amendment Act, 2024
+    identifier: Act No. 8 of 2024
+    date: 2024
+    url: https://www.caaz.co.zw/download/act-no-8-of-2024-civil-aviation-amendment/
+    last_checked: 2026-09-27
+    note: Amends the Civil Aviation Act [Chapter 13:16], including a civil-penalty order regime.
+  - id: si-69-2018
+    title: Civil Aviation (Aerial Work) Regulations, 2018
+    identifier: S.I. 69 of 2018
+    date: 2018-05-04
+    url: https://www.caaz.co.zw/download/aerial-work-si-69-of-2018/
+    last_checked: 2026-09-27
+    note: A commercial aerial-work operator applies to the Ministry responsible for Transport for its Air Services Permit (s.3(1)).
+  - id: si-69-2023
+    title: Civil Aviation (Exemptions) Regulations, 2023
+    identifier: S.I. 69 of 2023
+    date: 2023-05-19
+    url: https://www.caaz.co.zw/download/s-i-69-of-2023-civil-aviation-exemptions-regulations-2023/
+    last_checked: 2026-09-27
+    note: Exemptions from specific rules by the Director-General, with a risk assessment and an equivalent level of safety.
+  - id: caaz-form-520
+    title: CAAZ RPA (drone) application form
+    identifier: CA/AIR/Form-520, Issue 1 Rev 1
+    date: 2022-10-13
+    url: https://www.caaz.co.zw/download/ca-form-520-rpa-drone-application/
+    last_checked: 2026-09-27
+  - id: ppaa
+    title: Protected Places and Areas Act [Chapter 11:12]
+    identifier: Chapter 11:12 (ZimLII consolidated text)
+    date: 2016-12-31
+    url: https://web.archive.org/web/20250825214223/https://zimlii.org/akn/zw/act/1959/27/eng@2016-12-31
+    last_checked: 2026-09-27
+    note: Protected places (s.4) and protected areas (s.5), orders served on the owner or occupier (s.7), warning notices (s.11).
+  - id: cdpa
+    title: Cyber and Data Protection Act [Chapter 12:07]
+    identifier: Act No. 5 of 2021
+    date: 2021-12-03
+    url: https://www.veritaszim.net/node/5522
+    last_checked: 2026-09-27
+    note: POTRAZ as Data Protection Authority (s.5), processor contracts (s.18), breach notification (s.19), transfers abroad (ss.28–29).
+  - id: si-155-2024
+    title: Cyber and Data Protection (Licensing of Data Controllers and Appointment of Data Protection Officers) Regulations
+    identifier: S.I. 155 of 2024
+    date: 2024-09-13
+    url: https://www.veritaszim.net/node/7187
+    last_checked: 2026-09-27
+    note: The data controller licence in four tiers, the data protection officer and form DP3 for breaches.
+  - id: cdpg-5-2024
+    title: POTRAZ guideline on cross-border transfer of personal information
+    identifier: CDPG 5 of 2024
+    date: 2024
+    url: https://www.veritaszim.net/node/7804
+    last_checked: 2026-09-27

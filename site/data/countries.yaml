@@ -38,7 +38,7 @@ zw:
   name: Zimbabwe
   region: Southern
   languages: [en]
-  status: launching
+  status: live
   timezones: [Africa/Harare]
 mw:
   name: Malawi
