@@ -106,7 +106,12 @@ def context(build, p, b, ctx):
     two = cols == "2" and len(ids) > 1
     overview = fig(data["overview"], SIZES["wide"], True) if show_overview else None
     views = [fig(by_id[i], SIZES["2" if two else size], not overview and n == 0) for n, i in enumerate(ids)]
-    return {"g": {"overview": overview, "views": views, "two": two, "size": size, "s": strings,
+    summary = None
+    if data.get("within_100_total") and strings.get("summary"):
+        shown = len({r for i in ids for r in by_id[i].get("within_100_ids") or []})
+        summary = strings["summary" if len(ids) > 1 else "summary_one"].format(shown=shown,
+                                                                               total=data["within_100_total"])
+    return {"g": {"overview": overview, "views": views, "two": two, "size": size, "s": strings, "summary": summary,
                   "legend": a.get("legend", "true") == "true"}}
 
 

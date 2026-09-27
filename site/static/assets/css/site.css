@@ -494,6 +494,7 @@ tbody th { font-weight: 700; }
 .sample-legend .swatch--route { width: 24px; height: 6px; border-radius: 3px; background: #e8672f; box-shadow: 0 0 0 1px #0d1117; }
 .sample-legend .swatch--ring { width: 16px; height: 16px; border-radius: 50%; background: transparent; border: 3px solid #0d1117; }
 .sample-note { font-size: 0.93rem; color: var(--text-dim); max-width: 52rem; }
+.caption-badge { display: inline-flex; align-items: center; gap: 5px; margin-left: 6px; vertical-align: 1px; background: rgba(13, 17, 23, .9); color: var(--teal); font-size: 0.72rem; font-weight: 700; letter-spacing: .02em; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
 
 /* ------------------------------------------------------------------ disclosure and FAQ */
 .disclosure { border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 0 16px; background: #fff; }

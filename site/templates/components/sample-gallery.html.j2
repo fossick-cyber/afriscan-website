@@ -2,10 +2,9 @@
 <figure class="figure figure--{{ size }}">
   <div class="figure-media">
     {{ f.picture }}
-    <span class="img-badge">{{ icon('user-check', 'icon icon-xs') }}{{ g.s.badge }}</span>
   </div>
   <figcaption>
-    <span class="figure-caption">{{ md(f.caption) }}</span>
+    <span class="figure-caption">{{ md(f.caption) }} <span class="caption-badge">{{ icon('user-check', 'icon icon-xs') }}{{ g.s.badge }}</span></span>
     {% if f.text %}<div class="figure-text"><p>{{ md(f.text) }}</p></div>{% endif %}
     <span class="figure-credit">{{ md(f.credit) }}</span>
   </figcaption>
@@ -22,13 +21,13 @@
   {% endif %}
   {% if g.legend %}
   <ul class="seg-legend sample-legend">
+    <li><span class="swatch swatch--ring"></span>{{ g.s.rings }}</li>
     <li><span class="swatch swatch--route"></span>{{ g.s.route }}</li>
     <li><span class="band band--a">{{ g.s.b50 }}</span></li>
     <li><span class="band band--b">{{ g.s.b100 }}</span></li>
     <li><span class="band band--c">{{ g.s.beyond }}</span></li>
-    <li><span class="swatch swatch--ring"></span>{{ g.s.rings }}</li>
   </ul>
   {% endif %}
-  {% if g.s.note %}<p class="sample-note">{{ md(g.s.note) }}</p>{% endif %}
+  {% if g.summary or g.s.note %}<p class="sample-note">{% if g.summary %}{{ g.summary }} {% endif %}{{ md(g.s.note) }}</p>{% endif %}
   {% if inner|trim %}<div class="sample-note">{{ inner }}</div>{% endif %}
 </div>

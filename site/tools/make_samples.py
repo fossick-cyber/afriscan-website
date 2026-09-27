@@ -426,8 +426,10 @@ G_OVERVIEW_SIZE = (2400, 820)
 SAT_RED, SAT_AMBER, SAT_TEAL = (239, 68, 68), (251, 191, 36), (94, 234, 212)   # brighter on imagery
 
 # Close-ups: (letter, chainage of the frame centre in m, shift east and north in m). Picked from the
-# register, not from how the imagery looks: the stretches with most marks, plus the two marks near km 9.
-G_VIEWS = [("A", 4020, 0, 0), ("B", 4650, 0, 0), ("C", 5770, 0, 0), ("D", 6790, 0, 20), ("E", 9053, 0, 0)]
+# register, not from how the imagery looks: the stretches with most marks within 100 m (km 3.7 to 7.1),
+# plus the two marks near km 9. Six views fill the two-column grid on the pages.
+G_VIEWS = [("A", 4020, 0, 0), ("B", 4650, 0, 0), ("C", 5250, 0, 0), ("D", 5800, 0, 0), ("E", 6790, 0, 20),
+           ("F", 9053, 0, 0)]
 
 u2m = Transformer.from_crs(UTM, 3857, always_xy=True)
 m2u = Transformer.from_crs(3857, UTM, always_xy=True)
@@ -436,29 +438,37 @@ GSTR = {
     "en": {
         "attribution": "Imagery © Google", "view": "View {k}", "route": "Pipeline route", "b50": "Within 50 m",
         "b100": "50 to 100 m", "beyond": "Beyond 100 m", "rings": "Rings: structures marked by a reviewer",
-        "dots": "Dots: structures marked by a reviewer", "band": "100 m band", "frames": "Close-up views",
+        "ring_key": "Reviewer mark", "dot_key": "Dots: reviewer marks", "band": "100 m band", "frames": "Close-up views",
         "badge": "Reviewed · manual marks", "dec": ".",
         "note": ("Each ring is centred on a mark the reviewer placed. Roofs without a ring were not marked in this "
                  "review: the views show the sample's marks exactly as recorded, with nothing added."),
+        "summary": ("Together the close-ups show {shown} of the {total} reviewer-marked structures within 100 m of "
+                    "the route."),
+        "summary_one": ("This close-up shows {shown} of the {total} reviewer-marked structures within 100 m of the "
+                        "route."),
         "caption": "View {k} · km {a} to {b}",
         "credit": ("Imagery © Google, capture date not stated. Reviewer marks only, no automatic detections: "
                    "a person reviewed every result."),
-        "ov_caption": "The whole route, with the five close-up views outlined",
+        "ov_caption": "The whole route, with close-up views {first} to {last} outlined",
         "ov_credit": ("Imagery © Google, capture date not stated. Route, 100 m band and the reviewer's {n} marks "
                       "drawn by AfriScan; a person reviewed every result."),
     },
     "pt": {
         "attribution": "Imagens © Google", "view": "Vista {k}", "route": "Traçado do gasoduto", "b50": "Até 50 m",
         "b100": "50 a 100 m", "beyond": "Além de 100 m", "rings": "Círculos: construções marcadas pelo revisor",
-        "dots": "Pontos: construções marcadas pelo revisor", "band": "Faixa de 100 m", "frames": "Vistas de perto",
+        "ring_key": "Marcação do revisor", "dot_key": "Pontos: marcações do revisor", "band": "Faixa de 100 m", "frames": "Vistas de perto",
         "badge": "Revisto · marcação manual", "dec": ",",
         "note": ("Cada círculo está centrado numa marcação feita pelo revisor. As coberturas sem círculo não foram "
                  "marcadas nesta revisão: as vistas mostram as marcações do exemplo exactamente como foram "
                  "registadas, sem acrescentos."),
+        "summary": ("No conjunto, as vistas de perto mostram {shown} das {total} construções marcadas pelo revisor a "
+                    "menos de 100 m do traçado."),
+        "summary_one": ("Esta vista de perto mostra {shown} das {total} construções marcadas pelo revisor a menos de "
+                        "100 m do traçado."),
         "caption": "Vista {k} · km {a} a {b}",
         "credit": ("Imagens © Google, sem data de captação indicada. Só marcações do revisor, sem detecções "
                    "automáticas: uma pessoa reviu todos os resultados."),
-        "ov_caption": "Todo o traçado, com as cinco vistas de perto assinaladas",
+        "ov_caption": "Todo o traçado, com as vistas de perto {first} a {last} assinaladas",
         "ov_credit": ("Imagens © Google, sem data de captação indicada. Traçado, faixa de 100 m e as {n} marcações "
                       "do revisor desenhados pela AfriScan; uma pessoa reviu todos os resultados."),
     },
@@ -509,24 +519,29 @@ G_SCENE = {
                  "homesteads, fields and trees line both sides."),
           "pt": ("O traçado continua pela mesma picada e faz uma curva junto de uma estrada asfaltada, perto do limite "
                  "leste; há habitações, machambas e árvores dos dois lados.")},
-    "C": {"en": ("The route turns north-east beside a wide dirt track, with homesteads and palm trees to the west and "
-                 "bush and woodland to the east."),
-          "pt": ("O traçado vira para nordeste ao lado de uma picada larga, com habitações e palmeiras a oeste e mato "
-                 "e floresta a leste.")},
-    "D": {"en": ("The route runs north-east beside the track through fields and bush, with a cluster of homesteads "
+    "C": {"en": ("The route bends from east to north-east beside a dirt road, with homesteads, fields and palm trees "
+                 "on both sides of the bend."),
+          "pt": ("O traçado faz uma curva de leste para nordeste junto de uma estrada de terra, com habitações, "
+                 "machambas e palmeiras dos dois lados da curva.")},
+    "D": {"en": ("The route runs north-east beside a wide dirt track, with homesteads and palm trees to the west and "
+                 "bush and woodland to the south-east."),
+          "pt": ("O traçado segue para nordeste ao lado de uma picada larga, com habitações e palmeiras a oeste e mato "
+                 "e floresta a sudeste.")},
+    "E": {"en": ("The route runs north-east beside the track through fields and bush, with a cluster of homesteads "
                  "to the west."),
           "pt": ("O traçado segue para nordeste ao lado da picada, entre machambas e mato, com um aglomerado de "
                  "habitações a oeste.")},
-    "E": {"en": "The route runs west to east along the track through bush and grassland, with a wetland to the north.",
+    "F": {"en": "The route runs west to east along the track through bush and grassland, with a wetland to the north.",
           "pt": "O traçado segue de oeste para leste pela picada, entre mato e capim, com uma zona húmida a norte."},
 }
 G_OV_ALT = {
     "en": ("Satellite overview of the whole pipeline route, about 10 km from west to east, north up: the route as an "
-           "orange line with its 100 m band, the reviewer's {n} marks as dots coloured by distance band, and five "
-           "outlined frames, A to E, for the close-up views. {scene}"),
+           "orange line with its 100 m band, the reviewer's {n} marks as dots coloured by distance band, and {k} "
+           "outlined frames, {first} to {last}, for the close-up views. {scene}"),
     "pt": ("Vista geral de satélite de todo o traçado do gasoduto, com cerca de 10 km de oeste para leste e o norte em "
            "cima: o traçado como uma linha cor de laranja com a faixa de 100 m, as {n} marcações do revisor como "
-           "pontos coloridos pela faixa de distância, e cinco molduras, de A a E, para as vistas de perto. {scene}"),
+           "pontos coloridos pela faixa de distância, e {k} molduras, de {first} a {last}, para as vistas de perto. "
+           "{scene}"),
 }
 G_OV_SCENE = {"en": "It starts at a gas facility in the west, passes fields and settlements, and ends beside a wetland in the east.",
               "pt": ("Começa numa instalação de gás a oeste, passa por machambas e povoações e termina junto de uma "
@@ -584,6 +599,11 @@ def g_mosaic(tiles, z, bounds, size):
     return canvas.resize(size, Image.LANCZOS, box=(px0 - tx0 * 256, py0 - ty0 * 256, px1 - tx0 * 256, py1 - ty0 * 256))
 
 
+def merc_lat(y):
+    """Latitude in degrees of a Web Mercator northing."""
+    return math.degrees(math.atan(math.sinh(y / 6378137.0)))
+
+
 def g_frame(line, chain, dx, dy, size, mpp):
     c = line.interpolate(chain)
     cx, cy = u2m.transform(c.x + dx, c.y + dy)
@@ -600,71 +620,102 @@ def band_of(d):
     return "a" if d <= 50 else "b" if d <= 100 else "c"
 
 
-def g_panel(d, S, x0, y0, rows, title=None, fs=30):
-    """Legend panel. rows: (symbol, label); symbols: route, a, b, c (band swatch with ring), dot-a/b/c, frame, note."""
-    f, ft = font(fs * S, 600), font(round(fs * 1.15) * S, 750)
-    pad, rh, sw = 22 * S, round(fs * 1.55) * S, round(fs * 1.9) * S
-    w = max([d.textlength(t, font=f) + (0 if s == "note" else sw + 16 * S) for s, t in rows]
+def g_hits(rect, circles, margin=0):
+    """The circles (x, y, r) that overlap rect (x0, y0, x1, y1), all in drawing pixels."""
+    x0, y0, x1, y1 = rect
+    return [(x, y, r) for x, y, r in circles
+            if x0 - r - margin < x < x1 + r + margin and y0 - r - margin < y < y1 + r + margin]
+
+
+def g_panel(d, S, x0, y0, rows, title=None, fs=30, draw=True, anchor="left"):
+    """Legend panel; returns its box. rows: (symbol, label); symbols: route, a, b, c (band swatch with ring),
+    ring (a plain ring), dot-a/b/c, frame, note. Everything scales with the font size fs (image pixels). anchor="right": x0 is the
+    panel's right edge. draw=False only measures."""
+    u = fs / 30
+    q = lambda v: round(v * u) * S
+    f, ft = font(fs * S, 600), font(round(fs * 1.2) * S, 750)
+    pad, rh, sw, th = q(22), round(fs * 1.5) * S, round(fs * 1.9) * S, round(fs * 1.75) * S
+    w = max([d.textlength(t, font=f) + (0 if s == "note" else sw + q(16)) for s, t in rows]
             + ([d.textlength(title, font=ft)] if title else []))
-    h = len(rows) * rh + (round(fs * 1.7) * S if title else 0)
-    d.rounded_rectangle([x0, y0, x0 + w + 2 * pad, y0 + h + 2 * pad], radius=14 * S, fill=INK + (205,))
+    h = len(rows) * rh + (th if title else 0)
+    if anchor == "right":
+        x0 -= w + 2 * pad
+    box_ = (x0, y0, x0 + w + 2 * pad, y0 + h + 2 * pad)
+    if not draw:
+        return box_
+    d.rounded_rectangle(box_, radius=q(14), fill=INK + (205,))
     y = y0 + pad
     if title:
-        d.text((x0 + pad, y + round(fs * 1.7) * S / 2 - 2 * S), title, font=ft, fill=(255, 255, 255), anchor="lm")
-        y += round(fs * 1.7) * S
+        d.text((x0 + pad, y + th / 2 - q(2)), title, font=ft, fill=(255, 255, 255), anchor="lm")
+        y += th
     for sym, label in rows:
         cy, sx = y + rh / 2, x0 + pad
         col = {"a": SAT_RED, "b": SAT_AMBER, "c": SAT_TEAL}.get(sym[-1])
         if sym == "route":
-            d.line([sx, cy, sx + sw, cy], fill=INK + (255,), width=12 * S)
-            d.line([sx, cy, sx + sw, cy], fill=ORANGE + (255,), width=7 * S)
+            d.line([sx, cy, sx + sw, cy], fill=INK + (255,), width=q(12))
+            d.line([sx, cy, sx + sw, cy], fill=ORANGE + (255,), width=q(7))
         elif sym in ("a", "b"):
-            d.rectangle([sx, cy - rh * 0.32, sx + sw, cy + rh * 0.32], fill=col + (110,), outline=col + (255,), width=2 * S)
+            d.rectangle([sx, cy - rh * 0.32, sx + sw, cy + rh * 0.32], fill=col + (110,), outline=col + (255,), width=q(2))
         if sym in ("a", "b", "c"):
             r = rh * 0.3
-            d.ellipse([sx + sw / 2 - r, cy - r, sx + sw / 2 + r, cy + r], outline=col + (255,), width=5 * S)
+            d.ellipse([sx + sw / 2 - r, cy - r, sx + sw / 2 + r, cy + r], outline=col + (255,), width=q(5))
+        elif sym == "ring":
+            r = rh * 0.3
+            d.ellipse([sx + sw / 2 - r, cy - r, sx + sw / 2 + r, cy + r], outline=INK + (255,), width=q(9))
+            d.ellipse([sx + sw / 2 - r + q(2), cy - r + q(2), sx + sw / 2 + r - q(2), cy + r - q(2)],
+                      outline=(255, 255, 255, 255), width=q(4))
         elif sym.startswith("dot"):
             r = rh * 0.2
-            d.ellipse([sx + sw / 2 - r, cy - r, sx + sw / 2 + r, cy + r], fill=col + (255,), outline=INK + (255,), width=2 * S)
+            d.ellipse([sx + sw / 2 - r, cy - r, sx + sw / 2 + r, cy + r], fill=col + (255,), outline=INK + (255,),
+                      width=q(2))
         elif sym == "band":
-            d.rectangle([sx, cy - rh * 0.3, sx + sw, cy + rh * 0.3], fill=SAT_AMBER + (120,), outline=SAT_AMBER + (255,), width=2 * S)
+            d.rectangle([sx, cy - rh * 0.3, sx + sw, cy + rh * 0.3], fill=SAT_AMBER + (120,), outline=SAT_AMBER + (255,),
+                        width=q(2))
         elif sym == "frame":
-            d.rectangle([sx + 4 * S, cy - rh * 0.3, sx + sw - 4 * S, cy + rh * 0.3], outline=(255, 255, 255, 255), width=4 * S)
-        tx = sx if sym == "note" else sx + sw + 16 * S
+            d.rectangle([sx + q(4), cy - rh * 0.3, sx + sw - q(4), cy + rh * 0.3], outline=(255, 255, 255, 255),
+                        width=q(4))
+        tx = sx if sym == "note" else sx + sw + q(16)
         d.text((tx, cy), label, font=f, fill=(255, 255, 255) if sym != "note" else (214, 220, 228), anchor="lm")
         y += rh
+    return box_
 
 
 def g_furniture(d, S, W, H, lang, scale_m, ppm, fs=30, scale_right=False):
     """North arrow and scale bar (bottom left, or left of the attribution) and the attribution (bottom
-    right), on dark pills."""
+    right), on dark pills. The attribution is set a size larger than the rest, so it stays legible where
+    the image is shown small."""
     L = GSTR[lang]
-    f, fa = font(fs * S, 650), font(round(fs * 1.15) * S, 700)
-    x1, y1 = (W - 22) * S, (H - 22) * S
+    u = fs / 30
+    q = lambda v: round(v * u) * S
+    f, fa = font(fs * S, 650), font(round(fs * 1.25) * S, 700)
+    x1, y1 = W * S - q(22), H * S - q(22)
     # attribution
     t = L["attribution"]
-    ph = round(fs * 1.9) * S
+    ph = round(fs * 2.05) * S
     tw = d.textlength(t, font=fa)
-    d.rounded_rectangle([x1 - tw - 36 * S, y1 - ph, x1, y1], radius=10 * S, fill=(0, 0, 0, 175))
-    d.text((x1 - 18 * S, y1 - ph / 2), t, font=fa, fill=(255, 255, 255), anchor="rm")
+    boxes = [(x1 - tw - q(36), y1 - ph, x1, y1)]
+    d.rounded_rectangle(boxes[0], radius=q(10), fill=(0, 0, 0, 185))
+    d.text((x1 - q(18), y1 - ph / 2), t, font=fa, fill=(255, 255, 255), anchor="rm")
     # north arrow and scale bar
     bar = scale_m * ppm * S
     label = f"{scale_m} m" if scale_m < 1000 else f"{scale_m // 1000} km"
     bh = round(fs * 3.2) * S
-    pill_w = 38 * S + 44 * S + max(bar, d.textlength(label, font=f)) + 24 * S
-    x0 = (x1 - tw - 36 * S - 16 * S - pill_w) if scale_right else 22 * S
+    pill_w = q(38) + q(44) + max(bar, d.textlength(label, font=f)) + q(24)
+    x0 = (x1 - tw - q(36) - q(16) - pill_w) if scale_right else q(22)
     top = y1 - bh
-    ax = x0 + 38 * S
-    bx = ax + 44 * S
-    d.rounded_rectangle([x0, top, x0 + pill_w, y1], radius=10 * S, fill=(0, 0, 0, 175))
-    d.text((ax, top + 22 * S), "N", font=font(round(fs * 0.85) * S, 750), fill=(255, 255, 255), anchor="mm")
-    tip, base = top + 40 * S, y1 - 14 * S
-    d.polygon([(ax, tip), (ax + 14 * S, base), (ax, base - 11 * S), (ax - 14 * S, base)], fill=(255, 255, 255))
-    by = y1 - 18 * S
-    d.rectangle([bx, by - 9 * S, bx + bar, by], fill=(255, 255, 255))
+    ax = x0 + q(38)
+    bx = ax + q(44)
+    boxes.append((x0, top, x0 + pill_w, y1))
+    d.rounded_rectangle(boxes[1], radius=q(10), fill=(0, 0, 0, 175))
+    d.text((ax, top + q(22)), "N", font=font(round(fs * 0.85) * S, 750), fill=(255, 255, 255), anchor="mm")
+    tip, base = top + q(40), y1 - q(14)
+    d.polygon([(ax, tip), (ax + q(14), base), (ax, base - q(11)), (ax - q(14), base)], fill=(255, 255, 255))
+    by = y1 - q(18)
+    d.rectangle([bx, by - q(9), bx + bar, by], fill=(255, 255, 255))
     for tx in (bx, bx + bar):
-        d.rectangle([tx - 2 * S, by - 22 * S, tx + 2 * S, by], fill=(255, 255, 255))
-    d.text((bx, by - 32 * S), label, font=f, fill=(255, 255, 255), anchor="ls")
+        d.rectangle([tx - q(2), by - q(22), tx + q(2), by], fill=(255, 255, 255))
+    d.text((bx, by - q(32)), label, font=f, fill=(255, 255, 255), anchor="ls")
+    return boxes
 
 
 def g_save(img, name):
@@ -716,18 +767,39 @@ def g_view(tiles, line, marks, letter, bounds, lang, size=G_SIZE):
         pts = [px(*u2m.transform(*xy)) for xy in part.coords]
         d.line(pts, fill=INK + (215,), width=14 * S, joint="curve")
         d.line(pts, fill=ORANGE + (255,), width=7 * S, joint="curve")
-    shown = []
-    R = 34 * S
+    shown, circles = [], []
+    R = 36 * S
     for m in marks:
         x, y = px(*u2m.transform(m["p"].x, m["p"].y))
         if 0 <= x <= W * S and 0 <= y <= H * S:
             shown.append(m)
+            circles.append((x, y, R))
             col = {"a": SAT_RED, "b": SAT_AMBER, "c": SAT_TEAL}[band_of(m["dist"])]
-            d.ellipse([x - R, y - R, x + R, y + R], outline=INK + (215,), width=12 * S)
-            d.ellipse([x - R + 3 * S, y - R + 3 * S, x + R - 3 * S, y + R - 3 * S], outline=col + (255,), width=6 * S)
-    g_panel(d, S, 22 * S, 22 * S, [("route", L["route"]), ("a", L["b50"]), ("b", L["b100"]), ("c", L["beyond"]),
-                                   ("note", L["rings"])], title=L["view"].format(k=letter))
-    g_furniture(d, S, W, H, lang, 100, W / ((right - left) * math.cos(math.radians(-21.73))))
+            d.ellipse([x - R, y - R, x + R, y + R], outline=INK + (215,), width=14 * S)
+            d.ellipse([x - R + 3 * S, y - R + 3 * S, x + R - 3 * S, y + R - 3 * S], outline=col + (255,), width=7 * S)
+    # The legend goes top left, or top right when a ring would sit under it; no ring may hide under the
+    # legend, the scale bar or the attribution (move the frame in G_VIEWS if one does).
+    # Measured in every language, so the English and Portuguese views put it in the same corner.
+    legend = lambda T: ([("ring", T["ring_key"]), ("route", T["route"]), ("a", T["b50"]), ("b", T["b100"]),
+                         ("c", T["beyond"])], T["view"].format(k=letter))
+    rows, title = legend(L)
+    spots = [(24 * S, "left"), (W * S - 24 * S, "right")]
+    free = [sp for sp in spots
+            if not any(g_hits(g_panel(d, S, sp[0], 24 * S, *legend(T), 44, draw=False, anchor=sp[1]), circles, 8 * S)
+                       for T in GSTR.values())]
+    if not free:
+        raise SystemExit(f"view {letter}: a reviewer mark sits under the legend in both top corners; move the frame")
+    g_panel(d, S, free[0][0], 24 * S, rows, title=title, fs=44, anchor=free[0][1])
+    # The scale bar sits bottom left, or beside the attribution when a ring would sit under it.
+    ppm = W / ((right - left) * math.cos(math.radians(merc_lat((top + bottom) / 2))))
+    for scale_right in (False, True):
+        layer = Image.new("RGBA", ov.size, (0, 0, 0, 0))
+        if not any(g_hits(b_, circles, 8 * S) for b_ in g_furniture(ImageDraw.Draw(layer), S, W, H, lang, 100, ppm,
+                                                                     fs=44, scale_right=scale_right)):
+            break
+    else:
+        raise SystemExit(f"view {letter}: a reviewer mark sits under the scale bar or the attribution; move the frame")
+    ov = Image.alpha_composite(ov, layer)
     ov = ov.resize((W, H), Image.LANCZOS)
     out = Image.alpha_composite(img.convert("RGBA"), ov)
     # chainage covered by the frame: the route's own points inside it, every 10 m
@@ -741,7 +813,7 @@ def g_overview(tiles, line, marks, frames, lang):
     minx, miny, maxx, maxy = line.bounds
     c = Point((minx + maxx) / 2, (miny + maxy) / 2)
     cx, cy = u2m.transform(c.x, c.y)
-    k = 1 / math.cos(math.radians(-21.735))
+    k = 1 / math.cos(math.radians(merc_lat(cy)))
     ground_w = (maxx - minx) + 1200
     hw, hh = ground_w * k / 2, ground_w * H / W * k / 2
     bounds = (cx - hw, cy - hh, cx + hw, cy + hh)
@@ -763,10 +835,12 @@ def g_overview(tiles, line, marks, frames, lang):
     pts = [px(*u2m.transform(*xy)) for xy in line.coords]
     d.line(pts, fill=INK + (220,), width=10 * S, joint="curve")
     d.line(pts, fill=ORANGE + (255,), width=5 * S, joint="curve")
+    circles = []
     for mk in sorted(marks, key=lambda q: -q["dist"]):
         x, y = px(*u2m.transform(mk["p"].x, mk["p"].y))
         col = {"a": SAT_RED, "b": SAT_AMBER, "c": SAT_TEAL}[band_of(mk["dist"])]
         r = 7 * S
+        circles.append((x, y, r))
         d.ellipse([x - r, y - r, x + r, y + r], fill=col + (255,), outline=INK + (255,), width=2 * S)
     fl = font(34 * S, 800)
     for letter, (l_, b_, r_, t_) in frames:
@@ -776,16 +850,21 @@ def g_overview(tiles, line, marks, frames, lang):
         tw = d.textlength(letter, font=fl)
         bx, by = x0, y0 - 52 * S
         d.rounded_rectangle([bx, by, bx + tw + 24 * S, by + 48 * S], radius=8 * S, fill=INK + (225,))
+        circles += [((x0 + x1) / 2, (y0 + y1) / 2, max(x1 - x0, y1 - y0) / 2), (bx + tw / 2 + 12 * S, by + 24 * S, 30 * S)]
         d.text((bx + 12 * S + tw / 2, by + 24 * S), letter, font=fl, fill=(255, 255, 255), anchor="mm")
-    g_panel(d, S, 22 * S, 22 * S, [("route", L["route"]), ("band", L["band"]), ("dot-a", L["b50"]),
-                                   ("dot-b", L["b100"]), ("dot-c", L["beyond"]), ("frame", L["frames"]),
-                                   ("note", L["dots"])], fs=26)
-    g_furniture(d, S, W, H, lang, 1000, W / ((right - left) / k), fs=28, scale_right=True)
+    boxes = [g_panel(d, S, 22 * S, 22 * S, [("route", L["route"]), ("band", L["band"]), ("dot-a", L["b50"]),
+                                            ("dot-b", L["b100"]), ("dot-c", L["beyond"]), ("frame", L["frames"]),
+                                            ("note", L["dot_key"])], fs=28)]
+    boxes += g_furniture(d, S, W, H, lang, 1000, W / ((right - left) / k), fs=32, scale_right=True)
+    for b_ in boxes:
+        if g_hits(b_, circles, 6 * S):
+            raise SystemExit("overview: a mark or a close-up frame sits under the legend, the scale bar or the attribution")
     ov = ov.resize((W, H), Image.LANCZOS)
     return Image.alpha_composite(img.convert("RGBA"), ov), bounds
 
 
 def google_views(line, marks, tiles):
+    assert [v[0] for v in G_VIEWS] == list(G_SCENE), "write a G_SCENE entry for every view, from its image"
     km = lambda m, lang: f"{m / 1000:.1f}".replace(".", GSTR[lang]["dec"])
     data = {
         "sample": "sample-pipeline",
@@ -797,6 +876,8 @@ def google_views(line, marks, tiles):
         "marks_total": len(marks),
         "strings": {lang: {k: GSTR[lang][k] for k in ("attribution", "route", "b50", "b100", "beyond", "badge",
                                                       "rings", "note")} for lang in GSTR},
+        "shown_within_100": None,
+        "within_100_total": sum(m["dist"] <= 100 for m in marks),
         "views": [],
     }
     frames = []
@@ -820,8 +901,15 @@ def google_views(line, marks, tiles):
                                                     scene=G_SCENE[letter][lang]).strip()
         view.update(km=[round(a / 1000, 2), round(b / 1000, 2)], ground_m=[round(G_SIZE[0] * G_MPP), round(G_SIZE[1] * G_MPP)],
                     marks_in_view=len(shown), within_50=n50, within_100=n100, beyond_100=nb,
-                    register_ids=[m["id"] for m in shown], size=list(G_SIZE))
+                    register_ids=[m["id"] for m in shown], within_100_ids=[m["id"] for m in shown if m["dist"] <= 100],
+                    size=list(G_SIZE))
         data["views"].append(view)
+    # The gallery fills in {shown} and {total} for the views a page shows (lib/sample_gallery.py).
+    ids100 = {i for v in data["views"] for i in v["within_100_ids"]}
+    data["shown_within_100"] = len(ids100)
+    for lang in GSTR:
+        data["strings"][lang].update(summary=GSTR[lang]["summary"], summary_one=GSTR[lang]["summary_one"])
+    first, last = G_VIEWS[0][0], G_VIEWS[-1][0]
     ov = {"id": "overview", "src": {}, "alt": {}, "caption": {}, "credit": {}, "drawn_text": {}}
     for lang, sfx in (("en", ""), ("pt", "-pt")):
         take_drawn()
@@ -830,15 +918,17 @@ def google_views(line, marks, tiles):
         g_save(img, name)
         ov["src"][lang] = f"samples/google/{name}"
         ov["drawn_text"][lang] = take_drawn()
-        ov["caption"][lang] = GSTR[lang]["ov_caption"]
+        ov["caption"][lang] = GSTR[lang]["ov_caption"].format(first=first, last=last)
         ov["credit"][lang] = GSTR[lang]["ov_credit"].format(n=len(marks))
-        ov["alt"][lang] = G_OV_ALT[lang].format(n=len(marks), scene=G_OV_SCENE[lang]).strip()
+        ov["alt"][lang] = G_OV_ALT[lang].format(n=len(marks), k=len(G_VIEWS), first=first, last=last,
+                                                 scene=G_OV_SCENE[lang]).strip()
     ov.update(size=list(G_OVERVIEW_SIZE), marks_in_view=len(marks))
     data["overview"] = ov
     G_DATA.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     for v in data["views"]:
         print(f"view {v['id']}: km {v['km'][0]}-{v['km'][1]}, {v['marks_in_view']} marks in view, "
               f"{v['within_50']} within 50 m, {v['within_100']} within 100 m, {v['beyond_100']} beyond")
+    print(f"close-ups show {data['shown_within_100']} of the {data['within_100_total']} marks within 100 m")
     print(f"tiles fetched: {tiles.fetched}")
 
 

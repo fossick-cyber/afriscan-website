@@ -28,7 +28,7 @@ faq:
   - q: Why are the close-ups on Google imagery, and why is there no capture date?
     a: The reviewer marked this sample on Google satellite imagery in our review tool, so the close-ups show the marks on that imagery, credited "Imagery © Google". Google does not state when that imagery was captured, so it shows where each mark sits, not when a structure appeared. Client surveys that need a date use imagery that can be dated and delivered, such as a drone survey, a purchased satellite scene or your own georeferenced imagery. The overview of ratings further down uses a dated Copernicus Sentinel-2 scene.
   - q: Why do some rings sit beside a roof rather than on it?
-    a: Each ring is centred on the point the reviewer placed. The marks were placed at the scale the review used, so a ring can sit beside the roof it refers to rather than on it. Distances in the register are measured from those points, exactly as recorded.
+    a: Each ring is centred on the point the reviewer placed, and the review was done at a coarser zoom than these close-ups, so a ring can sit beside the roof it refers to rather than on it. Distances in the register are measured from those points, exactly as recorded.
   - q: Why is the register drawn as a straight strip?
     a: A strip view straightens the route so that each marked structure sits at its chainage (the distance along the route) and its distance from the line, with the north side of the line at the top. Distances across the route are drawn at twice the scale of distances along it, so the 50 m and 100 m bands can be read. It is a chart of the register, not a map.
   - q: Could a structure be missing from the sample?
@@ -53,7 +53,7 @@ related: [oil-gas, right-of-way-monitoring, insight-survey-scope]
 Counts are cumulative: "within 100 m" includes the 11 structures within 50 m. Distances are measured to the route as supplied, in its local UTM zone (36S). The other 23 marks lie between 100 m and the edge of the search area.
 ::::
 
-::::section{id="on-imagery" tone="alt" eyebrow="On satellite imagery" title="The reviewer's marks on Google satellite imagery" lead="The whole route, then five close-ups of about 600 by 400 m, each with the route, its 50 m and 100 m bands and a ring on each mark the reviewer placed. The letters on the overview show where each close-up sits."}
+::::section{id="on-imagery" tone="alt" eyebrow="On satellite imagery" title="The reviewer's marks on Google satellite imagery" lead="The whole route, then close-ups of about 600 by 400 m of the stretches where the reviewer placed marks, each with the route, its 50 m and 100 m bands and a ring on each mark the reviewer placed. The letters on the overview show where each close-up sits."}
 :::sample-gallery{data="sample-pipeline-google" priority="true"}
 :::
 ::::
