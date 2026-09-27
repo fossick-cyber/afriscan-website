@@ -21,7 +21,7 @@ faq:
   - q: Who sees our route and the results?
     a: Only the contacts you name. We never publish maps of your assets or of the land around them without your written permission, and we never publish imagery of prohibited or protected places. If the register will be linked to occupants, the Cyber and Data Protection Act applies, so we agree the controller and processor roles in writing first.
   - q: Can we send tender or prequalification documents?
-    a: Yes. Public entities in Zimbabwe buy through PRAZ's electronic procurement system, where suppliers register by category. Send the documents with your request and tell us the procuring entity, the tender number and the category; the proposal sets out how the bid would be submitted and which registrations the contract needs.
+    a: Yes. Public entities contract suppliers registered with PRAZ, by category, on its e-GP system. Send the documents with your request and tell us the procuring entity, the tender number and the category; the proposal sets out how the bid would be submitted and which registrations the contract needs.
 ---
 
 ### For a route or site in Zimbabwe

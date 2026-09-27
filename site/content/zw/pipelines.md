@@ -21,9 +21,9 @@ og:
 related: [route-site-selection, excavation-mapping, change-detection]
 faq:
   - q: How wide is the pipeline reserve in Zimbabwe?
-    a: "The reserve is defined for each pipeline, so we measure to the width or polygon in your servitude records rather than publish one figure. What the 2026 amendment does fix in the Act is the 125 m band either side of the pipeline's centre, inside which no mining or blasting may take place (s.6(2)). Both go into the register as bands, with each structure's distance to the line."
+    a: "The principal Act was not available to us, so we do not publish a width; we measure to the width or polygon in your servitude records. What the 2026 amendment does fix in the Act is the 125 m band either side of the pipeline's centre, inside which no mining or blasting may take place (s.6(2)). Both go into the register as bands, with each structure's distance to the line."
   - q: What did the Pipelines Amendment Act, 2025 change?
-    a: "It rewrote section 6 and added new sections 9A and 10. In force since 16 February 2026, it forbids erecting buildings or structures, planting trees, sinking wells or boreholes, digging trenches deeper than 375 mm and laying pipes in the reserve, and mining or blasting within 125 m of the centre. Penalties rose to level 10 or six years' imprisonment, from level 4 or three months, and courts can order removal, filling-in or the end of digging and ploughing. Authorised employees or agents of the pipeline's grantee, and the police, can enter the servitude, inspect, seize evidence and order an activity to stop."
+    a: "It rewrote section 6 and added new sections 9A and 10. In force since 16 February 2026, it forbids erecting buildings or structures, planting trees, sinking wells or boreholes, digging trenches deeper than 375 mm and laying pipes in the reserve, and mining or blasting within 125 m of the centre. Penalties rose to level 10 or six years' imprisonment, from level 4 or three months, and courts can order removal, filling-in or the end of digging and ploughing. Authorised employees or agents of the pipeline's grantee, and the police, can enter the servitude, inspect and seize evidence; only the grantee's employees or agents can order an activity to stop, pending the grantee's investigations."
   - q: Can farming continue in the pipeline reserve?
     a: "The amended section 6 lets regulations under section 10 set how far activities may be allowed in the reserve, and says that this applies to agricultural activities only. Check with your legal team which regulations apply to your line. Either way, we map cultivated ground in the reserve as its own layer, so the record is there."
   - q: Can you detect leaks, taps or theft?
@@ -78,7 +78,7 @@ The Pipelines Amendment Act, 2025 (No. 5 of 2025) was gazetted and came into for
 - **Within 125 m (s.6(2)):** "No person shall conduct any mining or blasting activity within a distance of 125 metres from either side of the centre of the pipeline."
 - **Farming (s.6(3)–(4)):** regulations under section 10 may set how far these activities may be allowed in the reserve, and this applies to agricultural activities only.
 - **Penalties (s.6(5)–(6)):** up to level 10 or six years' imprisonment, and the court may order the removal of the building, structure, plant or pipe, filling-in, or the end of any digging and ploughing. Damaging a pipeline, pump station, tanks or ancillary works carries up to level 14 or ten years.
-- **Inspection (s.9A):** the grantee's authorised employees or agents, and the police, may enter the pipeline servitude, inspect, seize evidence and order a person to cease any activity. On private property this needs consent unless an offence is suspected.
+- **Inspection (s.9A):** the grantee's authorised employees or agents, and the police, may enter the pipeline servitude, inspect and seize evidence (s.9A(3)–(5)), and the grantee's employees or agents may order a person to cease any activity pending the grantee's investigations (s.9A(6)). On private property this needs consent unless an offence is suspected.
 ::::
 ::::col
 :::callout{tone="legal" title="Checked 27 September 2026"}
@@ -115,6 +115,8 @@ Routes are then re-surveyed on a schedule you agree with us. New and removed str
 - A change notice after each survey
 - A PDF report and GeoPackage, GeoJSON, KMZ and Shapefile layers
 :::
+
+Our published sample, a high-pressure gas pipeline in Mozambique, shows the register and report format. [See the sample](/results)
 ::::
 :::::
 
@@ -129,11 +131,11 @@ Structures are coloured by band: <span class="band band--a">Inner band, such as 
 ::::section{id="expansion" tone="alt" eyebrow="Expansions and new routes" title="A baseline before the contractors arrive"}
 :::::columns{split="2-1"}
 ::::col
-The products pipeline that supplies Zimbabwe comes up from Beira on the Mozambican coast, and its 208-kilometre Feruka–Harare section is a multi-product line ([Auditor-General, 2024](https://www.veritaszim.net/node/7634)). The 2025 State of the Nation Address described capacity upgraded "to three billion litres per annum" and to be "further upgraded to handle five billion litres per annum" ([SONA, 28 October 2025](https://www.veritaszim.net/node/7687)), and the Ministry of Energy and Power Development says the Government is interested in extending the network to the southern regions, "such as Bulawayo" ([Ministry](https://www.energy.gov.zw/?page_id=2032)).
+Fuel pipelines cross into Zimbabwe from Mozambique, the 2025 State of the Nation Address announced further upgrades to pipeline capacity ([SONA, 28 October 2025](https://www.veritaszim.net/node/7687)), and the Ministry of Energy and Power Development says the Government is interested in extending the network to the southern regions, "such as Bulawayo" ([Ministry](https://www.energy.gov.zw/?page_id=2032)).
 
 Pipelines are First Schedule projects under the Environmental Management Act and may not be implemented without an EMA certificate (s.97). For a loop, branch or new route we count the structures along each alternative alignment in the same bands, screen slope, drainage crossings and flood-prone ground, and pull the imagery history of contested parcels. Once the route is fixed, a dated register on the cut-off date supports the census and asset inventory, and repeat surveys during construction show new tracks, laydown areas and earthworks.
 
-A corridor that crosses a border is surveyed the same way on both sides: our Mozambique pages cover the [50 m partial protection zone](/mz/pipelines) on the Mozambican side, and our published sample is a high-pressure gas pipeline in Mozambique.
+A corridor that crosses a border is surveyed the same way on both sides: our Mozambique pages cover the [50 m partial protection zone](/mz/pipelines) on the Mozambican side.
 ::::
 ::::col
 :::callout{tone="scope" title="For expansions"}
@@ -172,7 +174,7 @@ Railway reserve widths and gazetted road widths vary, so we use the widths you s
 ::::section{id="drones" tone="alt" eyebrow="Drones along a pipeline" title="Where a stretch needs more detail than satellite shows"}
 :::::columns{split="2-1"}
 ::::col
-Drone surveys are subject to the CAAZ approvals and security clearances each operation requires. Along a pipeline that usually means an operator whose certificate covers the planned flights, the owner's permission to fly within 30 m of pump stations, tanks and other structures (S.I. 271 of 2018, s.43), approval to fly over, along or within 30 m of a public road (s.44), and legs within sight of the pilot or an observer unless beyond-sight flight is approved (ss.2, 40). Operations adjacent to or above a national key point or strategic installation need CAAZ approval (s.39(3)); no list of key points is public, and protected-place orders are served on owners rather than published, so your security team is the one that knows. Afridrone is working towards the approvals Zimbabwe requires, and every drone proposal names the company that will fly and its approvals.
+Drone surveys are subject to the CAAZ approvals and security clearances each operation requires. Along a pipeline that usually means an operator whose certificate covers the planned flights, the owner's permission to fly within 30 m of pump stations, tanks and other structures (S.I. 271 of 2018, s.43), approval to fly over, along or within 30 m of a public road (s.44), and legs within sight of the pilot or an observer unless beyond-sight flight is approved (ss.2, 40). Operations adjacent to or above a national key point or strategic installation need CAAZ approval (s.39(3)); we found no public list of key points, and protected-place orders are served on owners rather than published, so your security team is the one that knows. Afridrone is working towards the approvals Zimbabwe requires, and every drone proposal names the company that will fly and its approvals.
 
 If your team already flies the line, send the orthophotos or GeoTIFFs: we run the same register and change analysis on them, with a person reviewing every result.
 ::::

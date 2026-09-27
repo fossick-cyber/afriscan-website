@@ -29,7 +29,7 @@ og:
   subline: CAAZ S.I. 271 of 2018, security clearances and landowner letters, as of 27 September 2026
 faq:
   - q: Does a satellite corridor survey need CAAZ approval?
-    a: "No aircraft flies, so S.I. 271 of 2018 does not apply to the satellite work itself, and no permit procedure for satellite analysis was found when this page was reviewed. One point is open: the Land Survey Act gives the Surveyor-General supervision and control of \"all matters pertaining to aerial and space surveys conducted and geoinformation obtained in relation to Zimbabwe\" (s.7(1)(b)). No registration, deposit or permit rule under it was found; how it applies to satellite mapping is a question for Zimbabwean counsel. Either way, imagery of prohibited or protected places is never published."
+    a: "No aircraft flies, so S.I. 271 of 2018 does not apply to the satellite work itself, and no permit procedure for satellite analysis was found when this page was reviewed. Three points are open for Zimbabwean counsel. The Land Survey Act gives the Surveyor-General supervision and control of \"all matters pertaining to aerial and space surveys conducted and geoinformation obtained in relation to Zimbabwe\" (s.7(1)(b)), and no registration, deposit or permit rule under it was found. Counsel has yet to confirm how that section, the Official Secrets Act and the Protected Places and Areas Act apply to satellite mapping. Either way, imagery of prohibited or protected places is never published."
   - q: Can a foreign company register and fly a drone in Zimbabwe?
     a: "Registration is open only to Zimbabwean citizens, permanent residents and bodies whose principal place of business is in Zimbabwe, and a drone registered outside Zimbabwe cannot be registered (s.6). A drone can be imported temporarily for commercial use (s.7), but an RPAS Operator Certificate application includes the certificate of registration of each drone it covers (s.16(2)(a)). The regulations' Second Schedule also lists a \"Foreign Operator's Permit\" that no section of the regulations describes, so ask CAAZ in writing what it allows. Read together, the rules point to two routes: a Zimbabwe-registered company with its own approvals, or a Zimbabwean operator whose certificate covers the work."
   - q: How long does a remote pilot licence last?
@@ -37,9 +37,9 @@ faq:
   - q: Can a drone fly beyond the pilot's sight along a power line or pipeline?
     a: Only for an operator whose RPAS Operator Certificate and operations specifications cover beyond-visual-line-of-sight flight, with CAAZ approval, in visual meteorological conditions and below 400 ft unless approved otherwise (s.40). Otherwise a corridor is flown in legs within the pilot's sight up to 500 m away, or with a trained observer keeping visual contact up to 1,000 m from the pilot (s.2).
   - q: Do we need permission to fly near our own substation, pump station or depot?
-    a: "A drone may not fly within 30 m of a structure or building unless it is an approved operation under the operator's certificate and the owner has given permission (s.43), so your written permission is part of the file for your own assets. Operations \"adjacent to or above\" a national key point or strategic installation need CAAZ approval (s.39(3)); no list of key points is public. Protected-place orders are served on the owner or occupier rather than published, so your security team is the one that knows whether a site has that status."
+    a: "A drone may not fly within 30 m of a structure or building unless it is an approved operation under the operator's certificate and the owner has given permission (s.43), so your written permission is part of the file for your own assets. Operations \"adjacent to or above\" a national key point or strategic installation need CAAZ approval (s.39(3)); we found no public list of key points. Protected-place orders are served on the owner or occupier rather than published, so your security team is the one that knows whether a site has that status."
   - q: How long does CAAZ take to decide?
-    a: The regulations give CAAZ 30 days to decide a complete application for a letter of approval and for registration (ss.4–5), and CAAZ's FAQ says most complete registration applications are reviewed within one working week. The security clearances CAAZ's form refers to have no published procedure or timetable, so plan for them separately.
+    a: The regulations give CAAZ 30 days to decide a complete application for a letter of approval and for registration (ss.4–5), and CAAZ's FAQ says most complete registration applications are reviewed within one working week. We found no published procedure or timetable for the security clearances CAAZ's form refers to, so plan for them separately and early.
   - q: Can the drone orthophoto be used as a land survey?
     a: Not on its own. Surveys for Deeds Registry diagrams and general plans, and boundary and beacon surveys, are reserved to practising land surveyors (Land Survey Act s.16). Where a deliverable must be relied on as a survey, it needs a registered land surveyor's certification. Our registers and change reports are mapping records built from imagery; they show your surveyor and your wayleave officers where to look.
 ---
@@ -60,7 +60,7 @@ An **Air Services Permit** for commercial operations (s.15(b)), applied for to t
 :::
 :::
 
-Around those approvals sits the site. CAAZ's online application for organisations makes the applicant declare that it will obtain "all security clearances from Ministry of Defense, Ministry of Information Communication Technology and any other Agencies or Line Ministries as maybe appropriate", and that it will fly only "after written Approval letters from land owners concerned, local authorities, national parks, state etc. in charge of the property/area of operation" ([CAAZ online application](https://caaz.co.zw/online-payments/apply/drone)). Along a pipeline or a line that crosses many farms, communal land and council areas, those letters and clearances are usually the longest part of the plan.
+Around those approvals sits the site. CAAZ's online application for organisations makes the applicant declare that it will obtain "all security clearances from Ministry of Defense, Ministry of Information Communication Technology and any other Agencies or Line Ministries as maybe appropriate", and that it will fly only "after written Approval letters from land owners concerned, local authorities, national parks, state etc. in charge of the property/area of operation" ([CAAZ online application](https://caaz.co.zw/online-payments/apply/drone)). Along a pipeline or a line that crosses many farms, communal land and council areas, those letters and clearances all have to be in place; we found no published timetable for the clearances, so plan for them early.
 
 S.I. 271 of 2018 is the current instrument: no later drone regulation appears on [CAAZ's legislation page](https://www.caaz.co.zw/legislation/) or in the Veritas index of statutory instruments, as checked on 27 September 2026.
 ::::
@@ -162,7 +162,7 @@ For a corridor, that means letters from the owners and occupiers along the route
 
 - **Official Secrets Act [Chapter 11:09], s.3.** For "any purpose prejudicial to the safety or interests of Zimbabwe", it is an offence to approach, inspect, pass over or enter a prohibited place, or to obtain, record or publish information useful to an enemy, with up to 25 years' imprisonment. Prohibited places include defence works, military and air force establishments and places the President declares by order (ss.2 and 13) ([Veritas](https://www.veritaszim.net/node/230)).
 - **Protected Places and Areas Act [Chapter 11:12].** The Minister of Home Affairs may declare a protected place or area (ss.4–6). The order is served on the owner or occupier by a police officer (s.7) and is not published, and its directions may restrict "surveying or making sketches or taking photographs". Whether those directions reach overflight or remote imaging is a question for counsel.
-- **Key points (s.39(3)).** Operations "adjacent to or above" a national key point or strategic installation need CAAZ approval. No list is public; the asset owner is the one to ask.
+- **Key points (s.39(3)).** Operations "adjacent to or above" a national key point or strategic installation need CAAZ approval. We found no public list of key points; the asset owner is the one to ask.
 ::::
 :::::
 ::::
@@ -176,7 +176,7 @@ Above 400 ft; within 3 NM of an aerodrome; in restricted or prohibited airspace;
 VLOS: below 400 ft and within 500 m. E-VLOS: below 400 ft, with an observer up to 1,000 m from the pilot. BVLOS only with CAAZ approval under the operator's certificate, in visual conditions and below 400 ft unless approved.
 :::
 :::card{title="People, structures, roads (ss.42–44)" icon="houses"}
-Not over or within 30 m of people, unless they are part of an approved operation; not within 30 m of a structure without an approved operation **and** the owner's permission; not over, along or within 30 m of a public road without approval and safety measures.
+Not over or within 30 m of people, unless it is an approved operation under the operator's certificate, or the people are part of the operation and under the operator's control; not within 30 m of a structure without an approved operation **and** the owner's permission; not over, along or within 30 m of a public road without approval and safety measures.
 :::
 :::card{title="Night (s.41)" icon="clock"}
 Only reduced line of sight, or an operator whose certificate approves each drone for night flight. Night flight in controlled airspace needs a separate approval.
@@ -205,7 +205,7 @@ Sellers must tell buyers about CAAZ's requirements (s.64), and maintenance techn
 ::::
 ::::col
 :::callout{tone="note" title="Temporary import is not an operator certificate"}
-A drone imported under s.7 is still not registered in Zimbabwe, and an ROC covers only registered drones (s.16). Ask the operator which Zimbabwean registration and certificate each drone on your job flies under.
+Temporary import under s.7 does not by itself register the drone, and an ROC application includes the certificate of registration of each drone it covers (s.16(2)(a)). Ask the operator which Zimbabwean registration and certificate each drone on your job flies under.
 :::
 ::::
 :::::
@@ -292,7 +292,7 @@ Certification by a registered land surveyor where the deliverable must be legall
 ::::section{id="how-we-work" tone="alt" eyebrow="How AfriScan works within these rules" title="Satellite first, drones where the approvals are in place"}
 :::::columns{split="2-1"}
 ::::col
-**Satellite and your own imagery.** A wayleave, pipeline-reserve or mining-location job starts from your route or boundary file and dated satellite imagery, open building datasets or the orthophotos you already hold. No aircraft flies, so the aviation approvals above do not apply to that work, and it can cover a whole route without a letter from every landholder along it. The Surveyor-General's control of aerial and space surveys remains open for counsel (see the FAQ), and the data rules apply to any register linked to occupants, whatever the imagery.
+**Satellite and your own imagery.** A wayleave, pipeline-reserve or mining-location job starts from your route or boundary file and dated satellite imagery, open building datasets or the orthophotos you already hold. No aircraft flies, so the aviation approvals above do not apply to that work, and it can cover a whole route without a letter from every landholder along it. Counsel has yet to confirm how the Land Survey Act s.7(1)(b), the Official Secrets Act and the Protected Places and Areas Act apply to satellite mapping (see the FAQ), and the data rules apply to any register linked to occupants, whatever the imagery.
 
 **Drone detail.** Where a stretch needs more detail than satellite imagery shows, drone surveys are subject to the CAAZ approvals and the security clearances each operation requires. Afridrone is working towards the approvals Zimbabwe requires. Every drone proposal names the company that will fly and its CAAZ approvals, so your team can check them against the list above.
 
@@ -309,8 +309,6 @@ Certification by a registered land surveyor where the deliverable must be legall
 :::
 ::::
 :::::
-
-Last reviewed 27 September 2026 against the primary sources listed below. This page summarises public rules for information; it is not legal advice.
 
 Drone law in other countries: [Mozambique](/mz/drone-regulations), [South Africa](/za/drone-regulations), [Nigeria](/ng/drone-regulations), and the [side-by-side comparison](/drone-regulations).
 ::::

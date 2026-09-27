@@ -34,9 +34,9 @@ faq:
   - q: Which distances do you measure in Zimbabwe?
     a: "The ones in the law and in your own records. For overhead lines, the S.I. 177 of 2018 wayleave clearance for the voltage, measured either side of the outermost conductor, so we work from your conductor positions or wayleave polygons. For pipelines, the reserve you hold and the 125 m band in which the Pipelines Act forbids mining and blasting. For roads, the 31.5 m width the Roads Act deems a road to have unless another width is gazetted, or the width you supply. For railways, 45 m either side of the middle of the track. Up to six distances can be reported in one survey."
   - q: Does a satellite survey need CAAZ approval?
-    a: "No aircraft flies, so the drone regulations (S.I. 271 of 2018) do not apply to satellite work, and no permit procedure for satellite analysis was found when we last reviewed the rules. One point is open for Zimbabwean counsel: the Land Survey Act gives the Surveyor-General supervision and control of aerial and space surveys and geoinformation (s.7(1)(b)). Drone stretches are planned separately and are subject to the CAAZ approvals and security clearances each operation requires. See [drone law in Zimbabwe](/zw/drone-regulations)."
+    a: "No aircraft flies, so the drone regulations (S.I. 271 of 2018) do not apply to satellite work, and no permit procedure for satellite analysis was found when we last reviewed the rules. Counsel has yet to confirm how three laws apply to satellite mapping: the Land Survey Act s.7(1)(b) (the Surveyor-General's supervision and control of aerial and space surveys and geoinformation), the Official Secrets Act and the Protected Places and Areas Act. Drone stretches are planned separately and are subject to the CAAZ approvals and security clearances each operation requires. See [drone law in Zimbabwe](/zw/drone-regulations)."
   - q: Is your register a land survey?
-    a: No. Surveys for Deeds Registry diagrams and general plans, and boundary and beacon surveys, are reserved to practising land surveyors (Land Survey Act s.16). Our registers and change reports are mapping records built from imagery. Where a deliverable must be relied on as a survey, add certification by a registered land surveyor to the scope.
+    a: No. Surveys for Deeds Registry diagrams and general plans, and boundary and beacon surveys, are reserved to practising land surveyors (Land Survey Act s.16). Our registers and change reports are mapping records built from imagery. Where a deliverable must be relied on as a survey, it needs a registered land surveyor's certification.
   - q: Can you tell us which structures are unlawful?
     a: "No. We record what stands where, and when it first appears in the imagery. Whether a structure is authorised, predates the line or needs to move is for your land and legal teams, the authorities and the courts. The Constitution requires a court order, made after considering all the relevant circumstances, before anyone is evicted from their home or has it demolished (s.74). Our registers support those processes; they never replace them."
   - q: Can you detect theft or vandalism on our lines and pipelines?
@@ -52,7 +52,7 @@ faq:
 ::::section{id="law" eyebrow="The distances are in the law" title="Four setbacks your register is measured against" lead="Zimbabwean law draws distances around power lines, pipelines, railways, roads and mining. A distance only protects the asset if someone can see what stands inside it, and since when."}
 :::cards{cols="4"}
 :::card{title="Power lines: 5 m to 30 m" icon="power" eyebrow="S.I. 177 of 2018, s.9"}
-No objects, business or activity, farming or structures within the wayleave clearance either side of the outermost conductor: 5 m for 11 kV and 22 kV lines, rising to 30 m for 330 kV and 400 kV. Closer work needs the distributor's written authorisation ([S.I. 177 of 2018](https://www.veritaszim.net/node/3234)).
+No objects, business or activity, farming or structures within the wayleave clearance either side of the outermost conductor: 5 m for 11 kV and 22 kV lines, rising to 30 m for 330 kV and 400 kV. Placing an object or erecting a structure closer needs the distributor's written authorisation ([S.I. 177 of 2018](https://www.veritaszim.net/node/3234)).
 :::
 :::card{title="Pipelines: a clear reserve" icon="pipeline" eyebrow="Pipelines Act, s.6"}
 Since 16 February 2026 no one may erect a building or structure or plant a tree in the pipeline reserve, and no mining or blasting may take place within 125 m of either side of the pipeline's centre. Courts can order removal ([Pipelines Amendment Act, 2025](https://www.veritaszim.net/node/7892)).
@@ -68,23 +68,12 @@ Digging within 45 m either side of the middle of a track, "to the actual or pote
 Each of these distances is written as a band on the ground. We turn it into a register: each structure, pit or cleared patch the review confirms inside the band, with its coordinates, its distance to the line and the imagery date it first appears on. These are summaries of the law as checked against the published texts on 27 September 2026, not legal advice.
 ::::
 
-::::section{id="corridors" tone="alt" eyebrow="Corridors that start in Mozambique" title="One method on both sides of the border"}
-:::::columns{split="2-1"}
-::::col
-The products pipeline that supplies Zimbabwe comes up from Beira on the Mozambican coast to Feruka, and from Feruka a 208-kilometre multi-product line runs on to Harare ([Auditor-General, 2024](https://www.veritaszim.net/node/7634)). In the State of the Nation Address of 28 October 2025, pipeline capacity was said to have been upgraded "to three billion litres per annum", to be "further upgraded to handle five billion litres per annum" ([SONA 2025](https://www.veritaszim.net/node/7687)). The Ministry of Energy and Power Development says the Government is "interested in expanding its pipeline network to the southern regions of the country, such as Bulawayo" ([Ministry](https://www.energy.gov.zw/?page_id=2032)).
+::::section{id="corridors" tone="alt" eyebrow="Across the border" title="One method on both sides of the border"}
+Fuel pipelines cross into Zimbabwe from Mozambique, and the State of the Nation Address of 28 October 2025 announced further upgrades to pipeline capacity ([SONA 2025](https://www.veritaszim.net/node/7687)). The Ministry of Energy and Power Development says the Government is "interested in expanding its pipeline network to the southern regions of the country, such as Bulawayo" ([Ministry](https://www.energy.gov.zw/?page_id=2032)).
 
-More capacity means works along the line, and the 2026 amendment to the Pipelines Act was written, in the words of its memorandum, "to ensure maximum protection of the pipelines by prohibiting all activities within the pipeline reserve". A corridor that crosses a border needs the same record on both sides: the reserve and the 125 m band in Zimbabwe, the [50 m partial protection zone in Mozambique](/mz/pipelines), each measured with one method and one register format.
+More capacity means works along the lines, and the 2026 amendment to the Pipelines Act was written, in the words of its memorandum, "to ensure maximum protection of the pipelines by prohibiting all activities within the pipeline reserve". A corridor that crosses a border needs the same record on both sides: the reserve and the 125 m band in Zimbabwe, the [50 m partial protection zone in Mozambique](/mz/pipelines), each measured with one method and one register format.
 
 Where your pipeline, line or route crosses a railway or a road, the Railways Act and Roads Act distances apply as well, and they go into the same register.
-::::
-::::col
-:::callout{tone="note" title="Built in Mozambique"}
-Our published sample is a high-pressure gas pipeline in Mozambique: the same register, 500 m ratings and review steps we use in Zimbabwe.
-
-[See the sample](/results) · [AfriScan in Mozambique](/mz/)
-:::
-::::
-:::::
 ::::
 
 ::::section{id="receive" eyebrow="What you receive" title="A dated register your wayleave, land and GIS teams can use"}
@@ -133,7 +122,7 @@ Alternative alignments compared by the structures they would affect, before the 
 ::::col
 Pipelines, high-voltage transmission lines, mineral prospecting and mining, and new railway routes are all First Schedule projects under the Environmental Management Act: they may not be implemented without a certificate from EMA's Director-General (s.97). EMA's process starts with a prospectus and a colour 1:50 000 map, and the full study is carried out by a registered consultant ([EMA](https://ema.co.zw/eia/)).
 
-Lender-financed projects add their own standards. Terms of reference published in Zimbabwe in May 2026 for World Bank-funded site studies ask the consultant, where a resettlement action plan is needed, for eligibility cut-off dates, the approximate number of affected residential and commercial structures, photographs and GIS coordinates of each potentially affected entity, and the use of aerial photos and satellite imagery. A dated, reviewed register is that count, in a form that can be compared on the next survey.
+Lender-financed projects add their own standards. Terms of reference published in Zimbabwe in May 2026 for lender-funded site studies ask the consultant, where a resettlement action plan is needed, for eligibility cut-off dates, the approximate number of affected residential and commercial structures, photographs and GIS coordinates of each potentially affected entity, and the use of aerial photos and satellite imagery. A dated, reviewed register is that count, in a form that can be compared on the next survey.
 
 It supports your census, asset inventory and valuation; it does not replace them, and categories describe what the imagery shows, not use, ownership or value.
 ::::
@@ -158,7 +147,7 @@ We map what is on the land: structures, pits, spoil, cleared ground, tracks and 
 Building datasets and detection models propose; a reviewer confirms, corrects and adds before anything is delivered. What imagery cannot settle is listed for a ground check.
 :::
 :::card{title="Mapping, not land survey" icon="ruler"}
-Our registers are mapping records, never presented as cadastral or boundary surveys. Where a deliverable must stand as a survey, a registered land surveyor certifies it.
+Our registers are mapping records, never presented as cadastral or boundary surveys. Where a deliverable must stand as a survey, it needs a registered land surveyor's certification.
 :::
 :::card{title="Dated and credited" icon="file-check"}
 Every report names its imagery and, where the source gives one, the capture date. Re-surveys follow a schedule agreed with you, with a notice after each one.

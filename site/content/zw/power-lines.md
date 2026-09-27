@@ -21,11 +21,11 @@ og:
 related: [route-site-selection, vegetation-land-cover-fire, excavation-mapping]
 faq:
   - q: What is the wayleave distance for a 330 kV line in Zimbabwe?
-    a: "30 m either side of the outermost conductor, the same as for 400 kV (S.I. 177 of 2018, Fourth Schedule). Because the distance is measured from the outermost conductor, not the centre line, the strip on the ground is wider than 60 m by the spread of the conductors on the tower. Placing an object, farming or building closer needs the distributor's written authorisation (s.9(2))."
+    a: "30 m either side of the outermost conductor, the same as for 400 kV (S.I. 177 of 2018, Fourth Schedule). Because the distance is measured from the outermost conductor, not the centre line, the strip on the ground is wider than 60 m by the spread of the conductors on the tower. Placing an object or erecting a structure closer needs the distributor's written authorisation (s.9(2))."
   - q: How far from a power line can I build in Zimbabwe?
-    a: "Outside the wayleave clearance for the line's voltage, measured either side of the outermost conductor: 5 m for 11 kV and 22 kV, 7.5 m for 33 kV, 15 m for 66, 88 and 132 kV, and 30 m for 330 and 400 kV (S.I. 177 of 2018). Building closer is allowed only with the distributor's written authorisation. For a particular plot, ask the distributor responsible for the line, and before digging anywhere, ask the licensee where its underground cables run (s.8)."
+    a: "Outside the wayleave clearance for the line's voltage, measured either side of the outermost conductor: 5 m for 11 kV and 22 kV, 7.5 m for 33 kV, 15 m for 66, 88 and 132 kV, and 30 m for 330 and 400 kV (S.I. 177 of 2018). Placing an object or erecting a structure closer is allowed only with the distributor's written authorisation (s.9(2)). For a particular plot, ask the distributor responsible for the line, and before digging anywhere, ask the licensee where its underground cables run (s.8)."
   - q: Is farming allowed under power lines?
-    a: Not within the wayleave clearance. Section 9(1) of S.I. 177 of 2018 bars anyone from placing an object, carrying on any business or activity, farming or erecting a structure within the prescribed clearance, unless they first obtain the distributor's written authorisation. The regulations also allow for vegetation to be cleared where it interferes with the conductors.
+    a: Not within the wayleave clearance. Section 9(1) of S.I. 177 of 2018 bars anyone from placing an object, carrying on any business or activity, farming or erecting a structure within the prescribed clearance. The distributor's written authorisation under s.9(2) covers placing an object or erecting a structure closer, not farming. The regulations also allow for vegetation to be cleared where it interferes with the conductors.
   - q: Can you measure the clearance to our conductors?
     a: No. We show where structures, cultivated ground and vegetation change sit in the wayleave and how far each is from the line. Conductor heights, sag and ground clearance stay with your line engineers, and none of our layers is a measured clearance.
   - q: Do you detect cable theft or tower vandalism?
@@ -52,7 +52,7 @@ Licensees must make sure that no trees or foliage grow to the point of encroachi
 Anyone digging, boring, trenching or breaking ground must first get the location of underground cables from the licensee (s.8). Fresh earthworks near a route where nobody asked are worth a visit.
 :::
 :::card{title="“Our towers and cables are being damaged.”" icon="alert"}
-ZETDC's Client Charter asks the public to "Report any vandalism, damage and theft of ZETDC infrastructure" ([ZETDC](https://www.zetdc.co.zw/?page_id=5327)). Imagery cannot see theft; it can show fresh digging, new tracks and cleared ground near towers, so patrols know where to look.
+Imagery cannot see theft, vandalism or who was near a tower. It can show fresh digging, new tracks and cleared ground near towers, so patrols know where to look.
 :::
 :::
 
@@ -70,7 +70,7 @@ ZETDC's Client Charter asks the public to "Report any vandalism, damage and thef
 ::::
 
 ::::section{id="clearances" tone="alt" eyebrow="The clearances" title="The S.I. 177 wayleave clearances, and the mining setbacks beside them"}
-The Electricity (Public Safety) Regulations, 2018 (S.I. 177 of 2018) set the clearances in their Fourth Schedule, "Wayleave Clearance (m) either side from the outermost conductor". Placing an object, carrying on a business or activity, farming or building inside them needs the written authorisation of the distributor responsible for the energised conductor (s.9(1)–(2)), and a contravention carries a fine of up to level 5 ([S.I. 177 of 2018](https://www.veritaszim.net/node/3234)).
+The Electricity (Public Safety) Regulations, 2018 (S.I. 177 of 2018) set the clearances in their Fourth Schedule, "Wayleave Clearance (m) either side from the outermost conductor". No one may place an object, carry on a business or activity, farm or erect a structure inside them (s.9(1)). Placing an object or erecting a structure closer needs the written authorisation of the distributor responsible for the energised conductor (s.9(2)), and a contravention carries a fine of up to level 5 ([S.I. 177 of 2018](https://www.veritaszim.net/node/3234)).
 
 | Voltage | Wayleave | No mining |
 |---|---|---|
@@ -156,7 +156,7 @@ Dated scenes either side of a clearing campaign, so the record shows which spans
 ::::section{id="new-lines" tone="alt" eyebrow="New lines, grid connections and rehabilitation" title="Count what stands on the route before it is fixed"}
 :::::columns{split="2-1"}
 ::::col
-High-voltage transmission lines are First Schedule projects under the Environmental Management Act and need an EMA certificate before they are built (s.97). Lender-financed work adds its own requirements. Terms of reference published in Zimbabwe in May 2026 for World Bank-funded solar site studies scope an ESIA, a resettlement action plan where needed and technical studies "for at least two (2) Solar PV plants including the right of way for the grid connection". Where a plan is needed, they ask for cut-off dates, the approximate number of affected structures, photographs and GIS coordinates of each potentially affected entity, and the use of aerial photos and satellite imagery, and they want a qualified land surveyor to sign off the topographic survey ([terms of reference, May 2026](https://www.zetdc.co.zw/wp-content/uploads/2026/05/Terms-of-Reference-ToR_Environmental-Social-and-Tecvhnical-Site-Studies_ZREP-TA-Project.pdf)).
+High-voltage transmission lines are First Schedule projects under the Environmental Management Act and need an EMA certificate before they are built (s.97). Lender-financed work adds its own requirements. Terms of reference published in Zimbabwe in May 2026 for lender-funded solar site studies, which include the right of way for the grid connection, ask, where a resettlement action plan is needed, for cut-off dates, the approximate number of affected structures, photographs and GIS coordinates of each potentially affected entity, and the use of aerial photos and satellite imagery, and for the topographic survey to be signed off by a qualified land surveyor.
 
 For a new line or connection we compare the structures along alternative alignments, screen slope, drainage crossings and flood exposure, and pull the imagery history of contested parcels. Once the route is fixed, a dated register supports landowner engagement and the cut-off-date records; it does not replace the census or stand in for the topographic survey.
 
