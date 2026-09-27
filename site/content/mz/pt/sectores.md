@@ -17,7 +17,7 @@ og:
   subline: Petróleo e gás, energia, GNL e mineração, EIA e reassentamento, em Moçambique
 faq:
   - q: O nosso sector não está na lista. Podem ajudar?
-    a: Provavelmente. O método serve qualquer infra-estrutura linear ou limite onde importa o que está a uma certa distância e quando apareceu. Rotas de telecomunicações, portos, zonas industriais e reservas de terra usam o mesmo registo. Envie o traçado ou o limite e diga-nos para que serve o registo.
+    a: Provavelmente. O método serve qualquer infra-estrutura linear ou limite onde importa o que está a uma certa distância e quando apareceu. Portos, zonas industriais e reservas de terra usam o mesmo registo, e as rotas de fibra óptica têm [a sua própria página](/industries/telecom-fibre) (em inglês). Envie o traçado ou o limite e diga-nos para que serve o registo.
   - q: Trabalham para empreiteiros e consultores, e não só para os donos dos activos?
     a: Sim. Empreiteiros, consultoras de EIA e de reassentamento e monitores independentes encomendam registos e camadas SIG para os seus próprios produtos, e entregamos nos formatos que as suas equipas usam.
   - q: Podemos ver trabalho feito no nosso sector?
@@ -43,8 +43,8 @@ Contagens para dimensionar o censo, o registo datado na data de corte e a inform
 :::
 ::::
 
-::::section{id="outros" tone="alt" eyebrow="Outros sectores" title="O mesmo método, para outras terras" lead="Ferrovias e estradas, energias renováveis, florestas e conservação, e programas públicos. As páginas destes sectores estão em inglês."}
-:::industries{keys="rail-roads,renewables,agriculture-forestry-nature,government,mining,project-finance-esia" cols="3"}
+::::section{id="outros" tone="alt" eyebrow="Outros sectores" title="O mesmo método, para outras terras" lead="Ferrovias e estradas, fibra óptica, energias renováveis, florestas e conservação, e programas públicos. As páginas destes sectores estão em inglês."}
+:::industries{keys="rail-roads,telecom-fibre,renewables,agriculture-forestry-nature,government,mining,project-finance-esia" cols="4"}
 :::
 ::::
 

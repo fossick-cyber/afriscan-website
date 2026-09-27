@@ -116,7 +116,7 @@ Ortofotomapas ou cenas de satélite georreferenciadas que já tem, analisados co
 :::
 
 :::callout{tone="scope" title="Mapas de base e dados abertos"}
-Os mapas de base dos serviços cartográficos (Google, Bing, Esri) não indicam a data das imagens. Usamo-los apenas para rastreio interno e para ilustração, como no exemplo deste site, e nunca os apresentamos como imagens entregues num levantamento. As bases de dados abertas de edifícios reflectem imagens com alguns anos e são creditadas como as licenças exigem: Google Open Buildings (CC BY 4.0), Microsoft Building Footprints (CDLA-Permissive-2.0) e © contribuidores do OpenStreetMap (ODbL). Os trabalhos de vegetação e de cobertura do solo usam dados Copernicus Sentinel.
+Os mapas de base dos serviços cartográficos (Google, Bing, Esri) não indicam a data das imagens. Usamo-los para rastreio e planeamento e, no caso das imagens Google, creditadas, para mostrar o [exemplo do gasoduto](/mz/pt/resultados-de-exemplo) deste site; nunca os apresentamos como imagens entregues num levantamento nem como base de um registo datado. As bases de dados abertas de edifícios reflectem imagens com alguns anos e são creditadas como as licenças exigem: Google Open Buildings (CC BY 4.0), Microsoft Building Footprints (CDLA-Permissive-2.0) e © contribuidores do OpenStreetMap (ODbL). Os trabalhos de vegetação e de cobertura do solo usam dados Copernicus Sentinel.
 :::
 
 Mais detalhe, em inglês: [metodologia](/methodology) e [imagens e fontes de dados](/imagery).
