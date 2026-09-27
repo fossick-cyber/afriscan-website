@@ -8,8 +8,8 @@ Writes two plan views to site/images/diagrams/, each drawn to one scale:
 ug-wayleave-corridor.png
     The 60 m corridor in UETCL's resettlement policy framework for a new 400 kV interconnector
     (29 January 2026, Table 3.1): a 10 m right of way acquired outright, centred on the line, and
-    25 m of wayleave on each side, where no structures are allowed and vegetation and crops must stay
-    under 2 m. Squares are invented structures (red inside the right of way, amber in the wayleave,
+    25 m of wayleave on each side, where no structures are allowed and vegetation and crops must not
+    exceed 2 m. Squares are invented structures (red inside the right of way, amber in the wayleave,
     teal outside); circles are invented tall trees.
 
 ug-pipeline-bands.png
@@ -114,7 +114,7 @@ def pipeline_bands():
         c.line([(bx0, y(m)), (bx1, y(m))], rgba(RED, 200), 3)
 
     structures = [(820, 4),
-                  (640, 10), (1260, -12),
+                  (640, -3), (1260, 18),
                   (560, 22), (760, -27), (930, 33), (1090, -19), (1220, 41), (1360, -38), (1480, 26),
                   (700, 51), (1010, -52), (1420, 50)]
     for x, m in structures:

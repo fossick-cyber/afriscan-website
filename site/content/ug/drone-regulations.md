@@ -73,12 +73,12 @@ A remote pilot authorisation or licence issued only after a security threat asse
 | **URA Customs** and the **Joint Security Office** | Customs declaration and security inspection of imported drones, after UCAA's written authorisation | Reg 16; AC-UAS001 part A |
 | **The relevant line ministry** | A letter of no objection to the intended operations. The Regulations do not say which ministry signs for a private corridor survey | Regs 6(2)(b) and 7(2)(b); AC-UAS001 part B |
 | **Resident District Commissioner** | Signs the safety risk assessment for Category B and Category C applications | [UCAA checklist](https://caa.go.ug/Download/81/unmanned-aircraft-systems-drones/5506/drone-requirements) (file dated 24 April 2024) |
-| **Local authorities, communities and landowners** | Permission of the appropriate authorities, notice to the community, a report to local authorities before operating, and consent before imaging private property | Reg 31(2); Sch. 2; reg 79(2) |
+| **Local authorities, communities and landowners** | Permission of the appropriate authorities, notice to the community, a report to local authorities before operating, and the owner's consent before keeping private property under observation | Reg 31(2); Sch. 2; reg 79(2)(a)(ii) |
 | **Uganda Communications Commission** | A radio licence where applicable; copied on clearance requests if applicable | Reg 69(2); AC-UAS001 part B |
 | **Air traffic services and aerodrome operators** | Flight plans and air traffic control contact in controlled airspace, and written permission within 4 km of an aerodrome | Regs 48, 51, 52 and 60 |
 | **Personal Data Protection Office** | Personal data captured in imagery | [Data Protection and Privacy Act 2019](https://ulii.org/akn/ug/act/2019/9/eng@2023-12-31) |
 
-The Regulations were made on 12 August 2022 and published on 15 August 2022, and they revoked the Civil Aviation (Remotely Piloted Aircraft Systems) Regulations, 2020 (S.I. 23 of 2020). No amending instrument appears on ULII or on [UCAA's regulations page](https://caa.go.ug/regulations/), and the arrangement of sections of the Civil Aviation Authority (Amendment) Act 2024 shows no drone clauses. UCAA's [drone page](https://caa.go.ug/unmanned-aircraft-systems-drones/) carries the Regulations, the application form, the designated medical examiners, the advisory circular and the requirements checklist. Every instrument this guide relies on is listed with its Gazette reference in the Sources table at the end.
+The Regulations were made on 12 August 2022 and published on 15 August 2022, and they revoked the Civil Aviation (Remotely Piloted Aircraft Systems) Regulations, 2020 (S.I. 23 of 2020). No amending instrument appears on ULII or on [UCAA's regulations page](https://caa.go.ug/regulations/), and the arrangement of sections of the Civil Aviation Authority (Amendment) Act 2024 shows no drone clauses. UCAA's [drone page](https://caa.go.ug/unmanned-aircraft-systems-drones/) carries the Regulations, the application form, the designated medical examiners, the advisory circular and the requirements checklist. Every instrument this guide relies on is listed in the Sources table at the end, with its Gazette reference where it has one.
 ::::
 
 ::::section{id="categories" class="compare" eyebrow="The categories" title="Three categories, and where a mapping flight fits" lead="Regulation 4 and Schedule 2 sort operations by risk. Every category must stay within the territorial borders of Uganda."}
@@ -342,13 +342,13 @@ One that declares the camera's use (reg 72), with sensors limited to the approve
 In place for the operation (reg 56).
 :::
 :::step{title="Notice and consent"}
-The permission of the appropriate authorities and notice to the community (reg 31(2)); a report to local authorities before operating (Sch. 2); the owner's consent before imaging private property (reg 79(2)).
+The permission of the appropriate authorities and notice to the community (reg 31(2)); a report to local authorities before operating (Sch. 2); the owner's consent before keeping private property under observation (reg 79(2)(a)(ii)).
 :::
 :::step{title="A data plan"}
 Who receives the imagery, what is blurred, where it is stored, and that nothing is published.
 :::
 :::step{title="Approvals in writing, kept on file"}
-Under reg 84(2) the operator and the pilot are presumed liable, so the paperwork is the defence.
+Under reg 84(2) the operator and the pilot are "deemed to have contravened" the Regulations unless they prove the contravention happened without their consent or connivance and that they "exercised all due diligence", so written approvals are the first evidence of due diligence.
 :::
 :::step{title="On petroleum sites"}
 The consent of PAU and the licensee for safety zones and adjacent areas (Midstream Act s.67; Midstream Regulations reg 68), and the contractor's national content status for the contract.

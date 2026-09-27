@@ -2,7 +2,8 @@
 # cites the petroleum ones with :::sources. Facts ONLY from regional/ug.FINAL.md (verified 2026-09-27
 # against the gazetted texts, UCAA's live drone page and PAU's copies of the petroleum Acts and
 # Regulations). Dates are the Gazette dates given there (S.I. 96/2022, S.I. 36/2016, Act 7 of 2019,
-# S.I. 21/2021), the file date of UCAA's checklist, or the year alone where the brief gives no day
+# S.I. 21/2021), the assent date on Parliament's bill tracker (the 2024 CAA amendment Act), the file
+# date of UCAA's checklist, or the year alone where the brief gives no day
 # (AC-UAS001 Issue 1 is dated July 2020 and was posted by UCAA on 22 March 2022; the 2013 petroleum
 # Acts and the 2019 data Act). Items the brief marks [unverified] stay out: the Official Secrets Act
 # prohibited places, UWA drone permits, UCC type approval, the DPPA's transfer section number.
@@ -44,6 +45,13 @@ instruments:
     url: https://archive.gazettes.africa/archive/ug/2019/ug-government-gazette-acts-supplement-dated-2019-04-18-no-18.pdf
     last_checked: 2026-09-27
     note: Assented to on 20 February 2019. Defines remotely piloted aircraft systems and adds them to the regulation-making power in s.61.
+  - id: caa-amendment-act-2024
+    title: The Civil Aviation Authority (Amendment) Act, 2024
+    identifier: Parliament of Uganda bill tracker copy
+    date: 2024-02-02
+    url: https://bills.parliament.ug/attachments/Civil%20Aviation%20Authority%20(Amendment)%20Act,%202024.pdf
+    last_checked: 2026-09-27
+    note: Assented to on 2 February 2024, according to Parliament's bill tracker. Its arrangement of sections shows no drone clauses.
   - id: midstream-act-2013
     title: The Petroleum (Refining, Conversion, Transmission and Midstream Storage) Act, 2013
     identifier: Act 4 of 2013 (Cap. 162)

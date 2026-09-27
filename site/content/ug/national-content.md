@@ -27,7 +27,7 @@ faq:
   - q: Is a Ugandan subsidiary of a foreign firm a "Ugandan company"?
     a: Only if it meets the definition in the petroleum national content regulations. That means being incorporated under the Companies Act 2012, providing value addition to Uganda, using available local raw materials, employing at least 70 % Ugandans, and being approved by PAU.
   - q: Can a foreign company own drones in Uganda?
-    a: No. Regulation 8 of S.I. 96 of 2022 limits drone ownership to Ugandan citizens, lawfully resident foreign individuals, Uganda-registered companies and Government, and every drone must be registered in Uganda. See [drone law in Uganda](/ug/drone-regulations#foreign).
+    a: Not in its own name. Regulation 8 of S.I. 96 of 2022 limits drone ownership to Ugandan citizens, lawfully resident foreign individuals, Uganda-registered companies and Government, so a Uganda-registered company qualifies, and every drone must be registered in Uganda. Regulations 85 and 86 allow an application for exemption, but whether UCAA would grant one to a foreign-owned operator is not known. See [drone law in Uganda](/ug/drone-regulations#foreign).
   - q: What do you need from us to prepare a proposal?
     a: The route or boundary file, the districts it crosses, the widths or zones to report, the date the record must reflect, the deliverables and the deadline. With a tender, send the documents and tell us the portal, the procurement method and any national content or reservation requirement that applies.
 cta:
@@ -69,7 +69,7 @@ Where will imagery and results be processed and stored, and on what basis under 
 
 ### The crude export pipeline {#crude-export-pipeline}
 
-The [2021 special-provisions Act](https://archive.gazettes.africa/archive/ug/2021/ug-government-gazette-acts-supplement-dated-2021-12-24-no-92.pdf) for the crude export pipeline requires its suppliers to be registered on PAU's National Supplier Database, with exceptions where goods, works or services "are not available in Uganda" and for time-limited emergency services (s.15). Contracts listed in the project's national content appendix are reserved for "Ugandan parties"; where capacity is insufficient, PAU may consent to international procurement, preferably through a Ugandan joint venture (s.24). Where goods or services are not available in Uganda, a foreign supplier may deliver through "a Ugandan joint venture with Ugandan parties approved by the Authority and registered on the national supplier database" (s.25).
+The [2021 special-provisions Act](https://archive.gazettes.africa/archive/ug/2021/ug-government-gazette-acts-supplement-dated-2021-12-24-no-92.pdf) (Act 25 of 2021) for the crude export pipeline requires its suppliers to be registered on PAU's National Supplier Database, with exceptions where goods, works or services "are not available in Uganda" and for time-limited emergency services (s.15). Contracts listed in the project's national content appendix are reserved for "Ugandan parties"; where capacity is insufficient, PAU may consent to international procurement, preferably through a Ugandan joint venture (s.24). Where goods or services are not available in Uganda, a foreign supplier may deliver through "a Ugandan joint venture with Ugandan parties approved by the Authority and registered on the national supplier database" (s.25).
 ::::
 
 ::::section{id="nsd" eyebrow="Registration" title="PAU's National Supplier Database"}

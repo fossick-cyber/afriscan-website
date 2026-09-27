@@ -55,7 +55,7 @@ faq:
 No one may carry out "any activity in an area adjacent to a pipeline system" without PAU's written consent (reg 68). Anyone planning work within 30 m of a pipeline right of way must first find out where the pipe is (reg 92), and machines may dig within 6 m only under the licensee's supervision (reg 97). Licensees survey their routes every six months (reg 87(7)).
 :::
 :::card{title="Power lines: a corridor where nothing is built" icon="power" eyebrow="Electricity Act · UETCL" key="power-utilities#law"}
-A licensee may place lines over any land, paying "prompt, fair, and adequate compensation" for the right of use (Electricity Act s.67). UETCL's published resettlement framework for a new 400 kV interconnector sets a 60 m corridor with no structures, and vegetation and crops kept under 2 m. The width is set project by project.
+A licensee may place lines over any land, paying "prompt, fair, and adequate compensation" for the right of use (Electricity Act s.67). UETCL's published resettlement framework for a new 400 kV interconnector sets a 60 m corridor with no structures, and vegetation and crops no higher than 2 m. The width is set project by project.
 :::
 :::card{title="Roads: no compensation for unauthorised structures" icon="route" eyebrow="Roads Act 2019" key="rail-roads#law"}
 "A person who constructs any structure in or on a road reserve … without authorisation … is not entitled to any compensation" (s.16(8)). The Act also provides for building lines (s.17), and the 2026 road regulations set maximum reserve widths by road class. So the date a structure first appeared matters.
@@ -86,7 +86,7 @@ A buried pipeline is a right of way to keep clear for decades. Reinstated ground
 A structure inside a registered wayleave is easier to discuss while it is new. A dated register shows whether it stood there before the cut-off date or appeared after it.
 :::
 :::card{title="“When did that building go up?”" icon="calendar"}
-On road reserves the answer decides compensation. Archive imagery shows roughly when a structure first appeared, and the register records it against the reserve width.
+On road reserves the date matters as evidence, because the Roads Act denies compensation for structures built in a reserve without authorisation. Archive imagery shows roughly when a structure first appeared, and the register records it against the reserve width.
 :::
 :::card{title="“We cannot send a team along the whole route.”" icon="route"}
 Long corridors cross farmland, wetlands and growing towns. Satellite mapping covers all of it with no one on site, so field teams go first to the stretches that changed.

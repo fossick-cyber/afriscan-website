@@ -45,7 +45,7 @@ cta:
 A structure inside a wayleave is a safety risk and, the longer it stands, a harder conversation. The date it first appeared on imagery tells your team whether it predates the wayleave.
 :::
 :::card{title="“The trees are growing back.”" icon="tree"}
-On a line like the new 400 kV interconnector, vegetation and crops in the wayleave must stay under 2 m, and they grow back between clearing cycles. A map of where tall vegetation stands tells the clearing crews where to go.
+On a line like the new 400 kV interconnector, vegetation and crops in the wayleave must not exceed 2 m, and they grow back between clearing cycles. A map of where tall vegetation stands tells the clearing crews where to go.
 :::
 :::card{title="“We need the corridor for a new line.”" icon="route"}
 Before a new line's route is fixed, the land it would affect can be counted option by option, and after it is fixed a dated baseline records what stood in the corridor.
@@ -90,7 +90,7 @@ UETCL commits to "ongoing monitoring and enforcement of land use restrictions". 
 ::::
 ::::col
 :::figure{src="diagrams/ug-wayleave-corridor" alt="Plan-view schematic of a 400 kV line with tower symbols, a red 10 m right of way centred on the line and an amber 25 m wayleave on each side, 60 m in all; square markers stand for structures, red inside the right of way, amber in the wayleave and teal outside, and green circles stand for tall trees in the wayleave" caption="The 60 m corridor in a published 400 kV resettlement framework, drawn to scale" credit="Schematic drawn by AfriScan for illustration; the structures and trees are invented." size="half"}
-Red: the 10 m right of way. Amber: 25 m of wayleave either side, with no structures and vegetation kept under 2 m. Green circles: tall trees. Teal: structures outside the corridor.
+Red: the 10 m right of way. Amber: 25 m of wayleave either side, with no structures and vegetation no higher than 2 m. Green circles: tall trees. Teal: structures outside the corridor.
 :::
 ::::
 :::::

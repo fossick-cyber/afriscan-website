@@ -72,7 +72,7 @@ Trenches and works for pipelines, cables and fibre in a reserve need written aut
 |---|---|
 | **s.15, road reserves** | The Minister declares road reserves by statutory instrument and may set different widths for different classes of road |
 | **s.16(2)(b), utilities in the reserve** | Written authorisation is needed for "pipelines, telephone lines, electric supplies, optic fibre cables and posts" in a road reserve |
-| **s.16(4)–(6), relocation** | After 90 days' notice, a utility relocates its lines at its own cost, without any compensation |
+| **s.16(4)–(6), relocation** | When the road authority needs the reserve, a utility relocates its lines at its own cost, without any compensation, on up to 90 days' notice or a shorter period the road authority specifies |
 | **s.16(8), unauthorised structures** | "A person who constructs any structure in or on a road reserve … without authorisation … is not entitled to any compensation" |
 | **s.17, building lines** | Building lines and no-build distances measured from the centre line of the road |
 | **s.24, removal** | The road authority may remove encroachments from a reserve, with or without notice, at the cost of the person responsible |
@@ -102,7 +102,7 @@ The Schedule's note on how these widths are measured begins "measured at right a
 ::::col
 We buffer the road's centreline, or the reserve boundary you send, by the reserve width and the building line, list each structure the review confirms with its distance to the centreline and its band, and cut the road into 500 m stretches rated for **encroachment density**: high where more than five structures stand inside the widest band, medium for one to five, low for none.
 
-For each structure that matters, we look back through dated archive imagery and report roughly when it first appeared: the first dated scene on which it stands and the last on which it does not. That is the question section 16(8) turns on. Re-surveys on a schedule you agree with us then flag new and removed structures, automatically and then confirmed by a reviewer.
+For each structure that matters, we look back through dated archive imagery and report roughly when it first appeared: the first dated scene on which it stands and the last on which it does not. That date matters as evidence, because section 16(8) denies compensation for structures built in a reserve without authorisation. Re-surveys on a schedule you agree with us then flag new and removed structures, automatically and then confirmed by a reviewer.
 ::::
 ::::col
 ### What you receive
@@ -144,7 +144,7 @@ Structure counts along alternative alignments, band by band, before a route is f
 ::::section{id="fibre" eyebrow="Fibre and utility routes" title="Works along roads, flagged between surveys"}
 :::::columns{split="2-1"}
 ::::col
-Pipelines, telephone and electric lines and optic fibre cables need written authorisation to be placed in a road reserve, and are relocated at the owner's cost, without compensation, after 90 days' notice (Roads Act s.16). For fibre and utility operators, and for road authorities checking works in their reserves, we flag fresh excavations, trenches and earthworks along the route between dated surveys, and list new structures along it.
+Pipelines, telephone and electric lines and optic fibre cables need written authorisation to be placed in a road reserve, and are relocated at the owner's cost, without compensation, on up to 90 days' notice, or a shorter period the road authority specifies, when the authority needs the reserve (Roads Act s.16). For fibre and utility operators, and for road authorities checking works in their reserves, we flag fresh excavations, trenches and earthworks along the route between dated surveys, and list new structures along it.
 
 Imagery cannot see a buried cable or detect cable theft. It shows where the ground along the route has been disturbed, and when, so field teams know where to check.
 ::::
