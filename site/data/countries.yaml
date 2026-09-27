@@ -44,7 +44,7 @@ mw:
   name: Malawi
   region: Southern
   languages: [en]
-  status: launching
+  status: live
   timezones: [Africa/Blantyre]
 na:
   name: Namibia

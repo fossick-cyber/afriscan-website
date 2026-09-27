@@ -39,6 +39,9 @@ counsel_required:
   - /cd/power-lines
   # Angola: the local-content page states the law, so counsel reviews it too
   - /ao/pt/conteudo-local
+  # Malawi: they cite Electricity Act and Public Roads Act sections Malawian counsel is to confirm (mw.FINAL.md)
+  - /mw/power-lines
+  - /mw/road-and-rail-reserves
 
 pending:
   native_pt:
@@ -132,3 +135,9 @@ pending:
     owner_decision: 2026-09-27
     pages:
       /zw/drone-regulations: Zimbabwean counsel
+  counsel_mw:
+    owner_decision: 2026-09-27
+    pages:
+      /mw/drone-regulations: Malawian counsel
+      /mw/power-lines: Malawian counsel
+      /mw/road-and-rail-reserves: Malawian counsel

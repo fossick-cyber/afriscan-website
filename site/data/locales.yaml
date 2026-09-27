@@ -239,7 +239,7 @@ mw:
   label: "Malawi"
   short: "Malawi"
   sitemap: sitemap-mw.xml
-  status: draft
+  status: live
   region: Southern
 na:
   content: na
