@@ -28,16 +28,16 @@ region:
   label: Site do país
   choose: Escolha o site do país
   current: Está aqui
-  # When the grouped country menu (gw-core) is merged, uncomment these with the regions block below:
-  # stay: Ficar neste site
-  # banner: "Está em {country}? Veja o site de {country}."
+  stay: Ficar neste site
+  banner: "Está em {country}? Veja o site de {country}."
 
-# regions:
-#   Southern: África Austral
-#   East: África Oriental
-#   West: África Ocidental
-#   Central: África Central
-#   North: Norte de África
+# Títulos das regiões (selector de país, menu Países, botões dos países).
+regions:
+  Southern: África Austral
+  East: África Oriental
+  West: África Ocidental
+  Central: África Central
+  North: Norte de África
 
 cta:
   title: Saiba o que está construído na faixa de servidão antes que o problema cresça.
@@ -202,20 +202,6 @@ samples:
   ratings: {high: Alta, medium: Média, low: Baixa}
 
 # Como cada secção é nomeada em português de Angola (menu Países, rodapé, selector, botões dos países).
-# The build requires the same keys in every i18n file, so this list holds only the sections in
-# locales.yaml. When the other country sections are merged, add their labels here too:
-#   zm: "Zâmbia (em inglês)"
-#   tz: "Tanzânia (em inglês)"
-#   ke: "Quénia (em inglês)"
-#   gh: "Gana (em inglês)"
-#   ug: "Uganda (em inglês)"
-#   cd-fr: "RD Congo (em francês)"
-#   cd-en: "RD Congo (em inglês)"
-#   zw: "Zimbabwe (em inglês)"
-#   mw: "Malawi (em inglês)"
-#   na: "Namíbia (em inglês)"
-#   bw: "Botswana (em inglês)"
-#   rw: "Ruanda (em inglês)"
 sites:
   global: "Global (em inglês)"
   mz-pt: "Moçambique (Português)"
@@ -224,6 +210,18 @@ sites:
   ng: "Nigéria (em inglês)"
   ao-pt: "Angola (Português)"
   ao-en: "Angola (em inglês)"
+  zm: "Zâmbia (em inglês)"
+  tz: "Tanzânia (em inglês)"
+  ke: "Quénia (em inglês)"
+  gh: "Gana (em inglês)"
+  ug: "Uganda (em inglês)"
+  cd-fr: "RD Congo (em francês)"
+  cd-en: "RD Congo (em inglês)"
+  zw: "Zimbabwe (em inglês)"
+  mw: "Malawi (em inglês)"
+  na: "Namíbia (em inglês)"
+  bw: "Botswana (em inglês)"
+  rw: "Ruanda (em inglês)"
 
 # Páginas em inglês para onde as páginas de /ao/pt/ remetem (menus, rodapé, caminho de navegação,
 # cartões). Cada chave é a chave de grupo (key) da página. Uma página inglesa ligada a partir de

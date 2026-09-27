@@ -30,18 +30,18 @@ region:
   label: Site pays
   choose: "Choisir un site pays "   # suivi de « : » dans le gabarit
   current: Vous êtes ici
-  # À décommenter à la fusion avec la branche gw-core, qui ajoute ces clés à en.yaml (la construction
-  # d’aujourd’hui exige les mêmes clés dans chaque fichier ; celle de gw-core accepte leur absence).
-  # stay: Rester sur ce site
-  # banner: "Vous êtes en {country} ? Consultez notre site pour ce pays."
+  stay: Rester sur ce site
+  # {country} est toujours le nom de la RD Congo dans locales.yaml : le bandeau ne parle français
+  # que pour ce pays (« Vous êtes en République démocratique du Congo ? »).
+  banner: "Vous êtes en {country} ? Consultez notre site pour ce pays."
 
-# Titres des régions (sélecteur de pays, menu Pays, /countries), eux aussi à décommenter à la fusion.
-# regions:
-#   Southern: Afrique australe
-#   East: Afrique de l’Est
-#   West: Afrique de l’Ouest
-#   Central: Afrique centrale
-#   North: Afrique du Nord
+# Titres des régions (sélecteur de pays, menu Pays, /countries).
+regions:
+  Southern: Afrique australe
+  East: Afrique de l’Est
+  West: Afrique de l’Ouest
+  Central: Afrique centrale
+  North: Afrique du Nord
 
 cta:
   title: Sachez ce qui se trouve dans votre emprise avant que cela ne devienne un litige.
@@ -214,20 +214,18 @@ sites:
   ng: "Nigeria (en anglais)"
   cd-fr: "RD Congo (Français)"
   cd-en: "RD Congo (en anglais)"
-  # Sections des autres branches pays : à décommenter au moment de la fusion, quand en.yaml et
-  # pt-MZ.yaml ont les mêmes clés (la construction exige les mêmes clés dans chaque fichier).
-  # zm: "Zambie (en anglais)"
-  # tz: "Tanzanie (en anglais)"
-  # ke: "Kenya (en anglais)"
-  # gh: "Ghana (en anglais)"
-  # ug: "Ouganda (en anglais)"
-  # ao-pt: "Angola (Português)"
-  # ao-en: "Angola (en anglais)"
-  # zw: "Zimbabwe (en anglais)"
-  # mw: "Malawi (en anglais)"
-  # na: "Namibie (en anglais)"
-  # bw: "Botswana (en anglais)"
-  # rw: "Rwanda (en anglais)"
+  zm: "Zambie (en anglais)"
+  tz: "Tanzanie (en anglais)"
+  ke: "Kenya (en anglais)"
+  gh: "Ghana (en anglais)"
+  ug: "Ouganda (en anglais)"
+  ao-pt: "Angola (Português)"
+  ao-en: "Angola (en anglais)"
+  zw: "Zimbabwe (en anglais)"
+  mw: "Malawi (en anglais)"
+  na: "Namibie (en anglais)"
+  bw: "Botswana (en anglais)"
+  rw: "Rwanda (en anglais)"
 
 # Pages en anglais vers lesquelles renvoient les pages françaises (menus, pied de page, fil d’Ariane,
 # cartes). Chaque clé est la clé de groupe (key) de la page. Une page anglaise liée depuis /cd/fr/
