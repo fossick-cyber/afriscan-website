@@ -160,13 +160,14 @@ main:focus { outline: none; }
 .panel-overview:hover { color: #fff; }
 
 .header-actions { display: flex; align-items: center; gap: 10px; margin-left: 12px; white-space: nowrap; }
+.header-cta { min-height: 44px; }
 .header-cta .cta-short { display: none; }
 .menu-toggle { display: none; width: 44px; height: 44px; align-items: center; justify-content: center; border-radius: var(--radius-sm); background: transparent; border: 1px solid var(--d-line); color: #fff; cursor: pointer; }
 .menu-toggle .icon-close { display: none; }
 .nav-cta-mobile { display: none; }
 
 .region { position: relative; }
-.region summary { list-style: none; display: inline-flex; align-items: center; gap: 6px; padding: 7px 10px; border-radius: var(--radius-sm); border: 1px solid var(--d-line); color: var(--d-text); font-size: 0.88rem; font-weight: 550; cursor: pointer; }
+.region summary { list-style: none; display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; padding: 7px 10px; border-radius: var(--radius-sm); border: 1px solid var(--d-line); color: var(--d-text); font-size: 0.88rem; font-weight: 550; cursor: pointer; }
 .region summary::-webkit-details-marker { display: none; }
 .region summary:hover { color: #fff; border-color: rgba(255, 255, 255, .3); }
 .region[open] summary .icon-xs { transform: rotate(180deg); }
@@ -204,7 +205,7 @@ main:focus { outline: none; }
    the left edge: the menu becomes a panel across the screen, under the header. The header is not
    blurred below 1200 px, so position: fixed is relative to the viewport. */
 @media (max-width: 700px) {
-  .region summary { padding: 8px; }
+  .region summary { min-width: 44px; padding: 0; }
   .region-current, .region summary .icon-xs { display: none; }
   .region-menu {
     position: fixed; left: 12px; right: 12px; top: calc(var(--header-h) + 8px);
@@ -223,6 +224,9 @@ main:focus { outline: none; }
   .header-cta .cta-short { display: inline; }
 }
 /* Logo, globe, short CTA and menu button need about 355 px; the drawer repeats the CTA. */
+@media (max-width: 400px) {
+  .header-cta { padding-inline: 10px; }
+}
 @media (max-width: 359px) {
   .header-cta { display: none; }
 }
@@ -575,7 +579,9 @@ tbody th { font-weight: 700; }
 /* ------------------------------------------------------------------ country banner */
 .region-banner { position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); z-index: 200; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; max-width: 760px; margin: 0 auto; background: var(--ink-2); color: var(--d-text); border: 1px solid var(--d-line); border-radius: var(--radius); padding: 12px 14px; box-shadow: 0 16px 40px rgba(0, 0, 0, .4); font-size: 0.95rem; }
 .region-banner p { flex: 1 1 220px; }
-.region-banner-close { margin-left: auto; width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--d-line); background: transparent; color: #fff; font-size: 1.3rem; cursor: pointer; }
+/* The banner sits above the header layer, so it would cover the drawer and the country menu. */
+.menu-open .region-banner, .region-open .region-banner { display: none; }
+.region-banner-close { margin-left: auto; width: 44px; height: 44px; border-radius: 8px; border: 1px solid var(--d-line); background: transparent; color: #fff; font-size: 1.3rem; cursor: pointer; }
 
 /* ------------------------------------------------------------------ page-specific */
 .section > .container > h2 + .cards { margin-top: 24px; }

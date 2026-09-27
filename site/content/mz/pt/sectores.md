@@ -29,7 +29,7 @@ faq:
 ::::section{id="principais" eyebrow="Os sectores principais em Moçambique" title="Onde um registo datado muda as decisões" lead="Escolha a página da terra que a sua empresa gere. Cada uma descreve os problemas nas palavras da sua equipa, as faixas e as leis que se aplicam, os serviços que respondem a esses problemas e o que recebe."}
 :::cards{cols="2"}
 :::card{title="Gasodutos e oleodutos" icon="pipeline" key="oil-gas" eyebrow="Faixas · centrais · poços"}
-A zona de protecção parcial de 50 m, a zona de segurança de 200 m do corredor Pande–Temane, as construções à volta de centrais e poços, as escavações junto das condutas e as variantes de traçado. **Começa normalmente por** um registo das construções dentro das faixas, cada uma medida até ao eixo.
+A zona de protecção parcial de 50 m, as zonas de segurança fixadas por decreto, as construções à volta de centrais e poços, as escavações junto das condutas e as variantes de traçado. **Começa normalmente por** um registo das construções dentro das faixas, cada uma medida até ao eixo.
 :::
 :::card{title="Linhas de transporte de energia" icon="power" key="power-utilities" eyebrow="Servidões · linhas novas · água"}
 A servidão até 50 m do eixo da Lei de Electricidade, a data de cada construção, a comparação de traçados para linhas novas, a vegetação e as queimadas, e as adutoras e barragens. **Começa normalmente por** um registo da servidão, troço a troço.

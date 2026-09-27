@@ -32,7 +32,7 @@ cta:
   secondary_href: /results
 faq:
   - q: Which widths do you measure in Mozambique?
-    a: By default we report structures within 50 m and 100 m of the line, which covers the partial protection zone of the Land Law and a band outside it where pressure builds. We add the 200 m safety zone on the Pande–Temane corridor (Decreto n.º 36/2001), the width recorded in your concession or servitude, or any company standard, up to six widths in one survey.
+    a: By default we report structures within 50 m and 100 m of the line, which covers the partial protection zone of the Land Law and a band outside it where pressure builds. We add the wider zones that apply, such as a 200 m safety zone where a decree sets one, the width recorded in your concession or servitude, or any company standard, up to six widths in one survey.
   - q: Does a satellite-only survey need authorisation under Lei n.º 6/2024?
     a: Lei n.º 6/2024 regulates aerial surveys and defines them by reference to sensors on board manned or unmanned aircraft, so satellite-only work appears to fall outside it. CENACARTA also has a general role in approving geospatial production, so we treat this as a point for your counsel to confirm, and say so in the proposal. See [drone law in Mozambique](/mz/drone-regulations#satellite).
   - q: Can the report be in Portuguese?
@@ -46,7 +46,7 @@ faq:
 ---
 
 ::::section{tone="dark" class="home-strip"}
-**The law behind the register** Lei n.º 19/97 (Lei de Terras) art. 8 · Lei n.º 8/2026 (Lei do Petróleo) art. 75 · Lei n.º 12/2022 (Lei de Electricidade) art. 43 · Decreto n.º 36/2001 · Decreto n.º 31/2012 · IFC Performance Standard 5
+**The law behind the register** Lei n.º 19/97 (Lei de Terras) art. 8 · Lei n.º 8/2026 (Lei do Petróleo) art. 75 · Lei n.º 12/2022 (Lei de Electricidade) art. 43 · Decreto n.º 31/2012 · IFC Performance Standard 5
 ::::
 
 ::::section{id="law" eyebrow="Already in the law" title="The 50 m strip your register is measured against" lead="Mozambican law draws a strip of land along every pipeline and power line. What is built inside it is a cost, a delay or a dispute waiting to happen, and the earlier you know, the cheaper it is to deal with."}
@@ -54,13 +54,13 @@ faq:
 ::::col
 Under the Land Law, the land occupied by oil, gas, water, electricity and telecommunications conduits, with a strip of **50 metres on each side**, is a *zona de protecção parcial* ([Lei n.º 19/97, de 1 de Outubro, art. 8(g)](https://www.pdul.gov.mz/content/download/486/2635/file/Lei%20de%20Terras.pdf)). Protection zones are public domain (art. 6), and no land-use right (DUAT) can be acquired in them, only special licences (art. 9).
 
-The sector laws repeat the strip. The Petroleum Law makes the 50 m around petroleum infrastructure a partial protection zone and leaves the safety zone to regulation ([Lei n.º 8/2026, art. 75(3)–(4)](https://www.inp.gov.mz/wp-content/uploads/2026/06/BR_104_I_SERIE_2.o_SUPLEMENTO_2026.pdf)). The Electricity Law sets an administrative servitude of up to 50 m from the line's axis, registered in the land cadastre and the property register ([Lei n.º 12/2022, art. 43](https://arene.org.mz/wp-content/uploads/2022/08/Lei-de-Electricidade-2022.pdf)). On the Pande–Temane gas corridor, a 200 m safety zone applies on each side, and building there needs the project operator's prior consent ([Decreto n.º 36/2001, arts. 2–3](https://faolex.fao.org/docs/pdf/moz50003.pdf)).
+The sector laws repeat the strip. The Petroleum Law makes the 50 m around petroleum infrastructure a partial protection zone and leaves the safety zone to regulation ([Lei n.º 8/2026, art. 75(3)–(4)](https://www.inp.gov.mz/wp-content/uploads/2026/06/BR_104_I_SERIE_2.o_SUPLEMENTO_2026.pdf)). The Electricity Law sets an administrative servitude of up to 50 m from the line's axis, registered in the land cadastre and the property register ([Lei n.º 12/2022, art. 43](https://arene.org.mz/wp-content/uploads/2022/08/Lei-de-Electricidade-2022.pdf)). A decree can also set a wider safety zone for a particular corridor, such as 200 m on each side.
 
 [The 50 m partial protection zone, explained](/mz/50m-protection-zone)
 ::::
 ::::col
 :::figure{src="diagrams/mz-strips" alt="Plan-view schematic of a pipeline axis with a red 50 m band, an amber 100 m band and a dashed 200 m line on each side; square markers stand for structures, red inside 50 m, amber between 50 m and 100 m and teal beyond" caption="The strips, drawn to scale" credit="Schematic by AfriScan; the structures are illustrative." size="half"}
-Red: the 50 m partial protection zone (Lei n.º 19/97, art. 8(g); Lei n.º 8/2026, art. 75(3)). Amber: the 100 m band we report by default. Dashed: the 200 m safety zone on the Pande–Temane corridor (Decreto n.º 36/2001).
+Red: the 50 m partial protection zone (Lei n.º 19/97, art. 8(g); Lei n.º 8/2026, art. 75(3)). Amber: the 100 m band we report by default. Dashed: a 200 m safety zone, where a decree sets one.
 :::
 ::::
 :::::
@@ -110,7 +110,7 @@ The chair of EDM, the national electricity utility, has described the *ocupaçã
 ::::section{id="sectors" tone="alt" eyebrow="Who we work for in Mozambique" title="Pipelines, lines, projects and the teams that plan them"}
 :::cards{cols="3"}
 :::card{title="Gas and oil pipelines" icon="pipeline" key="oil-gas"}
-Structures in the 50 m partial protection zone and the Pande–Temane safety zone, fresh digging near the line and change between campaigns.
+Structures in the 50 m partial protection zone and any decreed safety zone, fresh digging near the line and change between campaigns.
 :::
 :::card{title="Transmission and distribution lines" icon="power" key="power-utilities"}
 Structures in the servitude of existing lines, route options for new ones, and a dated inventory before the servitude is registered.

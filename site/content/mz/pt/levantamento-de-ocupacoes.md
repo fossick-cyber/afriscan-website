@@ -27,7 +27,7 @@ faq:
   - q: Que infra-estruturas podem levantar?
     a: Qualquer infra-estrutura linear com um traçado conhecido, como gasodutos, oleodutos, adutoras, linhas de transporte e distribuição de energia, estradas e ferrovias, e também áreas como concessões, instalações ou locais de projecto, dentro do limite, numa faixa à sua volta ou em ambos.
   - q: Com que larguras trabalham?
-    a: Por defeito, 50 e 100 metros. Acrescentamos as larguras da lei que se aplicam, como os 200 metros do corredor Pande–Temane, as do contrato de concessão ou a norma da sua empresa, até seis distâncias por levantamento.
+    a: Por defeito, 50 e 100 metros. Acrescentamos as larguras da lei que se aplicam, como uma zona de segurança de 200 metros fixada por decreto, as do contrato de concessão ou a norma da sua empresa, até seis distâncias por levantamento.
   - q: O registo substitui a fiscalização no terreno?
     a: Não. Diz à sua equipa onde ir primeiro e o que vai encontrar. A verificação no terreno, o contacto com as comunidades e as decisões sobre cada construção ficam com a sua equipa e com as autoridades.
   - q: E se a nossa linha atravessar zonas com muita vegetação?
@@ -51,7 +51,7 @@ Cada levantamento fica associado às imagens usadas e à respectiva data, o que 
 | Condutas de petróleo, gás e água; linhas de electricidade e telecomunicações | 50 m de cada lado | Lei n.º 19/97, art. 8, al. g) |
 | Infra-estruturas petrolíferas | 50 m | Lei n.º 8/2026, art. 75, n.º 3 |
 | Linhas de energia (servidão) | até 50 m do eixo | Lei n.º 12/2022, art. 43, n.º 4 |
-| Corredor Pande–Temane | 50 m e 200 m | Decreto n.º 36/2001, arts. 1 e 2 |
+| Corredor de gasoduto com zona de segurança fixada por decreto | 50 m e 200 m | Decreto n.º 36/2001, arts. 1 e 2 |
 | Linhas férreas | 50 m de cada lado do eixo | Lei n.º 19/97, art. 8, al. f) |
 | Estradas primárias; secundárias e terciárias | 30 m; 15 m | Lei n.º 19/97, art. 8 |
 

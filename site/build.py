@@ -74,6 +74,35 @@ def load_yaml(p):
     return yaml.safe_load(Path(p).read_text(encoding="utf-8"))
 
 
+NAME_TOKEN = re.compile(r"[^\W_]+")
+NAME_GAP = re.compile(r"[\s\-\u2010-\u2015/]{1,3}")
+_NAME_DIGESTS = {}
+
+
+def name_digest(name):
+    """sha256 of a name as data/rules.yaml's withdrawn_names stores it: lower case, separators
+    removed, leading zeros dropped from numbers."""
+    joined = "".join(NAME_TOKEN.findall(name.lower()))
+    joined = re.sub(r"(?<![0-9])0+(?=[0-9])", "", joined)
+    if joined not in _NAME_DIGESTS:
+        _NAME_DIGESTS[joined] = hashlib.sha256(joined.encode()).hexdigest()
+    return _NAME_DIGESTS[joined]
+
+
+def name_candidates(text, words=3):
+    """Every run of up to WORDS tokens joined only by spaces, hyphens, dashes or slashes."""
+    text = text.lower()
+    toks = [(m.start(), m.end()) for m in NAME_TOKEN.finditer(text)]
+    for i, (a, b) in enumerate(toks):
+        end = b
+        for j in range(i, min(i + words, len(toks))):
+            if j > i:
+                if not NAME_GAP.fullmatch(text[toks[j - 1][1]:toks[j][0]]):
+                    break
+                end = toks[j][1]
+            yield a, end, text[a:end]
+
+
 def sha(data, n=8):
     return hashlib.sha256(data if isinstance(data, bytes) else data.encode()).hexdigest()[:n]
 
@@ -1050,12 +1079,16 @@ class Build:
         (self.dist / "robots.txt").write_text(
             f"User-agent: *\nAllow: /\nDisallow: /geo\n\nSitemap: {self.base}/sitemap.xml\n", encoding="utf-8")
         lines, self.redirect_sources = [], set()
+        files = ["/" + f.relative_to(self.dist).as_posix() for f in self.dist.rglob("*") if f.is_file()]
         for src, dst, code in self.redirects:
             target = dst.split("#")[0]
             if not dst.startswith("http") and target not in self.by_url:
                 continue
             if src in self.by_url:
                 self.err(f"redirect source {src} is also a built page")
+            hidden = [f for f in files if (f.startswith(src[:-1]) if src.endswith("*") else f == src)]
+            if hidden:
+                self.err(f"redirect source {src} would hide {len(hidden)} published file(s), e.g. {hidden[0]}")
             lines.append(f"{src} {dst} {code}")
             self.redirect_sources.add(src)
         (self.dist / "_redirects").write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -1115,8 +1148,22 @@ class Build:
         window = re.split(r"[.!?;:¶]\s|¶", window)[-1]          # only the current sentence counts
         return any(re.search(rf"(?<![\w']){re.escape(n)}(?![\w'])", window) for n in self.rules["negations"])
 
+    def is_law_page(self, p):
+        return p.get("template") == "law" or p.get("key") in (self.rules.get("law_keys") or [])
+
+    def in_scope(self, p, scope):
+        if scope in (None, "all"):
+            return True
+        if scope in ("law", "not-law"):
+            return self.is_law_page(p) == (scope == "law")
+        if scope == "sample":
+            return "/assets/img/samples-" in p["html"]
+        return p["lang"] == scope or p["lang2"] == scope
+
     def run_guards(self, p, text):
         for chk in self.rules["checks"]:
+            if not self.in_scope(p, chk.get("scope")):
+                continue
             for pat in chk["patterns"]:
                 for m in re.finditer(pat, text):
                     if chk.get("negatable") and self.negated(text, m.start()):
@@ -1132,6 +1179,47 @@ class Build:
                     if m := re.search(pat, text):
                         (self.err if level == "error" else self.warn)(
                             f"{p['url']}: [pt-MZ] {m.group(0)!r}: use {use}")
+
+    def check_withdrawn_names(self, built):
+        """data/rules.yaml withdrawn_names, in the guard text and every URL-like value of each page, in
+        dist/ file names and in the redirect rules."""
+        wn = self.rules.get("withdrawn_names") or {}
+        lists = {k: set(wn.get(k) or []) for k in ("anywhere", "outside_law", "on_sample_pages")}
+        for k, digests in lists.items():
+            for x in digests:
+                if not re.fullmatch(r"[0-9a-f]{64}", str(x)):
+                    self.err(f"data/rules.yaml: withdrawn_names.{k}: {x!r} is not a sha256 digest")
+        why = {"anywhere": "a name the owner withdrew on 27 September 2026 (OWNER_DECISIONS.md)",
+               "outside_law": "a name that may appear only on the law pages",
+               "on_sample_pages": "not on a page that shows the pipeline sample"}
+
+        def scan(where, text, active):
+            digests = set().union(*(lists[k] for k in active))
+            if not digests:
+                return
+            for a, b, cand in name_candidates(text):
+                if name_digest(cand) in digests:
+                    kind = next(k for k in active if name_digest(cand) in lists[k])
+                    self.err(f"{where}: [withdrawn-name] {why[kind]}: {cand!r} in “…{text.lower()[max(0, a - 40):b + 40]}…”")
+                    return
+
+        for p in built:
+            active = ["anywhere"]
+            if not self.is_law_page(p):
+                active.append("outside_law")
+            if self.in_scope(p, "sample"):
+                active.append("on_sample_pages")
+            h = re.sub(r"(?s)<(svg|style)\b.*?</\1>", " ", p["html"])
+            values = re.findall(r'\b(?:href|src|srcset|id|action)="([^"]*)"', h)
+            values += [v for v in re.findall(r'\bcontent="([^"]*)"', h) if v.startswith(("http", "/"))]
+            for ld in re.findall(r'<script type="application/ld\+json">(.*?)</script>', h, re.S):
+                values += re.findall(r'"((?:https?:)?/[^"]*)"', ld.replace("\\/", "/"))
+            scan(p["url"], self.guard_text(p) + " ¶ " + " ¶ ".join(htmllib.unescape(v) for v in dict.fromkeys(values)), active)
+        for f in sorted(self.dist.rglob("*")):
+            if f.is_file():
+                scan("dist", "/" + f.relative_to(self.dist).as_posix(), ["anywhere", "outside_law"])
+        for src, dst, code in self.redirects:
+            scan("data/redirects.yaml", f"{src} ¶ {dst}", ["anywhere", "outside_law"])
 
     def check_structure(self, p):
         h, url, lim = p["html"], p["url"], self.rules["limits"]
@@ -1380,6 +1468,7 @@ class Build:
                 self.run_guards(p, self.guard_text(p))
             self.check_structure(p)
         self.check_links(built)
+        self.check_withdrawn_names(built)
         self.check_duplicates(built)
         self.check_similarity(built)
         self.check_law()
@@ -1432,6 +1521,14 @@ def selftest():
         "accuracy":       ("global", append("Detection accuracy is 97% on African roofs."), "[overstatement]"),
         "coming-soon":    ("global", append("Radar screening is coming soon."), "[overstatement]"),
         "portal":         ("global", append("Log in to the client portal to see results."), "[overstatement]"),
+        # withdrawn names: stand-ins (dummy_names below), since the real ones are never spelled out here
+        "withdrawn":      ("global", append("Our sample is the QX-07 line."), "[withdrawn-name]"),
+        "withdrawn-pt":   ("mz-pt", append("A amostra fica em Heron–Crest."), "[withdrawn-name]"),
+        "withdrawn-id":   ("global", append("## Earlier view {#qx7-route}\n\nText."), "[withdrawn-name]"),
+        "law-only-name":  ("global", append("Our sample is near the Morlock field."), "[withdrawn-name]"),
+        "on-sample-page": ("global/results.md", append("See regulation 12/3456."), "[withdrawn-name]"),
+        "law-page-ok":    ("mz/en/50m-protection-zone.md", append("The Morlock corridor has its own zone."), None),
+        "other-page-ok":  ("global/faq.md", append("See regulation 12/3456."), None),
         "br-monitoring":  ("mz-pt", append("Fazemos o monitoramento do gasoduto."), "'monitoramento'"),
         "br-equipe":      ("mz-pt", append("A nossa equipe responde."), "'equipe'"),
         "br-contato":     ("mz-pt", append("Entre em contato conosco."), "'contato'"),
@@ -1442,11 +1539,20 @@ def selftest():
         "no-description": ("global", drop("description"), "needs 'description'"),
         "no-title":       ("global", drop("title"), "needs 'title'"),
     }
+    dummy_names = {"anywhere": ["QX-7", "Heron Crest"], "outside_law": ["Morlock"], "on_sample_pages": ["12/3456"]}
+
+    def make(**kw):
+        b = Build(quiet=True, **kw)
+        wn = b.rules.setdefault("withdrawn_names", {})
+        for k, names in dummy_names.items():
+            wn[k] = list(wn.get(k) or []) + [name_digest(n) for n in names]
+        return b
+
     (CACHE_DIR / "selftest").mkdir(parents=True, exist_ok=True)
     tmp = Path(tempfile.mkdtemp(prefix="run-", dir=CACHE_DIR / "selftest"))
     failed = []
     try:
-        clean = Build(dist=tmp / "clean" / "dist", quiet=True)
+        clean = make(dist=tmp / "clean" / "dist")
         code = clean.run()
         print(f"{'PASS' if code == 0 else 'FAIL'}  {'clean build':15s} {len(clean.errors)} errors on the real content")
         if code:
@@ -1459,15 +1565,30 @@ def selftest():
             if lk == "mz-pt":
                 shutil.copytree(SITE / "tests/fixtures/mz-pt", content / "mz/pt", dirs_exist_ok=True)
                 target = content / "mz/pt/index.md"
+            elif lk.endswith(".md"):
+                target = content / lk
             else:
                 target = content / "global/faq.md"
             target.write_text(mutate(target.read_text(encoding="utf-8")), encoding="utf-8")
-            b = Build(content_dir=content, dist=tmp / name / "dist", quiet=True)
+            b = make(content_dir=content, dist=tmp / name / "dist")
             code = b.run()
-            hit = [e for e in b.errors if expect in e]
-            ok = code == 1 and hit
+            if expect is None:
+                ok, hit = code == 0, [f"builds clean ({len(b.errors)} errors)"]
+            else:
+                hit = [e for e in b.errors if expect in e]
+                ok = code == 1 and hit
             print(f"{'PASS' if ok else 'FAIL'}  {name:15s} {(hit or b.errors or ['no error raised'])[0][:105]}")
             if not ok:
+                failed.append(name)
+        # redirects: a withdrawn name in a rule, and a splat that would hide the published sample images
+        for name, rule, expect in (("redirect-name", ["/assets/img/samples-qx7-*", "/results", 301], "[withdrawn-name]"),
+                                   ("redirect-hides", ["/assets/img/samples-s*", "/results", 301], "would hide")):
+            b = make(dist=tmp / name / "dist")
+            b.redirects = b.redirects + [rule]
+            code = b.run()
+            hit = [e for e in b.errors if expect in e]
+            print(f"{'PASS' if code == 1 and hit else 'FAIL'}  {name:15s} {(hit or b.errors or ['no error raised'])[0][:105]}")
+            if not (code == 1 and hit):
                 failed.append(name)
         # near-duplicate: an English country page that copies the global one
         content = tmp / "dup" / "content"
@@ -1480,7 +1601,7 @@ def selftest():
         meta.pop("nav_group", None)
         (content / "za/results.md").write_text(
             "---\n" + yaml.safe_dump(meta, allow_unicode=True, sort_keys=False) + "---\n" + body, encoding="utf-8")
-        b = Build(content_dir=content, dist=tmp / "dup" / "dist", quiet=True)
+        b = make(content_dir=content, dist=tmp / "dup" / "dist")
         b.run()
         hit = [e for e in b.errors if "near-duplicate" in e]
         print(f"{'PASS' if hit else 'FAIL'}  {'near-duplicate':15s} {hit[0][:105] if hit else 'no error raised'}")
@@ -1497,7 +1618,7 @@ def selftest():
             content = tmp / name / "content"
             shutil.copytree(SITE / "content", content)
             (content / rel).write_text(text, encoding="utf-8")
-            b = Build(content_dir=content, dist=tmp / name / "dist", quiet=True)
+            b = make(content_dir=content, dist=tmp / name / "dist")
             code = b.run()
             hit = [e for e in b.errors if expect in e]
             print(f"{'PASS' if code == 1 and hit else 'FAIL'}  {name:15s} {(hit or b.errors or ['no error raised'])[0][:105]}")
@@ -1536,9 +1657,13 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--drafts", action="store_true", help="also build status: draft pages (never deploy this)")
     ap.add_argument("--selftest", action="store_true", help="check that every guard fails the build")
+    ap.add_argument("--name-digest", metavar="NAME", help="print the digest data/rules.yaml withdrawn_names stores for NAME")
     ap.add_argument("--dist", default=str(ROOT / "dist"))
     ap.add_argument("--demo", metavar="OUT", help="build content + template fixtures into OUT, for checking templates")
     args = ap.parse_args()
+    if args.name_digest:
+        print(name_digest(args.name_digest))
+        return 0
     if args.selftest:
         return selftest()
     if args.demo:

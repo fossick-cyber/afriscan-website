@@ -34,7 +34,7 @@ faq:
   - q: É preciso visitar o local para começar?
     a: Não. O levantamento começa a partir do ficheiro do traçado ou do limite e de imagens de satélite, sem visita ao local e sem voo de drone no primeiro passo. Onde um troço precisa de mais detalhe, acrescentamos um levantamento por drone desse troço, sujeito às licenças e autorizações que cada trabalho exige.
   - q: Que larguras de faixa medem?
-    a: As que contam para a sua empresa. Por defeito medimos 50 e 100 metros e acrescentamos a zona de segurança de 200 metros do Decreto n.º 36/2001, as larguras do contrato de concessão ou a norma interna da empresa. Um levantamento pode ter até seis distâncias, medidas a partir do ficheiro do traçado que nos envia.
+    a: As que contam para a sua empresa. Por defeito medimos 50 e 100 metros e acrescentamos as larguras que se aplicam, como uma zona de segurança de 200 metros onde um decreto a fixa, as larguras do contrato de concessão ou a norma interna da empresa. Um levantamento pode ter até seis distâncias, medidas a partir do ficheiro do traçado que nos envia.
   - q: Qual é a data das imagens?
     a: Depende do que existe para a sua área e do objectivo do trabalho. Cada relatório indica as fontes e, quando a fonte a regista, a data de captação. Quando a data conta, para uma data de corte, uma comparação entre datas ou um dossiê documental, usamos imagens datadas, como um levantamento por drone, uma cena de satélite adquirida ou as imagens georreferenciadas da sua empresa.
   - q: Um levantamento só por satélite precisa de autorização da Defesa?
@@ -73,17 +73,17 @@ Registos numa data conhecida, como a data de corte de um reassentamento, e dossi
 :::
 ::::
 
-::::section{id="lei" tone="alt" eyebrow="A faixa de 50 metros" title="A faixa de protecção já está na lei" lead="Três leis fixam faixas de até 50 metros ao longo de gasodutos, oleodutos e linhas de energia, e um decreto acrescenta 200 metros no corredor Pande–Temane. O registo da AfriScan mede cada construção em relação a essas faixas."}
+::::section{id="lei" tone="alt" eyebrow="A faixa de 50 metros" title="A faixa de protecção já está na lei" lead="Três leis fixam faixas de até 50 metros ao longo de gasodutos, oleodutos e linhas de energia, e um decreto pode acrescentar uma zona de segurança mais larga num corredor. O registo da AfriScan mede cada construção em relação a essas faixas."}
 :::::columns{split="1-1"}
 ::::col
 - **[Lei n.º 19/97, de 1 de Outubro (Lei de Terras)](https://www.pdul.gov.mz/content/download/486/2635/file/Lei%20de%20Terras.pdf), artigo 8, alínea g):** são zonas de protecção parcial os terrenos ocupados por «instalações e condutores aéreos, superficiais, subterrâneos e submarinos de electricidade, de telecomunicações, petróleo, gás e água, com uma faixa confinante de 50 metros de cada lado». Nestas zonas não se adquire o direito de uso e aproveitamento da terra (DUAT), apenas licenças especiais (artigo 9).
 - **[Lei n.º 8/2026, de 3 de Junho (Lei do Petróleo)](https://www.inp.gov.mz/wp-content/uploads/2026/06/BR_104_I_SERIE_2.o_SUPLEMENTO_2026.pdf), artigo 75, n.º 3:** as áreas que circundam as infra-estruturas petrolíferas numa faixa de 50 metros são zonas de protecção parcial; a zona de segurança é fixada por regulamento (n.º 4).
 - **[Lei n.º 12/2022, de 11 de Julho (Lei de Electricidade)](https://arene.org.mz/wp-content/uploads/2022/08/Lei-de-Electricidade-2022.pdf), artigo 43:** servidão administrativa de até 50 metros a partir do eixo da linha, com a largura a depender da tensão e de a zona ser rural ou urbana (n.º 5), averbada na concessão e registada no Cadastro de Terras e na Conservatória do Registo Predial. A compensação não é exigível a quem adquiriu os seus direitos depois de a infra-estrutura eléctrica ser implantada (n.º 10).
-- **[Decreto n.º 36/2001, de 20 de Novembro](https://faolex.fao.org/docs/pdf/moz50003.pdf):** no corredor do gasoduto do projecto Pande–Temane acresce uma zona de segurança de 200 metros de cada lado, onde a implantação de infra-estruturas depende do consentimento prévio do operador do projecto (artigos 2 e 3).
+- **Zonas de segurança fixadas por decreto:** para um corredor determinado, um decreto pode acrescentar uma zona de segurança mais larga, por exemplo de 200 metros de cada lado, com regras próprias para a implantação de infra-estruturas.
 ::::
 ::::col
 :::figure{src="diagrams/mz-strips" alt="Esquema em planta do eixo de um gasoduto com uma faixa vermelha de 50 m, uma faixa âmbar de 100 m e uma linha tracejada a 200 m de cada lado; os quadrados representam construções, vermelhos até 50 m, âmbar entre 50 e 100 m e verde-azulados além de 100 m" caption="As faixas, desenhadas à escala" credit="Esquema desenhado pela AfriScan; as construções são ilustrativas." size="half"}
-<span class="band band--a">Até 50 m</span> a zona de protecção parcial (Lei n.º 19/97, art. 8, al. g); Lei n.º 8/2026, art. 75, n.º 3). <span class="band band--b">50–100 m</span> a faixa que medimos por defeito. Tracejado: a zona de segurança de 200 m do corredor Pande–Temane (Decreto n.º 36/2001).
+<span class="band band--a">Até 50 m</span> a zona de protecção parcial (Lei n.º 19/97, art. 8, al. g); Lei n.º 8/2026, art. 75, n.º 3). <span class="band band--b">50–100 m</span> a faixa que medimos por defeito. Tracejado: uma zona de segurança de 200 m, onde um decreto a fixa.
 :::
 ::::
 :::::

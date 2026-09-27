@@ -25,7 +25,7 @@ faq:
 ### For a route or site in Mozambique
 
 - **Province and district**, so we can check the imagery that exists for the area.
-- **The widths to report:** 50 m and 100 m by default; the 200 m safety zone on the Pande–Temane corridor; or the widths in your concession, servitude or safety study.
+- **The widths to report:** 50 m and 100 m by default; a 200 m safety zone where a decree sets one; or the widths in your concession, servitude or safety study.
 - **Satellite only, or drone detail too.** Drone surveys need IACM approval and authorisations under Lei n.º 6/2024, so the proposal shows their lead time. See [drone law in Mozambique](/mz/drone-regulations).
 - **The date the record must reflect**, such as a resettlement cut-off date or the date a line was built.
 - **The report language:** Portuguese or English.

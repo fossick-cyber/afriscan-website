@@ -40,7 +40,7 @@ Hazard zones are drawn once, carefully, by engineers. Settlement around them kee
 
 We keep that list current. You give us the zones, as polygons or as distances from a source, and we map the structures inside each one from dated imagery, list each with its location and its distance to the source, and tag what the imagery shows where categories are scoped. Re-surveys on an agreed schedule show what has arrived since the last list.
 
-In some countries the zone is set in law. Mozambique's Land Law makes the land within 250 m of dams and reservoirs a partial protection zone, and a 2001 decree set a 200 m safety zone along the Pande–Temane gas project corridor, where building needs the operator's consent. Elsewhere it comes from your engineers or your licence conditions.
+In some countries the zone is set in law. Mozambique's Land Law makes the land within 250 m of dams and reservoirs a partial protection zone, and a 2001 decree set a 200 m safety zone along a gas pipeline corridor, where building needs the operator's consent. Elsewhere it comes from your engineers or your licence conditions.
 ::::
 ::::col
 :::callout{tone="legal" title="Sources, as of 26 September 2026"}

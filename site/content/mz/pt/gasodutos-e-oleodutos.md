@@ -25,8 +25,8 @@ cta:
   secondary: Ver o exemplo do gasoduto
   secondary_href: /mz/pt/resultados-de-exemplo
 faq:
-  - q: Medem a zona de segurança de 200 metros do Pande–Temane?
-    a: Sim. Por defeito medimos as faixas de 50 e 100 metros, e acrescentamos a zona de segurança de 200 metros do Decreto n.º 36/2001 no corredor Pande–Temane, ou qualquer largura do seu contrato de concessão. Um levantamento pode ter até seis distâncias.
+  - q: Medem uma zona de segurança de 200 metros?
+    a: Sim. Por defeito medimos as faixas de 50 e 100 metros, e acrescentamos a zona de segurança que um decreto fixe para o corredor, por exemplo de 200 metros, ou qualquer largura do seu contrato de concessão. Um levantamento pode ter até seis distâncias.
   - q: Detectam fugas, derivações ilegais ou furtos?
     a: "Não. Mapeamos o que se vê à superfície: construções, escavações recentes, montes de terra, picadas e terreno desmatado, e assinalamo-lo para que as equipas de campo saibam onde verificar. A conduta, o seu estado e o que está debaixo do solo ficam fora do que as imagens mostram."
   - q: Com que frequência é verificado o traçado?
@@ -71,12 +71,12 @@ O traçado está no sistema. As construções, as machambas, as desmatações e 
 ::::col
 - **Lei de Terras ([Lei n.º 19/97](https://www.pdul.gov.mz/content/download/486/2635/file/Lei%20de%20Terras.pdf), artigos 8 e 9).** As condutas de petróleo, gás e água têm uma zona de protecção parcial com uma faixa confinante de 50 metros de cada lado, onde não se adquire DUAT, apenas licenças especiais.
 - **Lei do Petróleo ([Lei n.º 8/2026](https://www.inp.gov.mz/wp-content/uploads/2026/06/BR_104_I_SERIE_2.o_SUPLEMENTO_2026.pdf), artigo 75).** As áreas que circundam as infra-estruturas petrolíferas numa faixa de 50 metros são zonas de protecção parcial (n.º 3); a zona de segurança é fixada por regulamento (n.º 4); há lugar a compensação pelos danos em culturas, edifícios e benfeitorias (n.º 5); e podem ser constituídas servidões de passagem (n.º 7).
-- **Corredor Pande–Temane ([Decreto n.º 36/2001](https://faolex.fao.org/docs/pdf/moz50003.pdf)).** Zona de protecção parcial de 50 metros e zona de segurança de 200 metros de cada lado do corredor do gasoduto e à volta da unidade de processamento e compressão; nelas, a implantação de infra-estruturas depende do consentimento prévio do operador do projecto.
+- **Zonas de segurança fixadas por decreto.** Para um corredor determinado, um decreto pode fixar uma zona de segurança mais larga do que a faixa de 50 metros, por exemplo de 200 metros de cada lado, com regras próprias para a implantação de infra-estruturas.
 - **Transporte e distribuição.** O transporte de gás em alta pressão fica no regime petrolífero, com o INP como autoridade reguladora; a ARENE regula a distribuição de gás natural à pressão igual ou inferior a 16 bar ([Lei n.º 11/2017](https://arene.org.mz/wp-content/uploads/2021/05/Lei-que-cria-a-arene.pdf)).
 ::::
 ::::col
 :::figure{src="diagrams/mz-strips" alt="Esquema em planta do eixo de um gasoduto com uma faixa vermelha de 50 m, uma faixa âmbar de 100 m e uma linha tracejada a 200 m de cada lado; os quadrados representam construções, vermelhos até 50 m, âmbar entre 50 e 100 m e verde-azulados além de 100 m" caption="As faixas de um gasoduto, desenhadas à escala" credit="Esquema desenhado pela AfriScan; as construções são ilustrativas." size="half"}
-<span class="band band--a">Até 50 m</span> a zona de protecção parcial. <span class="band band--b">50–100 m</span> a faixa que medimos por defeito. Tracejado: a zona de segurança de 200 m do corredor Pande–Temane.
+<span class="band band--a">Até 50 m</span> a zona de protecção parcial. <span class="band band--b">50–100 m</span> a faixa que medimos por defeito. Tracejado: uma zona de segurança de 200 m, onde um decreto a fixa.
 :::
 ::::
 :::::
@@ -97,7 +97,7 @@ O traçado está no sistema. As construções, as machambas, as desmatações e 
 ### Como funciona
 :::steps{style="list"}
 :::step{title="O traçado e as larguras"}
-Envie o traçado tal como está no seu SIG. Acordamos as faixas: 50 e 100 m, os 200 m do Pande–Temane ou as larguras do contrato de concessão.
+Envie o traçado tal como está no seu SIG. Acordamos as faixas: 50 e 100 m, uma zona de segurança de 200 m fixada por decreto ou as larguras do contrato de concessão.
 :::
 :::step{title="Rastreio e revisão"}
 Bases de dados abertas de edifícios e modelos de segmentação propõem as construções; um revisor confirma, corrige e acrescenta sobre as imagens do trabalho.

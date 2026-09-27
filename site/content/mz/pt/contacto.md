@@ -13,7 +13,7 @@ og:
   subline: Envie o traçado ou o limite e as distâncias que contam; respondemos com uma proposta escrita
 faq:
   - q: Que larguras devo indicar?
-    a: As que o registo tem de reflectir. Em Moçambique, a zona de protecção parcial é de 50 metros de cada lado de gasodutos, oleodutos e linhas de energia (Lei n.º 19/97, artigo 8), e no corredor Pande–Temane acresce uma zona de segurança de 200 metros (Decreto n.º 36/2001). Se o contrato de concessão ou a norma da sua empresa fixa outras larguras, indique-as; um levantamento pode ter até seis distâncias.
+    a: As que o registo tem de reflectir. Em Moçambique, a zona de protecção parcial é de 50 metros de cada lado de gasodutos, oleodutos e linhas de energia (Lei n.º 19/97, artigo 8), e um decreto pode acrescentar, num corredor, uma zona de segurança de 200 metros. Se o contrato de concessão ou a norma da sua empresa fixa outras larguras, indique-as; um levantamento pode ter até seis distâncias.
   - q: Ainda não temos o ficheiro do traçado. Podemos pedir na mesma?
     a: Sim. Descreva a localização, a província e os pontos de início e de fim, e desenhamos o traçado consigo. Enviamos o desenho para a sua confirmação antes de qualquer medição.
   - q: E se o trabalho precisar de drone?
@@ -26,7 +26,7 @@ faq:
 
 ### Para trabalhos em Moçambique
 
-- **Larguras habituais:** 50 e 100 metros por defeito, 200 metros no corredor Pande–Temane, ou as larguras do contrato de concessão.
+- **Larguras habituais:** 50 e 100 metros por defeito, 200 metros onde um decreto fixa essa zona de segurança, ou as larguras do contrato de concessão.
 - **Data de referência:** se o registo serve uma data de corte, indique-a; a escolha das imagens depende dela.
 - **Língua do relatório:** português ou inglês.
 - **Drone:** diga-nos se o trabalho pode precisar de ortofotomapas, para a proposta incluir as autorizações e o respectivo prazo.

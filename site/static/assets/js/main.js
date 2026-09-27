@@ -58,12 +58,23 @@
   });
   $$("details.region").forEach(d => {
     d.addEventListener("toggle", () => {
+      document.body.classList.toggle("region-open", d.open);
       if (!d.open) return;
       setMenu(false);
       closePanels();
     });
     d.addEventListener("focusout", e => {
       if (e.relatedTarget && !d.contains(e.relatedTarget)) d.removeAttribute("open");
+    });
+  });
+  // A mega-menu also opens on :hover (the same media query as in site.css), which pointerdown never
+  // sees: close the country menu and any clicked-open panel first.
+  const hoverPanels = window.matchMedia("(hover: hover) and (min-width: 1200px)");
+  $$(".nav-item.has-panel").forEach(li => {
+    li.addEventListener("pointerenter", e => {
+      if (e.pointerType !== "mouse" || !hoverPanels.matches) return;
+      closeRegion();
+      closePanels(li);
     });
   });
   window.addEventListener("resize", () => { if (window.innerWidth >= 1200) setMenu(false); }, { passive: true });

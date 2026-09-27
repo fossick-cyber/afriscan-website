@@ -4,10 +4,34 @@
 #   level: warn   -> printed, build continues
 #   negatable     -> the match is ignored when a negation word appears just before it
 #                    ("never real-time", "not a certified survey", "we do not hold a licence").
-#   scope         -> all | en | pt-MZ | law (law pages only)
+#   scope         -> all | en | pt-MZ | law (law pages only) | not-law | sample (pages that show an
+#                    images/samples/ picture). Law pages: every template: law page, plus law_keys.
 # Portuguese vocabulary checks come from data/glossary/pt-MZ.yaml.
 # Owner rules: fhc-notes/website/OWNER_DECISIONS.md. Do not weaken a check to get a page through:
 # rewrite the page.
+
+law_keys: [mz-protection-zone]
+
+# Names the owner has withdrawn (decision of 27 September 2026; the names and the reasons are in
+# fhc-notes/website/OWNER_DECISIONS.md, outside this repo). Kept as sha256 digests so this file does
+# not spell them out; that is all a digest does here, it is no secret. The digest is of the name in
+# lower case with spaces, hyphens, dashes and slashes removed and leading zeros dropped from numbers
+# ("Ab-07" -> "ab7"), for names of up to three words. Print one with: build.py --name-digest "<name>".
+# The build looks for them in the text the guards read, in every href, src, srcset, id and JSON-LD
+# URL, in dist/ file names and in the redirect rules.
+#   anywhere         -> fails on every page, file name and redirect
+#   outside_law      -> fails everywhere except on the law pages
+#   on_sample_pages  -> fails on pages that show an images/samples/ picture
+withdrawn_names:
+  anywhere:
+    - ef46a230cfb0c087fdd8883bc989a3eaa253428f9f6033335e0cee7173c42a92
+    - 62b7b0d284ac21d385c409b829303ba04063debe1fcc6b0aa9597849fc6b8f95
+    - 7054f992c333855d514ae1a53b1558fc6b6864bd130d877c111a2a88c0aae9dd
+    - 56bb2ea96cae857b658cc291dc88f975ec9c53e16bab6c7fa18537cd77569b79
+  outside_law:
+    - 2de259335b6ba92b373c02c3a4ab79ed15ccec33e5544d359eef5b329ba3cba6
+  on_sample_pages:
+    - 793295c1eea6894427307c0c6f1ed33a22b1fa37a7dd126ca4257601b349f0c7
 
 negation_window: 48
 negations: [not, never, "no", nor, without, "isn't", "aren't", "don't", "doesn't", "won't", cannot, "can't",

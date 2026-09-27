@@ -15,22 +15,16 @@
 - [/nigeria, /ng/, 301]
 - [/sample-outputs, /results, 301]
 - [/drone-law, /drone-regulations, 301]
-# Pre-2026-09-26 site: its sample images carried the old captions. Cloudflare keeps serving a removed
-# file from its asset preservation cache for up to a week, and redirects apply before that lookup.
-- [/assets/examples/*, /results, 301]
-# 2026-09-27: the sample route is no longer named (owner decision). Its images were renamed and two
-# social cards redrawn; files under the old names carried the name, so every old URL redirects (the
-# Portuguese views to the Portuguese sample page). One splat per rule.
-- [/assets/img/samples-t9-register-km5-6-pt-*, /mz/pt/resultados-de-exemplo, 301]
-- [/assets/img/samples-t9-register-high-pt-*, /mz/pt/resultados-de-exemplo, 301]
-- [/assets/img/samples-t9-register-medium-pt-*, /mz/pt/resultados-de-exemplo, 301]
-- [/assets/img/samples-t9-register-low-pt-*, /mz/pt/resultados-de-exemplo, 301]
-- [/assets/img/samples-t9-km5-6-pt-*, /mz/pt/resultados-de-exemplo, 301]
-- [/assets/img/samples-t9-rating-high-pt-*, /mz/pt/resultados-de-exemplo, 301]
-- [/assets/img/samples-t9-rating-medium-pt-*, /mz/pt/resultados-de-exemplo, 301]
-- [/assets/img/samples-t9-rating-low-pt-*, /mz/pt/resultados-de-exemplo, 301]
-- [/assets/img/samples-t9-*, /results, 301]
+# 2026-09-27: the sample route is no longer named (owner decision). Two social cards were redrawn and
+# its images renamed; files under the old names carried the name, so every old URL redirects. Static
+# rules come before the splats, which Cloudflare matches more slowly.
 - [/assets/og/results-5a769a9017.jpg, /results, 301]
 - [/assets/og/results-7e2803fcc4.jpg, /results, 301]
 - [/assets/og/mz-pt-resultados-de-exemplo-c67a4a7912.jpg, /mz/pt/resultados-de-exemplo, 301]
 - [/assets/og/mz-pt-resultados-de-exemplo-ef42a5aadd.jpg, /mz/pt/resultados-de-exemplo, 301]
+# Pre-2026-09-26 site: its sample images carried the old captions. Cloudflare keeps serving a removed
+# file from its asset preservation cache for up to a week, and redirects apply before that lookup.
+- [/assets/examples/*, /results, 301]
+# The sample images renamed on 2026-09-27 (every current name starts samples-sample-): one splat covers
+# the old names without spelling them out. The build refuses a rule that would hide a published file.
+- [/assets/img/samples-t*, /results, 301]

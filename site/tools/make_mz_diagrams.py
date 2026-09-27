@@ -5,9 +5,9 @@
 
 Writes site/images/diagrams/mz-strips.png: a plan view of a pipeline axis drawn to scale, with the
 50 m partial protection zone (Lei n.º 19/97 art. 8(g); Lei n.º 8/2026 art. 75(3)), the 100 m outer
-band AfriScan reports by default, and the 200 m safety zone that Decreto n.º 36/2001 sets for the
-Pande–Temane corridor. The only words in the image are the three widths; the page caption names the
-zones and the laws, so the image needs no translation and stays readable on a phone. The structures
+band AfriScan reports by default, and a 200 m safety zone of the kind a decree can set for a
+corridor. The only words in the image are the three widths; the page caption names the zones and the
+laws, so the image needs no translation and stays readable on a phone. The structures
 are invented and coloured by the same bands the register uses (red within 50 m, amber 50–100 m, teal
 beyond). Deterministic: the same code always draws the same pixels.
 """

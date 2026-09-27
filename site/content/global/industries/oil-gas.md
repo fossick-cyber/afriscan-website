@@ -175,7 +175,7 @@ A cut-off-date baseline with categories, then scheduled re-surveys of the villag
 ::::section{id="handover" tone="alt" eyebrow="Field sites and asset handovers" title="A dated baseline when onshore assets change hands"}
 :::::columns{split="1-1"}
 ::::col
-When wells, flowlines and plants are sold, farmed out or handed back, the new owner inherits the land around them as well as the steel. A dated handover record fixes what stood around each well pad, flow station, flowline and plant on the day, drawn from archived imagery, a current structure register and an evidence pack, so later questions about who arrived when can be checked against the record.
+When wells, field pipelines and plants are sold, farmed out or handed back, the new owner inherits the land around them as well as the steel. A dated handover record fixes what stood around each well pad, flow station, field pipeline and plant on the day, drawn from archived imagery, a current structure register and an evidence pack, so later questions about who arrived when can be checked against the record.
 
 At well pads and flow stations, boundary and perimeter change between dates shows new structures, cleared ground and new tracks at the edge of the site, with fence lines and gates checked by a reviewer on drone imagery.
 ::::
@@ -267,7 +267,7 @@ Where flown: a georeferenced orthophoto, surface and terrain elevation models, a
 |---|---|
 | **Mozambique**<br>[Lei n.º 19/97, de 1 de Outubro (Lei de Terras)](https://www.pdul.gov.mz/content/download/486/2635/file/Lei%20de%20Terras.pdf), arts. 8(g) and 9 | A partial protection zone of 50 m on each side of oil, gas, water, electricity and telecommunications conduits, where no land-use right (DUAT) can be acquired, only special licences |
 | **Mozambique**<br>[Lei n.º 8/2026, de 3 de Junho (Lei do Petróleo)](https://www.inp.gov.mz/wp-content/uploads/2026/06/BR_104_I_SERIE_2.o_SUPLEMENTO_2026.pdf), art. 75 | A 50 m partial protection zone around petroleum infrastructure, a safety zone to be set by regulation, and compensation for crops, buildings and improvements |
-| **Mozambique**<br>[Decreto n.º 36/2001, de 20 de Novembro](https://faolex.fao.org/docs/pdf/moz50003.pdf) | A 50 m partial protection zone and a 200 m safety zone on each side of the Pande–Temane gas pipeline corridor and around its processing plant; building there needs the operator's prior consent |
+| **Mozambique**<br>Corridor decrees ([the 50 m protection zone guide](/mz/50m-protection-zone)) | A decree can set a wider safety zone for a particular corridor, such as 200 m on each side, with its own rules for building there |
 | **Nigeria**<br>[Oil Pipelines Act, s.12](https://lawsofnigeria.placng.org/view2.php?sn=425) | On the pipeline licence holder's application, buildings and cultivation can be restricted within a set distance, up to 100 feet, of the land in the licence |
 | **South Africa**<br>Registered servitudes | Widths are set in each servitude agreement and diagram, so we measure to the widths your servitudes record |
 
