@@ -20,7 +20,7 @@ faq:
   - q: What is the 40 per cent rule for foreign tenderers?
     a: Section 157(9) of the Public Procurement and Asset Disposal Act requires "all foreign tenderers participating in international tenders" to "source at least forty percent of their supplies from citizen contractors prior to submitting a tender". It is a mandatory preliminary evaluation criterion, so a bid that does not meet it can fail before the technical evaluation.
   - q: Does a satellite mapping contract raise the drone questions?
-    a: No. The KCAA operator certificate, the security clearances and the Survey Act notice apply only where an aircraft is flown. Where a scope includes drone work, the proposal separates it, names the Kenyan company that will fly it and lists the approvals its flights need, so your evaluation can treat each part on its own terms.
+    a: No. The KCAA operator certificate, the security clearances and the operation authorisation apply only where an aircraft is flown. The Survey Act's one-month notice speaks of aerial photography for mapping, which satellite imagery arguably is not; if your contract depends on that point, ask counsel. Where a scope includes drone work, the proposal separates it, names the Kenyan company that will fly it and lists the approvals its flights need, so your evaluation can treat each part on its own terms.
   - q: Is bidding through e-GP mandatory?
     a: The National Treasury has said that mandatory use of e-GP took effect on 1 July 2025, and PPRA describes bidding, evaluation and awards moving entirely online. In September 2025 the High Court issued conservatory orders requiring manual and electronic bids to be accepted equally pending a hearing. Follow the submission instructions in each tender document.
   - q: What do you need from us to prepare a proposal?
@@ -37,7 +37,7 @@ cta:
 ::::section{id="summary" eyebrow="In short" title="Five questions every supplier file should answer"}
 :::cards{cols="3"}
 :::card{title="How bids are submitted" icon="send"}
-Through e-GP, on paper, or both? Follow each tender's own instructions while the roll-out and the court challenge to it settle.
+Through e-GP, on paper, or both? Follow the submission instructions in each tender.
 :::
 :::card{title="Citizen preferences" icon="scale"}
 Is the tender reserved for or weighted towards citizens, and, for an international tender, how does a foreign tenderer meet the 40 per cent citizen-sourcing rule?

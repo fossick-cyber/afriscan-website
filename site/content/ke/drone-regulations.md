@@ -235,7 +235,7 @@ Flying in the prohibited, restricted and danger areas published in the Aeronauti
 "Prohibited place" includes government places used for public security, among them "factories, dockyards, mines… telegraph, telephone, wireless or signal stations", and places the Minister declares by order. Photographing a prohibited place, or in one, without the authority of the officer in charge is an offence (s.3(2)).
 :::
 :::card{title="Mining sites and private land" icon="mine" eyebrow="Permissions"}
-There is no drone-specific rule for mines. The licence holder and the landowner give permission for access, and the Aerial Work Regulations expect "a statement that permission has been obtained from property owners or local officials" in a plan for a congested area or controlled airspace (LN 44/2026, reg 54).
+There is no drone-specific rule for mines. The licence holder and the landowner give permission for access, and the Aerial Work Regulations expect "a statement that permission has been obtained from property owners or local officials" in a plan for a congested area or controlled airspace (LN 44/2026, reg 54), if KCAA confirms those rules apply to drones.
 :::
 :::
 ::::
@@ -330,7 +330,7 @@ No field or drone work in Mandera, Wajir and Garissa counties, Lamu County outsi
 ::::section{id="afriscan" eyebrow="How we work" title="AfriScan and drone work in Kenya"}
 :::::columns{split="1-1"}
 ::::col
-AfriScan screens corridors from satellite imagery. A satellite register needs no aircraft, no flight authorisation and no Survey Act notice for a flight, so it can cover a whole wayleave, including in the areas where government travel advice warns against travel, before anyone decides whether a drone is worth sending.
+AfriScan screens corridors from satellite imagery. A satellite register needs no aircraft and no flight authorisation, so it can cover a whole wayleave, including in the areas where government travel advice warns against travel, before anyone decides whether a drone is worth sending.
 
 Where drone detail is needed, the flights are carried out by a company registered in Kenya with a current KCAA RPAS Operator Certificate, under that company's certificate and subject to the approvals and security clearances each job requires. Every AfriScan proposal with a drone element names that company and the approvals its flights need, so your team can check them against this page.
 ::::

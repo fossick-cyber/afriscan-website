@@ -12,7 +12,7 @@ buttons:
   - {label: Before mining begins, href: "#before-mining"}
 service:
   name: Mining licence area and land-change mapping, Kenya
-  type: Licence-area structure survey, resettlement baseline, excavation mapping and rehabilitation tracking
+  type: Licence-area structure register, resettlement baseline, excavation mapping and rehabilitation tracking
   description: Structures, excavations, pits, spoil, tracks and cleared ground in and around mining licence areas in Kenya, dated baselines before compensation and resettlement, artisanal mining sites mapped as land change, and revegetation of rehabilitated land, compared between dated images, checked by a person and delivered as a PDF report with GIS layers.
 og:
   headline: Mining licence areas and land change in Kenya
@@ -28,7 +28,7 @@ faq:
   - q: How does a register support compensation before mining?
     a: It records which structures stood in and around the licence area on dated imagery before mining, and what has appeared since. The Mining Act requires the occupier, owner or user of the land to be compensated before mining begins (s.153(7)); the census, the valuation and the payments stay with the licence holder and its advisers.
   - q: Can a drone survey a mine site?
-    a: Yes, with the licence holder's and the landowner's permission, flown by a Kenyan company with a KCAA RPAS Operator Certificate and subject to the approvals and security clearances each job requires. There is no drone-specific rule for mines, but a plan for a congested area or controlled airspace carries a statement of permission from property owners or local officials (Aerial Work Regulations 2025, reg 54).
+    a: Yes, with the licence holder's and the landowner's permission, flown by a Kenyan company with a KCAA RPAS Operator Certificate and subject to the approvals and security clearances each job requires. There is no drone-specific rule for mines, but a plan for a congested area or controlled airspace carries a statement of permission from property owners or local officials (Aerial Work Regulations 2025, reg 54), if KCAA confirms those rules apply to drones.
 cta:
   title: Send the licence polygon
   text: "The licence or application area as a file, the buffer you want reported, the county, and the dates that matter: the application, the compensation, the start of mining or closure. We reply with a scope, an imagery plan and a written proposal."
