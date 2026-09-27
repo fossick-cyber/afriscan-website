@@ -293,6 +293,7 @@ Body content outside a `section` is wrapped in a plain white section automatical
 | `details` | `summary`*, `open` (`true`) | A collapsible block. |
 | `lead` | | Larger intro text. |
 | `country-sites` | `match` (`page`) | Buttons to each country site that exists (renders nothing until one does). With `match="page"` each button goes to that country's version of the current page (same `key`), else to the country home. |
+| `countries` | `cols` (`2`, `3`, `4` default) | The country directory on `/countries`: one card per country with a live section, grouped by region, in the reader's language where the country has it, with a link per language for bilingual countries. Names come from `data/countries.yaml`. |
 
 Icons (`icon="…"`): check, arrow-right, globe, pipeline, mine, power, clipboard, rail, sun, tree, building, corridor, boundary, shield, excavation, calendar, route, history, file-check, file-text, houses, compare, leaf, water, drone, satellite, target, map, layers, user-check, scale, search, mail, alert, info, external, clock, lock, download, ruler, flag, x-circle, send, grid, eye, language. Add new ones to `data/icons.yaml` (24×24, stroke style, no fills). Never use emoji.
 
