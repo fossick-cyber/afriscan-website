@@ -27,6 +27,17 @@ region:
   label: Country site
   choose: Choose a country site
   current: You are here
+  stay: Stay on this site
+  banner: "In {country}? See our {country} site."
+
+# Region headings (country selector, Countries menu, /countries, country buttons). Keys are the
+# `region` values in data/locales.yaml and data/countries.yaml.
+regions:
+  Southern: Southern Africa
+  East: East Africa
+  West: West Africa
+  Central: Central Africa
+  North: North Africa
 
 cta:
   title: Know what stands inside your right of way, before it becomes a dispute.
@@ -196,6 +207,20 @@ sites:
   mz-en: "Mozambique (English)"
   za: "South Africa"
   ng: "Nigeria"
+  zm: "Zambia"
+  tz: "Tanzania"
+  ke: "Kenya"
+  gh: "Ghana"
+  ug: "Uganda"
+  cd-fr: "RD Congo (Français)"
+  cd-en: "DR Congo (English)"
+  ao-pt: "Angola (Português)"
+  ao-en: "Angola (English)"
+  zw: "Zimbabwe"
+  mw: "Malawi"
+  na: "Namibia"
+  bw: "Botswana"
+  rw: "Rwanda"
 
 # Pages in another language that this language's pages link to (menus, footer, breadcrumbs, cards).
 # English pages link only to English pages and the country homes, so this list is empty.

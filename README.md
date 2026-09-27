@@ -7,6 +7,8 @@ The site is generated. Sources live in `site/`; the build writes the complete st
 ```bash
 /opt/favhousecheck/.venv/bin/python3 site/build.py              # build dist/ and run the house-rule guards
 /opt/favhousecheck/.venv/bin/python3 site/build.py --selftest   # check that every guard still fails on seeded mistakes
+/opt/favhousecheck/.venv/bin/python3 site/build.py --drafts --dist /tmp/preview   # draft sections too (never into a dist/)
+/opt/favhousecheck/.venv/bin/python3 site/tools/check_dist.py dist                 # independent checks, draft leaks included
 python3 -m http.server 5091 --directory dist --bind 127.0.0.1   # preview (open /results.html etc. locally)
 ```
 
@@ -17,7 +19,7 @@ Writers: read **[CONTENT_GUIDE.md](CONTENT_GUIDE.md)** before adding or editing 
 | Path | What it is |
 |---|---|
 | `site/build.py`, `site/lib/` | Generator: Markdown + YAML front matter → Jinja2 templates → `dist/`; hreflang, JSON-LD, sitemaps, redirects, headers, responsive images, social cards, favicons; the guards |
-| `site/content/` | One file per page, per section: `global/`, `mz/en/`, `mz/pt/`, `za/`, `ng/` |
+| `site/content/` | One file per page, per section: `global/`, `mz/en/`, `mz/pt/`, `za/`, `ng/`, and the country sections in `site/data/locales.yaml` (`status: live` is published; `status: draft` is built only by `--drafts`) |
 | `site/data/` | Facts and strings: site/organisation, locales, catalogue, drone-law instruments, i18n, pt-MZ glossary, guard rules, redirects, icons, sample data |
 | `site/templates/`, `site/static/` | Page templates, components, CSS, JS, self-hosted Inter font (OFL) |
 | `site/images/` | Image masters (the sample pipeline views are rebuilt from the app's stored job by `site/tools/make_samples.py`) |

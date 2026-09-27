@@ -20,10 +20,6 @@
       <div><p class="footer-title">{{ t.footer.how }}</p><ul>{% for i in footer.how + footer.resources %}<li><a href="{{ i.href }}"{% if i.lang %} hreflang="{{ i.lang }}"{% endif %}>{{ i.label }}{% if i.badge %} <span class="lang-badge">{{ i.badge }}</span>{% endif %}</a></li>{% endfor %}</ul></div>
       {% endif %}
       <div>
-        {% if footer.countries|length > 1 %}
-        <p class="footer-title">{{ t.footer.countries }}</p>
-        <ul>{% for c in footer.countries %}<li><a href="{{ c.href }}" hreflang="{{ c.lang }}" lang="{{ c.lang }}">{{ c.label }}</a></li>{% endfor %}</ul>
-        {% endif %}
         <p class="footer-title">{{ t.footer.company }}</p>
         <ul>
           <li><a href="{{ contact(page) }}">{{ t.footer.contact }}</a></li>
@@ -31,6 +27,18 @@
           {% for k in ['about', 'privacy'] %}{% set cp = resolve(k) %}{% if cp and not cp.noindex %}<li><a href="{{ cp.url }}"{% if cp.lang2 != page.lang2 %} hreflang="{{ cp.lang }}" lang="{{ cp.lang }}"{% endif %}>{{ label_of(cp) }}</a></li>{% endif %}{% endfor %}
         </ul>
       </div>
+      {% if footer.countries|length > 1 %}
+      <div class="footer-countries">
+        <p class="footer-title">{{ t.footer.countries }}</p>
+        {% if footer.countries_top %}<ul class="footer-country-top">{% for c in footer.countries_top %}<li><a href="{{ c.href }}" hreflang="{{ c.lang }}" lang="{{ c.lang }}">{{ c.label }}</a></li>{% endfor %}</ul>{% endif %}
+        <div class="footer-country-grid">
+        {% for g in footer.country_regions %}
+          <div><p class="footer-sub">{{ g.title }}</p>
+          <ul>{% for c in g['items'] %}<li><a href="{{ c.href }}" hreflang="{{ c.lang }}" lang="{{ c.lang }}">{{ c.label }}{% if c.draft %} <span class="lang-badge">Draft</span>{% endif %}</a></li>{% endfor %}</ul></div>
+        {% endfor %}
+        </div>
+      </div>
+      {% endif %}
     </nav>
   </div>
   <div class="container footer-credits">

@@ -33,8 +33,13 @@
     {% if country_row %}
     <h2 class="related-sub">{{ t.labels.in_your_country }}</h2>
     <p class="related-note">{{ t.labels.in_your_country_note }}</p>
-    <div class="btn-row country-sites">
-    {% for s in country_row %}<a class="btn btn-outline" href="{{ s.href }}" hreflang="{{ s.lang }}" lang="{{ s.lang }}">{{ s.label }}</a>{% endfor %}
+    <div class="country-sites">
+    {% for g in country_row %}
+      <div class="country-group">
+        <p class="country-group-title">{{ g.title }}</p>
+        <div class="btn-row">{% for s in g['items'] %}<a class="btn btn-outline" href="{{ s.href }}" hreflang="{{ s.lang }}" lang="{{ s.lang }}">{{ s.label }}{% if s.draft %} <span class="lang-badge">Draft</span>{% endif %}</a>{% endfor %}</div>
+      </div>
+    {% endfor %}
     </div>
     {% endif %}
   </div>

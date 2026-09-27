@@ -1,6 +1,6 @@
 # AfriScan website: content guide for writers
 
-This guide is for anyone adding or editing pages on afri-scan.com and its country sites (`/mz/`, `/mz/pt/`, `/za/`, `/ng/`). It covers the file format, where each kind of fact lives, the components you can use, and the guards that fail the build.
+This guide is for anyone adding or editing pages on afri-scan.com and its country sites (every section in `site/data/locales.yaml`: `/mz/`, `/mz/pt/`, `/za/`, `/ng/`, and the sections pre-registered on 27 September 2026, §4.1). It covers the file format, where each kind of fact lives, the components you can use, and the guards that fail the build.
 
 **Read first:** the owner's rules in `/home/claude/fhc-notes/website/OWNER_DECISIONS.md`. They win over anything else, including this guide. The page briefs are in `/home/claude/fhc-notes/website/industries/INDUSTRIES.FINAL.md` (industries and solutions), `industries/services.FINAL.md` (the service catalogue and its copy rules) and `regional/{mz,za,ng}.FINAL.md` (country facts, drone law, vocabulary). The ground truth for what the product does is `industries/capabilities.md`.
 
@@ -13,19 +13,23 @@ Everything runs with the app's virtualenv Python (Jinja2 3.1, Pillow 12, markdow
 ```bash
 cd /home/claude/afriscan-site
 /opt/favhousecheck/.venv/bin/python3 site/build.py            # build dist/ and run every guard; exit 1 on any error
-/opt/favhousecheck/.venv/bin/python3 site/build.py --selftest # prove each guard still fails on a seeded mistake (~1 min)
-/opt/favhousecheck/.venv/bin/python3 site/build.py --demo /tmp/x   # real content + template fixtures (checks layouts; never deploy)
-/opt/favhousecheck/.venv/bin/python3 site/build.py --drafts --dist /tmp/y   # include status: draft pages (local preview only)
+/opt/favhousecheck/.venv/bin/python3 site/build.py --selftest # prove each guard still fails on a seeded mistake (~70 builds: 20-25 min)
+/opt/favhousecheck/.venv/bin/python3 site/build.py --demo /tmp/x   # real content + template fixtures, a drafts build (checks layouts; never deploy)
+/opt/favhousecheck/.venv/bin/python3 site/build.py --drafts --dist /tmp/y   # include status: draft pages and draft sections (local preview only)
 ```
+
+`--drafts` refuses to write into `dist/` or into any directory inside the `dist/` of this checkout or of any other git worktree of the repository: pass a scratch directory. In a drafts build every draft page is `noindex, nofollow` and shows a fixed "Draft: not published" banner; draft sections appear in the menus with a "Draft" badge, but never in sitemaps, hreflang or the country banner.
 
 Preview (the local server does not map `/x` to `x.html` the way Cloudflare Pages does, so open `/x.html`):
 
 ```bash
 python3 -m http.server 5091 --directory /home/claude/afriscan-site/dist --bind 127.0.0.1
 /opt/favhousecheck/.venv/bin/python3 site/tools/shoot.py http://127.0.0.1:5091 /tmp/shots / /results /za/   # 1440 + 390 screenshots, flags horizontal overflow
-/opt/favhousecheck/.venv/bin/python3 site/tools/check_dist.py dist                   # independent check of dist/: hreflang reciprocity, canonicals, sitemaps, links, anchors, JSON-LD, orphans
+/opt/favhousecheck/.venv/bin/python3 site/tools/check_dist.py dist                   # independent check of dist/: hreflang reciprocity, canonicals, sitemaps, links, anchors, JSON-LD, orphans, draft leaks
 /opt/favhousecheck/.venv/bin/python3 site/tools/crawl.py http://127.0.0.1:5091 dist  # crawl the preview from / and fetch every href, src, srcset and CSS url()
 ```
+
+Both tools read the sections from `site/data/locales.yaml` and fail on anything that points into a draft section; add `--drafts` when checking a `--drafts` preview (`--help` lists the options).
 
 Read the screenshots. A page is not done until it looks right at 1440 px and 390 px.
 
@@ -45,9 +49,13 @@ site/
     mz/pt/            afri-scan.com/mz/pt/…      (pt-MZ)
     za/               afri-scan.com/za/…         (en-ZA)
     ng/               afri-scan.com/ng/…         (en-NG)
+    zm/ tz/ ke/ gh/ ug/ zw/ mw/ na/ bw/ rw/       the launching English sections (en-ZM …), §4.1
+    cd/fr/ cd/en/     afri-scan.com/cd/fr/… and /cd/…   (fr-CD, en-CD)
+    ao/pt/ ao/en/     afri-scan.com/ao/pt/… and /ao/…   (pt-AO, en-AO)
   data/
     site.yaml         brand, organisation JSON-LD, FormSubmit endpoint (do not change the endpoint)
-    locales.yaml      the five sections: prefix, language, hreflang codes, selector labels
+    locales.yaml      every section: prefix, language, hreflang codes, selector labels, status (live|draft), region
+    countries.yaml    the 54 African countries: English name, region, languages from the research, status
     catalogue.yaml    industries, solutions (U-codes) and services (S01–S45): names, blurbs, keys; `footer: true` picks the footer solutions;
                       services carry `name_pt` and `line_pt` for /mz/pt/ pages
     law/<cc>.yaml     drone-law instruments per country (mz, za, ng): the Sources tables come from here; optional
@@ -58,7 +66,7 @@ site/
     rules.yaml        the guard patterns
     redirects.yaml    path redirects -> dist/_redirects
     icons.yaml        inline SVG icons by name
-    reviews.yaml      native-PT and counsel reviews each page needs, and the pages the owner put live before them
+    reviews.yaml      native and counsel reviews each page needs, and the pages the owner put live before them
   templates/          Jinja2 page templates, partials and components
   static/assets/      CSS, JS, font (copied; CSS and JS get content-hashed file names)
   images/             image masters; the build makes AVIF, WebP and JPEG at several widths
@@ -164,7 +172,7 @@ Required on every page: `title`, `description`, `h1`.
 | `og` | Social card: `{headline, subline, alt}`. Defaults: the H1 and the "a person reviews every result" line. |
 | `law`, `as_of` | Law pages: the country code of `data/law/<cc>.yaml`, and the "as of" date (default `law_as_of` in `site.yaml`, 26 September 2026). |
 | `published`, `updated` | Articles: ISO dates. |
-| `reviewed_on`, `reviewed_by_role` | pt-MZ pages: set ONLY when a native Mozambican reviewer has actually signed the page off. A pt-MZ page without them fails the build unless `data/reviews.yaml` lists it under `pending.native_pt` (the pages the owner put live before the review). Never invent a review date. |
+| `reviewed_on`, `reviewed_by_role` | Every page in a language other than English: set ONLY when a native reviewer for that language and country has actually signed the page off. A page without them fails the build unless `data/reviews.yaml` lists it under its pending list (the pages the owner put live before the review): `pending.native_pt` for pt-MZ, otherwise `pending.native_<lang>` with the page's lang lower-cased and `-` as `_` (`native_pt_ao`, `native_fr_cd`). Never invent a review date. |
 | `counsel_reviewed_on`, `counsel_reviewed_by_role` | Law pages and the pages under `counsel_required` in `data/reviews.yaml`: set ONLY after counsel for that country has signed the page off. Same rule: without them the build fails unless the page is under `pending.counsel`. |
 | `noindex`, `sitemap` | `noindex: true` keeps a page out of search and the sitemap; `sitemap: false` keeps an indexable page out of the sitemap. |
 
@@ -216,7 +224,17 @@ Guides and insights take their own key and no cluster unless a true translation 
 
 Country-only pages (procurement, POPIA, NDPA, 50 m protection zone, etc.) take their own key and no cluster, except Mozambique's EN↔PT pairs. South Africa's are `za-water-utilities` (`/za/water-utilities`), `za-land-invasion` (`/za/land-invasion-monitoring`), `za-popia` (`/za/popia`) and `za-procurement` (`/za/procurement`).
 
-**The country selector and the banner** appear automatically as soon as a second section has a home page. The banner (bottom of the screen, never a redirect) suggests the visitor's country site from `/geo`, with a time-zone fallback, and only offers sections that exist.
+**The country selector and the banner** appear automatically as soon as a second section has a home page. The selector, the Countries menu, the footer, `:::country-sites` and the `/countries` directory group the sections under region headings (`regions:` in each i18n file: Southern, East, West, Central and North Africa); a country's language variants stay together, primary language first. The banner (bottom of the screen, never a redirect) suggests the visitor's country site from `/geo`, with the time zones in `data/countries.yaml` as the fallback. It is generated from the live sections in `data/locales.yaml` and never offers a draft one.
+
+### 4.1 Country sections: live and draft
+
+Every section is an entry in `data/locales.yaml` with `status: live` or `status: draft` and a `region`. The twelve countries the owner asked for on 27 September 2026 are pre-registered there as fourteen draft sections (zm, tz, ke, gh, ug, cd-fr, cd-en, ao-pt, ao-en, zw, mw, na, bw, rw), with empty content folders, their names under `sites:` in `data/i18n/en.yaml` and `pt-MZ.yaml`, and their sitemap names.
+
+- A **draft section** is built only by `--drafts`. Nothing published may point into it: no file under its prefix, hreflang alternate, sitemap entry, country-menu item, country-sites button, `/countries` entry, JSON-LD reference, `_redirects` target, `_headers` rule, banner suggestion or internal link. `build.py` and `check_dist.py` both fail on any of them (the `[draft-leak]` errors). A draft section with no pages builds fine. Its pages need no review until it goes live.
+- **Going live** (one country branch per country): set the section's `status: live` in `data/locales.yaml` and the country's `status: live` in `data/countries.yaml` (the build warns until you do); add `content/<folder>/index.md` (template `country_home`) and the pages; a non-English section also needs its `data/i18n/<i18n>.yaml` with every key of `en.yaml` except `regions`, `sites`, `region.stay` and `region.banner`, which fall back to English with a WARN; list the pages the owner put live before review under `pending` in `data/reviews.yaml` with `owner_decision: 2026-09-27` (below). Keep the other sections' entries untouched so the branches merge cleanly.
+- **hreflang codes** come from `hreflang:` in `data/locales.yaml`: the first is the section's own; `pt` stays on mz-pt and `fr` is on cd-fr as the catch-alls; no code is carried by two sections.
+- **Review lists** (`data/reviews.yaml`): `pending.native_pt_ao`, `pending.native_fr_cd` (and `native_<lang>` for any other language) hold non-English pages; `pending.counsel` or a `pending.counsel_<cc>` list hold law pages and `counsel_required` pages. An entry, a list or the whole file can carry `owner_decision: YYYY-MM-DD`; the entry's date wins. The owner decided on 2026-09-27 to publish the new country sites before their counsel and native reviews, as on 2026-09-26 for MZ/ZA/NG, so their pages go on these lists with that date. Never invent a reviewer or a sign-off.
+- **Catalogue and law wording** follow the page language when the data has it: every industry and solution name, blurb and menu line and every group name in `catalogue.yaml` needs the language of each published page (a gap fails the build, naming the entries, so English is never swapped in on a live page); a language the catalogue has no names in yet (`fr` today) uses the English ones with a WARN, as do the gaps of a language only draft pages use; services use `name_<lang>` / `line_<lang>` and law instruments `title_<lang>` / `identifier_<lang>` / `note_<lang>` (`_pt` today).
 
 ---
 
@@ -275,6 +293,7 @@ Body content outside a `section` is wrapped in a plain white section automatical
 | `details` | `summary`*, `open` (`true`) | A collapsible block. |
 | `lead` | | Larger intro text. |
 | `country-sites` | `match` (`page`) | Buttons to each country site that exists (renders nothing until one does). With `match="page"` each button goes to that country's version of the current page (same `key`), else to the country home. |
+| `countries` | `cols` (`2`, `3`, `4` default) | The country directory on `/countries`: one card per country with a live section, grouped by region, in the reader's language where the country has it, with a link per language for bilingual countries. Names come from `data/countries.yaml`. |
 
 Icons (`icon="…"`): check, arrow-right, globe, pipeline, mine, power, clipboard, rail, sun, tree, building, corridor, boundary, shield, excavation, calendar, route, history, file-check, file-text, houses, compare, leaf, water, drone, satellite, target, map, layers, user-check, scale, search, mail, alert, info, external, clock, lock, download, ruler, flag, x-circle, send, grid, eye, language. Add new ones to `data/icons.yaml` (24×24, stroke style, no fills). Never use emoji.
 
@@ -302,7 +321,7 @@ Tables: ordinary Markdown tables; the build wraps them in a scrollable box so th
 
 What may be shown:
 - **The sample pipeline**: yes, the owner has permission to show it, but never by name (owner decision of 27 September 2026 in `OWNER_DECISIONS.md`, which lists the names). Call it only "a high-pressure gas pipeline in Mozambique" (PT: "um gasoduto de alta pressão em Moçambique"), or "the pipeline sample" once introduced. No route, field, operator or province name, in copy, captions, alt text, headings, buttons, FAQ answers, JSON-LD, social cards, file names, anchors or URLs. Law facts that name other infrastructure stay on the law pages (the 50 m protection-zone guides, key `mz-protection-zone`, and the drone-law pages) and are never linked to the sample; elsewhere describe the zone without the name ("a 200 m safety zone where a decree sets one") and link the guide. The build enforces this (`withdrawn_names`, next section). Captions must be honest: manual marks are "Reviewed · manual marks", never "AI detection" or "live"; the operator's own plants and well pads are never "encroachment". Do not name the client company or use its logo. The site never offers the sample's PDF or GIS files; sample-report requests get a redacted sample.
-- **Google, Bing or Esri basemap imagery: never on this site.** The app's review of the sample used Google tiles, which Google's terms do not allow in published material, so the sample views are register strip views drawn from the register alone (no imagery, no coordinates) and the route on a dated Copernicus Sentinel-2 scene (credit "Contains modified Copernicus Sentinel data 2026"). 10 m Sentinel-2 pixels cannot show structures: never draw marks on it.
+- **Google satellite imagery: allowed for the samples** (owner decision of 27 September 2026: "We have the permissions"). A sample image may show identified structures on Google satellite imagery when: a visible "Imagery © Google" attribution sits on the image or directly under it; the anonymisation above still holds (the route only as "a high-pressure gas pipeline in Mozambique"); the caption says honestly which marks are automatic detections and which are reviewer marks, and that every result is reviewed by a person; and the mark colours are correct (older annotated tiles had red and blue swapped, so regenerate the images from the app's stored jobs rather than reusing old annotated JPEGs). Bing and Esri basemap imagery stay off the site unless the owner confirms permission. The other sample views are register strip views drawn from the register alone (no imagery, no coordinates) and the route on a dated Copernicus Sentinel-2 scene (credit "Contains modified Copernicus Sentinel data 2026"). 10 m Sentinel-2 pixels cannot show structures: never draw marks on it.
 - **Drone orthophotos or mosaics of Mozambique**: not without the Lei n.º 6/2024 authorisation (art. 16(1)(c) makes unauthorised reproduction an infraction). Ask the owner first.
 - No flags, coats of arms, regulator or client logos, stock photos of people, or images that identify anyone.
 
@@ -318,7 +337,7 @@ Social cards (1200×630) are drawn automatically for every page from `og.headlin
 
 ## 9. The guards (what fails the build)
 
-The build checks the rendered text of every page: visible text, `<title>`, meta description, Open Graph text, image alt text and the JSON-LD strings. A rule can be limited to a `scope`: a language, the law pages, the other pages, or the pages that show an `images/samples/` picture. `ERROR` fails the build. A match is excused only when a negation word (not, never, no, without, não, nunca, sem…) appears earlier **in the same sentence**, so "Scheduled, never real-time" passes and "…without permission. We are licensed" does not.
+The build checks the rendered text of every page: visible text (including text inside inline `<svg>`), `<title>`, meta description, Open Graph text, image alt text and the JSON-LD strings. A rule can be limited to a `scope`: a language, the law pages, the other pages, or the pages that show an `images/samples/` picture. `ERROR` fails the build. A match is excused only when a negation word (not, never, no, without, não, nunca, sem…) appears earlier **in the same sentence**, so "Scheduled, never real-time" passes and "…without permission. We are licensed" does not.
 
 | Guard | Fails on | Write instead |
 |---|---|---|
@@ -331,8 +350,9 @@ The build checks the rendered text of every page: visible text, `<title>`, meta 
 | Structure | Missing or duplicate title/description, title > 65 or description outside 70–170 characters, not exactly one H1, missing canonical, missing og tags, `<img>` without width/height/alt, JSON-LD that does not parse or contains an Offer or price | Fix the front matter. |
 | Links | Broken internal link, missing `#anchor`, `.html` links, relative links, `key:` that resolves nowhere | Use clean root-relative URLs or `key:` links. |
 | Near-duplicates | Two same-language pages in different sections that share 70 % or more of their 5-word runs (warn at 50 %): cluster members, and country pages of the same template | Write country substance: local law, regulators, programmes, vocabulary, FAQs. A country page that cannot meet the minimum is not built. |
-| Withdrawn names (owner decision, 27 September 2026) | A name in `withdrawn_names` in `data/rules.yaml`, which keeps them as digests (the names themselves are in `OWNER_DECISIONS.md`, outside this repo): some fail everywhere, some outside the law pages, some on pages that show an `images/samples/` picture. Checked in the page text and also in file names, URLs, anchors and redirect rules | "a high-pressure gas pipeline in Mozambique" (PT "um gasoduto de alta pressão em Moçambique"); "a 200 m safety zone where a decree sets one", with a link to the 50 m guide. Add a name with `build.py --name-digest "<name>"` |
+| Withdrawn names (owner decision, 27 September 2026) | A name in `withdrawn_names` in `data/rules.yaml` (its words joined by spaces, full stops, hyphens, dashes or slashes, so "T.9"-style spellings count), which keeps them as digests (the names themselves are in `OWNER_DECISIONS.md`, outside this repo): some fail everywhere, some outside the law pages, some on pages that show an `images/samples/` picture. Checked in the page text and also in file names, URLs, anchors and redirect rules | "a high-pressure gas pipeline in Mozambique" (PT "um gasoduto de alta pressão em Moçambique"); "a 200 m safety zone where a decree sets one", with a link to the 50 m guide. Add a name with `build.py --name-digest "<name>"` |
 | Redirects | A rule whose source is a built page, or whose source (or splat) would hide a published file | Pick a source no current file starts with |
+| Draft leaks (`[draft-leak]`, `[draft-page]`) | Anything published that points into a draft section (§4.1); in a `--drafts` build, a draft page without `noindex` or the "Draft: not published" banner, or in a sitemap or hreflang cluster | Keep the section a draft until its branch flips it live; link only live sections |
 | Law pages | Missing not-legal-advice line, instruments without `id/title/identifier/date/url/last_checked`, non-https sources; warns when `last_reviewed` is over 120 days old | Keep `data/law/<cc>.yaml` complete and current. |
 
 Do not weaken a rule in `rules.yaml` to get a page through: rewrite the page. If a rule is genuinely wrong, change it in its own commit with the reason, and run `--selftest`.
@@ -373,7 +393,7 @@ Procurement and local-content pages list only registrations and facts the owner 
 - Write natively in Mozambican/European Portuguese as used in the Boletim da República, never Brazilian, and never raw machine translation. The glossary (`data/glossary/pt-MZ.yaml`) lists banned forms, AO90 spellings to avoid and the preferred vocabulary: zona de protecção parcial, faixa de servidão, servidão administrativa, linha de transporte de energia, gasoduto/oleoduto, construções (not invasões), machambas, benfeitorias, agregado familiar, DUAT, licença especial, reassentamento, PAR, data de corte, censo e inventário de bens, EIA, ortofotomapa, monitoria.
 - Numbers use a decimal comma and a thin space for thousands (0,5 m; 14 500 km). Dates: 26 de Setembro de 2026.
 - Prefer impersonal constructions or "a sua empresa"; the reviewer will settle the register.
-- Interface strings are in `data/i18n/pt-MZ.yaml` (every key must exist in both files, or the build fails).
+- Interface strings are in `data/i18n/pt-MZ.yaml` (every key must exist in both files, or the build fails; only `regions`, `sites`, `region.stay` and `region.banner` fall back to English, with a WARN, in a new language file).
 - A Portuguese page that links to an English page (menus, footer, breadcrumbs, related cards) takes that page's Portuguese label and blurb from `foreign_pages.<key>` in `data/i18n/pt-MZ.yaml`, ending "(em inglês)". A missing entry fails the build. Catalogue industries and solutions keep their PT names and show a small "EN" badge. Section names in menus, the footer and the selector come from `sites:` in each i18n file.
 - On PT pages, `:::catalogue` shows each service's `name_pt` and `line_pt`, and law tables and `:::sources` use an instrument's `*_pt` fields when present; write them whenever you add a service or an instrument.
 - Use the `-pt` images (§8) and the PT hubs (`/mz/pt/sectores`, `/mz/pt/solucoes`) so PT menus, breadcrumbs and the PT 404 stay in Portuguese. Global pages without a PT version still appear in PT menus, marked `hreflang="en-GB"`.

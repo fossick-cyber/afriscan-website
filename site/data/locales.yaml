@@ -1,10 +1,19 @@
-# One entry per site section, in the order the country selector lists them.
+# One entry per site section. The country selector groups sections by region and lists countries by
+# their English name (data/countries.yaml); a country's language variants stay together, in the order
+# they appear here (primary language first).
 #   content   folder under site/content/
 #   prefix    URL prefix ("" for the global site). Section home = prefix + "/".
+#   lang      the pages' <html lang>
 #   hreflang  every code this section's pages carry. The first is the page's own locale; the rest
 #             are catch-alls (Google: "provide a catchall URL for geographically unspecified users").
-#   i18n      UI strings file in data/i18n/
+#             Catch-alls: "pt" stays on mz-pt, "fr" is on cd-fr.
+#   i18n      UI strings file in data/i18n/ (a live section needs its file; a draft one falls back to en)
 #   country   ISO code (null for global); country_name is in the section's own language
+#   status    live  -> built and published
+#             draft -> built only with build.py --drafts (noindex, "Draft: not published" banner), and never
+#                      linked, listed, clustered or suggested from a published page. A draft section with
+#                      no pages yet builds fine. A country branch flips its section to live.
+#   region    Southern | East | West | Central | North (null for global); must match data/countries.yaml
 global:
   content: global
   prefix: ""
@@ -17,6 +26,8 @@ global:
   label: "Global (English)"
   short: "Global"
   sitemap: sitemap-global.xml
+  status: live
+  region: null
 mz-pt:
   content: mz/pt
   prefix: /mz/pt
@@ -29,6 +40,8 @@ mz-pt:
   label: "Moçambique (Português)"
   short: "Moçambique · PT"
   sitemap: sitemap-mz.xml
+  status: live
+  region: Southern
 mz-en:
   content: mz/en
   prefix: /mz
@@ -41,6 +54,8 @@ mz-en:
   label: "Mozambique (English)"
   short: "Mozambique · EN"
   sitemap: sitemap-mz.xml
+  status: live
+  region: Southern
 za:
   content: za
   prefix: /za
@@ -53,6 +68,8 @@ za:
   label: "South Africa"
   short: "South Africa"
   sitemap: sitemap-za.xml
+  status: live
+  region: Southern
 ng:
   content: ng
   prefix: /ng
@@ -65,3 +82,204 @@ ng:
   label: "Nigeria"
   short: "Nigeria"
   sitemap: sitemap-ng.xml
+  status: live
+  region: West
+
+# ------------------------------------------------------------------ launch set (owner, 2026-09-27)
+# Pre-registered as drafts; each country branch sets its own section(s) to status: live.
+zm:
+  content: zm
+  prefix: /zm
+  lang: en-ZM
+  hreflang: [en-ZM]
+  og_locale: en_GB
+  i18n: en
+  country: ZM
+  country_name: Zambia
+  label: "Zambia"
+  short: "Zambia"
+  sitemap: sitemap-zm.xml
+  status: draft
+  region: Southern
+tz:
+  content: tz
+  prefix: /tz
+  lang: en-TZ
+  hreflang: [en-TZ]
+  og_locale: en_GB
+  i18n: en
+  country: TZ
+  country_name: Tanzania
+  label: "Tanzania"
+  short: "Tanzania"
+  sitemap: sitemap-tz.xml
+  status: draft
+  region: East
+ke:
+  content: ke
+  prefix: /ke
+  lang: en-KE
+  hreflang: [en-KE]
+  og_locale: en_GB
+  i18n: en
+  country: KE
+  country_name: Kenya
+  label: "Kenya"
+  short: "Kenya"
+  sitemap: sitemap-ke.xml
+  status: draft
+  region: East
+gh:
+  content: gh
+  prefix: /gh
+  lang: en-GH
+  hreflang: [en-GH]
+  og_locale: en_GB
+  i18n: en
+  country: GH
+  country_name: Ghana
+  label: "Ghana"
+  short: "Ghana"
+  sitemap: sitemap-gh.xml
+  status: draft
+  region: West
+ug:
+  content: ug
+  prefix: /ug
+  lang: en-UG
+  hreflang: [en-UG]
+  og_locale: en_GB
+  i18n: en
+  country: UG
+  country_name: Uganda
+  label: "Uganda"
+  short: "Uganda"
+  sitemap: sitemap-ug.xml
+  status: draft
+  region: East
+cd-fr:
+  content: cd/fr
+  prefix: /cd/fr
+  lang: fr-CD
+  hreflang: [fr-CD, fr]
+  og_locale: fr_FR
+  i18n: fr-CD
+  country: CD
+  country_name: "République démocratique du Congo"
+  label: "RD Congo (Français)"
+  short: "RD Congo · FR"
+  sitemap: sitemap-cd.xml
+  status: draft
+  region: Central
+cd-en:
+  content: cd/en
+  prefix: /cd
+  lang: en-CD
+  hreflang: [en-CD]
+  og_locale: en_GB
+  i18n: en
+  country: CD
+  country_name: "DR Congo"
+  label: "DR Congo (English)"
+  short: "DR Congo · EN"
+  sitemap: sitemap-cd.xml
+  status: draft
+  region: Central
+ao-pt:
+  content: ao/pt
+  prefix: /ao/pt
+  lang: pt-AO
+  hreflang: [pt-AO]
+  og_locale: pt_PT
+  i18n: pt-AO
+  country: AO
+  country_name: Angola
+  label: "Angola (Português)"
+  short: "Angola · PT"
+  sitemap: sitemap-ao.xml
+  status: draft
+  region: Southern
+ao-en:
+  content: ao/en
+  prefix: /ao
+  lang: en-AO
+  hreflang: [en-AO]
+  og_locale: en_GB
+  i18n: en
+  country: AO
+  country_name: Angola
+  label: "Angola (English)"
+  short: "Angola · EN"
+  sitemap: sitemap-ao.xml
+  status: draft
+  region: Southern
+zw:
+  content: zw
+  prefix: /zw
+  lang: en-ZW
+  hreflang: [en-ZW]
+  og_locale: en_GB
+  i18n: en
+  country: ZW
+  country_name: Zimbabwe
+  label: "Zimbabwe"
+  short: "Zimbabwe"
+  sitemap: sitemap-zw.xml
+  status: draft
+  region: Southern
+mw:
+  content: mw
+  prefix: /mw
+  lang: en-MW
+  hreflang: [en-MW]
+  og_locale: en_GB
+  i18n: en
+  country: MW
+  country_name: Malawi
+  label: "Malawi"
+  short: "Malawi"
+  sitemap: sitemap-mw.xml
+  status: draft
+  region: Southern
+na:
+  content: na
+  prefix: /na
+  lang: en-NA
+  hreflang: [en-NA]
+  og_locale: en_GB
+  i18n: en
+  country: NA
+  country_name: Namibia
+  label: "Namibia"
+  short: "Namibia"
+  sitemap: sitemap-na.xml
+  status: draft
+  region: Southern
+bw:
+  content: bw
+  prefix: /bw
+  lang: en-BW
+  hreflang: [en-BW]
+  og_locale: en_GB
+  i18n: en
+  country: BW
+  country_name: Botswana
+  label: "Botswana"
+  short: "Botswana"
+  sitemap: sitemap-bw.xml
+  status: draft
+  region: Southern
+rw:
+  content: rw
+  prefix: /rw
+  lang: en-RW
+  hreflang: [en-RW]
+  og_locale: en_GB
+  i18n: en
+  country: RW
+  country_name: Rwanda
+  label: "Rwanda"
+  short: "Rwanda"
+  sitemap: sitemap-rw.xml
+  status: draft
+  region: East

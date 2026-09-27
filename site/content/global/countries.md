@@ -20,6 +20,11 @@ cta:
   button: Request a proposal
 ---
 
+::::section{id="country-sites" tone="alt" eyebrow="Country sites" title="Country sites by region" lead="Each country has its own section of this site, with the local law, the regulators and the vocabulary our registers are measured against."}
+:::countries
+:::
+::::
+
 ::::section{id="overview" eyebrow="As of 26 September 2026" title="What applies in each country" lead="A short orientation to the land rules our registers are measured against and the drone rules that shape a survey plan. It summarises public rules for information and is not legal advice; the sources are linked."}
 :::cards{cols="3"}
 :::card{title="Mozambique" icon="map" eyebrow="Português · English"}
