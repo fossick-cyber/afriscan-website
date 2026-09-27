@@ -106,7 +106,7 @@ A person checks every result before it reaches you. You receive a PDF report in 
 ::::
 
 ::::section{id="industries" tone="alt" eyebrow="Industries" title="Built for the land you manage" lead="The same method protects a gas pipeline's right of way, a mine's concession edge and a transmission line's servitude: map what stands on the land, measure it against the line or boundary, and record the date."}
-:::industries
+:::industries{cols="3"}
 :::
 
 ### Flagship services

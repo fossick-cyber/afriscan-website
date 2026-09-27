@@ -29,6 +29,10 @@ faq:
     a: No. We map structures, not people, and we don't decide whether a structure is authorised; that is for you and the authorities. Our registers support your community engagement and legal processes.
   - q: Can you support our class-location or population-density reviews?
     a: Yes. We supply structure counts within the corridor widths and unit lengths your engineers set, with reviewer categories that separate main buildings from outbuildings. The class study and its conclusions stay with your engineers.
+  - q: Can one survey cover a pipeline that crosses several countries?
+    a: Yes. We survey the whole line as one register and measure each country's segment against the widths that apply there, so the segments can be compared side by side. Reports can be delivered in English or Portuguese, and each country site sets out the local rules that shape the survey.
+  - q: Can your records support our lenders' environmental and social monitoring?
+    a: They can supply the dated land evidence for it. For each monitoring period we record new structures in the right of way, clearing and earthworks outside the approved working width and revegetation where it was promised, confirmed by a reviewer and fixed in an evidence pack. They support your monitoring and the independent monitor's review; they do not replace site visits or certify compliance with any standard.
   - q: Who sees our route files and results?
     a: The contacts you name. We never publish a client's route, imagery or results without written permission, and we never publish maps of your assets or of the settlements around them without your written permission. The pipeline route shown on this site appears with the route owner's permission.
 cta:
@@ -146,6 +150,62 @@ The comparison is an input to route selection, not a full alternatives assessmen
 :::::
 ::::
 
+::::section{id="cross-border-lines" eyebrow="Cross-border and multi-product lines" title="New build and rehabilitation of long-distance lines" lead="A multi-product or crude line that crosses borders crosses land laws too. One survey can cover the whole line, with each country's segment measured against the widths that apply there."}
+:::::columns{split="2-1"}
+::::col
+Long-distance pipelines carrying crude, refined products or gas often run through several countries, each with its own protection strip, servitude or right-of-way width, land law and working language. We survey the line as one register and measure each segment against the widths that apply in its country, so your land and integrity teams see every segment side by side in the same table, and each country team receives the part it answers for.
+
+**New build.** Before the route is fixed, we compare alignment options by the structures they would affect. Once it is fixed, a dated baseline of the corridor records what stood along it before construction, and where structures are affected, a dated register supports the census and asset inventory for the resettlement cut-off date. During construction, re-surveys flag new structures along the corridor, new access tracks are mapped between dates, and dated drone orthophotos of camps, laydown areas and crossings show earthworks progress, subject to the permits each job requires.
+
+**Rehabilitation and replacement.** When a line built decades ago is rehabilitated, looped or partly replaced, its right of way has often filled in since. A current register shows which structures now stand inside the strip the works will need. The imagery history of the corridor shows roughly when the land around the line changed, where the archive allows, and where a replacement section leaves the old alignment, the options are compared by the structures they affect.
+::::
+::::col
+### What you receive
+
+:::checklist
+- One register for the whole line, split by country segment and band
+- Segment tables measured against each country's widths
+- A dated baseline before construction or rehabilitation works
+- Cut-off-date records where structures are affected
+- Imagery history showing roughly when the corridor changed
+- Re-surveys during the works, with new structures flagged and confirmed
+- Reports in English or Portuguese, and GIS layers per segment
+:::
+
+:::solutions{keys="resettlement-cut-off-baselines,imagery-history-due-diligence" cols="1"}
+:::
+::::
+:::::
+::::
+
+::::section{id="corridor-compliance" tone="alt" eyebrow="Oil and gas corridors under lender standards" title="Land-change monitoring for safety and E&S compliance"}
+:::::columns{split="1-1"}
+::::col
+A crude-oil or gas pipeline financed by development finance institutions or commercial lenders carries environmental and social commitments along its whole length: a resettlement cut-off date, a construction footprint that has to stay inside approved limits, a working width to reinstate once the pipe is laid, and a right of way that has to stay clear of new building for the line's safety. Lenders' monitors visit on a cycle. The land changes in between.
+
+We give the pipeline owner, and the lenders' advisers it shares results with, a dated record of land change along the corridor for each monitoring period. New structures inside the right of way and the safety bands are flagged and confirmed by a reviewer. Clearing and earthworks outside the approved working width are mapped between dates, new tracks into the corridor are mapped, and revegetation of the reinstated working width is tracked. Around pump stations, camps and access roads, a trend of built-up land shows where settlement is growing towards the line. In cloudy months, radar comparisons show larger changes, such as clearing and earthworks, even under rainy-season cloud. Each period's record is fixed in an evidence pack.
+
+The record describes land and assets, never people. It supports the owner's own monitoring and the independent monitor's review, and it never replaces either, or the visits they make. How lenders' reports use these records is set out under [periodic monitoring for lenders' reports](key:project-finance-esia#lender-reporting).
+::::
+::::col
+### What you receive
+
+:::checklist
+- New structures inside the right of way and safety bands, for each monitoring period
+- Clearing and earthworks outside the approved working width
+- Revegetation of the reinstated working width, tracked between dates
+- New tracks and access roads into the corridor
+- Settlement growth around pump stations, camps and access roads
+- Radar screening for larger changes in cloudy months
+- An evidence pack for each monitoring period
+:::
+
+:::solutions{keys="change-detection,vegetation-land-cover-fire,evidence-packs" cols="1"}
+:::
+::::
+:::::
+::::
+
 ::::section{id="lng-sites" eyebrow="LNG, gas-processing plants and field sites" title="Structures around plants, licence areas and resettlement villages"}
 Around an LNG plant, a gas-processing facility or a compressor station the line becomes a boundary, and the question becomes a ring: what stands inside the site or licence area, what stands in a band around it, and what sits inside the safety and exclusion zones your engineers have drawn. We map all three, list each structure with its distance to the boundary or the source, and show how settlement around the plant, its access roads and its resettlement villages grows between surveys.
 
@@ -163,6 +223,20 @@ Structures inside the zones you define, each listed with its location and distan
 :::card{title="Resettlement villages" icon="houses"}
 A cut-off-date baseline with categories, then scheduled re-surveys of the villages and their buffers.
 :::
+:::
+
+### LNG host areas and their corridors {#lng-corridors}
+
+An LNG plant changes a whole host area, not only the land inside its fence. Feed-gas pipelines, access roads, power and water lines, construction camps, quarries and borrow pits, resettlement villages and the settlements that grow along new roads each bring their own line or boundary, and together they change faster than any other land around the project.
+
+We survey the host area as one set of registers: a corridor register along each feed pipeline, road and utility line, measured to its route; area surveys inside and around the plant, the camps and the resettlement villages; a land-use and land-cover baseline of the host area before and during construction; and a trend of built-up land that shows where building is concentrating along the new roads. Re-surveys on a schedule agreed with you report what has changed in each register, and in areas where access is restricted, satellite-first work keeps the record going without a site visit. We never publish maps of your host area or its settlements without your written permission.
+
+:::checklist
+- Corridor registers along feed pipelines, access roads and utility lines
+- Structures inside and around the plant, camps and resettlement villages
+- A land-use and land-cover baseline of the host area
+- Settlement growth trends along new roads
+- Scheduled re-surveys of every register, with a notice of what changed
 :::
 
 :::cta{title="Talk to us about your site boundary and zones" text="Send the site or licence boundary and the zones your engineers use, and we scope the ring, the zones and the re-survey schedule." button="Request a proposal"}
@@ -257,7 +331,7 @@ Where flown: a georeferenced orthophoto, surface and terrain elevation models, a
 :::
 
 :::details{summary="The full list of services behind this page"}
-:::catalogue{services="S01,S02,S03,S04,S07,S08,S09,S10,S13,S14,S16,S17,S18,S22,S24,S25,S27,S28,S29,S31,S32,S33,S34,S35,S37,S38,S40,S41,S42,S43,S44,S45"}
+:::catalogue{services="S01,S02,S03,S04,S07,S08,S09,S10,S11,S13,S14,S15,S16,S17,S18,S22,S24,S25,S27,S28,S29,S31,S32,S33,S34,S35,S36,S37,S38,S40,S41,S42,S43,S44,S45"}
 :::
 :::
 ::::

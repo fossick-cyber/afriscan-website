@@ -29,6 +29,10 @@ faq:
     a: Archive coverage and dates vary by place. Where archive imagery is too old we can request a new satellite capture, but its date depends on satellite availability and weather and is never guaranteed. For a date that matters, we plan the imagery in the proposal.
   - q: Does remote evidence replace site visits?
     a: No. It gives you dated evidence between visits and helps you plan where visits are needed. It is not independent verification and does not replace the monitoring your lenders or regulators require.
+  - q: Can re-surveys follow our lenders' reporting periods?
+    a: Yes, as far as new imagery allows. We agree the cadence with you in the proposal, usually to match the monitoring periods in your action plan or loan documents, and plan the imagery for each period. A new satellite capture can be requested where the archive is too old, but its date depends on satellite availability and weather and is never guaranteed.
+  - q: Do you work for lenders and independent monitors, or only for borrowers?
+    a: For any of them. A borrower, its ESIA or RAP consultants, an independent E&S consultant or a lender's adviser can commission the work, and results go only to the contacts named in the proposal. We never publish a project's footprint, imagery or results without written permission.
   - q: How are household numbers produced?
     a: As estimates, from structure counts and stated persons-per-household assumptions drawn from national census data. Every report sets out the assumptions, and reviewer categories that separate main buildings from outbuildings make the estimate better.
 cta:
@@ -165,6 +169,51 @@ Remote evidence complements site visits. It helps the monitor decide where to go
 :::::
 
 :::solutions{keys="imagery,drone-surveys" cols="2"}
+:::
+::::
+
+::::section{id="lender-reporting" eyebrow="Periodic monitoring for lenders' reports" title="Dated land evidence for each monitoring period"}
+:::::columns{split="2-1"}
+::::col
+IFC Performance Standard 1 asks the client to "establish procedures to monitor and measure the effectiveness of the management program, as well as compliance with any related legal and/or contractual obligations and regulatory requirements", and, for projects with significant impacts, to "retain external experts to verify its monitoring information" ([PS1, para. 22](https://www.ifc.org/content/dam/ifc/doc/2010/2012-ifc-performance-standard-1-en.pdf)). Performance Standard 5 asks for the same of resettlement: procedures to monitor and evaluate the Resettlement Action Plan, and competent resettlement professionals to verify the monitoring information where resettlement risks are significant ([PS5, para. 14](https://www.ifc.org/content/dam/ifc/doc/2010/2012-ifc-performance-standard-5-en.pdf)).
+
+Land is the hardest part of that evidence to gather between visits. For each monitoring period, on the reporting cycle in your action plan or monitoring plan as far as new imagery allows, we supply the dated land record that the report and the verification can draw on, as set out in the table below.
+::::
+::::col
+:::callout{tone="scope" title="Evidence for the report, not a verdict"}
+The borrower or its consultants commission the work and decide what to share. Independent E&S consultants and lenders' monitors can use the same layers in their review. The records support monitoring and verification; they do not verify compliance, certify anything or replace the site visits a monitoring plan requires.
+:::
+::::
+:::::
+
+| What the monitoring report has to show | What we supply |
+|---|---|
+| Whether structures have appeared in the footprint since the cut-off date | A re-survey against the cut-off register, with new structures flagged and confirmed by a reviewer |
+| Whether construction stayed inside the approved footprint | Clearing and construction footprints compared between dates, and structures and activity inside the no-go buffers you define |
+| Progress of rehabilitation and revegetation | Vegetation cover on rehabilitated areas, tracked between dates |
+| Progress at resettlement sites | Dated drone orthophotos, subject to permits, or dated satellite scenes of each site |
+| Settlement growth around the project | Built-up land trends around the footprint, camps and access roads |
+| Checks on single grievances | A location sheet with every dated image of the plot |
+| A record that can be shared and checked later | An evidence pack for each period, with file fingerprints and an independent timestamp |
+
+:::solutions{keys="change-detection,evidence-packs" cols="2"}
+:::
+::::
+
+
+::::section{id="financed-corridors" tone="alt" eyebrow="Financed corridors" title="Pipelines, lines and interconnectors that cross districts and borders" lead="A financed pipeline, transmission line, interconnector or railway is not one footprint but a chain of segments, each with its own width, its own national rules and often its own cut-off date."}
+We treat a corridor as a set of segments with one register format, so reviewers compare like with like along the whole line. Each segment gets a dated baseline and, where structures are affected, a cut-off-date register measured to its own width. Each monitoring period then adds a re-survey of the right of way, clearing and earthworks outside the approved working width, reinstatement of the working width tracked between dates, and settlement growth around camps, stations and access roads. Reports come in English or Portuguese, segment by segment, with GIS layers your consultants can map.
+
+:::cards{cols="3"}
+:::card{title="Pipelines" icon="pipeline" key="oil-gas#corridor-compliance" cta="Oil and gas corridors"}
+Crude-oil, product and gas pipelines, including cross-border and multi-product lines, new build and rehabilitation.
+:::
+:::card{title="Transmission lines and interconnectors" icon="power" key="power-utilities#interconnectors" cta="New lines and interconnectors"}
+Route baselines along each segment, cut-off-date registers for servitudes and substations, and evidence of the works between visits.
+:::
+:::card{title="Rail corridors" icon="rail" key="rail-roads#freight-rail" cta="Freight-rail corridors"}
+Reserves, crossings and structures along rehabilitated or upgraded lines, with a dated baseline before the works.
+:::
 :::
 ::::
 

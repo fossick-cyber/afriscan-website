@@ -19,7 +19,7 @@ buttons:
   - {label: Send tender documents, intent: tender}
   - {label: How we work, key: how-we-work}
 related: [right-of-way-monitoring, encroachment-surveys, change-detection]
-about: [home, right-of-way-monitoring, encroachment-surveys, change-detection, oil-gas, power-utilities, rail-roads, za-water-utilities, za-land-invasion, mz-procurement, za-procurement, ng-procurement]
+about: [home, right-of-way-monitoring, encroachment-surveys, change-detection, oil-gas, power-utilities, rail-roads, telecom-fibre, za-water-utilities, za-land-invasion, mz-procurement, za-procurement, ng-procurement]
 og:
   headline: How to scope a right-of-way encroachment survey
   subline: A checklist for RFQs and scopes of work, and the questions to ask every bidder

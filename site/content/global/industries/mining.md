@@ -29,6 +29,10 @@ faq:
     a: No. We work from the boundary you give us, and we don't verify title, land-use rights or tenure. Legal boundaries stay with registered land surveyors and the cadastre.
   - q: How do you follow rehabilitation?
     a: We compare vegetation cover on rehabilitated areas between dates, using Copernicus Sentinel data and, where flown, drone elevation models. It shows the trend; it is not an ecological assessment or a closure sign-off.
+  - q: Our mine path moves every year. Can the baseline keep up?
+    a: Yes. We record each block ahead of the mine path as its own dated register, with categories and estimated households, re-survey it after its cut-off date and fix it in an evidence pack. Behind the path, revegetation of rehabilitated land is tracked between dates.
+  - q: Can you map open and water-filled pits on our concession for safety planning?
+    a: Yes, where they are visible from above. We map pits, spoil heaps and water-filled excavations, flag new and growing sites between dated surveys and list each against the boundary or the zones you define, confirmed by a reviewer. We describe the ground only, never the people involved.
   - q: Are your stockpile volumes a statutory survey?
     a: No. Stockpile and earthworks volumes from drone elevation models support your mine surveyors; they are not a statutory or certified survey.
 cta:
@@ -145,6 +149,63 @@ We do not model dam breaks, blasts or floods, and we make no dam-safety conforma
 :::
 
 :::solutions{keys="hazard-zone-registers" cols="1"}
+:::
+::::
+:::::
+::::
+
+::::section{id="mineral-sands" eyebrow="Mineral-sands mines" title="A mine path that moves: baselines ahead of it, rehabilitation behind it" lead="A mineral-sands operation advances across its deposit, so the footprint that matters changes every year. The land ahead of the mine path needs a dated record before it is mined, and the land behind it needs evidence of rehabilitation."}
+:::::columns{split="2-1"}
+::::col
+Dredge and dry mining move through a deposit along a planned mine path, and an expansion or a move into a new ore zone brings new land into the footprint, often land with homesteads, fields and outbuildings on it. Each block ahead of the path has its own cut-off date and its own census.
+
+We produce a dated register of the structures in each block ahead of the mine path, with coordinates, stable IDs and reviewer categories such as main building, outbuilding, livestock enclosure or under construction, and estimated households with the assumptions stated, so your resettlement team can plan the census and consultation block by block. The register supports your census and asset inventory under IFC Performance Standard 5; it does not replace them. After each block's cut-off date, re-surveys flag new structures, confirmed by a reviewer, and an evidence pack fixes each block's record.
+
+Around the operation, a ring survey shows how settlement near the lease boundary, the plant and the haul roads grows between dates, and new tracks into the lease are mapped. Behind the path, a land-cover baseline recorded before mining gives the reference, and revegetation of rehabilitated land is tracked between dates from Copernicus Sentinel data and, where flown, drone surveys. It shows the trend in vegetation cover; it is not an ecological assessment or a closure sign-off.
+::::
+::::col
+### What you receive
+
+:::checklist
+- A dated register for each block ahead of the mine path
+- Reviewer categories and estimated households for each block
+- Re-surveys after each block's cut-off date, with new structures confirmed
+- An evidence pack for each block's record
+- Structures in a ring around the lease, the plant and the haul roads
+- A land-cover baseline before mining
+- Revegetation of rehabilitated land behind the path
+:::
+
+:::solutions{keys="resettlement-cut-off-baselines,vegetation-land-cover-fire" cols="1"}
+:::
+::::
+:::::
+::::
+
+::::section{id="gemstone-concessions" tone="alt" eyebrow="Gemstone and other concessions" title="Ground disturbance across a concession, mapped for its management and safety"}
+:::::columns{split="1-1"}
+::::col
+On gemstone concessions, and on other titles where digging by others is common, surface disturbance can spread across large areas between visits: pits, spoil heaps, water-filled excavations, cleared ground and new tracks. The rights holder needs to know where the ground is changing to manage the concession and its dealings with communities and authorities, and open and water-filled pits are a safety hazard whose locations are worth knowing.
+
+We map pits, disturbed ground, spoil heaps and water-filled excavations inside and around the concession, flag new and growing sites between dated surveys, and list each with its location, its size on the imagery and its distance to the concession boundary or to the zones you define. New tracks into the concession are mapped between dates, and worked-out ground can be followed as it revegetates. The screening between surveys and the tuning of detection to your imagery work as described under [surface excavation](key:mining#artisanal-mining) below.
+
+For safety planning, the zones can be the ones your team draws around roads, fields, water points or your own pits and plant, so each flagged pit is listed against the places where it matters. Where access is restricted, satellite-first work keeps the record going without a site visit.
+::::
+::::col
+:::callout{tone="scope" title="The ground, never the people"}
+The record describes where the ground has been dug, when it changed and how large the disturbed area is. It never counts, identifies or describes people, it is not a security service, and underground workings are not visible from above. We never publish site maps, and results go only to the contacts you name.
+:::
+
+:::checklist
+- Pits, spoil heaps and water-filled excavations, mapped and dated
+- New and growing sites flagged between surveys, confirmed by a reviewer
+- Each site's distance to the boundary or to the zones you define
+- Disturbance notices across large concessions between surveys
+- New tracks into the concession, mapped between dates
+- Revegetation of worked-out ground, tracked between dates
+:::
+
+:::solutions{keys="excavation-mapping,hazard-zone-registers" cols="1"}
 :::
 ::::
 :::::

@@ -10,7 +10,7 @@ FRONT = re.compile(r"\A---[ \t]*\n(.*?)\n---[ \t]*\n?(.*)\Z", re.S)
 OPEN = re.compile(r"^(?P<fence>:{3,})(?P<name>[a-z][\w-]*)[ \t]*(?:\{(?P<attrs>.*)\})?[ \t]*$")
 CLOSE = re.compile(r"^(?P<fence>:{3,})[ \t]*$")
 ATTR = re.compile(r'([A-Za-z_][\w-]*)\s*=\s*(?:"([^"]*)"|\'([^\']*)\'|([^\s"\']+))')
-HEAD_ID = re.compile(r"<h([2-4])>(.*?)\s*\{#([A-Za-z][\w-]*)\}</h\1>", re.S)
+HEAD_ID = re.compile(r"<h([2-4])>((?:(?!</?h[1-6][\s>]).)*?)\s*\{#([A-Za-z][\w-]*)\}</h\1>", re.S)  # never spans another heading
 HEAD_PLAIN = re.compile(r"<h([2-4])>(.*?)</h\1>", re.S)
 TAG = re.compile(r"<[^>]+>")
 

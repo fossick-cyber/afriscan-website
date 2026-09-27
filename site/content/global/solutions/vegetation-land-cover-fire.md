@@ -132,5 +132,5 @@ Estate, plantation and conservation managers tracking clearing, fire and boundar
 :::
 :::
 
-Also used by oil and gas operators along pipeline servitudes, ESIA teams preparing land-cover baselines, and renewables developers around their sites.
+Also used for [vegetation-management programmes](key:power-utilities#vegetation-management) along line servitudes, by oil and gas operators tracking the reinstated working width of [financed pipeline corridors](key:oil-gas#corridor-compliance), by ESIA teams preparing land-cover baselines, and by renewables developers around their sites.
 ::::

@@ -17,7 +17,7 @@ og:
   subline: Oil & gas, mining, power & utilities, project finance & ESIA, and more
 faq:
   - q: Our industry is not listed. Can you still help?
-    a: Probably. The method works for any linear asset or boundary where it matters what stands within a set distance, and when it appeared. Telecom routes, ports, industrial estates and land banks use the same register. Send the route or boundary and tell us what the record is for.
+    a: Probably. The method works for any linear asset or boundary where it matters what stands within a set distance, and when it appeared. Ports, industrial estates and land banks use the same register. Send the route or boundary and tell us what the record is for.
   - q: Do you work for contractors and consultants as well as asset owners?
     a: Yes. EPC contractors, ESIA and RAP consultancies and independent monitors commission registers and GIS layers for their own deliverables, and we deliver in the formats their teams use.
   - q: Can we see work you have done in our industry?
@@ -29,24 +29,27 @@ faq:
 ::::section{id="tier-1" eyebrow="Core industries" title="Where a dated register changes decisions" lead="Pick the page for the land you manage. Each sets out the problems in your team's own words, the services that answer them, what you receive and the country rules that shape the survey."}
 :::cards{cols="2"}
 :::card{title="Oil & gas" icon="pipeline" key="oil-gas" eyebrow="Pipelines · plants · field sites"}
-Pipeline rights of way and protection zones, LNG and gas-processing sites, well pads and asset handovers. **Usually starts with** a register of the structures within the distances you choose, each measured to the line, with every 500 m rated for encroachment density.
+Pipeline rights of way and protection zones, new and rehabilitated cross-border lines, LNG host areas and their corridors, well pads and asset handovers. **Usually starts with** a register of the structures within the distances you choose, each measured to the line, with every 500 m rated for encroachment density.
 :::
 :::card{title="Mining" icon="mine" key="mining" eyebrow="Concessions · tailings · expansions"}
-Concession edges, tailings and hazard zones, expansion footprints, surface excavations and rehabilitation. **Usually starts with** the structures inside and around your right, and a register of the structures inside your hazard zones.
+Concession edges, tailings and hazard zones, expansion footprints and mineral-sands mine paths, surface excavations and rehabilitation. **Usually starts with** the structures inside and around your right, and a register of the structures inside your hazard zones.
 :::
 :::card{title="Power & utilities" icon="power" key="power-utilities" eyebrow="Line servitudes · bulk water · dams"}
-Transmission and distribution servitudes and wayleaves, vegetation and fire near lines, bulk water mains, dams and new lines. **Usually starts with** a servitude register for each line segment.
+Transmission and distribution servitudes and wayleaves, vegetation management, new lines and cross-border interconnectors, bulk water mains and dams. **Usually starts with** a servitude register for each line segment.
 :::
 :::card{title="Project finance & ESIA" icon="clipboard" key="project-finance-esia" eyebrow="Lenders · monitors · consultancies"}
-Resettlement cut-off dates, ESIA and RAP baselines, evidence between site visits and land due diligence. **Usually starts with** a dated register of the structures in the footprint on the cut-off date, fixed in an evidence pack.
+Resettlement cut-off dates, ESIA and RAP baselines, periodic monitoring for lenders' reports and land due diligence. **Usually starts with** a dated register of the structures in the footprint on the cut-off date, fixed in an evidence pack.
 :::
 :::
 ::::
 
 ::::section{id="more" tone="alt" eyebrow="More industries" title="Also built for"}
-:::cards{cols="4"}
+:::cards{cols="3"}
 :::card{title="Rail & roads" icon="rail" key="rail-roads"}
-Road and rail reserves, building restriction areas and new alignments. **Usually starts with** the structures inside the reserve, or counts for each alignment option.
+Road and rail reserves, freight-rail corridors, building restriction areas and new alignments. **Usually starts with** the structures inside the reserve, or counts for each alignment option.
+:::
+:::card{title="Telecom fibre" icon="fibre" key="telecom-fibre"}
+Buried fibre routes, wayleaves and tower sites. **Usually starts with** a route register, then excavation and construction flagged between surveys to guide patrols.
 :::
 :::card{title="Renewables" icon="sun" key="renewables"}
 Solar and wind sites and their connection lines. **Usually starts with** a dated land history for each candidate site.

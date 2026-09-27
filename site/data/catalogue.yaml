@@ -52,6 +52,14 @@ industries:
     blurb:
       en: Structures along railway and road corridors measured against their reserves and restriction strips, and dated baselines for new alignments.
       pt: Construções ao longo de ferrovias e estradas medidas em relação às respectivas faixas de protecção, e registos datados para novos traçados.
+  - key: telecom-fibre
+    tier: 2
+    icon: fibre
+    name: {en: "Telecom fibre", pt: "Fibra óptica"}
+    menu: {en: "Buried fibre routes, wayleaves and tower sites", pt: "Rotas de fibra óptica enterrada, servidões e locais de torres"}
+    blurb:
+      en: Excavation, construction and new structures along buried fibre routes and wayleaves, flagged between surveys so your patrols know where to look.
+      pt: Escavações, obras e novas construções ao longo de rotas de fibra óptica enterrada e das suas servidões, assinaladas entre levantamentos para orientar as patrulhas.
   - key: renewables
     tier: 2
     icon: sun

@@ -145,5 +145,5 @@ Project teams on new highways and railways who need a baseline before land take 
 :::
 :::
 
-Also used for transmission lines, renewables sites and public programmes that apply IFC Performance Standard 5 or World Bank ESS5.
+Also used for [new transmission lines and interconnectors](key:power-utilities#interconnectors), [mineral-sands mine paths](key:mining#mineral-sands), [cross-border pipelines](key:oil-gas#cross-border-lines), renewables sites and public programmes that apply IFC Performance Standard 5 or World Bank ESS5.
 ::::

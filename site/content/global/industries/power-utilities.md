@@ -29,6 +29,10 @@ faq:
     a: Yes. We compare structure counts along alternative alignments, screen slope, drainage crossings and flood exposure, and produce a dated baseline once the route is fixed.
   - q: Do you model dam breaks?
     a: No. Your engineers supply the inundation zones; we list the structures inside them and show how settlement there changes.
+  - q: Can you work on a cross-border interconnector?
+    a: Yes. We produce one route baseline for the whole line and measure each segment against the servitude width that applies in its country, so the utilities on each side and the lenders read the same register. A dated register of the structures in the servitude and substation sites supports each segment's cut-off date and census.
+  - q: Can you show where vegetation was cleared along our servitude?
+    a: We map where vegetation cover dropped or regrew between two dates along each segment, from Copernicus Sentinel data, and where tall vegetation stands where drone surveys are flown. That helps you scope and look back on a clearing programme. It shows larger patches, not individual trees, and it is not a clearance measurement or a sign-off of anyone's work.
   - q: Can you estimate households for mini-grid sizing?
     a: Yes, as estimates. We derive estimated households from structure counts, and the report states the assumptions, such as the persons-per-household figures used. It is not a census.
 cta:
@@ -133,6 +137,19 @@ Fire hotspots detected by satellite near your lines are filtered to the buffer a
 :::
 ::::
 :::::
+
+### Vegetation management programmes {#vegetation-management}
+
+For a vegetation-management programme, the same maps help plan the work and look back on it. They show which spans have regrown since the last clearing cycle, where vegetation cover dropped between two dates, and, where drone surveys are flown, where tall vegetation stands inside the servitude. Clearing can then be scoped to the spans that changed, and the next survey shows where the cover changed after the work. After a line is rebuilt or a servitude restored, revegetation of the restored strip is tracked between dates.
+
+The maps show larger patches of change, not individual trees or small plots. They do not measure clearance to conductors or sign off a contractor's work, and cloud in the rainy season can delay results.
+
+:::checklist
+- Spans that have regrown since the last clearing cycle
+- Where vegetation cover dropped between two dates
+- Tall vegetation inside the servitude, from drone elevation models where flown
+- Revegetation of restored servitudes, tracked between dates
+:::
 ::::
 
 ::::section{id="new-lines" tone="alt" eyebrow="New lines and servitude acquisition" title="Compare alignments by the structures they affect"}
@@ -154,6 +171,61 @@ Each option can be screened for slope, drainage crossings and ground seen as wat
 :::
 
 :::solutions{keys="route-site-selection,resettlement-cut-off-baselines" cols="2"}
+:::
+::::
+:::::
+::::
+
+::::section{id="interconnectors" eyebrow="New lines and cross-border interconnectors" title="A route baseline for every segment, and a register for the cut-off date" lead="A new transmission line or an interconnector between national grids is acquired segment by segment, often by different utilities under different laws. The land record needs a date, and the same rules from one end of the line to the other."}
+:::::columns{split="2-1"}
+::::col
+We produce one route baseline for the whole line: the structures the review confirms along the alignment, measured to its axis within the servitude width that applies in each country and a wider band, each dated to the imagery it was confirmed on. The utilities on each side of a border, and the lenders financing the line, can then read the same register, segment by segment.
+
+When the servitude and the substation sites are fixed, a **cut-off-date structure register** records what stood inside them on the imagery dates around the cut-off, with coordinates, a stable ID for each structure and reviewer categories such as main building, outbuilding or under construction. It supports the census and asset inventory under IFC Performance Standard 5 and the national rules for each segment; it does not set the cut-off date or decide eligibility. After the cut-off, re-surveys flag new structures, confirmed by a reviewer, so your land team can show which arrived later, and an evidence pack fixes each register with file fingerprints and an independent timestamp.
+
+Around substations, converter stations and switching stations, the same work runs as an area survey: structures inside each site and in a ring around it. Estimated households, with the assumptions stated, help plan consultation along the route.
+::::
+::::col
+### What you receive
+
+:::checklist
+- A route baseline for the whole line, by country segment and band
+- A dated cut-off-date register for the servitude and substation sites
+- Reviewer categories for each structure
+- Structures inside and around substation sites
+- Re-surveys after the cut-off date, with new structures confirmed
+- An evidence pack that fixes each register
+- Estimated households, with the assumptions stated
+:::
+
+:::solutions{keys="resettlement-cut-off-baselines,evidence-packs" cols="1"}
+:::
+::::
+:::::
+::::
+
+::::section{id="line-construction" tone="alt" eyebrow="While the line is built" title="Access roads, tower sites and camps, recorded between site visits"}
+:::::columns{split="1-1"}
+::::col
+Building a line opens the land along it: access roads, tower-site platforms, stringing yards, camps and borrow pits. Dated drone orthophotos and elevation models compared side by side show where ground has been cut or filled between visits, and volumes of borrow pits and spoil are calculated from the elevation models. New tracks and access roads are mapped between dates, and heavy plant visible on each survey date is recorded as a snapshot of work on site, never as tracking.
+
+Clearing inside and outside the servitude is compared between dates from Copernicus Sentinel data, and once the line is energised, revegetation of camps, access roads and the restored working areas is tracked between dates. Together these give the owner and its lenders' advisers dated evidence of the works between site visits. The evidence supports audits and environmental and social reporting; it does not prove compliance, and it is not a certified survey or a quantity surveyor's valuation.
+
+Drone surveys are subject to the permits and authorisations each job requires. Where the contractor or the owner already flies the works, we run the same comparisons on that imagery.
+::::
+::::col
+### What you receive
+
+:::checklist
+- Cut-and-fill maps between drone visits
+- Borrow-pit and spoil volumes
+- New access tracks, mapped between dates
+- Clearing inside and outside the servitude, compared between dates
+- Heavy plant visible on each survey date
+- Revegetation of camps, access roads and restored working areas
+:::
+
+:::solutions{keys="drone-surveys,change-detection" cols="1"}
 :::
 ::::
 :::::
@@ -193,7 +265,7 @@ After a cyclone or flood, radar imagery maps the flooded area even under cloud, 
 ::::col
 ### Fibre routes and tower sites {#telecom}
 
-Telecom wayleaves carry the same questions. We map structures along fibre routes and around tower compounds, compare route options for new fibre by the structures they affect, flag fresh digging near buried routes so field teams know where to check, and check visible damage along routes and at sites after storms. In Mozambique, the Land Law's 50 m partial protection strip applies to telecommunications conduits as well as power and water.
+Telecom wayleaves carry the same questions. We map structures along fibre routes and around tower compounds, compare route options for new fibre by the structures they affect, flag fresh digging near buried routes so field teams know where to check, and check visible damage along routes and at sites after storms. In Mozambique, the Land Law's 50 m partial protection strip applies to telecommunications conduits as well as power and water. Fibre routes, route patrols and planned-works checks have their own page: [telecom fibre](key:telecom-fibre).
 ::::
 :::::
 ::::
@@ -248,7 +320,7 @@ A PDF in English or Portuguese; GeoPackage, GeoJSON, KMZ and Shapefile layers fo
 :::
 
 :::details{summary="The full list of services behind this page"}
-:::catalogue{services="S01,S02,S03,S04,S05,S07,S08,S09,S10,S11,S13,S14,S18,S22,S27,S28,S29,S30,S31,S33,S35,S36,S37,S38,S40,S41,S42,S43,S44,S45"}
+:::catalogue{services="S01,S02,S03,S04,S05,S07,S08,S09,S10,S11,S13,S14,S15,S16,S18,S22,S25,S27,S28,S29,S30,S31,S32,S33,S35,S36,S37,S38,S39,S40,S41,S42,S43,S44,S45"}
 :::
 :::
 ::::
