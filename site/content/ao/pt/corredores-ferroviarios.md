@@ -22,6 +22,8 @@ cta:
   title: Envie-nos o traçado da linha ou da estrada
   text: KML, KMZ, GeoJSON, Shapefile, GPX ou GeoPackage, ou as coordenadas das estações e dos marcos quilométricos. Diga-nos a largura da faixa e o fim a que o registo se destina, e respondemos com uma proposta escrita.
   button: Pedir proposta
+  secondary: Lei de drones em Angola
+  secondary_href: /ao/pt/lei-de-drones
 faq:
   - q: Que largura tem a faixa de um caminho-de-ferro?
     a: A Lei de Terras inclui nas reservas parciais as linhas férreas de interesse público e as respectivas estações, «observando-se uma faixa de protecção confinante em cada eixo da via» (Lei n.º 9/04, artigo 27.º, n.º 7, alínea f)), mas esse artigo não fixa a largura. Medimos a largura que a concessionária ou o dono da obra indicar, ou várias larguras num só levantamento, até seis distâncias.
@@ -77,6 +79,8 @@ Nas reservas parciais são permitidas as formas de ocupação e uso que não col
 **Durante a obra.** Levantamentos periódicos mostram o avanço dos movimentos de terra, os estaleiros e os acessos abertos, e as construções novas junto da via, para a equipa de obra e para o monitor independente do financiador.
 
 **Depois da obra.** Um último levantamento regista a faixa como ficou, e serve de referência para a operação.
+
+Fazemos o mesmo registo ao longo de [oleodutos e gasodutos](/ao/pt/oleodutos-e-gasodutos) e de [linhas de transporte de electricidade](/ao/pt/linhas-de-transporte-de-electricidade).
 ::::
 :::::
 ::::
@@ -84,7 +88,7 @@ Nas reservas parciais são permitidas as formas de ocupação e uso que não col
 ::::section{id="realojamento" tone="alt" eyebrow="Realojamento" title="A data de corte, com imagens datadas"}
 Nos projectos financiados por bancos de desenvolvimento, o financiador aplica normas como a Norma de Desempenho 5 da IFC ou a Norma Ambiental e Social 5 do Banco Mundial, e a data de corte do recenseamento define quem tem direito a compensação. A Lei n.º 1/21 deixa a desocupação forçada e as operações de realojamento para diploma próprio (artigo 2.º, n.ºs 2 e 3).
 
-Um registo das construções na data de corte, feito a partir de imagens datadas, apoia o registo da data de corte e mostra o que surgiu depois. Não toma o lugar do recenseamento, do inventário de bens nem da consulta às famílias, que cabem ao projecto. O procedimento de avaliação de impacte ambiental está no [Decreto Presidencial n.º 117/20](https://anrm.gov.ao/wp-content/uploads/2025/08/DP-117-20-de-22-de-Abril-Novo-Regulamento-Geral-de-Avaliacao-de-Impacte-Ambiental-e-do-Procedimento-de-Licenciamento-Ambiental.pdf), e o registo entrega-se em camadas que a equipa do EIAS usa nos seus mapas.
+Um registo das construções na data de corte, feito a partir de imagens datadas, apoia a documentação da data de corte e mostra o que surgiu depois. Não toma o lugar do recenseamento, do inventário de bens nem da consulta às famílias, que cabem ao projecto. O procedimento de avaliação de impacte ambiental está no [Decreto Presidencial n.º 117/20](https://anrm.gov.ao/wp-content/uploads/2025/08/DP-117-20-de-22-de-Abril-Novo-Regulamento-Geral-de-Avaliacao-de-Impacte-Ambiental-e-do-Procedimento-de-Licenciamento-Ambiental.pdf), e o registo entrega-se em camadas que a equipa do EIAS usa nos seus mapas.
 
 [Registos na data de corte (em inglês)](/solutions/resettlement-cut-off-baselines)
 ::::
@@ -93,6 +97,8 @@ Um registo das construções na data de corte, feito a partir de imagens datadas
 Quando uma cheia atinge a via, as imagens depois do evento mostram onde a água passou, onde houve arrastamento de terras e onde o terreno mudou junto das pontes e dos aterros. A equipa de campo recebe um mapa dos troços mais afectados e começa por aí.
 
 As imagens ópticas não vêem através das nuvens, e a época chuvosa atrasa-as. O radar mostra alterações maiores mesmo com nuvens, e um modelo de terreno ajuda a identificar os troços em declive ou em zonas de cheia antes de a obra começar. [Terreno, cheias e danos após eventos (em inglês)](/solutions/terrain-flood-post-event)
+
+Onde um troço precisar de mais detalhe do que as imagens de satélite dão, propomos um levantamento com drone, sujeito às autorizações e credenciações de segurança exigidas para cada operação, a começar pela autorização especial da ANAC. [Lei de drones em Angola](/ao/pt/lei-de-drones)
 ::::
 
 ::::section{id="registo" tone="alt" eyebrow="O que recebe" title="Um registo por quilómetro, pronto para o SIG"}

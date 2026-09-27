@@ -22,6 +22,8 @@ cta:
   title: Send us the line or road alignment
   text: KML, KMZ, GeoJSON, Shapefile, GPX or GeoPackage, or the coordinates of stations and kilometre posts. Tell us the reserve width and what the record is for, and we reply with a written proposal.
   button: Request a proposal
+  secondary: Drone law in Angola
+  secondary_href: /ao/drone-regulations
 faq:
   - q: How wide is a railway's protection strip in Angola?
     a: The Land Law lists public-interest railways and their stations among its partial reserves, "observando-se uma faixa de protecção confinante em cada eixo da via" (with an adjoining protection strip along the line; Lei n.º 9/04, article 27(7)(f)), but that article sets no width. We measure the width the concessionaire or project owner specifies, or several widths in one survey, up to six distances.
@@ -77,6 +79,8 @@ Uses that do not collide with the reserve's purpose are allowed (paragraph 6), a
 **During the works.** Scheduled re-surveys show earthworks progress, camps and new access roads, and new structures by the line, for the works team and for the lender's independent monitor.
 
 **After the works.** A final survey records the corridor as it was left, as a reference for operations.
+
+We build the same registers along [pipeline corridors in Angola](/ao/pipelines).
 ::::
 :::::
 ::::
@@ -93,6 +97,8 @@ A register of the structures on the cut-off date, built from dated imagery, supp
 When a flood reaches the line, post-event imagery shows where the water went, where soil was washed out and where the ground changed around bridges and embankments. The field team gets a map of the worst-hit stretches and starts there.
 
 Optical imagery cannot see through cloud, and the rainy season delays it. Radar shows larger changes even under rainy-season cloud, and a terrain model helps pick out stretches on steep ground or in flood-prone areas before works begin. [Terrain, flood and post-event mapping](/solutions/terrain-flood-post-event)
+
+Where a stretch needs more detail than satellite imagery gives, we propose a drone survey, subject to the approvals and security clearances each job requires, starting with ANAC's special authorisation. [Drone law in Angola](/ao/drone-regulations)
 ::::
 
 ::::section{id="deliverables" tone="alt" eyebrow="What you receive" title="A register by kilometre, ready for GIS"}

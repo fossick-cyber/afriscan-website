@@ -42,7 +42,7 @@ Entre duas inspecções, as construções aparecem, os caminhos abrem-se até à
 
 :::cards{cols="3"}
 :::card{title="Construções por faixa" icon="power"}
-Cada construção confirmada pelo revisor, com a distância ao eixo da linha, a faixa, as coordenadas e o vão ou o troço de 500 m onde se encontra.
+Cada construção confirmada pelo revisor, com a distância ao eixo da linha, a faixa, as coordenadas e o troço de 500 m onde se encontra.
 :::
 :::card{title="Caminhos e terreno desmatado" icon="route"}
 Caminhos novos até às torres, terreno desmatado e escavações dentro da faixa, assinalados entre levantamentos para as equipas de campo saberem onde ir.

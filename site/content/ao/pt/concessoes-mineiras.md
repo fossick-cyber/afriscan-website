@@ -104,7 +104,7 @@ Como o artigo 207.º do Código Mineiro liga a criação das zonas ao reagrupame
 - **o que surgiu depois**, em levantamentos seguintes com a mesma regra de contagem.
 ::::
 ::::col
-Quando o financiador aplica normas como a Norma de Desempenho 5 da IFC, a data de corte do recenseamento define quem tem direito a compensação, e o registo datado apoia o registo dessa data.
+Quando o financiador aplica normas como a Norma de Desempenho 5 da IFC, a data de corte do recenseamento define quem tem direito a compensação, e o registo datado apoia a documentação dessa data.
 
 O registo descreve construções e terreno. Não leva nomes, números de identificação nem fotografias de pessoas, e não toma o lugar do recenseamento, da consulta às comunidades e às autoridades tradicionais nem das decisões sobre compensação, que cabem ao titular e às autoridades.
 

@@ -34,7 +34,7 @@ faq:
   - q: Que larguras medem?
     a: A faixa de 30 metros de cada lado que a Lei de Terras associa às instalações e aos condutores de electricidade, água, telecomunicações, petróleo e gás (Lei n.º 9/04, artigo 27.º, n.º 7, alínea g)), e as larguras que a sua empresa indicar, como as do contrato de concessão, de uma servidão constituída ou de uma norma interna, por exemplo 60 e 100 metros. Nas concessões mineiras, medimos as zonas a partir dos polígonos que nos enviar. Um levantamento pode ter até seis distâncias.
   - q: É preciso um drone para começar?
-    a: Não. O rastreio por satélite começa a partir do ficheiro do traçado, sem voos e sem visita ao local. Em Angola, nenhuma aeronave sem piloto pode sobrevoar o território sem autorização especial da ANAC (Lei da Aviação Civil, artigo 16.º-A), por isso só propomos levantamentos com drone onde o detalhe o exige, sujeitos às autorizações e credenciações de segurança exigidas para cada operação.
+    a: Não. O rastreio por satélite começa a partir do ficheiro do traçado, sem voos e sem visita ao local. Em Angola, nenhuma aeronave sem piloto pode sobrevoar o território sem autorização especial da ANAC (Lei da Aviação Civil, artigo 16.º-A), por isso só propomos levantamentos com drone onde o detalhe o exija, sujeitos às autorizações e credenciações de segurança exigidas para cada operação.
   - q: Trabalham em todas as províncias?
     a: Não fazemos trabalho de campo nem voos de drone na província de Cabinda fora da cidade de Cabinda, nem nas províncias da Lunda Norte e da Lunda Sul, em linha com os avisos de viagem em vigor. Nas outras províncias, qualquer trabalho de campo começa por uma avaliação do risco de minas e engenhos por explodir, feita com o projecto.
   - q: O registo inclui nomes ou dados pessoais?
@@ -203,7 +203,7 @@ O mesmo aviso do Reino Unido lembra que há minas e engenhos por explodir em mui
 ::::col
 :::callout{tone="scope" title="Em resumo"}
 - Rastreio por satélite a partir do ficheiro do traçado, sem deslocações.
-- Drone e trabalho de campo só com as autorizações de cada operação e com um plano de segurança acordado com o projecto.
+- Drone e trabalho de campo só com as autorizações e credenciações de segurança exigidas para cada operação e com um plano de segurança acordado com o projecto.
 - Sem trabalho de campo nem voos em Cabinda fora da cidade, nem nas Lundas.
 :::
 ::::

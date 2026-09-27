@@ -120,11 +120,11 @@ Angola's [Gas Master Plan](https://c2a.portais.gov.ao/uploads/Plano_Director_do_
 ::::section{id="facilities" tone="alt" eyebrow="Terminals, refineries and stations" title="What grows around the fence line"}
 Around terminals, refineries, pump stations and tank farms, land changes quickly: neighbourhoods edging towards the fence, new access roads, trading at the gates. We map the structures inside the zones your engineers define around each facility, with their distance to the source, and compare them between dates.
 
-The operator's own installations are part of the asset and never count as encroachment. We never publish imagery of refineries, terminals or other oil installations: results go only to the contacts you name. We propose a drone flight near a facility only with the operator's consent and ANAC's authorisation.
+The operator's own installations are part of the asset and never count as encroachment. We never publish imagery of refineries, terminals or other oil installations: results go only to the contacts you name. We propose a drone flight near a facility only with the operator's consent, ANAC's authorisation and the other approvals and security clearances the job requires.
 ::::
 
 ::::section{id="onshore-blocks" eyebrow="Onshore blocks" title="A baseline before seismic and drilling"}
-In the onshore basins, such as the Kwanza and the Lower Congo, seismic lines and well sites cross farmland, villages and tracks. A dated register of structures and fields along the planned lines and around the pads shows who the article 29 notice will reach and stands as a reference for ground-damage compensation.
+In the onshore basins, such as the Kwanza and the Lower Congo, seismic lines and well sites cross farmland, villages and tracks. A dated register along the planned lines and around the pads shows where the structures and fields that the article 29 notice concerns lie, and stands as a reference for ground-damage compensation.
 
 After the operations, a re-survey of the same places shows what changed: tracks opened, ground cleared and vegetation recovering.
 ::::

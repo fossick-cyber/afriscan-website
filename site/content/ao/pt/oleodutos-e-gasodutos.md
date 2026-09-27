@@ -121,11 +121,11 @@ O [Plano Director do Gás](https://c2a.portais.gov.ao/uploads/Plano_Director_do_
 ::::section{id="instalacoes" tone="alt" eyebrow="Terminais, refinarias e estações" title="O que cresce à volta das vedações"}
 À volta de terminais, refinarias, estações de bombagem e parques de tanques, a terra muda depressa: bairros que se aproximam da vedação, novos acessos, comércio junto dos portões. Mapeamos as construções dentro das zonas que os seus engenheiros definirem à volta de cada instalação, com a distância à fonte, e comparamos entre datas.
 
-As instalações do próprio operador fazem parte do activo e nunca contam como ocupação. E não publicamos imagens de refinarias, terminais ou outras instalações petrolíferas: os resultados vão apenas para os contactos que a sua empresa indicar. Só propomos um voo de drone junto de uma instalação com o consentimento do operador e a autorização da ANAC.
+As instalações do próprio operador fazem parte do activo e nunca contam como ocupação. E não publicamos imagens de refinarias, terminais ou outras instalações petrolíferas: os resultados vão apenas para os contactos que a sua empresa indicar. Só propomos um voo de drone junto de uma instalação com o consentimento do operador, a autorização da ANAC e as demais autorizações e credenciações de segurança que a operação exigir.
 ::::
 
 ::::section{id="blocos-terrestres" eyebrow="Blocos em terra" title="Uma linha de base antes da sísmica e das sondagens"}
-Nas bacias terrestres, como a do Kwanza e a do Baixo Congo, a sísmica e as sondagens tocam terrenos agrícolas, aldeias e caminhos. Um registo datado das construções e das lavras ao longo das linhas sísmicas previstas e à volta das plataformas mostra a quem o aviso do artigo 29.º do Decreto n.º 120/08 vai chegar, e fica como referência para as indemnizações de danos no terreno.
+Nas bacias terrestres, como a do Kwanza e a do Baixo Congo, a sísmica e as sondagens tocam terrenos agrícolas, aldeias e caminhos. Um registo datado ao longo das linhas sísmicas previstas e à volta das plataformas mostra onde estão as construções e as lavras que o aviso do artigo 29.º do Decreto n.º 120/08 vai abranger, e fica como referência para as indemnizações de danos no terreno.
 
 Depois das operações, um novo levantamento mostra o que mudou nos mesmos locais: caminhos abertos, terreno desmatado e a recuperação da vegetação.
 ::::
