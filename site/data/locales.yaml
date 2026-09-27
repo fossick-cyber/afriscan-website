@@ -267,7 +267,7 @@ bw:
   label: "Botswana"
   short: "Botswana"
   sitemap: sitemap-bw.xml
-  status: draft
+  status: live
   region: Southern
 rw:
   content: rw

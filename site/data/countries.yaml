@@ -56,7 +56,7 @@ bw:
   name: Botswana
   region: Southern
   languages: [en]
-  status: launching
+  status: live
   timezones: [Africa/Gaborone]
 ao:
   name: Angola

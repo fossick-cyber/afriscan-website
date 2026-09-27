@@ -1,0 +1,99 @@
+# Botswana: the instruments behind /bw/drone-regulations.
+# Facts ONLY from regional/bw.FINAL.md (same content as bw.verified.md; every item re-read from the
+# primary document on 2026-09-27). Items the brief marks [unverified] or [text not retrieved] stay out
+# of this table: the Civil Aviation (Personnel Licensing) (General) Regulations 2022, the Aviation
+# Security Act and Regulations as applied to drones, the Data Protection Act 2024, the Land Survey Act
+# text, DWNP's own drone rules. The status of Bye-Law 07 of 2016 after SI 71 of 2024 is open; the page
+# says so. No fee, fine or penalty amount appears here or on the pages (owner rule 1): AIC A4/2026
+# (CAAB's charges) is deliberately not cited. Documents known only by month are given their year.
+country_name: Botswana
+last_reviewed: 2026-09-27
+regulator:
+  name: Civil Aviation Authority of Botswana (CAAB)
+  url: https://www.caab.co.bw/rpa-drone-registration/
+summary:
+  regulator: Civil Aviation Authority of Botswana (CAAB), with security vetting of owners, pilots and crew by the competent security agencies
+  instruments: Civil Aviation (Remotely Piloted Aircraft) Regulations, S.I. No. 71 of 2024; Civil Aviation Act, 2011 (Cap. 71:01); CAAB Bye-Law 07 of 2016 (status after 2024 to confirm with CAAB)
+instruments:
+  - id: si-71-2024
+    title: Civil Aviation (Remotely Piloted Aircraft) Regulations, 2024
+    identifier: S.I. No. 71 of 2024
+    date: 2024-06-14
+    url: https://www.caab.co.bw/wp-content/uploads/Civil-Aviation-Remotely-Piloted-Aircraft-Regulations-2024.pdf
+    last_checked: 2026-09-27
+    note: Ownership (reg. 5), registration (regs 7–13), the RPAS Operator Certificate (regs 37–45), authorisation of each operation (reg. 46), remote pilot licences (regs 47–63 and 105–115), operating rules (regs 19–35), security (regs 70–72 and 97–99), privacy (reg. 101), insurance (reg. 146), penalties (reg. 148).
+  - id: gazette-2024-06-14
+    title: Botswana Government Extraordinary Gazette of 14 June 2024 (Supplement C, S.I. Nos. 70 to 72 of 2024)
+    identifier: Vol. LXII, No. 82
+    date: 2024-06-14
+    url: https://www.caab.co.bw/wp-content/uploads/Extraordinary-Gazette-14th-June-2024.pdf
+    last_checked: 2026-09-27
+  - id: caa-2011
+    title: Civil Aviation Act, 2011
+    identifier: Act No. 11 of 2011 (Cap. 71:01)
+    date: 2011-09-09
+    url: https://www.caab.co.bw/wp-content/uploads/Act.pdf
+    last_checked: 2026-09-27
+    note: Aerial work, including "photography, surveying, observation and patrol" (s.2); the aerial work permit (s.50); directions not to fly (s.59).
+  - id: caa-amendment-2022
+    title: Civil Aviation (Amendment) Act, 2022
+    identifier: Act No. 21 of 2022
+    date: 2022-06-06
+    url: https://www.caab.co.bw/wp-content/uploads/Civil-Aviation-Amendment-Act-2022.pdf
+    last_checked: 2026-09-27
+    note: Added "the operation of remotely piloted aircraft" to the Minister's regulation-making powers (s.89).
+  - id: si-64-2012
+    title: Civil Aviation (Licensing of Air Services) Regulations, 2012
+    identifier: S.I. No. 64 of 2012
+    date: 2012-07-27
+    url: https://www.caab.co.bw/wp-content/uploads/Licensing-of-Air-Services-Regulations-2012.pdf
+    last_checked: 2026-09-27
+    note: Eligibility for an air service licence (reg. 33), the aerial work licence (reg. 35) and permits for each flight or series of flights (reg. 36).
+  - id: bye-law-07-2016
+    title: CAAB (Operation of Remotely Operated Aircraft) Bye-Law
+    identifier: CABY 07-2016
+    date: 2016-05-12
+    url: https://www.caab.co.bw/wp-content/uploads/Bye-Law-07-of-2016-Operation-of-Remotely-Piloted-Aircraft.pdf
+    last_checked: 2026-09-27
+    note: Restricted areas of operation (para. 5.9), including 200 m from any power line; special permission in writing (para. 5.10). Status after S.I. No. 71 of 2024 to confirm with CAAB.
+  - id: gc-pel-035
+    title: CAAB General Circular GC-PEL-035, Application for a Remotely Piloted Aircraft Certificate
+    identifier: GC-PEL-035, Rev 00
+    date: 2022-07-22
+    url: https://www.caab.co.bw/wp-content/uploads/GC-PEL-035_Application-for-a-Remotely-Piloted-Aircraft-Certificate.pdf
+    last_checked: 2026-09-27
+    note: Restates the bye-law's restricted areas (s.16), "effective immediately until 6th June 2023".
+  - id: caab-legal-requirements
+    title: CAAB, Remotely Piloted Aircraft in Botswana – Legal Requirements
+    identifier: CAAB information sheet (3 pp.)
+    date: 2023-08-17
+    url: https://www.caab.co.bw/wp-content/uploads/REMOTELY-PILOTED-AIRCRAFT-IN-BOTSWANA-Legal-Requirements.pdf
+    last_checked: 2026-09-27
+  - id: caab-rpa-page
+    title: CAAB, RPA – Drone Registration
+    identifier: CAAB web page
+    date: 2025-03-31
+    url: https://www.caab.co.bw/rpa-drone-registration/
+    last_checked: 2026-09-27
+    note: Registration through the Personnel Licensing Office at Sir Seretse Khama International Airport, security vetting, and no crossing of international boundaries.
+  - id: caab-checklist
+    title: CAAB checklist of requirements for the issue of a Remotely Piloted Aircraft (RPA) permit
+    identifier: CAAB-CL-PEL 61.02-19, Issue 1 Rev 3
+    date: 2018
+    url: https://www.caab.co.bw/wp-content/uploads/CAAB-CL-PEL-61.02.19-Remotely-Piloted-Aircraft-Certificate-Issue.pdf
+    last_checked: 2026-09-27
+    note: Security vetting form SV 1, fingerprints and the property owner's letter of authorisation for commercial operation.
+  - id: bocra-type-approval
+    title: Communications Regulatory Authority Act, 2012 (type approval, s.84)
+    identifier: Act of 2012, s.84
+    date: 2012
+    url: https://www.bocra.org.bw/type-approval
+    last_checked: 2026-09-27
+    note: Linked to BOCRA's type-approval page.
+  - id: ppra-codes
+    title: PPRA, list of contractor registration codes
+    identifier: CRE.WI.05 Rev 06
+    date: 2026-03-16
+    url: https://ipms.ppadb.co.bw/files/ipms/downloads/menu/1_List_of_Registration_Codes_PPRA.pdf
+    last_checked: 2026-09-27
+    note: Code 142-02 "Aerial Work" asks for a "relevant Air Operator Certificate from Civil Aviation Authority of Botswana".
