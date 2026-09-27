@@ -32,7 +32,7 @@ faq:
   - q: O registo serve para o recenseamento de um realojamento?
     a: Serve para o preparar e para o verificar, não para o substituir. Uma contagem datada das construções na faixa ajuda a dimensionar o recenseamento, a fixar a data de corte e a mostrar o que surgiu depois dela. O recenseamento, a consulta às famílias e as decisões sobre compensação cabem ao projecto e às autoridades.
   - q: Precisam de drone?
-    a: Não para começar. O rastreio por satélite cobre toda a extensão da linha sem voos. Onde um troço precisar de ortofotomapa, propomos um levantamento com drone, sujeito às autorizações exigidas para cada operação, a começar pela autorização especial da ANAC.
+    a: Não para começar. O rastreio por satélite cobre toda a extensão da linha sem voos. Onde um troço precisar de ortofotomapa, propomos um levantamento com drone, sujeito às autorizações e credenciações de segurança exigidas para cada operação, a começar pela autorização especial da ANAC.
 ---
 
 ::::section{id="problema" eyebrow="O problema" title="A via atrai construção dos dois lados" lead="Uma linha férrea em reabilitação ou um ramal novo traz trabalho, comércio e estações. Traz também casas, bancas e lavras junto da via, dentro da faixa que a obra e a operação precisam de manter livre."}
@@ -120,7 +120,7 @@ As imagens ópticas não vêem através das nuvens, e a época chuvosa atrasa-as
 - Comparação de traçados para ramais e variantes
 - Acompanhamento das obras e dos movimentos de terra entre levantamentos
 - Mapeamento das alterações depois de cheias
-- Levantamentos com drone de troços assinalados, sujeitos às autorizações exigidas para cada operação
+- Levantamentos com drone de troços assinalados, sujeitos às autorizações e credenciações de segurança exigidas para cada operação
 :::
 ::::
 ::::col

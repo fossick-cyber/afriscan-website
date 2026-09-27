@@ -34,7 +34,7 @@ faq:
   - q: Que larguras medem?
     a: A faixa de 30 metros de cada lado que a Lei de Terras associa às instalações e aos condutores de electricidade, água, telecomunicações, petróleo e gás (Lei n.º 9/04, artigo 27.º, n.º 7, alínea g)), e as larguras que a sua empresa indicar, como as do contrato de concessão, de uma servidão constituída ou de uma norma interna, por exemplo 60 e 100 metros. Nas concessões mineiras, medimos as zonas a partir dos polígonos que nos enviar. Um levantamento pode ter até seis distâncias.
   - q: É preciso um drone para começar?
-    a: Não. O rastreio por satélite começa a partir do ficheiro do traçado, sem voos e sem visita ao local. Em Angola, nenhuma aeronave sem piloto pode sobrevoar o território sem autorização especial da ANAC (Lei da Aviação Civil, artigo 16.º-A), por isso só propomos levantamentos com drone onde o detalhe o exige, sujeitos às autorizações exigidas para cada operação.
+    a: Não. O rastreio por satélite começa a partir do ficheiro do traçado, sem voos e sem visita ao local. Em Angola, nenhuma aeronave sem piloto pode sobrevoar o território sem autorização especial da ANAC (Lei da Aviação Civil, artigo 16.º-A), por isso só propomos levantamentos com drone onde o detalhe o exige, sujeitos às autorizações e credenciações de segurança exigidas para cada operação.
   - q: Trabalham em todas as províncias?
     a: Não fazemos trabalho de campo nem voos de drone na província de Cabinda fora da cidade de Cabinda, nem nas províncias da Lunda Norte e da Lunda Sul, em linha com os avisos de viagem em vigor. Nas outras províncias, qualquer trabalho de campo começa por uma avaliação do risco de minas e engenhos por explodir, feita com o projecto.
   - q: O registo inclui nomes ou dados pessoais?
@@ -101,7 +101,7 @@ Envie o traçado ou o limite em KML, KMZ, GeoJSON, Shapefile, GPX ou GeoPackage,
 Localizamos as construções e as alterações ao longo de todo o traçado ou terreno a partir de imagens de satélite datadas, de bases de dados abertas de edifícios ou das imagens que a sua empresa já tem. Nesta fase nenhum drone voa e ninguém vai ao terreno.
 :::
 :::step{title="Detalhe onde for preciso"}
-Onde um troço precisa de mais detalhe do que o satélite mostra, propomos um levantamento com drone desse troço, com ortofotomapa e modelo de elevação, sujeito às autorizações exigidas para cada operação.
+Onde um troço precisa de mais detalhe do que o satélite mostra, propomos um levantamento com drone desse troço, com ortofotomapa e modelo de elevação, sujeito às autorizações e credenciações de segurança exigidas para cada operação.
 :::
 :::step{title="Revisão e entrega"}
 Uma pessoa revê cada resultado antes da entrega. Recebe um relatório PDF em português ou em inglês, camadas SIG e um mapa interactivo em ficheiro. Os levantamentos seguintes seguem a periodicidade acordada consigo, e cada um diz o que mudou.
@@ -176,7 +176,7 @@ Os registos datados apoiam o diálogo com as comunidades e as autoridades tradic
 ::::col
 O rastreio por satélite começa a partir do ficheiro do traçado e de imagens datadas, de bases de dados abertas de edifícios ou das imagens que a sua empresa já tem. Nenhuma aeronave voa e ninguém precisa de ir ao terreno, por mais longa que seja a faixa. A AfriScan é o serviço de monitorização de terras e corredores da Afridrone; é a Afridrone que faz os trabalhos com drone.
 
-Quando a imagem de satélite não basta, propomos levantamentos com drone dos troços assinalados, sujeitos às autorizações exigidas para cada operação. Em Angola, «nenhuma aeronave capaz de navegar sem piloto pode sobrevoar o território angolano sem autorização especial da Autoridade Nacional da Aviação Civil» (Lei da Aviação Civil, artigo 16.º-A), e a aerofotografia, a aerofotogrametria e a aerotopografia são serviços aéreos especializados, cujos requisitos a ANAC fixa (artigos 54.º e 55.º).
+Quando a imagem de satélite não basta, propomos levantamentos com drone dos troços assinalados, sujeitos às autorizações e credenciações de segurança exigidas para cada operação. Em Angola, «nenhuma aeronave capaz de navegar sem piloto pode sobrevoar o território angolano sem autorização especial da Autoridade Nacional da Aviação Civil» (Lei da Aviação Civil, artigo 16.º-A), e a aerofotografia, a aerofotogrametria e a aerotopografia são serviços aéreos especializados, cujos requisitos a ANAC fixa (artigos 54.º e 55.º).
 
 A Afridrone está a trabalhar para obter as autorizações de operador que cada país exige. Cada proposta com drone indica quem voa, com que autorizações e com que prazo.
 ::::

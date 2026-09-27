@@ -32,9 +32,9 @@ faq:
   - q: Podem ajudar no traçado de uma linha nova?
     a: Sim. Contamos as construções a menos de cada largura ao longo de traçados alternativos, para mostrar qual toca menos casas e lavras, e fazemos um registo datado antes do recenseamento e da negociação das servidões.
   - q: Com que frequência se repete o levantamento?
-    a: Com a periodicidade acordada consigo. Os satélites e os drones captam imagens em datas concretas, e as nuvens da época chuvosa atrasam as imagens ópticas. Depois de cada levantamento recebe um aviso do que mudou e onde.
+    a: Com a periodicidade acordada consigo. Os satélites e os drones captam imagens em datas concretas, e as nuvens da época chuvosa atrasam as imagens ópticas. Depois de cada levantamento recebe um relatório do que mudou e onde.
   - q: Os voos de drone junto das linhas precisam de autorização?
-    a: Sim. Todos os voos precisam da autorização especial da ANAC (Lei da Aviação Civil, artigo 16.º-A), e as distâncias de segurança às linhas em tensão acordam-se com o operador da linha antes do voo. Os levantamentos com drone estão sujeitos às autorizações exigidas para cada operação.
+    a: Sim. Todos os voos precisam da autorização especial da ANAC (Lei da Aviação Civil, artigo 16.º-A), e as distâncias de segurança às linhas em tensão acordam-se com o operador da linha antes do voo. Os levantamentos com drone estão sujeitos às autorizações e credenciações de segurança exigidas para cada operação.
 ---
 
 ::::section{id="problema" eyebrow="O problema" title="A ocupação das zonas de servidão começa com uma casa" lead="Uma linha de transporte atravessa centenas de quilómetros de lavras, aldeias e periferias de cidades. Uma construção debaixo dos condutores é um risco para quem lá vive, uma dificuldade para a manutenção e, mais tarde, um processo de indemnização."}
@@ -61,7 +61,7 @@ A vegetação que cresce na faixa e as áreas queimadas junto da linha, entre da
 - **A faixa da Lei de Terras ([Lei n.º 9/04, artigo 27.º, n.º 7, alínea g)](https://faolex.fao.org/docs/pdf/ang49570.pdf)):** as reservas parciais compreendem os terrenos ocupados por instalações e condutores de electricidade, com uma faixa confinante de 30 metros de cada lado. Nelas são permitidas as formas de ocupação e uso que não colidam com os fins do diploma constitutivo (n.º 6); a constituição das reservas é da competência do Governo (n.º 2).
 - **A Lei Geral de Electricidade ([Lei n.º 14-A/96, alterada e republicada pela Lei n.º 27/15](https://www.irsea.gov.ao/wp-content/uploads/2019/12/Lei-n%C2%BA-27-15-Altera-a-Lei-Geral-de-Electricidade.pdf)):** a concessionária pode «constituir servidões e requerer a expropriação de bens imóveis ou direitos a eles adstritos» (artigo 22.º, alínea b)) e deve «pagar as indemnizações devidas pela constituição de servidões e expropriação de direitos» (artigo 23.º, alínea d)).
 - **Concessões abertas a privados ([Lei n.º 6/25, de 23 de Julho](https://irsea.gov.ao/wp-content/uploads/2025/08/Lei-no-6-25-de-23-de-Julho-Altera-a-Lei-no-14-A-de-1996-de-31-de-Maio-Lei-Geral-de-Electricidade-1.pdf)):** o transporte na Rede Nacional de Transporte e as interligações são exercidos «em regime de concessão de serviço público» e podem ser concedidos a pessoas colectivas públicas ou privadas (novo artigo 9.º, n.º 5).
-- **O regulador:** o IRSEA publica a [legislação do sector](https://irsea.gov.ao/legislacao/).
+- **O regulador:** o IRSEA publica a [legislação do sector](https://irsea.gov.ao/legislacao).
 ::::
 ::::col
 :::figure{src="diagrams/ao-strips" alt="Esquema em planta do eixo de uma linha com uma faixa vermelha de 30 m, uma faixa âmbar até 60 m e uma linha tracejada a 100 m de cada lado; os quadrados representam construções, vermelhos até 30 m, âmbar entre 30 e 60 m e verde-azulados além de 60 m" caption="A faixa de 30 m e duas larguras acrescentadas" credit="Esquema desenhado pela AfriScan; as construções são ilustrativas." size="half"}
@@ -90,7 +90,7 @@ Saber o que existe em cada faixa, e desde quando, poupa tempo na constituição 
 ::::
 
 ::::section{id="linhas-novas" tone="alt" eyebrow="Linhas novas e interligações" title="Antes de fixar o traçado e de negociar as servidões"}
-As novas linhas de alta tensão e as interligações com os países vizinhos passam pelo procedimento de avaliação de impacte ambiental do [Decreto Presidencial n.º 117/20](https://anrm.gov.ao/wp-content/uploads/2025/08/DP-117-20-de-22-de-Abril-Novo-Regulamento-Geral-de-Avaliacao-de-Impacte-Ambiental-e-do-Procedimento-de-Licenciamento-Ambiental.pdf), com o EPDA, o EIAS e a consulta pública. Em cada fase, a equipa do projecto precisa de saber quantas construções e lavras cada traçado toca.
+Quando uma linha nova de alta tensão ou uma interligação com um país vizinho passa pelo procedimento de avaliação de impacte ambiental do [Decreto Presidencial n.º 117/20](https://anrm.gov.ao/wp-content/uploads/2025/08/DP-117-20-de-22-de-Abril-Novo-Regulamento-Geral-de-Avaliacao-de-Impacte-Ambiental-e-do-Procedimento-de-Licenciamento-Ambiental.pdf), com o EPDA, o EIAS e a consulta pública, a equipa do projecto precisa de saber, em cada fase, quantas construções e lavras cada traçado toca.
 
 :::steps
 :::step{title="Comparar traçados" icon="route"}
@@ -108,7 +108,7 @@ Levantamentos periódicos durante a construção mostram os acessos abertos, os 
 ::::
 
 ::::section{id="drones" eyebrow="Drones junto das linhas" title="Drone só com a autorização da ANAC e o acordo do operador da linha"}
-Os levantamentos com drone estão sujeitos às autorizações exigidas para cada operação. Em Angola, todos os voos precisam da autorização especial da ANAC (Lei da Aviação Civil, artigo 16.º-A), e as distâncias de segurança às linhas em tensão acordam-se com o operador da linha antes do voo.
+Os levantamentos com drone estão sujeitos às autorizações e credenciações de segurança exigidas para cada operação. Em Angola, todos os voos precisam da autorização especial da ANAC (Lei da Aviação Civil, artigo 16.º-A), e as distâncias de segurança às linhas em tensão acordam-se com o operador da linha antes do voo.
 
 A inspecção de componentes com drone, como condutores, isoladores e estruturas, é outro serviço. O nosso registo trata da ocupação da faixa e das alterações no terreno à volta da linha, que se vêem do ar sem subir às torres. [Lei de drones em Angola](/ao/pt/lei-de-drones)
 ::::
@@ -123,7 +123,7 @@ A inspecção de componentes com drone, como condutores, isoladores e estruturas
 - Alterações entre levantamentos datados, com vistas de antes e depois
 - Vegetação e áreas queimadas na faixa, entre datas
 - Comparação de traçados e registos antes do recenseamento
-- Levantamentos com drone de troços assinalados, sujeitos às autorizações exigidas para cada operação
+- Levantamentos com drone de troços assinalados, sujeitos às autorizações e credenciações de segurança exigidas para cada operação
 :::
 ::::
 ::::col

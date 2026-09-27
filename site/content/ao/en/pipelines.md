@@ -36,7 +36,7 @@ faq:
   - q: Do the operator's own facilities count as encroachment?
     a: No. Stations, terminals, refineries and the operator's other installations are part of the asset and are left out of the encroachment register.
   - q: Do you need access to the route or to communities?
-    a: Not to start. Satellite screening needs no site access. Drone checks of flagged stretches are subject to the authorisations each operation requires, and ground verification stays with your teams. We do no field or drone work in Cabinda outside the city, or in the Lundas.
+    a: Not to start. Satellite screening needs no site access. Drone checks of flagged stretches are subject to the approvals and security clearances each job requires, and ground verification stays with your teams. We do no field or drone work in Cabinda outside the city, or in the Lundas.
 ---
 
 ::::section{id="problem" eyebrow="The problem" title="What changes along a pipeline between patrols" lead="Most of Angola's oil and gas is produced offshore, but the pipelines that come ashore, the terminals, the refineries and the onshore blocks sit on land where people live, farm and build."}
@@ -120,7 +120,7 @@ Angola's [Gas Master Plan](https://c2a.portais.gov.ao/uploads/Plano_Director_do_
 ::::section{id="facilities" tone="alt" eyebrow="Terminals, refineries and stations" title="What grows around the fence line"}
 Around terminals, refineries, pump stations and tank farms, land changes quickly: neighbourhoods edging towards the fence, new access roads, trading at the gates. We map the structures inside the zones your engineers define around each facility, with their distance to the source, and compare them between dates.
 
-The operator's own installations are part of the asset and never count as encroachment. We never publish imagery of refineries, terminals or other oil installations: results go only to the contacts you name. Any drone flight near a facility needs the operator's consent and ANAC's authorisation.
+The operator's own installations are part of the asset and never count as encroachment. We never publish imagery of refineries, terminals or other oil installations: results go only to the contacts you name. We propose a drone flight near a facility only with the operator's consent and ANAC's authorisation.
 ::::
 
 ::::section{id="onshore-blocks" eyebrow="Onshore blocks" title="A baseline before seismic and drilling"}
@@ -143,7 +143,7 @@ Decree 271/20 sets exclusivity, preference and competition regimes for suppliers
 - Change between dated surveys, with before-and-after views
 - Route comparison before servitude negotiations start
 - Dated records for the Decree 120/08 assessments and for compensation
-- Drone surveys of flagged stretches, subject to the authorisations each operation requires
+- Drone surveys of flagged stretches, subject to the approvals and security clearances each job requires
 :::
 ::::
 ::::col

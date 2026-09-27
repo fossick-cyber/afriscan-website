@@ -35,7 +35,7 @@ faq:
   - q: Are flights beyond visual line of sight, at night or over people allowed?
     a: ANAC publishes no drone-specific technical rules that deal with them. Because every flight needs the special authorisation in article 16.º-A, any such operation happens only within what ANAC authorises for that case.
   - q: Does a satellite-only survey need these authorisations?
-    a: The Civil Aviation Law's authorisations concern aircraft, and no aircraft flies in satellite work. That is a reading of the text, not an opinion. If the deliverables are meant as official cartography or geographic information, ask IGCA whether an alvará or homologation is needed (Decreto Presidencial n.º 115/21, article 6.º).
+    a: The Civil Aviation Law's authorisations concern aircraft, and no aircraft flies in satellite work. That is a reading of the text, not legal advice. If the deliverables are meant as official cartography or geographic information, ask IGCA whether an alvará or homologation is needed (Decreto Presidencial n.º 115/21, article 6.º).
   - q: Can we publish the survey imagery?
     a: It depends on the site and the contract. We never publish imagery of military sites, refineries, terminals or diamond plants, and each survey contract should say who may reproduce the orthophotos and on what terms. Where the imagery shows identifiable people, Lei n.º 22/11 on personal data applies.
 ---
@@ -121,7 +121,7 @@ The restricted zone reaches up to 1 km around mining areas and is signposted "Zo
 
 - **Diamond concessions:** no flight over or near a diamond concession without the right holder's written consent and ANAC's authorisation.
 - **Power lines:** safety distances from live lines are agreed with the line operator before the flight.
-- **Refineries, terminals and oil installations:** the flight needs the installation operator's consent as well as ANAC's authorisation.
+- **Refineries, terminals and oil installations:** plan on needing the installation operator's consent as well as ANAC's authorisation.
 - **Scope:** we do no field or drone work in Cabinda province outside Cabinda city, or in Lunda Norte and Lunda Sul provinces, in line with current travel advice ([FCDO](https://www.gov.uk/foreign-travel-advice/angola), [Travel Canada](https://travel.gc.ca/destinations/angola)).
 ::::
 
@@ -168,12 +168,12 @@ The published texts we reviewed do not say whether a Defence or security clearan
 11. In **petroleum**, whether the service is on ANPG's exclusivity list and, if it is, a supplier that is an Angolan commercial company.
 ::::
 
-::::section{id="how-we-work" eyebrow="9. How we work" title="Satellite by default; drones only with the authorisations each operation requires"}
+::::section{id="how-we-work" eyebrow="9. How we work" title="Satellite by default; drones only with the approvals and security clearances each job requires"}
 :::::columns{split="2-1"}
 ::::col
 By default we work from satellite imagery, open building datasets and the imagery your company already holds. No aircraft flies, so the authorisations on this page do not come into that work.
 
-Drone surveys are carried out only with the authorisations each operation requires. Afridrone is working towards the operator approvals each country requires; every drone proposal names who will fly, with which ANAC authorisations and on what timeline, so your team can check them before any flight.
+Drone surveys are carried out only with the approvals and security clearances each job requires. Afridrone is working towards the operator approvals each country requires; every drone proposal names who will fly, with which ANAC authorisations and on what timeline, so your team can check them before any flight.
 ::::
 ::::col
 :::callout{tone="scope" title="What this page is not"}

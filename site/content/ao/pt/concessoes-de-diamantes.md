@@ -36,7 +36,7 @@ faq:
   - q: O registo serve para um programa de reagrupamento residencial?
     a: Serve para o preparar e para o acompanhar, não para o substituir. Uma contagem datada das construções nas zonas mostra a dimensão do trabalho e o que surgiu depois da data de referência. O recenseamento, a consulta às comunidades e o programa, que o Governador Provincial aprova com os representantes das comunidades (Código Mineiro, artigo 207.º), cabem ao titular e às autoridades.
   - q: Podem voar um drone sobre a concessão?
-    a: Só com o consentimento escrito do titular do direito mineiro e a autorização especial da ANAC (Lei da Aviação Civil, artigo 16.º-A). Entrar numa zona restrita exige ainda a comunicação formal prévia ao titular e às autoridades policiais locais (Código Mineiro, artigo 201.º, n.º 2). Os levantamentos com drone estão sujeitos às autorizações exigidas para cada operação.
+    a: Só com o consentimento escrito do titular do direito mineiro e a autorização especial da ANAC (Lei da Aviação Civil, artigo 16.º-A). Entrar numa zona restrita exige ainda a comunicação formal prévia ao titular e às autoridades policiais locais (Código Mineiro, artigo 201.º, n.º 2). Os levantamentos com drone estão sujeitos às autorizações e credenciações de segurança exigidas para cada operação.
   - q: Publicam imagens da concessão?
     a: Não. Os resultados vão apenas para os contactos que a sua empresa indicar, e nunca publicamos imagens de unidades de tratamento de diamantes, nem de qualquer outra instalação mineira, sem autorização escrita.
 ---
@@ -84,7 +84,7 @@ Um inventário numa data conhecida das escavações, do terreno desmatado, dos c
 :::step{title="Os levantamentos seguintes" icon="history"}
 Com a periodicidade acordada consigo, o mesmo inventário é repetido e comparado com a referência. As imagens ópticas não vêem através das nuvens; o radar mostra alterações maiores, como desmatações e movimentos de terra, mesmo com as nuvens da época chuvosa.
 :::
-:::step{title="O aviso de alterações" icon="file-check"}
+:::step{title="O relatório de alterações" icon="file-check"}
 Depois de cada levantamento, a sua equipa recebe o que mudou e onde, com vistas de antes e depois e a data de cada imagem, quando a fonte a regista, em PDF e em camadas SIG.
 :::
 :::

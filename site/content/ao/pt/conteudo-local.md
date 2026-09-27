@@ -32,7 +32,7 @@ faq:
   - q: A AfriScan está registada nos portais de fornecedores?
     a: Esta página não afirma registos. A proposta indica, para o seu processo, que registos são exigidos e em que ponto está cada um. Envie os formulários de registo ou de pré-qualificação com o pedido.
   - q: Que autorizações precisa um trabalho com drone?
-    a: Em Angola, a autorização especial da ANAC para os voos (Lei da Aviação Civil, artigo 16.º-A), o licenciamento do trabalho aéreo e o registo das aeronaves, entre outras. Os levantamentos com drone estão sujeitos às autorizações exigidas para cada operação, e cada proposta com drone indica-as. Veja a [lei de drones em Angola](/ao/pt/lei-de-drones).
+    a: Em Angola, a autorização especial da ANAC para os voos (Lei da Aviação Civil, artigo 16.º-A), o licenciamento do trabalho aéreo e o registo das aeronaves, entre outras. Os levantamentos com drone estão sujeitos às autorizações e credenciações de segurança exigidas para cada operação, e cada proposta com drone indica-as. Veja a [lei de drones em Angola](/ao/pt/lei-de-drones).
   - q: Publicam os nossos dados?
     a: Não. Nunca publicamos o traçado, as imagens ou os resultados de um cliente sem autorização escrita.
 ---
@@ -114,7 +114,7 @@ A Circular n.º 02/APD/2024 manda notificar a APD de uma violação de dados pes
 ::::
 
 ::::section{id="drones" tone="alt" eyebrow="Autorizações de drone" title="O satélite primeiro; o drone com as autorizações de cada operação"}
-O rastreio por satélite não envolve voos. Os levantamentos com drone estão sujeitos às autorizações exigidas para cada operação, a começar pela autorização especial da ANAC (Lei da Aviação Civil, artigo 16.º-A). A Afridrone está a trabalhar para obter as autorizações de operador que cada país exige, e cada proposta com drone indica quem voa, com que autorizações e com que prazo. A autorização do INACOM para importar material de telecomunicações é dada a empresas registadas em Angola, com NIF angolano.
+O rastreio por satélite não envolve voos. Os levantamentos com drone estão sujeitos às autorizações e credenciações de segurança exigidas para cada operação, a começar pela autorização especial da ANAC (Lei da Aviação Civil, artigo 16.º-A). A Afridrone está a trabalhar para obter as autorizações de operador que cada país exige, e cada proposta com drone indica quem voa, com que autorizações e com que prazo. A autorização do INACOM para importar material de telecomunicações é dada a empresas registadas em Angola, com NIF angolano.
 
 [Lei de drones em Angola: o guia](/ao/pt/lei-de-drones)
 ::::

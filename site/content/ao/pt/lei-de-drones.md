@@ -35,7 +35,7 @@ faq:
   - q: São permitidos voos além da linha de vista, à noite ou sobre pessoas?
     a: A ANAC não publica regras técnicas para drones que tratem estas operações. Como todos os voos precisam da autorização especial do artigo 16.º-A, qualquer operação deste tipo só se faz dentro do que a ANAC autorizar para esse caso.
   - q: Um levantamento só por satélite precisa destas autorizações?
-    a: As autorizações da Lei da Aviação Civil dizem respeito a aeronaves, e no trabalho por satélite nenhuma aeronave voa. É uma leitura do texto, não um parecer. Se os produtos entregues se destinarem a cartografia ou a informação geográfica oficial, confirme com o IGCA se é necessário alvará ou homologação (Decreto Presidencial n.º 115/21, artigo 6.º).
+    a: As autorizações da Lei da Aviação Civil dizem respeito a aeronaves, e no trabalho por satélite nenhuma aeronave voa. É uma leitura do texto, não um parecer jurídico. Se os produtos entregues se destinarem a cartografia ou a informação geográfica oficial, confirme com o IGCA se é necessário alvará ou homologação (Decreto Presidencial n.º 115/21, artigo 6.º).
   - q: Podemos publicar as imagens do levantamento?
     a: Depende do local e do contrato. Não publicamos imagens de instalações militares, refinarias, terminais nem unidades de tratamento de diamantes, e o contrato do levantamento deve dizer quem pode reproduzir os ortofotomapas e em que condições. Se as imagens mostrarem pessoas identificáveis, aplica-se a Lei n.º 22/11 sobre dados pessoais.
 ---
@@ -121,7 +121,7 @@ A zona restrita vai até 1 km à volta das áreas mineiras e está sinalizada «
 
 - **Concessões de diamantes:** nenhum voo sobre uma concessão de diamantes, ou junto dela, sem o consentimento escrito do titular e a autorização da ANAC.
 - **Linhas eléctricas:** as distâncias de segurança às linhas em tensão acordam-se com o operador da linha, antes do voo.
-- **Refinarias, terminais e instalações petrolíferas:** o voo precisa do consentimento do operador da instalação, além da autorização da ANAC.
+- **Refinarias, terminais e instalações petrolíferas:** conte com a necessidade do consentimento do operador da instalação, além da autorização da ANAC.
 - **Âmbito:** não fazemos trabalho de campo nem voos de drone na província de Cabinda fora da cidade de Cabinda, nem nas províncias da Lunda Norte e da Lunda Sul, em linha com os avisos de viagem em vigor ([FCDO](https://www.gov.uk/foreign-travel-advice/angola), [Travel Canada](https://travel.gc.ca/destinations/angola)).
 ::::
 
@@ -173,7 +173,7 @@ Se é necessária, além da autorização especial da ANAC, uma autorização da
 ::::col
 Por defeito, trabalhamos com imagens de satélite, bases de dados abertas de edifícios e as imagens que a sua empresa já tem. Nenhuma aeronave voa, por isso as autorizações desta página não se aplicam a esse trabalho.
 
-Os levantamentos com drone são feitos apenas com as autorizações exigidas para cada operação. A Afridrone está a trabalhar para obter as autorizações de operador que cada país exige; cada proposta com drone indica quem voa, com que autorizações da ANAC e com que prazo, para que a sua equipa as possa verificar antes de qualquer voo.
+Os levantamentos com drone são feitos apenas com as autorizações e credenciações de segurança exigidas para cada operação. A Afridrone está a trabalhar para obter as autorizações de operador que cada país exige; cada proposta com drone indica quem voa, com que autorizações da ANAC e com que prazo, para que a sua equipa as possa verificar antes de qualquer voo.
 ::::
 ::::col
 :::callout{tone="scope" title="O que esta página não é"}

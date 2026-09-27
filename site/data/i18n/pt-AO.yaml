@@ -82,7 +82,7 @@ footer:
   afridrone: Afridrone, serviços de drone
   contact: Pedir proposta
   rights: Todos os direitos reservados.
-  drones: Os levantamentos com drone estão sujeitos às autorizações exigidas para cada operação.
+  drones: Os levantamentos com drone estão sujeitos às autorizações e credenciações de segurança exigidas para cada operação.
 
 law:
   as_of: "Situação a {date}"
@@ -93,7 +93,7 @@ law:
   date: Data
   checked: Verificado em
   last_reviewed: Última revisão
-  drone_note: Os levantamentos com drone estão sujeitos às autorizações exigidas para cada operação. O trabalho feito a partir de imagens de satélite não envolve voos.
+  drone_note: Os levantamentos com drone estão sujeitos às autorizações e credenciações de segurança exigidas para cada operação. O trabalho feito a partir de imagens de satélite não envolve voos.
   compare_title: Regras para drones, em resumo
   regulator: Entidade reguladora
   key_instruments: Principais diplomas

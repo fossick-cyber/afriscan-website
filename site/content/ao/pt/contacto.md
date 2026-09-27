@@ -17,7 +17,7 @@ faq:
   - q: Ainda não temos o ficheiro do traçado. Podemos pedir na mesma?
     a: Sim. Indique a província, o município e os pontos de início e de fim, ou envie as coordenadas das torres, das válvulas ou dos marcos quilométricos, e desenhamos o traçado consigo. Enviamos o desenho para a sua confirmação antes de qualquer medição.
   - q: E se o trabalho precisar de drone?
-    a: A proposta indica as autorizações de que o voo precisa em Angola, a começar pela autorização especial da ANAC (Lei da Aviação Civil, artigo 16.º-A), e o modo como se encaixam no calendário. Os levantamentos com drone estão sujeitos às autorizações exigidas para cada operação. Veja a [lei de drones em Angola](/ao/pt/lei-de-drones).
+    a: A proposta indica as autorizações de que o voo precisa em Angola, a começar pela autorização especial da ANAC (Lei da Aviação Civil, artigo 16.º-A), e o modo como se encaixam no calendário. Os levantamentos com drone estão sujeitos às autorizações e credenciações de segurança exigidas para cada operação. Veja a [lei de drones em Angola](/ao/pt/lei-de-drones).
   - q: Podem responder no formato do nosso concurso?
     a: Sim. Envie o caderno de encargos, os termos de referência ou o formulário de registo de fornecedor, e respondemos no formato que o processo pede. Se o serviço puder cair num regime de conteúdo local, veja [conteúdo local e compras](/ao/pt/conteudo-local).
   - q: O que acontece aos ficheiros que enviamos?

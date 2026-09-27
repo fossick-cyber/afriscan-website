@@ -34,7 +34,7 @@ faq:
   - q: As instalações do operador contam como ocupação?
     a: Não. As estações, os terminais, as refinarias e as outras instalações do próprio operador fazem parte do activo e ficam fora do registo de ocupações.
   - q: Precisam de acesso ao traçado ou às comunidades?
-    a: Não para começar. O rastreio por satélite não exige acesso ao local. As verificações com drone dos troços assinalados estão sujeitas às autorizações exigidas para cada operação, e a verificação no terreno fica com as suas equipas. Não fazemos trabalho de campo nem voos em Cabinda fora da cidade, nem nas Lundas.
+    a: Não para começar. O rastreio por satélite não exige acesso ao local. As verificações com drone dos troços assinalados estão sujeitas às autorizações e credenciações de segurança exigidas para cada operação, e a verificação no terreno fica com as suas equipas. Não fazemos trabalho de campo nem voos em Cabinda fora da cidade, nem nas Lundas.
   - q: Identificam as pessoas que vivem nas construções?
     a: Não. Mapeamos construções, não pessoas, e não decidimos se uma construção está autorizada; isso cabe à sua empresa e às autoridades. Os registos apoiam o diálogo com as comunidades e os processos de indemnização.
 ---
@@ -121,7 +121,7 @@ O [Plano Director do Gás](https://c2a.portais.gov.ao/uploads/Plano_Director_do_
 ::::section{id="instalacoes" tone="alt" eyebrow="Terminais, refinarias e estações" title="O que cresce à volta das vedações"}
 À volta de terminais, refinarias, estações de bombagem e parques de tanques, a terra muda depressa: bairros que se aproximam da vedação, novos acessos, comércio junto dos portões. Mapeamos as construções dentro das zonas que os seus engenheiros definirem à volta de cada instalação, com a distância à fonte, e comparamos entre datas.
 
-As instalações do próprio operador fazem parte do activo e nunca contam como ocupação. E não publicamos imagens de refinarias, terminais ou outras instalações petrolíferas: os resultados vão apenas para os contactos que a sua empresa indicar. Qualquer voo de drone junto de uma instalação precisa do consentimento do operador e da autorização da ANAC.
+As instalações do próprio operador fazem parte do activo e nunca contam como ocupação. E não publicamos imagens de refinarias, terminais ou outras instalações petrolíferas: os resultados vão apenas para os contactos que a sua empresa indicar. Só propomos um voo de drone junto de uma instalação com o consentimento do operador e a autorização da ANAC.
 ::::
 
 ::::section{id="blocos-terrestres" eyebrow="Blocos em terra" title="Uma linha de base antes da sísmica e das sondagens"}
@@ -155,7 +155,7 @@ No sector petrolífero, o Decreto Presidencial n.º 271/20 cria regimes de exclu
 - Alterações entre levantamentos datados, com vistas de antes e depois
 - Comparação de traçados alternativos antes da negociação de servidões
 - Registos datados para as avaliações do Decreto n.º 120/08 e para as indemnizações
-- Levantamentos com drone dos troços assinalados, sujeitos às autorizações exigidas para cada operação
+- Levantamentos com drone dos troços assinalados, sujeitos às autorizações e credenciações de segurança exigidas para cada operação
 :::
 ::::
 ::::col

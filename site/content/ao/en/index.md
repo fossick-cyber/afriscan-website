@@ -201,7 +201,7 @@ The same UK advice notes mines and unexploded weapons in many parts of the count
 ::::col
 :::callout{tone="scope" title="In short"}
 - Satellite screening from the route file, with no travel.
-- Drone and field work only with the authorisations each operation requires and a safety plan agreed with the project.
+- Drone and field work only with the approvals and security clearances each job requires and a safety plan agreed with the project.
 - No field or drone work in Cabinda outside the city, or in the Lundas.
 :::
 ::::

@@ -32,7 +32,7 @@ faq:
   - q: Do you inspect the track, bridges or embankments?
     a: No. We do no engineering inspection. We map what changes at the surface, such as structures, cleared ground, tracks, excavations and areas reached by water after a flood, so field teams know where to start.
   - q: Do you need drones?
-    a: Not to start. Satellite screening covers the whole line with no flights. Where a stretch needs an orthophoto, we propose a drone survey, subject to the authorisations each operation requires, starting with ANAC's special authorisation.
+    a: Not to start. Satellite screening covers the whole line with no flights. Where a stretch needs an orthophoto, we propose a drone survey, subject to the approvals and security clearances each job requires, starting with ANAC's special authorisation.
 ---
 
 ::::section{id="problem" eyebrow="The problem" title="A railway draws building to both sides" lead="A line under rehabilitation or a new branch brings work, trade and stations. It also brings houses, stalls and fields close to the track, inside the strip that works and operations need to keep clear."}
@@ -120,7 +120,7 @@ Optical imagery cannot see through cloud, and the rainy season delays it. Radar 
 - Route comparison for branches and realignments
 - Tracking of works and earthworks between surveys
 - Change mapping after floods
-- Drone surveys of flagged stretches, subject to the authorisations each operation requires
+- Drone surveys of flagged stretches, subject to the approvals and security clearances each job requires
 :::
 ::::
 ::::col
