@@ -10,9 +10,9 @@ buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: See sample outputs, key: results}
 hero:
-  image: samples/t9-route-hero
-  alt: Satellite view of bush, farmland and a gas field in Inhambane, Mozambique, with the T-9 pipeline route drawn in orange inside its 100 m band
-  credit: "T-9 replacement pipeline route, Inhambane, Mozambique, with its 100 m band, on a Copernicus Sentinel-2 scene of 2 August 2026. Contains modified Copernicus Sentinel data 2026."
+  image: samples/sample-pipeline-route-hero
+  alt: Satellite view of bush and farmland in Mozambique, with the route of a high-pressure gas pipeline drawn in orange inside its 100 m band
+  credit: "Route of a high-pressure gas pipeline in Mozambique, with its 100 m band, on a Copernicus Sentinel-2 scene of 2 August 2026. Contains modified Copernicus Sentinel data 2026."
   chips:
     - {title: "50 m · 100 m", text: "Structures listed by distance band"}
     - {title: "Every 500 m", text: "An encroachment-density rating"}
@@ -83,7 +83,7 @@ A person checks every result before it reaches you. You receive a PDF report in 
 ::::section{id="deliverables" eyebrow="What you receive" title="A register your land and GIS teams can use straight away"}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/t9-register-km5-6" alt="Strip view of a 1.5 km stretch of the T-9 pipeline route with 50 m and 100 m bands on both sides of the line and twenty reviewer marks, R20 to R39, placed by chainage and distance; below, three 500 m segments rated medium, high and high" caption="Sample register view: T-9 replacement pipeline, km 5.0 to 6.5" badge="Reviewed · manual marks" size="half" credit="Drawn by AfriScan from the sample register; no imagery."}
+:::figure{src="samples/sample-pipeline-register-km5-6" alt="Strip view of a 1.5 km stretch of a gas pipeline route with 50 m and 100 m bands on both sides of the line and twenty reviewer marks, R20 to R39, placed by chainage and distance; below, three 500 m segments rated medium, high and high" caption="Sample register view: a high-pressure gas pipeline in Mozambique, km 5.0 to 6.5" badge="Reviewed · manual marks" size="half" credit="Drawn by AfriScan from the sample register; no imagery."}
 :::
 ::::
 ::::col

@@ -21,7 +21,7 @@ faq:
   - q: Do you work for contractors and consultants as well as asset owners?
     a: Yes. EPC contractors, ESIA and RAP consultancies and independent monitors commission registers and GIS layers for their own deliverables, and we deliver in the formats their teams use.
   - q: Can we see work you have done in our industry?
-    a: We never publish a client's route, imagery or results without written permission. The sample outputs on this site come from the T-9 replacement pipeline in Inhambane, Mozambique, shown with the route owner's permission. For other industries we can run a labelled demonstration on a boundary or route you choose, from open data.
+    a: We never publish a client's route, imagery or results without written permission. The sample outputs on this site come from a high-pressure gas pipeline in Mozambique, shown with the route owner's permission. For other industries we can run a labelled demonstration on a boundary or route you choose, from open data.
   - q: Which countries do you work in?
     a: Satellite-based surveys are available in Mozambique, South Africa and Nigeria with no site visit and no drone flight. Drone surveys are available subject to the permits and authorisations each job requires, and each industry page sets out the country rules that shape the survey.
 ---

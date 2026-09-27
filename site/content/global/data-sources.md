@@ -96,7 +96,7 @@ Orthophotos and scenes you send stay yours, and we never publish them without yo
 ::::
 
 ::::section{id="site-images" tone="alt" eyebrow="On this website" title="Images shown on this site"}
-- **The T-9 sample.** The T-9 replacement pipeline route in Inhambane, Mozambique, is shown with the route owner's permission. Its reviewer marks appear only as register strip views, drawn by AfriScan from the sample register: no imagery and no coordinates. The route views and the page headers use a Copernicus Sentinel-2 scene of 2 August 2026 (contains modified Copernicus Sentinel data 2026), shown for location; at 10 m per pixel it cannot show individual structures.
+- **The sample pipeline.** The route of a high-pressure gas pipeline in Mozambique is shown with the route owner's permission. Its reviewer marks appear only as register strip views, drawn by AfriScan from the sample register: no imagery and no coordinates. The route views and the page headers use a Copernicus Sentinel-2 scene of 2 August 2026 (contains modified Copernicus Sentinel data 2026), shown for location; at 10 m per pixel it cannot show individual structures.
 - **No map-service imagery.** No Google, Bing or Esri basemap imagery is shown on this site.
 - **Schematics.** Diagrams labelled "Schematic" are drawn by AfriScan with invented geometry to explain how a register is read. They are not real routes or sites.
 - **No people.** We show no photographs that identify anyone, and no client logos.

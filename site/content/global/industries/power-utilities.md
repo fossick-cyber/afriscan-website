@@ -103,7 +103,7 @@ Fresh excavation and earthworks visible at the surface near towers and along cab
 :::figure{src="diagrams/corridor" alt="Schematic of a line route with a 50 m band and a 100 m band, structures coloured by distance to the line, and a strip below rating each 500 m stretch low, medium, high, medium and low from the structures inside the widest band" caption="Schematic: how a corridor register is read" size="wide" credit="Schematic drawn by AfriScan for illustration. It is not a real line."}
 <span class="band band--a">Within 50 m</span> <span class="band band--b">50 m to 100 m</span> <span class="band band--c">Beyond 100 m</span>
 
-Each structure is placed in its band by its distance to the line; the 100 m band includes the 50 m band. The strip below rates each 500 m from the structures inside the widest band: high for more than five, medium for one to five, low for none. The [T-9 sample](/results) uses the same register format and rating rule; its marks were placed by a reviewer on a basemap shown for illustration.
+Each structure is placed in its band by its distance to the line; the 100 m band includes the 50 m band. The strip below rates each 500 m from the structures inside the widest band: high for more than five, medium for one to five, low for none. Our [pipeline sample](/results) uses the same register format and rating rule; its marks were placed by a reviewer on a basemap shown for illustration.
 :::
 
 :::solutions{keys="right-of-way-monitoring,change-detection,imagery,drone-surveys" cols="4"}

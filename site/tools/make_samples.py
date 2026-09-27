@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild the T-9 sample images and register from the app's stored job.
+"""Rebuild the sample pipeline images and register from the app's stored job.
 
     /opt/favhousecheck/.venv/bin/python3 site/tools/make_samples.py
 
@@ -16,7 +16,11 @@ for published material, and it has no capture date. What this tool draws instead
                    and its 100 m band, the overview colours each 500 m of route by its rating.
 
   site/images/samples/*.jpg     masters for the image pipeline (build.py makes AVIF/WebP)
-  site/data/samples/t9.json     route facts, 500 m segment ratings and the register excerpt
+  site/data/samples/sample-pipeline.json
+                                route facts, 500 m segment ratings and the register excerpt
+
+The site describes the sample only as "a high-pressure gas pipeline in Mozambique" (owner decision
+2026-09-27): no route, field or province name goes into the images, the file names or the data.
 
 Read-only against /opt/favhousecheck. The Sentinel-2 windows are read from the public
 sentinel-cogs bucket (AWS Open Data) once and kept in site/.cache/s2/.
@@ -35,10 +39,10 @@ from shapely.ops import substring
 
 SITE = Path(__file__).resolve().parent.parent
 JOB = Path("/opt/favhousecheck/results/corridor_909497cd")      # manual review job, 59 marks
-ROUTE = Path("/opt/favhousecheck/uploads/corridor_909497cd/T-9 Replacement Pipeline Rev 00.kmz")
+ROUTE_DIR = Path("/opt/favhousecheck/uploads/corridor_909497cd")   # the job's uploaded route (one .kmz)
 FONT = SITE / "fonts/inter-latin-wght-normal.woff2"
 OUT_IMG = SITE / "images/samples"
-OUT_DATA = SITE / "data/samples/t9.json"
+OUT_DATA = SITE / "data/samples/sample-pipeline.json"
 S2_CACHE = SITE / ".cache/s2"
 
 BUFFERS = (50, 100)            # the job's buffers; the largest drives the segment rating
@@ -60,9 +64,9 @@ ORANGE, RED, AMBER, TEAL, LOWGREY = (232, 103, 47), (220, 38, 38), (245, 158, 11
 to_utm = Transformer.from_crs(4326, UTM, always_xy=True)
 
 STRINGS = {
-    "en": {"tag": "REGISTER VIEW · NO IMAGERY", "title": "T-9 route · km {a}–{b}", "north": "north side",
+    "en": {"tag": "REGISTER VIEW · NO IMAGERY", "title": "Pipeline route · km {a}–{b}", "north": "north side",
            "south": "south side", "high": "High", "medium": "Medium", "low": "Low", "dec": "."},
-    "pt": {"tag": "VISTA DO REGISTO · SEM IMAGENS", "title": "Traçado T-9 · km {a}–{b}", "north": "lado norte",
+    "pt": {"tag": "VISTA DO REGISTO · SEM IMAGENS", "title": "Traçado do gasoduto · km {a}–{b}", "north": "lado norte",
            "south": "lado sul", "high": "Alta", "medium": "Média", "low": "Baixa", "dec": ","},
 }
 
@@ -79,7 +83,8 @@ def km(x, lang, nd=1):
 
 # ------------------------------------------------------------------ register
 def load_route():
-    kml = zipfile.ZipFile(ROUTE).read("doc.kml").decode()
+    (route,) = sorted(ROUTE_DIR.glob("*.kmz"))
+    kml = zipfile.ZipFile(route).read("doc.kml").decode()
     pts = [tuple(map(float, c.split(",")[:2]))
            for c in re.findall(r"<coordinates>(.*?)</coordinates>", kml, re.S)[0].split()]
     return LineString([to_utm.transform(*p) for p in pts])
@@ -280,7 +285,7 @@ def s2_window(left, bottom, right, top):
     """True-colour (TCI) window at 10 m from both overlapping tiles. 36KYB (the clearer of the two) is used
     where it has data; 36KYA fills the rest after matching its mean and spread, band by band, to 36KYB on
     the pixels both cover, so there is no seam."""
-    key = f"t9-{S2_DATE}-{left}-{bottom}-{right}-{top}"
+    key = f"sample-pipeline-{S2_DATE}-{left}-{bottom}-{right}-{top}"
     cached = S2_CACHE / f"{key}.npy"
     if cached.exists():
         return np.load(cached)
@@ -382,28 +387,30 @@ def main():
     x0 = 699960
     cy = round((miny + maxy) / 20) * 10
     assert x0 + 24000 > maxx + 1000
-    sizes["t9-route-hero"] = route_view(line, segs, (x0, cy - 6750, x0 + 24000, cy + 6750), "t9-route-hero.jpg")
+    sizes["sample-pipeline-route-hero"] = route_view(line, segs, (x0, cy - 6750, x0 + 24000, cy + 6750),
+                                                    "sample-pipeline-route-hero.jpg")
     # Overview: the route with 700 m around it, each 500 m coloured by its rating; 2x for sharp lines.
     ob = (round((minx - 700) / 10) * 10, round((miny - 1100) / 10) * 10,
           round((maxx + 700) / 10) * 10, round((maxy + 1100) / 10) * 10)
-    sizes["t9-route-ratings"] = route_view(line, segs, ob, "t9-route-ratings.jpg", scale=2, mode="ratings")
+    sizes["sample-pipeline-route-ratings"] = route_view(line, segs, ob, "sample-pipeline-route-ratings.jpg", scale=2,
+                                                       mode="ratings")
 
     k0, k1 = EXCERPT_KM[0] * 1000, EXCERPT_KM[1] * 1000
     by_rating = {"high": 5500, "medium": 9000, "low": 7500}          # one full 500 m segment of each
     for lang, sfx in (("en", ""), ("pt", "-pt")):
-        sizes[f"t9-register-km5-6{sfx}"], ids = strip(marks, segs, k0, k1, f"t9-register-km5-6{sfx}.jpg", lang,
-                                                      width=1800, ppm_x=1640 / (k1 - k0))
+        sizes[f"sample-pipeline-register-km5-6{sfx}"], ids = strip(
+            marks, segs, k0, k1, f"sample-pipeline-register-km5-6{sfx}.jpg", lang, width=1800, ppm_x=1640 / (k1 - k0))
         for rating, start in by_rating.items():
             g = next(s for s in segs if s["from_m"] == start)
             assert g["rating"] == rating
-            sizes[f"t9-register-{rating}{sfx}"], _ = strip(marks, segs, 0, 0, f"t9-register-{rating}{sfx}.jpg",
-                                                            lang, width=1000, ppm_x=1.4, labels=False,
-                                                            badge=(rating, g["count"]), zone=(start, start + 500))
+            sizes[f"sample-pipeline-register-{rating}{sfx}"], _ = strip(
+                marks, segs, 0, 0, f"sample-pipeline-register-{rating}{sfx}.jpg", lang, width=1000, ppm_x=1.4,
+                labels=False, badge=(rating, g["count"]), zone=(start, start + 500))
 
     shown = [m for m in marks if k0 <= m["chain"] <= k1 and m["dist"] <= ACROSS_M]
     data = {
-        "route": "T-9 replacement pipeline",
-        "province": "Inhambane, Mozambique",
+        "route": "High-pressure gas pipeline",
+        "country": "Mozambique",
         "route_length_km": round(line.length / 1000, 2),
         "buffers_m": list(BUFFERS),
         "method": "Reviewer-marked structures (manual review), no automatic detection in this sample",

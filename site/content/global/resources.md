@@ -68,7 +68,7 @@ The operator certificate, ONSA security clearance, the End-User Certificate and 
 ::::section{id="method" tone="alt" eyebrow="Samples, method and data" title="What you receive, and how it is made"}
 :::cards{cols="3"}
 :::card{title="Sample outputs" icon="file-text" key="results"}
-A reviewed register from the T-9 replacement pipeline route in Inhambane, Mozambique, shown with the route owner's permission.
+A reviewed register from a high-pressure gas pipeline in Mozambique, shown with the route owner's permission.
 :::
 :::card{title="Methodology and review" icon="user-check" key="methodology"}
 Sources, reviewer checks, distance rules, the 500 m density rating and the limits of every register.

@@ -11,3 +11,16 @@
 /sample-outputs /results 301
 /drone-law /drone-regulations 301
 /assets/examples/* /results 301
+/assets/img/samples-t9-register-km5-6-pt-* /mz/pt/resultados-de-exemplo 301
+/assets/img/samples-t9-register-high-pt-* /mz/pt/resultados-de-exemplo 301
+/assets/img/samples-t9-register-medium-pt-* /mz/pt/resultados-de-exemplo 301
+/assets/img/samples-t9-register-low-pt-* /mz/pt/resultados-de-exemplo 301
+/assets/img/samples-t9-km5-6-pt-* /mz/pt/resultados-de-exemplo 301
+/assets/img/samples-t9-rating-high-pt-* /mz/pt/resultados-de-exemplo 301
+/assets/img/samples-t9-rating-medium-pt-* /mz/pt/resultados-de-exemplo 301
+/assets/img/samples-t9-rating-low-pt-* /mz/pt/resultados-de-exemplo 301
+/assets/img/samples-t9-* /results 301
+/assets/og/results-5a769a9017.jpg /results 301
+/assets/og/results-7e2803fcc4.jpg /results 301
+/assets/og/mz-pt-resultados-de-exemplo-c67a4a7912.jpg /mz/pt/resultados-de-exemplo 301
+/assets/og/mz-pt-resultados-de-exemplo-ef42a5aadd.jpg /mz/pt/resultados-de-exemplo 301

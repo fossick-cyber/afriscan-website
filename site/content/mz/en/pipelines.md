@@ -9,7 +9,7 @@ eyebrow: Oil & gas · Mozambique
 lead: A dated register of the structures inside the partial protection zone and safety zones of your gas and oil pipelines, each measured to the line, with fresh digging and change between campaigns flagged for your field teams. Satellite screening first, drone detail where the permits allow, reviewed by a person and reported in Portuguese or English.
 buttons:
   - {label: Send us your route file, intent: proposal}
-  - {label: See the T-9 sample, key: results}
+  - {label: See the pipeline sample, key: results}
 service:
   name: Pipeline protection-zone encroachment survey, Mozambique
   type: Right-of-way encroachment survey and scheduled re-surveys
@@ -37,7 +37,7 @@ cta:
   title: Send us your route file
   text: "KML, KMZ, GeoJSON, Shapefile, GPX or GeoPackage, or we can draw it with you. Tell us the widths that matter (50 m, 100 m, 200 m or your concession's), the province and what the record is for, and we reply with a scope, an imagery plan and a written proposal."
   button: Request a proposal
-  secondary: See the T-9 sample
+  secondary: See the pipeline sample
   secondary_href: /results
 ---
 
@@ -87,7 +87,7 @@ The regulator for petroleum operations is the Instituto Nacional de Petróleo (I
 ::::section{id="corridors" eyebrow="Where the corridors run" title="Southern gas lines, and the new ones being planned"}
 :::::columns{split="1-1"}
 ::::col
-Most of Mozambique's onshore gas infrastructure runs through the south. The Pande and Temane fields and their processing facility sit in Inhambane Province, and the 865 km Mozambique–Secunda gas pipeline crosses Inhambane, Gaza and Maputo provinces to South Africa. Its operator aims to raise capacity and to take regasified LNG from an import terminal at Matola ([World Pipelines, August 2025](https://www.worldpipelines.com/project-news/18082025/rompco-driving-regional-energy-security-in-southern-africa/)). These are long servitudes through farmland, bush and growing villages, where roads and settlements follow the line.
+Most of Mozambique's onshore gas infrastructure runs through the south, where the 865 km Mozambique–Secunda gas pipeline crosses three provinces on its way to South Africa. Its operator aims to raise capacity and to take regasified LNG from an import terminal at Matola ([World Pipelines, August 2025](https://www.worldpipelines.com/project-news/18082025/rompco-driving-regional-energy-security-in-southern-africa/)). These are long servitudes through farmland, bush and growing villages, where roads and settlements follow the line.
 
 New corridors are being planned too. In November 2025 the Council of Ministers approved a concession for gas reception, storage, regasification and transport in the Port of Beira and at Inhassoro ([INP](https://www.inp.gov.mz/en/20-11-2025-mocambique-aprova-concessao-para-terminal-de-gas-natural-liquefeito-e-autoriza-medidas-para-a-retoma-do-projecto-golfinho-atum/)), and an agreement for a Beira–Ndola gas pipeline to Zambia was signed in May 2025 ([AIM](https://aimnews.org/2025/05/07/gasoduto-orcado-em-15-biliao-de-dolares-liga-mocambique-e-zambia/)).
 ::::
@@ -133,10 +133,10 @@ In the dry season, *queimadas* can run up to above-ground installations such as 
 :::
 ::::
 
-::::section{id="t9-sample" eyebrow="Inhambane" title="What a register looks like: the T-9 sample" lead="A reviewed sample from the T-9 replacement pipeline route in Inhambane Province, shown with the route owner's permission. The marks are manual reviewer marks, shown exactly as the reviewer placed them."}
+::::section{id="sample" eyebrow="A real sample" title="What a register looks like: a sample from a gas pipeline" lead="A reviewed sample from the route of a high-pressure gas pipeline in Mozambique, shown with the route owner's permission. The marks are manual reviewer marks, shown exactly as the reviewer placed them."}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/t9-register-high" alt="Strip view of the T-9 route between km 5.5 and 6.0: sixteen reviewer marks inside the area within 100 m of the stretch, two of them within 50 m of the line, on both sides" caption="T-9, km 5.5 to 6.0: rated high, 16 structures within 100 m" badge="Reviewed · manual marks" size="half" credit="Drawn by AfriScan from the sample register; no imagery."}
+:::figure{src="samples/sample-pipeline-register-high" alt="Strip view of the pipeline route between km 5.5 and 6.0: sixteen reviewer marks inside the area within 100 m of the stretch, two of them within 50 m of the line, on both sides" caption="Km 5.5 to 6.0: rated high, 16 structures within 100 m" badge="Reviewed · manual marks" size="half" credit="Drawn by AfriScan from the sample register; no imagery."}
 :::
 ::::
 ::::col

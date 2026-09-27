@@ -50,7 +50,7 @@ The website is served by **Cloudflare Pages**. As with any website, the hosting 
 ::::
 
 ::::section{id="project-data" eyebrow="Project data" title="Routes, imagery and results" width="prose"}
-Route files, boundaries, imagery and results you share for a project are handled as the proposal and agreement for that work set out. We never publish a client's route, imagery or results without written permission. The only route shown on this site, the T-9 sample, is shown with the route owner's permission.
+Route files, boundaries, imagery and results you share for a project are handled as the proposal and agreement for that work set out. We never publish a client's route, imagery or results without written permission. The only route shown on this site, a high-pressure gas pipeline in Mozambique, is shown with the route owner's permission.
 
 Our surveys map land and assets: structures, cleared ground, excavations and tracks. We do not identify people, and we do not follow people or vehicles.
 ::::

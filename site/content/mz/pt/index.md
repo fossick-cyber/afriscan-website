@@ -8,11 +8,11 @@ eyebrow: AfriScan by Afridrone · Moçambique
 lead: Primeiro o satélite, depois o drone onde o detalhe for preciso, e uma pessoa revê cada resultado antes da entrega. Mapeamos as construções, escavações e alterações nas faixas de servidão, concessões e áreas de projecto, e entregamos relatórios em PDF e ficheiros SIG em português.
 buttons:
   - {label: Pedir proposta, intent: proposal}
-  - {label: Ver o exemplo do T-9, key: results}
+  - {label: Ver o exemplo do gasoduto, key: results}
 hero:
-  image: samples/t9-route-hero
-  alt: Vista de satélite de mato, machambas e de um campo de gás em Inhambane, com o traçado do gasoduto T-9 desenhado a cor de laranja dentro da sua faixa de 100 m
-  credit: "Traçado do gasoduto de substituição T-9, Inhambane, Moçambique, com a faixa de 100 m, sobre uma cena Copernicus Sentinel-2 de 2 de Agosto de 2026. Contém dados Copernicus Sentinel modificados (2026)."
+  image: samples/sample-pipeline-route-hero
+  alt: Vista de satélite de mato e machambas em Moçambique, com o traçado de um gasoduto de alta pressão desenhado a cor de laranja dentro da sua faixa de 100 m
+  credit: "Traçado de um gasoduto de alta pressão em Moçambique, com a faixa de 100 m, sobre uma cena Copernicus Sentinel-2 de 2 de Agosto de 2026. Contém dados Copernicus Sentinel modificados (2026)."
   chips:
     - {title: "50 m · 100 m", text: "Construções listadas por faixa de distância"}
     - {title: "Troços de 500 m", text: "Densidade de ocupação em cada troço"}
@@ -28,7 +28,7 @@ cta:
   title: Saiba o que está construído na sua faixa de servidão antes que se torne um conflito.
   text: Envie-nos o traçado ou o limite do terreno e as distâncias que lhe interessam. Respondemos com o âmbito do trabalho, um plano de imagens e uma proposta escrita.
   button: Pedir proposta
-  secondary: Ver o exemplo do T-9
+  secondary: Ver o exemplo do gasoduto
   secondary_href: /mz/pt/resultados-de-exemplo
 faq:
   - q: É preciso visitar o local para começar?
@@ -46,7 +46,7 @@ faq:
   - q: Podem trabalhar onde o acesso é difícil?
     a: O rastreio por satélite não exige deslocações, por isso pode começar onde o acesso é lento, caro ou restrito. Voos de drone e trabalho de campo só avançam com as autorizações exigidas e com um plano de segurança acordado com o projecto.
   - q: Publicam o nosso traçado ou os resultados?
-    a: Não. Nunca publicamos o traçado, as imagens ou os resultados de um cliente sem autorização escrita. O exemplo deste site, o gasoduto de substituição T-9, é mostrado com a autorização do proprietário do traçado.
+    a: Não. Nunca publicamos o traçado, as imagens ou os resultados de um cliente sem autorização escrita. O exemplo deste site, um gasoduto de alta pressão em Moçambique, é mostrado com a autorização do proprietário do traçado.
 ---
 
 ::::section{tone="dark" class="home-strip"}
@@ -115,7 +115,7 @@ Uma pessoa revê cada resultado antes da entrega. Recebe um relatório PDF em po
 ::::section{id="entregaveis" tone="alt" eyebrow="O que recebe" title="Um registo que as equipas de terras e de SIG podem usar de imediato"}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/t9-register-km5-6-pt" alt="Vista linear de um troço de 1,5 km do traçado T-9, com as faixas de 50 m e 100 m dos dois lados da linha e vinte marcações do revisor, R20 a R39, colocadas pela distância ao longo do traçado e pela distância à linha; em baixo, três troços de 500 m com densidade média, alta e alta" caption="Exemplo de vista do registo: gasoduto de substituição T-9, km 5,0 a 6,5" badge="Revisto · marcação manual" size="half" credit="Desenhado pela AfriScan a partir do registo do exemplo; sem imagens."}
+:::figure{src="samples/sample-pipeline-register-km5-6-pt" alt="Vista linear de um troço de 1,5 km do traçado de um gasoduto, com as faixas de 50 m e 100 m dos dois lados da linha e vinte marcações do revisor, R20 a R39, colocadas pela distância ao longo do traçado e pela distância à linha; em baixo, três troços de 500 m com densidade média, alta e alta" caption="Exemplo de vista do registo: um gasoduto de alta pressão em Moçambique, km 5,0 a 6,5" badge="Revisto · marcação manual" size="half" credit="Desenhado pela AfriScan a partir do registo do exemplo; sem imagens."}
 :::
 ::::
 ::::col

@@ -164,7 +164,7 @@ As áreas de relevância estratégica dedicadas às operações petrolíferas es
 A directiva do IACM proíbe sobrevoá-las. A Lei n.º 6/2024 restringe as operações num raio mínimo de 5 km das áreas estratégicas de segurança nacional, que incluem as áreas sujeitas a servidão militar. No solo, a Lei de Terras já faz de uma faixa de 100 m à volta das instalações militares uma zona de protecção parcial (artigo 8, alínea j)), e o ante-projecto da nova Lei de Terras, de Junho de 2024, acrescenta 250 m à volta das servidões militares.
 :::
 :::card{title="Aeroportos e aeródromos" icon="map"}
-Voar a menos de 5 km de um aeródromo exige aprovação específica do IACM na categoria C2 e autorização escrita do operador do aeródromo. Em terra, a Lei de Terras define uma faixa de protecção de 100 m (artigo 8, alínea i)). Nos corredores de Inhambane, verifique os aeródromos próximos de cada traçado.
+Voar a menos de 5 km de um aeródromo exige aprovação específica do IACM na categoria C2 e autorização escrita do operador do aeródromo. Em terra, a Lei de Terras define uma faixa de protecção de 100 m (artigo 8, alínea i)). Verifique cada traçado em relação aos aeródromos que lhe ficam próximos.
 :::
 :::card{title="Cabo Delgado e zonas de risco" icon="alert"}
 Qualquer levantamento aéreo tem de ser coordenado com as autoridades de Defesa e Segurança (Lei n.º 6/2024, artigo 12, n.º 2) e com a segurança do projecto, e a lei permite proibir levantamentos em estado de emergência, de sítio ou de guerra (artigo 11, n.º 3). O rastreio por satélite não exige presença no local.

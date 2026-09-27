@@ -52,7 +52,7 @@ site/
                       services carry `name_pt` and `line_pt` for /mz/pt/ pages
     law/<cc>.yaml     drone-law instruments per country (mz, za, ng): the Sources tables come from here; optional
                       `title_pt`, `identifier_pt`, `note_pt` replace English wording on /mz/pt/ pages
-    samples/t9.json   the T-9 sample register and segment ratings (written by tools/make_samples.py)
+    samples/sample-pipeline.json   the sample pipeline's register and segment ratings (written by tools/make_samples.py)
     i18n/en.yaml, i18n/pt-MZ.yaml   every interface string (nav, buttons, form, footer, 404…)
     glossary/pt-MZ.yaml             Mozambican Portuguese: banned Brazilian forms, AO90 warnings, preferred terms
     rules.yaml        the guard patterns
@@ -63,7 +63,7 @@ site/
   static/assets/      CSS, JS, font (copied; CSS and JS get content-hashed file names)
   images/             image masters; the build makes AVIF, WebP and JPEG at several widths
   tests/fixtures/     self-test and demo fixtures (never published)
-  tools/              make_samples.py (T-9 images), make_diagrams.py (schematics), shoot.py (screenshots),
+  tools/              make_samples.py (sample pipeline images), make_diagrams.py (schematics), shoot.py (screenshots),
                       check_dist.py (independent dist checks), crawl.py (HTTP crawl of a preview)
 functions/geo.js      Pages Function: /geo returns the visitor's country for the banner
 functions/_middleware.js  host redirects: www and afriscan-website.pages.dev → https://afri-scan.com
@@ -296,17 +296,17 @@ Tables: ordinary Markdown tables; the build wraps them in a scrollable box so th
 
 ## 8. Images
 
-1. Put the master (JPEG or PNG, as large as you have, up to 2400 px is used) in `site/images/…`, for example `site/images/samples/t9-km5-6.jpg`.
-2. Use `:::figure{src="samples/t9-km5-6" alt="…" caption="…" credit="…"}`. The build makes AVIF, WebP and JPEG at 480–2400 px with `srcset`, width, height and lazy loading.
+1. Put the master (JPEG or PNG, as large as you have, up to 2400 px is used) in `site/images/…`, for example `site/images/samples/sample-pipeline-register-km5-6.jpg`.
+2. Use `:::figure{src="samples/sample-pipeline-register-km5-6" alt="…" caption="…" credit="…"}`. The build makes AVIF, WebP and JPEG at 480–2400 px with `srcset`, width, height and lazy loading.
 3. Alt text says what the image shows, for someone who cannot see it. Captions say what it is and where it comes from.
 
 What may be shown:
-- **The T-9 replacement pipeline and Pande (Inhambane) route**: yes, the owner has permission. Captions must be honest: manual marks are "Reviewed · manual marks", never "AI detection" or "live"; the operator's own plants and well pads are never "encroachment". Do not name the client company or use its logo. The site never offers the T-9 PDF or GIS files; sample-report requests get a redacted sample.
-- **Google, Bing or Esri basemap imagery: never on this site.** The app's T-9 review used Google tiles, which Google's terms do not allow in published material, so the T-9 views are register strip views drawn from the register alone (no imagery, no coordinates) and the route on a dated Copernicus Sentinel-2 scene (credit "Contains modified Copernicus Sentinel data 2026"). 10 m Sentinel-2 pixels cannot show structures: never draw marks on it.
+- **The sample pipeline**: yes, the owner has permission to show it, but never by name (owner decision of 27 September 2026 in `OWNER_DECISIONS.md`, which lists the names). Call it only "a high-pressure gas pipeline in Mozambique" (PT: "um gasoduto de alta pressão em Moçambique"), or "the pipeline sample" once introduced. No route, field, operator or province name, in copy, captions, alt text, headings, buttons, FAQ answers, JSON-LD, social cards, file names, anchors or URLs. Law facts about other named infrastructure (such as the Decreto n.º 36/2001 safety zone) may be cited as law, never linked to the sample. Captions must be honest: manual marks are "Reviewed · manual marks", never "AI detection" or "live"; the operator's own plants and well pads are never "encroachment". Do not name the client company or use its logo. The site never offers the sample's PDF or GIS files; sample-report requests get a redacted sample.
+- **Google, Bing or Esri basemap imagery: never on this site.** The app's review of the sample used Google tiles, which Google's terms do not allow in published material, so the sample views are register strip views drawn from the register alone (no imagery, no coordinates) and the route on a dated Copernicus Sentinel-2 scene (credit "Contains modified Copernicus Sentinel data 2026"). 10 m Sentinel-2 pixels cannot show structures: never draw marks on it.
 - **Drone orthophotos or mosaics of Mozambique**: not without the Lei n.º 6/2024 authorisation (art. 16(1)(c) makes unauthorised reproduction an infraction). Ask the owner first.
 - No flags, coats of arms, regulator or client logos, stock photos of people, or images that identify anyone.
 
-`site/tools/make_samples.py` rebuilds the T-9 images (`samples/t9-register-*` in English and `-pt`, `samples/t9-route-hero`, `samples/t9-route-ratings`) and `data/samples/t9.json` from the app's stored job (read-only) and a Sentinel-2 L2A window read once from the public sentinel-cogs bucket (cached in `site/.cache/s2/`).
+`site/tools/make_samples.py` rebuilds the sample pipeline images (`samples/sample-pipeline-register-*` in English and `-pt`, `samples/sample-pipeline-route-hero`, `samples/sample-pipeline-route-ratings`) and `data/samples/sample-pipeline.json` from the app's stored job (read-only) and a Sentinel-2 L2A window read once from the public sentinel-cogs bucket (cached in `site/.cache/s2/`).
 
 Portuguese pages must not show English inside a picture. `make_samples.py` draws the register views in both languages (`-pt` suffix); `site/tools/make_pt_images.py` reuses `make_diagrams.py` unchanged and writes `diagrams/corridor-pt` and `diagrams/area-ring-pt`. Rerun it whenever the English diagrams change. The Sentinel-2 route views carry no words and serve both languages. `diagrams/mz-strips` has no words and serves both languages.
 

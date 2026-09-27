@@ -42,7 +42,7 @@ It depends on what exists for your area and on the job. We check the archive bef
 Purchased satellite scenes come with their acquisition date and time in the metadata, and drone photos record their capture time. The report states the date of each image used, and the metadata stays with the imagery. Map-service basemaps carry no stated date, which is why we never use them for a dated record.
 :::
 :::details{summary="Do you use Google Earth or other web-map imagery?"}
-Only to screen and plan. Google, Bing and Esri web-map layers have no stated capture date and their terms do not make them survey imagery, so they are never delivered, never published and never the basis of a dated record. The T-9 sample on this site was marked on such a basemap during review; the site shows its register as strip views and the route on a dated Sentinel-2 scene, not the basemap.
+Only to screen and plan. Google, Bing and Esri web-map layers have no stated capture date and their terms do not make them survey imagery, so they are never delivered, never published and never the basis of a dated record. The pipeline sample on this site was marked on such a basemap during review; the site shows its register as strip views and the route on a dated Sentinel-2 scene, not the basemap.
 :::
 :::details{summary="Can you capture imagery on a date we choose?"}
 Not with certainty from satellites: a new capture is requested for a window, and the date depends on satellite availability and weather. A drone survey, subject to the permits each job requires, gives the most control over the date.

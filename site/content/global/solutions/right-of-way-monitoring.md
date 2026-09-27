@@ -94,7 +94,7 @@ Alongside the register, a survey can add the signals that tend to come before ne
 ::::section{id="deliverables" tone="alt" eyebrow="What you receive" title="Files your land, integrity and GIS teams can use straight away"}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/t9-register-km5-6" alt="Strip view of a 1.5 km stretch of the T-9 pipeline route with 50 m and 100 m bands on both sides of the line and twenty reviewer marks, R20 to R39, placed by chainage and distance" caption="Sample register view: T-9 replacement pipeline, Inhambane, km 5.0 to 6.5" badge="Reviewed · manual marks" size="half" credit="Drawn by AfriScan from the sample register; no imagery."}
+:::figure{src="samples/sample-pipeline-register-km5-6" alt="Strip view of a 1.5 km stretch of a gas pipeline route with 50 m and 100 m bands on both sides of the line and twenty reviewer marks, R20 to R39, placed by chainage and distance" caption="Sample register view: a high-pressure gas pipeline in Mozambique, km 5.0 to 6.5" badge="Reviewed · manual marks" size="half" credit="Drawn by AfriScan from the sample register; no imagery."}
 :::
 ::::
 ::::col

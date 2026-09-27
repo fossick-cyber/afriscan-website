@@ -111,13 +111,13 @@ In the dry season, bush burning can run up to above-ground installations such as
 
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/t9-register-high" alt="Strip view of a 500 m pipeline stretch rated high: sixteen reviewer marks inside the area within 100 m of the stretch, two of them within 50 m of the line" caption="A stretch rated high: the T-9 replacement pipeline, Inhambane, Mozambique, km 5.5 to 6.0" badge="Reviewed · manual marks" size="half" credit="Our published sample is from Mozambique, shown with the route owner's permission. Drawn by AfriScan from the sample register; no imagery."}
+:::figure{src="samples/sample-pipeline-register-high" alt="Strip view of a 500 m pipeline stretch rated high: sixteen reviewer marks inside the area within 100 m of the stretch, two of them within 50 m of the line" caption="A stretch rated high: a high-pressure gas pipeline in Mozambique, km 5.5 to 6.0" badge="Reviewed · manual marks" size="half" credit="Our published sample is from Mozambique, shown with the route owner's permission. Drawn by AfriScan from the sample register; no imagery."}
 :::
 ::::
 ::::col
 ### Reading a register {#reading}
 
-This is a stretch rated high in the T-9 sample: sixteen structures within 100 m of one 500 m stretch, each listed with its distance and band. The T-9 sample uses the same register format and rating rule as a delivered survey; its marks were placed by a reviewer on a basemap shown for illustration. On a Nigerian line the same view is measured to your right of way or licence strip, and the report names the imagery used and its capture date.
+This is a stretch rated high in our pipeline sample: sixteen structures within 100 m of one 500 m stretch, each listed with its distance and band. The sample uses the same register format and rating rule as a delivered survey; its marks were placed by a reviewer on a basemap shown for illustration. On a Nigerian line the same view is measured to your right of way or licence strip, and the report names the imagery used and its capture date.
 
 :::facts{cols="2"}
 - Sample route: 10.78 km, Mozambique

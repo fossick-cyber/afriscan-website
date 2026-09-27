@@ -10,7 +10,7 @@ lead: Envie o traçado. Devolvemos a lista das construções por faixa, a distâ
 used_in: [oil-gas, power-utilities, rail-roads]
 buttons:
   - {label: Pedir proposta, intent: proposal}
-  - {label: Ver o exemplo do T-9, key: results}
+  - {label: Ver o exemplo do gasoduto, key: results}
 related: [change-detection, mz-protection-zone, oil-gas]
 service:
   name: Levantamento de ocupações na zona de protecção parcial
@@ -83,7 +83,7 @@ Situação a 26 de Setembro de 2026; resumo informativo, não constitui aconselh
 - **O relatório PDF**, em português ou em inglês, com o mapa geral, a tabela de troços, uma fotografia de cada construção e o registo de coordenadas.
 - **As camadas SIG** (GeoPackage, GeoJSON, KMZ e Shapefile) e um **mapa interactivo em ficheiro** para as equipas no terreno.
 
-[Ver o exemplo do T-9](/mz/pt/resultados-de-exemplo)
+[Ver o exemplo do gasoduto](/mz/pt/resultados-de-exemplo)
 ::::
 :::::
 ::::

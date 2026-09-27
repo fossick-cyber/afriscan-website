@@ -20,7 +20,7 @@ Writers: read **[CONTENT_GUIDE.md](CONTENT_GUIDE.md)** before adding or editing 
 | `site/content/` | One file per page, per section: `global/`, `mz/en/`, `mz/pt/`, `za/`, `ng/` |
 | `site/data/` | Facts and strings: site/organisation, locales, catalogue, drone-law instruments, i18n, pt-MZ glossary, guard rules, redirects, icons, sample data |
 | `site/templates/`, `site/static/` | Page templates, components, CSS, JS, self-hosted Inter font (OFL) |
-| `site/images/` | Image masters (the T-9 sample views are rebuilt from the source GeoTIFFs by `site/tools/make_samples.py`) |
+| `site/images/` | Image masters (the sample pipeline views are rebuilt from the app's stored job by `site/tools/make_samples.py`) |
 | `functions/geo.js` | `GET /geo` returns the visitor's country for the country-site banner |
 | `functions/_middleware.js` | Host redirects: `www.afri-scan.com` and `afriscan-website.pages.dev` → `https://afri-scan.com` (301, path and query kept); preview hosts pass through. `dist/_routes.json` keeps `/assets/*` out of Functions |
 | `wrangler.toml` | Pages project settings read on every Git build: `pages_build_output_dir = "./dist"` |

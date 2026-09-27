@@ -133,11 +133,11 @@ The Electricity Law asks for the servitude to be registered in the land cadastre
 ::::section{id="sample" eyebrow="What a register looks like" title="The same register, on a line"}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/t9-register-medium" alt="Strip view of a 500 m stretch of the T-9 pipeline route rated medium: two reviewer marks inside the 50 m band on the north side of the line" caption="Sample register detail: two structures inside the 50 m band" badge="Reviewed · manual marks" size="half" credit="T-9 replacement pipeline, Inhambane, shown with the route owner's permission. Drawn by AfriScan from the sample register; no imagery."}
+:::figure{src="samples/sample-pipeline-register-medium" alt="Strip view of a 500 m stretch of a gas pipeline route rated medium: two reviewer marks inside the 50 m band on the north side of the line" caption="Sample register detail: two structures inside the 50 m band" badge="Reviewed · manual marks" size="half" credit="A high-pressure gas pipeline in Mozambique, shown with the route owner's permission. Drawn by AfriScan from the sample register; no imagery."}
 :::
 ::::
 ::::col
-Our public sample is a pipeline route in Inhambane, but the register on a power line is the same: each structure with its distance to the line, its band and its position, and each 500 m rated. Two structures inside the band are enough to rate a stretch medium even where the land around is empty, and the register then shows how close each one stands to the line.
+Our public sample is a gas pipeline route, but the register on a power line is the same: each structure with its distance to the line, its band and its position, and each 500 m rated. Two structures inside the band are enough to rate a stretch medium even where the land around is empty, and the register then shows how close each one stands to the line.
 
 For a line, the route can be the line as built or a set of tower positions, and the bands are the servitude width, the safety zone and any outer band you choose.
 

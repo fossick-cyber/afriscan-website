@@ -1,7 +1,7 @@
 ---
 key: results
 icon: map
-title: Exemplo de Levantamento de Ocupações (T-9) | AfriScan
+title: Exemplo de Levantamento de Ocupações num Gasoduto | AfriScan
 description: "O que um levantamento AfriScan entrega: construções ao longo do traçado, distância ao eixo, registo das faixas de 50 e 100 m, densidade por troço, PDF e SIG."
 h1: Exemplo de um levantamento de ocupações
 crumb: Exemplo de resultados
@@ -9,15 +9,15 @@ section: resources
 nav_group: resources
 nav_order: 10
 nav_label: Exemplo de resultados
-nav_blurb: Uma revisão do traçado do gasoduto T-9, em Inhambane
+nav_blurb: Uma revisão feita num gasoduto de alta pressão em Moçambique
 eyebrow: Recursos
-lead: Resultados reais de uma revisão feita no traçado do gasoduto de substituição T-9, na província de Inhambane, mostrados com a autorização do proprietário do traçado. Todas as marcações são manuais, feitas por um revisor, e aparecem exactamente como foram registadas; a versão pública omite as coordenadas.
+lead: Resultados reais de uma revisão feita no traçado de um gasoduto de alta pressão em Moçambique, mostrados com a autorização do proprietário do traçado. Todas as marcações são manuais, feitas por um revisor, e aparecem exactamente como foram registadas; a versão pública omite as coordenadas.
 buttons:
   - {label: Pedir o exemplo anonimizado, intent: sample-report}
   - {label: Como trabalhamos, key: how-we-work}
 og:
   headline: Exemplo de um levantamento de ocupações
-  subline: Gasoduto de substituição T-9, Inhambane · faixas de 50 e 100 m · marcações do revisor
+  subline: Um gasoduto de alta pressão em Moçambique · faixas de 50 e 100 m · marcações do revisor
 cta:
   title: Quer ver o seu próprio corredor?
   text: Envie o ficheiro do traçado (KML, GeoJSON ou Shapefile) e as distâncias que contam para a sua empresa, e preparamos o âmbito de um levantamento da sua linha ou do seu terreno.
@@ -37,7 +37,7 @@ faq:
 related: [oil-gas, right-of-way-monitoring, change-detection]
 ---
 
-::::section{id="resumo" eyebrow="O exemplo em resumo" title="Gasoduto de substituição T-9, Inhambane"}
+::::section{id="resumo" eyebrow="O exemplo em resumo" title="Um gasoduto de alta pressão em Moçambique"}
 :::facts{cols="4"}
 - Extensão do traçado: 10,78 km
 - Faixas: 50 m e 100 m
@@ -53,7 +53,7 @@ As contagens são cumulativas: «a menos de 100 m» inclui as 11 construções a
 ::::
 
 ::::section{id="mapa" tone="alt" eyebrow="Vista do registo" title="O troço mais denso, construção a construção" lead="Do km 5,0 ao km 6,5, onde a linha acompanha uma picada existente entre machambas e habitações. Cada marcação fica na sua distância ao longo do traçado e na sua distância à linha, e leva a referência usada na tabela abaixo."}
-:::figure{src="samples/t9-register-km5-6-pt" alt="Vista linear do traçado T-9 entre o km 5,0 e o km 6,5: o traçado como uma linha recta cor de laranja, com as faixas de 50 m a vermelho e de 100 m a âmbar dos dois lados, e vinte marcações do revisor, R20 a R39, colocadas pela distância ao longo do traçado e pela distância à linha; em baixo, os três troços de 500 m classificados com densidade média (4), alta (16) e alta (7)" caption="Gasoduto de substituição T-9, km 5,0 a 6,5: marcações do revisor pela distância ao longo do traçado e pela distância à linha, com a classificação de cada troço de 500 m" badge="Revisto · marcação manual" size="wide" priority="true" credit="Desenhado pela AfriScan a partir do registo do exemplo. Sem imagens; as distâncias na transversal estão desenhadas com o dobro da escala longitudinal."}
+:::figure{src="samples/sample-pipeline-register-km5-6-pt" alt="Vista linear do traçado do gasoduto entre o km 5,0 e o km 6,5: o traçado como uma linha recta cor de laranja, com as faixas de 50 m a vermelho e de 100 m a âmbar dos dois lados, e vinte marcações do revisor, R20 a R39, colocadas pela distância ao longo do traçado e pela distância à linha; em baixo, os três troços de 500 m classificados com densidade média (4), alta (16) e alta (7)" caption="O gasoduto do exemplo, km 5,0 a 6,5: marcações do revisor pela distância ao longo do traçado e pela distância à linha, com a classificação de cada troço de 500 m" badge="Revisto · marcação manual" size="wide" priority="true" credit="Desenhado pela AfriScan a partir do registo do exemplo. Sem imagens; as distâncias na transversal estão desenhadas com o dobro da escala longitudinal."}
 <span class="band band--a">Até 50 m</span> <span class="band band--b">50–100 m</span> <span class="band band--c">Além de 100 m</span> O lado norte da linha fica em cima.
 :::
 
@@ -61,26 +61,26 @@ As contagens são cumulativas: «a menos de 100 m» inclui as 11 construções a
 
 A distância ao longo do traçado conta-se a partir do início da linha. Este exemplo público omite as coordenadas. O registo entregue a um cliente dá cada construção em WGS84 e em UTM, e segue apenas para os contactos que o cliente indicar.
 
-:::register{data="t9"}
+:::register{data="sample-pipeline"}
 :::
 ::::
 
 ::::section{id="trocos" eyebrow="Densidade de ocupação" title="Cada troço de 500 m, classificado" lead="A classificação é uma regra de contagem que indica onde enviar primeiro as equipas. Não é uma avaliação de segurança nem de integridade do gasoduto."}
-:::figure{src="samples/t9-route-ratings" alt="O traçado T-9 sobre uma cena de satélite Sentinel-2, com cerca de 10 km desde uma instalação de gás a oeste, passando por uma povoação, até uma zona húmida a leste; o traçado está colorido pela classificação: vermelho nos troços de densidade alta entre o km 4 e o km 6,5, âmbar nos de densidade média e cinzento nos de densidade baixa" caption="Todo o traçado, com cada troço de 500 m colorido pela classificação: vermelho alta, âmbar média, cinzento baixa" size="wide" credit="Traçado sobre uma cena Copernicus Sentinel-2 de 2 de Agosto de 2026 (contém dados Copernicus Sentinel modificados, 2026), mostrada para localização. Com píxeis de 10 m, a cena não mostra construções individuais; as classificações vêm do registo revisto, não desta cena."}
+:::figure{src="samples/sample-pipeline-route-ratings" alt="O traçado do gasoduto sobre uma cena de satélite Sentinel-2, com cerca de 10 km desde uma instalação de gás a oeste, passando por uma povoação, até uma zona húmida a leste; o traçado está colorido pela classificação: vermelho nos troços de densidade alta entre o km 4 e o km 6,5, âmbar nos de densidade média e cinzento nos de densidade baixa" caption="Todo o traçado, com cada troço de 500 m colorido pela classificação: vermelho alta, âmbar média, cinzento baixa" size="wide" credit="Traçado sobre uma cena Copernicus Sentinel-2 de 2 de Agosto de 2026 (contém dados Copernicus Sentinel modificados, 2026), mostrada para localização. Com píxeis de 10 m, a cena não mostra construções individuais; as classificações vêm do registo revisto, não desta cena."}
 :::
 
-:::segments{data="t9"}
+:::segments{data="sample-pipeline"}
 Cada troço é classificado a partir das construções dentro da faixa mais larga, neste traçado a de 100 m, medida a partir de qualquer ponto do troço. Uma construção perto do limite entre dois troços conta nos dois, por isso a soma dos troços é maior do que o total do traçado. Nas três vistas abaixo, a área contornada é a que a classificação conta; as marcações fora dela aparecem esbatidas.
 :::
 
 :::cards{cols="3"}
-:::figure{src="samples/t9-register-high-pt" alt="Vista linear do km 5,5 ao km 6,0, com densidade alta: dezasseis marcações do revisor dentro da área a menos de 100 m do troço, duas delas a menos de 50 m da linha; duas marcações fora dessa área aparecem esbatidas" caption="Alta · km 5,5 a 6,0" size="third" credit="Vista do registo; mesma escala nas três"}
+:::figure{src="samples/sample-pipeline-register-high-pt" alt="Vista linear do km 5,5 ao km 6,0, com densidade alta: dezasseis marcações do revisor dentro da área a menos de 100 m do troço, duas delas a menos de 50 m da linha; duas marcações fora dessa área aparecem esbatidas" caption="Alta · km 5,5 a 6,0" size="third" credit="Vista do registo; mesma escala nas três"}
 16 construções a menos de 100 m do troço, onde o traçado passa entre habitações dos dois lados. Três delas ficam logo depois das pontas do troço e contam também para o troço vizinho.
 :::
-:::figure{src="samples/t9-register-medium-pt" alt="Vista linear do km 9,0 ao km 9,5, com densidade média: duas marcações do revisor dentro da faixa de 50 m, do lado norte da linha, logo depois do km 9,0" caption="Média · km 9,0 a 9,5" size="third" credit="Vista do registo; mesma escala nas três"}
+:::figure{src="samples/sample-pipeline-register-medium-pt" alt="Vista linear do km 9,0 ao km 9,5, com densidade média: duas marcações do revisor dentro da faixa de 50 m, do lado norte da linha, logo depois do km 9,0" caption="Média · km 9,0 a 9,5" size="third" credit="Vista do registo; mesma escala nas três"}
 2 construções, ambas dentro da faixa de 50 m: poucas, mas perto da linha. Ficam logo depois do km 9,0, por isso o troço do km 8,5 ao 9,0 também tem densidade média.
 :::
-:::figure{src="samples/t9-register-low-pt" alt="Vista linear do km 7,5 ao km 8,0, com densidade baixa: as faixas de 50 m e 100 m sem marcações do revisor" caption="Baixa · km 7,5 a 8,0" size="third" credit="Vista do registo; mesma escala nas três"}
+:::figure{src="samples/sample-pipeline-register-low-pt" alt="Vista linear do km 7,5 ao km 8,0, com densidade baixa: as faixas de 50 m e 100 m sem marcações do revisor" caption="Baixa · km 7,5 a 8,0" size="third" credit="Vista do registo; mesma escala nas três"}
 Nenhuma construção a menos de 100 m: a linha atravessa mato e capim queimado.
 :::
 :::
@@ -122,6 +122,6 @@ Um mapa autónomo dos resultados que abre num navegador. As camadas de resultado
 :::::
 
 :::callout{tone="scope" title="Mostrado com autorização"}
-Nunca publicamos o traçado, as imagens ou os resultados de um cliente sem autorização escrita. O traçado T-9 é mostrado aqui com a autorização do proprietário do traçado. As instalações perto das duas pontas do traçado são do próprio operador: fazem parte do activo, não são ocupação, e não entram no registo.
+Nunca publicamos o traçado, as imagens ou os resultados de um cliente sem autorização escrita. O traçado é mostrado aqui com a autorização do respectivo proprietário. As instalações perto das duas pontas do traçado são do próprio operador: fazem parte do activo, não são ocupação, e não entram no registo.
 :::
 ::::

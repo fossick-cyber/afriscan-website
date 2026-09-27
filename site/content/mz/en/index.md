@@ -8,11 +8,11 @@ eyebrow: AfriScan · Mozambique · Secure your land from the air, remotely
 lead: We map the structures, cleared ground and fresh excavations inside the protection zones and servitudes of your pipelines, power lines and sites, measure each one to the line and deliver a dated register in Portuguese or English. Satellite first, drone detail where the permits allow, and a person reviews every result.
 buttons:
   - {label: Request a proposal, intent: proposal}
-  - {label: See the Inhambane sample, key: results}
+  - {label: See the pipeline sample, key: results}
 hero:
-  image: samples/t9-route-hero
-  alt: Satellite view of bush, farmland and a gas field in Inhambane Province, Mozambique, with the T-9 pipeline route drawn in orange inside its 100 m band
-  credit: "T-9 replacement pipeline route, Inhambane Province, with its 100 m band, on a Copernicus Sentinel-2 scene of 2 August 2026. Contains modified Copernicus Sentinel data 2026."
+  image: samples/sample-pipeline-route-hero
+  alt: Satellite view of bush and farmland in Mozambique, with the route of a high-pressure gas pipeline drawn in orange inside its 100 m band
+  credit: "Route of a high-pressure gas pipeline in Mozambique, with its 100 m band, on a Copernicus Sentinel-2 scene of 2 August 2026. Contains modified Copernicus Sentinel data 2026."
   chips:
     - {title: "50 · 100 · 200 m", text: "The strips in Mozambican law, and yours"}
     - {title: "Every 500 m", text: "Rated for encroachment density"}
@@ -28,7 +28,7 @@ cta:
   title: Know what stands in your protection zone before it becomes a compensation claim.
   text: "Send the route or site boundary (KML, KMZ, GeoJSON, Shapefile, GPX or GeoPackage), the province and the widths that matter: 50 m, 100 m, 200 m or your concession's. We reply with a scope, an imagery plan and a written proposal."
   button: Request a proposal
-  secondary: See the Inhambane sample
+  secondary: See the pipeline sample
   secondary_href: /results
 faq:
   - q: Which widths do you measure in Mozambique?
@@ -85,7 +85,7 @@ The chair of EDM, the national electricity utility, has described the *ocupaçã
 ::::section{id="receive" eyebrow="What you receive" title="A register your land, servitude and GIS teams can use"}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/t9-register-km5-6" alt="Strip view of a 1.5 km stretch of the T-9 pipeline route with 50 m and 100 m bands on both sides of the line and twenty reviewer marks, R20 to R39, placed by chainage and distance; below, three 500 m segments rated medium, high and high" caption="Sample register view: T-9 replacement pipeline, Inhambane, km 5.0 to 6.5" badge="Reviewed · manual marks" size="half" credit="Drawn by AfriScan from the sample register; no imagery."}
+:::figure{src="samples/sample-pipeline-register-km5-6" alt="Strip view of a 1.5 km stretch of a gas pipeline route with 50 m and 100 m bands on both sides of the line and twenty reviewer marks, R20 to R39, placed by chainage and distance; below, three 500 m segments rated medium, high and high" caption="Sample register view: a high-pressure gas pipeline in Mozambique, km 5.0 to 6.5" badge="Reviewed · manual marks" size="half" credit="Drawn by AfriScan from the sample register; no imagery."}
 :::
 ::::
 ::::col
@@ -96,13 +96,13 @@ The chair of EDM, the national electricity utility, has described the *ocupaçã
 - **GIS layers** in GeoPackage, GeoJSON, KMZ and Shapefile, and an interactive map file that opens in a browser, including in the field.
 
 :::facts
-- Sample route: 10.78 km, Inhambane
+- Sample route: 10.78 km of gas pipeline
 - Structures marked: 59
 - Within 50 m: 11
 - Within 100 m: 36
 :::
 
-[See the full Inhambane sample](/results) · [Ask for a redacted sample report](/mz/contact?intent=sample-report&country=mz)
+[See the full pipeline sample](/results) · [Ask for a redacted sample report](/mz/contact?intent=sample-report&country=mz)
 ::::
 :::::
 ::::
@@ -110,7 +110,7 @@ The chair of EDM, the national electricity utility, has described the *ocupaçã
 ::::section{id="sectors" tone="alt" eyebrow="Who we work for in Mozambique" title="Pipelines, lines, projects and the teams that plan them"}
 :::cards{cols="3"}
 :::card{title="Gas and oil pipelines" icon="pipeline" key="oil-gas"}
-Structures in the 50 m partial protection zone and the Pande–Temane safety zone, fresh digging near the line and change between campaigns, from Inhambane to Maputo.
+Structures in the 50 m partial protection zone and the Pande–Temane safety zone, fresh digging near the line and change between campaigns.
 :::
 :::card{title="Transmission and distribution lines" icon="power" key="power-utilities"}
 Structures in the servitude of existing lines, route options for new ones, and a dated inventory before the servitude is registered.

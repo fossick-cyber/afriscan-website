@@ -31,7 +31,7 @@ faq:
   - q: Can a drone fly near our pump or compressor stations?
     a: If a station is a national key point or strategic installation, the operator notifies SACAA on form CA 101-20 before the flight, with the controlling authority's written permission. Satellite work needs no such notice, and our deliverables leave security measures at your stations out of every image either way.
   - q: Your published sample is from Mozambique. Why?
-    a: Because the route owner gave permission to show it. We never publish a client's route, imagery or results without written permission, so the sample on this site is the one we are allowed to show. It is a gas pipeline route in Inhambane Province, and the register format is the same in South Africa.
+    a: Because the route owner gave permission to show it. We never publish a client's route, imagery or results without written permission, so the sample on this site is the one we are allowed to show. It is a high-pressure gas pipeline in Mozambique, and the register format is the same in South Africa.
 cta:
   title: Send us your route file
   text: "KML, KMZ, GeoJSON, Shapefile, GPX or GeoPackage, or the servitude polygons from your GIS. Tell us the widths, the province and what the register is for, and we reply with a scope, an imagery plan and a written proposal."
@@ -74,7 +74,7 @@ New gas import and transmission infrastructure needs routes, servitudes and a da
 ::::col
 NERSA issues the licences for petroleum and gas pipelines under the Petroleum Pipelines Act 60 of 2003 and the Gas Act 48 of 2001. The network spans very different ground: Transnet's multi-product fuel trunk line from Durban inland ([Transnet Pipelines](https://www.transnet.net/SubsiteRender.aspx?id=6794475)); Transnet's gas lines from Secunda to Ingogo and from Ingogo to Durban, about 153 km and 420 km ([NERSA](https://www.nersa.org.za/files/files/2024/07/RFD-Transnet-SOC-Ltds-Application-for-Piped-Gas-Tariff-for-2023-to-2026.pdf)); and the cross-border gas pipeline from Mozambique to Secunda, reported at 865 km ([World Pipelines, 18 August 2025](https://www.worldpipelines.com/project-news/18082025/rompco-driving-regional-energy-security-in-southern-africa/)).
 
-More is coming. Supplies from the Pande and Temane fields in Mozambique, which have provided most of South Africa's gas for two decades, are expected to begin falling after 2028 ([The Conversation, 21 July 2026](https://theconversation.com/a-sharp-fall-in-gas-supplies-in-2028-threatens-south-africas-economy-how-to-manage-the-fallout-286861)), which brings new import and transmission infrastructure, and with it new routes and servitudes. The [Gas Bill B6-2026](https://www.parliament.gov.za/bill/2327140), introduced in Parliament on 5 March 2026, would repeal the Gas Act.
+More is coming. Supplies from Mozambique's onshore gas fields, which have provided most of South Africa's gas for two decades, are expected to begin falling after 2028 ([The Conversation, 21 July 2026](https://theconversation.com/a-sharp-fall-in-gas-supplies-in-2028-threatens-south-africas-economy-how-to-manage-the-fallout-286861)), which brings new import and transmission infrastructure, and with it new routes and servitudes. The [Gas Bill B6-2026](https://www.parliament.gov.za/bill/2327140), introduced in Parliament on 5 March 2026, would repeal the Gas Act.
 ::::
 ::::col
 | Instrument | What it means for a pipeline |
@@ -117,8 +117,8 @@ For class-location and population-density reviews, we supply structure counts wi
 :::
 ::::
 
-::::section{id="sample" tone="alt" eyebrow="What a register looks like" title="Our published sample: a gas pipeline route in Inhambane, Mozambique" lead="A reviewed sample from the T-9 replacement pipeline, shown with the route owner's permission. The chart below is the encroachment-density strip from that register: each bar is a 500 m stretch, its height the number of structures within 100 m of the line, the widest band on that route."}
-:::segments{data="t9"}
+::::section{id="sample" tone="alt" eyebrow="What a register looks like" title="Our published sample: a high-pressure gas pipeline in Mozambique" lead="A reviewed sample from the pipeline's route, shown with the route owner's permission. The chart below is the encroachment-density strip from that register: each bar is a 500 m stretch, its height the number of structures within 100 m of the line, the widest band on that route."}
+:::segments{data="sample-pipeline"}
 :::
 
 The densest stretches are where the route runs beside an existing track through farmland and homesteads; the quietest cross bush and burnt grassland. The operator's own facilities near both ends of the route are part of the asset, not encroachment, and are not in the register. The format, the rating rule and the deliverables are the same for a South African servitude.

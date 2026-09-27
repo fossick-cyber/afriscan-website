@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://afri-scan.com/</loc>
-    <lastmod>2026-09-26</lastmod>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-register-km5-6-627e6f1c-1798.jpg</image:loc></image:image>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-route-hero-cf6800bc-2400.jpg</image:loc></image:image>
+    <lastmod>2026-09-27</lastmod>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-sample-pipeline-register-km5-6-e34fab1b-1798.jpg</image:loc></image:image>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-sample-pipeline-route-hero-cf6800bc-2400.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://afri-scan.com/about</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-27</lastmod>
   </url>
   <url>
     <loc>https://afri-scan.com/contact</loc>
@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://afri-scan.com/data-sources</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-27</lastmod>
   </url>
   <url>
     <loc>https://afri-scan.com/drone-regulations</loc>
@@ -28,7 +28,7 @@
   </url>
   <url>
     <loc>https://afri-scan.com/faq</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-27</lastmod>
   </url>
   <url>
     <loc>https://afri-scan.com/features</loc>
@@ -36,7 +36,7 @@
   </url>
   <url>
     <loc>https://afri-scan.com/how-we-work</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-27</lastmod>
   </url>
   <url>
     <loc>https://afri-scan.com/imagery</loc>
@@ -44,7 +44,7 @@
   </url>
   <url>
     <loc>https://afri-scan.com/industries</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-27</lastmod>
   </url>
   <url>
     <loc>https://afri-scan.com/industries/agriculture-forestry-nature</loc>
@@ -61,12 +61,12 @@
   </url>
   <url>
     <loc>https://afri-scan.com/industries/oil-gas</loc>
-    <lastmod>2026-09-26</lastmod>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-register-km5-6-627e6f1c-1798.jpg</image:loc></image:image>
+    <lastmod>2026-09-27</lastmod>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-sample-pipeline-register-km5-6-e34fab1b-1798.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://afri-scan.com/industries/power-utilities</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <image:image><image:loc>https://afri-scan.com/assets/img/diagrams-corridor-0f7aae1c-1800.jpg</image:loc></image:image>
   </url>
   <url>
@@ -96,26 +96,26 @@
   </url>
   <url>
     <loc>https://afri-scan.com/methodology</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <image:image><image:loc>https://afri-scan.com/assets/img/diagrams-corridor-0f7aae1c-1800.jpg</image:loc></image:image>
     <image:image><image:loc>https://afri-scan.com/assets/img/diagrams-area-ring-618adaaa-1800.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://afri-scan.com/privacy</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-27</lastmod>
   </url>
   <url>
     <loc>https://afri-scan.com/resources</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-27</lastmod>
   </url>
   <url>
     <loc>https://afri-scan.com/results</loc>
-    <lastmod>2026-09-26</lastmod>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-register-km5-6-627e6f1c-1798.jpg</image:loc></image:image>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-route-ratings-13013409-2142.jpg</image:loc></image:image>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-register-high-bca97499-1170.jpg</image:loc></image:image>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-register-medium-a98f9315-1170.jpg</image:loc></image:image>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-register-low-dbd899f6-1170.jpg</image:loc></image:image>
+    <lastmod>2026-09-27</lastmod>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-sample-pipeline-register-km5-6-e34fab1b-1798.jpg</image:loc></image:image>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-sample-pipeline-route-ratings-13013409-2142.jpg</image:loc></image:image>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-sample-pipeline-register-high-bca97499-1170.jpg</image:loc></image:image>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-sample-pipeline-register-medium-a98f9315-1170.jpg</image:loc></image:image>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-sample-pipeline-register-low-dbd899f6-1170.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://afri-scan.com/solutions</loc>
@@ -167,8 +167,8 @@
   </url>
   <url>
     <loc>https://afri-scan.com/solutions/right-of-way-monitoring</loc>
-    <lastmod>2026-09-26</lastmod>
-    <image:image><image:loc>https://afri-scan.com/assets/img/samples-t9-register-km5-6-627e6f1c-1798.jpg</image:loc></image:image>
+    <lastmod>2026-09-27</lastmod>
+    <image:image><image:loc>https://afri-scan.com/assets/img/samples-sample-pipeline-register-km5-6-e34fab1b-1798.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://afri-scan.com/solutions/route-site-selection</loc>

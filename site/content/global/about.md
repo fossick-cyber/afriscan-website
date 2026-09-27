@@ -42,7 +42,7 @@ Results are files your team keeps: a PDF report in English or Portuguese, GIS la
 ::::section{id="where" tone="alt" eyebrow="Where we work" title="Built on real corridors in Mozambique"}
 :::::columns{split="1-1"}
 ::::col
-The platform behind AfriScan was built and tested on gas-pipeline routes in Inhambane Province, Mozambique, including the route of the T-9 replacement pipeline and the Pande route. The [T-9 sample](/results) is our published example, shown with the route owner's permission and labelled for what it is: a register built from reviewer marks, drawn over a basemap shown for illustration.
+The platform behind AfriScan was built and tested on high-pressure gas pipeline routes in Mozambique. Our published example, the [sample register](/results) from one of those pipelines, is shown with the route owner's permission and labelled for what it is: a register built from reviewer marks, drawn as strip views without imagery.
 
 Satellite-based surveys are available in Mozambique, South Africa and Nigeria, with no site visit and no drone flight. Each country has its own section of this site, with the local law, the regulators and the vocabulary our registers are measured against.
 ::::
@@ -101,7 +101,7 @@ Send the route or boundary, the country and province, the distances that matter 
 Engagement models, what to send us and what you get back.
 :::
 :::card{title="Sample outputs" icon="file-text" key="results"}
-A reviewed sample register from the T-9 pipeline route.
+A reviewed sample register from a high-pressure gas pipeline in Mozambique.
 :::
 :::card{title="Resources" icon="layers" key="resources"}
 Guides, the FAQ and the country rules, for your colleagues.

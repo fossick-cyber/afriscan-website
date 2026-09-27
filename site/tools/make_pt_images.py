@@ -10,7 +10,7 @@ next to the English masters with a -pt suffix:
 
   site/images/diagrams/corridor-pt.png, area-ring-pt.png
 
-The T-9 register views are drawn in both languages by make_samples.py itself (-pt files); the
+The sample pipeline's register views are drawn in both languages by make_samples.py itself (-pt files); the
 Sentinel-2 route views carry no words. The English masters are not touched.
 """
 import re

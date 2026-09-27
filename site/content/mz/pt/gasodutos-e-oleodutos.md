@@ -9,7 +9,7 @@ eyebrow: Petróleo e gás · Moçambique
 lead: Um registo datado das construções dentro da zona de protecção parcial e da zona de segurança do seu gasoduto ou oleoduto, cada uma medida até ao eixo, com as escavações recentes e as alterações entre levantamentos assinaladas para as equipas de campo. Primeiro o satélite, depois o drone onde for preciso, e uma pessoa revê cada resultado antes da entrega.
 buttons:
   - {label: Enviar o traçado, intent: proposal}
-  - {label: Ver o exemplo do T-9, key: results}
+  - {label: Ver o exemplo do gasoduto, key: results}
 service:
   name: Monitoria de ocupações em faixas de gasodutos e oleodutos
   type: Levantamento de ocupações na zona de protecção parcial e levantamentos periódicos
@@ -22,7 +22,7 @@ cta:
   title: Envie-nos o ficheiro do traçado
   text: KML, KMZ, GeoJSON, Shapefile, GPX ou GeoPackage, ou desenhamo-lo consigo. Diga-nos as larguras que contam e o fim a que o registo se destina, e respondemos com o âmbito, um plano de imagens e uma proposta escrita.
   button: Pedir proposta
-  secondary: Ver o exemplo do T-9
+  secondary: Ver o exemplo do gasoduto
   secondary_href: /mz/pt/resultados-de-exemplo
 faq:
   - q: Medem a zona de segurança de 200 metros do Pande–Temane?
@@ -110,10 +110,10 @@ Cada construção é medida até ao eixo e cada troço é classificado. O que a 
 :::::
 ::::
 
-::::section{id="exemplo-t9" tone="alt" eyebrow="Um exemplo real" title="O que um registo mostra: o exemplo do T-9" lead="Uma revisão feita no traçado do gasoduto de substituição T-9, na província de Inhambane, mostrada com a autorização do proprietário do traçado. As marcações aparecem exactamente como o revisor as colocou."}
+::::section{id="exemplo" tone="alt" eyebrow="Um exemplo real" title="O que um registo mostra: o exemplo de um gasoduto" lead="Uma revisão feita no traçado de um gasoduto de alta pressão em Moçambique, mostrada com a autorização do proprietário do traçado. As marcações aparecem exactamente como o revisor as colocou."}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="samples/t9-register-km5-6-pt" alt="Vista linear de um troço de 1,5 km do traçado T-9, com as faixas de 50 m e 100 m dos dois lados da linha e vinte marcações do revisor colocadas pela distância ao longo do traçado e pela distância à linha; em baixo, três troços de 500 m com densidade média, alta e alta" caption="Gasoduto de substituição T-9, km 5,0 a 6,5" badge="Revisto · marcação manual" size="half" credit="Desenhado pela AfriScan a partir do registo do exemplo; sem imagens."}
+:::figure{src="samples/sample-pipeline-register-km5-6-pt" alt="Vista linear de um troço de 1,5 km do traçado do gasoduto, com as faixas de 50 m e 100 m dos dois lados da linha e vinte marcações do revisor colocadas pela distância ao longo do traçado e pela distância à linha; em baixo, três troços de 500 m com densidade média, alta e alta" caption="O gasoduto do exemplo, km 5,0 a 6,5" badge="Revisto · marcação manual" size="half" credit="Desenhado pela AfriScan a partir do registo do exemplo; sem imagens."}
 :::
 ::::
 ::::col
@@ -136,7 +136,7 @@ As instalações do operador perto das duas pontas do traçado fazem parte do ac
 ::::section{id="novos-gasodutos" eyebrow="Gasodutos novos e variantes" title="Pesar a terra antes de fixar o traçado"}
 Um traçado escolhido sem contar as construções que atravessa paga essa escolha no reassentamento. A Lei do Petróleo faz o titular de direitos suportar os custos do reassentamento, depois de consulta prévia, com «condições de vida condignas e superiores» para as pessoas abrangidas (artigo 61), e o licenciamento das infra-estruturas depende da aprovação prévia do estudo de impacto ambiental (artigo 76, n.º 2).
 
-As redes são longas: o gasoduto entre Moçambique e Secunda, na África do Sul, tem 865 km e atravessa Inhambane, Gaza e Maputo. Em traçados desta escala, a diferença entre duas variantes mede-se em construções dentro dos 50 metros.
+As redes são longas: o gasoduto entre Moçambique e Secunda, na África do Sul, tem 865 km e atravessa três províncias do sul do país. Em traçados desta escala, a diferença entre duas variantes mede-se em construções dentro dos 50 metros.
 
 :::cards{cols="3"}
 :::card{title="Comparação de variantes" icon="route"}
@@ -175,7 +175,7 @@ Não vemos debaixo do solo: o que assinalamos é o que é visível à superfíci
 ::::
 
 ::::section{id="eventos" tone="alt" eyebrow="Ciclones e cheias" title="Depois do ciclone, antes da equipa de campo"}
-Na costa de Inhambane e noutras províncias, os ciclones e as cheias podem afectar troços inteiros de uma faixa. Depois de um evento, mapeamos a área inundada e fazemos a verificação, antes e depois, das construções e dos bens ao longo do traçado, para saber que troços visitar primeiro. Para o planeamento, assinalamos também os troços em zonas baixas, historicamente inundadas ou de atravessamento de rios.
+Ao longo da costa moçambicana, os ciclones e as cheias podem afectar troços inteiros de uma faixa. Depois de um evento, mapeamos a área inundada e fazemos a verificação, antes e depois, das construções e dos bens ao longo do traçado, para saber que troços visitar primeiro. Para o planeamento, assinalamos também os troços em zonas baixas, historicamente inundadas ou de atravessamento de rios.
 ::::
 
 ::::section{id="imagens" eyebrow="Satélite primeiro, drone onde for preciso" title="A imagem certa para cada troço"}

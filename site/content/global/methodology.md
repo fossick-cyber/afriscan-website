@@ -118,7 +118,7 @@ A reviewer works along the whole route or site on the imagery, in chainage order
 - Structures to verify on the ground, each with a photo crop
 - Who reviewed which stretch
 :::
-Where automatic detection is not enough, for example in dense villages or under mixed tree cover, reviewers mark the whole stretch by hand on the imagery. The [T-9 sample](/results) was built that way and is labelled accordingly.
+Where automatic detection is not enough, for example in dense villages or under mixed tree cover, reviewers mark the whole stretch by hand on the imagery. The [pipeline sample](/results) was built that way and is labelled accordingly.
 ::::
 :::::
 ::::

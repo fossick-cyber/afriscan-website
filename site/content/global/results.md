@@ -8,15 +8,15 @@ section: resources
 nav_group: resources
 nav_order: 10
 nav_label: Sample outputs
-nav_blurb: A reviewed sample from the T-9 pipeline route in Mozambique
+nav_blurb: A reviewed sample from a high-pressure gas pipeline in Mozambique
 eyebrow: Resources
-lead: Real outputs from a reviewed sample on the T-9 replacement pipeline route in Inhambane Province, Mozambique, shown with the route owner's permission. Every mark is a reviewer's manual mark, drawn exactly as recorded, and the public version leaves out coordinates.
+lead: Real outputs from a reviewed sample on the route of a high-pressure gas pipeline in Mozambique, shown with the route owner's permission. Every mark is a reviewer's manual mark, drawn exactly as recorded, and the public version leaves out coordinates.
 buttons:
   - {label: Ask for a redacted sample report, intent: sample-report}
   - {label: How the method works, key: methodology}
 og:
   headline: Sample encroachment survey outputs
-  subline: T-9 replacement pipeline, Inhambane · 50 m and 100 m buffers · reviewer marks
+  subline: A high-pressure gas pipeline in Mozambique · 50 m and 100 m buffers · reviewer marks
 cta:
   title: Want to see your own corridor?
   text: Send the route file (KML, GeoJSON or Shapefile) and the distances that matter to you, and we will scope a survey of your line or site.
@@ -36,7 +36,7 @@ faq:
 related: [oil-gas, right-of-way-monitoring, insight-survey-scope]
 ---
 
-::::section{id="at-a-glance" eyebrow="The sample at a glance" title="T-9 replacement pipeline, Inhambane"}
+::::section{id="at-a-glance" eyebrow="The sample at a glance" title="A high-pressure gas pipeline in Mozambique"}
 :::facts{cols="4"}
 - Route length: 10.78 km
 - Buffers: 50 m and 100 m
@@ -52,7 +52,7 @@ Counts are cumulative: "within 100 m" includes the 11 structures within 50 m. Di
 ::::
 
 ::::section{id="corridor-view" tone="alt" eyebrow="Register view" title="The densest stretch, structure by structure" lead="Km 5.0 to 6.5, where the route runs beside an existing track through farmland and homesteads. Each mark sits at its chainage and its distance from the line, and carries the register ID used in the table below."}
-:::figure{src="samples/t9-register-km5-6" alt="Strip view of the T-9 route between km 5.0 and 6.5: the route as a straight orange line with red 50 m and amber 100 m bands on both sides, and twenty reviewer marks, R20 to R39, placed by chainage and distance; the three 500 m segments below are rated medium (4), high (16) and high (7)" caption="T-9 replacement pipeline, km 5.0 to 6.5: reviewer marks by chainage and distance from the line, with the rating of each 500 m segment" badge="Reviewed · manual marks" size="wide" priority="true" credit="Drawn by AfriScan from the sample register. No imagery; distances across the route drawn at twice the along-route scale."}
+:::figure{src="samples/sample-pipeline-register-km5-6" alt="Strip view of the pipeline route between km 5.0 and 6.5: the route as a straight orange line with red 50 m and amber 100 m bands on both sides, and twenty reviewer marks, R20 to R39, placed by chainage and distance; the three 500 m segments below are rated medium (4), high (16) and high (7)" caption="The sample pipeline, km 5.0 to 6.5: reviewer marks by chainage and distance from the line, with the rating of each 500 m segment" badge="Reviewed · manual marks" size="wide" priority="true" credit="Drawn by AfriScan from the sample register. No imagery; distances across the route drawn at twice the along-route scale."}
 <span class="band band--a">Within 50 m</span> <span class="band band--b">50 to 100 m</span> <span class="band band--c">Beyond 100 m</span> The north side of the line is at the top.
 :::
 
@@ -60,26 +60,26 @@ Counts are cumulative: "within 100 m" includes the 11 structures within 50 m. Di
 
 Chainage is the distance along the route from its start. This public sample leaves out coordinates. A client's delivered register gives each structure in WGS84 and UTM, and goes only to the contacts the client names.
 
-:::register{data="t9"}
+:::register{data="sample-pipeline"}
 :::
 ::::
 
 ::::section{id="segments" eyebrow="Encroachment density" title="Every 500 m of route, rated" lead="The rating is a count rule that tells you where to send people first. It is not a safety or integrity assessment."}
-:::figure{src="samples/t9-route-ratings" alt="The T-9 route on a Sentinel-2 satellite scene, running about 10 km from a gas plant in the west, past a settlement, to a wetland in the east; the route is coloured by rating, red for the high stretches between km 4 and 6.5, amber for medium and grey for low" caption="The whole route, each 500 m coloured by its rating: red high, amber medium, grey low" size="wide" credit="Route on a Copernicus Sentinel-2 scene of 2 August 2026 (contains modified Copernicus Sentinel data 2026), shown for location. At 10 m per pixel the scene cannot show individual structures; the ratings come from the reviewed register, not from this scene."}
+:::figure{src="samples/sample-pipeline-route-ratings" alt="The pipeline route on a Sentinel-2 satellite scene, running about 10 km from a gas plant in the west, past a settlement, to a wetland in the east; the route is coloured by rating, red for the high stretches between km 4 and 6.5, amber for medium and grey for low" caption="The whole route, each 500 m coloured by its rating: red high, amber medium, grey low" size="wide" credit="Route on a Copernicus Sentinel-2 scene of 2 August 2026 (contains modified Copernicus Sentinel data 2026), shown for location. At 10 m per pixel the scene cannot show individual structures; the ratings come from the reviewed register, not from this scene."}
 :::
 
-:::segments{data="t9"}
+:::segments{data="sample-pipeline"}
 Each segment is rated from the structures within the widest buffer, 100 m on this route, measured from any point of the segment. A structure near a segment boundary counts in both segments it touches, so segment counts add up to more than the route total. In the three views below, the outlined area is what the rating counts; marks outside it are faded.
 :::
 
 :::cards{cols="3"}
-:::figure{src="samples/t9-register-high" alt="Strip view of km 5.5 to 6.0 rated high: sixteen reviewer marks inside the area within 100 m of the stretch, two of them within 50 m of the line; two marks outside that area are faded" caption="High · km 5.5 to 6.0" size="third" credit="Register view; same scale in all three"}
+:::figure{src="samples/sample-pipeline-register-high" alt="Strip view of km 5.5 to 6.0 rated high: sixteen reviewer marks inside the area within 100 m of the stretch, two of them within 50 m of the line; two marks outside that area are faded" caption="High · km 5.5 to 6.0" size="third" credit="Register view; same scale in all three"}
 16 structures within 100 m of the stretch, where the route runs beside homesteads on both sides. Three of them stand just past its ends and count for the next stretch too.
 :::
-:::figure{src="samples/t9-register-medium" alt="Strip view of km 9.0 to 9.5 rated medium: two reviewer marks inside the 50 m band on the north side of the line, just past km 9.0" caption="Medium · km 9.0 to 9.5" size="third" credit="Register view; same scale in all three"}
+:::figure{src="samples/sample-pipeline-register-medium" alt="Strip view of km 9.0 to 9.5 rated medium: two reviewer marks inside the 50 m band on the north side of the line, just past km 9.0" caption="Medium · km 9.0 to 9.5" size="third" credit="Register view; same scale in all three"}
 2 structures, both inside the 50 m band: few, but close to the line. They stand just past km 9.0, so km 8.5 to 9.0 is rated medium too.
 :::
-:::figure{src="samples/t9-register-low" alt="Strip view of km 7.5 to 8.0 rated low: the 50 m and 100 m bands with no reviewer marks" caption="Low · km 7.5 to 8.0" size="third" credit="Register view; same scale in all three"}
+:::figure{src="samples/sample-pipeline-register-low" alt="Strip view of km 7.5 to 8.0 rated low: the 50 m and 100 m bands with no reviewer marks" caption="Low · km 7.5 to 8.0" size="third" credit="Register view; same scale in all three"}
 No structures within 100 m: the line crosses bush and burnt grassland here.
 :::
 :::
@@ -121,6 +121,6 @@ A self-contained map of the results that opens in a web browser. The result laye
 :::::
 
 :::callout{tone="scope" title="Shown with permission"}
-We never publish a client's route, imagery or results without written permission. The T-9 route is shown here with the route owner's permission. The facilities near both ends of the route are the operator's own installations: they are part of the asset, not encroachment, and are not in the register.
+We never publish a client's route, imagery or results without written permission. The route is shown here with its owner's permission. The facilities near both ends of the route are the operator's own installations: they are part of the asset, not encroachment, and are not in the register.
 :::
 ::::

@@ -9,7 +9,7 @@ crumb: Zona de protecção de 50 m
 nav_group: resources
 nav_order: 20
 nav_label: A zona de protecção de 50 m
-nav_blurb: Lei de Terras, Lei do Petróleo, Lei de Electricidade e Pande–Temane
+nav_blurb: O que a lei moçambicana fixa ao longo de gasodutos e linhas
 eyebrow: Guia · Terras e servidões
 lead: Em Moçambique, a terra ao longo de gasodutos, oleodutos, condutas de água e linhas de electricidade e de telecomunicações é zona de protecção parcial numa faixa de 50 metros de cada lado. Este guia reúne o que dizem a Lei de Terras, a Lei do Petróleo de 2026, a Lei de Electricidade e o decreto do corredor Pande–Temane, e o que isso significa para quem gere uma faixa de servidão.
 summary: As faixas de 50 m, 100 m, 200 m e 250 m da lei moçambicana, artigo a artigo, e o que um registo datado das construções pode apoiar.

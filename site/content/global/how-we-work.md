@@ -86,7 +86,7 @@ Dated imagery, registers and maps packaged with file fingerprints and an indepen
 We respond to tenders, RFQs and RFPs. Send your supplier or prequalification forms with your request; the proposal states which registrations are in place for your contract and which are being arranged. Tell us the portal or format your process uses.
 
 :::callout{tone="scope" title="Data you send us"}
-We never publish a client's route, imagery or results without written permission. The only route shown on this site, the T-9 sample, is shown with the route owner's permission.
+We never publish a client's route, imagery or results without written permission. The only route shown on this site, a high-pressure gas pipeline in Mozambique, is shown with the route owner's permission.
 :::
 
 :::cta{title="Have a tender or an RFQ?" text="Send the documents and the deadline; we reply in the format the tender asks for." button="Send tender documents" intent="tender"}

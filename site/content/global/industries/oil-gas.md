@@ -9,7 +9,7 @@ eyebrow: Oil & gas
 lead: A dated register of the structures inside your right of way and protection zones, each one measured to the line, with fresh digging and change between surveys flagged for your field teams. Satellite screening first, drone detail where it is needed, and a person reviews every result before it reaches you.
 buttons:
   - {label: Send us your route file, intent: proposal}
-  - {label: See the T-9 sample, key: results}
+  - {label: See the pipeline sample, key: results}
 og:
   headline: Pipelines, rights of way and gas sites, mapped from the air
   subline: Structures by distance to the line, change between surveys, reviewed by a person
@@ -30,12 +30,12 @@ faq:
   - q: Can you support our class-location or population-density reviews?
     a: Yes. We supply structure counts within the corridor widths and unit lengths your engineers set, with reviewer categories that separate main buildings from outbuildings. The class study and its conclusions stay with your engineers.
   - q: Who sees our route files and results?
-    a: The contacts you name. We never publish a client's route, imagery or results without written permission, and we never publish maps of your assets or of the settlements around them without your written permission. The T-9 route on this site is shown with the route owner's permission.
+    a: The contacts you name. We never publish a client's route, imagery or results without written permission, and we never publish maps of your assets or of the settlements around them without your written permission. The pipeline route shown on this site appears with the route owner's permission.
 cta:
   title: Send us your route file
   text: "KML, KMZ, GeoJSON, Shapefile, GPX or GeoPackage, or we can draw it with you. Tell us the distances that matter and what the record is for, and we reply with a scope, an imagery plan and a written proposal."
   button: Request a proposal
-  secondary: See the T-9 sample
+  secondary: See the pipeline sample
   secondary_href: /results
 ---
 
@@ -105,8 +105,8 @@ After the baseline, the same route is re-surveyed on a schedule you agree with u
 :::
 ::::
 
-::::section{id="t9-sample" eyebrow="A real sample" title="What a register looks like: the T-9 sample" lead="A reviewed sample from the T-9 replacement pipeline route in Inhambane Province, Mozambique, shown with the route owner's permission. The marks are manual reviewer marks, shown exactly as the reviewer placed them."}
-:::figure{src="samples/t9-register-km5-6" alt="Strip view of the T-9 route between km 5.0 and 6.5: the route as a straight orange line with red 50 m and amber 100 m bands on both sides, and twenty reviewer marks placed by chainage and distance; the three 500 m segments below are rated medium, high and high" caption="T-9 replacement pipeline, km 5.0 to 6.5: reviewer marks by chainage and distance from the line, and the rating of each 500 m" badge="Reviewed · manual marks" size="narrow" credit="Drawn by AfriScan from the sample register; no imagery. Distances across the route drawn at twice the along-route scale."}
+::::section{id="sample" eyebrow="A real sample" title="What a register looks like: a sample from a gas pipeline" lead="A reviewed sample from the route of a high-pressure gas pipeline in Mozambique, shown with the route owner's permission. The marks are manual reviewer marks, shown exactly as the reviewer placed them."}
+:::figure{src="samples/sample-pipeline-register-km5-6" alt="Strip view of the pipeline route between km 5.0 and 6.5: the route as a straight orange line with red 50 m and amber 100 m bands on both sides, and twenty reviewer marks placed by chainage and distance; the three 500 m segments below are rated medium, high and high" caption="The sample pipeline, km 5.0 to 6.5: reviewer marks by chainage and distance from the line, and the rating of each 500 m" badge="Reviewed · manual marks" size="narrow" credit="Drawn by AfriScan from the sample register; no imagery. Distances across the route drawn at twice the along-route scale."}
 <span class="band band--a">Within 50 m</span> <span class="band band--b">50 to 100 m</span> <span class="band band--c">Beyond 100 m</span> The facilities near both ends of this route are the operator's own installations: part of the asset, not encroachment, and not in the register.
 :::
 

@@ -11,7 +11,7 @@ eyebrow: Sectores
 lead: Gasodutos, concessões, servidões e áreas de projecto têm uma coisa em comum. Alguém responde pelo que acontece numa terra que não consegue ver todos os dias. Damos a essas equipas um registo datado e revisto do que está na terra, e do que mudou.
 buttons:
   - {label: Pedir proposta, intent: proposal}
-  - {label: Ver o exemplo do T-9, key: results}
+  - {label: Ver o exemplo do gasoduto, key: results}
 og:
   headline: Proteja a terra pela qual responde, a partir do ar
   subline: Petróleo e gás, energia, GNL e mineração, EIA e reassentamento, em Moçambique
@@ -21,7 +21,7 @@ faq:
   - q: Trabalham para empreiteiros e consultores, e não só para os donos dos activos?
     a: Sim. Empreiteiros, consultoras de EIA e de reassentamento e monitores independentes encomendam registos e camadas SIG para os seus próprios produtos, e entregamos nos formatos que as suas equipas usam.
   - q: Podemos ver trabalho feito no nosso sector?
-    a: Nunca publicamos o traçado, as imagens ou os resultados de um cliente sem autorização escrita. O exemplo deste site vem do gasoduto de substituição T-9, em Inhambane, mostrado com a autorização do proprietário do traçado. Para outros sectores, podemos preparar uma demonstração num traçado ou limite à sua escolha, a partir de dados abertos.
+    a: Nunca publicamos o traçado, as imagens ou os resultados de um cliente sem autorização escrita. O exemplo deste site vem de um gasoduto de alta pressão em Moçambique e é mostrado com a autorização do proprietário do traçado. Para outros sectores, podemos preparar uma demonstração num traçado ou limite à sua escolha, a partir de dados abertos.
   - q: Em que províncias trabalham?
     a: O rastreio por satélite não exige deslocações e está disponível em todo o país. Os levantamentos por drone estão sujeitos às licenças e autorizações que cada trabalho exige.
 ---
