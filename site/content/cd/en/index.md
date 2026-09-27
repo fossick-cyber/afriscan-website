@@ -87,6 +87,11 @@ Our published sample: a high-pressure gas pipeline in Mozambique, with the struc
 - **GeoPackage, GeoJSON, KMZ and Shapefile layers**, an interactive map file that opens in a browser, and a PDF report in English with maps, the segment table, a thumbnail of each structure and the coordinate register.
 ::::
 :::::
+
+The same sample on Google satellite imagery, in two close-ups: each ring is a structure the reviewer marked, coloured by its distance band.
+
+:::sample-gallery{data="sample-pipeline-google" views="A,D" overview="false"}
+:::
 ::::
 
 ::::section{id="sectors" eyebrow="Who we work for in the DRC" title="Lines, railways, perimeters and the land around them"}

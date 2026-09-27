@@ -103,6 +103,11 @@ When a mining lease expands, a new line is acquired or a resettlement plan start
 [See the full sample](/results) · [Ask for a redacted sample report](/gh/contact?intent=sample-report&country=gh)
 ::::
 :::::
+
+The same sample on Google satellite imagery, in two close-ups: each ring is a structure the reviewer marked, coloured by its distance band.
+
+:::sample-gallery{data="sample-pipeline-google" views="B,D" overview="false"}
+:::
 ::::
 
 ::::section{id="sectors" tone="alt" eyebrow="Who we work for in Ghana" title="Corridors, leases and the teams that plan them"}

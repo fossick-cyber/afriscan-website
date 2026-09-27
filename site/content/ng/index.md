@@ -105,6 +105,11 @@ The operators' own reports show why the record matters. NNPC's monthly report fo
 [See the full sample](/results) · [Ask for a redacted sample report](/ng/contact?intent=sample-report&country=ng)
 ::::
 :::::
+
+The same sample on Google satellite imagery, in two close-ups: each ring is a structure the reviewer marked, coloured by its distance band.
+
+:::sample-gallery{data="sample-pipeline-google" views="C,D" overview="false"}
+:::
 ::::
 
 ::::section{id="sectors" tone="alt" eyebrow="Who we work for in Nigeria" title="Pipelines, power lines, projects and the teams that plan them"}

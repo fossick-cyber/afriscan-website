@@ -106,6 +106,11 @@ A register on a known date, such as a census cut-off date or a declaration of pu
 [See the full sample](/results) · [Ask for the anonymised sample report](/ao/contact?intent=sample-report)
 ::::
 :::::
+
+The same sample on Google satellite imagery, in two close-ups: each ring is a structure the reviewer marked, coloured by its distance band.
+
+:::sample-gallery{data="sample-pipeline-google" views="C,D" overview="false"}
+:::
 ::::
 
 ::::section{id="sectors" tone="alt" eyebrow="Who we work for in Angola" title="Pipes, lines, railways, concessions and the teams that plan them" lead="The same method serves the strip along a pipeline, the servitude of a transmission line, the reserve along a railway and the zones of a mining concession: map what is on the ground, measure it against the line or boundary, and record the date."}

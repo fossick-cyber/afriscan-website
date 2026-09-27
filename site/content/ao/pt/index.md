@@ -127,6 +127,11 @@ Uma pessoa revê cada resultado antes da entrega. Recebe um relatório PDF em po
 [Ver o exemplo completo, em português](/mz/pt/resultados-de-exemplo) · [Pedir o exemplo anonimizado](/ao/pt/contacto?intent=sample-report&country=ao)
 ::::
 :::::
+
+O mesmo exemplo em imagens de satélite da Google, em duas vistas de perto: cada círculo é uma construção marcada pelo revisor, com a cor da respectiva faixa de distância.
+
+:::sample-gallery{data="sample-pipeline-google" views="D,F" overview="false"}
+:::
 ::::
 
 ::::section{id="sectores" eyebrow="Para quem trabalhamos" title="Feito para a terra que a sua empresa gere" lead="O mesmo método serve a faixa de um oleoduto, a zona de servidão de uma linha, a faixa de um caminho-de-ferro e as zonas de uma concessão mineira: mapear o que está no terreno, medi-lo em relação à linha ou ao limite e registar a data."}

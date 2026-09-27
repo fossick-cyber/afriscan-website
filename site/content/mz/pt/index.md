@@ -135,6 +135,11 @@ Uma pessoa revê cada resultado antes da entrega. Recebe um relatório PDF em po
 [Ver o exemplo completo](/mz/pt/resultados-de-exemplo) · [Pedir o exemplo anonimizado](/mz/pt/contacto?intent=sample-report)
 ::::
 :::::
+
+O mesmo exemplo em imagens de satélite da Google, em duas vistas de perto: cada círculo é uma construção marcada pelo revisor, com a cor da respectiva faixa de distância.
+
+:::sample-gallery{data="sample-pipeline-google" views="B,D" overview="false"}
+:::
 ::::
 
 ::::section{id="sectores" eyebrow="Para quem trabalhamos" title="Feito para a terra que a sua empresa gere" lead="O mesmo método protege a faixa de servidão de um gasoduto, o limite de uma concessão mineira e a servidão de uma linha de transporte de energia: mapear o que está na terra, medi-lo em relação à linha ou ao limite e registar a data."}

@@ -89,6 +89,11 @@ Each of those rules turns on the same facts: what stands on the ground, where, h
 [See the full sample](/results) · [How the rating works](/methodology)
 ::::
 :::::
+
+The same sample on Google satellite imagery, in two close-ups: each ring is a structure the reviewer marked, coloured by its distance band.
+
+:::sample-gallery{data="sample-pipeline-google" views="D,E" overview="false"}
+:::
 ::::
 
 ::::section{id="sectors" eyebrow="Who we work for in Zambia" title="Lines, pipelines, reserves and licence areas"}

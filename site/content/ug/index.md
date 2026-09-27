@@ -119,6 +119,11 @@ UETCL's own [Grid Development Plan 2025–2040](https://uetcl.go.ug/wp-content/u
 [See the full sample](/results) · [Ask for a redacted sample report](/ug/contact?intent=sample-report&country=ug)
 ::::
 :::::
+
+The same sample on Google satellite imagery, in two close-ups: each ring is a structure the reviewer marked, coloured by its distance band.
+
+:::sample-gallery{data="sample-pipeline-google" views="D,E" overview="false"}
+:::
 ::::
 
 ::::section{id="sectors" tone="alt" eyebrow="Who we work for in Uganda" title="Corridor owners, and the teams that plan and check them"}

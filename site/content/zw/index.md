@@ -92,6 +92,11 @@ Where your pipeline, line or route crosses a railway or a road, the Railways Act
 [See the full sample](/results) · [How the rating works](/methodology)
 ::::
 :::::
+
+The same sample on Google satellite imagery, in two close-ups: each ring is a structure the reviewer marked, coloured by its distance band.
+
+:::sample-gallery{data="sample-pipeline-google" views="B,D" overview="false"}
+:::
 ::::
 
 ::::section{id="sectors" tone="alt" eyebrow="Who we work for in Zimbabwe" title="Lines, pipelines, mining locations and the teams that plan them"}

@@ -87,6 +87,11 @@ Rwanda's grid is growing on both levels: REG's June 2023 transmission plan recor
 [See the full sample](/results) · [How the rating works](/methodology)
 ::::
 :::::
+
+The same sample on Google satellite imagery, in two close-ups: each ring is a structure the reviewer marked, coloured by its distance band.
+
+:::sample-gallery{data="sample-pipeline-google" views="D,F" overview="false"}
+:::
 ::::
 
 ::::section{id="sectors" eyebrow="Who we work for in Rwanda" title="Lines, projects and licence areas"}

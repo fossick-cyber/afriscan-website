@@ -84,6 +84,11 @@ Once a structure is occupied, resolving an unlawful occupation runs through the 
 [See the full sample](/results) · [How the rating works](/methodology)
 ::::
 :::::
+
+The same sample on Google satellite imagery, in two close-ups: each ring is a structure the reviewer marked, coloured by its distance band.
+
+:::sample-gallery{data="sample-pipeline-google" views="B,D" overview="false"}
+:::
 ::::
 
 ::::section{id="your-imagery" eyebrow="Works with the drones you already fly" title="Your orthophotos, our counting and change detection"}
