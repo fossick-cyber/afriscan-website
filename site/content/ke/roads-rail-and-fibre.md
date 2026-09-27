@@ -7,7 +7,7 @@ description: Structures and new works in road reserves, railway reserves and alo
 h1: Road reserves, railway reserves and fibre routes in Kenya
 crumb: Roads, rail and fibre
 eyebrow: Rail & roads · Kenya
-lead: Road and railway reserves carry more than traffic. Kiosks, stalls and workshops line them, fibre and pipes run inside them, and new standard gauge rail is being laid west of Naivasha. We map what stands in each reserve and what has changed along each route between dated images, by segment, and a person checks each result.
+lead: Road and railway reserves carry more than traffic. Kiosks, stalls and workshops line them, fibre and pipes run inside them, and the first rails of the new standard gauge line from Naivasha to Kisumu and Malaba were laid in July 2026. We map what stands in each reserve and what has changed along each route between dated images, by segment, and a person checks each result.
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: Fibre routes, href: "#fibre"}
@@ -60,7 +60,7 @@ Each structure the review confirms is listed with its distance from the centreli
 ::::
 
 ::::section{id="railways" tone="alt" eyebrow="Railway reserves and new lines" title="Before construction, during it, and after opening"}
-The standard gauge extension runs about 264 km from Naivasha to Kisumu, with an 8.69 km spur to the new Kisumu port, and a further 107 km from Kisumu to Malaba. Phase 2B passes through Narok, Bomet, Nyamira, Kericho and Kisumu counties, and phase 2C through Kisumu, Siaya, Vihiga, Kakamega and Busia ([KBC, 21 March 2026](https://www.kbc.co.ke/unique-features-of-the-naivasha-kisumu-malaba-sgr/)). New lines like this need dated records at three moments.
+The standard gauge extension runs about 264 km from Naivasha to Kisumu, with an 8.69 km spur to the new Kisumu port, and a further 107 km from Kisumu to Malaba. Phase 2B passes through Narok, Bomet, Nyamira, Kericho and Kisumu counties, and phase 2C through Kisumu, Siaya, Vihiga, Kakamega and Busia ([KBC, 21 March 2026](https://www.kbc.co.ke/unique-features-of-the-naivasha-kisumu-malaba-sgr/)), and the first rails and sleepers were laid on 1 and 2 July 2026 ([Kenya Railways, 3 July 2026](https://krc.co.ke/construction-of-naivasha-kisumu-malaba-standard-gauge-railway-commences/)). New lines like this need dated records at three moments.
 
 :::cards{cols="3"}
 :::card{title="Before construction" icon="calendar" eyebrow="Baseline"}
