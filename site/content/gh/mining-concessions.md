@@ -153,7 +153,7 @@ The Environmental Assessment Regulations 2025 (L.I. 2504) list forest reserves, 
 ::::section{id="cut-off" tone="alt" eyebrow="Expansions and resettlement" title="Record the footprint before the census"}
 When a pit, dump or haul road expands, we produce a dated register of the structures inside the new footprint on the imagery closest to the cut-off date, with reviewer categories and, on request, estimated households with the assumptions stated. After the cut-off date, re-surveys flag new structures in the footprint for your team to check against the census.
 
-The register supports the census and asset inventory that L.I. 2175 and, where lenders are involved, IFC Performance Standard 5 require; it does not replace them. The crop survey and crop identification map under Act 703 s.72(5) stay with you, the occupier and the land-valuation agency, and a dated land-cover layer helps plan them.
+The register supports the demographic survey and housing inventory that L.I. 2175 asks a resettlement plan for and, where lenders are involved, the census and asset inventory under IFC Performance Standard 5; it does not replace them. The crop survey and crop identification map under Act 703 s.72(5) stay with you, the occupier and the land-valuation agency, and a dated land-cover layer helps plan them.
 
 [Cut-off-date and compensation baselines in Ghana](/gh/resettlement-compensation-baselines)
 ::::

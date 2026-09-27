@@ -360,5 +360,5 @@ We map structures, cleared ground, excavations and tracks on and around your rig
 ::::
 :::::
 
-This guide was checked on 27 September 2026 against the GCAA's texts of Part 28 and Part 11, its advisory circulars, RPAS Sanctions, FAQs and operator list, the Act 1120 scan, Ghana Gazette No. 21 of 1 February 2024, the Data Protection Commission's registration page, the Minerals Commission's local procurement list and the Petroleum Commission's permit page.
+Last reviewed 27 September 2026. This guide was checked against the GCAA's texts of Part 28 and Part 11, its advisory circulars, RPAS Sanctions, FAQs and operator list, the Act 1120 scan, Ghana Gazette No. 21 of 1 February 2024, the Data Protection Commission's registration page, the Minerals Commission's local procurement list and the Petroleum Commission's permit page.
 ::::
