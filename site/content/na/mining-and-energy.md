@@ -121,7 +121,7 @@ Claims, the small-scale mining title, may be pegged only by Namibian citizens wh
 ::::section{id="rehabilitation" tone="alt" eyebrow="Uranium and open-pit mines" title="Construction, stockpiles and rehabilitation, dated"}
 :::::columns{split="2-1"}
 ::::col
-The open-pit uranium mines of the Erongo region, and quarries and mines elsewhere in the country, move a great deal of ground. We track it between dates:
+Uranium mining in the Erongo region, and quarries and mines elsewhere in the country, move a great deal of ground. We track it between dates:
 
 - **Rehabilitation and revegetation** on rehabilitated land and closed borrow pits, compared between dated scenes;
 - **Construction and earthworks progress** from dated drone orthophotos and elevation models, with maps of where ground has been cut or filled between visits;

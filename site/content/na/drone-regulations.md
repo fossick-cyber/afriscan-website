@@ -165,7 +165,7 @@ An applicant (8.2.1):
 :::::
 ::::
 
-::::section{id="rules" tone="alt" eyebrow="The flight" title="Operating rules that shape a corridor or licence-area survey" lead="Part 101 and the AIP set different figures for height and airfields. Plan to the stricter one, or have the approval say which applies."}
+::::section{id="rules" tone="alt" class="compare" eyebrow="The flight" title="Operating rules that shape a corridor or licence-area survey" lead="Part 101 and the AIP set different figures for height and airfields. Plan to the stricter one, or have the approval say which applies."}
 | Rule | What the texts say | What it means for a survey |
 |---|---|---|
 | **Height** | A drone under 25 kg may not fly "at a height of more than 50 metres above the ground or water, unless the flight is approved by the Executive Director" (101.05.2(5)(f)). The AIP (ENR 1.1 §12.1(a)) and NCAA's checklist use 150 ft above the surface | Get the height written into the approval; a CAUA approval above 150 ft |
