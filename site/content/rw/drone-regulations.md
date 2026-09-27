@@ -62,7 +62,7 @@ A **UAS Operator Certificate (UOC)** where RCAA asks for one. Table 27.020 lists
 Vetting of pilots, owners and operators, operator security procedures accepted by RCAA, and **camera use submitted "for Security review and approval"**.
 :::
 :::card{title="Site permissions and consent" icon="boundary" eyebrow="Art. 100 · 27.095"}
-RCAA permission for restricted sites such as high-tension cables and masts, ATC coordination near aerodromes, and the consent of people and property owners under the flight path.
+RCAA permission for restricted sites such as high-tension cables and masts, ATC authorisation, or an aerodrome-operator agreement at an uncontrolled aerodrome, and the consent of people and property owners under the flight path.
 :::
 :::
 ::::
@@ -71,7 +71,7 @@ RCAA permission for restricted sites such as high-tension cables and masts, ATC 
 | Body | What it authorises or controls | Legal basis |
 |---|---|---|
 | **RCAA**, Rwanda Civil Aviation Authority, established by Law N° 007/2019 of 13/04/2019 | Drone registration (9XR-), remote pilot licences, activity permits, UAS Operator Certificates, BVLOS area approvals | [RCAR Part 27](https://www.caa.gov.rw/fileadmin/user_upload/RCAA/Laws___Regulations/Aviation_Orders/__Ministerial_Orders/____Rwanda_Civil_Aviation_Regulations/RCARs_Part_27_-_Unmanned_Aircraft_Systems_Regulations.pdf), under [Law n° 20/2018](https://rwandalii.org/akn/rw/act/law/2018/20/eng@2018-04-30) as amended by [Law n° 059/2024](https://rwandalii.org/akn/rw/officialGazette/government-gazette/2024-07-24/special/mul@2024-07-24) |
-| **Air traffic control** and the aerodrome operator, Rwanda Airports Company | ATC authorisation in controlled airspace and near aerodromes; NOTAMs for flights above 120 m | 27.065, 27.090, 27.095(c) |
+| **Air traffic control** and the aerodrome operator, Rwanda Airports Company | ATC authorisation in controlled airspace and near aerodromes; an agreement with the aerodrome operator (with an observer) at uncontrolled aerodromes; NOTAMs for flights above 120 m | 27.065, 27.090, 27.095(c) |
 | **The competent security agencies** (not named in the text) | Security vetting of pilots, owners and operators, and review of camera use | 27.375, 27.380(e)(4); App. 1 §1.3.9 |
 | **National Civil Aviation Security Committee** (its chair) | Consulted before highly automated operations are approved; sets security conditions | 27.110(d)–(e) |
 | **Rwanda National Police**, at the point of entry | Declaration of drones on arrival; drones held on a seizure form until registered or authorised | App. 1 §1.2; [RCAA drones page](https://www.caa.gov.rw/drones) |
@@ -246,10 +246,10 @@ The [Data Protection and Privacy Office](https://dpo.gov.rw/) issues those certi
 |---|---|---|
 | Operating a drone without authorisation | art. 99 | 3 to 5 years' imprisonment and a fine |
 | Operating before a certificate or licence is issued, not complying with it, forgery or false marks | art. 92, as restated in 2024 | 5 to 10 years and a fine |
-| Flying in published prohibited or restricted areas, or at the listed sites, without RCAA permission | art. 100, as restated in 2024 | 3 to 5 years and a fine |
+| Flying in published prohibited or restricted areas, or at the listed sites, unless within the conditions of the restriction or with RCAA permission | art. 100, as restated in 2024 | 3 to 5 years and a fine |
 | Photographing a prohibited area without a permit, or an individual without consent | art. 101 | 3 to 5 years and a fine |
 | Failing to declare a drone on arrival, or to present its registration documents | art. 102 | 3 to 6 months and a fine, or one of them |
-| Flying without registration marks | art. 105, as restated in 2024 | 1 to 2 months and a fine, or one of them |
+| An owner not prominently displaying the registration marks RCAA issued | art. 105, as restated in 2024 | 1 to 2 months and a fine, or one of them |
 | A false declaration to obtain a drone certificate or permit | art. 106 | 3 to 5 years and a fine |
 | An offence committed with the consent, connivance or negligence of a company's officers | art. 110 | A fine on the company, or its dissolution |
 | Contravening regulations, notices or orders issued by the Authority | art. 111, as restated in 2024 | 6 months to 1 year and a fine, or one of them |

@@ -190,7 +190,7 @@ Ask any provider, including us, how the art. 5 requirement is met for your contr
 ::::section{id="drones" tone="alt" eyebrow="Drones on a mine site" title="Satellite first, drones where they add detail"}
 :::::columns{split="2-1"}
 ::::col
-Part 27 sets no drone rule specific to mines. A flight over a licence area is a commercial Specific operation with registration, a pilot licence and an activity permit, the consent of occupiers where the flight passes over their property or near people, and care around blasting areas, which are hazards. Drone surveys are subject to the RCAA approvals, security reviews and consents each job requires, so a survey starts from satellite imagery and adds drone orthophotos and elevation models where they add detail.
+Part 27 sets no drone rule specific to mines. A flight over a licence area is a commercial Specific operation with registration, a pilot licence and an activity permit (and, where RCAA asks for one, a UAS Operator Certificate), the consent of occupiers where the flight passes over their property or near people, and care around blasting areas, which are hazards. Drone surveys are subject to the RCAA approvals, security reviews and consents each job requires, so a survey starts from satellite imagery and adds drone orthophotos and elevation models where they add detail.
 ::::
 ::::col
 :::callout{tone="legal" title="Drone law in Rwanda"}
