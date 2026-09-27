@@ -44,7 +44,7 @@ faq:
     a: Not on its own. Surveys for Deeds Registry diagrams and general plans, and boundary and beacon surveys, are reserved to practising land surveyors (Land Survey Act s.16). Where a deliverable must be relied on as a survey, it needs a registered land surveyor's certification. Our registers and change reports are mapping records built from imagery; they show your surveyor and your wayleave officers where to look.
 ---
 
-::::section{id="at-a-glance" eyebrow="At a glance" title="Four CAAZ-side approvals, then clearances and letters" lead="The aircraft, the pilot, the operator and the commercial air service are each approved separately. A commercial drone job also needs the security clearances and written approvals CAAZ's application refers to."}
+::::section{id="at-a-glance" eyebrow="At a glance" title="Four approvals, then clearances and letters" lead="The aircraft, the pilot and the operator are approved by CAAZ, and the commercial air service by the Ministry responsible for Transport. A commercial drone job also needs the security clearances and written approvals CAAZ's application refers to."}
 :::cards{cols="4"}
 :::card{title="Each aircraft" icon="drone" eyebrow="CAAZ"}
 A **letter of approval** (s.4) and **registration** by CAAZ (s.5): "No remotely piloted aircraft shall be operated within Zimbabwe, unless it has been registered by the Authority."
@@ -65,7 +65,7 @@ Around those approvals sits the site. CAAZ's online application for organisation
 S.I. 271 of 2018 is the current instrument: no later drone regulation appears on [CAAZ's legislation page](https://www.caaz.co.zw/legislation/) or in the Veritas index of statutory instruments, as checked on 27 September 2026.
 ::::
 
-::::section{id="who" tone="alt" eyebrow="Who approves what" title="Ten bodies can have a say in one drone job"}
+::::section{id="who" tone="alt" eyebrow="Regulators and approvals" title="Who approves what, layer by layer" lead="Aviation safety is only one layer. Security, land, survey and data rules each add their own approvals."}
 | Layer | Body | Instrument | What it controls |
 |---|---|---|---|
 | Safety, aircraft, pilots, operators | **CAAZ** | Civil Aviation Act [Chapter 13:16]; S.I. 271 of 2018 | Letter of approval, registration, remote pilot licence, ROC and operations specifications, operational approvals, frequency allocation (s.45(5)–(6)) |

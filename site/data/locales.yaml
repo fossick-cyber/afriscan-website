@@ -65,3 +65,17 @@ ng:
   label: "Nigeria"
   short: "Nigeria"
   sitemap: sitemap-ng.xml
+zw:
+  content: zw
+  prefix: /zw
+  lang: en-ZW
+  hreflang: [en-ZW]
+  og_locale: en_GB
+  i18n: en
+  country: ZW
+  country_name: Zimbabwe
+  label: "Zimbabwe"
+  short: "Zimbabwe"
+  sitemap: sitemap-zw.xml
+  status: live
+  region: Southern
