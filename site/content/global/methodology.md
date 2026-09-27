@@ -82,7 +82,7 @@ Every report names its imagery and, where the source provides it, the capture da
 
 **Resolution.** The open segmentation models we use are built for imagery of about 50 cm per pixel or finer. Coarser open satellite data, such as Copernicus Sentinel, is used only for larger patterns (vegetation, land-cover change, burnt areas), never to count individual buildings. On drone orthophotos, reviewers work at the full resolution of the image.
 
-**Basemaps.** The satellite layers behind common web maps carry no capture date and their terms do not make them survey imagery. We use them only to screen and plan, never as delivered imagery and never for a record that depends on a date. The imagery sources and every open-data credit are listed on [imagery and data sources](/imagery) and [data sources and credits](/data-sources).
+**Basemaps.** The satellite layers behind common web maps carry no capture date and their terms do not make them survey imagery. We use them to screen and plan, and Google's, credited, to show our [pipeline sample](/results), never as delivered imagery and never for a record that depends on a date. The imagery sources and every open-data credit are listed on [imagery and data sources](/imagery) and [data sources and credits](/data-sources).
 ::::
 
 ::::section{id="detection" tone="alt" eyebrow="3 · Detection, then review" title="Several sources propose; a person decides"}

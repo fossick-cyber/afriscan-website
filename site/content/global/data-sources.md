@@ -14,7 +14,7 @@ faq:
   - q: Can we reuse the GIS layers you deliver in our own maps and reports?
     a: Yes. The layers are yours to use in your own work. Where a layer contains open data, its licence travels with it, so keep the credit line that comes with the layer. For OpenStreetMap-derived layers, the ODbL also has share-alike terms for databases you publish; your GIS team can check them at the ODbL link in the table above.
   - q: Do you deliver the basemap imagery shown in web maps?
-    a: No. Map-service basemaps carry no capture date and their terms do not make them survey imagery. We use them only to screen and plan, and never as delivered imagery or as the basis of a dated record.
+    a: No. Map-service basemaps carry no capture date and their terms do not make them survey imagery. We use them to screen and plan, and Google's, credited, to show our pipeline sample on this site. They are never delivered as survey imagery or used as the basis of a dated record.
   - q: Which satellite operators do you buy from?
     a: We source very-high-resolution scenes from commercial archives and request new captures from commercial operators, choosing per job by date, season and cloud. The report names the imagery used, and the proposal sets out its licence terms for your use.
   - q: Why credit data that is free to use?
