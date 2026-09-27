@@ -29,6 +29,6 @@ faq:
 - **The route or site file:** KML, KMZ, Shapefile or GeoJSON, or licence-area coordinates.
 - **The District or Districts** it crosses, so we can check the imagery that exists for the area.
 - **The widths to report:** the voltage, so we can apply the RURA Schedule I right of way (12 m, 25 m or 30 m and above), or the easement widths in your file, or the river and wetland buffers for a licence area.
-- **Satellite only, or drone detail too.** Drone work needs RCAA approvals, security review and consents, and power lines are restricted sites, so the proposal shows the lead time. See [drone law in Rwanda](/rw/drone-regulations).
+- **Satellite only, or drone detail too.** Drone work needs RCAA approvals, security review and consents, and high-tension lines are restricted sites, so the proposal shows the lead time. See [drone law in Rwanda](/rw/drone-regulations).
 - **Any cut-off or valuation date** the record must reflect, and your deadline.
 - **Whether affected-person data will be shared.** We prefer not.

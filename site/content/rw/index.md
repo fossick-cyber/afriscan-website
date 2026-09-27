@@ -36,7 +36,7 @@ faq:
   - q: Which imagery do you use, and from which dates?
     a: Dated satellite imagery, open building datasets or imagery you already hold. Every feature carries the name of its imagery source and, where the source gives one, the capture date. Map-service basemaps are never passed off as survey imagery or delivered to you.
   - q: Do we need a drone survey?
-    a: Not usually. Most right-of-way and licence-area questions can be answered from dated satellite imagery, with no flight and no site visit. Where a stretch needs more detail, drone surveys are subject to the RCAA approvals, security reviews and consents each job requires, and every power line is a restricted site under the drone rules. See [drone law in Rwanda](/rw/drone-regulations).
+    a: Not usually. Most right-of-way and licence-area questions can be answered from dated satellite imagery, with no flight and no site visit. Where a stretch needs more detail, drone surveys are subject to the RCAA approvals, security reviews and consents each job requires, and high-tension lines are restricted sites under the drone rules. See [drone law in Rwanda](/rw/drone-regulations).
   - q: Can you show what was there before a cut-off date?
     a: Where dated archive imagery of your area exists, yes. We tell you what is available, and from which dates, before you commit. When the archive is too old, a new satellite capture can be requested; its date depends on satellite availability and weather.
   - q: Can you tell us which structures are unauthorised?
@@ -148,7 +148,7 @@ Satellites and drones capture images on particular dates, so re-surveys follow a
 ::::section{id="drones" eyebrow="Satellite first, drones under Part 27" title="Satellite first, drone where it adds detail"}
 :::::columns{split="2-1"}
 ::::col
-Most corridor questions can be answered from dated satellite imagery, with no aircraft, no flight and no site visit. Where more detail is needed, drone surveys in Rwanda are subject to RCAA authorisation under Part 27 of the Rwanda Civil Aviation Regulations, and to the security reviews and consents each job requires. Power lines, power plants, highways and communication masts are restricted sites, so every flight near them needs explicit RCAA permission.
+Most corridor questions can be answered from dated satellite imagery, with no aircraft, no flight and no site visit. Where more detail is needed, drone surveys in Rwanda are subject to RCAA authorisation under Part 27 of the Rwanda Civil Aviation Regulations, and to the security reviews and consents each job requires. High-tension lines, power plants, highways and communication masts are restricted sites, so every flight near them needs explicit RCAA permission.
 
 Afridrone is working towards the approvals Rwanda requires. Every drone proposal sets out the approvals its flights need and who holds each one, so your team can check them.
 ::::

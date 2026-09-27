@@ -23,7 +23,7 @@ og:
   subline: RCAR Part 27 (2026), restricted sites and BVLOS, as of 27 September 2026
 faq:
   - q: Does a satellite-based right-of-way survey need an RCAA permit?
-    a: No aircraft flies in satellite-based work, so the Part 27 approvals do not come into it. One question is still open. Law n° 22/2021 gives the Rwanda Space Agency power to issue the "permits, authorizations and licenses that are required in space activities" (art. 8(2°)), and whether buying or analysing commercial satellite imagery counts as a space activity has not been settled. Your counsel should confirm it for your project.
+    a: No aircraft flies in satellite-based work, so the Part 27 approvals do not come into it. One question is still open. [Law n° 22/2021](https://rwandalii.org/akn/rw/act/law/2021/22/eng@2021-04-30) gives the Rwanda Space Agency power to issue the "permits, authorizations and licenses that are required in space activities" (art. 8(2°)), and whether buying or analysing commercial satellite imagery counts as a space activity has not been settled. Your counsel should confirm it for your project.
   - q: Is a drone under 1 kg enough for a commercial survey?
     a: No. The Basic class (1 kg or less) "will not be considered for any commercial UAS flights" and is limited to private property with the owner's authorisation (27.020, 27.135(a)). Commercial work is in the Specific class, up to 25 kg, with registration, an activity permit, a pilot licence and an operator certificate listed for it (Table 27.020). Above 25 kg, a drone flies only under an approved person or organisation (27.135(c)).
   - q: Can a company from outside Rwanda fly drone surveys there?

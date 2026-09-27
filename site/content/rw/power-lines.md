@@ -22,7 +22,7 @@ related: [route-site-selection, resettlement-cut-off-baselines, vegetation-land-
 faq:
   - q: Which right-of-way widths do you measure?
     a: By default, the minimum widths in Schedule I of RURA's guidelines, with the line centred, so the half-widths are 6 m for 15–30 kV, 12.5 m for 110 kV, 15 m for 220 kV and 25 m for 400 kV. The guidelines also say existing lines "may differ" and that a lesser width may apply where a line runs beside a road or railway, so send the easement widths in your file where they differ. We can add wider context bands, such as 60 m and 100 m, and report up to six widths in one survey.
-  - q: Why do you say "right of way" and not "servitude"?
+  - q: Why do you say “right of way” and not “servitude”?
     a: Because in Rwandan land law a servitude is something else. The 2022 Ministerial Order determining types of servitude deals with pathways to a parcel, a well, a river or a lake, between 1 m and 1.5 m wide. For power lines, the Electricity Law and RURA's guidelines use "right of way" (French *droit de passage*; Kinyarwanda *uburenganzira bwo kubona inzira*), secured by an easement, a purchase or expropriation.
   - q: Can you tell us which structures are unauthorised?
     a: No. The guidelines say the right of way "shall generally be clear of unauthorized structures", and they allow some uses, such as gardens, pastures, fences and small movable structures, with the licensee's prior written consent. Whether a structure has that consent, or predates the line, is for the licensee and the authorities to decide. We show you, with dates, what is there.
@@ -77,9 +77,9 @@ A 2026 resettlement action plan published by REG for a substation observes that 
 ::::col
 Chapter IX of [Law n° 21/2011 governing electricity](https://rwandalii.org/akn/rw/act/law/2011/21/eng@2011-07-12), unchanged by the 2018 amendment, says: "The right of way is necessary to the operators in production, transmission, distribution and supply of electricity. It shall be exercised in accordance with the standards set by the regulatory agency. Expropriation shall be conducted in accordance with the Law governing expropriation for public interest" (art. 48). Complaints about interference with property, including the right of way, go to the regulator and, if needed, the courts (art. 49).
 
-The standards are [RURA's Guidelines N°01/GL/EL-EWS/RURA/2015 on Right-of-Way for Power Lines](https://www.rura.rw/fileadmin/user_upload/RURA/Documents/Sectors/Energy/Regulatory_Instruments/Energy_Regulations_and_Guidelines/Guidelines_on_Right-Of-Way_for_Power_Lines.pdf), adopted on 30 November 2015: "a safety corridor to allow the Licensee to keep the power lines clear of tall trees, building and other structures that could interfere with line operation". Distribution lines are those up to 30 kV, transmission lines 110 kV and above.
+The standards are [RURA's Guidelines N°01/GL/EL-EWS/RURA/2015 on Right-of-Way for Power Lines](https://www.rura.rw/fileadmin/user_upload/RURA/Documents/Sectors/Energy/Regulatory_Instruments/Energy_Regulations_and_Guidelines/Guidelines_on_Right-Of-Way_for_Power_Lines.pdf), adopted on 30 November 2015: "a safety corridor to allow the Licensee to keep the power lines clear of tall trees, building and other structures that could interfere with line operation". Distribution lines are those up to 30 kV, transmission lines 110 kV and above. Schedule I sets the minimum widths:
 
-| Voltage | Minimum right of way (Schedule I) | Each side of the centreline |
+| Voltage | Right of way | Each side |
 |---|---|---|
 | 0.4 kV | 3 m | 1.5 m |
 | 15–30 kV | 12 m | 6 m |
@@ -199,7 +199,7 @@ Where vegetation in the corridor has been cleared or has grown back between date
 [Vegetation, land cover and fire, in detail](/solutions/vegetation-land-cover-fire)
 ::::
 
-::::section{id="drones" eyebrow="Drones along a line" title="Every power line is a restricted site for drones"}
+::::section{id="drones" eyebrow="Drones along a line" title="High-tension lines are restricted sites for drones"}
 :::::columns{split="2-1"}
 ::::col
 Flying a drone at "high tension cables and communication masts" without RCAA's permission, or outside the conditions of the restriction, is an offence under art. 100 of Law n° 20/2018, and RCAA's advisory circular lists power plants among the strategic installations. Every drone survey of a line, substation or power plant therefore needs an RCAA permission that names the line or site, on top of the registration, pilot licence and activity permit Part 27 requires and, where RCAA asks for one, an operator certificate. Over inhabited plots, flights also need the consent of occupiers or owners, or an authority-level consent.

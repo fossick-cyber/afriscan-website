@@ -73,12 +73,12 @@ The guidelines describe satellite imagery and aerial surveys as tools for follow
 [Law n° 072/2024 of 26/06/2024 on mining and quarry operations](https://www.rmb.gov.rw/fileadmin/user_upload/RMB/Publications/Laws/Law_n___0722024of_26062024_on_mining_and_quarry_operations.pdf) (*loi portant exploitation des mines et carrières*; Kinyarwanda *itegeko rigenga ubucukuzi bw'amabuye y'agaciro na kariyeri*) repealed Law n° 58/2018; licences granted under the old law stay valid until they expire (arts. 75, 77).
 
 :::facts{cols="3"}
-- Ownership: minerals are vested in the State "notwithstanding personal ownership of land" (art. 3)
-- Compensation first: fair compensation to the landowner or lawful occupier before mining, after which the land is registered to the State (art. 4)
-- Maximum block sizes: exploration 400 ha, small-scale 50 ha, medium-scale 100 ha, large-scale 400 ha (art. 8)
-- Terms: exploration up to 4 years and mining up to 15 years at first (art. 13)
-- Beacons: the holder installs "beacons around the mining licence area" (art. 24(c))
-- Records: "aerial photographs" and other data kept at an address in Rwanda (art. 24(d)(ii))
+- Ownership: Minerals are vested in the State "notwithstanding personal ownership of land" (art. 3)
+- Compensation first: Fair compensation to the landowner or lawful occupier before mining, after which the land is registered to the State (art. 4)
+- Maximum block sizes: Exploration 400 ha, small-scale 50 ha, medium-scale 100 ha, large-scale 400 ha (art. 8)
+- Terms: Exploration up to 4 years and mining up to 15 years at first (art. 13)
+- Beacons: The holder installs "beacons around the mining licence area" (art. 24(c))
+- Records: The holder keeps "aerial photographs" and other data at an address in Rwanda (art. 24(d)(ii))
 :::
 
 Applications go through the One Stop Center (art. 9), potential mining areas are demarcated with their names and geographic coordinates (art. 5), and each holder agrees a development and social-welfare plan with the District (art. 74). Tailings are managed as regulations provide, and damage to land and property is fairly compensated (art. 24(i)–(j)). Licences are administered by the Rwanda Mines, Petroleum and Gas Board (RMB) through the [GIMCS mining cadastre](https://gimcs.rmb.gov.rw/).
