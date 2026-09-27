@@ -82,7 +82,7 @@ The Mines and Minerals Act [Chapter 21:05] closes some ground to prospecting wit
 | A pipeline | 5 m, or 25 m for asbestos pipelines over 30 cm | No prospecting or mining without the owner's consent (s.34(7)) |
 | A power line | 10, 25 or 40 m from the centre line, by voltage | No prospecting or mining (s.34(8)) |
 
-Section 31 also closes other mining locations, town limits and a 50 m belt around them, aerodromes, State rifle ranges, any railway reserve, cemeteries, holdings of 100 ha or less without consent, and "Communal Land occupied as a village without the written consent of the rural district council". Around pipelines the 2026 Pipelines Act adds a wider rule: no mining or blasting within 125 m of either side of the centre ([Act No. 5 of 2025](https://www.veritaszim.net/node/7892)).
+Section 31 also closes other mining locations, town limits plus a 50 m belt, aerodromes, State rifle ranges, any railway reserve, cemeteries, holdings of 100 ha or less without consent, and "Communal Land occupied as a village without the written consent of the rural district council". Around pipelines the 2026 Pipelines Act adds a wider rule: no mining or blasting within 125 m of either side of the centre ([Act No. 5 of 2025](https://www.veritaszim.net/node/7892)).
 
 :::callout{tone="legal" title="Checked 27 September 2026"}
 Read from ZimLII's consolidated text of the Act. Parliament is considering a new Mines and Minerals Bill (H.B. 1, 2025), which was still before the National Assembly on 22 September 2026 ([Veritas](https://www.veritaszim.net/node/8112)). This is a summary, not legal advice.

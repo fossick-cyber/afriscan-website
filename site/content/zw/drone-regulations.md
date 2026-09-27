@@ -310,5 +310,7 @@ Certification by a registered land surveyor where the deliverable must be legall
 ::::
 :::::
 
+Last reviewed 27 September 2026 against the primary sources listed below. This page summarises public rules for information; it is not legal advice.
+
 Drone law in other countries: [Mozambique](/mz/drone-regulations), [South Africa](/za/drone-regulations), [Nigeria](/ng/drone-regulations), and the [side-by-side comparison](/drone-regulations).
 ::::
