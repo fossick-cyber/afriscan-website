@@ -676,18 +676,19 @@ def g_panel(d, S, x0, y0, rows, title=None, fs=30, draw=True, anchor="left"):
     return box_
 
 
-def g_furniture(d, S, W, H, lang, scale_m, ppm, fs=30, scale_right=False):
+def g_furniture(d, S, W, H, lang, scale_m, ppm, fs=30, scale_right=False, att_px=None):
     """North arrow and scale bar (bottom left, or left of the attribution) and the attribution (bottom
-    right), on dark pills. The attribution is set a size larger than the rest, so it stays legible where
-    the image is shown small."""
+    right), on dark pills. The attribution is set a size larger than the rest (att_px image pixels,
+    default 1.25 fs), so it stays legible where the image is shown small."""
     L = GSTR[lang]
     u = fs / 30
     q = lambda v: round(v * u) * S
-    f, fa = font(fs * S, 650), font(round(fs * 1.25) * S, 700)
+    att_px = att_px or round(fs * 1.25)
+    f, fa = font(fs * S, 650), font(att_px * S, 700)
     x1, y1 = W * S - q(22), H * S - q(22)
     # attribution
     t = L["attribution"]
-    ph = round(fs * 2.05) * S
+    ph = round(att_px * 1.64) * S
     tw = d.textlength(t, font=fa)
     boxes = [(x1 - tw - q(36), y1 - ph, x1, y1)]
     d.rounded_rectangle(boxes[0], radius=q(10), fill=(0, 0, 0, 185))
@@ -851,7 +852,8 @@ def g_overview(tiles, line, marks, frames, lang):
     boxes = [g_panel(d, S, 22 * S, 22 * S, [("route", L["route"]), ("band", L["band"]), ("dot-a", L["b50"]),
                                             ("dot-b", L["b100"]), ("dot-c", L["beyond"]), ("frame", L["frames"]),
                                             ("note", L["dot_key"])], fs=28)]
-    boxes += g_furniture(d, S, W, H, lang, 1000, W / ((right - left) / k), fs=32, scale_right=True)
+    # The attribution matches the close-ups' (55 px): the overview is shown at the same width on phones.
+    boxes += g_furniture(d, S, W, H, lang, 1000, W / ((right - left) / k), fs=32, scale_right=True, att_px=55)
     for b_ in boxes:
         if g_hits(b_, circles, 6 * S):
             raise SystemExit("overview: a mark or a close-up frame sits under the legend, the scale bar or the attribution")
