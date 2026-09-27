@@ -38,7 +38,7 @@ faq:
 ---
 
 ::::section{id="problema" eyebrow="O problema" title="A ocupação das zonas de servidão começa com uma casa" lead="Uma linha de transporte atravessa centenas de quilómetros de lavras, aldeias e periferias de cidades. Uma construção debaixo dos condutores é um risco para quem lá vive, uma dificuldade para a manutenção e, mais tarde, um processo de indemnização."}
-A própria concessionária pública da rede nacional de transporte, a RNT-EP, tem feito campanhas de sensibilização contra «a ocupação desordenada das zonas onde estão implantados equipamentos eléctricos» e pelo «respeito pelas zonas de servidão das Linhas de Transporte», como as realizadas no Huambo e no Bié em Julho de 2026 ([RNT-EP, 28 de Julho de 2026](https://www.rnt.co.ao/noticias/rnt-ep-promove-campanhas-de-sensibilizacao-para-preservacao-das-infra-estruturas-electricas-no-huambo-e-bie/)). Citamos estas campanhas como contexto público.
+A própria concessionária pública da rede nacional de transporte, a RNT-EP, tem feito campanhas de sensibilização contra «a ocupação desordenada das zonas onde estão implantados equipamentos eléctricos» e pelo «respeito pelas zonas de servidão das Linhas de Transporte», como as realizadas no Huambo e no Bié em Julho de 2026 ([RNT-EP, 28 de Julho de 2026](https://www.rnt.co.ao/noticias/rnt-ep-promove-campanhas-de-sensibilizacao-para-preservacao-das-infra-estruturas-electricas-no-huambo-e-bie/)).
 
 Entre duas inspecções, as construções aparecem, os caminhos abrem-se até às torres e as queimadas avançam sobre a faixa. A AfriScan dá à equipa de linhas uma imagem datada e revista do que está dentro de cada faixa, e do que mudou desde o último levantamento.
 

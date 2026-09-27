@@ -28,6 +28,16 @@ region:
   label: Site do país
   choose: Escolha o site do país
   current: Está aqui
+  # When the grouped country menu (gw-core) is merged, uncomment these with the regions block below:
+  # stay: Ficar neste site
+  # banner: "Está em {country}? Veja o site de {country}."
+
+# regions:
+#   Southern: África Austral
+#   East: África Oriental
+#   West: África Ocidental
+#   Central: África Central
+#   North: Norte de África
 
 cta:
   title: Saiba o que está construído na faixa de servidão antes que o problema cresça.
