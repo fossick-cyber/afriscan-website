@@ -190,4 +190,6 @@ Re-surveys on the schedule you set, with a change notice after each one, and dro
 :::
 ::::
 :::::
+
+[Power and utilities across Africa](/industries/power-utilities) · [Gas pipelines in Ghana](/gh/gas-pipelines) · [Rail, roads and fibre in Ghana](/gh/rail-roads-and-fibre) · [Working with AfriScan in Ghana](/gh/working-with-afriscan)
 ::::

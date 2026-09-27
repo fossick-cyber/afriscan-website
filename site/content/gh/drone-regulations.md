@@ -355,7 +355,7 @@ Drone surveys are carried out subject to the GCAA authorisations and security cl
 :::callout{tone="scope" title="Land and environmental mapping, not a security service"}
 We map structures, cleared ground, excavations and tracks on and around your right of way or lease, and flag change between dated surveys for your teams to check. We never identify or follow people, and results go only to the contacts you name.
 
-[Gas pipelines in Ghana](/gh/gas-pipelines) · [Transmission lines](/gh/power-lines) · [Mining leases](/gh/mining-concessions)
+[Gas pipelines in Ghana](/gh/gas-pipelines) · [Transmission lines](/gh/power-lines) · [Mining leases](/gh/mining-concessions) · [Drone surveys](/solutions/drone-surveys) · [Drone rules in other countries](/drone-regulations)
 :::
 ::::
 :::::

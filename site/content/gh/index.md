@@ -41,8 +41,8 @@ faq:
     a: No. We map the land, not people. The register records a structure, a pit or a patch of cleared ground, where it is and on which imagery date it first appears. It never identifies, counts or follows anyone, and whether a structure or a working is authorised is for you and the authorities to decide.
   - q: Can the register be shared with chiefs, the District Assembly or the people along the line?
     a: That is your decision. A neutral, dated map of what stood where is often the starting point for engagement with traditional authorities and communities, for compensation processes and for grievance handling. We never publish maps of your assets or of the settlements around them without your written permission.
-  - q: Do you work with Ghanaian firms?
-    a: Yes. On mining leases, the Minerals Commission's procurement list reserves mapping for mines to firms incorporated in Ghana with Ghanaian owners, so AfriScan works there as the technology supplier to a qualifying Ghanaian firm, which holds the contract. Where your own survey team already flies drones, we run our analysis on its imagery. [Working with AfriScan in Ghana](/gh/working-with-afriscan) sets out the rules.
+  - q: Do you work through Ghanaian firms?
+    a: Where the rules call for it, yes. On mining leases, the Minerals Commission's Local Procurement List reserves mapping for mines to firms incorporated in Ghana with exclusively Ghanaian directors and shareholders, so AfriScan works there as the technology supplier to a qualifying Ghanaian firm, which holds the contract. Where your own survey team already flies drones, we run our analysis on its imagery. [Working with AfriScan in Ghana](/gh/working-with-afriscan) sets out the rules.
 ---
 
 ::::section{tone="dark" class="home-strip"}
@@ -122,10 +122,12 @@ New digging, pits, cleared ground and structures along railway reserves, road co
 :::card{title="Cut-off dates and compensation" icon="calendar" key="resettlement-cut-off-baselines"}
 A dated structure inventory on the cut-off date, and what changed after it, for L.I. 2175 processes, compulsory acquisition and IFC Performance Standard 5 records.
 :::
-:::card{title="Environmental permit baselines" icon="clipboard" href="/industries/project-finance-esia#esia-rap-baselines"}
+:::card{title="Environmental permit baselines" icon="clipboard" href="/industries/project-finance-esia"}
 Maps of communities, water bodies, forest reserves and land cover for the baseline that L.I. 2504 asks for, supplied to the consultants who prepare the environmental report.
 :::
 :::
+
+The same services across Africa: [oil and gas](/industries/oil-gas) · [mining](/industries/mining) · [power and utilities](/industries/power-utilities) · [rail and roads](/industries/rail-roads) · [all solutions](/solutions)
 ::::
 
 ::::section{id="standard" tone="dark" eyebrow="Our standard" title="Land and assets, never people"}

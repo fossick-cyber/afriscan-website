@@ -156,7 +156,7 @@ Mining, pipelines, roads, railways and other undertakings in the First Schedule 
 - The imagery date behind every record
 :::
 
-[Mining leases in Ghana](/gh/mining-concessions) · [Pipelines](/gh/gas-pipelines) · [Power lines](/gh/power-lines)
+[Mining leases in Ghana](/gh/mining-concessions) · [Pipelines](/gh/gas-pipelines) · [Power lines](/gh/power-lines) · [Rail, roads and fibre](/gh/rail-roads-and-fibre) · [ESIA and project finance across Africa](/industries/project-finance-esia)
 ::::
 :::::
 ::::

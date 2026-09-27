@@ -247,4 +247,6 @@ The report and GIS layers go to the contacts you name, and re-surveys follow the
 :::
 ::::
 :::::
+
+[Mining across Africa](/industries/mining) · [Pipelines in mining country](/gh/gas-pipelines#mining-country) · [Fibre routes in mining districts](/gh/rail-roads-and-fibre#fibre) · [Drone rules in Ghana](/gh/drone-regulations)
 ::::

@@ -126,7 +126,7 @@ Stockpile, spoil and borrow-pit volumes from drone elevation models, and heavy e
 ::::section{id="terrain" tone="alt" eyebrow="Terrain and water" title="Where the route is exposed to slopes and floods"}
 Steep, erosion-prone and drainage-crossing stretches are highlighted from elevation data, and structures and segments in historically flooded or low-lying ground are flagged, so maintenance and planning teams can see which parts of the route need attention first. After a flood, a map of the flooded area and a reviewer's before-and-after check of structures along the route show what changed.
 
-[Terrain, flood and post-event mapping](key:terrain-flood-post-event) · [Rail and roads: the global page](/industries/rail-roads)
+[Terrain, flood and post-event mapping](key:terrain-flood-post-event) · [Rail and roads across Africa](/industries/rail-roads)
 ::::
 
 ::::section{id="how" eyebrow="How it works" title="From route file to reviewed register"}
@@ -169,4 +169,6 @@ Re-surveys on the schedule you set, with a change notice after each one, and dro
 :::
 ::::
 :::::
+
+[Mining leases in Ghana](/gh/mining-concessions) · [Gas pipelines in Ghana](/gh/gas-pipelines) · [Transmission lines in Ghana](/gh/power-lines) · [Cut-off-date baselines in Ghana](/gh/resettlement-compensation-baselines)
 ::::

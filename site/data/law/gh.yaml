@@ -1,13 +1,15 @@
-# Ghana: the instruments the drone-law page (/gh/drone-regulations) relies on.
-# Facts ONLY from regional/gh.FINAL.md (verified 2026-09-27 against the GCAA's own PDFs, the Act 1120
-# scan, Ghana Gazette No. 21 of 1 February 2024, the DPC registration page and the Minerals
-# Commission's 6th-edition Local Procurement List). Documents the brief dates only by month carry
-# their year (Part 28 and Part 11: November 2018; AC 28-007 and AC 28-009: February 2023; AC 28-12:
-# 2024; AC 28-13: June 2024). Undated documents (the RPAS Sanctions, the RPAS FAQs, the Certified RPAS
-# Operators page) are linked from the page body instead of this table. Items the brief marks
-# [unverified] stay out: a stand-alone National Security clearance procedure, the RPAS content of the
-# 2024 Aviation Security Directives, the cedi value of a penalty unit. No fee, charge, penalty amount,
-# notice period or certificate-validity figure appears anywhere (owner rule 1; gh.FINAL copy rules).
+# Ghana: the instruments the drone-law page (/gh/drone-regulations) relies on. Facts ONLY from
+# regional/gh.FINAL.md (verified 2026-09-27 against the GCAA's own PDFs, the Act 1120 scan, Ghana
+# Gazette No. 21 of 1 February 2024, the DPC registration page and the Minerals Commission's 6th-edition
+# Local Procurement List). Documents the brief dates only by month carry their year (Part 28 and Part
+# 11: November 2018; AC 28-007, AC 28-008 and AC 28-009: February 2023; AC 28-003: August 2024; AC
+# 28-004: August 2020; AC 28-12: 2024; AC 28-13: June 2024), because `date` takes a full date or a year
+# and `identifier` feeds legislationIdentifier. Undated documents (the RPAS Sanctions, the RPAS FAQs,
+# the Certified RPAS Operators page) are linked from the page body instead of this table. Items the
+# brief marks [unverified] stay out: a stand-alone National Security clearance procedure, the RPAS
+# content of the 2024 Aviation Security Directives, the cedi value of a penalty unit. No fee, charge,
+# penalty amount, notice period or certificate-validity figure appears anywhere (owner rule 1; gh.FINAL
+# copy rules).
 country_name: Ghana
 last_reviewed: 2026-09-27
 regulator:

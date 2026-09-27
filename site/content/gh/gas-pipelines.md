@@ -201,4 +201,6 @@ Drone checks of flagged stretches where the approvals allow, then scheduled re-s
 :::
 ::::
 :::::
+
+[Oil and gas across Africa](/industries/oil-gas) · [Mining leases in Ghana](/gh/mining-concessions) · [Transmission lines in Ghana](/gh/power-lines) · [Cut-off-date baselines in Ghana](/gh/resettlement-compensation-baselines)
 ::::
