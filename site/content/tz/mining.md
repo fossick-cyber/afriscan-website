@@ -26,7 +26,7 @@ faq:
   - q: Where do the licence boundaries come from?
     a: From you. Send the licence coordinates or polygons from your licence documents, or the boundaries you hold from the Mining Cadastre Portal, and the tailings, blast or buffer zones your engineers define. We measure against those; we do not verify title or licence status.
   - q: Does occupation of land inside a licence area give mineral rights?
-    a: The Court of Appeal has held that it does not. In 2024 it affirmed that "a party cannot claim lawful ownership of mining property without a valid licence under the Mining Act, regardless of occupation or official correspondence" ([2024] TZCA 580), following an earlier decision to the same effect ([2018] TZCA 225). A dated map records what was on the ground and when; whether anyone has a right is for the law to decide.
+    a: The Court of Appeal has held that it does not. TanzLII's summary of the 2024 appeal ([2024] TZCA 580) records that "a party cannot claim lawful ownership of mining property without a valid licence under the Mining Act, regardless of occupation or official correspondence", following an earlier decision to the same effect, as summarised on TanzLII ([2018] TZCA 225). A dated map records what was on the ground and when; whether anyone has a right is for the law to decide.
   - q: How do the mining local-content rules affect this service?
     a: A non-indigenous company that supplies a contractor, a subcontractor or a licensee must form a joint venture with an indigenous Tanzanian company and give it at least 20 per cent of the equity (Mining (Local Content) Regulations, reg 8(6)). Each mining proposal sets out how it meets reg 8(6), naming the indigenous Tanzanian company and its equity share. Check the current text of the regulations, which have been amended several times, with the Mining Commission or your counsel.
   - q: Can you show rehabilitation progress for closure?
@@ -63,7 +63,7 @@ How vegetation cover returns on rehabilitated pits, waste dumps and closed borro
 - Community-relations and grievance teams
 - Resettlement and valuation consultants
 - Lenders' environmental and social monitors
-- The Mining Commission and technical-support partners of small-scale licence holders
+- Mining regulators, and technical-support partners of small-scale licence holders
 - ESIA consultancies and registered environmental experts
 :::
 ::::
@@ -73,14 +73,14 @@ How vegetation cover returns on rehabilitated pits, waste dumps and closed borro
 ::::col
 The [Mining Act, Cap. 123](https://tanzlii.org/en/akn/tz/act/2010/14/eng@2019-11-30), gives the Mining Commission (*Tume ya Madini*) the function to "regulate and monitor the mining industry" (s.22). It sets exclusive areas for primary licences (s.16) and the grant of primary mining licences (PMLs, *leseni ndogo za uchimbaji madini*) (s.55), and the local-content duties in Part VIII. Licence information is published on the [Mining Cadastre Portal](https://portal.madini.go.tz/).
 
-The courts have been clear that occupation does not create mineral rights. The Court of Appeal held in 2018 that occupation or administrative promises do not ([2018] TZCA 225), and in 2024 it affirmed that "a party cannot claim lawful ownership of mining property without a valid licence under the Mining Act, regardless of occupation or official correspondence" ([2024] TZCA 580).
+The courts have been clear that occupation does not create mineral rights. As summarised on TanzLII, the Court of Appeal held in 2018 that occupation or administrative promises do not ([2018] TZCA 225), and TanzLII's summary of the 2024 appeal ([2024] TZCA 580) records that "a party cannot claim lawful ownership of mining property without a valid licence under the Mining Act, regardless of occupation or official correspondence".
 ::::
 ::::col
 ### Small-scale licence areas {#small-scale}
 
 The Mining Commission oversees small-scale miners (*wachimbaji wadogo*), including licence holders who work under technical-support agreements under the *Kanuni za Msaada wa Kiufundi kwa Wamiliki wa Leseni Ndogo za Uchimbaji Madini, 2025*. It reported on 26 August 2026 that it had inspected 128 such projects, found 42 inactive and 86 with shortcomings, and given them 30 days to correct them; it may revoke technical-support approvals ([Mining Commission, 26 August 2026](https://www.tumemadini.go.tz/pages/news/b32732ea-93aa-4937-bcc3-41ae201b8a6d/)).
 
-Whether ground is being worked in a licence area, and what changed between two dates, is exactly what dated imagery shows. For the Commission and for technical-support partners, we map pits, disturbed ground, spoil and new tracks across small-scale licence areas and flag what is new between surveys, so inspections go where the ground has changed.
+Whether ground is being worked in a licence area, and what changed between two dates, is exactly what dated imagery shows. For regulators and technical-support partners, we map pits, disturbed ground, spoil and new tracks across small-scale licence areas and flag what is new between surveys, so inspections go where the ground has changed.
 ::::
 :::::
 ::::

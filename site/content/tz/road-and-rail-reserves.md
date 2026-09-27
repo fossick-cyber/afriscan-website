@@ -25,7 +25,7 @@ faq:
   - q: How wide is the railway reserve?
     a: The Railways Act defines the railway reserve as the land on both sides of the track "measuring thirty metres in width from the centre line of the track reserved for safety purpose" (s.3). Its Second Schedule adds a 30 m sidings reserve and bridge reserves of 60 m from the bank edge on either side and 200 m from the centre of the structure.
   - q: Does a title deed or building permit override the road reserve?
-    a: In a 2022 case summarised on TanzLII, the High Court held a demolition within the statutory road reserve lawful and held that title documents and permits did not displace the reserve ([2022] TZHCLandD 282). For railways, the leading cases are still before the Court of Appeal, so take advice on your own facts.
+    a: In a 2022 case summarised on TanzLII, the High Court held a demolition within the statutory road reserve lawful and held that title documents and permits did not displace the reserve ([2022] TZHCLandD 282). For railways, the leading High Court decision is under appeal (Civil Appeal No. 61 of 2024), and the Court of Appeal decided the other case on a procedural point ([2021] TZCA 198), so take advice on your own facts.
   - q: Can you show whether a plot was inside the reserve when it was granted?
     a: We can show what the imagery shows on each available date and roughly when a structure first appeared, measured against the reserve line. When the plot was granted, and on what terms, comes from the land registry and the grant itself; the courts decide what follows.
   - q: Can you detect cable theft on a fibre route?

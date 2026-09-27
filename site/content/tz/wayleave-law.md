@@ -94,7 +94,7 @@ The [Petroleum Act, Cap. 392 R.E. 2023](https://www.ewura.go.tz/uploads/document
 
 **Safety zones are upstream only.** Section 203 provides that "there shall be a safety zone surrounding every facility used for carrying out petroleum activities, unless otherwise determined by PURA", and that "(5) A person shall not carry unauthorised activity in the safety zones". It sits in Part VI(a), "Health and Safety in Petroleum Upstream Operations" (ss.199–206); downstream health and safety is Part VI(b). So s.203 surrounds wells and upstream processing, not midstream pipelines or pump stations.
 
-**Pipelines with their own Act.** One cross-border products pipeline has its own statute, the [Tanzania-Zambia Pipeline Act, Cap. 40](https://tanzlii.org/en/akn/tz/act/1966/65/eng@2023-12-31), which gives the power to "construct, place, maintain, alter or remove pipeline in, on, over, under, along or across, any land, building, road, railway" (s.5). We found no strip width in the Tanzanian texts.
+**Pipelines with their own Act.** One cross-border products pipeline has its own statute, the [Tanzania-Zambia Pipeline Act, Cap. 40](https://tanzlii.org/en/akn/tz/act/1966/65/eng@2023-12-31), which gives the power to "construct, place, maintain, alter or remove pipeline in, on, over, under, along or across, any land, building, road, railway" (s.5). We found no strip width in the Tanzanian texts we read.
 
 ## Road reserves: the Roads Act, 2007 {#roads}
 
