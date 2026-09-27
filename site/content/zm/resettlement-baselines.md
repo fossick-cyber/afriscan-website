@@ -71,7 +71,7 @@ New and removed structures between the cut-off date and each later survey, flagg
 :::
 :::
 
-Environmental and social studies for recent Zambian interconnectors have counted the houses in the wayleave, noted that a few more may have been built since the cut-off date, and identified structures in an additional wayleave "based on satellite imagery interpretation". That is the work a reviewed, dated register makes repeatable: the same method, the same IDs and the same bands at every survey.
+The environmental and social study for a recent Zambian interconnector counted the houses in one section's wayleave, noted that a few more may have been built since the cut-off date, and identified structures in an additional wayleave "based on satellite imagery interpretation". That is the work a reviewed, dated register makes repeatable: the same method, the same IDs and the same bands at every survey.
 ::::
 
 ::::section{id="dated-imagery" eyebrow="The imagery" title="Why the date on the imagery matters"}

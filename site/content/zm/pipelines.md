@@ -31,7 +31,7 @@ faq:
   - q: Can the same method run on both sides of a border?
     a: Yes. The same bands, rating rule and report format can be applied on each side of a border crossing, with each country's widths and rules noted in the report. See our [Mozambique pipeline page](/mz/pipelines) for the rules there.
   - q: Can a drone fly near our pumping stations or depots?
-    a: Part 18 bans drone flights adjacent to or above a national key point or strategic installation, and some pumping stations are declared protected places, so any flight near one is planned only with the operator's written authority and pass. Satellite work needs no flight, and security sites are masked in every deliverable.
+    a: Part 18 bans drone flights adjacent to or above a national key point or strategic installation, and orders printed in the consolidated Protected Places and Areas Act cover two pumping stations, so any flight near one is planned only with the operator's written authority and pass. Satellite work needs no flight, and security sites are masked in every deliverable.
 cta:
   title: Send us your route options
   text: "KML, KMZ, GeoJSON, Shapefile, GPX or GeoPackage, with the alignment options, the widths from your easements or design standard, and the date the baseline must reflect. We reply with a scope, an imagery plan and a written proposal."

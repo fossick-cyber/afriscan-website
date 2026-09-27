@@ -38,7 +38,7 @@ faq:
   - q: Can you tell us which structures are unauthorised?
     a: No. We map what stands where, how far it is from your line or boundary, and when it first appears in the imagery. Whether it has the licensee's permission under the Electricity Act, the railway authority's written permission or the licence holder's consent, or predates the wayleave, is for your land and legal teams and the authorities to decide. The register gives them a dated, located list to work from.
   - q: Our corridor is a declared protected area. Can you still work on it?
-    a: Some pipeline corridors, pumping stations, mine workings and bridges in Zambia are declared protected areas or places under the Protected Places and Areas Act. We work there only for, or with the written authority of, the operator or licence holder, and security sites are masked in every deliverable.
+    a: Some pipeline corridors, pumping stations, mine workings and bridges in Zambia are covered by orders printed in the consolidated Protected Places and Areas Act; whether each is still in force is for Zambian counsel. We work there only for, or with the written authority of, the operator or licence holder, and security sites are masked in every deliverable.
   - q: Do you detect vandalism or theft on lines and pipelines?
     a: No. Satellites cannot see theft, vandalism or people. We map land change, such as new structures, fresh excavations, cleared ground and new tracks, so your patrols know where to look first.
   - q: How is personal data handled under the Data Protection Act?

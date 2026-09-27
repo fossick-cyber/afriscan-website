@@ -21,7 +21,7 @@ og:
 related: [route-site-selection, resettlement-cut-off-baselines, change-detection]
 faq:
   - q: How wide is the railway strip?
-    a: The Tanzania-Zambia Railway Act prohibits building on the "railway strip" without the Authority's written permission, but does not state the strip's width. We measure from the reserve boundary or centreline you supply, at the widths in your own records, and can add the 100 m band within which a mining-right holder needs the railway administration's consent, or the 60 m and 10 m distances in the Railways Act, as further bands.
+    a: The Tanzania-Zambia Railway Act prohibits building on the "railway strip" without the Authority's written permission. We have not confirmed a width for the railway strip, so we measure from the reserve boundary or centreline you supply, at the widths in your own records, and can add the 100 m band within which a mining-right holder needs the railway administration's consent, or the 60 m and 10 m distances in the Railways Act, as further bands.
   - q: Which road-reserve widths do you use?
     a: The ones you supply. Road-reserve widths come from the Public Roads Act and the road authority's own records, so send the reserve polygons or the width for each road class and we report each structure's distance and band. Up to six widths can be reported in one survey.
   - q: Do you decide which structures must move?
@@ -31,7 +31,7 @@ faq:
   - q: Can you track construction progress along the line?
     a: From dated drone orthophotos and elevation models we compare works between visits, with maps of where ground has been cut or filled, subject to the ZCAA approvals and Zambia Air Force clearance each operation requires. Drone flights over, along or within 50 m of a public road need specific approval or a road closure. It is not a certified survey or a quantity surveyor's valuation.
   - q: Can a drone fly along a railway or over a bridge?
-    a: Only within the ZCAA's rules, and some crossings need more. The consolidated Protected Places and Areas Act prints orders that make land within 0.8045 km of the Kafue road and rail bridges and of the Luangwa Bridge protected areas, and the State Security Act treats roads, railways and bridges as necessary services. Satellite work needs no flight; drone work near a bridge or rail installation is planned with the authority concerned.
+    a: Only within the ZCAA's rules, and some crossings need more. The consolidated Protected Places and Areas Act prints orders that make land within 0.8045 km of the Kafue road and rail bridges and of the Luangwa Bridge protected areas (whether each is still in force is for Zambian counsel), and the State Security Act treats roads, railways and bridges as necessary services. Satellite work needs no flight; drone work near a bridge or rail installation is planned with the authority concerned.
 cta:
   title: Send us your reserve file
   text: "The route or reserve boundary (KML, KMZ, GeoJSON, Shapefile, GPX or GeoPackage), the reserve widths in your records, the stretches being rehabilitated and the date the record must reflect. We reply with a scope, an imagery plan and a written proposal."
@@ -73,7 +73,7 @@ For the Zambia Railways network, the [Railways Act](https://www.parliament.gov.z
 ::::col
 We buffer the railway or road you supply in its UTM zone, from the centreline or the reserve boundary, at the widths in your records, and list each structure the review confirms with its distance, its band, its chainage and its coordinates. Each 500 m stretch is rated high, medium or low for encroachment density by a count rule, so your land team knows where the reserve is most built up. It is not a safety rating.
 
-Neither the Tanzania-Zambia Railway Act nor the sources we checked for the Public Roads Act give a reserve width we can apply for you, so every register states the widths you supplied and where they came from. The same survey can add the other distances that matter along a line of rail: the 100 m from any railway track within which a mining-right holder needs the railway administration's consent (Minerals Regulation Commission Act 2024, s.35(1)(d)), and the 60 m and 10 m distances in the Railways Act.
+We have not confirmed a width for the Tanzania-Zambia railway strip or the road-reserve widths in the Public Roads Act, so every register states the widths you supplied and where they came from. The same survey can add the other distances that matter along a line of rail: the 100 m from any railway track within which a mining-right holder needs the railway administration's consent (Minerals Regulation Commission Act 2024, s.35(1)(d)), and the 60 m and 10 m distances in the Railways Act.
 
 Before rehabilitation, the baseline records the reserve as the works found it: structures with reviewer categories such as main building, outbuilding or under construction, tracks and informal crossings across the line, cleared ground and existing borrow pits. Once a cut-off date is set, the same register supports the resettlement census.
 ::::

@@ -49,7 +49,7 @@ cta:
 "A licensee shall maintain a wayleaves in good state of cleanliness and repair" (s.23(7)). Trees and undergrowth that obstruct or interfere with a line may be cut after at least 14 days' notice, or without notice in an emergency, subject to the Forests Act 2015 (s.25).
 :::
 :::card{title="“The new line needs a count of what is in its way.”" icon="route" eyebrow="New lines and interconnectors"}
-Environmental and social studies for recent Zambian interconnectors have counted the houses inside the wayleave from satellite imagery. A reviewed, dated layer of that count can be compared at every later survey.
+The environmental and social study for a recent Zambian interconnector counted the houses in one section's wayleave and identified the structures in an additional wayleave "based on satellite imagery interpretation". A reviewed, dated layer of that count can be compared at every later survey.
 :::
 :::card{title="“Developers keep asking where our wayleave is.”" icon="clipboard" eyebrow="SI 2 of 2026, Schedule 1"}
 Anyone planning development within 1 km of an existing or planned line must first get the wayleave position and clearances from the licensee in writing, and the licensee must advise within 45 days. Every request is a moment to know what already stands there.
@@ -144,7 +144,7 @@ When a structure is found, the Electricity Act gives the licensee a route: it ma
 ::::col
 Zambia's transmission grid interconnects with the utilities of six neighbouring countries, and new 330 kV and 400 kV lines are planned and tendered to extend and reinforce it. Every new line needs a route, a wayleave and a record of what stood on the land when the wayleave was acquired. Under the Electricity Act, the licensee gives notice to the landowner and occupier for consent, they may object and the Minister decides within 60 days (s.23), and compensation for damage follows the Lands Acquisition Act.
 
-Environmental and social studies on recent Zambian interconnectors have counted houses inside the wayleave from satellite imagery, and noted that a few more may have been built since the cut-off date. We produce that count as a reviewed GIS layer, dated, so it can be compared later: a register of the structures along each alignment option, then a baseline once the route is fixed, with reviewer categories such as main building, outbuilding or under construction.
+The environmental and social study for a recent Zambian interconnector counted the houses in one section's wayleave, noted that a few more may have been built since the cut-off date, and identified the structures in an additional wayleave "based on satellite imagery interpretation". We produce that count as a reviewed GIS layer, dated, so it can be compared later: a register of the structures along each alignment option, then a baseline once the route is fixed, with reviewer categories such as main building, outbuilding or under construction.
 
 ZESCO's practice, as described in a 2024 assessment for a 330 kV interconnector, is to acquire the entire wayleave. That makes the baseline the record every later survey is compared against.
 ::::
@@ -180,7 +180,7 @@ Where a line crosses a recognised forestry area, Table 2.4 of the Regulations se
 ::::section{id="drones" tone="alt" eyebrow="Drone detail" title="Drones along a line in Zambia"}
 :::::columns{split="2-1"}
 ::::col
-Where you want flagged spans flown, drone surveys are subject to the ZCAA approvals and Zambia Air Force clearance each operation requires. Three rules matter along a line. Part 18 bars flights within 50 m of a structure unless the ROC approves it or the owner gives permission, which applies to each tower and each house in the wayleave. It bans flights adjacent to or above a national key point or strategic installation outright, and the consolidated Protected Places and Areas Act prints orders that make several switching stations on the Copperbelt protected places. And the Electricity Act makes it an offence to "cut, injure or interfere with any apparatus" (s.44), so the flight plan must rule out contact.
+Where you want flagged spans flown, drone surveys are subject to the ZCAA approvals and Zambia Air Force clearance each operation requires. Three rules matter along a line. Part 18 bars flights within 50 m of a structure unless the Director-General has approved it in the operator's Operations Manual or the owner gives permission, which applies to each tower and each house in the wayleave. It bans flights adjacent to or above a national key point or strategic installation outright, and the consolidated Protected Places and Areas Act prints orders that make several switching stations on the Copperbelt protected places (whether each is still in force is for Zambian counsel). And the Electricity Act makes it an offence to "cut, injure or interfere with any apparatus" (s.44), so the flight plan must rule out contact.
 
 ZCAA's published list of ROC holders includes a utility that flies its own drones. If your team already flies, send the orthophotos or GeoTIFFs and we run the same register, change and vegetation analysis on them, with a person reviewing every result.
 ::::

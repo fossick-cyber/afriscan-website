@@ -129,12 +129,14 @@ instruments:
     date: 1968
     url: https://www.parliament.gov.zm/sites/default/files/documents/acts/Protected%20Places%20and%20Areas%20Act.pdf
     last_checked: 2026-09-27
+    note: Whether these orders remain in force in the 2019 Revised Edition is for counsel to confirm.
   - id: pp-mines-order
     title: Protected Places (Mines) Order
     identifier: SI 57 of 1974, printed in the consolidated Cap. 125
     date: 1974
     url: https://www.parliament.gov.zm/sites/default/files/documents/acts/Protected%20Places%20and%20Areas%20Act.pdf
     last_checked: 2026-09-27
+    note: Whether the order remains in force in the 2019 Revised Edition is for counsel to confirm.
   - id: ict-act-2009
     title: Information and Communication Technologies Act No. 15 of 2009
     identifier: Act No. 15 of 2009 (s.66)

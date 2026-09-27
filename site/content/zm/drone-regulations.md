@@ -85,7 +85,7 @@ Since 18 March 2026 the ZCAA handles drones through a dedicated **UAV & Aircraft
 | Aerial photography for land survey | Surveyor-General | [Land Survey Act (Cap. 188)](https://www.parliament.gov.zm/sites/default/files/documents/acts/Land%20Survey%20Act.pdf) s.38(1) |
 | Personal data | Data Protection Commission | Data Protection Act 2021 |
 
-How ZICTA applies its approval rule to drone radios in practice is a question to put to ZICTA with the aircraft's documentation. Since 4 June 2025, Zambian statutes are cited by Chapter number of the 2019 Revised Edition of the Laws of Zambia ([AIC 006/2026](https://www.caa.co.zm/api/document-repository/get-folder/770/download)), which is why tenders now quote "Cap." numbers.
+How ZICTA applies its approval rule to drone radios in practice is a question to put to ZICTA with the aircraft's documentation. Since 4 June 2025, Zambian statutes are cited by Chapter number of the 2019 Revised Edition of the Laws of Zambia ([AIC 006/2026](https://www.caa.co.zm/api/document-repository/get-folder/770/download)).
 ::::
 
 ::::section{id="operator" eyebrow="The operator" title="The RPAS Operator Certificate and its OpSpecs"}
@@ -211,7 +211,7 @@ A long wayleave or right of way crosses several police areas, and every operatio
 ::::section{id="flight-rules" tone="alt" eyebrow="The flight" title="Flight rules that shape a corridor or site survey" lead="Part 18.5, as published in Revision 0. Where a rule has an approval route, only an operator whose ROC covers it can use it."}
 ### Limits that need Director-General approval
 
-Only an operator whose ROC carries the Director-General's approval may fly "above 400 ft above the surface", "within a radius of 10 km from an aerodrome" or "within restricted or prohibited airspace" (18.5.10(c)). Since the Civil Aviation (Amendment) Act 2026, flying in a declared danger, restricted or prohibited area "shall be considered to be an unauthorised operation" (new s.8A). ZCAA lists Zambia's aerodromes in its July 2026 circular AIC A008.26, which is worth checking against the route before any drone plan is costed.
+Only an operator whose ROC carries the Director-General's approval may fly "above 400 ft above the surface", "within a radius of 10 km from an aerodrome" or "within restricted or prohibited airspace" (18.5.10(c)). Since the Civil Aviation (Amendment) Act 2026, flying in a declared danger, restricted or prohibited area "shall be considered to be an unauthorised operation" (new s.8A). ZCAA's AIC A008.26 (July 2026) lists the aerodromes that hold its aerodrome certificates or licences, which is worth checking against the route before any drone plan is costed; the 10 km rule itself refers to any aerodrome.
 
 ### Banned outright {#banned}
 
@@ -221,9 +221,9 @@ No drone may "be flown adjacent to or above a nuclear power plant, prison, polic
 
 | Near | Rule | Unless |
 |---|---|---|
-| **People** | Not overhead, or within 50 m laterally (18.5.13) | The ROC approves it, or the people are part of the operation |
-| **Structures** | Not within 50 m (18.5.14) | The ROC approves it, or the owner gives permission |
-| **Public roads** | Not over, along or within 50 m (18.5.15) | The ROC approves it, or the road is closed |
+| **People** | Not overhead, or within 50 m laterally (18.5.13) | Approved by the Director-General in an ROC operator's Operations Manual, or the people are part of the operation |
+| **Structures** | Not within 50 m (18.5.14) | Approved by the Director-General in an ROC operator's Operations Manual, or the owner gives permission |
+| **Public roads** | Not over, along or within 50 m (18.5.15) | Approved by the Director-General in an ROC operator's Operations Manual, or the road is closed |
 | **Take-off and landing** | Not on a public road (18.5.2) | Civil defence and law enforcement only |
 
 Near villages and compounds along a wayleave, the structure rule means either an ROC approval or the owners' permissions, which is a deliverable in its own right on a long line.

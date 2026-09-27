@@ -47,7 +47,7 @@ Other assets use other words. A pipeline has a right of way, which the Energy Re
 |---|---|---|
 | **Power-line wayleave** | No building or structure likely to interfere with the line without the licensee's permission (Electricity Act 2019, s.26) | By voltage in SI No. 2 of 2026: for example 32 m for 132 kV, 48 m for 330 kV, 50 m for 400 kV; wider in recognised forestry areas |
 | **Petroleum pipeline right of way** | New routes "shall be such that the pipeline does not pass through settlements" (ERB siting guidelines, s.5.7.3) | Right of way to meet Zambian Standard ZS 704; no width in the Zambia Tanzania Pipeline Act |
-| **Railway strip** | No building, structure or works without the Authority's written permission (Tanzania-Zambia Railway Act, s.62) | Not stated in the Act |
+| **Railway strip** | No building, structure or works without the Authority's written permission (Tanzania-Zambia Railway Act, s.62) | Use the width in the Authority's records |
 | **Road reserve** | Public Roads Act 2002, amended in 2022 and 2026 | As in the road authority's records |
 | **Mining consent areas** | Written consent before working near homes, railways, dams and village land (Minerals Regulation Commission Act 2024, s.35) | 180 m from a house, 100 m from a railway track, 90 m from a dam, 45 m from cropped land |
 
@@ -96,7 +96,7 @@ The [Zambia Tanzania Pipeline Act (Cap. 455)](https://www.parliament.gov.zm/site
 
 ## Railway strips {#railways}
 
-On the Tanzania-Zambia railway, "Except with the written permission of the Authority, a person shall not erect any building or structure or execute any works on the railway strip" ([Tanzania-Zambia Railway Act, Cap. 454](https://www.parliament.gov.zm/sites/default/files/documents/acts/Tanzania-Zambia%20Railway%20Act.pdf), s.62). Unauthorised works can be ordered removed or modified within 30 days, after which the Authority may do the work itself and recover the cost, and the Authority is not liable for fire damage to buildings within the strip (s.83). The Act does not state the strip's width, so a register measures from the boundary in the Authority's records.
+On the Tanzania-Zambia railway, "Except with the written permission of the Authority, a person shall not erect any building or structure or execute any works on the railway strip" ([Tanzania-Zambia Railway Act, Cap. 454](https://www.parliament.gov.zm/sites/default/files/documents/acts/Tanzania-Zambia%20Railway%20Act.pdf), s.62). Unauthorised works can be ordered removed or modified within 30 days, after which the Authority may do the work itself and recover the cost, and the Authority is not liable for fire damage to buildings within the strip (s.83). We have not confirmed a width for the railway strip, so a register measures from the boundary or centreline in the Authority's records.
 
 For the Zambia Railways network, the [Railways Act (Cap. 453)](https://www.parliament.gov.zm/sites/default/files/documents/acts/Railways%20Act.pdf) lets a railway company seek a High Court order for the removal of a building that obscures a signal or endangers rail services (s.14(3)), defines a firebreak as at least 10 m wide from the railway land boundary, and excludes liability for fire damage to buildings within 60 m of the rails (s.69(1)). And any mining-right holder needs the railway administration's consent to work within 100 m of any railway track. More: [rail and road reserves in Zambia](/zm/rail-and-roads).
 

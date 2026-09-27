@@ -25,8 +25,8 @@ faq:
     a: "Section 35 of the Minerals Regulation Commission Act 2024 says a rights holder may not work within 180 m of an inhabited, occupied or temporarily uninhabited house or building without the owner's or occupier's written consent. We can report the structures within 180 m of your planned workings, pits or haul roads as a band in the register, with the imagery date. Which buildings count, and whose consent is needed, is for your land and legal teams."
   - q: Someone has built on our exploration licence. Can you show when?
     a: We can show when a structure first appears in the dated imagery available for the site, which is often what a land team needs. Section 37(2) of the Act says an owner or occupier of land under an exploration licence may not erect a building or structure without the licence holder's consent, and the Commission may grant consent that is unreasonably withheld. Whether consent was given is outside what imagery shows.
-  - q: Mine workings are protected places. Can you still map our site?
-    a: "Yes, for you or with your written authority. The consolidated Protected Places and Areas Act prints an order that makes all places, excavations or works where mining is carried on protected places, with passes from the licence holder's representative. Satellite work involves no one on site; any drone flight is flown with your pass and permissions, and security features are masked in every deliverable."
+  - q: Our mine workings may be a protected place. Can you still map our site?
+    a: "Yes, for you or with your written authority. The consolidated Protected Places and Areas Act prints an order that makes all places, excavations or works where mining is carried on protected places, with passes from the licence holder's representative; whether that order is still in force in the 2019 Revised Edition is for Zambian counsel. Satellite work involves no one on site; any drone flight is flown with your pass and permissions, and security features are masked in every deliverable."
   - q: Do you model tailings dam breaks or blast zones?
     a: No. Your engineers supply the zones, from the dam-break study, the blast design or your emergency plan. We list the structures inside them, each with its location and distance to the source, and show how settlement inside them changes between surveys.
   - q: We already fly our own drones. Can you use our imagery?
@@ -180,7 +180,7 @@ The cut-off date, IFC Performance Standard 5, Zambian compensation law and what 
 ::::col
 ZCAA's published list of ROC holders includes a mining company that flies its own drones. If your survey team already produces orthophotos, send them: we run the structure register, the excavation mapping, the boundary analysis and the change detection on them, have a person review every result, and return the register and GIS layers in the formats your GIS team uses. Between flights, or over the parts of the licence area you do not fly, dated satellite scenes show what changed where they exist.
 
-Where you want new drone surveys, they are subject to the ZCAA approvals and Zambia Air Force clearance each operation requires. On a mine site that also means your pass: the consolidated Protected Places and Areas Act prints an order that makes mine workings protected places, and any drone work on site is flown with your pass and permissions. Afridrone is working towards the ZCAA approvals Zambia requires.
+Where you want new drone surveys, they are subject to the ZCAA approvals and Zambia Air Force clearance each operation requires. On a mine site that also means your pass: the consolidated Protected Places and Areas Act prints an order that makes mine workings protected places (whether it is still in force is for Zambian counsel), and any drone work on site is flown with your pass and permissions. Afridrone is working towards the ZCAA approvals Zambia requires.
 ::::
 ::::col
 :::callout{tone="legal" title="Drone law in Zambia"}
