@@ -43,7 +43,7 @@ faq:
     a: "Pas sans accord écrit. Le gouvernement britannique rappelle qu'il est interdit de photographier certains bâtiments officiels et militaires, en particulier aux frontières. Le contrat du levé doit dire à qui appartiennent les images, où elles sont conservées et qui peut les publier."
 ---
 
-::::section{id="en-bref" eyebrow="En bref" title="Six points à régler avant tout levé par drone" lead="Un levé par drone n'est licite en RDC que si chacun de ces points est réglé pour la mission concernée. Aucun délai d'instruction n'est publié : prévoyez-les dès le premier jour du projet."}
+::::section{id="en-bref" eyebrow="En bref" title="Six points à régler avant tout levé par drone" lead="Réglez chacun de ces points pour la mission avant tout levé par drone en RDC. Nous n'avons trouvé aucun délai d'instruction publié : prévoyez-les dès le premier jour du projet."}
 :::cards{cols="3"}
 :::card{title="Une autorisation préalable" icon="file-check" eyebrow="AAC · art. 58 bis"}
 Aucun aéronef télépiloté ou autonome ne peut survoler le territoire ni y être exploité sans autorisation préalable de l'AAC. Demandez qu'elle précise l'appareil, le télépilote, la zone, les dates et l'altitude.
@@ -58,10 +58,10 @@ La loi prévoit une « licence de télépilote » et des organismes de formati
 L'importation d'un aéronef ou de produits aéronautiques, drones compris, est soumise à une autorisation de l'AAC.
 :::
 :::card{title="Des autorisations de sécurité" icon="shield" eyebrow="À demander"}
-Aucun texte publié ne précise quelles autorisations de sécurité s'ajoutent à celle de l'AAC. Demandez à l'AAC et à la province lesquelles s'appliquent à votre zone.
+Nous n'avons trouvé aucun texte publié qui précise quelles autorisations de sécurité s'ajoutent à celle de l'AAC. Demandez à l'AAC et à la province lesquelles s'appliquent à votre zone.
 :::
 :::card{title="Des zones interdites" icon="alert" eyebrow="Art. 177"}
-Le survol délibéré d'une zone interdite ou réglementée est puni d'une servitude pénale de cinq à dix ans et d'une amende.
+Le survol délibéré d'une zone interdite ou restreinte est puni d'une servitude pénale de cinq à dix ans et d'une amende.
 :::
 :::
 ::::
@@ -202,7 +202,7 @@ Une police auprès d'une société d'assurances installée en RDC, comme l'exige
 À qui appartiennent les images et où elles sont conservées ; aucune image de personnes, de sites militaires ou de frontières ; aucune publication sans accord ; le traitement des données personnelles visibles sur les images.
 :::
 :::step{title="Un plan de vol sûr"}
-Des blocs à vue, de jour ; des distances de sécurité avec les lignes à haute tension ; la déclaration des incidents prévue par l'article 159.
+Des blocs à vue, de jour ; des distances de sécurité par rapport aux lignes à haute tension ; la déclaration des incidents prévue par l'article 159.
 :::
 :::step{title="Les règles du contrat de sous-traitance"}
 Un appel d'offres à partir du seuil fixé par la loi (article 10) ; pas plus de 40 % de la valeur globale du marché en sous-traitance (article 11) ; l'acceptation de chaque sous-traitant par le maître de l'ouvrage (article 17).
@@ -210,8 +210,8 @@ Un appel d'offres à partir du seuil fixé par la loi (article 10) ; pas plus 
 :::
 ::::
 
-::::section{id="approche" tone="alt" eyebrow="Notre approche" title="Le satellite d'abord, le drone sous réserve des autorisations"}
-Un relevé AfriScan commence par l'image satellite, qui ne demande ni vol ni accès au site. Lorsqu'un tronçon exige plus de détail, le levé par drone est réalisé par un opérateur congolais éligible, sous réserve des autorisations et habilitations de sécurité que chaque mission exige, dont l'autorisation préalable de l'AAC. La proposition précise, pour votre mission, l'opérateur retenu, les autorisations nécessaires et leur place dans le calendrier.
+::::section{id="approche" tone="alt" eyebrow="Notre approche" title="Le satellite d'abord, le drone sous réserve des autorisations et habilitations"}
+Un relevé AfriScan commence par l'image satellite, qui ne demande ni vol ni accès au site. Lorsqu'un tronçon demande plus de détail, le levé par drone est réalisé par un opérateur congolais éligible, sous réserve des autorisations et habilitations de sécurité que chaque mission exige, dont l'autorisation préalable de l'AAC. La proposition précise, pour votre mission, l'opérateur retenu, les autorisations nécessaires et leur place dans le calendrier.
 
 Informations vérifiées le 27 septembre 2026 à partir des textes publiés ; les modalités détaillées sont fixées par l'AAC. [Les règles des drones dans les autres pays (en anglais)](/drone-regulations)
 ::::

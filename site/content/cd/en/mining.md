@@ -30,7 +30,7 @@ faq:
   - q: Can you confirm the boundaries of our permit?
     a: "No. We work from the boundaries you give us, such as the coordinates in your title, and we do not verify title or land rights. Mining titles can also be viewed on the [Cadastre Minier's map portal](https://drclicences.cami.cd/EN/)."
   - q: Is remote analysis for a mine caught by the subcontracting law?
-    a: "Assume that it is. ARSP's sector guide treats externalised mining research, sampling and feasibility studies as subcontracting, and the law covers any service a company needs to carry out its main activity. That is why AfriScan works as a technology supplier to an eligible Congolese company. See [subcontracting in the DRC](/cd/subcontracting)."
+    a: "Assume that it is. ARSP's sector guide treats externalised mining research, sampling and feasibility studies as subcontracting, and the law covers any service a company needs to carry out its main activity. That is why AfriScan works as a technology supplier to an eligible Congolese company; whether that arrangement is enough, given art. 7 on second-tier subcontractors, is a point for counsel. See [subcontracting in the DRC](/cd/subcontracting)."
   - q: Will images of our perimeter be published?
     a: "No. We never publish a client's route, imagery or results without written permission, and the registers carry no names of people."
 cta:
@@ -74,7 +74,7 @@ Where people would be displaced, the Mining Code requires compensation and reset
 ::::col
 We map pits, disturbed ground, spoil heaps and water-filled excavations inside your mining right and in a band around it, and flag new sites between dates. Each change is flagged automatically and confirmed by an analyst, with before-and-after views. The tracks leading to the sites are mapped with them.
 
-In the rainy season, when cloud often hides the ground, radar comparisons show the larger changes even under cloud cover; the areas they flag are then checked on an optical image or, subject to the approvals each job requires, by drone.
+In the rainy season, when cloud often hides the ground, radar comparisons show the larger changes even under cloud cover; the areas they flag are then checked on an optical image or, subject to the approvals and security clearances each job requires, by drone.
 
 What we map is the ground. We do not identify, count or follow anyone, and underground workings and covered shafts cannot be seen from space. A flag shows where to look; on its own it proves nothing, and what to do about it is your decision.
 ::::

@@ -159,7 +159,7 @@ No route, image or result is published without your written permission, and the 
 ::::col
 For security and public-health reasons we accept no work of any kind, by satellite, by drone or in the field, in North Kivu, South Kivu, Ituri, Haut-Uélé, Bas-Uélé, Tshopo, Maniema, Tanganyika, Haut-Lomami, Sud-Ubangi, Kwilu or Kwango, in the Kwamouth territory, or within 50 km of the border with the Central African Republic.
 
-The list follows the travel advice of the [UK government](https://www.gov.uk/foreign-travel-advice/democratic-republic-of-the-congo) and the [French Ministry for Europe and Foreign Affairs](https://www.diplomatie.gouv.fr/fr/information-par-pays/republique-democratique-du-congo/conseils-aux-voyageurs-securite), and the provinces affected by the Ebola disease outbreak reported by the [WHO](https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON617) and by France, as published on 27 September 2026.
+The list follows the travel advice of the [UK government](https://www.gov.uk/foreign-travel-advice/democratic-republic-of-the-congo) and the [French Ministry for Europe and Foreign Affairs](https://www.diplomatie.gouv.fr/fr/information-par-pays/republique-democratique-du-congo/conseils-aux-voyageurs-securite), and the provinces affected by the Ebola disease outbreak reported by the [WHO](https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON617) and by France, as checked on 27 September 2026.
 ::::
 ::::col
 :::callout{tone="scope" title="Elsewhere in the country"}

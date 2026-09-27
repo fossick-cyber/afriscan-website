@@ -43,7 +43,7 @@ faq:
     a: "Not without written agreement. The UK government warns that photographing some government and military buildings is illegal, particularly at borders. The survey contract should say who owns the imagery, where it is stored and who may publish it."
 ---
 
-::::section{id="at-a-glance" eyebrow="At a glance" title="Six things to settle before any drone survey" lead="A drone survey in the DRC is lawful only when each of these is settled for that job. No processing times are published, so plan for them from the first day of the project."}
+::::section{id="at-a-glance" eyebrow="At a glance" title="Six things to settle before any drone survey" lead="Settle each of these for the job before any drone survey in the DRC. We found no published processing times, so plan for them from the first day of the project."}
 :::cards{cols="3"}
 :::card{title="Prior authorisation" icon="file-check" eyebrow="AAC · art. 58 bis"}
 No remotely piloted or autonomous aircraft may fly over the country or be operated there without the AAC's prior authorisation. Ask for it to specify the aircraft, the pilot, the area, the dates and the altitude.
@@ -58,7 +58,7 @@ The law provides for a "licence de télépilote" (remote pilot licence) and for 
 Importing an aircraft or aeronautical products, drones included, requires an AAC authorisation.
 :::
 :::card{title="Security clearances" icon="shield" eyebrow="Ask first"}
-No published text says which security clearances come on top of the AAC's. Ask the AAC and the province which apply to your area.
+We found no published text that says which security clearances come on top of the AAC's. Ask the AAC and the province which apply to your area.
 :::
 :::card{title="Prohibited zones" icon="alert" eyebrow="Art. 177"}
 Deliberately overflying a prohibited or restricted zone is punishable by five to ten years' penal servitude and a fine.
@@ -214,7 +214,7 @@ A tender at or above the threshold the law sets (art. 10); no more than 40% of a
 :::
 ::::
 
-::::section{id="approach" tone="alt" eyebrow="Our approach" title="Satellite first, drones subject to the authorisations"}
+::::section{id="approach" tone="alt" eyebrow="Our approach" title="Satellite first, drones subject to approvals and clearances"}
 An AfriScan survey starts with satellite imagery, which needs neither a flight nor site access. Where a stretch needs more detail, the drone survey is carried out by an eligible Congolese operator, subject to the approvals and security clearances each job requires, including the AAC's prior authorisation. For your job, the proposal names the operator, the authorisations required and where they fall in the schedule.
 
 Checked on 27 September 2026 against the published texts; the detailed arrangements are set by the AAC. The French version of this guide is at [/cd/fr/loi-sur-les-drones](/cd/fr/loi-sur-les-drones). [Drone rules in other countries](/drone-regulations)

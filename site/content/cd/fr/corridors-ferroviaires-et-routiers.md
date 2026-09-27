@@ -103,7 +103,7 @@ Les constructions comptées côte à côte le long de chaque variante d'une dév
 Un registre établi à une date connue, avec identifiants, coordonnées et date de l'image, puis les changements entre la date butoir et le recensement.
 :::
 :::card{title="L'avancement des travaux" icon="layers"}
-Orthophotos et modèles d'élévation de drone comparés d'une visite à l'autre, avec les zones de déblai et de remblai, sous réserve des autorisations requises pour chaque vol.
+Orthophotos et modèles d'élévation de drone comparés d'une visite à l'autre, avec les zones de déblai et de remblai, sous réserve des autorisations et habilitations de sécurité que chaque mission exige.
 :::
 :::card{title="Les travaux de tiers" icon="excavation"}
 Fouilles fraîches, déblais, tranchées et terrassements sur ou près de l'emprise et du tracé des câbles, signalés d'un relevé à l'autre pour indiquer aux patrouilles où regarder.

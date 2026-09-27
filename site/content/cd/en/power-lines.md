@@ -97,7 +97,7 @@ Distances are measured from the centre line. <span class="band band--a">Under 25
 ::::
 ::::col
 - **Each structure found**, with an ID, its distance from the centre line, its band (0–10, 10–25 or 25–50 m, or the widths you set), its chainage and its coordinates in WGS84 and UTM.
-- **Every 500 m segment rated** by structure density, so your teams know where to go first. It is a counting rule, not a safety assessment.
+- **Every 500 m segment rated** for encroachment density, so your teams know where to go first. It is a counting rule, not a safety assessment.
 - **Tall vegetation inside the emprise**, mapped from the elevation models of a drone survey and open canopy-height data.
 - **Tracks, fresh excavations and earthworks** near the towers and along the route, flagged from one survey to the next to show patrols where to look.
 - **Changes between two surveys**, flagged automatically and confirmed by an analyst, with before and after views.
@@ -149,7 +149,7 @@ The report and GIS files go to the contacts you name. Later surveys show what ha
 
 :::checklist
 - Record the structures, tracks and excavations visible from above in the bands you set
-- Rate every 500 m segment by structure density
+- Rate every 500 m segment for encroachment density
 - Map tall vegetation inside the emprise
 - Flag changes between two surveys, confirmed by an analyst
 :::

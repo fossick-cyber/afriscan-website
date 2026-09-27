@@ -26,7 +26,7 @@ faq:
   - q: Mesurez-vous la distance entre la végétation et les conducteurs ?
     a: "Non. Nous cartographions l'emplacement de la végétation haute dans l'emprise, à partir des modèles d'élévation d'un levé par drone et de données ouvertes de hauteur de canopée. Ce n'est pas une mesure des distances de sécurité aux conducteurs. Les données ouvertes sont plus anciennes par endroits : un levé par drone donne l'état actuel."
   - q: Faut-il survoler la ligne ?
-    a: "Non. Le relevé part du tracé de la ligne et d'images satellite. Un levé par drone n'est ajouté que là où un tronçon l'exige, sous réserve des autorisations et habilitations de sécurité que chaque mission exige, avec des distances de sécurité avec les conducteurs. Voir [la loi sur les drones en RDC](/cd/fr/loi-sur-les-drones)."
+    a: "Non. Le relevé part du tracé de la ligne et d'images satellite. Un levé par drone n'est ajouté que là où un tronçon en a besoin, sous réserve des autorisations et habilitations de sécurité que chaque mission exige, avec des distances de sécurité par rapport aux conducteurs. Voir [la loi sur les drones en RDC](/cd/fr/loi-sur-les-drones)."
   - q: Le registre peut-il servir à une procédure ?
     a: "Il appuie l'état des lieux, l'enquête, le dialogue avec les riverains et, le cas échéant, les indemnisations prévues par la loi (articles 111 à 113 de la loi n° 14/011). Il ne remplace ni l'enquête ni la décision de l'autorité, et il ne porte sur aucune personne."
   - q: Quelle largeur retenir pour une ligne donnée ?

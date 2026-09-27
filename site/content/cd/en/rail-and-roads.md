@@ -93,7 +93,7 @@ A dated register of the structures in the emprise, at the cut-off date, for the 
 ::::section{id="deliverables" tone="alt" eyebrow="What you receive" title="From the baseline register to monitoring the works"}
 :::cards{cols="3"}
 :::card{title="The emprise register" icon="corridor"}
-Each structure found in the emprise and in a band around it, with its distance from the centre line, its band, its chainage and its coordinates, and every 500 m segment rated by structure density.
+Each structure found in the emprise and in a band around it, with its distance from the centre line, its band, its chainage and its coordinates, and every 500 m segment rated for encroachment density.
 :::
 :::card{title="Route options" icon="route"}
 Structures counted side by side along each option for a diversion or a new section, to weigh the land impact before the route is fixed.

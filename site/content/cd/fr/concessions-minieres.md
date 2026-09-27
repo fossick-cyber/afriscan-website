@@ -72,7 +72,7 @@ En cas de déplacement, le Code minier impose d'indemniser et de réinstaller au
 ::::col
 Nous cartographions les fosses, les terres remuées, les tas de remblais et les excavations en eau à l'intérieur de votre droit minier et dans une bande autour de lui, et nous signalons les nouveaux sites d'une date à l'autre. Chaque changement est signalé automatiquement et confirmé par un analyste, avec des vues avant et après. Les pistes qui mènent aux sites sont relevées avec eux.
 
-En saison des pluies, lorsque les nuages masquent souvent le sol, des comparaisons radar révèlent les changements les plus étendus même sous la couverture nuageuse ; les zones signalées sont ensuite reprises sur une image optique ou, sous réserve des autorisations requises, par drone.
+En saison des pluies, lorsque les nuages masquent souvent le sol, des comparaisons radar révèlent les changements les plus étendus même sous la couverture nuageuse ; les zones signalées sont ensuite reprises sur une image optique ou, sous réserve des autorisations et habilitations de sécurité que chaque mission exige, par drone.
 
 Ce que nous cartographions, c'est le terrain. Nous n'identifions, ne comptons et ne suivons personne, et les galeries souterraines et les puits couverts ne sont pas visibles depuis l'espace. Un signalement indique où regarder ; il ne prouve rien à lui seul, et la suite à lui donner relève de vous.
 ::::
@@ -101,8 +101,8 @@ L'[article 279 du Code minier](https://www.leganet.be/Legislation/Droit%20econom
 Ces distances protègent les occupants contre l'occupation minière. Elles ne rendent pas illicite une maison construite près d'une mine. La modification de 2018 les a nettement élargies : la distance aux maisons était de 180 m dans le texte de 2002, et celle aux terres cultivées de 45 m.
 ::::
 ::::col
-:::figure{src="diagrams/cd-art279" alt="Schéma : la zone qu'un titulaire prévoit d'occuper, en orange, à l'intérieur de son permis en pointillés, entourée de deux lignes à 800 et 1 000 mètres ; les maisons à moins de 1 000 mètres en rouge, celles au-delà en vert sombre, les champs à moins de 800 mètres en vert foncé, un champ au-delà en vert pâle et un point d'eau en bleu" caption="Schéma : un inventaire autour des travaux prévus" size="half" credit="Schéma dessiné par AfriScan à titre d'illustration ; ce n'est pas un site réel."}
-En orange, la zone que le titulaire prévoit d'occuper ; en pointillés, les limites du permis. La ligne orange foncé est à 800 m, la ligne rouge à 1 000 m. Les maisons en rouge sont à moins de 1 000 m, celles en vert sombre au-delà ; les champs en vert foncé sont à moins de 800 m ; le point bleu est un point d'eau.
+:::figure{src="diagrams/cd-art279" alt="Schéma : la zone qu'un titulaire prévoit d'occuper, en orange, à l'intérieur de son permis en pointillés, entourée de deux lignes à 800 et 1 000 mètres ; les maisons à moins de 1 000 mètres en rouge, celles au-delà en bleu-vert foncé, les champs à moins de 800 mètres en vert foncé, un champ au-delà en vert pâle et un point d'eau en bleu" caption="Schéma : un inventaire autour des travaux prévus" size="half" credit="Schéma dessiné par AfriScan à titre d'illustration ; ce n'est pas un site réel."}
+En orange, la zone que le titulaire prévoit d'occuper ; en pointillés, les limites du permis. La ligne orange foncé est à 800 m, la ligne rouge à 1 000 m. Les maisons en rouge sont à moins de 1 000 m, celles en bleu-vert foncé au-delà ; les champs en vert foncé sont à moins de 800 m ; le point bleu est un point d'eau.
 :::
 ::::
 :::::
