@@ -350,9 +350,11 @@ class Build:
             base = self.content_dir / loc["content"]
             if not base.exists():
                 continue
+            nested = [Path(l["content"]) for k, l in self.locales.items()
+                      if k != lk and Path(l["content"]).is_relative_to(Path(loc["content"]))]
             for f in sorted(base.rglob("*.md")):
                 rel = f.relative_to(base)
-                if loc["content"] == "mz/en" and rel.parts and rel.parts[0] == "pt":
+                if any(f.relative_to(self.content_dir).is_relative_to(n) for n in nested):
                     continue
                 try:
                     p = self.read_page(f, lk, rel)

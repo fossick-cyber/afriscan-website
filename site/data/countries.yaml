@@ -321,7 +321,7 @@ eg:
 ma:
   name: Morocco
   region: North
-  languages: null
+  languages: [fr, ar, en]
   status: research
   timezones: [Africa/Casablanca]
 dz:
