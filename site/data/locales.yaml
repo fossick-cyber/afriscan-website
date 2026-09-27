@@ -155,7 +155,7 @@ ug:
   label: "Uganda"
   short: "Uganda"
   sitemap: sitemap-ug.xml
-  status: draft
+  status: live
   region: East
 cd-fr:
   content: cd/fr

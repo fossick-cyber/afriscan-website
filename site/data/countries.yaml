@@ -94,7 +94,7 @@ ug:
   name: Uganda
   region: East
   languages: [en]
-  status: launching
+  status: live
   timezones: [Africa/Kampala]
 rw:
   name: Rwanda

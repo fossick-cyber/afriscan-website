@@ -82,3 +82,7 @@ pending:
     pages:
       /tz/drone-regulations: Tanzanian counsel
       /tz/wayleave-law: Tanzanian counsel
+  counsel_ug:
+    owner_decision: 2026-09-27
+    pages:
+      /ug/drone-regulations: Ugandan counsel

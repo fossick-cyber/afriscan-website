@@ -1,0 +1,88 @@
+# Uganda: the instruments the drone-law page (/ug/drone-regulations) relies on; the oil and gas page
+# cites the petroleum ones with :::sources. Facts ONLY from regional/ug.FINAL.md (verified 2026-09-27
+# against the gazetted texts, UCAA's live drone page and PAU's copies of the petroleum Acts and
+# Regulations). Dates are the Gazette dates given there (S.I. 96/2022, S.I. 36/2016, Act 7 of 2019,
+# S.I. 21/2021), the assent date on Parliament's bill tracker (the 2024 CAA amendment Act), the file
+# date of UCAA's checklist, or the year alone where the brief gives no day
+# (AC-UAS001 Issue 1 is dated July 2020 and was posted by UCAA on 22 March 2022; the 2013 petroleum
+# Acts and the 2019 data Act). Items the brief marks [unverified] stay out: the Official Secrets Act
+# prohibited places, UWA drone permits, UCC type approval, the DPPA's transfer section number.
+# No fee, fine, currency point or penalty amount appears anywhere (owner rule: no pricing).
+country_name: Uganda
+last_reviewed: 2026-09-27
+regulator:
+  name: Uganda Civil Aviation Authority (UCAA)
+  url: https://caa.go.ug/unmanned-aircraft-systems-drones/
+summary:
+  regulator: Uganda Civil Aviation Authority (UCAA), with Chief of Defence Forces security clearance for each drone import and each operation
+  instruments: Civil Aviation (Unmanned Aircraft Systems) Regulations 2022, S.I. 96 of 2022; Advisory Circular UCAA-AC-UAS001 (Issue 1)
+instruments:
+  - id: uas-regs-2022
+    title: The Civil Aviation (Unmanned Aircraft Systems) Regulations, 2022
+    identifier: S.I. No. 96 of 2022, S.I. Supplement No. 35 to Uganda Gazette No. 51, Vol. CXV
+    date: 2022-08-15
+    url: https://archive.gazettes.africa/archive/ug/2022/ug-government-gazette-statutory-instruments-supplement-dated-2022-08-15-no-51.pdf
+    last_checked: 2026-09-27
+    note: Made on 12 August 2022 under s.61(1) of the Civil Aviation Authority Act; revoked S.I. 23 of 2020. Categories (reg 4, Sch. 2), ownership and registration (regs 8–15), import (reg 16), the UOC (regs 18–26), approval of each operation (reg 29), operating rules (regs 31–65), security (Part VIII), privacy (reg 79), exemptions (regs 85–86). No amending instrument was found on ULII or on UCAA's regulations page.
+  - id: ucaa-ac-uas001
+    title: "UCAA Advisory Circular: Procedure for Importation and Operation of Unmanned Aircraft Systems/Drones in Uganda"
+    identifier: UCAA-AC-UAS001, Issue 1 (July 2020)
+    date: 2020
+    url: https://caa.go.ug/advisory-circular-ucaa-ac-uas001-issue-1-july-2020-procedure-for-importation-and-operation-of-unmanned-aircraft-systems-drones-in-uganda/
+    last_checked: 2026-09-27
+    note: Posted by UCAA on 22 March 2022 and filed on its drone page as the updated drones clearance procedure. Sends every drone import and every operation to the Chief of Defence Forces, who convenes a Tripartite Committee.
+  - id: ucaa-drone-requirements
+    title: UCAA drone requirements checklist
+    identifier: UCAA drone page, "drone-requirements" file
+    date: 2024-04-24
+    url: https://caa.go.ug/Download/81/unmanned-aircraft-systems-drones/5506/drone-requirements
+    last_checked: 2026-09-27
+    note: The documents UCAA lists for Category B and Category C applications, including a safety risk assessment signed by the area Resident District Commissioner.
+  - id: caa-amendment-act-2019
+    title: The Civil Aviation Authority (Amendment) Act, 2019
+    identifier: Act 7 of 2019, Acts Supplement No. 4 to Uganda Gazette No. 18
+    date: 2019-04-18
+    url: https://archive.gazettes.africa/archive/ug/2019/ug-government-gazette-acts-supplement-dated-2019-04-18-no-18.pdf
+    last_checked: 2026-09-27
+    note: Assented to on 20 February 2019. Defines remotely piloted aircraft systems and adds them to the regulation-making power in s.61.
+  - id: caa-amendment-act-2024
+    title: The Civil Aviation Authority (Amendment) Act, 2024
+    identifier: Parliament of Uganda bill tracker copy
+    date: 2024-02-02
+    url: https://bills.parliament.ug/attachments/Civil%20Aviation%20Authority%20(Amendment)%20Act,%202024.pdf
+    last_checked: 2026-09-27
+    note: Assented to on 2 February 2024, according to Parliament's bill tracker. Its arrangement of sections shows no drone clauses.
+  - id: midstream-act-2013
+    title: The Petroleum (Refining, Conversion, Transmission and Midstream Storage) Act, 2013
+    identifier: Act 4 of 2013 (Cap. 162)
+    date: 2013
+    url: https://www.pau.go.ug/cms/2025/07/petroleum_rctms_act_2013.pdf
+    last_checked: 2026-09-27
+    note: Safety zones around midstream facilities, their extent set by the Petroleum Authority of Uganda (s.67).
+  - id: midstream-regs-2016
+    title: The Petroleum (Refining, Conversion, Transmission and Midstream Storage) Regulations, 2016
+    identifier: S.I. No. 36 of 2016, S.I. Supplement No. 14 to Uganda Gazette No. 39
+    date: 2016-06-02
+    url: https://www.pau.go.ug/cms/2025/07/Midstream_General_Regulations-2016.pdf
+    last_checked: 2026-09-27
+    note: Activity adjacent to a pipeline system (reg 68), the six-monthly route survey (reg 87), ground disturbance within 6 m where there is no pipeline right of way (reg 91), work within 30 m of the right of way (regs 92–94), mechanical excavation within 6 m (reg 97), crossings (reg 98).
+  - id: edp-act-2013
+    title: The Petroleum (Exploration, Development and Production) Act, 2013
+    identifier: Cap. 161
+    date: 2013
+    url: https://www.pau.go.ug/cms/2025/07/petroleum_edp_act_2013.pdf
+    last_checked: 2026-09-27
+    note: The same safety-zone scheme for upstream installations (s.144).
+  - id: dppa-2019
+    title: The Data Protection and Privacy Act, 2019
+    identifier: Act 9 of 2019 (Cap. 97)
+    date: 2019
+    url: https://ulii.org/akn/ug/act/2019/9/eng@2023-12-31
+    last_checked: 2026-09-27
+    note: Governs personal data, which imagery showing identifiable people or homes can contain. The Personal Data Protection Office runs organisation registration and breach reporting.
+  - id: dpp-regs-2021
+    title: The Data Protection and Privacy Regulations, 2021
+    identifier: S.I. No. 21 of 2021
+    date: 2021-03-12
+    url: https://ulii.org/akn/ug/act/si/2021/21/eng@2021-03-12
+    last_checked: 2026-09-27
