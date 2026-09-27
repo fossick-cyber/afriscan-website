@@ -1,0 +1,34 @@
+{% macro sample_figure(f, size) %}
+<figure class="figure figure--{{ size }}">
+  <div class="figure-media">
+    {{ f.picture }}
+    <span class="img-badge">{{ icon('user-check', 'icon icon-xs') }}{{ g.s.badge }}</span>
+  </div>
+  <figcaption>
+    <span class="figure-caption">{{ md(f.caption) }}</span>
+    {% if f.text %}<div class="figure-text"><p>{{ md(f.text) }}</p></div>{% endif %}
+    <span class="figure-credit">{{ md(f.credit) }}</span>
+  </figcaption>
+</figure>
+{% endmacro %}
+<div class="sample-gallery">
+  {% if g.overview %}{{ sample_figure(g.overview, 'wide') }}{% endif %}
+  {% if g.two %}
+  <div class="cards cards--2">
+    {% for f in g.views %}{{ sample_figure(f, 'half') }}{% endfor %}
+  </div>
+  {% else %}
+    {% for f in g.views %}{{ sample_figure(f, g.size) }}{% endfor %}
+  {% endif %}
+  {% if g.legend %}
+  <ul class="seg-legend sample-legend">
+    <li><span class="swatch swatch--route"></span>{{ g.s.route }}</li>
+    <li><span class="band band--a">{{ g.s.b50 }}</span></li>
+    <li><span class="band band--b">{{ g.s.b100 }}</span></li>
+    <li><span class="band band--c">{{ g.s.beyond }}</span></li>
+    <li><span class="swatch swatch--ring"></span>{{ g.s.rings }}</li>
+  </ul>
+  {% endif %}
+  {% if g.s.note %}<p class="sample-note">{{ md(g.s.note) }}</p>{% endif %}
+  {% if inner|trim %}<div class="sample-note">{{ inner }}</div>{% endif %}
+</div>

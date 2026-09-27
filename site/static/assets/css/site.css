@@ -488,6 +488,12 @@ tbody th { font-weight: 700; }
 .swatch { display: inline-block; width: 14px; height: 14px; border-radius: 3px; }
 .seg-data { margin-top: 14px; }
 .segments .figure-text { margin-top: 8px; font-size: 0.93rem; color: var(--text-dim); max-width: 52rem; }
+/* sample galleries (:::sample-gallery): Google-imagery views with an HTML legend under them */
+.sample-gallery > * + * { margin-top: 1.5rem; }
+.sample-gallery .cards { gap: 28px 24px; }
+.sample-legend .swatch--route { width: 24px; height: 6px; border-radius: 3px; background: #e8672f; box-shadow: 0 0 0 1px #0d1117; }
+.sample-legend .swatch--ring { width: 16px; height: 16px; border-radius: 50%; background: transparent; border: 3px solid #0d1117; }
+.sample-note { font-size: 0.93rem; color: var(--text-dim); max-width: 52rem; }
 
 /* ------------------------------------------------------------------ disclosure and FAQ */
 .disclosure { border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 0 16px; background: #fff; }

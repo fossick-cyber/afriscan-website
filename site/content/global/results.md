@@ -25,12 +25,14 @@ cta:
 faq:
   - q: Is this sample automatic detection?
     a: No. Every mark in this sample was placed by a reviewer; no automatic detection result is shown. On a client survey, open building datasets and segmentation models propose structures first and a reviewer confirms, corrects and adds to them. See [how we detect, review and measure structures](/methodology).
-  - q: Why does this page show no close-up imagery of the structures?
-    a: The reviewer marked this sample on a web-map satellite basemap in our review tool. Web-map basemaps state no capture date and are used for screening only, so we never publish or deliver them as survey imagery. This page shows the register itself, drawn as strip views, and the route on a dated Copernicus Sentinel-2 scene for location. Client surveys that need a date use imagery that can be dated and delivered, such as a drone survey, a purchased satellite scene or your own georeferenced imagery.
+  - q: Why are the close-ups on Google imagery, and why is there no capture date?
+    a: The reviewer marked this sample on Google satellite imagery in our review tool, so the close-ups show the marks on that imagery, credited "Imagery © Google". Google does not state when that imagery was captured, so it shows where each mark sits, not when a structure appeared. Client surveys that need a date use imagery that can be dated and delivered, such as a drone survey, a purchased satellite scene or your own georeferenced imagery. The overview of ratings further down uses a dated Copernicus Sentinel-2 scene.
+  - q: Why do some rings sit beside a roof rather than on it?
+    a: Each ring is centred on the point the reviewer placed. The marks were placed at the scale the review used, so a ring can sit beside the roof it refers to rather than on it. Distances in the register are measured from those points, exactly as recorded.
   - q: Why is the register drawn as a straight strip?
     a: A strip view straightens the route so that each marked structure sits at its chainage (the distance along the route) and its distance from the line, with the north side of the line at the top. Distances across the route are drawn at twice the scale of distances along it, so the 50 m and 100 m bands can be read. It is a chart of the register, not a map.
   - q: Could a structure be missing from the sample?
-    a: Yes. The review recorded the structures the reviewer confirmed at the time, inside the search area around the route. Structures under tree cover, roofs that blend with the ground and anything outside the search area are not marked. A delivered survey is reviewed against the imagery it names, and anything that cannot be settled from the air is listed for a check on the ground.
+    a: Yes, and the close-ups show some. The review recorded the structures the reviewer marked at the time, inside the search area around the route, and roofs inside the bands with no ring were not marked in it. We publish the sample as it was recorded, with nothing added. Structures under tree cover, roofs that blend with the ground and anything outside the search area are also missed from the air. A delivered survey is reviewed against the imagery it names, and anything that cannot be settled from the air is listed for a check on the ground.
   - q: Are the plants and well pads on the route counted?
     a: No. The facilities near both ends of this route belong to the pipeline operator. An operator's own installations are part of the asset, not encroachment, and they are not in the register.
 related: [oil-gas, right-of-way-monitoring, insight-survey-scope]
@@ -51,8 +53,13 @@ related: [oil-gas, right-of-way-monitoring, insight-survey-scope]
 Counts are cumulative: "within 100 m" includes the 11 structures within 50 m. Distances are measured to the route as supplied, in its local UTM zone (36S). The other 23 marks lie between 100 m and the edge of the search area.
 ::::
 
-::::section{id="corridor-view" tone="alt" eyebrow="Register view" title="The densest stretch, structure by structure" lead="Km 5.0 to 6.5, where the route runs beside an existing track through farmland and homesteads. Each mark sits at its chainage and its distance from the line, and carries the register ID used in the table below."}
-:::figure{src="samples/sample-pipeline-register-km5-6" alt="Strip view of the pipeline route between km 5.0 and 6.5: the route as a straight orange line with red 50 m and amber 100 m bands on both sides, and twenty reviewer marks, R20 to R39, placed by chainage and distance; the three 500 m segments below are rated medium (4), high (16) and high (7)" caption="The sample pipeline, km 5.0 to 6.5: reviewer marks by chainage and distance from the line, with the rating of each 500 m segment" badge="Reviewed · manual marks" size="wide" priority="true" credit="Drawn by AfriScan from the sample register. No imagery; distances across the route drawn at twice the along-route scale."}
+::::section{id="on-imagery" tone="alt" eyebrow="On satellite imagery" title="The reviewer's marks on Google satellite imagery" lead="The whole route, then five close-ups of about 600 by 400 m, each with the route, its 50 m and 100 m bands and a ring on each mark the reviewer placed. The letters on the overview show where each close-up sits."}
+:::sample-gallery{data="sample-pipeline-google" priority="true"}
+:::
+::::
+
+::::section{id="corridor-view" eyebrow="Register view" title="The densest stretch, structure by structure" lead="Km 5.0 to 6.5, where the route runs beside an existing track through farmland and homesteads. Each mark sits at its chainage and its distance from the line, and carries the register ID used in the table below."}
+:::figure{src="samples/sample-pipeline-register-km5-6" alt="Strip view of the pipeline route between km 5.0 and 6.5: the route as a straight orange line with red 50 m and amber 100 m bands on both sides, and twenty reviewer marks, R20 to R39, placed by chainage and distance; the three 500 m segments below are rated medium (4), high (16) and high (7)" caption="The sample pipeline, km 5.0 to 6.5: reviewer marks by chainage and distance from the line, with the rating of each 500 m segment" badge="Reviewed · manual marks" size="wide" credit="Drawn by AfriScan from the sample register. No imagery; distances across the route drawn at twice the along-route scale."}
 <span class="band band--a">Within 50 m</span> <span class="band band--b">50 to 100 m</span> <span class="band band--c">Beyond 100 m</span> The north side of the line is at the top.
 :::
 
@@ -64,7 +71,7 @@ Chainage is the distance along the route from its start. This public sample leav
 :::
 ::::
 
-::::section{id="segments" eyebrow="Encroachment density" title="Every 500 m of route, rated" lead="The rating is a count rule that tells you where to send people first. It is not a safety or integrity assessment."}
+::::section{id="segments" tone="alt" eyebrow="Encroachment density" title="Every 500 m of route, rated" lead="The rating is a count rule that tells you where to send people first. It is not a safety or integrity assessment."}
 :::figure{src="samples/sample-pipeline-route-ratings" alt="The pipeline route on a Sentinel-2 satellite scene, running about 10 km from a gas plant in the west, past a settlement, to a wetland in the east; the route is coloured by rating, red for the high stretches between km 4 and 6.5, amber for medium and grey for low" caption="The whole route, each 500 m coloured by its rating: red high, amber medium, grey low" size="wide" credit="Route on a Copernicus Sentinel-2 scene of 2 August 2026 (contains modified Copernicus Sentinel data 2026), shown for location. At 10 m per pixel the scene cannot show individual structures; the ratings come from the reviewed register, not from this scene."}
 :::
 
@@ -85,7 +92,7 @@ No structures within 100 m: the line crosses bush and burnt grassland here.
 :::
 ::::
 
-::::section{id="delivery" tone="alt" eyebrow="What a delivery contains" title="The same outputs, for your route"}
+::::section{id="delivery" eyebrow="What a delivery contains" title="The same outputs, for your route"}
 :::cards{cols="3"}
 :::card{title="PDF report" icon="file-text"}
 A cover with the key figures; survey details (method, imagery source and date, UTM zone); an overview map with buffers, chainage and a scale bar; the segment table; a photo of each structure in chainage order; and the full coordinate register. In English or Portuguese.
@@ -102,7 +109,7 @@ A self-contained map of the results that opens in a web browser. The result laye
 :::
 ::::
 
-::::section{id="about-sample" eyebrow="About this sample" title="What this sample can and cannot show"}
+::::section{id="about-sample" tone="alt" eyebrow="About this sample" title="What this sample can and cannot show"}
 :::::columns{split="1-1"}
 ::::col
 :::checklist
