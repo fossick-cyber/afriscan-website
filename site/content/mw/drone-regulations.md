@@ -52,9 +52,9 @@ faq:
       photographs, plans and data is due within 30 days of completion (s.42(2)).
   - q: Who receives the survey photographs and data?
     a: >-
-      The Surveyor General, as well as you. Within 30 days of completing an aerial survey, the surveyor
-      deposits one printed copy of every photograph taken for it, with any plan made from it, and copies of
-      all data and subsequent maps and plans (s.42(2)). Agree in the contract who makes the deposit and how
+      The Surveyor General, as well as you. Within 30 days of completing an aerial survey, one printed copy
+      of every photograph taken for it, with any plan made from it, and copies of all data and subsequent
+      maps and plans go to the Surveyor General (s.42(2)). Agree in the contract who makes the deposit and how
       personal data in the imagery is handled.
   - q: Can drone imagery of our site appear on your website?
     a: >-
