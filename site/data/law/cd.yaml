@@ -1,0 +1,59 @@
+# DR Congo: the instruments the drone-law pages (/cd/drone-regulations, /cd/fr/loi-sur-les-drones)
+# and the subcontracting pages (/cd/subcontracting, /cd/fr/sous-traitance) rely on. Facts ONLY from
+# fhc-notes/website/regional/cd.FINAL.md (verified 2026-09-27). Left out on purpose:
+#   - fine and levy amounts (owner rule: no currency amounts or regulators' charges), including
+#     the 1.2 % ARSP levy of AM n° 01/2021;
+#   - anything the brief marks [unverified] or [secondary]: an AAC drone regulation or registration
+#     procedure (none was published on 27 Sep 2026), the ministerial arrêté on AAC fine rates, the
+#     unamended "travail aérien" articles, any security-clearance text, the Code du Numérique
+#     (primary text not read), the rest of Loi n° 26/017 beyond the columns read, Loi n° 26/018.
+# Titles are the official French titles, so the same rows read correctly on the English and French
+# pages; identifiers carry only numbers and article references for the same reason. The servitude,
+# electricity and mining texts are cited inline on their own pages, not here, so this Sources
+# table stays about drones and subcontracting.
+country_name: Democratic Republic of the Congo
+country_name_fr: République démocratique du Congo
+last_reviewed: 2026-09-27
+regulator:
+  name: Autorité de l'Aviation Civile (AAC/RDC)
+  url: https://aac.cd/
+summary:
+  regulator: Autorité de l'Aviation Civile (AAC/RDC)
+  instruments: Loi n° 10/014 on civil aviation as amended by Loi n° 23/001 of 12 January 2023 (art. 58 bis, prior AAC authorisation for every drone flight); who may be hired is set by the subcontracting law, Loi n° 17/001 as amended in 2026
+instruments:
+  - id: loi-23-001
+    title: Loi n° 23/001 du 12 janvier 2023 modifiant et complétant la Loi n° 10/014 du 31 décembre 2010 relative à l'aviation civile
+    identifier: "Loi n° 23/001 · art. 3, 7, 58 bis, 58 ter, 104, 105, 135, 159, 169 bis, 169 quater, 172, 177"
+    date: 2023-01-12
+    url: https://www.leganet.be/Legislation/Droit%20economique/transport/Loi.23.001.12.01.2023.html
+    last_checked: 2026-09-27
+  - id: ol-62-330
+    title: Ordonnance-loi n° 62-330 du 27 septembre 1952 (servitudes aéronautiques)
+    identifier: OL n° 62-330
+    date: 1952-09-27
+    url: https://www.leganet.be/Legislation/Droit%20economique/transport/OL.62.330.27.09.1952.html
+    last_checked: 2026-09-27
+  - id: loi-17-001
+    title: Loi n° 17/001 du 8 février 2017 fixant les règles applicables à la sous-traitance dans le secteur privé
+    identifier: "Loi n° 17/001 · art. 1–3, 6, 7, 9–12, 17, 27, 28"
+    date: 2017-02-08
+    url: https://www.leganet.be/Legislation/Droit%20civil/Dobligations/Loi.17.001.08.02.2017.html
+    last_checked: 2026-09-27
+  - id: loi-26-017
+    title: Loi n° 26/017 du 30 juin 2026 modifiant et complétant la Loi n° 17/001 du 8 février 2017
+    identifier: "JO, 67e année, n° spécial, 8 juillet 2026, col. 2 et 23–24"
+    date: 2026-06-30
+    url: https://www.arsp.cd/api/files/attachments/140
+    last_checked: 2026-09-27
+  - id: am-02-2021
+    title: Arrêté ministériel n° 02/2021 du 6 janvier 2021 (éligibilité à la sous-traitance)
+    identifier: "AM n° 02/2021 · art. 4, 6"
+    date: 2021-01-06
+    url: https://www.leganet.be/Legislation/Droit%20civil/Dobligations/AM.02.06.01.2021.htm
+    last_checked: 2026-09-27
+  - id: am-03-2021
+    title: Arrêté ministériel n° 03/2021 du 6 janvier 2021 (dérogations)
+    identifier: "AM n° 03/2021 · art. 3–7"
+    date: 2021-01-06
+    url: https://www.leganet.be/Legislation/Droit%20civil/Dobligations/AM.06.01.2021.htm
+    last_checked: 2026-09-27

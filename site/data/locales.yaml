@@ -65,3 +65,31 @@ ng:
   label: "Nigeria"
   short: "Nigeria"
   sitemap: sitemap-ng.xml
+cd-fr:
+  content: cd/fr
+  prefix: /cd/fr
+  lang: fr-CD
+  hreflang: [fr-CD, fr]
+  og_locale: fr_FR
+  i18n: fr-CD
+  country: CD
+  country_name: République démocratique du Congo
+  label: "RD Congo (Français)"
+  short: "RD Congo · FR"
+  sitemap: sitemap-cd.xml
+  status: live
+  region: Central
+cd-en:
+  content: cd/en
+  prefix: /cd
+  lang: en-CD
+  hreflang: [en-CD]
+  og_locale: en_GB
+  i18n: en
+  country: CD
+  country_name: DR Congo
+  label: "DR Congo (English)"
+  short: "DR Congo · EN"
+  sitemap: sitemap-cd.xml
+  status: live
+  region: Central
