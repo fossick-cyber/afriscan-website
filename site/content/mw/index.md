@@ -213,7 +213,7 @@ Why there are no drone regulations yet, the Civil Aviation Act authorisation, th
 ::::section{id="mozambique" tone="alt" eyebrow="Corridors that start in Mozambique" title="One route, two countries' rules"}
 :::::columns{split="1-1"}
 ::::col
-Malawi's 400 kV interconnector comes in from Mozambique, and its railway links to the Nacala line, the rail route through Mozambique to the port of Nacala. For a route that crosses the border, the proposal covers both sides, with the widths that apply in each country. On the Mozambican side those are the 50 m partial protection zone and the servitudes in Mozambican law, set out on our Mozambique pages in English and Portuguese.
+Malawi's 400 kV interconnector comes in from Mozambique, and its railway links to the Nacala line, the rail route through Mozambique to the port of Nacala. For a route that crosses the border, the proposal covers both sides, with the widths that apply in each country. On the Mozambican side those are the Land Law's partial protection zones, such as the 50 m strip beside power lines and railways, and the servitudes in Mozambican law, set out on our Mozambique pages in English and Portuguese.
 
 [The Mozambique site](/mz/) · [Power lines in Mozambique](/mz/power-lines) · [The 50 m partial protection zone](/mz/50m-protection-zone)
 ::::
