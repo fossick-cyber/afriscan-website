@@ -42,7 +42,7 @@ cta:
   button: Request a proposal
 ---
 
-::::section{id="at-a-glance" eyebrow="At a glance" title="Six things a commercial survey flight needs" lead="A drone survey in Ghana is lawful only when every one of these is in place for that job. They belong in the plan from the first day, not the week before the flight."}
+::::section{id="at-a-glance" eyebrow="At a glance" title="Six things a commercial survey flight needs" lead="A commercial drone survey in Ghana needs each of these that applies to the job. They belong in the plan from the first day, not the week before the flight."}
 :::cards{cols="3"}
 :::card{title="An operator certificate" icon="file-check" eyebrow="GCAA"}
 An RPAS Operator Certificate (ROC) with Operations Specifications that list the operations allowed. Commercial flying, "for remuneration or hire", needs one (Part 28.1(8)), and only a company registered in Ghana can complete certification.
@@ -60,7 +60,7 @@ Night flying, hazardous operations, aerodrome restricted areas and areas of high
 No-fly zones around security facilities, airports and listed sites were set with the Ministry of National Security, and flights into them "would require security clearances and special approvals from State Entities" (AC 28-009).
 :::
 :::card{title="Permissions and data" icon="scale" eyebrow="Owners · DPC"}
-Explicit permission for flights within 30 m of buildings, vehicles or groups of people, the asset or landowner's written consent, and personal data in the imagery handled under the Data Protection Act 2012 (Act 843).
+Explicit permission for flights within 30 m of buildings, vehicles or groups of people, and personal data in the imagery handled under the Data Protection Act 2012 (Act 843). We also plan every flight with the asset or landowner's written consent.
 :::
 :::
 ::::
@@ -103,7 +103,7 @@ Part 28's enforcement clause (28.17) still cites Act 678 and Act 906, and its ac
 
 - **Commercial:** "All RPAS operation for remuneration or hire". A survey flown for a client is commercial.
 - **Private:** "All RPAS operation other than commercial or recreational". The importation circular limits it to registered sole proprietorships, partnerships and companies (AC 28-12, §3.2B).
-- **Recreational:** flying for its own sake.
+- **Recreational:** the third category; the draft circular on categories gives examples.
 
 Aerial work, in Part 28's definitions, includes "surveying, observation and patrol". Private and recreational operations stay within visual line of sight "unless otherwise permitted by the Authority" and may not go above 400 ft or beyond line of sight "without compliance with commercial RPAS requirements" (28.1(13)–(14)).
 

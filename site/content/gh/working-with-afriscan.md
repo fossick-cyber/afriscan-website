@@ -40,7 +40,7 @@ cta:
 ::::section{id="summary" eyebrow="In short" title="Five questions every supplier file in Ghana should answer"}
 :::cards{cols="3"}
 :::card{title="Who holds the contract?" icon="user-check"}
-On a mining lease, a Ghanaian firm that meets the local procurement list's ownership test. On upstream petroleum work, a company with a Petroleum Commission permit.
+On a mining lease, a Ghanaian firm that meets the ownership test wherever the local procurement list reserves the service. We treat our own mapping work as reserved under item 35 until counsel settles it. On upstream petroleum work, a company with a Petroleum Commission permit.
 :::
 :::card{title="Which permits apply?" icon="file-check"}
 The Petroleum Commission permit for upstream work, and an environmental permit where the project itself is an undertaking listed in L.I. 2504.
