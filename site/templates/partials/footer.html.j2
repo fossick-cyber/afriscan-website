@@ -22,7 +22,11 @@
       <div>
         {% if footer.countries|length > 1 %}
         <p class="footer-title">{{ t.footer.countries }}</p>
-        <ul>{% for c in footer.countries %}<li><a href="{{ c.href }}" hreflang="{{ c.lang }}" lang="{{ c.lang }}">{{ c.label }}</a></li>{% endfor %}</ul>
+        <ul>{% for c in footer.countries_top %}<li><a href="{{ c.href }}" hreflang="{{ c.lang }}" lang="{{ c.lang }}">{{ c.label }}</a></li>{% endfor %}</ul>
+        {% for g in footer.country_regions %}
+        <p class="footer-sub">{{ g.title }}</p>
+        <ul>{% for c in g['items'] %}<li><a href="{{ c.href }}" hreflang="{{ c.lang }}" lang="{{ c.lang }}">{{ c.label }}</a></li>{% endfor %}</ul>
+        {% endfor %}
         {% endif %}
         <p class="footer-title">{{ t.footer.company }}</p>
         <ul>

@@ -27,6 +27,16 @@ region:
   label: Site do país
   choose: Escolha o site do país
   current: Está aqui
+  stay: Ficar neste site
+  banner: "Está em {country}? Veja o site de {country}."
+
+# Títulos das regiões (selector de país, menu Países, botões dos países).
+regions:
+  Southern: África Austral
+  East: África Oriental
+  West: África Ocidental
+  Central: África Central
+  North: Norte de África
 
 cta:
   title: Saiba o que está construído na sua faixa de servidão antes que se torne um conflito.
@@ -196,6 +206,20 @@ sites:
   mz-en: "Moçambique (em inglês)"
   za: "África do Sul (em inglês)"
   ng: "Nigéria (em inglês)"
+  zm: "Zâmbia (em inglês)"
+  tz: "Tanzânia (em inglês)"
+  ke: "Quénia (em inglês)"
+  gh: "Gana (em inglês)"
+  ug: "Uganda (em inglês)"
+  cd-fr: "RD Congo (em francês)"
+  cd-en: "RD Congo (em inglês)"
+  ao-pt: "Angola (Português)"
+  ao-en: "Angola (em inglês)"
+  zw: "Zimbabué (em inglês)"
+  mw: "Malawi (em inglês)"
+  na: "Namíbia (em inglês)"
+  bw: "Botsuana (em inglês)"
+  rw: "Ruanda (em inglês)"
 
 # Páginas em inglês para onde as páginas portuguesas remetem (menus, rodapé, caminho de navegação,
 # cartões). Cada chave é a chave de grupo (key) da página. Uma página inglesa ligada a partir de

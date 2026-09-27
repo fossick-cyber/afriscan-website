@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Build afri-scan.com (global, /mz/, /mz/pt/, /za/, /ng/) from site/ into dist/.
+"""Build afri-scan.com (the global site and every live country section in data/locales.yaml) from site/ into dist/.
 
     /opt/favhousecheck/.venv/bin/python3 site/build.py            # build + guards, exit 1 on any error
-    /opt/favhousecheck/.venv/bin/python3 site/build.py --drafts   # also build status: draft pages (local preview only)
+    /opt/favhousecheck/.venv/bin/python3 site/build.py --drafts --dist /tmp/x   # also build draft pages and
+                                                                  # draft sections (local preview only; never into a dist/)
     /opt/favhousecheck/.venv/bin/python3 site/build.py --selftest # prove the guards fail on seeded mistakes
 
 Sources: site/content (pages), site/data (facts, UI strings, rules), site/templates, site/static,
@@ -22,6 +23,8 @@ import tempfile
 from collections import defaultdict
 from pathlib import Path
 
+from html.parser import HTMLParser
+
 import yaml
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 from markupsafe import Markup, escape
@@ -40,6 +43,15 @@ DEFAULT_SECTION = {"industry": "industries", "solution": "solutions", "article":
 HUBS = {"industries", "solutions", "how", "countries", "resources", "insights"}
 NAV_GROUPS = ["industries", "solutions", "how", "countries", "resources"]
 TONES = {"light", "alt", "dark", "brand"}
+REGIONS = ["Southern", "East", "West", "Central", "North"]        # data/locales.yaml and data/countries.yaml `region`
+LOCALE_KEYS = ("content", "prefix", "lang", "hreflang", "og_locale", "i18n", "country", "country_name", "label",
+               "short", "sitemap", "status", "region")
+# A non-English i18n file may leave these out: English is used, with a WARN (so a new language file
+# does not fail the build each time a section or region is added).
+I18N_FALLBACK = ("regions", "sites", "region.stay", "region.banner")
+LANG_NAMES = {"en": "English", "pt": "Português", "fr": "Français"}   # only for a draft section with no i18n file
+THANKS_SLUGS = {"pt": "obrigado", "fr": "merci"}                     # thank-you page per language (English: thanks)
+DRAFT_BANNER = "Draft: not published"
 
 # Components usable in content bodies:  :::name{attr="value"} ... :::
 COMPONENTS = {
@@ -67,6 +79,7 @@ COMPONENTS = {
     "details": {"required": {"summary"}, "allowed": {"open"}},
     "lead": {"allowed": set()},
     "country-sites": {"allowed": {"match"}},
+    "countries": {"allowed": {"cols"}},
 }
 
 
@@ -75,7 +88,7 @@ def load_yaml(p):
 
 
 NAME_TOKEN = re.compile(r"[^\W_]+")
-NAME_GAP = re.compile(r"[\s\-\u2010-\u2015/]{1,3}")
+NAME_GAP = re.compile(r"[\s.\-\u2010-\u2015/]{1,3}")
 _NAME_DIGESTS = {}
 
 
@@ -90,7 +103,7 @@ def name_digest(name):
 
 
 def name_candidates(text, words=3):
-    """Every run of up to WORDS tokens joined only by spaces, hyphens, dashes or slashes."""
+    """Every run of up to WORDS tokens joined only by spaces, full stops, hyphens, dashes or slashes."""
     text = text.lower()
     toks = [(m.start(), m.end()) for m in NAME_TOKEN.finditer(text)]
     for i, (a, b) in enumerate(toks):
@@ -107,6 +120,77 @@ def sha(data, n=8):
     return hashlib.sha256(data if isinstance(data, bytes) else data.encode()).hexdigest()[:n]
 
 
+def checkout_dists():
+    """dist/ of this checkout and of every git worktree of the repository."""
+    roots = {ROOT}
+    try:
+        out = subprocess.run(["git", "-c", "safe.directory=*", "worktree", "list", "--porcelain"], cwd=ROOT,
+                             capture_output=True, text=True, check=True, timeout=30).stdout
+        roots |= {Path(line.split(" ", 1)[1]) for line in out.splitlines() if line.startswith("worktree ")}
+    except (subprocess.SubprocessError, FileNotFoundError, OSError):
+        pass
+    return {(r / "dist").resolve() for r in roots}
+
+
+def dist_refusal(dist):
+    """Why a drafts build must not write to DIST (a checkout's dist/, or anything inside one), else None."""
+    d = Path(dist).resolve()
+    for cd in sorted(checkout_dists()):
+        if d == cd or cd in d.parents:
+            return f"{d} is inside {cd}, a checkout's dist/"
+    for anc in (d, *d.parents):
+        if anc.name == "dist" and (anc.parent / "site" / "build.py").exists():
+            return f"{d} is inside {anc}, the dist/ of a checkout at {anc.parent}"
+    return None
+
+
+class PageRefs(HTMLParser):
+    """Every URL-valued attribute of a built page, with what holds it (the country menu, a country-sites
+    button, a /countries entry, the header or footer, an hreflang alternate), plus the JSON-LD blocks."""
+    HOLDERS = (("region", "region-menu item"), ("country-sites", "country-sites button"),
+               ("countries-directory", "/countries entry"))
+    VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.stack, self.refs, self.jsonld, self._ld = [], [], [], None
+
+    def handle_starttag(self, tag, attrs):
+        a = dict(attrs)
+        classes = (a.get("class") or "").split()
+        holder = next((what for cls, what in self.HOLDERS if cls in classes), None)
+        if not holder and tag in ("header", "footer"):
+            holder = f"{tag} link"
+        where = holder or next((h for _, h in reversed(self.stack) if h), "internal link")
+        if tag not in self.VOID:
+            self.stack.append((tag, holder))
+        if tag == "script" and a.get("type") == "application/ld+json":
+            self._ld = []
+        if tag == "link" and (a.get("rel") or "").lower() == "alternate" and a.get("hreflang"):
+            self.refs.append(("hreflang alternate", a.get("href") or "", a["hreflang"]))
+            return
+        for k in ("href", "src", "action", "poster", "content", "data-href"):
+            if a.get(k):
+                self.refs.append(("meta tag" if tag == "meta" else where, a[k], None))
+        for k in ("srcset", "imagesrcset"):
+            for part in (a.get(k) or "").split(","):
+                if part.strip():
+                    self.refs.append((where, part.strip().split(" ")[0], None))
+
+    def handle_endtag(self, tag):
+        if tag == "script" and self._ld is not None:
+            self.jsonld.append("".join(self._ld))
+            self._ld = None
+        for i in range(len(self.stack) - 1, -1, -1):
+            if self.stack[i][0] == tag:
+                del self.stack[i:]
+                break
+
+    def handle_data(self, data):
+        if self._ld is not None:
+            self._ld.append(data)
+
+
 class Build:
     def __init__(self, content_dir=SITE / "content", dist=ROOT / "dist", drafts=False, quiet=False,
                  today=None, law_dir=SITE / "data/law"):
@@ -116,7 +200,11 @@ class Build:
         self.site = load_yaml(SITE / "data/site.yaml")
         self.base = self.site["base_url"].rstrip("/")
         self.locales = load_yaml(SITE / "data/locales.yaml")
-        self.i18n = {n: load_yaml(SITE / f"data/i18n/{n}.yaml") for n in {l["i18n"] for l in self.locales.values()}}
+        self.countries = load_yaml(SITE / "data/countries.yaml")
+        # a draft section may not have its i18n file yet (it then falls back to en.yaml; check_locales)
+        self.i18n = {n: load_yaml(SITE / f"data/i18n/{n}.yaml")
+                     for n in dict.fromkeys(l.get("i18n", "en") for l in self.locales.values())
+                     if (SITE / f"data/i18n/{n}.yaml").exists()}
         self.catalogue = load_yaml(SITE / "data/catalogue.yaml")
         self.rules = load_yaml(SITE / "data/rules.yaml")
         self.glossary = load_yaml(SITE / "data/glossary/pt-MZ.yaml")
@@ -138,10 +226,127 @@ class Build:
     def warn(self, msg):
         self.warnings.append(msg)
 
+    # ------------------------------------------------------------------ sections and countries
+    def is_live(self, lk):
+        return self.locales[lk].get("status") == "live"
+
+    def section_built(self, lk):
+        """Live sections always; draft sections only in a --drafts build."""
+        return self.is_live(lk) or self.drafts
+
+    def t_of(self, lk):
+        """UI strings of section lk (en.yaml for a draft section whose i18n file does not exist yet)."""
+        return self.i18n.get(self.locales[lk]["i18n"]) or self.i18n["en"]
+
+    def tr(self, lk, *path):
+        """A UI string for section lk, falling back to English for the I18N_FALLBACK keys."""
+        for t in (self.t_of(lk), self.i18n["en"]):
+            v = t
+            for k in path:
+                v = v.get(k) if isinstance(v, dict) else None
+            if v is not None:
+                return v
+        return None
+
+    def lang_name(self, lk):
+        loc = self.locales[lk]
+        if loc["i18n"] in self.i18n:
+            return self.i18n[loc["i18n"]]["lang_name"]
+        return LANG_NAMES.get(loc["lang"][:2], loc["lang"])
+
+    def country_of(self, lk):
+        cc = self.locales[lk].get("country")
+        return self.countries.get(cc.lower()) if cc else None
+
+    def section_of_path(self, path):
+        """The section an URL path belongs to: the longest prefix that matches at a / boundary."""
+        best, n = "global", 0
+        for lk, loc in self.locales.items():
+            pre = loc["prefix"]
+            if pre and (path == pre or path.startswith(pre + "/")) and len(pre) > n:
+                best, n = lk, len(pre)
+        return best
+
+    def reserved_segments(self, lk):
+        """First slug segments that belong to a nested section: "pt" under /mz/, "fr" under /cd/, every
+        country prefix under the global site. Draft sections count, so no page can take their URLs."""
+        pre, out = self.locales[lk]["prefix"], {}
+        for k, loc in self.locales.items():
+            if k != lk and loc["prefix"].startswith(pre + "/"):
+                out.setdefault(loc["prefix"][len(pre) + 1:].split("/")[0], k)
+        return out
+
+    def check_locales(self):
+        """data/locales.yaml against data/countries.yaml and data/i18n/."""
+        seen_prefix, seen_code = {}, {}
+        for lk, loc in self.locales.items():
+            where = f"data/locales.yaml: {lk}"
+            missing = [k for k in LOCALE_KEYS if k not in loc]
+            if missing:
+                self.err(f"{where}: missing {', '.join(missing)}")
+                continue
+            if loc["status"] not in ("live", "draft"):
+                self.err(f"{where}: status must be live or draft")
+            if lk == "global":
+                if loc["status"] != "live" or loc["region"] is not None or loc["country"]:
+                    self.err(f"{where}: the global section is live, with region: null and country: null")
+            elif loc["region"] not in REGIONS:
+                self.err(f"{where}: region must be one of {REGIONS}")
+            if loc["prefix"] in seen_prefix:
+                self.err(f"{where}: prefix {loc['prefix']!r} is also {seen_prefix[loc['prefix']]}'s")
+            seen_prefix[loc["prefix"]] = lk
+            if loc["prefix"] and not re.fullmatch(r"(?:/[a-z]{2})+", loc["prefix"]):
+                self.err(f"{where}: prefix must look like /xx or /xx/yy")
+            for code in loc["hreflang"]:
+                if code in seen_code:
+                    self.err(f"{where}: hreflang {code} is also carried by {seen_code[code]} (one section per code)")
+                seen_code[code] = lk
+            if loc["hreflang"][0] != (loc["lang"] if lk != "global" else "en"):
+                self.err(f"{where}: the first hreflang code must be the section's own ({loc['lang']})")
+            if loc["i18n"] not in self.i18n:
+                if loc["status"] == "live":
+                    self.err(f"{where}: a live section needs data/i18n/{loc['i18n']}.yaml")
+                elif self.drafts and (self.content_dir / loc["content"]).exists() and any(
+                        (self.content_dir / loc["content"]).rglob("*.md")):
+                    self.warn(f"{where}: no data/i18n/{loc['i18n']}.yaml yet; the draft uses English UI strings")
+            if lk != "global":
+                c = self.country_of(lk)
+                if not c:
+                    self.err(f"{where}: country {loc['country']} is not in data/countries.yaml")
+                elif c.get("region") != loc["region"]:
+                    self.err(f"{where}: region {loc['region']} but data/countries.yaml has {c.get('region')}")
+            if lk not in (self.i18n["en"].get("sites") or {}):
+                self.err(f"data/i18n/en.yaml: sites.{lk} is missing (the section's name in menus)")
+        for r in REGIONS:
+            if not (self.i18n["en"].get("regions") or {}).get(r):
+                self.err(f"data/i18n/en.yaml: regions.{r} is missing")
+        live_cc = {self.locales[lk]["country"].lower() for lk in self.locales
+                   if self.locales[lk].get("country") and self.is_live(lk)}
+        for cc, c in (self.countries or {}).items():
+            where = f"data/countries.yaml: {cc}"
+            if not re.fullmatch(r"[a-z]{2}", str(cc)):
+                self.err(f"{where}: keys are ISO 3166-1 alpha-2 codes in lower case")
+            if not c.get("name") or c.get("region") not in REGIONS:
+                self.err(f"{where}: needs a name and a region in {REGIONS}")
+            if c.get("status") not in ("live", "launching", "research"):
+                self.err(f"{where}: status must be live, launching or research")
+            langs = c.get("languages")
+            if langs is not None and not (isinstance(langs, list) and all(re.fullmatch(r"[a-z]{2}", str(x)) for x in langs)):
+                self.err(f"{where}: languages is a list of ISO 639-1 codes, or null")
+            tzs = c.get("timezones") or []
+            if not all(re.fullmatch(r"[A-Z][A-Za-z_]+/[A-Za-z_\-]+", str(z)) for z in tzs):
+                self.err(f"{where}: timezones are IANA names (Africa/Lusaka)")
+            if c.get("status") == "live" and cc not in live_cc:
+                self.err(f"{where}: status live, but no section in data/locales.yaml for {cc.upper()} is live")
+            elif cc in live_cc and c.get("status") != "live":
+                self.warn(f"{where}: a {cc.upper()} section is live; set status: live")
+
     # ------------------------------------------------------------------ pages
     def read_pages(self):
         pages = []
         for lk, loc in self.locales.items():
+            if not self.section_built(lk):
+                continue
             base = self.content_dir / loc["content"]
             if not base.exists():
                 continue
@@ -171,9 +376,11 @@ class Build:
         slug = meta.get("slug", "" if stem == "index" else stem)
         if slug != slug.lower() or slug.endswith("/") or not re.fullmatch(r"[a-z0-9]+(?:[-/][a-z0-9]+)*|", slug):
             raise ContentError(f"{where}: slug {slug!r} must be lowercase ASCII words joined by - or /, no trailing slash")
-        if lk == "mz-en" and (slug == "pt" or slug.startswith("pt/")):
-            raise ContentError(f"{where}: slug 'pt' is reserved under /mz/ for the Portuguese section")
-        if slug.split("/")[0] in {"assets", "geo", "404", "thanks", "obrigado"}:
+        nested = self.reserved_segments(lk).get(slug.split("/")[0])
+        if nested:
+            raise ContentError(f"{where}: slug {slug!r} is reserved: {self.locales[nested]['prefix']}/ is the "
+                               f"{nested} section")
+        if slug.split("/")[0] in {"assets", "geo", "404", "thanks", *THANKS_SLUGS.values()}:
             raise ContentError(f"{where}: slug {slug!r} is reserved")
         template = meta.get("template", "home" if not slug else "page")
         if template not in TEMPLATES:
@@ -197,11 +404,12 @@ class Build:
             raise ContentError(f"{where}: no data/law/{meta['law']}.yaml for this law page")
         if template == "article" and not meta.get("published"):
             raise ContentError(f"{where}: an article needs 'published: YYYY-MM-DD'")
-        return dict(meta=meta, body=body, src=f, where=where, loc_key=lk, loc=loc, t=self.i18n[loc["i18n"]],
+        draft = status != "published" or not self.is_live(lk)
+        return dict(meta=meta, body=body, src=f, where=where, loc_key=lk, loc=loc, t=self.t_of(lk),
                     slug=slug, url=url, abs_url=self.base + url, out=out, key=key, template=template,
                     status=status, hub=hub, section=section, title=meta["title"].strip(),
                     description=" ".join(str(meta["description"]).split()), h1=meta["h1"].strip(),
-                    lang=loc["lang"], lang2=loc["lang"][:2], noindex=bool(meta.get("noindex")) or status != "published")
+                    lang=loc["lang"], lang2=loc["lang"][:2], draft=draft, noindex=bool(meta.get("noindex")) or draft)
 
     # ------------------------------------------------------------------ lookup helpers
     def find(self, key, lk):
@@ -233,6 +441,8 @@ class Build:
         loc = self.locales[lk]
         if q["lang2"] == loc["lang"][:2]:
             return (self.label_of(q), q["meta"].get("summary") or q["description"]) if text else self.label_of(q)
+        if loc["i18n"] not in self.i18n:            # a draft section with no i18n file yet: own labels
+            return (self.label_of(q), q["meta"].get("summary") or q["description"]) if text else self.label_of(q)
         fp = (self.i18n[loc["i18n"]].get("foreign_pages") or {}).get(q["key"]) or {}
         if not fp.get("label") or not fp.get("blurb"):
             self.err(f"data/i18n/{loc['i18n']}.yaml: foreign_pages.{q['key']} needs a label and a blurb "
@@ -241,7 +451,23 @@ class Build:
         return (label, fp.get("blurb") or q["description"]) if text else label
 
     def site_label(self, lk, viewer_lk):
-        return self.i18n[self.locales[viewer_lk]["i18n"]]["sites"][lk]
+        return self.tr(viewer_lk, "sites", lk) or self.locales[lk]["label"]
+
+    def by_region(self, items, viewer_lk, key="section"):
+        """Items that carry a section key, as (items with no region, i.e. global) and region groups in REGIONS
+        order; countries by English name within a region, a country's sections in data/locales.yaml order."""
+        order = list(self.locales)
+        top, groups = [], defaultdict(list)
+        for it in items:
+            region = self.locales[it[key]].get("region")
+            (groups[region] if region else top).append(it)
+        out = []
+        for r in REGIONS:
+            if groups[r]:
+                its = sorted(groups[r], key=lambda it: ((self.country_of(it[key]) or {}).get("name", ""),
+                                                        order.index(it[key])))
+                out.append({"key": r.lower(), "region": r, "title": self.tr(viewer_lk, "regions", r), "items": its})
+        return top, out
 
     def hub_page(self, group, lk):
         return self.hubs.get((group, lk)) or (self.hubs.get((group, "global")) if lk != "global" else None)
@@ -286,10 +512,14 @@ class Build:
                 if (p["hub"], p["loc_key"]) in self.hubs:
                     self.err(f"two '{p['hub']}' hubs in {p['loc_key']}")
                 self.hubs[(p["hub"], p["loc_key"])] = p
+        # sections with a home in this build (live ones; draft ones too in a --drafts build), and the
+        # live ones among them: only those are ever suggested by the banner or named in JSON-LD
         self.live_locales = [lk for lk in self.locales if self.home_of(lk)]
+        self.public_locales = [lk for lk in self.live_locales if self.is_live(lk)]
         for p in pages:
             p["alternates"] = self.alternates(p)
             p["region_links"] = self.region_links(p)
+            p["region_menu"] = self.region_menu(p)
             p["crumbs"] = self.breadcrumbs(p)
         for lk in self.locales:
             if lk != "global" and not self.home_of(lk) and any(p["loc_key"] == lk for p in pages):
@@ -319,9 +549,13 @@ class Build:
         for lk in self.live_locales:
             target = self.find(p["key"], lk) or self.home_of(lk)
             loc = self.locales[lk]
-            links.append({"key": lk, "label": self.site_label(lk, p["loc_key"]), "lang": loc["lang"], "href": target["url"],
-                          "current": lk == p["loc_key"]})
+            links.append({"key": lk, "section": lk, "label": self.site_label(lk, p["loc_key"]), "lang": loc["lang"],
+                          "href": target["url"], "current": lk == p["loc_key"], "draft": not self.is_live(lk)})
         return links
+
+    def region_menu(self, p):
+        top, groups = self.by_region(p["region_links"], p["loc_key"])
+        return {"top": top, "groups": groups}
 
     def breadcrumbs(self, p):
         if p["template"] == "home":
@@ -353,7 +587,7 @@ class Build:
     # ------------------------------------------------------------------ navigation
     def nav_for(self, lk):
         lang = "pt" if self.locales[lk]["lang"].startswith("pt") else "en"
-        t = self.i18n[self.locales[lk]["i18n"]]
+        t = self.t_of(lk)
         page_lang = self.locales[lk]["lang"]
 
         def item(p, label=None, blurb=None, **kw):
@@ -400,14 +634,17 @@ class Build:
                         continue
                     seen.add(p["key"])
                     items.append(item(p))
+            extra = {}
             if gname == "countries":
-                homes = [item(self.home_of(k), self.site_label(k, lk), "", lang=None if self.locales[k]["lang"][:2] == page_lang[:2] else self.locales[k]["lang"])
+                homes = [item(self.home_of(k), self.site_label(k, lk), "", lang=None if self.locales[k]["lang"][:2] == page_lang[:2] else self.locales[k]["lang"],
+                              section=k, draft=not self.is_live(k))
                          for k in self.live_locales if k != "global"]
+                extra = {"regions": self.by_region(homes, lk)[1], "pages": items}   # the panel groups homes by region
                 items = homes + items
             hub = self.hub_page(gname, lk)
             if items or hub:
                 groups.append({"key": gname, "label": t["nav"][gname],
-                               "href": (hub or {"url": items[0]["href"]})["url"], "items": items})
+                               "href": (hub or {"url": items[0]["href"]})["url"], "items": items, **extra})
         order = {g: i for i, g in enumerate(NAV_GROUPS)}
         groups.sort(key=lambda g: order[g["key"]])
         return groups
@@ -657,8 +894,30 @@ class Build:
             target = self.find(p["key"], k) if match else None
             if not target or target["noindex"]:
                 target = self.home_of(k)
-            sites.append({"label": self.site_label(k, p["loc_key"]), "href": target["url"], "lang": self.locales[k]["lang"]})
-        return {"sites": sites}
+            sites.append({"section": k, "label": self.site_label(k, p["loc_key"]), "href": target["url"],
+                          "lang": self.locales[k]["lang"], "draft": not self.is_live(k)})
+        return {"sites": sites, "groups": self.by_region(sites, p["loc_key"])[1]}
+
+    def cmp_countries(self, p, b, ctx):
+        """The /countries directory: one card per country with a site, grouped by region."""
+        lk = p["loc_key"]
+        by_cc = {}
+        for k in self.live_locales:
+            if self.locales[k]["country"]:
+                by_cc.setdefault(self.locales[k]["country"], []).append(k)
+        entries = []
+        for cc, secs in by_cc.items():
+            home = self.home_of(secs[0])
+            same = next((k for k in secs if self.locales[k]["lang"][:2] == p["lang2"]), None)
+            title = (self.country_of(secs[0]) or {}).get("name") if p["lang2"] == "en" else None
+            title = title or (self.locales[same]["country_name"] if same else self.site_label(secs[0], lk))
+            entries.append({"section": secs[0], "title": title, "href": home["url"], "lang": home["lang"],
+                            "text": home["meta"].get("summary") or home["description"],
+                            "langs": " · ".join(self.lang_name(k) for k in secs),
+                            "links": [{"label": self.lang_name(k), "href": self.home_of(k)["url"],
+                                       "lang": self.locales[k]["lang"]} for k in secs] if len(secs) > 1 else [],
+                            "draft": not all(self.is_live(k) for k in secs)})
+        return {"groups": self.by_region(entries, lk)[1], "cols": b.attrs.get("cols", "4")}
 
     def cmp_segments(self, p, b, ctx):
         data = self.samples.get(b.attrs["data"])
@@ -712,22 +971,33 @@ class Build:
                     region_js=self.region_js_url, thanks_url=self.thanks_url(p),
                     label_of=lambda q: self.label_in(q, lk))
 
+    def own_specials(self, lk):
+        """A section gets its own 404 and thank-you pages when it has its own (non-English) UI strings."""
+        loc = self.locales[lk]
+        return lk != "global" and loc["i18n"] != "en" and loc["i18n"] in self.i18n and bool(self.home_of(lk))
+
+    def thanks_slug(self, lk):
+        return THANKS_SLUGS.get(self.locales[lk]["lang"][:2], "thanks")
+
     def thanks_url(self, p):
-        if p["lang2"] == "pt" and self.home_of("mz-pt"):
-            return f"{self.base}/mz/pt/obrigado"
+        lk = p["loc_key"]
+        if self.own_specials(lk):
+            return f"{self.base}{self.locales[lk]['prefix']}/{self.thanks_slug(lk)}"
         return f"{self.base}/thanks"
 
     def footer_for(self, lk):
         nav = self.navs[lk]
         g = {x["key"]: x for x in nav}
         explore = [{"label": x["label"], "href": x["href"], "lang": None, "badge": None} for x in nav]
+        sites = [{"section": k, "label": self.site_label(k, lk), "href": self.home_of(k)["url"],
+                  "lang": self.locales[k]["lang"], "draft": not self.is_live(k)} for k in self.live_locales]
+        top, regions = self.by_region(sites, lk)
         return {"explore": explore,
                 "industries": g.get("industries", {}).get("items", []),
                 "solutions": self.footer_solutions(g.get("solutions", {}).get("items", [])),
                 "how": g.get("how", {}).get("items", []),
                 "resources": g.get("resources", {}).get("items", []),
-                "countries": [{"label": self.site_label(k, lk), "href": self.home_of(k)["url"],
-                               "lang": self.locales[k]["lang"]} for k in self.live_locales]}
+                "countries": sites, "countries_top": top, "country_regions": regions}
 
     def footer_solutions(self, items):
         """Solutions marked `footer: true` in catalogue.yaml, in catalogue order; else the first eight."""
@@ -787,8 +1057,9 @@ class Build:
             target = self.find(p["key"], k)
             if not target or target["noindex"]:
                 target = self.home_of(k)
-            sites.append({"label": self.site_label(k, p["loc_key"]), "href": target["url"], "lang": self.locales[k]["lang"]})
-        return sites
+            sites.append({"section": k, "label": self.site_label(k, p["loc_key"]), "href": target["url"],
+                          "lang": self.locales[k]["lang"], "draft": not self.is_live(k)})
+        return self.by_region(sites, p["loc_key"])[1]
 
     def written_for(self, p):
         """Articles: the industry pages (in the article's own section and language) that its `about` keys name."""
@@ -891,10 +1162,19 @@ class Build:
         return {"url": f"{self.base}/assets/og/{name}", "alt": og.get("alt") or head}
 
     # ------------------------------------------------------------------ JSON-LD
+    def served_countries(self):
+        """English names of the countries with a live section, in data/locales.yaml order."""
+        names = []
+        for lk in self.public_locales:
+            c = self.country_of(lk)
+            if c and c["name"] not in names:
+                names.append(c["name"])
+        return names
+
     def jsonld(self, p):
         B = self.base
         org_id, site_id = f"{B}/#org", f"{B}/#website"
-        countries = [{"@type": "Country", "name": c} for c in self.site["countries"]]
+        countries = [{"@type": "Country", "name": c} for c in self.served_countries()]
         graph = []
         is_about = p["key"] == "about" and p["loc_key"] == "global"
         if (p["template"] == "home" and p["loc_key"] == "global") or is_about:
@@ -909,7 +1189,7 @@ class Build:
         if p["template"] == "home" and p["loc_key"] == "global":
             graph.append({"@type": "WebSite", "@id": site_id, "url": f"{B}/", "name": self.site["brand"],
                           "alternateName": self.site["brand_full"],
-                          "inLanguage": sorted({self.locales[k]["lang"] for k in self.live_locales}),
+                          "inLanguage": sorted({self.locales[k]["lang"] for k in self.public_locales}),
                           "publisher": {"@id": org_id}})
         wp = {"@type": "WebPage", "@id": f"{p['abs_url']}#webpage", "url": p["abs_url"], "name": p["title"],
               "description": p["description"], "inLanguage": p["lang"], "isPartOf": {"@id": site_id},
@@ -981,21 +1261,36 @@ class Build:
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(f, target)
 
+    def banner_sections(self):
+        """Sections the country banner may suggest: live ones with a home. Never a draft, even in --drafts."""
+        return [lk for lk in self.public_locales if self.locales[lk]["country"]]
+
     def write_region_js(self):
-        """The country-suggestion banner script, only for sections that exist."""
+        """The country-suggestion banner script, generated from the live country sections."""
         self.region_js_url = None
-        sites = {}
-        for lk in self.live_locales:
+        by_cc = {}
+        for lk in self.banner_sections():
+            by_cc.setdefault(self.locales[lk]["country"], []).append(lk)
+        sites, tz, ui = {}, {}, {}
+        for cc, secs in by_cc.items():
+            first = self.locales[secs[0]]
+            own = self.tr(secs[0], "region", "banner") if first["i18n"] in self.i18n else None
+            text = (own or self.i18n["en"]["region"]["banner"]).format(
+                country=first["country_name"] if own else (self.country_of(secs[0]) or {}).get("name", first["country_name"]))
+            sites[cc] = {"lang": first["lang"] if own else "en", "text": text,
+                         "links": [[self.locales[k]["lang"], self.home_of(k)["url"],
+                                    self.lang_name(k) if len(secs) > 1 else self.locales[k]["label"]] for k in secs]}
+            for z in (self.country_of(secs[0]) or {}).get("timezones") or []:
+                tz[z] = cc
+        ui["en"] = {"bar": self.i18n["en"]["region"]["label"], "stay": self.i18n["en"]["region"]["stay"]}
+        for lk in self.public_locales:
             loc = self.locales[lk]
-            if not loc["country"]:
-                continue
-            s = sites.setdefault(loc["country"], {"links": []})
-            s["links"].append([loc["lang"], self.home_of(lk)["url"], self.i18n[loc["i18n"]]["lang_name"]
-                               if loc["country"] == "MZ" else loc["label"]])
+            ui[loc["lang"]] = {"bar": self.tr(lk, "region", "label"), "stay": self.tr(lk, "region", "stay")}
         if not sites:
             return
         tpl = (SITE / "templates/region.js.j2").read_text(encoding="utf-8")
-        js = tpl.replace("__SITES__", json.dumps(sites, ensure_ascii=False))
+        data = {"sites": sites, "tz": tz, "ui": ui}
+        js = tpl.replace("__DATA__", json.dumps(data, ensure_ascii=False, sort_keys=True))
         name = f"region.{sha(js)}.js"
         (self.dist / "assets/js").mkdir(parents=True, exist_ok=True)
         (self.dist / "assets/js" / name).write_text(js, encoding="utf-8")
@@ -1006,19 +1301,21 @@ class Build:
         """404 and thank-you pages per language (not in content/: they carry no copy of their own)."""
         out = []
         variants = [("global", "404", "notfound"), ("global", "thanks", "thanks")]
-        if self.home_of("mz-pt"):
-            variants += [("mz-pt", "404", "notfound"), ("mz-pt", "obrigado", "thanks")]
+        for lk in self.live_locales:
+            if self.own_specials(lk):
+                variants += [(lk, "404", "notfound"), (lk, self.thanks_slug(lk), "thanks")]
         for lk, slug, kind in variants:
             loc = self.locales[lk]
-            t = self.i18n[loc["i18n"]]
+            t = self.t_of(lk)
             url = f"{loc['prefix']}/{slug}"
             p = dict(meta={"cta": False}, body="", src=None, where=f"(generated {url})", loc_key=lk, loc=loc, t=t,
                      slug=slug, url=url, abs_url=self.base + url,
                      out=self.dist / loc["prefix"].lstrip("/") / f"{slug}.html", key=f"{lk}:{slug}",
                      template=kind, status="published", hub=None, section=None, title=t[kind]["title"],
                      description=t[kind]["text"], h1=t[kind]["h1"], lang=loc["lang"], lang2=loc["lang"][:2],
-                     noindex=True, alternates=[], crumbs=[], special=True)
+                     draft=not self.is_live(lk), noindex=True, alternates=[], crumbs=[], special=True)
             p["region_links"] = [dict(r, current=False) for r in self.region_links(dict(p, key="home"))]
+            p["region_menu"] = self.region_menu(p)
             out.append(p)
         return out
 
@@ -1096,7 +1393,9 @@ class Build:
         (self.dist / "_routes.json").write_text(json.dumps(
             {"version": 1, "include": ["/*"], "exclude": ["/assets/*"]}, indent=2) + "\n", encoding="utf-8")
         headers = (SITE / "templates/_headers.j2").read_text(encoding="utf-8")
-        (self.dist / "_headers").write_text(headers, encoding="utf-8")
+        langs = "\n".join(f"{self.locales[lk]['prefix']}/*\n  Content-Language: {self.locales[lk]['lang']}"
+                          for lk in self.public_locales if lk != "global" and self.locales[lk]["lang"][:2] != "en")
+        (self.dist / "_headers").write_text(headers.replace("__CONTENT_LANGUAGE__", langs), encoding="utf-8")
         brand.write_icons(self.dist, self.site["theme_color"])
         key = str(self.site.get("indexnow_key", ""))
         if key:
@@ -1110,11 +1409,11 @@ class Build:
         if main_only:
             m = re.search(r'<main\b[^>]*>(.*)</main>', html, re.S)
             html = m.group(1) if m else html
-        html = re.sub(r"(?s)<(script|style|svg)\b.*?</\1>", " ", html)
+        html = re.sub(r"(?s)<(script|style)\b.*?</\1>", " ", html)     # inline <svg> text is checked too
         attrs = " ¶ ".join(re.findall(r'\b(?:alt|title|aria-label|placeholder)="([^"]*)"', html))
         # block boundaries become a pilcrow, so guard negation never reaches across blocks
-        html = re.sub(r"(?i)</(?:p|li|h[1-6]|td|th|dt|dd|summary|figcaption|div|section|header|a|button|option|label|legend)>|<br\s*/?>",
-                      " ¶ ", html)
+        html = re.sub(r"(?i)</(?:p|li|h[1-6]|td|th|dt|dd|summary|figcaption|div|section|header|a|button|option|label|legend"
+                      r"|svg|text|tspan|title|desc)>|<br\s*/?>", " ¶ ", html)
         text = re.sub(r"<[^>]+>", " ", html)
         return htmllib.unescape(" ".join((text + " ¶ " + attrs).split()))
 
@@ -1209,7 +1508,7 @@ class Build:
                 active.append("outside_law")
             if self.in_scope(p, "sample"):
                 active.append("on_sample_pages")
-            h = re.sub(r"(?s)<(svg|style)\b.*?</\1>", " ", p["html"])
+            h = re.sub(r"(?s)<style\b.*?</style>", " ", p["html"])
             values = re.findall(r'\b(?:href|src|srcset|id|action)="([^"]*)"', h)
             values += [v for v in re.findall(r'\bcontent="([^"]*)"', h) if v.startswith(("http", "/"))]
             for ld in re.findall(r'<script type="application/ld\+json">(.*?)</script>', h, re.S):
@@ -1371,23 +1670,65 @@ class Build:
                 if p["t"]["law"]["not_advice"] not in htmllib.unescape(p["html"]):
                     self.err(f"{p['url']}: law page must show the not-legal-advice line")
 
-    def check_reviews(self, pages):
-        """Native-PT and counsel reviews (data/reviews.yaml): a page that needs one and has neither the
-        sign-off in its front matter nor an entry on the owner's pending list fails the build."""
+    @staticmethod
+    def native_list(lang):
+        """reviews.yaml pending list for a language: native_pt for pt-MZ (its first name), else native_<lang>."""
+        return "native_pt" if lang == "pt-MZ" else "native_" + lang.lower().replace("-", "_")
+
+    def pending_reviews(self):
+        """data/reviews.yaml pending lists as {list: {url: (owner decision date, list name)}}. A list is a list
+        of URLs or {url, owner_decision} items, a mapping url -> reviewer or {reviewer, owner_decision}, or
+        {owner_decision, pages: <either>}; an entry's date wins over its list's, which wins over the file's."""
         rv = self.reviews
-        pending = rv.get("pending") or {}
-        pt_pending, counsel_pending = set(pending.get("native_pt") or []), dict(pending.get("counsel") or {})
+        top = rv.get("owner_decision")
+        out = {}
+        for name, val in (rv.get("pending") or {}).items():
+            if not (name == "counsel" or name.startswith("counsel_") or name.startswith("native_")):
+                self.err(f"data/reviews.yaml: pending.{name}: lists are native_<lang> or counsel / counsel_<name>")
+                continue
+            date, entries = top, val
+            if isinstance(val, dict) and "pages" in val:
+                date, entries = val.get("owner_decision", top), val.get("pages")
+            items = {}
+            if isinstance(entries, dict):
+                for url, v in entries.items():
+                    items[url] = v.get("owner_decision", date) if isinstance(v, dict) else date
+            else:
+                for e in entries or []:
+                    if isinstance(e, dict):
+                        items[e.get("url")] = e.get("owner_decision", date)
+                    else:
+                        items[e] = date
+            for url, d in items.items():
+                if not isinstance(url, str) or not url.startswith("/"):
+                    self.err(f"data/reviews.yaml: pending.{name}: {url!r} is not a page URL")
+                if not isinstance(d, dt.date):
+                    self.err(f"data/reviews.yaml: pending.{name}: {url} has no owner_decision date (YYYY-MM-DD)")
+            out[name] = {url: (d, name) for url, d in items.items()}
+        return out
+
+    def check_reviews(self, pages):
+        """Native and counsel reviews (data/reviews.yaml): a page that needs one and has neither the sign-off
+        in its front matter nor an entry on the owner's pending lists fails the build. Every page in a language
+        other than English needs a native review; law pages and counsel_required pages need counsel."""
+        rv = self.reviews
+        pending = self.pending_reviews()
+        counsel_pending = {}
+        for name, items in pending.items():
+            if name == "counsel" or name.startswith("counsel_"):
+                counsel_pending.update(items)
         counsel_required = set(rv.get("counsel_required") or [])
         seen = set()
         for p in pages:
-            if p["status"] != "published":
+            if p["status"] != "published" or p.get("draft"):
                 continue
             m, url = p["meta"], p["url"]
             needs = []
-            if p["lang"] == "pt-MZ":
-                needs.append(("native_pt", "reviewed_on", "reviewed_by_role", pt_pending,
-                              "a native Mozambican review"))
-            if p["template"] == "law" or url in counsel_required:
+            if p["lang2"] != "en":
+                name = self.native_list(p["lang"])
+                what = "a native Mozambican review" if p["lang"] == "pt-MZ" else f"a native review ({p['lang']})"
+                needs.append((name, "reviewed_on", "reviewed_by_role", pending.get(name, {}), what))
+            if p["template"] == "law" or url in counsel_required or m.get("counsel_required"):
                 needs.append(("counsel", "counsel_reviewed_on", "counsel_reviewed_by_role", counsel_pending,
                               "a counsel review"))
             for kind, on, by, pend, what in needs:
@@ -1396,17 +1737,128 @@ class Build:
                     if not m.get(by):
                         self.err(f"{url}: {on} is set without {by}")
                     if url in pend:
-                        self.err(f"{url}: signed off ({on}) but still listed under pending.{kind} in data/reviews.yaml")
+                        self.err(f"{url}: signed off ({on}) but still listed under pending.{pend[url][1]} in data/reviews.yaml")
                 elif url in pend:
-                    self.warn(f"{url}: published before {what} (owner decision {rv.get('owner_decision')}; "
-                              f"data/reviews.yaml pending.{kind})")
+                    self.warn(f"{url}: published before {what} (owner decision {pend[url][0]}; "
+                              f"data/reviews.yaml pending.{pend[url][1]})")
                 else:
                     self.err(f"{url}: needs {what} before it is published: set {on} and {by} after a real "
-                             f"sign-off, or keep it status: draft (data/reviews.yaml)")
-        for kind, pend in (("native_pt", pt_pending), ("counsel", counsel_pending)):
-            for url in sorted(pend):
+                             f"sign-off, or keep it status: draft; only an owner decision to publish first puts it on "
+                             f"pending.{kind} in data/reviews.yaml, with that decision's date")
+        for name, items in pending.items():
+            kind = "counsel" if name == "counsel" or name.startswith("counsel_") else name
+            for url in sorted(items):
                 if (kind, url) not in seen:
-                    self.warn(f"data/reviews.yaml: pending.{kind} lists {url}, which is not a published page that needs it")
+                    self.warn(f"data/reviews.yaml: pending.{name} lists {url}, which is not a published page that needs it")
+
+    def check_draft_leaks(self, built):
+        """Nothing published may point into a draft section: no file under its prefix, hreflang alternate,
+        sitemap entry, country-menu item, country-sites button, /countries entry, JSON-LD reference, _redirects
+        target, _headers rule, banner suggestion or internal link. A --drafts build instead checks that every
+        draft page is noindex, shows the draft banner and stays out of sitemaps and hreflang."""
+        draft = {lk for lk in self.locales if not self.is_live(lk)}
+        live_cc = {l["country"] for lk, l in self.locales.items() if l.get("country") and self.is_live(lk)}
+        draft_cc = {l["country"] for lk, l in self.locales.items() if l.get("country") and lk in draft} - live_cc
+        draft_codes = {c for lk in draft for c in self.locales[lk]["hreflang"]}
+        code_owner = {c: lk for lk in draft for c in self.locales[lk]["hreflang"]}
+        draft_langs = {self.locales[lk]["lang"] for lk in draft}
+        draft_names = {n for lk in draft if self.locales[lk]["country"] in draft_cc
+                       for n in (self.locales[lk]["country_name"], (self.country_of(lk) or {}).get("name"))}
+        found = []
+
+        def in_draft(value):
+            v = str(value or "").strip()
+            if v.startswith(self.base + "/") or v == self.base:
+                v = v[len(self.base):] or "/"
+            if not v.startswith("/") or v.startswith("//"):
+                return None
+            lk = self.section_of_path(re.split(r"[?#]", v)[0])
+            return lk if lk in draft else None
+
+        def leak(where, what, value, lk):
+            found.append(f"[draft-leak] {where}: {what} → {value} (draft section {lk})")
+
+        # the geo banner never suggests a draft, in any build
+        for f in sorted((self.dist / "assets/js").glob("region.*.js")):
+            m = re.search(r"const DATA = (\{.*?\});\n", f.read_text(encoding="utf-8"), re.S)
+            data = json.loads(m.group(1)) if m else {}
+            for cc, site in (data.get("sites") or {}).items():
+                if cc in draft_cc:
+                    leak(f"/assets/js/{f.name}", "geo banner", cc, next(k for k in draft if self.locales[k]["country"] == cc))
+                for code, home, _ in site.get("links", []):
+                    if (lk := in_draft(home)) or code in draft_langs:
+                        leak(f"/assets/js/{f.name}", "geo banner", home, lk or code)
+        sitemap_locs = []
+        for f in sorted(self.dist.glob("sitemap*.xml")):
+            sitemap_locs += [(f.name, u) for u in re.findall(r"<loc>([^<]+)</loc>", f.read_text(encoding="utf-8"))]
+
+        if self.drafts:
+            locs = {u for _, u in sitemap_locs}
+            for p in built:
+                if not p.get("draft"):
+                    continue
+                if not re.search(r'<meta name="robots" content="noindex', p["html"]):
+                    found.append(f"[draft-page] {p['url']}: a draft page must be noindex")
+                if DRAFT_BANNER not in p["html"]:
+                    found.append(f"[draft-page] {p['url']}: a draft page must show the “{DRAFT_BANNER}” banner")
+                if p["abs_url"] in locs or p.get("alternates"):
+                    found.append(f"[draft-page] {p['url']}: a draft page is never in a sitemap or an hreflang cluster")
+            for msg in found:
+                self.err(msg)
+            return
+
+        for f in sorted(self.dist.rglob("*")):
+            if f.is_file() and (lk := in_draft("/" + f.relative_to(self.dist).as_posix())):
+                leak("dist", "a file in a draft section", "/" + f.relative_to(self.dist).as_posix(), lk)
+        for p in built:
+            refs = PageRefs()
+            refs.feed(p["html"])
+            for what, value, code in refs.refs:
+                lk = in_draft(value) or (code_owner.get(code) if code in draft_codes else None)
+                if lk:
+                    leak(p["url"], what, f"{code} {value}" if code else value, lk)
+            for ld in refs.jsonld:
+                try:
+                    doc = json.loads(ld.replace("<\\/", "</"))
+                except json.JSONDecodeError:
+                    continue
+                stack = [(None, doc)]
+                while stack:
+                    key, v = stack.pop()
+                    if isinstance(v, dict):
+                        stack += list(v.items())
+                    elif isinstance(v, list):
+                        stack += [(key, x) for x in v]
+                    elif isinstance(v, str):
+                        if lk := in_draft(v):
+                            leak(p["url"], "JSON-LD reference", v, lk)
+                        elif key == "inLanguage" and v in draft_langs:
+                            leak(p["url"], "JSON-LD reference", f"inLanguage {v}",
+                                 next(k for k in draft if self.locales[k]["lang"] == v))
+                        elif key == "name" and v in draft_names:
+                            leak(p["url"], "JSON-LD reference", f"country {v}",
+                                 next(k for k in draft if v in (self.locales[k]["country_name"],
+                                                                (self.country_of(k) or {}).get("name"))))
+        draft_maps = {self.locales[lk]["sitemap"] for lk in draft} - {self.locales[lk]["sitemap"] for lk in self.locales
+                                                                       if lk not in draft}
+        for name, u in sitemap_locs:
+            if lk := in_draft(u):
+                leak(name, "sitemap entry", u, lk)
+            elif u.rsplit("/", 1)[-1] in draft_maps:
+                leak(name, "sitemap entry", u, next(k for k in draft if self.locales[k]["sitemap"] == u.rsplit("/", 1)[-1]))
+        rules = [("data/redirects.yaml", r[1]) for r in self.redirects]
+        if (self.dist / "_redirects").exists():
+            rules += [("_redirects", line.split()[1]) for line in (self.dist / "_redirects").read_text(encoding="utf-8").splitlines()
+                      if len(line.split()) >= 2 and not line.startswith("#")]
+        for where, target in rules:
+            if lk := in_draft(target):
+                leak(where, "_redirects target", target, lk)
+        if (self.dist / "_headers").exists():
+            for line in (self.dist / "_headers").read_text(encoding="utf-8").splitlines():
+                if line.startswith("/") and (lk := in_draft(line.strip().rstrip("*"))):
+                    leak("_headers", "_headers rule", line.strip(), lk)
+        for msg in dict.fromkeys(found):
+            self.err(msg)
 
     def check_deploy_config(self):
         """Cloudflare Pages must serve dist/, not the repository root (site/ sources would be public)."""
@@ -1429,11 +1881,21 @@ class Build:
 
         sets = {n: keys(d) for n, d in self.i18n.items()}
         allk = set().union(*sets.values())
+        optional = lambda k: any(k == o or k.startswith(o + ".") for o in I18N_FALLBACK)
         for n, s in sets.items():
-            for k in sorted(allk - s):
-                self.err(f"data/i18n/{n}.yaml: missing key '{k}'")
+            missing = sorted(allk - s)
+            for k in missing:
+                if n != "en" and optional(k):
+                    if not optional(k.rsplit(".", 1)[0]) or k.rsplit(".", 1)[0] not in missing:
+                        self.warn(f"data/i18n/{n}.yaml: no '{k}'; the English string is used")
+                else:
+                    self.err(f"data/i18n/{n}.yaml: missing key '{k}'")
 
     def run(self):
+        if self.drafts and (why := dist_refusal(self.dist)):
+            self.err(f"--drafts never writes into a checkout's dist/ ({why}); pass --dist <scratch directory>")
+            return self.report([], [])
+        self.check_locales()
         self.check_i18n()
         pages = self.read_pages()
         self.check_reviews(pages)
@@ -1448,8 +1910,9 @@ class Build:
                                autoescape=True, trim_blocks=True, lstrip_blocks=True)
         self.copy_static()
         self.write_region_js()
-        self.navs = {lk: self.nav_for(lk) for lk in self.locales}
-        self.footers = {lk: self.footer_for(lk) for lk in self.locales}
+        sections = {"global"} | {p["loc_key"] for p in pages}
+        self.navs = {lk: self.nav_for(lk) for lk in self.locales if lk in sections}
+        self.footers = {lk: self.footer_for(lk) for lk in self.navs}
         for p in pages:
             try:
                 self.render_page(p)
@@ -1472,6 +1935,7 @@ class Build:
         self.check_duplicates(built)
         self.check_similarity(built)
         self.check_law()
+        self.check_draft_leaks(built)
         return self.report(pages, specials)
 
     def report(self, pages, specials):
@@ -1633,7 +2097,8 @@ def selftest():
 def demo(out):
     """Build the real content plus the template fixtures in tests/fixtures/demo into OUT (never deploy).
     Fixtures only fill gaps: a real page or law file with the same path always wins, so the demo keeps
-    building once a country section has its own pages."""
+    building once a country section has its own pages. It is a drafts build, so the draft sections'
+    fixture homes fill the country selector (every country in data/locales.yaml)."""
     def overlay(src, dst):
         for f in sorted(src.rglob("*")):
             t = dst / f.relative_to(src)
@@ -1650,7 +2115,7 @@ def demo(out):
     overlay(SITE / "tests/fixtures/demo/content", work)
     shutil.copytree(SITE / "data/law", law)
     overlay(SITE / "tests/fixtures/demo/law", law)
-    return Build(content_dir=work, dist=Path(out), law_dir=law).run()
+    return Build(content_dir=work, dist=Path(out), law_dir=law, drafts=True).run()
 
 
 def main():
@@ -1658,7 +2123,7 @@ def main():
     ap.add_argument("--drafts", action="store_true", help="also build status: draft pages (never deploy this)")
     ap.add_argument("--selftest", action="store_true", help="check that every guard fails the build")
     ap.add_argument("--name-digest", metavar="NAME", help="print the digest data/rules.yaml withdrawn_names stores for NAME")
-    ap.add_argument("--dist", default=str(ROOT / "dist"))
+    ap.add_argument("--dist", default=str(ROOT / "dist"), help="output directory (default: dist/; --drafts needs another one)")
     ap.add_argument("--demo", metavar="OUT", help="build content + template fixtures into OUT, for checking templates")
     args = ap.parse_args()
     if args.name_digest:

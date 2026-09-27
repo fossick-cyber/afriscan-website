@@ -10,7 +10,7 @@
           <a class="nav-link" href="{{ g.href }}"{% if current == g.key %} aria-current="true"{% endif %}>{{ g.label }}</a>
           {% if g['items'] %}
           <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="panel-{{ g.key }}" aria-label="{{ t.nav.show_submenu.format(label=g.label) }}">{{ icon('chevron-down') }}</button>
-          <div class="nav-panel nav-panel--{{ g.key }}" id="panel-{{ g.key }}">
+          <div class="nav-panel nav-panel--{{ g.key }}{% if g.get('regions') %} nav-panel--g{{ g.regions|length }}{% endif %}" id="panel-{{ g.key }}">
             {% if g.key == 'industries' %}
             <ul class="panel-list panel-list--rich">
               {% for i in g['items'] if i.tier == 1 %}
@@ -36,6 +36,21 @@
               {% set other = g['items']|rejectattr('group')|list %}
               {% if other %}<div><ul class="panel-list">{% for i in other %}<li><a href="{{ i.href }}">{{ i.label }}</a></li>{% endfor %}</ul></div>{% endif %}
             </div>
+            {% elif g.key == 'countries' and g.get('regions') %}
+            <div class="panel-groups panel-groups--regions">
+              {% for rg in g.regions %}
+              <div><p class="panel-title">{{ rg.title }}</p>
+                <ul class="panel-list">{% for i in rg['items'] %}<li><a href="{{ i.href }}"{% if i.lang %} hreflang="{{ i.lang }}" lang="{{ i.lang }}"{% endif %}>{{ i.label }}{% if i.draft %} <span class="lang-badge">Draft</span>{% endif %}</a></li>{% endfor %}</ul>
+              </div>
+              {% endfor %}
+            </div>
+            {% if g.pages %}
+            <ul class="panel-list panel-list--rich panel-list--after">
+              {% for i in g.pages %}
+              <li><a href="{{ i.href }}"{% if i.lang %} hreflang="{{ i.lang }}" lang="{{ i.lang }}"{% endif %}><span><strong>{{ i.label }}{% if i.badge %} <span class="lang-badge">{{ i.badge }}</span>{% endif %}</strong>{% if i.blurb %}<small>{{ i.blurb }}</small>{% endif %}</span></a></li>
+              {% endfor %}
+            </ul>
+            {% endif %}
             {% else %}
             <ul class="panel-list panel-list--rich">
               {% for i in g['items'] %}

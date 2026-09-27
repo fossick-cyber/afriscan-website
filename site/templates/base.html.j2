@@ -9,7 +9,7 @@
 {% for a in page.alternates %}
 <link rel="alternate" hreflang="{{ a.code }}" href="{{ a.href }}">
 {% endfor %}
-<meta name="robots" content="{{ 'noindex, follow' if page.noindex else 'index, follow, max-image-preview:large' }}">
+<meta name="robots" content="{{ 'noindex, nofollow' if page.get('draft') else ('noindex, follow' if page.noindex else 'index, follow, max-image-preview:large') }}">
 <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ assets['assets/css/site.css'] }}">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -43,6 +43,7 @@
 </head>
 <body class="tpl-{{ page.template }}">
 <a class="skip-link" href="#main">{{ t.skip }}</a>
+{% if page.get('draft') %}<p class="draft-banner" role="note" lang="en">Draft: not published</p>{% endif %}
 {% include "partials/header.html.j2" %}
 <main id="main" tabindex="-1">
 {% block main %}{% endblock %}

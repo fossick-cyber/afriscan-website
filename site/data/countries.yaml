@@ -1,0 +1,350 @@
+# Every African country (the 54 UN members), for grouping the country sites by region and for the
+# /countries hub. build.py validates this file against data/locales.yaml.
+#
+#   key         ISO 3166-1 alpha-2, lower case (a section's `country` in locales.yaml, lower-cased)
+#   name        English short name
+#   region      Southern | East | West | Central | North (the region headings in data/i18n/*.yaml `regions`)
+#   languages   site languages the country research recommends, primary first (ISO 639-1), from
+#               fhc-notes/website/regional/<key>.FINAL.md or <key>.md; null where there is no research
+#   status      live       a live section on the site
+#               launching  pre-registered in locales.yaml (status: draft until its branch flips it live)
+#               research   research only: no section, never linked
+#   timezones   IANA zones the country-site banner uses as a fallback when /geo gives no country
+#
+# The site shows a country only when one of its sections in locales.yaml is status: live; `status`
+# here records where each country stands. When a section goes live, set its country's status to live
+# (the build warns until you do). One block per country keeps parallel edits merge-friendly.
+
+# ------------------------------------------------------------------ Southern Africa
+za:
+  name: South Africa
+  region: Southern
+  languages: [en]
+  status: live
+  timezones: [Africa/Johannesburg]
+mz:
+  name: Mozambique
+  region: Southern
+  languages: [pt, en]
+  status: live
+  timezones: [Africa/Maputo]
+zm:
+  name: Zambia
+  region: Southern
+  languages: [en]
+  status: launching
+  timezones: [Africa/Lusaka]
+zw:
+  name: Zimbabwe
+  region: Southern
+  languages: [en]
+  status: launching
+  timezones: [Africa/Harare]
+mw:
+  name: Malawi
+  region: Southern
+  languages: [en]
+  status: launching
+  timezones: [Africa/Blantyre]
+na:
+  name: Namibia
+  region: Southern
+  languages: [en]
+  status: launching
+  timezones: [Africa/Windhoek]
+bw:
+  name: Botswana
+  region: Southern
+  languages: [en]
+  status: launching
+  timezones: [Africa/Gaborone]
+ao:
+  name: Angola
+  region: Southern
+  languages: [pt, en]
+  status: launching
+  timezones: [Africa/Luanda]
+ls:
+  name: Lesotho
+  region: Southern
+  languages: [en]
+  status: research
+  timezones: [Africa/Maseru]
+sz:
+  name: Eswatini
+  region: Southern
+  languages: [en]
+  status: research
+  timezones: [Africa/Mbabane]
+
+# ------------------------------------------------------------------ East Africa
+ke:
+  name: Kenya
+  region: East
+  languages: [en]
+  status: launching
+  timezones: [Africa/Nairobi]
+tz:
+  name: Tanzania
+  region: East
+  languages: [en]
+  status: launching
+  timezones: [Africa/Dar_es_Salaam]
+ug:
+  name: Uganda
+  region: East
+  languages: [en]
+  status: launching
+  timezones: [Africa/Kampala]
+rw:
+  name: Rwanda
+  region: East
+  languages: [en]
+  status: launching
+  timezones: [Africa/Kigali]
+bi:
+  name: Burundi
+  region: East
+  languages: [fr, en]
+  status: research
+  timezones: [Africa/Bujumbura]
+et:
+  name: Ethiopia
+  region: East
+  languages: [en, am]
+  status: research
+  timezones: [Africa/Addis_Ababa]
+so:
+  name: Somalia
+  region: East
+  languages: [en]
+  status: research
+  timezones: [Africa/Mogadishu]
+ss:
+  name: South Sudan
+  region: East
+  languages: [en]
+  status: research
+  timezones: [Africa/Juba]
+dj:
+  name: Djibouti
+  region: East
+  languages: [fr, en]
+  status: research
+  timezones: [Africa/Djibouti]
+er:
+  name: Eritrea
+  region: East
+  languages: [en]
+  status: research
+  timezones: [Africa/Asmara]
+mg:
+  name: Madagascar
+  region: East
+  languages: [fr, en, mg]
+  status: research
+  timezones: [Indian/Antananarivo]
+mu:
+  name: Mauritius
+  region: East
+  languages: [en, fr]
+  status: research
+  timezones: [Indian/Mauritius]
+sc:
+  name: Seychelles
+  region: East
+  languages: [en]
+  status: research
+  timezones: [Indian/Mahe]
+km:
+  name: Comoros
+  region: East
+  languages: [fr, en]
+  status: research
+  timezones: [Indian/Comoro]
+
+# ------------------------------------------------------------------ West Africa
+ng:
+  name: Nigeria
+  region: West
+  languages: [en]
+  status: live
+  timezones: [Africa/Lagos]
+gh:
+  name: Ghana
+  region: West
+  languages: [en]
+  status: launching
+  timezones: [Africa/Accra]
+ci:
+  name: Côte d’Ivoire
+  region: West
+  languages: [fr, en]
+  status: research
+  timezones: [Africa/Abidjan]
+sn:
+  name: Senegal
+  region: West
+  languages: [fr, en]
+  status: research
+  timezones: [Africa/Dakar]
+gn:
+  name: Guinea
+  region: West
+  languages: [fr, en]
+  status: research
+  timezones: [Africa/Conakry]
+lr:
+  name: Liberia
+  region: West
+  languages: [en]
+  status: research
+  timezones: [Africa/Monrovia]
+sl:
+  name: Sierra Leone
+  region: West
+  languages: [en]
+  status: research
+  timezones: [Africa/Freetown]
+bj:
+  name: Benin
+  region: West
+  languages: [fr, en]
+  status: research
+  timezones: [Africa/Porto-Novo]
+tg:
+  name: Togo
+  region: West
+  languages: [fr, en]
+  status: research
+  timezones: [Africa/Lome]
+gm:
+  name: The Gambia
+  region: West
+  languages: [en]
+  status: research
+  timezones: [Africa/Banjul]
+gw:
+  name: Guinea-Bissau
+  region: West
+  languages: [pt, en]
+  status: research
+  timezones: [Africa/Bissau]
+cv:
+  name: Cabo Verde
+  region: West
+  languages: [pt, en]
+  status: research
+  timezones: [Atlantic/Cape_Verde]
+ml:
+  name: Mali
+  region: West
+  languages: [fr, en]
+  status: research
+  timezones: [Africa/Bamako]
+bf:
+  name: Burkina Faso
+  region: West
+  languages: [fr]
+  status: research
+  timezones: [Africa/Ouagadougou]
+ne:
+  name: Niger
+  region: West
+  languages: [fr]
+  status: research
+  timezones: [Africa/Niamey]
+mr:
+  name: Mauritania
+  region: West
+  languages: [fr, en, ar]
+  status: research
+  timezones: [Africa/Nouakchott]
+
+# ------------------------------------------------------------------ Central Africa
+cd:
+  name: DR Congo
+  region: Central
+  languages: [fr, en]
+  status: launching
+  timezones: [Africa/Kinshasa, Africa/Lubumbashi]
+cg:
+  name: Republic of the Congo
+  region: Central
+  languages: [fr, en]
+  status: research
+  timezones: [Africa/Brazzaville]
+cm:
+  name: Cameroon
+  region: Central
+  languages: [fr, en]
+  status: research
+  timezones: [Africa/Douala]
+ga:
+  name: Gabon
+  region: Central
+  languages: [fr, en]
+  status: research
+  timezones: [Africa/Libreville]
+gq:
+  name: Equatorial Guinea
+  region: Central
+  languages: [es, en]
+  status: research
+  timezones: [Africa/Malabo]
+cf:
+  name: Central African Republic
+  region: Central
+  languages: [fr]
+  status: research
+  timezones: [Africa/Bangui]
+td:
+  name: Chad
+  region: Central
+  languages: [fr, en, ar]
+  status: research
+  timezones: [Africa/Ndjamena]
+st:
+  name: São Tomé and Príncipe
+  region: Central
+  languages: null
+  status: research
+  timezones: [Africa/Sao_Tome]
+
+# ------------------------------------------------------------------ North Africa
+eg:
+  name: Egypt
+  region: North
+  languages: [en, ar]
+  status: research
+  timezones: [Africa/Cairo]
+ma:
+  name: Morocco
+  region: North
+  languages: null
+  status: research
+  timezones: [Africa/Casablanca]
+dz:
+  name: Algeria
+  region: North
+  languages: [fr, ar, en]
+  status: research
+  timezones: [Africa/Algiers]
+tn:
+  name: Tunisia
+  region: North
+  languages: [fr, ar, en]
+  status: research
+  timezones: [Africa/Tunis]
+ly:
+  name: Libya
+  region: North
+  languages: [en, ar]
+  status: research
+  timezones: [Africa/Tripoli]
+sd:
+  name: Sudan
+  region: North
+  languages: [en, ar]
+  status: research
+  timezones: [Africa/Khartoum]
