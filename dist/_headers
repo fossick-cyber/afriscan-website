@@ -26,6 +26,8 @@
   Content-Language: pt-MZ
 /cd/fr/*
   Content-Language: fr-CD
+/ao/pt/*
+  Content-Language: pt-AO
 
 https://:project.pages.dev/*
   X-Robots-Tag: noindex

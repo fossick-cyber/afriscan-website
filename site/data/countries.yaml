@@ -62,7 +62,7 @@ ao:
   name: Angola
   region: Southern
   languages: [pt, en]
-  status: launching
+  status: live
   timezones: [Africa/Luanda]
 ls:
   name: Lesotho

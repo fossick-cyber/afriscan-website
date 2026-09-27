@@ -37,6 +37,8 @@ counsel_required:
   - /cd/subcontracting
   - /cd/fr/emprises-lignes-electriques
   - /cd/power-lines
+  # Angola: the local-content page states the law, so counsel reviews it too
+  - /ao/pt/conteudo-local
 
 pending:
   native_pt:
@@ -66,7 +68,15 @@ pending:
   # counsel_<cc> list, with owner_decision: 2026-09-27.
   native_pt_ao:
     owner_decision: 2026-09-27
-    pages: []
+    pages:
+      - /ao/pt/
+      - /ao/pt/concessoes-mineiras
+      - /ao/pt/contacto
+      - /ao/pt/conteudo-local
+      - /ao/pt/corredores-ferroviarios
+      - /ao/pt/lei-de-drones
+      - /ao/pt/linhas-de-transporte-de-electricidade
+      - /ao/pt/oleodutos-e-gasodutos
   native_fr_cd:
     owner_decision: 2026-09-27
     pages:
@@ -112,3 +122,9 @@ pending:
       /cd/subcontracting: DR Congo counsel
       /cd/fr/emprises-lignes-electriques: DR Congo counsel
       /cd/power-lines: DR Congo counsel
+  counsel_ao:
+    owner_decision: 2026-09-27
+    pages:
+      /ao/drone-regulations: Angolan counsel
+      /ao/pt/lei-de-drones: Angolan counsel
+      /ao/pt/conteudo-local: Angolan counsel

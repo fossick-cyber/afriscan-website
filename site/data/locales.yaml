@@ -197,7 +197,7 @@ ao-pt:
   label: "Angola (Português)"
   short: "Angola · PT"
   sitemap: sitemap-ao.xml
-  status: draft
+  status: live
   region: Southern
 ao-en:
   content: ao/en
@@ -211,7 +211,7 @@ ao-en:
   label: "Angola (English)"
   short: "Angola · EN"
   sitemap: sitemap-ao.xml
-  status: draft
+  status: live
   region: Southern
 zw:
   content: zw
