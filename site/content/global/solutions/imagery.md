@@ -26,7 +26,7 @@ faq:
   - q: What imagery can you work with?
     a: Georeferenced drone orthophotos and satellite scenes, typically as GeoTIFF. Automatic structure detection needs very-high-resolution imagery; coarser imagery supports larger patterns such as land-cover change. We check a sample before scoping the work, and results depend on the imagery's quality and resolution.
   - q: Will a new satellite capture arrive on a set date?
-    a: No. A new capture is requested for a time window, and the date depends on satellite availability and weather, especially in the rainy season. Where one date matters, a drone survey, subject to the permits the flight requires, or the nearest dated archive scene is usually the better plan.
+    a: No. A new capture is requested for a time window, and the date depends on satellite availability and weather, especially in the rainy season. Where one date matters, a drone survey, subject to the approvals and security clearances the flight requires, or the nearest dated archive scene is usually the better plan.
   - q: Which satellites do you use?
     a: We choose per job from commercial archives and operators, based on the date you need, the season, cloud and the resolution the job needs, and name the source and capture date in the report.
   - q: Do you deliver the satellite view from web maps?
@@ -62,7 +62,7 @@ What the record must show, at what detail, for which date. That decides the reso
 Your own imagery first, then the commercial archives, with the capture date and cloud of each candidate scene.
 :::
 :::step{title="Fill the gaps"}
-A new satellite capture for a time window, or a drone survey where one date or more detail matters, subject to the permits each flight requires.
+A new satellite capture for a time window, or a drone survey where one date or more detail matters, subject to the approvals and security clearances each flight requires.
 :::
 :::step{title="Name it in the report"}
 Every report states each image's source and, where the source provides it, the capture date. Open data is credited as its licence requires.

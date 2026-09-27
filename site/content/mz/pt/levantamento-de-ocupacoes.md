@@ -31,7 +31,7 @@ faq:
   - q: O registo substitui a fiscalização no terreno?
     a: Não. Diz à sua equipa onde ir primeiro e o que vai encontrar. A verificação no terreno, o contacto com as comunidades e as decisões sobre cada construção ficam com a sua equipa e com as autoridades.
   - q: E se a nossa linha atravessar zonas com muita vegetação?
-    a: Construções debaixo de árvores ou com coberturas que se confundem com o solo podem não se ver. Nesses troços, o revisor marca à mão o que a imagem permite confirmar, o relatório assinala o que fica por verificar e, se for preciso, um levantamento por drone do troço dá mais detalhe, sujeito às licenças e autorizações que cada trabalho exige.
+    a: Construções debaixo de árvores ou com coberturas que se confundem com o solo podem não se ver. Nesses troços, o revisor marca à mão o que a imagem permite confirmar, o relatório assinala o que fica por verificar e, se for preciso, um levantamento por drone do troço dá mais detalhe, sujeito às autorizações e credenciações de segurança exigidas para cada operação.
   - q: O resultado é um levantamento topográfico ou cadastral?
     a: Não. É um registo de construções feito a partir de imagens, para gerir a faixa. A demarcação de direitos sobre a terra é feita pelos Serviços de Cadastro ou por um agrimensor ajuramentado.
 ---

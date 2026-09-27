@@ -92,7 +92,7 @@ Com levantamentos por drone datados, os ortofotomapas e modelos de elevação la
 ::::
 
 ::::section{id="periodicidade" tone="alt" eyebrow="Periodicidade" title="Com que frequência, de forma realista"}
-A periodicidade é acordada consigo e fica escrita na proposta. Depende de três coisas: das imagens disponíveis para a sua área (as cenas de satélite dependem das passagens e das nuvens, e a data de uma nova captação nunca é garantida), da época do ano (a época chuvosa reduz as imagens ópticas utilizáveis) e, para os voos de drone, das licenças e autorizações que cada trabalho exige. Para a maioria das faixas, um levantamento de base seguido de levantamentos a intervalos regulares dá à equipa de servidões uma imagem actualizada sem prometer o que as imagens não permitem.
+A periodicidade é acordada consigo e fica escrita na proposta. Depende de três coisas: das imagens disponíveis para a sua área (as cenas de satélite dependem das passagens e das nuvens, e a data de uma nova captação nunca é garantida), da época do ano (a época chuvosa reduz as imagens ópticas utilizáveis) e, para os voos de drone, das autorizações e credenciações de segurança exigidas para cada operação. Para a maioria das faixas, um levantamento de base seguido de levantamentos a intervalos regulares dá à equipa de servidões uma imagem actualizada sem prometer o que as imagens não permitem.
 ::::
 
 ::::section{id="servicos" eyebrow="Serviços" title="Os serviços por trás da monitoria"}

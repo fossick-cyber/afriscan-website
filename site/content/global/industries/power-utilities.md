@@ -86,7 +86,7 @@ We measure each structure the review confirms to the line route you supply, in i
 
 Around substations and depots the same work runs as an area survey: structures inside the site and in a ring around it. Between dated surveys, new and removed structures are flagged automatically and confirmed by a reviewer, new tracks into the servitude are mapped, and a trend of built-up land shows where settlement pressure on the line is growing.
 
-Fresh excavation and earthworks visible at the surface near towers and along cable routes are flagged so field teams know where to check. Drone checks of flagged spans capture the detail, subject to the permits and authorisations each job requires, and if you already fly your lines we run the same analysis on your own orthophotos.
+Fresh excavation and earthworks visible at the surface near towers and along cable routes are flagged so field teams know where to check. Drone checks of flagged spans capture the detail, subject to the approvals and security clearances each job requires, and if you already fly your lines we run the same analysis on your own orthophotos.
 ::::
 ::::col
 ### What you receive
@@ -348,7 +348,7 @@ Transmission sits with TCN, distribution with the DisCos, regulation with NERC a
 :::country-sites{match="page"}
 :::
 
-Drone surveys are subject to the permits and authorisations each job requires, and Afridrone is working towards the operator approvals each country requires. The rules in each country are compared in [drone survey rules by country](/drone-regulations) and summarised on [where we work](/countries).
+Drone surveys are subject to the approvals and security clearances each job requires, and Afridrone is working towards the operator approvals each country requires. The rules in each country are compared in [drone survey rules by country](/drone-regulations) and summarised on [where we work](/countries).
 ::::
 
 ::::section{id="how" tone="alt" eyebrow="How it works" title="From line route to reviewed register"}
@@ -360,7 +360,7 @@ You send the line or pipeline route and the widths that apply. We agree the band
 Structures and vegetation change are mapped along the whole line from dated imagery, open datasets or your own orthophotos.
 :::
 :::step{title="Check up close"}
-Drone surveys capture the spans that need detail, subject to the permits and authorisations each job requires.
+Drone surveys capture the spans that need detail, subject to the approvals and security clearances each job requires.
 :::
 :::step{title="Review and deliver"}
 A person checks every automatic result, then each structure is measured, banded and rated, and the files are delivered.

@@ -2,10 +2,10 @@
 key: drone-surveys
 template: solution
 title: Drone Orthophoto & Elevation Surveys | AfriScan
-description: Drone orthophotos, elevation models, point clouds and volumes for the stretches that need detail, subject to the permits and authorisations each job requires.
+description: Drone orthophotos, elevation models, point clouds and volumes for the stretches that need detail, subject to the approvals and security clearances each job requires.
 h1: Drone orthophotos, elevation models and volumes where the detail matters
 eyebrow: Drone, imagery and custom detection
-lead: Satellite screening covers the whole route or site. Drone surveys then capture the stretches that need a closer look, a dated cut-off record, or a measurement of earthworks and stockpiles. AfriScan is Afridrone’s land and corridor monitoring service; Afridrone flies the drone work, subject to the permits and authorisations each job requires.
+lead: Satellite screening covers the whole route or site. Drone surveys then capture the stretches that need a closer look, a dated cut-off record, or a measurement of earthworks and stockpiles. AfriScan is Afridrone’s land and corridor monitoring service; Afridrone flies the drone work, subject to the approvals and security clearances each job requires.
 used_in: [oil-gas, mining, power-utilities, rail-roads, renewables]
 buttons:
   - {label: Request a proposal, intent: proposal}
@@ -14,17 +14,17 @@ related: [imagery, right-of-way-monitoring, change-detection]
 service:
   name: Drone orthophoto and elevation surveys
   type: Drone mapping survey
-  description: Georeferenced drone orthophotos, surface and terrain elevation models, point clouds, 3D models and processing quality reports for corridors and sites, drone checks of stretches flagged by satellite screening, construction progress, stockpile and earthworks volumes, and vegetation height in servitudes, subject to the permits and authorisations each job requires.
+  description: Georeferenced drone orthophotos, surface and terrain elevation models, point clouds, 3D models and processing quality reports for corridors and sites, drone checks of stretches flagged by satellite screening, construction progress, stockpile and earthworks volumes, and vegetation height in servitudes, subject to the approvals and security clearances each job requires.
 og:
   headline: Drone surveys where the detail matters
-  subline: Orthophotos, elevation models and volumes, subject to the permits each job requires
+  subline: Orthophotos, elevation models and volumes, subject to the approvals and security clearances each job requires
 cta:
   title: Tell us which stretches or sites need a closer look.
-  text: Send the route or site, what the drone survey is for and your deadline. The proposal sets out the permits and authorisations the flight needs and how they fit the schedule.
+  text: Send the route or site, what the drone survey is for and your deadline. The proposal sets out the approvals and security clearances the flight needs and how they fit the schedule.
   button: Request a proposal
 faq:
   - q: Who obtains the drone permits?
-    a: Every drone proposal names the permits and authorisations that particular flight needs, who obtains them and how they fit the schedule. Afridrone is working towards the operator approvals each country requires, and no flight is planned on an assumed permit. Satellite-based work involves no drone flight and can start straight away.
+    a: Every drone proposal names the approvals and security clearances that particular flight needs, who obtains them and how they fit the schedule. Afridrone is working towards the operator approvals each country requires, and no flight is planned on an assumed permit. Satellite-based work involves no drone flight and can start straight away.
   - q: Why not fly the whole route?
     a: Because satellite screening already covers it, and a drone survey is slower, needs permits for each operation and is limited to what the pilot can see. Flying only the flagged stretches, sites or dates that need detail puts the effort where it changes a decision.
   - q: Can the orthophotos and volumes stand in for a statutory survey?
@@ -42,7 +42,7 @@ Most of a corridor or concession never needs a drone. Satellite screening maps i
 
 A drone survey gives your team a dated, georeferenced orthophoto of each flagged stretch or site, detailed enough for a reviewer to check roofs, fences, gates and fresh digging, with surface and terrain elevation models, a point cloud and a 3D model processed from the same flight. Dated drone surveys are also usually the most reliable way to fix a record on a particular day, such as a resettlement cut-off date, when satellite capture dates cannot be guaranteed.
 
-Every drone job is planned around the permits and authorisations that particular flight needs. Satellite-based work carries on while they are obtained.
+Every drone job is planned around the approvals and security clearances that particular flight needs. Satellite-based work carries on while they are obtained.
 ::::
 ::::col
 :::callout{tone="legal" title="Permits are part of the plan"}
@@ -133,7 +133,7 @@ Every proposal names the services it includes. These are the ones this solution 
 ### What it is not
 :::checklist{tone="no"}
 - Not a certified, cadastral or statutory survey: it supports your registered surveyor
-- Never a flight without permits: each job is subject to the permits and authorisations it requires
+- Never a flight without permits: each job is subject to the approvals and security clearances it requires
 - No thermal, LiDAR or multispectral payloads, and no long-range flights
 - Not imagery of people: flights map land and assets, and plans avoid flying over people
 :::

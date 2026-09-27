@@ -34,7 +34,7 @@ faq:
     a: Possibly not. Send your georeferenced orthophotos and we run the same structure, change and corridor analysis on them. Satellite imagery is then useful for the stretches and dates your flights do not cover, and for the history before your programme started.
 cta:
   title: Satellite, drone or both?
-  text: Send the route and the stretches that worry you. We propose satellite screening for the whole line and drone detail only where it adds something, subject to the permits each flight requires.
+  text: Send the route and the stretches that worry you. We propose satellite screening for the whole line and drone detail only where it adds something, subject to the approvals and security clearances each flight requires.
   button: Request a proposal
 ---
 
@@ -61,7 +61,7 @@ A drone covers a pipeline in short legs within the pilot's line of sight, with t
 Houses, outbuildings, cleared plots, new tracks and larger excavations show on very-high-resolution satellite imagery. Small sheds, fresh trenches, stacked materials, a fence line or the layout of one compound usually need a drone orthophoto, at a few centimetres to a few tens of centimetres per pixel. Coarser open satellite data, such as Copernicus Sentinel, shows larger patterns only: vegetation, land-cover change, burnt ground.
 :::
 :::step{title="Does one date matter?" icon="calendar"}
-For a resettlement cut-off date, a handover or an incident, the date is the point. A drone flown on the day gives the most control, subject to the permits and authorisations each job requires. Satellite scenes fall on the dates satellites captured cloud-free images; a new capture falls somewhere in a requested window and is never guaranteed. Bracketing the date with a scene before and one after is often the strongest plan. See [dated imagery for cut-off dates](/insights/dated-imagery-cut-off-dates).
+For a resettlement cut-off date, a handover or an incident, the date is the point. A drone flown on the day gives the most control, subject to the approvals and security clearances each job requires. Satellite scenes fall on the dates satellites captured cloud-free images; a new capture falls somewhere in a requested window and is never guaranteed. Bracketing the date with a scene before and one after is often the strongest plan. See [dated imagery for cut-off dates](/insights/dated-imagery-cut-off-dates).
 :::
 :::step{title="What season will it be?" icon="sun"}
 Rainy seasons thin out usable satellite scenes and ground drones for days at a time. Tall crops and full leaf cover hide low structures and bare ground. Where timing is flexible, a dry-season capture gives the clearest picture; where it is not, radar screening can show larger changes under cloud until optical imagery or a drone can confirm them.

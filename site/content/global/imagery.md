@@ -49,7 +49,7 @@ Dated scenes of your area from commercial archives, used in your analysis and de
 A new very-high-resolution capture of your site or corridor, requested from commercial operators when the archive is too old. The capture date depends on satellite availability and weather, and minimum order areas apply.
 :::
 :::card{title="Drone orthophotos and elevation models" icon="drone"}
-Orthophotos, surface and terrain models, point clouds and a processing quality report for the stretches that need detail, flown by Afridrone, subject to the permits and authorisations each job requires.
+Orthophotos, surface and terrain models, point clouds and a processing quality report for the stretches that need detail, flown by Afridrone, subject to the approvals and security clearances each job requires.
 :::
 :::card{title="The imagery you already hold" icon="layers"}
 Send your own georeferenced drone orthophotos or satellite scenes and we run the same structure, change and corridor analysis on them. Results depend on the imagery's quality and resolution.
@@ -91,7 +91,7 @@ Open data is credited as each licence requires. The full licence and credit text
 ::::
 
 ::::section{id="countries" eyebrow="Mozambique, South Africa, Nigeria" title="Imagery and permits in each country"}
-Satellite-based surveys are available in Mozambique, South Africa and Nigeria, with no site visit and no drone flight. Drone surveys are available subject to the permits and authorisations each job requires: aviation approvals in every country and, in some, separate authorisations for the survey itself or for handing over the images. Afridrone is working towards the operator approvals each country requires, and we build the permit timeline into every drone proposal.
+Satellite-based surveys are available in Mozambique, South Africa and Nigeria, with no site visit and no drone flight. Drone surveys are available subject to the approvals and security clearances each job requires: aviation approvals in every country and, in some, separate authorisations for the survey itself or for handing over the images. Afridrone is working towards the operator approvals each country requires, and we build the permit timeline into every drone proposal.
 
 [Where we work](/countries) · [Drone survey rules by country](/drone-regulations) · [How we work with your team](/how-we-work)
 ::::

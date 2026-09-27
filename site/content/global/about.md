@@ -30,7 +30,7 @@ Results are files your team keeps: a PDF report in English or Portuguese, GIS la
 ::::col
 :::callout{tone="scope" title="At a glance"}
 - Satellite-based surveys in Mozambique, South Africa and Nigeria
-- Drone surveys subject to the permits and authorisations each job requires
+- Drone surveys subject to the approvals and security clearances each job requires
 - A person reviews every result before delivery
 - Reports in English or Portuguese
 - Every proposal scoped in writing to your route or site
@@ -73,7 +73,7 @@ We publish no accuracy percentage, promise no capture date and make no claim ima
 We never publish a client's route, imagery or results without written permission. The only route on this site is shown with its owner's permission.
 :::
 :::card{title="No permit assumed" icon="drone"}
-Drone surveys are subject to the permits and authorisations each job requires. Every drone proposal sets out what that flight needs and how it fits the schedule.
+Drone surveys are subject to the approvals and security clearances each job requires. Every drone proposal sets out what that flight needs and how it fits the schedule.
 :::
 :::
 ::::
@@ -83,7 +83,7 @@ Drone surveys are subject to the permits and authorisations each job requires. E
 ::::col
 AfriScan is [Afridrone](https://afridr.one/)’s land and corridor monitoring service; Afridrone flies the drone work. AfriScan is the name for the survey, the register and the reports.
 
-Afridrone is working towards the operator approvals each country requires. Until a job's permits and authorisations are in place, that job is planned on satellite imagery or on the imagery you already hold.
+Afridrone is working towards the operator approvals each country requires. Until a job's approvals and security clearances are in place, that job is planned on satellite imagery or on the imagery you already hold.
 ::::
 ::::col
 :::callout{tone="note" title="Not to be confused with"}

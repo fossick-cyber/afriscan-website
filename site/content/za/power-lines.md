@@ -162,7 +162,7 @@ Satellite-detected fire hotspots from NASA FIRMS, filtered to your servitude buf
 ::::col
 Several South African utilities and metros run their own drone programmes under their own UASOC ([SACAA operator list](https://www.caa.co.za/industry-information/flight-operations/)). The flying is rarely the bottleneck; turning each campaign's orthophotos into a list of what is new, where, and how close it is to the line is. Send the orthophotos or GeoTIFFs and we return the register, the change layers and the vegetation maps, with a person reviewing every result.
 
-Where you want flagged spans flown, drone surveys are subject to the permits and authorisations each job requires. Along a line those include specific approvals for flights within 50 m of structures, people or public roads, the landowner's signed permission for every flight, and SACAA notice on form CA 101-20 before flying near a substation that is a national key point.
+Where you want flagged spans flown, drone surveys are subject to the approvals and security clearances each job requires. Along a line those include specific approvals for flights within 50 m of structures, people or public roads, the landowner's signed permission for every flight, and SACAA notice on form CA 101-20 before flying near a substation that is a national key point.
 ::::
 ::::col
 :::callout{tone="legal" title="Drone law in South Africa"}
@@ -183,7 +183,7 @@ You send the line route, tower positions if you have them, the servitude widths 
 Structures are mapped along the whole line from dated satellite imagery, open building datasets or the orthophotos you hold.
 :::
 :::step{title="Check up close"}
-Your own flights or drone surveys cover the spans that need detail, subject to the permits and authorisations each job requires.
+Your own flights or drone surveys cover the spans that need detail, subject to the approvals and security clearances each job requires.
 :::
 :::step{title="Review and deliver"}
 A person checks every result; each structure is measured, banded and rated, and the report and GIS layers go to the contacts you name.

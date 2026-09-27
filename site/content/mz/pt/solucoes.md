@@ -21,7 +21,7 @@ faq:
   - q: Podemos juntar vários serviços num só levantamento?
     a: Sim, e a maioria dos projectos junta. Um levantamento de base inclui muitas vezes as escavações e as picadas, um registo na data de corte vem normalmente com estimativas de agregados familiares e um dossiê documental, e as verificações por drone seguem os troços que o satélite assinala. A proposta indica cada serviço incluído.
   - q: Os serviços de drone estão disponíveis em todo o país?
-    a: Os levantamentos por drone estão sujeitos às licenças e autorizações que cada trabalho exige, que em Moçambique incluem o IACM, a Defesa e a cedência dos dados. Os serviços por satélite não envolvem voos e estão disponíveis em todo o país.
+    a: Os levantamentos por drone estão sujeitos às autorizações e credenciações de segurança exigidas para cada operação, que em Moçambique incluem o IACM, a Defesa e a cedência dos dados. Os serviços por satélite não envolvem voos e estão disponíveis em todo o país.
   - q: Detectam outras coisas além de edifícios?
     a: "Sim, desde que sejam visíveis na resolução das imagens: escavações, picadas, tanques e contentores, equipamento pesado em obras e objectos semelhantes. A detecção adaptada às suas imagens é verificada numa parte da área antes de ser aplicada ao resto. Nunca detectamos nem seguimos pessoas."
   - q: Como são entregues os resultados?

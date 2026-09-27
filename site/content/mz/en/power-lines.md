@@ -28,7 +28,7 @@ faq:
   - q: Do you detect vandalism or energy theft?
     a: No. We map structures, cleared ground, vegetation change, fire and tracks visible from the air. Vandalism, theft and illegal connections are not things imagery can show, and we do not claim to detect them.
   - q: Can a drone fly along a live line?
-    a: Only within the rules and the authorisations for that flight. IACM's directive keeps drones at least 5 m laterally and 20 ft vertically from live high-tension wires, needs the structure owner's written permission within 50 m of structures, and allows no flights beyond the pilot's sight. Drone surveys are subject to the permits and authorisations each job requires.
+    a: Only within the rules and the authorisations for that flight. IACM's directive keeps drones at least 5 m laterally and 20 ft vertically from live high-tension wires, needs the structure owner's written permission within 50 m of structures, and allows no flights beyond the pilot's sight. Drone surveys are subject to the approvals and security clearances each job requires.
   - q: Can the report go to the district and the land services in Portuguese?
     a: Yes. The PDF report is available in Portuguese or English, so the servitude team, the district government and the Serviços de Cadastro read the same register.
 cta:
@@ -156,7 +156,7 @@ Cyclones and river floods reach the lines that cross the central and southern pr
 ::::section{id="drones" eyebrow="Drones along lines" title="Close checks, within the rules for live wires"}
 :::::columns{split="1-1"}
 ::::col
-A drone survey of flagged spans captures orthophotos and elevation models where satellite detail is not enough, subject to the permits and authorisations each job requires. IACM's RPAS directive keeps drones at least **5 m laterally and 20 ft vertically** from live high-tension wires, requires the written permission of a structure's owner and a cordon within 50 m of structures, keeps flights at or below 400 ft and within the pilot's sight, and allows none beyond it. Lei n.º 6/2024 adds the Defence authorisation for the survey and the authorisation to release its data.
+A drone survey of flagged spans captures orthophotos and elevation models where satellite detail is not enough, subject to the approvals and security clearances each job requires. IACM's RPAS directive keeps drones at least **5 m laterally and 20 ft vertically** from live high-tension wires, requires the written permission of a structure's owner and a cordon within 50 m of structures, keeps flights at or below 400 ft and within the pilot's sight, and allows none beyond it. Lei n.º 6/2024 adds the Defence authorisation for the survey and the authorisation to release its data.
 
 Afridrone is working towards the operator approvals Mozambique requires; each drone proposal lists the authorisations its flights need.
 ::::

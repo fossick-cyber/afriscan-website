@@ -8,7 +8,7 @@ h1: Where we work
 crumb: Countries
 nav_blurb: Mozambique, South Africa and Nigeria
 eyebrow: Countries
-lead: Satellite-based surveys are available in Mozambique, South Africa and Nigeria, with no site visit and no drone flight. Drone surveys are available subject to the permits and authorisations each job requires, which differ in each country.
+lead: Satellite-based surveys are available in Mozambique, South Africa and Nigeria, with no site visit and no drone flight. Drone surveys are available subject to the approvals and security clearances each job requires, which differ in each country.
 buttons:
   - {label: Request a proposal, intent: proposal}
 og:
@@ -45,7 +45,7 @@ cta:
 :::
 
 :::callout{tone="legal" title="Drone permits and AfriScan"}
-We never assume a permit. Afridrone is working towards the operator approvals each country requires, and every drone proposal sets out the permits and authorisations that particular flight needs and how they fit the schedule. Satellite-based work involves no drone flight. The rules are compared side by side in [drone survey rules by country](/drone-regulations).
+We never assume a permit. Afridrone is working towards the operator approvals each country requires, and every drone proposal sets out the approvals and security clearances that particular flight needs and how they fit the schedule. Satellite-based work involves no drone flight. The rules are compared side by side in [drone survey rules by country](/drone-regulations).
 :::
 ::::
 

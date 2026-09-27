@@ -29,7 +29,7 @@ faq:
   - q: Can you map informal crossings of the railway?
     a: Yes, where they show as worn paths or tracks across the reserve in the imagery. Paths under tree cover or very narrow ones can be missed, so a reviewer confirms each one.
   - q: Can your borrow-pit volumes stand as a statutory survey?
-    a: No. Volumes from drone elevation models support your registered surveyors and quantity surveyors; they are not a statutory survey or a valuation. Drone surveys are subject to the permits and authorisations each job requires.
+    a: No. Volumes from drone elevation models support your registered surveyors and quantity surveyors; they are not a statutory survey or a valuation. Drone surveys are subject to the approvals and security clearances each job requires.
 cta:
   title: Send us your reserve file
   text: "The road reserve boundary or rail reserve polygons (Shapefile, GeoPackage, KML or GeoJSON), the points of intersection if you have them, and the areas you treat as urban. We reply with a scope, an imagery plan and a written proposal."
@@ -120,7 +120,7 @@ Expropriation for public roads still runs under the Expropriation Act 63 of 1975
 ::::col
 ### During construction {#construction}
 
-Dated drone orthophotos and elevation models of the works, compared side by side, show where ground has been cut or filled between visits, with stockpile and borrow-pit volumes for your surveyors to check. Drone surveys are subject to the permits and authorisations each job requires; flights over or within 50 m of a public road need specific SACAA approval, and flights over a road need it closed ([drone law](/za/drone-regulations#fifty-metres)).
+Dated drone orthophotos and elevation models of the works, compared side by side, show where ground has been cut or filled between visits, with stockpile and borrow-pit volumes for your surveyors to check. Drone surveys are subject to the approvals and security clearances each job requires; flights over or within 50 m of a public road need specific SACAA approval, and flights over a road need it closed ([drone law](/za/drone-regulations#fifty-metres)).
 ::::
 :::::
 ::::
@@ -134,7 +134,7 @@ You send the reserve boundary or polygons, the points of intersection, the areas
 Structures and tracks are mapped along the whole reserve from dated satellite imagery, open building datasets or the imagery you hold.
 :::
 :::step{title="Check up close"}
-Drone surveys capture the stretches that need detail, subject to the permits and authorisations each job requires.
+Drone surveys capture the stretches that need detail, subject to the approvals and security clearances each job requires.
 :::
 :::step{title="Review and deliver"}
 A person checks every result; each structure is measured to the boundary or intersection and the report and GIS layers go to the contacts you name.

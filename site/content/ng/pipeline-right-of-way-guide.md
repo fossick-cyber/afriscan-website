@@ -30,7 +30,7 @@ faq:
   - q: Can a baseline decide who is entitled to compensation?
     a: No. It records the structures, cleared ground and tracks visible on dated imagery, with IDs and coordinates, so the enumeration team knows what to expect and every later claim can be checked against the same record. Who is entitled, and to how much, is decided through the enumeration, the Land Use Act process and, on lender-financed projects, the resettlement plan.
   - q: Do you need a drone permit to survey a right of way?
-    a: Not for satellite-based work, which involves no flight and no site visit. Drone surveys need an NCAA operator certificate with ONSA security clearance, among other approvals, and can require notice to the Director of Federal Surveys. They are subject to the permits and authorisations each job requires.
+    a: Not for satellite-based work, which involves no flight and no site visit. Drone surveys need an NCAA operator certificate with ONSA security clearance, among other approvals, and can require notice to the Director of Federal Surveys. They are subject to the approvals and security clearances each job requires.
 cta:
   title: Need a dated register of your right of way?
   text: Send the line, the right-of-way width and the stretches that worry you. We reply with a scope, an imagery plan and a written proposal.
@@ -92,7 +92,7 @@ Onshore and swamp assets have been passing from international operators to Niger
 ## Drones, data and the rainy season {#practicalities}
 
 - **Satellite first.** Satellite-based right-of-way screening involves no drone flight and no site visit. Long trunklines, swamp and creek sections, and stretches where a field team is not sensible are covered this way.
-- **Drones where they add detail.** Commercial drone work needs an NCAA RPAS Operator Certificate with ONSA security clearance built into the process, registered aircraft and pilots with remote pilot licences; flights over populated areas and near high-tension lines need specific authorisation, and controlled airspace around Lagos and Port Harcourt needs ATC clearance. Drone surveys are subject to the permits and authorisations each job requires. The rules are in [hiring a drone survey in Nigeria](/ng/drone-regulations).
+- **Drones where they add detail.** Commercial drone work needs an NCAA RPAS Operator Certificate with ONSA security clearance built into the process, registered aircraft and pilots with remote pilot licences; flights over populated areas and near high-tension lines need specific authorisation, and controlled airspace around Lagos and Port Harcourt needs ATC clearance. Drone surveys are subject to the approvals and security clearances each job requires. The rules are in [hiring a drone survey in Nigeria](/ng/drone-regulations).
 - **Data.** Imagery that shows people or homes can hold personal data under the Nigeria Data Protection Act 2023; the operator commissioning the survey is usually the controller. Military and other sensitive sites are masked in deliverables.
 - **Rain and cloud.** Optical satellite imagery cannot see through cloud, so the rainy season thins out usable scenes. Radar screening can show larger ground changes, such as clearing and earthworks, even under cloud, and flagged areas are checked on optical imagery when conditions allow.
 

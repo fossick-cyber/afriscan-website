@@ -26,13 +26,13 @@ og:
   subline: Structures, excavations and change on pipelines, power lines and concessions, reviewed by a person
 faq:
   - q: Do you need to visit the site to start?
-    a: No. A survey starts from your route or boundary file and satellite imagery, so there is no site visit and no drone flight in the first step. Where a stretch needs more detail, we add a drone survey of that stretch, subject to the permits and authorisations each job requires.
+    a: No. A survey starts from your route or boundary file and satellite imagery, so there is no site visit and no drone flight in the first step. Where a stretch needs more detail, we add a drone survey of that stretch, subject to the approvals and security clearances each job requires.
   - q: How recent is the imagery?
     a: It depends on what exists for your area and on the job. Every report names its imagery and, where the source provides it, the capture date. Where the date matters, for a cut-off date, change detection or an evidence pack, we use dated imagery. See [imagery and data sources](/imagery).
   - q: Does a person check the results?
     a: Yes. Automatic detection and open building datasets propose structures; a reviewer confirms, corrects and adds to them before anything reaches you. Structures that cannot be confirmed on the imagery are listed for a check on the ground.
   - q: Which countries do you work in?
-    a: Satellite-based surveys are available in Mozambique, South Africa and Nigeria. Drone surveys are available subject to the permits and authorisations each job requires in each country. See [where we work](/countries).
+    a: Satellite-based surveys are available in Mozambique, South Africa and Nigeria. Drone surveys are available subject to the approvals and security clearances each job requires in each country. See [where we work](/countries).
   - q: What do we actually receive?
     a: A PDF report with maps, a segment table and a coordinate register; GIS layers (GeoPackage, GeoJSON, KMZ and Shapefile) that open in QGIS, ArcGIS and Google Earth; and an interactive map file your team can open in a browser. See the [sample outputs](/results).
   - q: Will you publish our route or results?
@@ -70,7 +70,7 @@ Send your route or boundary as KML, KMZ, GeoJSON, Shapefile, GPX or GeoPackage, 
 We map structures and change across the whole route or site from dated satellite imagery, open building datasets or imagery you already hold.
 :::
 :::step{title="Check up close"}
-Where the detail matters, drone surveys capture orthophotos and elevation models of the flagged stretches, subject to the permits and authorisations each job requires.
+Where the detail matters, drone surveys capture orthophotos and elevation models of the flagged stretches, subject to the approvals and security clearances each job requires.
 :::
 :::step{title="Review and deliver"}
 A person checks every result before it reaches you. You receive a PDF report in English or Portuguese, GIS layers and an interactive map file. Re-surveys follow on a schedule agreed with you.
@@ -147,7 +147,7 @@ The Land Law (Lei n.º 19/97, de 1 de Outubro, art. 8) makes the land within 50 
 :::::
 ::::
 
-::::section{id="countries" tone="alt" eyebrow="Where we work" title="Local law, local language" lead="Satellite-based surveys are available in Mozambique, South Africa and Nigeria. Drone surveys are available subject to the permits and authorisations each job requires in each country."}
+::::section{id="countries" tone="alt" eyebrow="Where we work" title="Local law, local language" lead="Satellite-based surveys are available in Mozambique, South Africa and Nigeria. Drone surveys are available subject to the approvals and security clearances each job requires in each country."}
 :::cards{cols="3"}
 :::card{title="Mozambique" icon="map" eyebrow="Português · English"}
 Partial protection zones along pipelines and power lines, resettlement under national regulation and IFC PS5, and reports in Portuguese.

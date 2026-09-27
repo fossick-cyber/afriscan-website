@@ -34,7 +34,7 @@ faq:
   - q: Which widths do you measure?
     a: The ones in your servitudes. South African servitude widths are set in each servitude agreement and diagram, and many owners also have an internal standard or a building line. Send the widths with the route, or the servitude polygons themselves, and we report each structure's distance to the line and the band it falls in, with up to six widths in one survey.
   - q: Does a satellite survey need SACAA approval or landowner permission?
-    a: No aircraft is flown, so the drone rules in Part 101 of the Civil Aviation Regulations, including the landowner permission SACAA requires for every flight, do not apply to the satellite work itself. Drone stretches, where you want them, are planned separately and are subject to the permits and authorisations each job requires.
+    a: No aircraft is flown, so the drone rules in Part 101 of the Civil Aviation Regulations, including the landowner permission SACAA requires for every flight, do not apply to the satellite work itself. Drone stretches, where you want them, are planned separately and are subject to the approvals and security clearances each job requires.
   - q: We already fly our own drones. Can you work with that imagery?
     a: Yes. Many utilities, mining houses and metros in South Africa fly their own drones. Send the orthophotos or GeoTIFFs you already have and we run the same structure, change and corridor analysis on them, with a person reviewing every result. Results depend on the imagery's resolution and quality, which we check before we commit.
   - q: Can you tell us which structures are illegal?
@@ -161,7 +161,7 @@ Structures, not people; no names in the register; results only to the contacts y
 ::::col
 **Satellite and your own imagery.** A survey starts from your route file and dated satellite imagery, open building datasets or the orthophotos you already hold. No aircraft flies and nobody needs a landowner letter, however long the servitude.
 
-**Drone detail.** Where a stretch needs more detail than satellite imagery shows, a drone survey captures it, subject to the permits and authorisations each job requires. In South Africa that means an operator with a current UASOC and Operations Specifications from SACAA, an Air Service Licence with its South African ownership and control test, approved and registered aircraft, pilots with Remote Pilot Certificates, and the landowner's signed permission for every flight. Flights within 50 m of people, structures or public roads need specific approvals, which matters on any servitude lined with homes.
+**Drone detail.** Where a stretch needs more detail than satellite imagery shows, a drone survey captures it, subject to the approvals and security clearances each job requires. In South Africa that means an operator with a current UASOC and Operations Specifications from SACAA, an Air Service Licence with its South African ownership and control test, approved and registered aircraft, pilots with Remote Pilot Certificates, and the landowner's signed permission for every flight. Flights within 50 m of people, structures or public roads need specific approvals, which matters on any servitude lined with homes.
 
 Afridrone is working towards the operator approvals South Africa requires. Every drone proposal names the company that will fly and its approvals, so your team can check them.
 ::::

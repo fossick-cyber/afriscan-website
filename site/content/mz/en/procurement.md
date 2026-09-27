@@ -88,7 +88,7 @@ IACM issues approvals for corporate and commercial drone operations **only to co
 
 Under [Lei n.º 6/2024](https://archive.gazettes.africa/archive/mz/2024/mz-government-gazette-series-i-dated-2024-06-04-no-108.pdf), the survey itself needs the Minister of National Defence's authorisation (art. 13(1)(b)), and releasing the data to the client needs the authorisation of the systematic-cartography entity (art. 13(2)). The law applies to the client as an *entidade utilizadora* (art. 2(1)). A recent decree on licensing aerial work reserves it for national operators, as reported by [JLA Advogados](https://www.jlaadvogados.com/post/novo-regulamento-de-licenciamento-das-actividades-de-transporte-a%C3%A9reo-e-trabalho-a%C3%A9reo-em-mo%C3%A7ambique); whether it reaches drone work is not settled in the sources we checked.
 
-Drone surveys are subject to the permits and authorisations each job requires. Afridrone is working towards the operator approvals Mozambique requires, and every AfriScan proposal with a drone element names the company that will fly it and the authorisations each flight needs.
+Drone surveys are subject to the approvals and security clearances each job requires. Afridrone is working towards the operator approvals Mozambique requires, and every AfriScan proposal with a drone element names the company that will fly it and the authorisations each flight needs.
 ::::
 ::::col
 :::callout{tone="legal" title="The client checklist"}

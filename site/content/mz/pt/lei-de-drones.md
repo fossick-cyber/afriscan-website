@@ -214,7 +214,7 @@ SOP, avaliação de riscos e plano de emergência, incluindo o afastamento de 5 
 :::::columns{split="1-1"}
 ::::col
 - **Satélite, sem voos.** Os levantamentos por satélite estão disponíveis em todo o país e começam a partir do ficheiro do traçado, sem visita ao local e sem drone.
-- **Drone, com as autorizações de cada trabalho.** Os levantamentos por drone estão sujeitos às licenças e autorizações que cada trabalho exige. A Afridrone está a trabalhar para obter as aprovações de operador exigidas em Moçambique, e nenhum voo se faz sem as autorizações do trabalho emitidas.
+- **Drone, com as autorizações de cada trabalho.** Os levantamentos por drone estão sujeitos às autorizações e credenciações de segurança exigidas para cada operação. A Afridrone está a trabalhar para obter as aprovações de operador exigidas em Moçambique, e nenhum voo se faz sem as autorizações do trabalho emitidas.
 - **Cada proposta diz o que falta.** Quando um troço precisa de ortofotomapa, a proposta indica as autorizações necessárias, o modo como se encaixam no calendário e o que o contrato deve prever sobre o depósito e a cedência dos dados.
 - **Nada publicado sem autorização.** Este site não mostra ortofotomapas de drone de Moçambique.
 ::::

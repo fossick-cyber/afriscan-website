@@ -32,7 +32,7 @@ cta:
   secondary_href: /mz/pt/resultados-de-exemplo
 faq:
   - q: É preciso visitar o local para começar?
-    a: Não. O levantamento começa a partir do ficheiro do traçado ou do limite e de imagens de satélite, sem visita ao local e sem voo de drone no primeiro passo. Onde um troço precisa de mais detalhe, acrescentamos um levantamento por drone desse troço, sujeito às licenças e autorizações que cada trabalho exige.
+    a: Não. O levantamento começa a partir do ficheiro do traçado ou do limite e de imagens de satélite, sem visita ao local e sem voo de drone no primeiro passo. Onde um troço precisa de mais detalhe, acrescentamos um levantamento por drone desse troço, sujeito às autorizações e credenciações de segurança exigidas para cada operação.
   - q: Que larguras de faixa medem?
     a: As que contam para a sua empresa. Por defeito medimos 50 e 100 metros e acrescentamos as larguras que se aplicam, como uma zona de segurança de 200 metros onde um decreto a fixa, as larguras do contrato de concessão ou a norma interna da empresa. Um levantamento pode ter até seis distâncias, medidas a partir do ficheiro do traçado que nos envia.
   - q: Qual é a data das imagens?
@@ -102,7 +102,7 @@ Envie o traçado ou o limite em KML, KMZ, GeoJSON, Shapefile, GPX ou GeoPackage,
 Mapeamos as construções e as alterações ao longo de todo o traçado ou terreno a partir de imagens de satélite datadas, de bases de dados abertas de edifícios ou das imagens que a sua empresa já tem. Nesta fase nenhum drone voa.
 :::
 :::step{title="Verificação de perto"}
-Onde o detalhe conta, um levantamento por drone capta ortofotomapas e modelos de elevação dos troços assinalados, sujeito às licenças e autorizações que cada trabalho exige.
+Onde o detalhe conta, um levantamento por drone capta ortofotomapas e modelos de elevação dos troços assinalados, sujeito às autorizações e credenciações de segurança exigidas para cada operação.
 :::
 :::step{title="Revisão e entrega"}
 Uma pessoa revê cada resultado antes da entrega. Recebe um relatório PDF em português ou em inglês, camadas SIG e um mapa interactivo em ficheiro. Os levantamentos seguintes seguem a periodicidade acordada consigo.
@@ -181,7 +181,7 @@ Os registos datados apoiam o diálogo com as comunidades, os processos legais e 
 ::::section{id="drones" eyebrow="Drones e autorizações" title="Satélite sem voos; drone com as autorizações de cada trabalho"}
 :::::columns{split="1-1"}
 ::::col
-O rastreio por satélite começa a partir do ficheiro do traçado, sem visita ao local e sem drone. A AfriScan é o serviço de monitoria de terras e corredores da Afridrone, e é a Afridrone que faz os voos de drone. Quando o satélite não chega, a Afridrone faz ortofotomapas e modelos de elevação dos troços assinalados, sujeitos às licenças e autorizações que cada trabalho exige.
+O rastreio por satélite começa a partir do ficheiro do traçado, sem visita ao local e sem drone. A AfriScan é o serviço de monitoria de terras e corredores da Afridrone, e é a Afridrone que faz os voos de drone. Quando o satélite não chega, a Afridrone faz ortofotomapas e modelos de elevação dos troços assinalados, sujeitos às autorizações e credenciações de segurança exigidas para cada operação.
 
 Em Moçambique, um levantamento aéreo civil com drone precisa de várias autorizações: a aprovação da operação pelo IACM, a autorização do Ministro que superintende a área da Defesa Nacional para a execução do levantamento (Lei n.º 6/2024, de 4 de Junho, artigo 13, n.º 1) e a autorização da entidade de cartografia sistemática, ouvidas a Defesa e a Segurança, para a cedência dos dados a quem os encomendou (artigo 13, n.º 2). Os dados originais são propriedade do Estado (artigo 14), e reproduzir ou divulgar fotografias aéreas, mosaicos e ortofotos sem autorização é uma infracção (artigo 16).
 

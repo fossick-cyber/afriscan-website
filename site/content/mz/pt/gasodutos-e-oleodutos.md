@@ -32,7 +32,7 @@ faq:
   - q: Com que frequência é verificado o traçado?
     a: Com a periodicidade acordada consigo. Os satélites e os drones captam imagens em datas concretas, por isso não é uma monitoria em tempo real. Voltamos a levantar o traçado e enviamos um aviso depois de cada levantamento a dizer o que mudou e onde. A frequência depende das imagens disponíveis, das nuvens na época chuvosa e, para o drone, das autorizações.
   - q: Precisam de acesso ao traçado ou às comunidades?
-    a: Não para começar. O rastreio por satélite não exige acesso ao local. As verificações por drone dos troços assinalados estão sujeitas às licenças e autorizações que cada trabalho exige, e a verificação no terreno fica com as suas equipas.
+    a: Não para começar. O rastreio por satélite não exige acesso ao local. As verificações por drone dos troços assinalados estão sujeitas às autorizações e credenciações de segurança exigidas para cada operação, e a verificação no terreno fica com as suas equipas.
   - q: Identificam as pessoas que vivem nas construções?
     a: Não. Mapeamos construções, não pessoas, e não decidimos se uma construção está autorizada; isso cabe à sua empresa e às autoridades. Os registos apoiam o diálogo com as comunidades e os processos legais.
   - q: As instalações do operador contam como ocupação?
@@ -184,7 +184,7 @@ Ao longo da costa moçambicana, os ciclones e as cheias podem afectar troços in
 Cenas datadas de muito alta resolução, bases de dados abertas de edifícios ou as imagens da sua empresa. Começa sem visita ao local e sem voos.
 :::
 :::card{title="Drone nos troços assinalados" icon="drone"}
-Ortofotomapas e modelos de elevação onde o detalhe conta, sujeitos às licenças e autorizações que cada trabalho exige. Em Moçambique incluem a autorização da Defesa e a da cedência dos dados.
+Ortofotomapas e modelos de elevação onde o detalhe conta, sujeitos às autorizações e credenciações de segurança exigidas para cada operação. Em Moçambique incluem a autorização da Defesa e a da cedência dos dados.
 :::
 :::card{title="As imagens que já tem" icon="layers"}
 Os ortofotomapas ou as cenas de satélite georreferenciadas da sua empresa, analisados com o mesmo método.

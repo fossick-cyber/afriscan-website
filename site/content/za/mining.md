@@ -109,7 +109,7 @@ Mining houses are well represented on SACAA's list of UAS operators ([SACAA](htt
 
 Send the orthophotos or GeoTIFFs your survey team already produces. We run the structure register, the zone and boundary analysis and the change detection on them, have a person review every result, and return the register and GIS layers in the formats your GIS team uses. Between flights, or over the parts of the right you do not fly, dated satellite scenes show what changed where they exist.
 
-Where you want new drone surveys, they are subject to the permits and authorisations each job requires, including approvals for flights within 50 m of structures, people or public roads and the landowner's permission for every flight.
+Where you want new drone surveys, they are subject to the approvals and security clearances each job requires, including approvals for flights within 50 m of structures, people or public roads and the landowner's permission for every flight.
 ::::
 ::::col
 :::callout{tone="note" title="Analysis of your own imagery"}
@@ -181,7 +181,7 @@ You send the zone and boundary files, tell us what you already fly and what the 
 Your orthophotos, or dated satellite scenes and open building datasets, give the first structure register for every zone and boundary.
 :::
 :::step{title="Fill the gaps"}
-Satellite scenes between your flights, and drone surveys where you want them, subject to the permits and authorisations each job requires.
+Satellite scenes between your flights, and drone surveys where you want them, subject to the approvals and security clearances each job requires.
 :::
 :::step{title="Review and deliver"}
 A person checks every result before the report and GIS layers go to the contacts you name. Re-surveys follow the schedule you set.

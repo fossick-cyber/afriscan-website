@@ -87,7 +87,7 @@ Model output is a set of proposals. A reviewer confirms, removes and adds struct
 Dated very-high-resolution scenes from commercial archives, and new captures requested from commercial operators. Each report names the scene and its capture date; the proposal sets out the terms under which you may use the imagery we deliver.
 :::
 :::card{title="Drone orthophotos" icon="drone"}
-Flown by [Afridrone](https://afridr.one/), subject to the permits and authorisations each job requires. Some countries also regulate who may receive and publish aerial survey imagery; the proposal sets out what applies. See [drone rules by country](/drone-regulations).
+Flown by [Afridrone](https://afridr.one/), subject to the approvals and security clearances each job requires. Some countries also regulate who may receive and publish aerial survey imagery; the proposal sets out what applies. See [drone rules by country](/drone-regulations).
 :::
 :::card{title="Your own imagery" icon="layers"}
 Orthophotos and scenes you send stay yours, and we never publish them without your written permission. Results depend on their resolution, georeferencing and date.

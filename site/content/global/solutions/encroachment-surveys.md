@@ -28,7 +28,7 @@ faq:
   - q: Can you confirm our title or land-use right?
     a: No. We measure against the boundary you supply, such as a concession limit, a lease or a Mozambican DUAT boundary. We do not verify title, tenure or where a boundary legally runs; that is work for a registered land surveyor or the cadastre.
   - q: Can you check fences and gates?
-    a: Yes, on drone imagery. Fence lines are too thin to detect reliably on satellite imagery, so a reviewer checks them on drone orthophotos of the stretches you choose, subject to the permits and authorisations each flight requires.
+    a: Yes, on drone imagery. Fence lines are too thin to detect reliably on satellite imagery, so a reviewer checks them on drone orthophotos of the stretches you choose, subject to the approvals and security clearances each flight requires.
   - q: Our concession is very large. Is that a problem?
     a: No. Large areas are delivered as a structure layer across the whole concession, with detailed registers and reviewer categories for the edges, the ring and any zones you choose. The proposal sets out which imagery covers which part.
   - q: Does this cover people moving onto the land?
@@ -73,7 +73,7 @@ You send the polygon and we agree the ring width, any inside setback, and the zo
 We map structures from dated imagery and open building datasets; reviewers confirm them, mark by hand where automatic detection is not enough, and, where scoped, tag each with what the imagery shows: main building, outbuilding, livestock enclosure, under construction.
 :::
 :::step{title="Edges, tracks and fences"}
-New tracks and access roads into the area are mapped between dates. Fence lines and gates are checked by a reviewer on drone orthophotos, subject to the permits each flight requires.
+New tracks and access roads into the area are mapped between dates. Fence lines and gates are checked by a reviewer on drone orthophotos, subject to the approvals and security clearances each flight requires.
 :::
 :::step{title="Review and delivery"}
 A person reviews every result. You receive the register, maps and GIS layers, and a notice after each re-survey.

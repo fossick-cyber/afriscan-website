@@ -45,7 +45,7 @@ Purchased satellite scenes come with their acquisition date and time in the meta
 To screen and plan, and to show the pipeline sample on this site. Google, Bing and Esri web-map layers have no stated capture date and their terms do not make them survey imagery, so they are never delivered and never the basis of a dated record. The pipeline sample was marked on Google satellite imagery during review; the [sample outputs](/results) show those marks on that imagery, credited "Imagery © Google" and undated, next to strip views of the register and the route on a dated Sentinel-2 scene.
 :::
 :::details{summary="Can you capture imagery on a date we choose?"}
-Not with certainty from satellites: a new capture is requested for a window, and the date depends on satellite availability and weather. A drone survey, subject to the permits each job requires, gives the most control over the date.
+Not with certainty from satellites: a new capture is requested for a window, and the date depends on satellite availability and weather. A drone survey, subject to the approvals and security clearances each job requires, gives the most control over the date.
 :::
 :::details{summary="What about cloud and the rainy season?"}
 Optical satellite and drone imagery cannot see through cloud. Radar satellites can show larger ground changes, such as clearing and earthworks, under rainy-season cloud, and flagged areas are then checked on optical imagery or by drone.
@@ -123,10 +123,10 @@ As files your team keeps: the PDF, the GIS layers and a self-contained interacti
 No drone flies in a satellite-based survey. Satellite-based surveys are available in Mozambique, South Africa and Nigeria.
 :::
 :::details{summary="Which permits does a drone survey need?"}
-It depends on the country and the site: typically an operator approval from the civil aviation authority, flight permissions for the site and airspace, and in some countries separate authorisation for the survey itself or for handing over the images. Every drone proposal sets out what that flight needs. Drone surveys are subject to the permits and authorisations each job requires, and Afridrone is working towards the operator approvals each country requires. The three countries are compared in [drone rules by country](/drone-regulations).
+It depends on the country and the site: typically an operator approval from the civil aviation authority, flight permissions for the site and airspace, and in some countries separate authorisation for the survey itself or for handing over the images. Every drone proposal sets out what that flight needs. Drone surveys are subject to the approvals and security clearances each job requires, and Afridrone is working towards the operator approvals each country requires. The three countries are compared in [drone rules by country](/drone-regulations).
 :::
 :::details{summary="Who flies the drones?"}
-[Afridrone](https://afridr.one/), which flies AfriScan’s drone work, subject to the permits and authorisations each job requires.
+[Afridrone](https://afridr.one/), which flies AfriScan’s drone work, subject to the approvals and security clearances each job requires.
 :::
 ::::
 

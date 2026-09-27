@@ -49,7 +49,7 @@ O traçado ou o terreno volta a ser levantado com a periodicidade acordada consi
 Construções novas e desaparecidas entre dois ou mais levantamentos datados, assinaladas automaticamente e confirmadas por um revisor, com vistas de antes e depois de cada alteração.
 :::
 :::card{title="Levantamentos por drone" icon="drone" eyebrow="Detalhe onde é preciso"}
-Ortofotomapas, modelos de elevação e verificações de perto dos troços assinalados, feitos pela Afridrone e sujeitos às licenças e autorizações que cada trabalho exige.
+Ortofotomapas, modelos de elevação e verificações de perto dos troços assinalados, feitos pela Afridrone e sujeitos às autorizações e credenciações de segurança exigidas para cada operação.
 :::
 :::card{title="Apoio a EIA e reassentamento" icon="clipboard" eyebrow="Decisões de projecto"}
 Registos datados para a data de corte de um reassentamento, contagens de construções para alternativas de traçado e de local, e estimativas de agregados familiares para o planeamento.
@@ -108,7 +108,7 @@ As imagens de satélite e os ortofotomapas têm pequenos desvios de posição, p
 Cenas de muito alta resolução obtidas em catálogos comerciais, com a data de captação, ou uma nova captação pedida a operadores comerciais. A data de uma nova captação depende da disponibilidade dos satélites e do tempo, por isso nunca é garantida.
 :::
 :::card{title="Drone, onde o detalhe conta" icon="drone"}
-Ortofotomapas e modelos de elevação dos troços assinalados, com a data de cada voo, sujeitos às licenças e autorizações que cada trabalho exige.
+Ortofotomapas e modelos de elevação dos troços assinalados, com a data de cada voo, sujeitos às autorizações e credenciações de segurança exigidas para cada operação.
 :::
 :::card{title="As imagens da sua empresa" icon="layers"}
 Ortofotomapas ou cenas de satélite georreferenciadas que já tem, analisados com o mesmo método de construções, alterações e corredor.

@@ -24,7 +24,7 @@ faq:
   - q: Can we see the results before the report is final?
     a: Yes. We can share the register and map for your comments before the PDF is issued, so your team can flag anything it already knows about, such as your own facilities or structures already compensated.
   - q: Do you need access to the site?
-    a: No, not for satellite work. Drone surveys need access to take-off points and are subject to the permits and authorisations each job requires, which we plan with you.
+    a: No, not for satellite work. Drone surveys need access to take-off points and are subject to the approvals and security clearances each job requires, which we plan with you.
   - q: How often can a route be re-surveyed?
     a: On a schedule agreed with you. How often new imagery can be captured depends on satellite availability, cloud and, for drone work, on permits, so we set the cadence per project rather than promising a fixed interval.
 related: [right-of-way-monitoring, oil-gas, power-utilities]
@@ -43,7 +43,7 @@ You send the route or boundary and tell us what the record is for: a baseline re
 We map structures along the whole route or across the whole site. Open building datasets and open segmentation models run on dated satellite imagery, on drone orthophotos, or on imagery you already hold, and give a first set of structures. Overlapping results are merged and each structure records which sources found it.
 :::
 :::step{title="Check up close where it matters"}
-Where the satellite picture is not enough, for example dense villages under tree cover or a stretch you need recorded in detail, a drone survey captures orthophotos and elevation models of just those stretches. Drone surveys are subject to the permits and authorisations each job requires.
+Where the satellite picture is not enough, for example dense villages under tree cover or a stretch you need recorded in detail, a drone survey captures orthophotos and elevation models of just those stretches. Drone surveys are subject to the approvals and security clearances each job requires.
 :::
 :::step{title="Review, measure and deliver"}
 A reviewer checks each structure against the imagery, removes false detections and marks anything missed. Each structure is then measured to the line, placed in its buffer band and chainage, and each 500 m stretch is rated for encroachment density. You receive the PDF report, the GIS layers and an interactive map file, and re-surveys follow on the schedule you choose.
@@ -99,7 +99,7 @@ Your route or site re-surveyed on a schedule agreed with you, with an email to y
 ::::section{id="drone" eyebrow="Drone surveys" title="Drone detail for the stretches that need it"}
 :::::columns{split="2-1" align="center"}
 ::::col
-Satellite screening narrows the search; drone flights over the flagged stretches then capture the detail your team needs: a georeferenced orthophoto, surface and terrain elevation models, a point cloud and a processing quality report. AfriScan is [Afridrone](https://afridr.one/)’s land and corridor monitoring service; Afridrone flies the drone work, subject to the permits and authorisations each job requires. Afridrone is working towards the operator approvals needed in each country, and every drone job is planned around the permits that particular flight needs.
+Satellite screening narrows the search; drone flights over the flagged stretches then capture the detail your team needs: a georeferenced orthophoto, surface and terrain elevation models, a point cloud and a processing quality report. AfriScan is [Afridrone](https://afridr.one/)’s land and corridor monitoring service; Afridrone flies the drone work, subject to the approvals and security clearances each job requires. Afridrone is working towards the operator approvals needed in each country, and every drone job is planned around the permits that particular flight needs.
 ::::
 ::::col
 :::callout{tone="legal" title="Permits are part of the plan"}

@@ -115,7 +115,7 @@ Imagery shows what was visible on the ground on each capture date. It supports a
 ::::section{id="independent-monitoring" tone="alt" eyebrow="Between site visits" title="Dated evidence for lenders' advisers and monitoring teams"}
 :::cards{cols="3"}
 :::card{title="Construction and earthworks" icon="layers"}
-Construction footprints and earthworks compared between dates, including drone orthophotos of resettlement sites and work fronts, subject to the permits and authorisations each job requires.
+Construction footprints and earthworks compared between dates, including drone orthophotos of resettlement sites and work fronts, subject to the approvals and security clearances each job requires.
 :::
 :::card{title="New structures in the footprint" icon="houses"}
 New and removed structures inside the footprint and its buffers, flagged automatically and confirmed by a reviewer, with before-and-after views.

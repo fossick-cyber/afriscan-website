@@ -109,7 +109,7 @@ Stockpile, spoil and borrow-pit volumes from drone elevation models, to support 
 :::
 :::
 
-Drone surveys are subject to the permits and authorisations each job requires. In South Africa that means an operator with a UASOC and an Air Service Licence, the landowner's permission for every flight, and approvals for flights within 50 m of structures, people or roads ([drone law](/za/drone-regulations)).
+Drone surveys are subject to the approvals and security clearances each job requires. In South Africa that means an operator with a UASOC and an Air Service Licence, the landowner's permission for every flight, and approvals for flights within 50 m of structures, people or roads ([drone law](/za/drone-regulations)).
 ::::
 
 ::::section{id="fire" tone="alt" eyebrow="Fire near the site" title="Fire-hotspot notices and burnt-area maps"}

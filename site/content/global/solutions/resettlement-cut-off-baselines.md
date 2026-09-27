@@ -28,7 +28,7 @@ faq:
   - q: Does the imagery set the cut-off date?
     a: No. The cut-off date comes from your resettlement process and the host government's procedures, and IFC guidance ties it to the completion of the census and asset inventory. Our record documents what was on the ground on the imagery dates around it.
   - q: Can you give us imagery for the exact cut-off date?
-    a: Not with certainty from satellites. Archive coverage and dates vary by place, and a new capture depends on satellite availability and weather, so its date is never guaranteed. Where one date matters, a drone survey on the day (subject to the permits and authorisations the job requires) or the dated archive scenes either side of it are usually the better plan. We set this out in the proposal.
+    a: Not with certainty from satellites. Archive coverage and dates vary by place, and a new capture depends on satellite availability and weather, so its date is never guaranteed. Where one date matters, a drone survey on the day (subject to the approvals and security clearances the job requires) or the dated archive scenes either side of it are usually the better plan. We set this out in the proposal.
   - q: How do you show structures built after the cut-off date?
     a: We re-survey the footprint on a schedule agreed with you, flag new structures between dated surveys, have a reviewer confirm each one, and add it to the register with its first-seen date. The results can be packaged as an evidence pack with file fingerprints and an independent timestamp.
   - q: Can the register tell us whether a structure is lived in, or who owns it?

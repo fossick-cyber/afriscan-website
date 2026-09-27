@@ -34,7 +34,7 @@ faq:
   - q: Medem a distância entre os condutores e a vegetação?
     a: Não fazemos estudos de distâncias de segurança dos condutores. Mapeamos onde há vegetação alta dentro da servidão, a partir de modelos de elevação de drone e de dados abertos de altura do coberto vegetal, e onde a vegetação foi cortada ou voltou a crescer entre datas. O estudo das distâncias fica com os seus engenheiros.
   - q: Podem fazer levantamentos por drone junto das linhas?
-    a: Os levantamentos por drone estão sujeitos às licenças e autorizações que cada trabalho exige. A directiva do IACM exige autorização escrita do proprietário para voar a menos de 50 m de estruturas e proíbe aproximar-se a menos de 5 m na horizontal e de 20 pés na vertical de cabos de alta tensão com corrente.
+    a: Os levantamentos por drone estão sujeitos às autorizações e credenciações de segurança exigidas para cada operação. A directiva do IACM exige autorização escrita do proprietário para voar a menos de 50 m de estruturas e proíbe aproximar-se a menos de 5 m na horizontal e de 20 pés na vertical de cabos de alta tensão com corrente.
 ---
 
 ::::section{id="problema" eyebrow="O problema, nas palavras de quem gere a linha" title="As servidões são longas, e o que nelas cresce custa dinheiro" lead="Uma linha de transporte atravessa centenas de propriedades e machambas. As construções, a vegetação e as obras de terceiros dentro da servidão transformam-se em cortes de energia, riscos de segurança, compensações e atrasos, e são descobertas na patrulha seguinte, quando são."}
@@ -114,7 +114,7 @@ As condutas de água têm a mesma zona de protecção parcial de 50 metros de ca
 ::::section{id="drones" eyebrow="Drones junto de linhas com corrente" title="Detalhe onde é preciso, com as regras do IACM"}
 :::::columns{split="1-1"}
 ::::col
-Onde o satélite não chega, um levantamento por drone dá ortofotomapas e modelos de elevação dos troços assinalados, sujeito às licenças e autorizações que cada trabalho exige. Junto de linhas, a directiva do IACM (DOS-09-2018) pede autorização escrita do proprietário da estrutura para voar a menos de 50 m, cordão de segurança, e um afastamento de pelo menos 5 m na horizontal e 20 pés na vertical dos cabos de alta tensão com corrente.
+Onde o satélite não chega, um levantamento por drone dá ortofotomapas e modelos de elevação dos troços assinalados, sujeito às autorizações e credenciações de segurança exigidas para cada operação. Junto de linhas, a directiva do IACM (DOS-09-2018) pede autorização escrita do proprietário da estrutura para voar a menos de 50 m, cordão de segurança, e um afastamento de pelo menos 5 m na horizontal e 20 pés na vertical dos cabos de alta tensão com corrente.
 ::::
 ::::col
 :::callout{tone="legal" title="Um levantamento aéreo, várias autorizações"}

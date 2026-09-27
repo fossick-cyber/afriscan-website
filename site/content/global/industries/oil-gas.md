@@ -24,7 +24,7 @@ faq:
   - q: How often is the route checked?
     a: On a schedule agreed with you. Satellites and drones capture images on particular dates, so this is not real-time monitoring. We re-survey the route and send a notice after each survey saying what has changed and where. How often depends on when new imagery is available, on cloud and, for drones, on permits.
   - q: Do you need access to the route or the community?
-    a: Not to start. Satellite screening needs no site access. Drone checks of flagged stretches are subject to the permits and authorisations each job requires, and ground verification stays with your teams.
+    a: Not to start. Satellite screening needs no site access. Drone checks of flagged stretches are subject to the approvals and security clearances each job requires, and ground verification stays with your teams.
   - q: Do you identify the people who live in the structures?
     a: No. We map structures, not people, and we don't decide whether a structure is authorised; that is for you and the authorities. Our registers support your community engagement and legal processes.
   - q: Can you support our class-location or population-density reviews?
@@ -297,7 +297,7 @@ Post-event work depends on imagery captured after the event and covers visible d
 
 **A new capture.** A new satellite capture requested from commercial operators when archive imagery is too old. The date depends on satellite availability and weather.
 
-**Drone surveys.** Orthophotos and elevation models of the stretches that need detail, flown by Afridrone, subject to the permits and authorisations each job requires.
+**Drone surveys.** Orthophotos and elevation models of the stretches that need detail, flown by Afridrone, subject to the approvals and security clearances each job requires.
 
 Open building datasets, such as Google Open Buildings, Microsoft Building Footprints and OpenStreetMap, give a first screen across long routes and are credited as their licences require. See [imagery and data sources](/imagery) for what each option can and cannot show.
 ::::
@@ -360,7 +360,7 @@ Upstream assets sit with NUPRC, midstream and downstream pipeline licences with 
 :::country-sites{match="page"}
 :::
 
-The rules for drone flights in each country are compared in [drone survey rules by country](/drone-regulations) and summarised on [where we work](/countries). Drone surveys are subject to the permits and authorisations each job requires, and Afridrone is working towards the operator approvals each country requires.
+The rules for drone flights in each country are compared in [drone survey rules by country](/drone-regulations) and summarised on [where we work](/countries). Drone surveys are subject to the approvals and security clearances each job requires, and Afridrone is working towards the operator approvals each country requires.
 ::::
 
 ::::section{id="how" eyebrow="How it works" title="From route file to reviewed register"}
@@ -372,7 +372,7 @@ You send the route and tell us what the record is for. We agree the bands, the d
 Structures are mapped along the whole route from dated imagery, open building datasets or imagery you hold.
 :::
 :::step{title="Check up close"}
-Drone surveys capture the stretches that need detail, subject to the permits and authorisations each job requires.
+Drone surveys capture the stretches that need detail, subject to the approvals and security clearances each job requires.
 :::
 :::step{title="Review and deliver"}
 A person checks every automatic result, then each structure is measured, banded and rated, and the files are delivered.

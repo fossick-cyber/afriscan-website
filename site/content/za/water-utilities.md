@@ -149,7 +149,7 @@ Dated very-high-resolution satellite scenes and open building datasets give ever
 Where archive scenes exist for your area, we show roughly when structures appeared between your last survey and today. Coverage varies by place and year; we tell you what exists before you commit.
 :::
 :::card{title="Your own drone imagery" icon="drone"}
-If your teams already fly sections of the network, we run the same analysis on your orthophotos. Drone surveys by us are subject to the permits and authorisations each job requires.
+If your teams already fly sections of the network, we run the same analysis on your orthophotos. Drone surveys by us are subject to the approvals and security clearances each job requires.
 :::
 :::
 ::::

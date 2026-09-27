@@ -73,7 +73,7 @@ You receive the change list, maps and layers, and a notice to the contacts you n
 Your route or site re-surveyed on a cadence agreed per project, with an email after each survey saying what changed and where.
 :::
 :::card{title="Construction and earthworks" icon="excavation"}
-Dated drone orthophotos and elevation models compared side by side, with maps of where ground has been cut or filled between visits, subject to the permits each flight requires.
+Dated drone orthophotos and elevation models compared side by side, with maps of where ground has been cut or filled between visits, subject to the approvals and security clearances each flight requires.
 :::
 :::card{title="Boundaries and perimeters" icon="boundary"}
 New structures, cleared ground and new tracks at your boundary between dates, with fence lines and gates checked by a reviewer on drone imagery.

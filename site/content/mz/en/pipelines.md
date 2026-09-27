@@ -167,7 +167,7 @@ An operator's plants, well pads, camps and yards are part of the asset. We recor
 ::::section{id="drones" eyebrow="Drone checks near pipelines" title="Where a drone helps, and what it needs first"}
 :::::columns{split="1-1"}
 ::::col
-Satellite screening narrows the search; a drone survey of the flagged stretches then captures the detail your team needs, subject to the permits and authorisations each job requires. In Mozambique, IACM's RPAS directive keeps flights at or below 400 ft and within the pilot's sight, up to 500 m away, with no flights beyond visual line of sight. Flying from a moving vehicle while keeping the aircraft in sight is possible in the commercial categories, with geofencing and a demonstration flight, which suits pipeline access roads. Flights near aerodromes, public roads, people or structures need their own approvals.
+Satellite screening narrows the search; a drone survey of the flagged stretches then captures the detail your team needs, subject to the approvals and security clearances each job requires. In Mozambique, IACM's RPAS directive keeps flights at or below 400 ft and within the pilot's sight, up to 500 m away, with no flights beyond visual line of sight. Flying from a moving vehicle while keeping the aircraft in sight is possible in the commercial categories, with geofencing and a demonstration flight, which suits pipeline access roads. Flights near aerodromes, public roads, people or structures need their own approvals.
 
 The survey itself needs the Minister of National Defence's authorisation, the data need authorisation before they are released to you, and orthophotos of Mozambique may not be reproduced or published without authorisation ([Lei n.º 6/2024, arts. 13 and 16](https://archive.gazettes.africa/archive/mz/2024/mz-government-gazette-series-i-dated-2024-06-04-no-108.pdf)). Afridrone is working towards the operator approvals Mozambique requires, and every drone proposal lists the authorisations that survey needs.
 ::::
@@ -196,7 +196,7 @@ You send the route and the province, the widths that matter and what the record 
 Structures are mapped along the whole route from dated satellite imagery, open building datasets or the imagery you hold.
 :::
 :::step{title="Check up close"}
-Drone surveys capture the stretches that need detail, subject to the permits and authorisations each job requires.
+Drone surveys capture the stretches that need detail, subject to the approvals and security clearances each job requires.
 :::
 :::step{title="Review and deliver"}
 A person checks every result; each structure is measured, banded and rated, and the report goes out in Portuguese or English with the GIS layers.

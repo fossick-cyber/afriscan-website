@@ -76,7 +76,7 @@ Every report names its imagery and, where the source provides it, the capture da
 |---|---|---|---|
 | Very-high-resolution satellite scene | Stated with the scene | Corridor and area registers, change between dated surveys | Archive coverage, dates and cloud vary by place; we check what exists before scoping |
 | New satellite capture | Stated once captured | Areas where the archive is too old | The date depends on satellite availability and weather, and is never guaranteed |
-| Drone orthophoto | Recorded at capture | Detail on flagged stretches, dense villages, a fixed date | Subject to the permits and authorisations each job requires |
+| Drone orthophoto | Recorded at capture | Detail on flagged stretches, dense villages, a fixed date | Subject to the approvals and security clearances each job requires |
 | Your own imagery | As supplied | Programmes that already fly or buy imagery | Results depend on its resolution, georeferencing and date |
 | Open building footprints | Varies; often years old | A first set of candidate structures | A starting point only, never a current count |
 

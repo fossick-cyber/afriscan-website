@@ -27,7 +27,7 @@ faq:
   - q: O registo toma o lugar do censo ou do inventário de bens?
     a: Não. O censo e o inventário de bens, com as consultas públicas que o Decreto n.º 31/2012 exige, são feitos no terreno pela equipa do projecto. O registo diz-lhes onde estão as construções antes de chegarem, e guarda o que estava na área na data das imagens.
   - q: A data das imagens coincide com a data de corte?
-    a: Procuramos imagens tão próximas quanto possível da data de corte, e o relatório indica a data exacta de cada imagem usada. Um voo de drone pode ser marcado para a data certa, sujeito às licenças e autorizações que cada trabalho exige; uma cena de satélite depende das passagens e das nuvens, e a data de uma nova captação nunca é garantida.
+    a: Procuramos imagens tão próximas quanto possível da data de corte, e o relatório indica a data exacta de cada imagem usada. Um voo de drone pode ser marcado para a data certa, sujeito às autorizações e credenciações de segurança exigidas para cada operação; uma cena de satélite depende das passagens e das nuvens, e a data de uma nova captação nunca é garantida.
   - q: Identificam os agregados familiares ou os proprietários?
     a: Não. Mapeamos construções, não pessoas. Estimamos agregados familiares a partir das contagens de construções, com os pressupostos indicados, para planear o censo e as consultas; quem vive em cada construção e quais são os seus direitos é matéria do censo.
   - q: Podem classificar as construções?

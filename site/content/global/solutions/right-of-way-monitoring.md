@@ -84,7 +84,7 @@ We map the structures along the whole line from dated satellite imagery, open bu
 On the cadence we agree, we survey the line again on new dated imagery. New and removed structures are flagged automatically and confirmed by a reviewer, with before-and-after views of each change.
 :::
 :::step{title="Change notice and close checks" icon="send"}
-After each survey your team receives a notice of what changed and where. Where a flagged stretch needs more detail, a drone survey captures it, subject to the permits and authorisations each job requires.
+After each survey your team receives a notice of what changed and where. Where a flagged stretch needs more detail, a drone survey captures it, subject to the approvals and security clearances each job requires.
 :::
 :::
 

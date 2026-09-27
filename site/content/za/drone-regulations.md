@@ -324,7 +324,7 @@ Orthophotos and registers for monitoring and planning; a professional land surve
 ::::col
 We start from satellite imagery and the imagery you already hold. A satellite survey needs no aircraft, no flight plan and no landowner letters, so it can cover a whole servitude before anyone decides whether a drone is worth sending. Where your own teams already fly under a UASOC, we run the same structure, change and corridor analysis on your orthophotos.
 
-Drone surveys are subject to the permits and authorisations each job requires. Afridrone is working towards the operator approvals South Africa requires. Every AfriScan proposal with a drone element names the company that will fly it, with its UASOC, OpSpec approvals and Air Service Licence details, so your team can check them against this page.
+Drone surveys are subject to the approvals and security clearances each job requires. Afridrone is working towards the operator approvals South Africa requires. Every AfriScan proposal with a drone element names the company that will fly it, with its UASOC, OpSpec approvals and Air Service Licence details, so your team can check them against this page.
 ::::
 ::::col
 :::callout{tone="scope" title="What this guide is, and isn't"}

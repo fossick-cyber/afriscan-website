@@ -30,7 +30,7 @@ faq:
   - q: How many options can you compare?
     a: As many as you send. Each option is measured with the same widths, the same imagery plan and the same review, so the counts are comparable. Short deviations around a single village can be added as their own options.
   - q: Is the terrain screening a geotechnical study?
-    a: No. Slope, erosion and drainage screening from elevation data highlights stretches for your engineers to look at. It is not a geotechnical, hydrological or hydraulic study, and not engineering design. Where a stretch needs detail, a drone elevation model can be added, subject to the permits the flight requires.
+    a: No. Slope, erosion and drainage screening from elevation data highlights stretches for your engineers to look at. It is not a geotechnical, hydrological or hydraulic study, and not engineering design. Where a stretch needs detail, a drone elevation model can be added, subject to the approvals and security clearances the flight requires.
   - q: What happens once the route is fixed?
     a: The same register becomes the baseline for the chosen route. We can then add a dated cut-off-date record for resettlement, the reports your land team needs for landowner engagement and servitude acquisition, and re-surveys during construction.
 ---

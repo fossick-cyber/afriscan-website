@@ -94,7 +94,7 @@ The orange band is the servitude and the triangles are towers. Squares are struc
 ::::col
 **The baseline.** We map the structures, cleared ground and tracks along your servitudes or reserve, measured to the line or inside the servitude polygon you supply, and rate each 500 m stretch for encroachment density.
 
-**The schedule.** Known hotspots are re-surveyed more often than quiet stretches. The interval for each area is agreed with you and set by what the imagery can support: when new dated satellite scenes exist, how often your own teams fly, and, for drone flights we arrange, the permits and authorisations each job requires.
+**The schedule.** Known hotspots are re-surveyed more often than quiet stretches. The interval for each area is agreed with you and set by what the imagery can support: when new dated satellite scenes exist, how often your own teams fly, and, for drone flights we arrange, the approvals and security clearances each job requires.
 
 **The change.** Each re-survey is compared with the one before it. New and removed structures, newly cleared ground and new tracks are flagged automatically and confirmed by a reviewer, with before-and-after views. Your team receives a notice after each survey saying what changed and where, and the stretches where change is fastest move to the top of the list.
 
@@ -121,7 +121,7 @@ The orange band is the servitude and the triangles are towers. Squares are struc
 | Dated very-high-resolution satellite scenes | Roofs, cleared plots, tracks, change across long servitudes with no flight and no site visit | Needs a clear view; how often new scenes exist varies by area; small or shaded structures can be missed |
 | Your own drone orthophotos | Much finer detail on the stretches you already fly | Only where and when your teams fly; we work from orthophotos or georeferenced stills, not video |
 | Radar satellite comparisons | Larger changes such as clearing and earthworks, even under rainy-season cloud | Not individual small structures; flagged areas are followed up with optical imagery or a drone check |
-| Drone checks we arrange | Detail on flagged stretches | Subject to the permits and authorisations each job requires; within 50 m of people or structures they need specific SACAA approval ([drone law](/za/drone-regulations#fifty-metres)) |
+| Drone checks we arrange | Detail on flagged stretches | Subject to the approvals and security clearances each job requires; within 50 m of people or structures they need specific SACAA approval ([drone law](/za/drone-regulations#fifty-metres)) |
 
 Every report names its imagery and, where the source provides it, the capture date. Map-service basemaps are never passed off as survey imagery.
 ::::

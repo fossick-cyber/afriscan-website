@@ -23,7 +23,7 @@ faq:
   - q: Podemos ver trabalho feito no nosso sector?
     a: Nunca publicamos o traçado, as imagens ou os resultados de um cliente sem autorização escrita. O exemplo deste site vem de um gasoduto de alta pressão em Moçambique e é mostrado com a autorização do proprietário do traçado. Para outros sectores, podemos preparar uma demonstração num traçado ou limite à sua escolha, a partir de dados abertos.
   - q: Em que províncias trabalham?
-    a: O rastreio por satélite não exige deslocações e está disponível em todo o país. Os levantamentos por drone estão sujeitos às licenças e autorizações que cada trabalho exige.
+    a: O rastreio por satélite não exige deslocações e está disponível em todo o país. Os levantamentos por drone estão sujeitos às autorizações e credenciações de segurança exigidas para cada operação.
 ---
 
 ::::section{id="principais" eyebrow="Os sectores principais em Moçambique" title="Onde um registo datado muda as decisões" lead="Escolha a página da terra que a sua empresa gere. Cada uma descreve os problemas nas palavras da sua equipa, as faixas e as leis que se aplicam, os serviços que respondem a esses problemas e o que recebe."}

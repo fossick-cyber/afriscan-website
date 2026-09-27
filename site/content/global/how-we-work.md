@@ -46,7 +46,7 @@ Your route or site re-surveyed on a schedule agreed with you, with an email to y
 New and removed structures between two or more dated surveys, flagged automatically and confirmed by a reviewer, with before-and-after views of each change.
 :::
 :::card{title="Drone surveys" key="drone-surveys" icon="drone" eyebrow="Detail where needed"}
-Orthophotos, elevation models and close checks of flagged stretches, flown by Afridrone, subject to the permits and authorisations each job requires.
+Orthophotos, elevation models and close checks of flagged stretches, flown by Afridrone, subject to the approvals and security clearances each job requires.
 :::
 :::card{title="ESIA and resettlement support" key="resettlement-cut-off-baselines" icon="clipboard" eyebrow="Project decisions"}
 Dated registers for a resettlement cut-off date, structure counts for route and site options, and estimated households for planning, for your team or your consultants.
@@ -75,7 +75,7 @@ Dated imagery, registers and maps packaged with file fingerprints and an indepen
 :::checklist
 - A written proposal: scope, imagery plan, method, deliverables and schedule
 - The imagery options for your area, with what each can and cannot show
-- For drone work, the permits and authorisations the flight needs and how they fit the schedule
+- For drone work, the approvals and security clearances the flight needs and how they fit the schedule
 - A named first step, often one stretch or one site, if you want to start small
 :::
 ::::

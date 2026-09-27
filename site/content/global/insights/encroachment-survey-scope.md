@@ -75,7 +75,7 @@ Ask for a search margin beyond the widest band, so the register also shows what 
 - **Cloud and season**: how cloudy scenes and rainy-season gaps will be handled
 - **No web-map basemaps as delivered imagery**, and no dated record built on them
 - **Licence terms** for any imagery delivered to you
-- **For drone work**, the permits and authorisations the flight needs, who holds them, and any rules on receiving and publishing the imagery
+- **For drone work**, the approvals and security clearances the flight needs, who holds them, and any rules on receiving and publishing the imagery
 :::
 
 Where one date matters, such as a cut-off date or a handover, say so, and ask how close to it each bidder's imagery plan can realistically get. The trade-offs are set out in [satellite or drone?](/insights/satellite-or-drone-corridor-surveys).

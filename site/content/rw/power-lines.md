@@ -27,7 +27,7 @@ faq:
   - q: Can you tell us which structures are unauthorised?
     a: No. The guidelines say the right of way "shall generally be clear of unauthorized structures", and they allow some uses, such as gardens, pastures, fences and small movable structures, with the licensee's prior written consent. Whether a structure has that consent, or predates the line, is for the licensee and the authorities to decide. We show you, with dates, what is there.
   - q: Can you measure clearance to conductors?
-    a: No. We show where structures and tall vegetation stand in the right of way and how far each is from the centreline. Tall vegetation comes from drone elevation models, subject to the permits each job requires, or open canopy-height data for wider context. None of that is a measured clearance to a conductor, which stays with your line engineers.
+    a: No. We show where structures and tall vegetation stand in the right of way and how far each is from the centreline. Tall vegetation comes from drone elevation models, subject to the approvals and security clearances each job requires, or open canopy-height data for wider context. None of that is a measured clearance to a conductor, which stays with your line engineers.
   - q: Do you detect cable theft or tower vandalism?
     a: No. Satellites and drones see land change, not theft or vandalism. We flag fresh excavation, spoil and works visible at the surface near the line between surveys, so your teams know where to check.
   - q: Is the register a cadastral survey?
@@ -198,7 +198,7 @@ A dated inventory of what stood on each segment, and when, supports the record y
 The licensee maintains the right of way in the wire and border zones, removes dangerous vegetation, also outside the right of way, sets pruning cycles and notifies the landowner before pruning or clearing (IV.6). The 2024 ESIA quoted above clears only trees and crops that can grow to more than 3 m in its 12 m right of way.
 :::
 :::card{title="Where tall vegetation stands" icon="tree"}
-Mapped from drone elevation models where flown, subject to the permits each job requires, and from open canopy-height data for wider context. The open data is older in places, so a drone survey gives the current picture. It is not a measured clearance to conductors.
+Mapped from drone elevation models where flown, subject to the approvals and security clearances each job requires, and from open canopy-height data for wider context. The open data is older in places, so a drone survey gives the current picture. It is not a measured clearance to conductors.
 :::
 :::card{title="Cleared and regrown ground" icon="compare"}
 Where vegetation in the corridor has been cleared or has grown back between dates, from Copernicus Sentinel data. It shows larger patches of change, not single trees, and cloud can delay results.

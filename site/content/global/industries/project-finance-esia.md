@@ -147,7 +147,7 @@ Reports and layers come in English or Portuguese, and the work sits inside your 
 ::::section{id="independent-monitoring" tone="alt" eyebrow="Dated evidence between site visits" title="What changed on the ground since the last mission"}
 :::::columns{split="1-1"}
 ::::col
-The Equator Principles ask for independent monitoring and reporting after financial close ([EP4, Principle 9](https://equator-principles.com/app/uploads/The-Equator-Principles_EP4_July2020.pdf)), and DFI supervision missions visit on a cycle. Between visits, dated imagery shows the construction footprint and earthworks compared between dates, new structures in footprints and buffers, clearing outside the approved areas and revegetation where it was promised. Drone orthophotos of resettlement villages show construction progress, subject to the permits and authorisations each job requires.
+The Equator Principles ask for independent monitoring and reporting after financial close ([EP4, Principle 9](https://equator-principles.com/app/uploads/The-Equator-Principles_EP4_July2020.pdf)), and DFI supervision missions visit on a cycle. Between visits, dated imagery shows the construction footprint and earthworks compared between dates, new structures in footprints and buffers, clearing outside the approved areas and revegetation where it was promised. Drone orthophotos of resettlement villages show construction progress, subject to the approvals and security clearances each job requires.
 
 After a flood or cyclone, a reviewer's before-and-after check shows visible damage to structures and assets. Dated archive scenes and new captures fill the gaps between drone visits, and imagery the project already holds can be analysed the same way.
 

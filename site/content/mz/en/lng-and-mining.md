@@ -34,7 +34,7 @@ faq:
   - q: Can a drone fly near an LNG plant or a mine?
     a: Only with the operator's permission and the authorisations for that flight. Lei n.º 6/2024 restricts aircraft operations within at least 5 km of strategic national-security areas, IACM's directive allows no flights over places of strategic interest, and mine blasting areas need the written permission of the agency that manages them. Around such sites, satellite work usually comes first.
   - q: Can you track the progress of construction or rehabilitation?
-    a: Yes. Dated drone orthophotos and elevation models, compared side by side, show where ground has been cut or filled and where earthworks and laydown areas have grown. On rehabilitated land and closed borrow pits we track revegetation between dates. Drone work is subject to the permits and authorisations each job requires.
+    a: Yes. Dated drone orthophotos and elevation models, compared side by side, show where ground has been cut or filled and where earthworks and laydown areas have grown. On rehabilitated land and closed borrow pits we track revegetation between dates. Drone work is subject to the approvals and security clearances each job requires.
   - q: Do you replace our resettlement census?
     a: No. A dated register supports the census and asset inventory and your IFC Performance Standard 5 cut-off-date records. The census, the consultations and the eligibility decisions stay with your resettlement team.
 cta:
@@ -141,7 +141,7 @@ We count and map the structures in the project area on set dates: before the cen
 ::::section{id="drones" eyebrow="Drones near large sites" title="Where a drone helps, and where it cannot go"}
 :::::columns{split="1-1"}
 ::::col
-Dated drone orthophotos and elevation models give the detail for construction progress, rehabilitation and volumes, subject to the permits and authorisations each job requires. In Mozambique that means IACM approval of the operation, the Minister of National Defence's authorisation of the survey and authorisation to release its data ([Lei n.º 6/2024, art. 13](https://archive.gazettes.africa/archive/mz/2024/mz-government-gazette-series-i-dated-2024-06-04-no-108.pdf)). Afridrone is working towards the operator approvals Mozambique requires.
+Dated drone orthophotos and elevation models give the detail for construction progress, rehabilitation and volumes, subject to the approvals and security clearances each job requires. In Mozambique that means IACM approval of the operation, the Minister of National Defence's authorisation of the survey and authorisation to release its data ([Lei n.º 6/2024, art. 13](https://archive.gazettes.africa/archive/mz/2024/mz-government-gazette-series-i-dated-2024-06-04-no-108.pdf)). Afridrone is working towards the operator approvals Mozambique requires.
 ::::
 ::::col
 :::callout{tone="legal" title="Sites a drone may not overfly"}

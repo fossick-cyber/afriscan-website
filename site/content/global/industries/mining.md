@@ -214,7 +214,7 @@ The record describes where the ground has been dug, when it changed and how larg
 ::::section{id="artisanal-mining" eyebrow="Surface excavation" title="Artisanal mining and surface excavation on and around your title"}
 :::::columns{split="1-1"}
 ::::col
-Pits, spoil heaps, disturbed ground and water-filled excavations are mapped inside and around your right, and new sites are flagged between dated surveys so your land and community teams know where to look. Global ground-disturbance alerts add a regular screen between surveys, and in cloudy months radar comparisons show larger changes, such as clearing and earthworks, even under rainy-season cloud. Drone checks of flagged areas capture the detail, subject to the permits and authorisations each job requires.
+Pits, spoil heaps, disturbed ground and water-filled excavations are mapped inside and around your right, and new sites are flagged between dated surveys so your land and community teams know where to look. Global ground-disturbance alerts add a regular screen between surveys, and in cloudy months radar comparisons show larger changes, such as clearing and earthworks, even under rainy-season cloud. Drone checks of flagged areas capture the detail, subject to the approvals and security clearances each job requires.
 
 Detection of pits and spoil is tuned and checked on part of your area before it runs on the rest, and every flagged site is confirmed by a reviewer.
 ::::
@@ -259,7 +259,7 @@ For quarries, stockpiles and borrow pits, volumes are calculated from drone elev
 ::::section{id="your-imagery" eyebrow="Your drone imagery, our analysis" title="Get more from the drone imagery you already fly"}
 Many mines already fly their own drones. The orthophotos sit on a server, and the structure counts are still done by hand. Send the orthophotos or satellite scenes you already hold and we run the same structure, change and boundary analysis on them, with a reviewer checking every result. Between your flights, dated satellite scenes from commercial archives, or a new capture where the archive is too old, keep the record moving.
 
-Where you need a flight, drone orthophoto and elevation surveys are flown by Afridrone, subject to the permits and authorisations each job requires.
+Where you need a flight, drone orthophoto and elevation surveys are flown by Afridrone, subject to the approvals and security clearances each job requires.
 
 :::solutions{keys="imagery,drone-surveys" cols="2"}
 :::
@@ -324,7 +324,7 @@ Mineral titles are administered by the Mining Cadastre Office under the Nigerian
 :::country-sites{match="page"}
 :::
 
-Drone surveys are subject to the permits and authorisations each job requires, and Afridrone is working towards the operator approvals each country requires. The rules in each country are compared in [drone survey rules by country](/drone-regulations) and summarised on [where we work](/countries).
+Drone surveys are subject to the approvals and security clearances each job requires, and Afridrone is working towards the operator approvals each country requires. The rules in each country are compared in [drone survey rules by country](/drone-regulations) and summarised on [where we work](/countries).
 ::::
 
 ::::section{id="how" eyebrow="How it works" title="From boundary file to reviewed register"}
@@ -336,7 +336,7 @@ You send the boundary and any zones, and tell us what the record is for. We agre
 Structures and surface change are mapped across the concession from dated imagery, open building datasets or your own orthophotos.
 :::
 :::step{title="Check up close"}
-Drone surveys capture the areas that need detail, subject to the permits and authorisations each job requires.
+Drone surveys capture the areas that need detail, subject to the approvals and security clearances each job requires.
 :::
 :::step{title="Review and deliver"}
 A person checks every automatic result, then each structure is placed, measured and delivered in the register and layers.

@@ -158,7 +158,7 @@ For a new highway, a bypass, a widening or a new railway, we count the structure
 ::::col
 During construction, dated drone orthophotos and elevation models compared side by side show where ground has been cut or filled between visits, and volumes of borrow pits, spoil heaps and stockpiles are calculated from the elevation models. Heavy plant visible on each survey date is recorded as a snapshot of activity on site, never as tracking.
 
-These are not certified surveys or a quantity surveyor's valuation. They give the supervising engineer and the owner dated evidence of progress to set against the programme. Drone work is subject to the permits and authorisations each job requires.
+These are not certified surveys or a quantity surveyor's valuation. They give the supervising engineer and the owner dated evidence of progress to set against the programme. Drone work is subject to the approvals and security clearances each job requires.
 ::::
 ::::col
 ### What you receive
@@ -203,7 +203,7 @@ When a plot along the reserve is disputed, the imagery history shows roughly whe
 | **South Africa**<br>[SANRAL Act 7 of 1998](https://www.sagc.org.za/pdf/legislation/S%20A%20National%20Roads%20Agency%20Act%207%20of%201998.pdf), s.48 | SANRAL's written permission for any structure in the building restriction area: land outside urban areas within 60 m of a national road's boundary, or within 500 m of a point of intersection |
 | **Nigeria**<br>Federal and state road and rail authorities | Reserve widths are set per road and railway by the responsible authority, so we measure to the widths you supply |
 
-In Mozambique, reports can be delivered in Portuguese for land services and district government. In South Africa, if a register is to be used as evidence about unlawful conduct, POPIA's prior-authorisation rule (s57) may apply to your organisation: take advice first. Drone surveys in every country are subject to the permits and authorisations each job requires; the rules are compared in [drone survey rules by country](/drone-regulations) and summarised on [where we work](/countries).
+In Mozambique, reports can be delivered in Portuguese for land services and district government. In South Africa, if a register is to be used as evidence about unlawful conduct, POPIA's prior-authorisation rule (s57) may apply to your organisation: take advice first. Drone surveys in every country are subject to the approvals and security clearances each job requires; the rules are compared in [drone survey rules by country](/drone-regulations) and summarised on [where we work](/countries).
 
 :::country-sites{match="page"}
 :::

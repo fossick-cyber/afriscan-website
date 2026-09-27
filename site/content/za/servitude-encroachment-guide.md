@@ -110,7 +110,7 @@ For any new line or pipeline, the cheapest time to understand the land is before
 
 ## Drones on the strip {#drones}
 
-Commercial drone work in South Africa needs a UAS Operator Certificate and an Air Service Licence, and the landowner's permission for every flight. Flying within 50 m of a structure or a person needs specific approval, which matters on a servitude lined with homes. Many utilities, mines and metros already fly under their own certificates; where they do, analysing that imagery, with satellite imagery between flights, is often the quickest way to a current register. Drone surveys we propose are subject to the permits and authorisations each job requires. The full rules are in [hiring a drone survey in South Africa](/za/drone-regulations).
+Commercial drone work in South Africa needs a UAS Operator Certificate and an Air Service Licence, and the landowner's permission for every flight. Flying within 50 m of a structure or a person needs specific approval, which matters on a servitude lined with homes. Many utilities, mines and metros already fly under their own certificates; where they do, analysing that imagery, with satellite imagery between flights, is often the quickest way to a current register. Drone surveys we propose are subject to the approvals and security clearances each job requires. The full rules are in [hiring a drone survey in South Africa](/za/drone-regulations).
 
 ## A checklist for servitude holders {#checklist}
 

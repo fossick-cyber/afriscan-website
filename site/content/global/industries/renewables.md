@@ -89,7 +89,7 @@ We map the structures inside the site boundary and in a ring around it, and alon
 ::::section{id="construction" tone="alt" eyebrow="Construction and earthworks" title="Dated progress between site visits"}
 :::::columns{split="1-1"}
 ::::col
-Dated drone orthophotos and elevation models of the site, compared side by side, show where ground has been cut or filled between visits, and volumes of stockpiles and spoil are calculated from the elevation models. Heavy plant and equipment visible on each survey date is recorded as a snapshot of activity on site. Drone surveys are subject to the permits and authorisations each job requires.
+Dated drone orthophotos and elevation models of the site, compared side by side, show where ground has been cut or filled between visits, and volumes of stockpiles and spoil are calculated from the elevation models. Heavy plant and equipment visible on each survey date is recorded as a snapshot of activity on site. Drone surveys are subject to the approvals and security clearances each job requires.
 
 These records give owners' engineers and lenders' advisers dated evidence to set against the construction programme. They are not certified surveys or a quantity surveyor's valuation, and we make no promise of turnaround for bid windows before the scope is agreed.
 ::::

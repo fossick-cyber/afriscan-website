@@ -79,7 +79,7 @@ An image's date has to be the date the pixels were captured, not the date a file
 A purchased very-high-resolution scene comes with its acquisition date and time, cloud cover and resolution. Keep the metadata file with the imagery; it is the evidence of the date.
 :::
 :::card{title="Drone orthophotos" icon="drone" eyebrow="Capture time in each photo"}
-Each photo carries its capture time, and the processing report shows which photos made the mosaic. Flown on a chosen day, subject to the permits and authorisations the survey requires.
+Each photo carries its capture time, and the processing report shows which photos made the mosaic. Flown on a chosen day, subject to the approvals and security clearances the survey requires.
 :::
 :::card{title="Web basemaps and footprints" icon="x-circle" eyebrow="No usable date"}
 Web-map layers have no stated date and are often stitched from several. Open building-footprint datasets come from imagery that may be years old. Useful for planning; never for a dated record.
@@ -100,7 +100,7 @@ Check which dated scenes already exist over the footprint, and when. In many pla
 A scene before the cut-off date and one after it is often more useful than one scene near it. A structure visible on both was there across the date. A structure visible only on the later scene appeared in the interval, and goes on the list for the census team to settle in the field.
 :::
 :::step{title="Fix a date where one matters" icon="calendar"}
-Where a single day matters, a drone survey gives the most control over the date, subject to the permits and authorisations each job requires. A new satellite capture can be requested for a window, but its date depends on satellite availability and weather and is never guaranteed.
+Where a single day matters, a drone survey gives the most control over the date, subject to the approvals and security clearances each job requires. A new satellite capture can be requested for a window, but its date depends on satellite availability and weather and is never guaranteed.
 :::
 :::step{title="Write the tolerance into the method" icon="file-text"}
 State in the RAP methodology or census protocol how the imagery dates relate to the cut-off date, for example "structures visible on imagery captured 12 days before the census closed". A stated, reproducible gap is defensible; an unstated one invites argument.

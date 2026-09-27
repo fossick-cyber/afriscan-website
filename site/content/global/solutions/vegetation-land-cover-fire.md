@@ -24,7 +24,7 @@ cta:
   button: Request a proposal
 faq:
   - q: How small a change can you see?
-    a: The open satellite data behind this service shows larger patches of change, not individual trees or small plots. Where you need detail, such as vegetation height under a line or a rehabilitated slope, a drone survey adds it, subject to the permits each flight requires.
+    a: The open satellite data behind this service shows larger patches of change, not individual trees or small plots. Where you need detail, such as vegetation height under a line or a rehabilitated slope, a drone survey adds it, subject to the approvals and security clearances each flight requires.
   - q: Is the fire notice an early-warning service?
     a: No. It is a regular notice of satellite-detected fire hotspots near your lines, pipelines, plantations and sites, drawn from NASA FIRMS, plus maps of burnt areas afterwards. Small, short-lived or cloud-covered fires can be missed, and it is not an emergency or fire-fighting service.
   - q: Does this measure clearance to our conductors?

@@ -32,7 +32,7 @@ faq:
   - q: Os levantamentos por satélite estão abrangidos pelas regras de conteúdo local?
     a: A Lei n.º 9/2026 aplica-se aos projectos de petróleo e gás e às entidades que contratam com eles, e inclui os «serviços de topografia» no regime de exclusividade. Se um levantamento por satélite ou por drone cabe nessa categoria num contrato concreto é uma questão para a sua equipa jurídica; a proposta descreve o serviço com o detalhe necessário para essa avaliação.
   - q: Que autorizações precisa um trabalho com drone?
-    a: Em Moçambique, a aprovação da operação pelo IACM, a autorização do Ministério da Defesa Nacional para o levantamento e a autorização para a cedência dos dados ao cliente (Lei n.º 6/2024, artigo 13). Os levantamentos por drone estão sujeitos às licenças e autorizações que cada trabalho exige, e cada proposta com drone indica-as.
+    a: Em Moçambique, a aprovação da operação pelo IACM, a autorização do Ministério da Defesa Nacional para o levantamento e a autorização para a cedência dos dados ao cliente (Lei n.º 6/2024, artigo 13). Os levantamentos por drone estão sujeitos às autorizações e credenciações de segurança exigidas para cada operação, e cada proposta com drone indica-as.
   - q: Publicam os nossos dados?
     a: Não. Nunca publicamos o traçado, as imagens ou os resultados de um cliente sem autorização escrita.
 ---
@@ -98,7 +98,7 @@ Sobre a protecção de dados pessoais, o Conselho de Ministros aprovou em 3 de M
 ::::section{id="drones" tone="alt" eyebrow="Autorizações de drone" title="O satélite primeiro; o drone com as autorizações de cada trabalho"}
 :::::columns{split="1-1"}
 ::::col
-Os levantamentos por satélite começam sem voos e sem visita ao local. Os levantamentos por drone estão sujeitos às licenças e autorizações que cada trabalho exige: em Moçambique, a aprovação do IACM, a autorização do Ministério da Defesa Nacional para o levantamento e a autorização para a cedência dos dados. A Afridrone está a trabalhar para obter as aprovações de operador exigidas em Moçambique, e nenhum voo se faz sem as autorizações do trabalho emitidas.
+Os levantamentos por satélite começam sem voos e sem visita ao local. Os levantamentos por drone estão sujeitos às autorizações e credenciações de segurança exigidas para cada operação: em Moçambique, a aprovação do IACM, a autorização do Ministério da Defesa Nacional para o levantamento e a autorização para a cedência dos dados. A Afridrone está a trabalhar para obter as aprovações de operador exigidas em Moçambique, e nenhum voo se faz sem as autorizações do trabalho emitidas.
 ::::
 ::::col
 :::checklist

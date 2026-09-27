@@ -158,7 +158,7 @@ Dated very-high-resolution satellite scenes and open building datasets cover the
 If your teams or contractors already fly the line, we run the same analysis on your orthophotos, and dated satellite scenes fill the time between flights where they exist.
 :::
 :::card{title="Drone checks" icon="drone"}
-Drone surveys of the flagged stretches, subject to the permits and authorisations each job requires: a UASOC operator with an Air Service Licence, landowner permission for each flight, and approvals for flights within 50 m of structures, people or roads.
+Drone surveys of the flagged stretches, subject to the approvals and security clearances each job requires: a UASOC operator with an Air Service Licence, landowner permission for each flight, and approvals for flights within 50 m of structures, people or roads.
 :::
 :::
 ::::

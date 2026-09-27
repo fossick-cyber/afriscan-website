@@ -284,7 +284,7 @@ Operating procedures, a risk assessment and an emergency plan for the site, incl
 ::::col
 We start from satellite. A satellite-based survey involves no aircraft, no flight and no site visit, so it can cover a whole corridor, including stretches where access is restricted, before anyone decides whether a drone is needed.
 
-Drone surveys are subject to the permits and authorisations each job requires. Afridrone is working towards the operator approvals Mozambique requires. Every drone proposal lists the authorisations its flights need, who applies for each, and the time they take, and the contract carries the data clause the law calls for.
+Drone surveys are subject to the approvals and security clearances each job requires. Afridrone is working towards the operator approvals Mozambique requires. Every drone proposal lists the authorisations its flights need, who applies for each, and the time they take, and the contract carries the data clause the law calls for.
 ::::
 ::::col
 :::callout{tone="scope" title="Why this site shows no Mozambican drone orthophotos"}

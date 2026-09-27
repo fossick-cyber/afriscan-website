@@ -108,7 +108,7 @@ Commercial drone work needs a SACAA UAS Operator Certificate with current Operat
 
 For evaluation, split any scope into its satellite or desk-based part, which needs no aviation approval, and its drone part, which needs all of them. Ask for the flying company's UASOC and OpSpec expiry dates and approvals, its Air Service Licence number and gazette notice, and its insurance.
 
-Drone surveys are subject to the permits and authorisations each job requires. Afridrone is working towards the operator approvals South Africa requires, and every AfriScan proposal with a drone element names the company that will fly it.
+Drone surveys are subject to the approvals and security clearances each job requires. Afridrone is working towards the operator approvals South Africa requires, and every AfriScan proposal with a drone element names the company that will fly it.
 ::::
 ::::col
 :::callout{tone="legal" title="The client checklist"}
