@@ -1,0 +1,164 @@
+# Zambia: the instruments behind /zm/drone-regulations.
+# Facts ONLY from regional/zm.FINAL.md and its corrected full brief zm.verified.md (verified 2026-09-27
+# against ZCAA's document and RPAS downloads and the Parliament of Zambia act PDFs).
+# Items the brief marks [unverified] stay out or are stated as open questions on the page: whether each
+# Cap. 125 order survives in the 2019 Revised Edition, the use of the ZAF clearance portal for drones,
+# ZICTA's type-approval practice for drones, any drone rule for national parks. Instruments the brief
+# gives without a date (the Protected Places and Areas Act, Cap. 125; the State Security Act, Cap. 111;
+# the Land Survey Act, Cap. 188) are cited with links in the page body instead of this table. Year-only
+# dates are used where the brief gives only the year or the month. No fee, fine or penalty-unit amount
+# appears here or on the page (owner rule 1), and ZCAA's service-charter processing times are left out.
+country_name: Zambia
+last_reviewed: 2026-09-27
+regulator:
+  name: Zambia Civil Aviation Authority (ZCAA)
+  url: https://www.caa.co.zm/rpas
+summary:
+  regulator: Zambia Civil Aviation Authority (ZCAA), through its UAV & Aircraft Certification Unit; Zambia Air Force airspace clearance for every operation
+  instruments: Zambia Civil Aviation Requirements Part 18 (RPAS), Rev 0, June 2016; Civil Aviation Act 2016 (Cap. 444), amended in 2024 and 2026; ZCAA circulars AIC 004, 005 and 007 of 2026
+instruments:
+  - id: zcars-part18
+    title: Zambia Civil Aviation Requirements, Part 18 (Remotely Piloted Aircraft Systems)
+    identifier: CAA/ORG-ZCARs, Rev 0 (June 2016)
+    date: 2016
+    url: https://www.caa.co.zm/api/document-repository/get-folder/464/download
+    last_checked: 2026-09-27
+    note: Classes (18.1.5), registration and letters of approval (18.2), remote pilot licences (18.3), the RPAS Operator Certificate (18.4), flight rules (18.5), maintenance (18.6).
+  - id: civil-aviation-act-2016
+    title: Civil Aviation Act No. 5 of 2016 (Cap. 444)
+    identifier: Act No. 5 of 2016
+    date: 2016
+    url: https://www.caa.co.zm/api/document-repository/get-folder/469/download
+    last_checked: 2026-09-27
+    note: Air Services Permits (s.28), detention of aircraft (s.129), administrative penalties (s.147).
+  - id: civil-aviation-amendment-2026
+    title: Civil Aviation (Amendment) Act No. 14 of 2026
+    identifier: Act No. 14 of 2026
+    date: 2026-06-04
+    url: https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2014%20of%202026.pdf
+    last_checked: 2026-09-27
+    note: Declared danger, restricted and prohibited areas (s.8(2) as substituted); flying in one is an unauthorised operation (new s.8A).
+  - id: caa-act-2012
+    title: Civil Aviation Authority Act No. 7 of 2012 (Cap. 445)
+    identifier: Act No. 7 of 2012
+    date: 2012
+    url: https://www.caa.co.zm/api/document-repository/get-folder/470/download
+    last_checked: 2026-09-27
+  - id: aic-004-2026
+    title: ZCAA Aeronautical Information Circular 004/2026 (airspace-clearance portal)
+    identifier: AIC 004/2026
+    date: 2026-01-27
+    url: https://www.caa.co.zm/api/document-repository/get-folder/766/download
+    last_checked: 2026-09-27
+    note: A joint Zambia Air Force and ZCAA clearance portal, with applications at least 48 hours before the flight; addressed to air operators.
+  - id: aic-005-2026
+    title: ZCAA Aeronautical Information Circular 005/2026 (UAV and drone operators)
+    identifier: AIC 005/2026
+    date: 2026-03-18
+    url: https://www.caa.co.zm/api/document-repository/get-folder/767/download
+    last_checked: 2026-09-27
+    note: Set up the UAV & Aircraft Certification Unit, made the revised forms mandatory and moved new registrations to the "9I" prefix from 1 January 2026.
+  - id: aic-006-2026
+    title: ZCAA Aeronautical Information Circular 006/2026 (Revised Edition of the Laws of Zambia)
+    identifier: AIC 006/2026
+    date: 2026-03-31
+    url: https://www.caa.co.zm/api/document-repository/get-folder/770/download
+    last_checked: 2026-09-27
+    note: Statutes are cited by Chapter number of the 2019 Revised Edition, in force since 4 June 2025.
+  - id: aic-007-2026
+    title: ZCAA Aeronautical Information Circular 007/2026 (Air Services Permits)
+    identifier: AIC 007/2026
+    date: 2026-06-10
+    url: https://www.caa.co.zm/api/document-repository/get-folder/777/download
+    last_checked: 2026-09-27
+    note: The Minister delegated the granting of Air Services Permits to the ZCAA Director-General; applications go directly to the ZCAA.
+  - id: zcaa-roc-list
+    title: ZCAA list of RPAS Operator Certificate holders
+    identifier: ZCAA RPAS document 4 (posted 13 February 2026)
+    date: 2025-11-20
+    url: https://www.caa.co.zm/api/admin/rpas/download/4
+    last_checked: 2026-09-27
+  - id: zcaa-resellers
+    title: ZCAA list of approved RPAS resellers
+    identifier: ZCAA RPAS document 16
+    date: 2026-03-17
+    url: https://www.caa.co.zm/api/admin/rpas/download/16
+    last_checked: 2026-09-27
+  - id: zcaa-f002
+    title: ZCAA Form CAA/UAC/F-002, Special Authorization
+    identifier: CAA/UAC/F-002, Rev 0 (November 2025)
+    date: 2025
+    url: https://www.caa.co.zm/api/admin/rpas/download/6
+    last_checked: 2026-09-27
+  - id: zcaa-f001b
+    title: ZCAA Form CAA/UAC/F-001B, company registration of an RPA
+    identifier: CAA/UAC/F-001B, Rev 0 (November 2025)
+    date: 2025
+    url: https://www.caa.co.zm/api/admin/rpas/download/9
+    last_checked: 2026-09-27
+  - id: zcaa-guide-registration
+    title: ZCAA guidance on RPAS registration and operations
+    identifier: ZCAA RPAS document 12
+    date: 2026
+    url: https://www.caa.co.zm/api/admin/rpas/download/12
+    last_checked: 2026-09-27
+    note: Zambia Air Force clearance, police liaison and ZACL coordination before any operation; the ZRA clearance letter.
+  - id: zcaa-guide-special-authorization
+    title: ZCAA guidance on temporary importation and special authorization
+    identifier: ZCAA RPAS document 13
+    date: 2026
+    url: https://www.caa.co.zm/api/admin/rpas/download/13
+    last_checked: 2026-09-27
+    note: The ZCAA inspector's safety oversight of each operation, arranged and provided for by the applicant.
+  - id: zcaa-guide-roc
+    title: ZCAA guidance on the RPAS Operator Certificate
+    identifier: ZCAA RPAS document 14
+    date: 2026
+    url: https://www.caa.co.zm/api/admin/rpas/download/14
+    last_checked: 2026-09-27
+  - id: pp-pipeline-order
+    title: Protected Areas (Tanzama Oil Pipeline) Order
+    identifier: SI 195 of 1970, printed in the consolidated Protected Places and Areas Act (Cap. 125)
+    date: 1970
+    url: https://www.parliament.gov.zm/sites/default/files/documents/acts/Protected%20Places%20and%20Areas%20Act.pdf
+    last_checked: 2026-09-27
+    note: Whether the order remains in force in the 2019 Revised Edition is for counsel to confirm.
+  - id: pp-pumping-orders
+    title: Protected Places (Pipeline) Orders and Protected Areas (Pipeline) Orders
+    identifier: SIs 406, 407, 409 and 410 of 1968, printed in the consolidated Cap. 125
+    date: 1968
+    url: https://www.parliament.gov.zm/sites/default/files/documents/acts/Protected%20Places%20and%20Areas%20Act.pdf
+    last_checked: 2026-09-27
+    note: Whether these orders remain in force in the 2019 Revised Edition is for counsel to confirm.
+  - id: pp-mines-order
+    title: Protected Places (Mines) Order
+    identifier: SI 57 of 1974, printed in the consolidated Cap. 125
+    date: 1974
+    url: https://www.parliament.gov.zm/sites/default/files/documents/acts/Protected%20Places%20and%20Areas%20Act.pdf
+    last_checked: 2026-09-27
+    note: Whether the order remains in force in the 2019 Revised Edition is for counsel to confirm.
+  - id: ict-act-2009
+    title: Information and Communication Technologies Act No. 15 of 2009
+    identifier: Act No. 15 of 2009 (s.66)
+    date: 2009
+    url: https://www.parliament.gov.zm/sites/default/files/documents/acts/Information%20and%20Communication%20Technologies%20Act%2C%202009.pdf
+    last_checked: 2026-09-27
+  - id: electricity-act-2019
+    title: Electricity Act No. 11 of 2019
+    identifier: Act No. 11 of 2019 (s.44)
+    date: 2019-12-27
+    url: https://www.parliament.gov.zm/sites/default/files/documents/acts/The%20Electricity%20Act%20No.%2011%20of%202019.pdf
+    last_checked: 2026-09-27
+  - id: ztp-act
+    title: Zambia Tanzania Pipeline Act (Cap. 455)
+    identifier: Acts 18 of 1967 and 13 of 1994
+    date: 1967
+    url: https://www.parliament.gov.zm/sites/default/files/documents/acts/Zambia%20Tanzania%20Pipeline%20Act.pdf
+    last_checked: 2026-09-27
+  - id: dpa-2021
+    title: Data Protection Act No. 3 of 2021
+    identifier: Act No. 3 of 2021
+    date: 2021-03-23
+    url: https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%203%20The%20Data%20Protection%20Act%202021_0.pdf
+    last_checked: 2026-09-27
+    note: Registration (s.19), breach notice within 24 hours (s.49), storage in Zambia (s.70), transfers abroad (s.71).

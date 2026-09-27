@@ -99,7 +99,7 @@ zm:
   label: "Zambia"
   short: "Zambia"
   sitemap: sitemap-zm.xml
-  status: draft
+  status: live
   region: Southern
 tz:
   content: tz

@@ -27,6 +27,9 @@ owner_decision: 2026-09-26
 counsel_required:
   - /mz/pt/zona-de-proteccao-parcial-50-metros
   - /mz/pt/fornecedor
+  # Zambia: the wayleave guide and the procurement page state the law, so counsel reviews them too
+  - /zm/wayleave-guide
+  - /zm/procurement
 
 pending:
   native_pt:
@@ -60,3 +63,9 @@ pending:
   native_fr_cd:
     owner_decision: 2026-09-27
     pages: []
+  counsel_zm:
+    owner_decision: 2026-09-27
+    pages:
+      /zm/drone-regulations: Zambian counsel
+      /zm/wayleave-guide: Zambian counsel
+      /zm/procurement: Zambian counsel

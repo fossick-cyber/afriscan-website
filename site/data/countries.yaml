@@ -32,7 +32,7 @@ zm:
   name: Zambia
   region: Southern
   languages: [en]
-  status: launching
+  status: live
   timezones: [Africa/Lusaka]
 zw:
   name: Zimbabwe
