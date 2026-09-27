@@ -31,7 +31,7 @@ faq:
   - q: Can a drone fly over the homes along our right of way?
     a: Not under the standard conditions, which exclude flight over a populated area and within 30 m of anyone not directly involved (27.050). Outside segregated airspace, a drone also stays 100 m horizontally from anyone who has not consented, and does not fly above property without the prior consent of its occupiers or owner, or of the appropriate authority acting for the public (27.095(a)(1)). Stretches lined with homes need consent planning before any flight, or satellite imagery instead.
   - q: Does a flight along a power line need extra permission?
-    a: Yes. Flying at "high tension cables and communication masts" or at strategic installations without RCAA's permission, or outside the conditions of the restriction, is an offence under art. 100 of Law n° 20/2018 as restated in 2024, and RCAA's advisory circular lists power plants among the strategic installations. Ask for an RCAA permission that names the line or site.
+    a: Yes. Flying at "high tension cables and communication masts" or at strategic installations is an offence under art. 100 of Law n° 20/2018 as restated in 2024, unless it follows the conditions of the restriction or RCAA has given permission, and RCAA's advisory circular lists power plants among the strategic installations. Ask for an RCAA permission that names the line or site.
   - q: Can a drone fly near Kigali?
     a: Within 10 NM (about 18.5 km) of the centre of an international controlled aerodrome, and 5 NM of a domestic one, a drone flies only under an agreement with the aerodrome operator and with an observer at an uncontrolled aerodrome, or with ATC authorisation at a controlled one, and only as or under a qualified pilot (27.050, 27.090). Kigali International is one of the international airports Rwanda Airports Company lists, so much of Kigali needs ATC coordination.
   - q: How long do the approvals last?
@@ -50,7 +50,7 @@ cta:
 A registration certificate and a **9XR-** mark for each drone, held by an eligible owner in Rwanda, with the marks and a fire-resistant identification plate fitted.
 :::
 :::card{title="A pilot licence for every pilot" icon="user-check" eyebrow="RCAA · 27.160–27.187"}
-A **remote pilot licence or certificate** for each pilot, valid for 12 months at most, issued after training, an exam or a flight test, and security vetting.
+A **remote pilot licence or certificate** for each pilot, valid for 12 months at most, issued after a knowledge exam and a training course, manufacturer's course or RCAA flight test, and security vetting.
 :::
 :::card{title="An activity permit" icon="file-check" eyebrow="RCAA · 27.205"}
 An **activity permit** for the locations and dates of the job, applied for through the RCAA Drone Portal with the mission, the pilot in command and an address for service in Rwanda.
@@ -109,7 +109,7 @@ A corridor or site survey for a client is commercial, so it is a Specific operat
 Rwandan citizens or residents aged 18 or over, companies registered in Rwanda and Government institutions may own and register a drone (App. 1 §1.1.1, §1.3.3); RCAA's FAQ lists "a foreigner who is legally residing in Rwanda" and "a company in Rwanda" among them. Registration starts with a formal letter and the applicant form, then an account on the [Drone Portal](https://systems.caa.gov.rw/uasportal/) ([RCAA registration](https://www.caa.gov.rw/service-details/uas-registration)). The advisory circular also asks for the security process, a copy of the national ID or company registration certificate, the manuals, a copy of the insurance policy, the serial number and proof of payment. RCAA assigns a 9XR- mark and a certificate that cannot be transferred (§1.3.5, §1.3.8). Changes of ownership are notified seven days ahead (§1.1.2), and drones with military specifications are banned (§1.1.3).
 :::
 :::step{title="A remote pilot licence for each pilot"}
-The pilot is 18 or over and passes a knowledge exam or equivalent, with a training course, a manufacturer's course or an RCAA flight test (27.165). The advisory circular adds security vetting, a Class 3 medical certificate, a criminal record certificate, a copy of the national ID and the ability to read, write, speak and understand English ([RCAA pilot certificate](https://www.caa.gov.rw/service-details/uas-pilot-certificate)). The licence lasts 12 months at most (27.187). Without a radio or other listed qualification, a pilot stays below 120 m and outside 10 NM of an international aerodrome (27.175(b)), flies within visual line of sight unless qualified for BVLOS under a UOC (27.175(c)), and flies one drone at a time (27.175(d)).
+The pilot is 18 or over and passes a knowledge exam or equivalent, with a training course, a manufacturer's course or an RCAA flight test (27.165). The advisory circular adds security vetting, a Class 3 medical certificate, a criminal record certificate, a copy of the national ID and the ability to read, write, speak and understand English ([RCAA pilot certificate](https://www.caa.gov.rw/service-details/uas-pilot-certificate)). The licence lasts 12 months at most (27.187). Without a radio or other listed qualification, a pilot stays below 120 m and outside 10 NM of an international aerodrome (27.175(b)). A pilot flies within visual line of sight unless BVLOS-qualified under a UOC and authorised under Subpart D (27.175(c)), and flies one drone at a time (27.175(d)).
 :::
 :::step{title="An activity permit for the locations and dates"}
 Applied for "using a platform specified by the Authority", with "the name and address for service in Rwanda of the applicant" (27.205(a), (c)–(e)). The application gives the activity type, the start and end dates, the mission title and description, the pilot in command's licence and the locations, and an approved permit is sent by email (advisory circular §1.4, FAQ 2.5).
@@ -272,7 +272,7 @@ A UOC covering the type of operation and the geographical area, where RCAA requi
 RCAA permission that explicitly covers the power lines, substations, masts, highways and other strategic installations on the route (art. 100; advisory circular FAQ 2.19).
 :::
 :::step{title="Aerodromes coordinated"}
-ATC or aerodrome-operator authorisation for flights within 10 NM of Kigali or Kamembe, or 5 NM of a domestic aerodrome.
+ATC authorisation at a controlled aerodrome, or an agreement with the aerodrome operator and an observer at an uncontrolled one, for flights within 10 NM of Kigali or Kamembe or 5 NM of a domestic aerodrome.
 :::
 :::step{title="Insurance lodged"}
 Proof of third-party cover submitted to RCAA (27.405).

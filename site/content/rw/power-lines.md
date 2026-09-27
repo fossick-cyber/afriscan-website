@@ -211,7 +211,7 @@ Where vegetation in the corridor has been cleared or has grown back between date
 ::::section{id="drones" eyebrow="Drones along a line" title="High-tension lines are restricted sites for drones"}
 :::::columns{split="2-1"}
 ::::col
-Flying a drone at "high tension cables and communication masts" without RCAA's permission, or outside the conditions of the restriction, is an offence under art. 100 of Law n° 20/2018, and RCAA's advisory circular lists power plants among the strategic installations. Every drone survey of a line, substation or power plant therefore needs an RCAA permission that names the line or site, on top of the registration, pilot licence and activity permit Part 27 requires and, where RCAA asks for one, an operator certificate. Over inhabited plots, flights also need the consent of occupiers or owners, or an authority-level consent.
+Flying a drone at "high tension cables and communication masts" is an offence under art. 100 of Law n° 20/2018 unless it follows the conditions of the restriction or RCAA has given permission, and RCAA's advisory circular lists power plants among the strategic installations. Every drone survey of a line, substation or power plant therefore needs an RCAA permission that names the line or site, on top of the registration, pilot licence and activity permit Part 27 requires and, where RCAA asks for one, an operator certificate. Over inhabited plots, flights also need the consent of occupiers or owners, or an authority-level consent.
 
 That is why a survey starts from satellite. Where a stretch needs more detail, drone surveys are subject to the RCAA approvals, security reviews and consents each job requires.
 ::::
