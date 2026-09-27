@@ -72,7 +72,7 @@ A 2026 resettlement action plan published by REG for a substation observes that 
 :::
 ::::
 
-::::section{id="rules" tone="alt" eyebrow="The rule" title="The right of way is already defined"}
+::::section{id="rules" tone="alt" eyebrow="The rule" title="The right of way is already defined" lead="A summary of the public rules, last reviewed 27 September 2026, for orientation. It is not legal advice; the sources are linked."}
 :::::columns{split="1-1" align="center"}
 ::::col
 Chapter IX of [Law n° 21/2011 governing electricity](https://rwandalii.org/akn/rw/act/law/2011/21/eng@2011-07-12), unchanged by the 2018 amendment, says: "The right of way is necessary to the operators in production, transmission, distribution and supply of electricity. It shall be exercised in accordance with the standards set by the regulatory agency. Expropriation shall be conducted in accordance with the Law governing expropriation for public interest" (art. 48). Complaints about interference with property, including the right of way, go to the regulator and, if needed, the courts (art. 49).
@@ -161,7 +161,7 @@ An input to route selection: structures per option and per band, from dated imag
 ::::section{id="valuation" eyebrow="Before valuation and RAPs" title="What stood on each segment, and when"}
 :::::columns{split="2-1"}
 ::::col
-Electric lines are activities of public interest under [Law n° 32/2015 on expropriation](https://rwandalii.org/akn/rw/act/law/2015/32/eng@2015-08-31) (art. 5). Its timeline is short and date-driven:
+Electric lines are activities of public interest under [Law n° 32/2015 on expropriation](https://rwandalii.org/akn/rw/act/law/2015/32/eng@2015-08-31) (art. 5), and the Electricity Law sends expropriation for a right of way to that law (*expropriation pour cause d'utilité publique*; Kinyarwanda *kwimura abantu kubera inyungu rusange*). The Expropriation Law's timeline is short and date-driven:
 
 - the decision is announced on radio and in a newspaper, and the list of right holders is posted at the City of Kigali, District, Sector and Cell offices (art. 16);
 - after publication, "the land owner shall not develop any other long-term activities on the land. Otherwise, such activities shall not be compensable" (art. 17), a long-term activity being one "likely to remain there for more than one hundred and twenty (120) days" (art. 2);

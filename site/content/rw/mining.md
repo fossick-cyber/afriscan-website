@@ -44,7 +44,7 @@ cta:
 ::::section{id="problem" eyebrow="The problem, in your words" title="Small licence blocks, busy ground"}
 :::cards{cols="2"}
 :::card{title="“New pits keep opening near our block.”" icon="excavation"}
-RMB's investment prospectus (October 2025) presents a portfolio of tantalum, tin, lithium, gold, gemstones, industrial minerals and beryllium, and notes that "artisanal mining still exists in Rwanda" while the sector moves towards "professionalization and industrialization". Excavations just outside a licence area are where questions start, and a dated map is where the answers begin.
+RMB's investment prospectus (October 2025) presents a portfolio of tantalum, tin, lithium, gold, gemstones, industrial minerals and beryllium, and notes that "artisanal mining still exists in Rwanda" while the sector moves towards "professionalization and industrialization", and it lists tungsten refining, lithium processing and beryl beneficiation among the value-addition opportunities. Excavations just outside a licence area are where questions start, and a dated map is where the answers begin.
 :::
 :::card{title="“RMB wants the rivers and wetlands kept clear.”" icon="water"}
 RMB's 2026 environmental and social guidelines say "Mining is not permitted within 20 meters of wetlands, 10 meters of main rivers, and 5 meters from the banks of smaller rivers". A dated map shows where the ground inside those distances has changed.
@@ -53,7 +53,7 @@ RMB's 2026 environmental and social guidelines say "Mining is not permitted with
 Reclamation, re-vegetation, mine closure and rehabilitation are named among the essential services in RMB's 2019 service regulations, and RMB's 2026 guidelines point to "remote sensing for deforestation monitoring". Evidence is needed between dates, not only at closure.
 :::
 :::card{title="“Our tailings need watching.”" icon="layers"}
-The guidelines describe satellite imagery and aerial surveys as tools for following land-use change around tailings facilities over time, with routine inspections "supplemented by drone surveys". An RMB and GIZ project note adds that low use of modern technology leaves "a big percentage of minerals unrecovered in tailings".
+The guidelines describe satellite imagery and aerial surveys as tools for following land-use change around tailings facilities over time, with routine inspections "supplemented by drone surveys". An RMB project note on the sector adds that low use of modern technology leaves "a big percentage of minerals unrecovered in tailings".
 :::
 :::
 
@@ -69,8 +69,8 @@ The guidelines describe satellite imagery and aerial surveys as tools for follow
 :::
 ::::
 
-::::section{id="law" tone="alt" eyebrow="The law" title="What Law n° 072/2024 sets for the land"}
-[Law n° 072/2024 of 26/06/2024 on mining and quarry operations](https://www.rmb.gov.rw/fileadmin/user_upload/RMB/Publications/Laws/Law_n___0722024of_26062024_on_mining_and_quarry_operations.pdf) (*loi portant exploitation des mines et carrières*; Kinyarwanda *itegeko rigenga ubucukuzi bw'amabuye y'agaciro na kariyeri*) repealed Law n° 58/2018; licences granted under the old law stay valid until they expire (arts. 75, 77).
+::::section{id="law" tone="alt" eyebrow="The law" title="What Law n° 072/2024 sets for the land" lead="A summary of the public rules, last reviewed 27 September 2026, for orientation. It is not legal advice; the sources are linked."}
+[Law n° 072/2024 of 26/06/2024 on mining and quarry operations](https://www.rmb.gov.rw/fileadmin/user_upload/RMB/Publications/Laws/Law_n___0722024of_26062024_on_mining_and_quarry_operations.pdf) (*loi portant exploitation des mines et carrières*; Kinyarwanda *itegeko rigenga ubucukuzi bw'amabuye y'agaciro na kariyeri*) repealed Law n° 58/2018; licences granted under the old law stay valid until they expire (arts. 75, 77). Its licence types are exploration, small-, medium- and large-scale mining, mineral trading and mineral processing (art. 7), and a mining licence is an *uruhushya rw'ubucukuzi bw'amabuye y'agaciro*.
 
 :::facts{cols="3"}
 - Ownership: Minerals are vested in the State "notwithstanding personal ownership of land" (art. 3)

@@ -78,7 +78,7 @@ RCAA permission for restricted sites such as high-tension cables and masts, ATC 
 | **Local police and local authorities** | Shown the activity permit before the flight | [RCAA FAQs](https://www.caa.gov.rw/faqs) |
 | **NCSA**, through its Data Protection and Privacy Office | Registration of data controllers and processors, and authorisations to transfer or store personal data outside Rwanda | [Law n° 058/2021](https://rwandalii.org/akn/rw/act/law/2021/58/eng@2021-10-15); [DPO](https://dpo.gov.rw/) |
 
-Part 27 covers "basic and specific" operations and, "unless otherwise exempted", does not apply to international operations of drones (27.001(c)). Part 27 has been re-issued twice as special regulations of the Director General: RSR/01/2024 of 15 November 2024, and the current RSR/01/2026 of 15 February 2026, which added Subpart I on BVLOS area approvals. RCAA's service pages still point to its [advisory circular RCAA-AC-UAS-21-001](https://www.caa.gov.rw/fileadmin/user_upload/RCAA/Laws___Regulations/Advisory_Circulars/unmanned_aircraft_system__uas__advisory_circular_in_compliance_with_part_27.pdf), which predates both and adds document lists this guide cites where they apply.
+Part 27 covers "basic and specific" operations and, "unless otherwise exempted", does not apply to international operations of drones (27.001(c)). Part 27 has been re-issued twice as special regulations of the Director General: RSR/01/2024 of 15 November 2024, and the current RSR/01/2026 of 15 February 2026, which added Subpart I on BVLOS area approvals. RCAA's service pages still point to its [advisory circular RCAA-AC-UAS-21-001](https://www.caa.gov.rw/fileadmin/user_upload/RCAA/Laws___Regulations/Advisory_Circulars/unmanned_aircraft_system__uas__advisory_circular_in_compliance_with_part_27.pdf), which predates both and adds document lists this guide cites where they apply. Rwandan laws are published in Kinyarwanda, English and French; in Kinyarwanda an unmanned aircraft is an *indege itarimo umupilote*.
 ::::
 
 ::::section{id="categories" class="compare" eyebrow="The categories" title="Basic or Specific: where a survey drone fits"}
@@ -313,5 +313,5 @@ We also take extra care near the Burundi border, which Burundi closed to Rwanda 
 ::::
 :::::
 
-This guide was checked on 27 September 2026 against the text of RCAR Part 27 (RSR/01/2026), the 2024 Official Gazette (Law n° 059/2024), Law n° 20/2018, RCAA's advisory circular, service pages and FAQs, Rwanda Airports Company's list of airports, and UK, US and Canadian travel advice. For the rules in the other countries we cover, see the [drone-law overview](/drone-regulations).
+Last reviewed 27 September 2026. This guide was checked against the text of RCAR Part 27 (RSR/01/2026), the 2024 Official Gazette (Law n° 059/2024), Law n° 20/2018, RCAA's advisory circular, service pages and FAQs, Rwanda Airports Company's list of airports, and UK, US and Canadian travel advice. For the rules in the other countries we cover, see the [drone-law overview](/drone-regulations).
 ::::
