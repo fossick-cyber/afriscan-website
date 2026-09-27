@@ -50,7 +50,7 @@ na:
   name: Namibia
   region: Southern
   languages: [en]
-  status: launching
+  status: live
   timezones: [Africa/Windhoek]
 bw:
   name: Botswana

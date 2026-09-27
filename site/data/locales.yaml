@@ -253,7 +253,7 @@ na:
   label: "Namibia"
   short: "Namibia"
   sitemap: sitemap-na.xml
-  status: draft
+  status: live
   region: Southern
 bw:
   content: bw

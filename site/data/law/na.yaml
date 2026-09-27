@@ -1,0 +1,149 @@
+# Namibia: the instruments behind /na/drone-regulations.
+# Facts ONLY from regional/na.FINAL.md (na.verified.md has the same content; checked 2026-09-27 against
+# the NCAA texts, the AIP and the LAC statute copies). Items the brief marks [unverified] or [counsel]
+# stay out as facts: whether new RPAS regulations are due, whether NCAA applies Part 114 to every RPA
+# crew, whether the Air Services Act licence applies to drone survey work, how drones are registered,
+# whether a Diamond Act permit covers overflight. Those are stated on the page as open questions.
+# No fee, fine or penalty amount appears here or on the page (owner rule 1): link to the gazette.
+# Government Gazette 6763 (GN 293 of 2018: Part 185 substituted, Part 114 inserted) has no public link
+# in the brief, so the page cites it in the text and links NCAA's regulations index, which lists it.
+country_name: Namibia
+last_reviewed: 2026-09-27
+regulator:
+  name: Namibia Civil Aviation Authority (NCAA)
+  url: https://www.ncaa.com.na/
+summary:
+  regulator: Namibia Civil Aviation Authority (NCAA), with ANSSO for airspace approvals
+  instruments: NAMCAR Part 101 (substituted by GN 89 of 2020); NCAA Aviation Directives 1/2/3-6 (RPAS Letter of Approval and Operator Certificate) and 1/2/4-1 (remote pilot certificates); Civil Aviation Act 6 of 2016
+instruments:
+  - id: gg-7157
+    title: Namibian Civil Aviation Regulations, Part 101 substituted (unmanned aircraft, including RPA)
+    identifier: GN 89 of 2020, Government Gazette 7157
+    date: 2020-03-27
+    url: https://www.ncaa.com.na/publications/legislations/Gazettes/Government%20Gazette%207157.pdf
+    last_checked: 2026-09-27
+    note: Categories (101.02.1), the approval and its contents (101.03), operating limits (101.05.2), consent rules (101.05.4(4)), insurance (101.06.2).
+  - id: namcar-101
+    title: NAMCAR Part 101 (NCAA copy)
+    identifier: NAMCAR Part 101, headed GG 7157
+    date: 2020-03-27
+    url: https://www.ncaa.com.na/publications/legislations/NAMCARS/NAMCAR%20Part%20101.pdf
+    last_checked: 2026-09-27
+  - id: ad-1-2-3-6
+    title: "NCAA Aviation Directive 1/2/3-6 Rev 1: RPAS Approval and Certification Requirements in terms of NAMCAR Part 101"
+    identifier: AD 1/2/3-6 Rev 1
+    date: 2021-10-30
+    url: https://www.ncaa.com.na/directives.php?pagetitle=Directives&dir=Flight+Operations++Directives&download=Aviation+Directive+1-2-3-6+Rev+1+RPAS+Approval.pdf
+    last_checked: 2026-09-27
+    note: The RPAS Letter of Approval for Namibian or foreign operators, and the RPAS Operator Certificate for BVLOS and cargo, for Namibian persons only (5.4, 5.5).
+  - id: ad-1-2-4-1
+    title: "NCAA Aviation Directive 1/2/4-1 Rev 1: Issuing of Remotely Piloted Aircraft System (RPAS) Certificate"
+    identifier: AD 1/2/4-1 Rev 1
+    date: 2024-03-01
+    url: https://www.ncaa.com.na/directives.php?pagetitle=Directives&dir=Personnel+Licensing+Directives&download=AVIATION+DRECTIVE+RPAS+CERTIFICATES+%28New%29.pdf
+    last_checked: 2026-09-27
+    note: Remote pilot certificates, their ratings, validity and the validation of foreign certificates.
+  - id: ncaa-rpas-instructions
+    title: NCAA RPAS Instructions
+    identifier: Instructions letter, June 2021
+    date: 2021
+    url: https://www.ncaa.com.na/publications/forms-applications/flight-operations/0.%20NCAA%20RPAS%20Instructions%20June%202021.pdf
+    last_checked: 2026-09-27
+    note: Lead times, insurance, landowner permission and the CAUA, MEFT and NFC letters.
+  - id: form-081
+    title: NCAA RPA Application Form
+    identifier: FSS-GEN-FORM 081 Rev 2
+    date: 2020-12-21
+    url: https://www.ncaa.com.na/publications/forms-applications/flight-operations/2.%20FSS-GEN-FORM%20081%20RPA%20Application%20Form%20Rev%202.pdf
+    last_checked: 2026-09-27
+  - id: form-177
+    title: NCAA RPAS Submission Checklist
+    identifier: FSS-OPS-FORM 177, December 2020
+    date: 2020
+    url: https://www.ncaa.com.na/publications/forms-applications/flight-operations/5.%20FSS-OPS-FORM%20177%20RPAS%20Submission%20Checklist.pdf
+    last_checked: 2026-09-27
+  - id: namcar-47
+    title: NAMCAR Part 47 (aircraft registration)
+    identifier: Government Gazette 7348
+    date: 2020-09-30
+    url: https://www.ncaa.com.na/publications/legislations/NAMCARS/NAMCAR%20Part%2047.pdf
+    last_checked: 2026-09-27
+    note: States that it does not apply to remotely piloted aircraft, although AD 1/2/3-6 asks for registration under it.
+  - id: gg-8890
+    title: NAMCAR Part 187 (charges), as replaced in 2026
+    identifier: GN 135 of 2026, Government Gazette 8890
+    date: 2026-04-16
+    url: https://www.ncaa.com.na/publications/legislations/NAMCARS/GRN%20Gazette%208890%20Part%20187%20%2016%20April%202026.pdf
+    last_checked: 2026-09-27
+  - id: ncaa-index
+    title: NCAA NAMCARs–NAMCATS index
+    identifier: Index of 1 October 2024 (lists GN 293 of 2018, GG 6763, for Parts 114 and 185)
+    date: 2024-10-01
+    url: https://www.ncaa.com.na/publications/SYSDocs/NAMCARs-NAMCATS%20Index%2020241001.xlsx
+    last_checked: 2026-09-27
+  - id: aip-enr
+    title: AIP Namibia, Enroute (ENR 1.1 §12, ENR 5.1, ENR 5.2)
+    identifier: ENR 5.1 page of 9 July 2026 (AIRAC A02/2026)
+    date: 2026-07-09
+    url: https://www.ncaa.com.na/publications/aeronautical-information/aeronautical-information-publication/aips/Enroute.pdf
+    last_checked: 2026-09-27
+    note: RPA limits (ENR 1.1 §12), prohibited and restricted areas (ENR 5.1), military areas (ENR 5.2).
+  - id: caa-2016
+    title: Civil Aviation Act 6 of 2016
+    identifier: Government Gazette 6047
+    date: 2016-06-24
+    url: https://www.ncaa.com.na/publications/legislations/Acts/Civil%20Aviation%20Act,%202016.pdf
+    last_checked: 2026-09-27
+    note: Penalties (s.54(2)(c)) and security background checks (s.134).
+  - id: asa-1949
+    title: Air Services Act 51 of 1949 (NCAA annotated copy)
+    identifier: Act 51 of 1949
+    date: 1949
+    url: https://www.ncaa.com.na/publications/legislations/Acts/Air%20Services%20Act%2051%20of%201949.pdf
+    last_checked: 2026-09-27
+    note: Licences for "any service performed by means of an aircraft for reward" (ss.1–2); whether they apply to drone survey work is an open question.
+  - id: ncaa-drone-article
+    title: NCAA article on drones
+    identifier: NCAA website, fullarticle 83
+    date: 2024-07-12
+    url: https://www.ncaa.com.na/fullarticle.php?for=83
+    last_checked: 2026-09-27
+  - id: diamond-act
+    title: Diamond Act 13 of 1999 (LAC annotated text)
+    identifier: Act 13 of 1999, ss.27(k), 52
+    date: 1999
+    url: https://www.lac.org.na/laws/annoSTAT/Diamond%20Act%2013%20of%201999.pdf
+    last_checked: 2026-09-27
+    note: Restricted areas and the Minister's permits to enter or be in them.
+  - id: poia-1982
+    title: Protection of Information Act 84 of 1982 (LAC annotated text)
+    identifier: Act 84 of 1982, ss.1–2
+    date: 1982
+    url: https://www.lac.org.na/laws/annoSTAT/Protection%20of%20Information%20Act%2084%20of%201982.pdf
+    last_checked: 2026-09-27
+    note: Prohibited places.
+  - id: nco-1975
+    title: Nature Conservation Ordinance 4 of 1975 (LAC annotated text)
+    identifier: Ordinance 4 of 1975, s.43
+    date: 1975
+    url: https://www.lac.org.na/laws/annoSTAT/Nature%20Conservation%20Ordinance%204%20of%201975.pdf
+    last_checked: 2026-09-27
+  - id: comms-2009
+    title: Communications Act 8 of 2009 (LAC annotated text)
+    identifier: Act 8 of 2009, s.80
+    date: 2009
+    url: https://www.lac.org.na/laws/annoSTAT/Communications%20Act%208%20of%202009.pdf
+    last_checked: 2026-09-27
+    note: Type approval of radio equipment by CRAN.
+  - id: surveyors-act
+    title: Professional Land Surveyors', Technical Surveyors' and Survey Technicians' Act 32 of 1993 (LAC annotated text)
+    identifier: Act 32 of 1993
+    date: 1993
+    url: https://www.lac.org.na/laws/annoSTAT/Professional%20Land%20Surveyors'%20Technical%20Surveyors'%20and%20Survey%20Technicians'%20Act%2032%20of%201993.pdf
+    last_checked: 2026-09-27
+  - id: land-survey-act
+    title: Land Survey Act 33 of 1993 (LAC annotated text)
+    identifier: Act 33 of 1993, ss.35–36
+    date: 1993
+    url: https://www.lac.org.na/laws/annoSTAT/Land%20Survey%20Act%2033%20of%201993.pdf
+    last_checked: 2026-09-27
