@@ -17,7 +17,7 @@ owner_decision: 2026-09-26
 counsel_required:
   - /mz/pt/zona-de-proteccao-parcial-50-metros
   - /mz/pt/fornecedor
-  # Tanzania's land-law guide is an article, not template: law, but states law just the same
+  # Tanzania: the wayleave-law guide is an article rather than a law page, but it states the law, so counsel reviews it too
   - /tz/wayleave-law
 
 pending:

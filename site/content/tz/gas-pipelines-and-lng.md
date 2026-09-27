@@ -13,7 +13,7 @@ nav_blurb: Upstream safety zones, gas-line wayleaves and a coastal LNG site
 summary: Structures inside the wayleaves of high-pressure gas lines, the safety zones PURA sets around upstream wells and plants, and settlement change around a coastal LNG site since compensation.
 icon: layers
 eyebrow: Oil & gas · Tanzania · Natural gas
-lead: Tanzania's natural gas is processed in the south and carried by a high-pressure pipeline of about 551 km. Along that chain the land rules change. Upstream wells and processing plants sit inside safety zones that PURA determines; transmission lines sit inside wayleaves the licensee acquires; and the site for a planned LNG plant on the southern coast was compensated years before any investment decision. We map what stands in each, and what has changed, from dated imagery reviewed by a person.
+lead: Tanzania's natural gas is processed in the south and carried by a high-pressure pipeline of about 551 km. Along that chain the land rules change. Upstream facilities, such as wells and upstream processing, sit inside safety zones whose extent PURA determines; transmission lines sit inside wayleaves the licensee acquires; and the site for a planned LNG plant on the southern coast was compensated years before any investment decision. We map what stands in each, and what has changed, from dated imagery reviewed by a person.
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: See sample outputs, key: results}
@@ -48,8 +48,8 @@ cta:
 
 ::::section{id="chain" eyebrow="The gas chain, on the ground" title="Three kinds of land, three sets of rules" lead="Natural gas in Tanzania moves from upstream fields through processing plants and high-pressure lines to users, and each stage sits on land protected in a different way."}
 :::cards{cols="3"}
-:::card{title="Wells and processing plants" icon="target" eyebrow="Upstream · PURA"}
-The Petroleum Act puts "a safety zone surrounding every facility used for carrying out petroleum activities, unless otherwise determined by PURA", and "a person shall not carry unauthorised activity in the safety zones" (s.203(5)). The zones sit in the Part on upstream operations.
+:::card{title="Wells and upstream processing" icon="target" eyebrow="Upstream · PURA"}
+The Petroleum Act puts "a safety zone surrounding every facility used for carrying out petroleum activities, unless otherwise determined by PURA", and "a person shall not carry unauthorised activity in the safety zones" (s.203(5)). The zones sit in the Part on upstream operations, so they surround upstream facilities such as wells and upstream processing.
 :::
 :::card{title="High-pressure transmission lines" icon="pipeline" eyebrow="Midstream · EWURA"}
 A licensee secures rights of way for gas pipelines, subject to the Gas Utilisation Master Plan and in consultation with EWURA (s.185), and acquires wayleaves around existing and future gas infrastructure that owners on or bordering them must not interfere with (s.186).
@@ -62,7 +62,7 @@ The site for a planned LNG plant on the southern coast was selected in 2013, and
 Two regulators divide the work. PURA regulates and monitors the petroleum upstream subsector for Mainland Tanzania (Petroleum Act, s.11), and EWURA has "regulatory powers in respect to midstream and downstream petroleum and natural gas activities" (s.29(1)). Altering, removing or connecting to a pipeline or gas installation without the licensee's consent is an offence at every stage (s.240).
 ::::
 
-::::section{id="upstream" tone="alt" eyebrow="Upstream" title="Structures inside the safety zones around wells and plants"}
+::::section{id="upstream" tone="alt" eyebrow="Upstream" title="Structures inside the safety zones around wells and upstream plants"}
 :::::columns{split="2-1"}
 ::::col
 PURA determines the extent of each safety zone, and the Act forbids unauthorised activity inside it. The operator's land and HSE teams then need to know what stands in the zone and when it appeared. We draw the zone from the facility footprints and the distances in PURA's determination or your own licence conditions, and list each structure inside it with its distance to the facility, then compare between dated surveys.
@@ -106,9 +106,9 @@ The encroachment-density strip of our published sample, a high-pressure gas pipe
 
 **Settlement change around the site.** Year-by-year trends in built-up land around the site boundary, access routes and nearby villages show where settlement pressure is growing. A structure register on a current dated scene gives the count.
 
-**A fresh baseline for an investment decision.** A decision to invest would bring a lenders' environmental and social review, with a question the imagery can answer: what stands on and around the site now, compared with the compensation record. A dated register on the day it is needed supports that review; it does not replace the census or the valuation.
+**A fresh baseline for an investment decision.** If an investment decision brings a lenders' environmental and social review, one of its questions is one the imagery can answer: what stands on and around the site now, compared with the compensation record. A dated register on the day it is needed supports that review; it does not replace the census or the valuation.
 
-**Corridors to the site.** Access roads, a port and pipeline corridors need route options. Structure counts along each alternative let the land impact be weighed before a route is fixed.
+**Corridors to the site.** If the project goes ahead, access roads and pipeline corridors to the site will need route options. Structure counts along each alternative let the land impact be weighed before a route is fixed.
 ::::
 ::::col
 ### Coastal land {#coastal-land}

@@ -61,6 +61,19 @@ An [amendment to the Civil Aviation (Security) Regulations, 2018](https://www.tc
 :::
 :::
 
+### The numbers that shape a drone job {#numbers}
+
+:::facts{cols="4"}
+- ROC application: at least 60 days before the operation (reg 46(5))
+- ROC validity: 12 months, then a fresh application (reg 48)
+- Category B risk assessment: at least 14 days ahead, for each operation (reg 6)
+- Height: at or below 400 ft above ground level (reg 30)
+- Separation: 50 m from people and structures not under the operator's control (reg 30)
+- Aerodromes: 10 km (code C–F) or 7 km (code A–B) need written permissions (reg 42)
+- Remote pilots: 18 or older, with a Class 3 medical (regs 55–57)
+- Background checks: every 24 months for everyone handling drones (reg 84)
+:::
+
 **The regulator's own pages lag the text.** On 27 September 2026, TCAA's [RPAS Regulations page](https://www.tcaa.go.tz/publications/rpas-regulations) still listed only the 2018 instruments, and its [drone permit procedures](https://www.tcaa.go.tz/pages/drones) and [FAQ](https://www.tcaa.go.tz/faqs) still described the 2018-era process. Where this guide cites them, it says so. The new regulations are nine days old at the date of this review, so expect practice to settle over the coming months.
 ::::
 
@@ -237,9 +250,9 @@ A pipeline or power-line wayleave that runs past homes, shops and farm buildings
 >
 > "(2) The RPAS pilot or the owner shall seek permission or notify the appropriate authorities, as well as people around the area before starting the operations."
 
-**Privacy** (reg 87). Cameras must be operated "in a responsible way to respect the privacy of others". Under reg 87 no one may use a drone to “conduct surveillance of” a person without that person's consent, or of private real property without the owner's consent, and no one may photograph or film an individual without consent to publish or publicly disseminate the images, except for newsgathering or events open to the public.
+**Privacy** (reg 87). Cameras must be operated "in a responsible way to respect the privacy of others". Reg 87 also bars using a drone to keep watch on a person without that person's consent, or on private real property without its owner's consent, and bars photographing or filming an individual without consent in order to publish or publicly disseminate the images, except for newsgathering or events open to the public.
 
-Whether a corridor mapping flight over private plots falls within reg 87's rule on private property is a question for counsel. Until it is settled, plan on the owner's written consent for each plot flown.
+Whether a corridor mapping flight over private plots falls within reg 87's rule on private real property is a question for counsel. Until it is settled, plan on the owner's written consent for each plot flown.
 
 **The 2018 security regulations.** GN 261 of 2026 deletes subregulation (6) of regulation 14 of the [Civil Aviation (Security) Regulations, 2018](https://www.tcaa.go.tz/uploads/documents/en-1789477709-GP%20GN%20756%20of%202018%20CIVIL%20AVIATION%20(SECURITY)%20REGULATIONS,%202018.pdf), the regulation on aircraft operator security programmes. Read the amendment against the consolidated 2018 text and confirm its effect with TCAA.
 ::::

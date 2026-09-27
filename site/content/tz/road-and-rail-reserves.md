@@ -87,7 +87,7 @@ Both reserves run 30 m either side of the centre line: the road reserve under th
 ::::col
 **Roads.** In a 2022 case, as summarised on TanzLII, the High Court held a demolition within the statutory road reserve lawful, and held that title documents and permits did not displace the reserve ([2022] TZHCLandD 282). On that summary, the statutory reserve prevailed over the paperwork.
 
-**Railways.** A 2023 High Court decision that occupants within the railway reserve were trespassers, not entitled to compensation, is under appeal (Civil Appeal No. 61 of 2024). In 2021 the Court of Appeal held that the land-allocating authority must be joined where the validity of a title and its inclusion in the railway reserve are in issue ([2021] TZCA 198). Neither settles the compensation question.
+**Railways.** A 2023 High Court decision that occupants within the railway reserve were not entitled to compensation is under appeal (Civil Appeal No. 61 of 2024). In 2021 the Court of Appeal held that the land-allocating authority must be joined where the validity of a title and its inclusion in the railway reserve are in issue ([2021] TZCA 198). Neither settles the compensation question.
 ::::
 ::::col
 **What survives both.** Whether a plot was inside the reserve when it was granted, and when a structure went up, are evidential questions. Archive satellite imagery, where it exists, shows roughly when a structure first appears; a register on a dated scene shows exactly what stood inside the reserve bands on that date.
