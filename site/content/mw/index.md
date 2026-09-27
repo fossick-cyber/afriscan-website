@@ -146,7 +146,7 @@ Dated structure layers for RAP and ESIA teams, lenders and their supervisors, fr
 :::card{title="Routes for new lines and roads" icon="compare" key="route-site-selection"}
 Structure counts along each alignment option, before the route is fixed and the census starts.
 :::
-:::card{title="Routes into Mozambique" icon="route" href="#baselines"}
+:::card{title="Routes into Mozambique" icon="route" href="#mozambique"}
 Lines and roads that cross the border, covered on both sides, with the widths that apply in each country.
 :::
 :::
