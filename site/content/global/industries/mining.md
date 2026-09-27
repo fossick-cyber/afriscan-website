@@ -157,7 +157,7 @@ We do not model dam breaks, blasts or floods, and we make no dam-safety conforma
 ::::section{id="mineral-sands" eyebrow="Mineral-sands mines" title="A mine path that moves: baselines ahead of it, rehabilitation behind it" lead="A mineral-sands operation advances across its deposit, so the footprint that matters changes every year. The land ahead of the mine path needs a dated record before it is mined, and the land behind it needs evidence of rehabilitation."}
 :::::columns{split="2-1"}
 ::::col
-Dredge and dry mining move through a deposit along a planned mine path, and an expansion or a move into a new ore zone brings new land into the footprint, often land with homesteads, fields and outbuildings on it. Each block ahead of the path has its own cut-off date and its own census.
+Dredge and dry mining move through a deposit along a planned mine path, and an expansion or a move into a new ore zone brings new land into the footprint, often land with homesteads, fields and outbuildings on it. Each block ahead of the path can then need its own cut-off date and its own census.
 
 We produce a dated register of the structures in each block ahead of the mine path, with coordinates, stable IDs and reviewer categories such as main building, outbuilding, livestock enclosure or under construction, and estimated households with the assumptions stated, so your resettlement team can plan the census and consultation block by block. The register supports your census and asset inventory under IFC Performance Standard 5; it does not replace them. After each block's cut-off date, re-surveys flag new structures, confirmed by a reviewer, and an evidence pack fixes each block's record.
 

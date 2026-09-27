@@ -6,7 +6,7 @@ description: Fresh digging, pits, spoil heaps, trenches and new tracks near your
 h1: Excavations, pits and ground disturbance, mapped between dates
 eyebrow: Protect corridors and sites
 lead: Third-party works near a pipeline or cable, and surface excavations on a mining right, usually show at the surface before anyone reports them. We map fresh digging, pits, spoil heaps, trenches, water-filled excavations and new tracks between dated surveys, and flag each one so your field teams know where to check. We describe the ground, never the people.
-used_in: [oil-gas, mining, telecom-fibre]
+used_in: [oil-gas, mining, telecom-fibre, rail-roads]
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: How change is checked, key: methodology, anchor: "#change"}

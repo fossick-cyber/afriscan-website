@@ -80,11 +80,11 @@ Lenders, independent monitors and ESIA or RAP teams ask what stood in the projec
 :::
 ::::
 
-::::section{id="countries" tone="alt" eyebrow="Local law, local language" title="The same industries, country by country" lead="Every industry page explains the protection strips, servitude widths, regulators and drone rules that apply in Mozambique, South Africa and Nigeria, with the sources linked. Reports for Mozambique can be delivered in Portuguese."}
+::::section{id="countries" tone="alt" eyebrow="Local law, local language" title="The same industries, country by country" lead="Every industry page summarises the protection strips, servitude widths, regulators and drone rules that shape the survey, with the sources linked, and our country sites across Africa set out the local rules in local terms. Reports for Mozambique can be delivered in Portuguese."}
 :::country-sites
 :::
 
-The rules summarised on [where we work](/countries) are the same ones our registers are measured against: Mozambique's 50 m partial protection zone along pipelines and power lines, servitudes registered in South Africa, and rights of way set by the Oil Pipelines Act and the NESIS Regulations in Nigeria.
+The rules summarised on [where we work](/countries) are the same ones our registers are measured against, for example Mozambique's 50 m partial protection zone along pipelines and power lines, servitudes registered in South Africa, and rights of way set by the Oil Pipelines Act and the NESIS Regulations in Nigeria.
 ::::
 
 ::::section{id="principles" tone="dark" eyebrow="Across every industry" title="What stays the same"}

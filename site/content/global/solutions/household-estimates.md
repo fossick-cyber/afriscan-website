@@ -121,5 +121,5 @@ Public agencies and development partners planning services, energy access and ce
 :::
 :::
 
-Also used by oil and gas and rail projects planning community engagement along new routes, and by estates planning services for surrounding villages.
+Also used by oil and gas and rail projects planning community engagement along new routes, by mining teams planning the census [block by block ahead of a mine path](key:mining#mineral-sands), and by estates planning services for surrounding villages.
 ::::

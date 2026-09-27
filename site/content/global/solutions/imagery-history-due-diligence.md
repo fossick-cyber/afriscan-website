@@ -125,5 +125,5 @@ Estates, plantations and supply-chain teams documenting plot histories, clearing
 :::
 :::
 
-Also used for onshore oil and gas asset handovers, mining acquisitions and public land transfers.
+Also used before [pipeline rehabilitation and replacement](key:oil-gas#cross-border-lines), to show roughly when the land along an old line changed, and for onshore oil and gas asset handovers, mining acquisitions and public land transfers.
 ::::

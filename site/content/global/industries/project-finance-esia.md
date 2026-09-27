@@ -177,11 +177,11 @@ Remote evidence complements site visits. It helps the monitor decide where to go
 ::::col
 IFC Performance Standard 1 asks the client to "establish procedures to monitor and measure the effectiveness of the management program, as well as compliance with any related legal and/or contractual obligations and regulatory requirements", and, for projects with significant impacts, to "retain external experts to verify its monitoring information" ([PS1, para. 22](https://www.ifc.org/content/dam/ifc/doc/2010/2012-ifc-performance-standard-1-en.pdf)). Performance Standard 5 asks for the same of resettlement: procedures to monitor and evaluate the Resettlement Action Plan, and competent resettlement professionals to verify the monitoring information where resettlement risks are significant ([PS5, para. 14](https://www.ifc.org/content/dam/ifc/doc/2010/2012-ifc-performance-standard-5-en.pdf)).
 
-Land is the hardest part of that evidence to gather between visits. For each monitoring period, on the reporting cycle in your action plan or monitoring plan as far as new imagery allows, we supply the dated land record that the report and the verification can draw on, as set out in the table below.
+Land change is one of the harder parts of that evidence to gather between visits. For each monitoring period, on the reporting cycle in your action plan or monitoring plan as far as new imagery allows, we supply the dated land record that the report and the verification can draw on, as set out in the table below.
 ::::
 ::::col
 :::callout{tone="scope" title="Evidence for the report, not a verdict"}
-The borrower or its consultants commission the work and decide what to share. Independent E&S consultants and lenders' monitors can use the same layers in their review. The records support monitoring and verification; they do not verify compliance, certify anything or replace the site visits a monitoring plan requires.
+A borrower, its consultants, an independent E&S consultant or a lender's adviser can commission the work, and results go only to the contacts named in the proposal, who can all review the same layers. The records support monitoring and verification; they do not verify compliance, certify anything or replace the site visits a monitoring plan requires.
 :::
 ::::
 :::::
@@ -189,7 +189,7 @@ The borrower or its consultants commission the work and decide what to share. In
 | What the monitoring report has to show | What we supply |
 |---|---|
 | Whether structures have appeared in the footprint since the cut-off date | A re-survey against the cut-off register, with new structures flagged and confirmed by a reviewer |
-| Whether construction stayed inside the approved footprint | Clearing and construction footprints compared between dates, and structures and activity inside the no-go buffers you define |
+| Whether construction stayed inside the approved footprint | Clearing and construction footprints compared between dates, and structures, clearing and earthworks inside the no-go buffers you define |
 | Progress of rehabilitation and revegetation | Vegetation cover on rehabilitated areas, tracked between dates |
 | Progress at resettlement sites | Dated drone orthophotos, subject to approvals, or dated satellite scenes of each site |
 | Settlement growth around the project | Built-up land trends around the footprint, camps and access roads |

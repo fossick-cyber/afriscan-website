@@ -158,5 +158,5 @@ Wayleave and patrol teams on buried fibre routes: new structures on the wayleave
 :::
 :::
 
-Also used by project finance and ESIA teams monitoring a financed corridor, and by renewables developers along their connection lines.
+Also used by project finance and ESIA teams monitoring [a financed corridor](key:project-finance-esia#financed-corridors), and by renewables developers along their connection lines.
 ::::
