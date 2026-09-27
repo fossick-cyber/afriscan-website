@@ -65,3 +65,17 @@ ng:
   label: "Nigeria"
   short: "Nigeria"
   sitemap: sitemap-ng.xml
+tz:
+  content: tz
+  prefix: /tz
+  lang: en-TZ
+  hreflang: [en-TZ]
+  og_locale: en_GB
+  i18n: en
+  country: TZ
+  country_name: Tanzania
+  label: "Tanzania"
+  short: "Tanzania"
+  sitemap: sitemap-tz.xml
+  status: live
+  region: East

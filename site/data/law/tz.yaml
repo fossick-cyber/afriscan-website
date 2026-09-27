@@ -1,0 +1,108 @@
+# Tanzania: the instruments the drone-law page (/tz/drone-regulations) relies on.
+# Facts ONLY from regional/tz.FINAL.md (verified 2026-09-27 against the TCAA gazette PDFs, the
+# Civil Aviation Act R.E. 2023, the PDPC's copy of the PDPA and TanzLII consolidations). Dates are the
+# publication dates printed on the Government Notices, or the TanzLII consolidation date; an Act or
+# Order known only by its year carries the year. TCAA's procedures, FAQ and charges pages have no
+# date of their own, so they are cited with links in the page body instead of this table.
+# Items the brief marks [unverified] stay out: a separate Ministry of Defence permit, which text
+# GN 261 of 2026 deletes, how TCAA applies the C2 frequency rules to small drones, how permits issued
+# under the 2018 rules carry over, the minimum insurance sum, the schedules of the protected-places
+# orders, and how TCAA applies ROC recognition (reg 51). No fee, fine or penalty amount appears here
+# or on the pages (owner rule 1): link to TCAA instead.
+country_name: Tanzania
+last_reviewed: 2026-09-27
+regulator:
+  name: Tanzania Civil Aviation Authority (TCAA)
+  url: https://www.tcaa.go.tz/pages/drones
+summary:
+  regulator: Tanzania Civil Aviation Authority (TCAA), with security clearance and vetting by the competent security agencies
+  instruments: Civil Aviation (Remotely Piloted Aircraft Systems) Regulations, 2026 (GN 268 of 2026, published 18 September 2026); C2 Link Regulations (GN 259 of 2026) and C2 frequencies (GN 263 of 2026)
+instruments:
+  - id: gn-268-2026
+    title: Civil Aviation (Remotely Piloted Aircraft Systems) Regulations, 2026
+    identifier: GN No. 268 of 2026 (made under s.5 of the Civil Aviation Act, Cap. 80)
+    date: 2026-09-18
+    url: "https://www.tcaa.go.tz/uploads/documents/en-1789996535-THE%20CIVIL%20AVIATION%20(REMOTELY%20PILOTED%20AIRCRAFT%20SYSTEMS)%20REGULATIONS%202026.pdf"
+    last_checked: 2026-09-27
+    note: Signed in Dodoma on 4 September 2026. Categories (regs 4–6), ownership and import (regs 7–8), registration, remote ID and geo-fencing (regs 9–13, 27), flight limits (reg 30), the RPAS Operator Certificate (regs 45–54), remote pilots (regs 55–61), security and privacy (regs 80–87), insurance (reg 113), permissions (reg 117). Revokes GN 758 of 2018 (reg 121).
+  - id: gn-259-2026
+    title: Civil Aviation (Communication Systems and Procedures Relating to Remotely Piloted Aircraft Systems C2 Link) Regulations, 2026
+    identifier: GN No. 259 of 2026
+    date: 2026-09-18
+    url: https://www.tcaa.go.tz/publications/civil-aviation-regulations
+    last_checked: 2026-09-27
+    note: Apply to RPAS operators and C2 link service providers; only radio bands allocated and protected by the ITU Radio Regulations (reg 15).
+  - id: gn-263-2026
+    title: Civil Aviation (Aeronautical Radio Frequency Spectrum Utilisation) (Amendment) Regulations, 2026
+    identifier: GN No. 263 of 2026
+    date: 2026-09-18
+    url: "https://www.tcaa.go.tz/uploads/documents/en-1789996445-THE%20CIVIL%20AVIATION%20AERONAUTICAL%20RADIO%20FREQUENCY%20SPECTRUM%20UTILIZATION%20AMENDMENT%20REGULATION%202026..pdf"
+    last_checked: 2026-09-27
+    note: Adds reg 40A and a Sixth Schedule on the frequency bands for RPAS C2 links.
+  - id: gn-261-2026
+    title: Civil Aviation (Security) (Amendment) Regulations, 2026
+    identifier: GN No. 261 of 2026
+    date: 2026-09-18
+    url: "https://www.tcaa.go.tz/uploads/documents/en-1789995800-THE%20CIVIL%20AVIATION(SECURITY)%20REGULATIONS%202026.pdf"
+    last_checked: 2026-09-27
+    note: Deletes subregulation (6) of reg 14 of the Civil Aviation (Security) Regulations, 2018. TCAA files it as "The Civil Aviation (Security) Regulations 2026".
+  - id: gn-756-2018
+    title: Civil Aviation (Security) Regulations, 2018 (TCAA consolidated copy)
+    identifier: GN No. 756 of 2018, under Cap. 80 R.E. 2023
+    date: 2018
+    url: "https://www.tcaa.go.tz/uploads/documents/en-1789477709-GP%20GN%20756%20of%202018%20CIVIL%20AVIATION%20(SECURITY)%20REGULATIONS,%202018.pdf"
+    last_checked: 2026-09-27
+    note: The security regulations under which operator security procedures are developed (GN 268 reg 80).
+  - id: gn-758-2018
+    title: Civil Aviation (Remotely Piloted Aircraft Systems) Regulations, 2018 (revoked)
+    identifier: GN No. 758 of 2018, amended by GN No. 949 of 2020 and GN No. 365 of 2023
+    date: 2018-12-14
+    url: https://www.tcaa.go.tz/publications/rpas-regulations
+    last_checked: 2026-09-27
+    note: The earlier drone rules, revoked by GN 268 of 2026 (reg 121). TCAA's RPAS Regulations page still lists only these three instruments.
+  - id: cap-80
+    title: Civil Aviation Act, Cap. 80 (Revised Edition 2023)
+    identifier: Cap. 80 R.E. 2023, s.27
+    date: 2023
+    url: "https://www.tcaa.go.tz/uploads/documents/en-1781196655-THE%20CIVIL%20AVIATION%20ACT%20RE%202023.pdf"
+    last_checked: 2026-09-27
+    note: 'Section 27(1): an unmanned aircraft "shall not be flown over the territory of the United Republic without a special authorisation by the Authority".'
+  - id: cap-47
+    title: National Security Act, Cap. 47
+    identifier: Cap. 47, s.3 (TanzLII consolidation)
+    date: 2023-12-31
+    url: https://tanzlii.org/en/akn/tz/act/1970/3/eng@2023-12-31
+    last_checked: 2026-09-27
+    note: Approaching, inspecting, passing over or making "any sketch, plan, model or note" of a protected place for a purpose prejudicial to the safety or interests of the United Republic (s.3).
+  - id: cap-74
+    title: Protected Places and Areas Act, Cap. 74
+    identifier: Act No. 38 of 1969
+    date: 1969
+    url: https://tanzlii.org/en/akn/tz/act/1969/38/eng@2002-07-31
+    last_checked: 2026-09-27
+  - id: gn-289-1970
+    title: Protected Places and Areas (Protected Places) Order, 1970
+    identifier: GN No. 289 of 1970
+    date: 1970
+    url: https://tanzlii.org/en/akn/tz/act/gn/1970/289/eng@2002-07-31
+    last_checked: 2026-09-27
+  - id: gn-176-1983
+    title: Protected Places and Areas (Protected Areas) Order, 1983
+    identifier: GN No. 176 of 1983
+    date: 1983
+    url: https://tanzlii.org/en/akn/tz/act/gn/1983/176/eng@2002-07-31
+    last_checked: 2026-09-27
+  - id: cap-306
+    title: Electronic and Postal Communications Act, Cap. 306
+    identifier: Cap. 306, s.83 (TanzLII consolidation)
+    date: 2023-12-31
+    url: https://tanzlii.org/en/akn/tz/act/2010/3/eng@2023-12-31
+    last_checked: 2026-09-27
+    note: Type approval of communications equipment, which GN 268 reg 20(3) applies to C2 radio equipment.
+  - id: pdpa
+    title: Personal Data Protection Act, Cap. 44
+    identifier: English version, GN No. 395B
+    date: 2023-06-13
+    url: https://pdpc.go.tz/documents/3/PERSONAL_DATA_PROTECTION_ACT_2022.pdf
+    last_checked: 2026-09-27
+    note: Registration before collecting or processing personal data (s.14), security (s.27), transfers outside Tanzania (ss.31–32).
