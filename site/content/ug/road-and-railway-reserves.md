@@ -121,12 +121,12 @@ For each structure that matters, we look back through dated archive imagery and 
 :::
 ::::
 
-::::section{id="railways" tone="alt" eyebrow="Railway corridors" title="A new standard-gauge line, and the older network"}
+::::section{id="railways" tone="alt" eyebrow="Railway corridors" title="A new standard-gauge line, and the existing network"}
 :::::columns{split="1-1"}
 ::::col
-Land for a new standard-gauge railway corridor is being acquired: the project reports that "about 70% of the required railway corridor has been acquired" and that its resettlement action plan is ongoing ([progress page](https://sgr.go.ug/progress)). Over a long acquisition, a dated baseline of the corridor and scheduled re-surveys show which structures stood at the cut-off date and which have appeared since.
+Land for a new standard-gauge railway corridor is being acquired, and its resettlement action plan is under way. Over a long acquisition, a dated baseline of the corridor and scheduled re-surveys show which structures stood at the cut-off date and which have appeared since.
 
-We work from the corridor width the railway project or the lender applies. We found no published statutory railway reserve width, so send us the width your project uses.
+We work from the corridor width the railway project or the lender applies. We found no published statutory railway reserve width, so send us the width your project uses. On the existing network, the same register shows what stands on railway land and beside it, and what has changed since the last survey, measured to the reserve boundary the railway authority gives us.
 ::::
 ::::col
 :::cards{cols="1"}
@@ -181,4 +181,6 @@ A drone may not fly over or along a public road, or within 50 m of one, unless a
 :::
 ::::
 :::::
+
+More on [how it works](/features), the [methodology](/methodology), [imagery and data sources](/imagery), and [rail and roads](/industries/rail-roads) beyond Uganda.
 ::::

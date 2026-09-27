@@ -189,4 +189,6 @@ Regulation 43(2)(b) of S.I. 96 of 2022 names "high tension cables and communicat
 :::
 ::::
 :::::
+
+More on [how it works](/features), the [methodology](/methodology), [imagery and data sources](/imagery), and [power and utilities](/industries/power-utilities) beyond Uganda.
 ::::

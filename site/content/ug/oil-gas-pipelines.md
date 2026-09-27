@@ -167,7 +167,26 @@ Pump stations, processing facilities, well pads and storage sites fall under reg
 :::::
 ::::
 
-::::section{id="limits" eyebrow="Honest scope" title="What this is, and what it is not"}
+::::section{id="how" eyebrow="How it works" title="From your route file to a reviewed register"}
+:::steps
+:::step{title="Scope"}
+You send the route, the right-of-way polygon if you have one, the districts the line crosses and what the record is for: the next route survey, a lender's monitoring visit, a cut-off date or a new line. The bands, the imagery and the deliverables are agreed in a written proposal.
+:::
+:::step{title="Map from satellite"}
+Structures and ground disturbance are mapped along the whole route from dated satellite imagery, open building datasets or imagery you already hold. Nobody travels to the line and no aircraft flies.
+:::
+:::step{title="Add detail where it helps"}
+Where a stretch needs more detail than satellite imagery shows, a drone survey is flown by a Ugandan operator under its own approvals, subject to the approvals and security clearances each job requires.
+:::
+:::step{title="Review and deliver"}
+A person checks every result. Each feature is measured to the pipe and the right of way, placed in its band and dated, and the report and GIS layers go only to the contacts you name.
+:::
+:::
+
+More on [how it works](/features), the [methodology](/methodology), [imagery and data sources](/imagery), and [pipelines and oil and gas sites](/industries/oil-gas) beyond Uganda.
+::::
+
+::::section{id="limits" tone="alt" eyebrow="Honest scope" title="What this is, and what it is not"}
 :::::columns{split="1-1"}
 ::::col
 ### What it supports
@@ -195,7 +214,7 @@ Pump stations, processing facilities, well pads and storage sites fall under reg
 Onshore only: we map land along the corridor and around facilities, not open water.
 ::::
 
-::::section{id="sample" tone="alt" eyebrow="Our work" title="What a register looks like"}
+::::section{id="sample" eyebrow="Our work" title="What a register looks like"}
 :::::columns{split="1-1" align="center"}
 ::::col
 :::figure{src="samples/sample-pipeline-register-high" alt="Strip view of a 500 m pipeline stretch rated high: sixteen reviewer marks inside the area within 100 m of the stretch, two of them within 50 m of the line" caption="A stretch rated high: a high-pressure gas pipeline in Mozambique, km 5.5 to 6.0" badge="Reviewed · manual marks" size="half" credit="Our published sample is from Mozambique. Drawn by AfriScan from the sample register; no imagery."}
@@ -209,7 +228,7 @@ We have mapped structures along a high-pressure gas pipeline in Mozambique. This
 :::::
 ::::
 
-::::section{id="national-content" eyebrow="National content" title="Who delivers petroleum work in Uganda"}
+::::section{id="national-content" tone="alt" eyebrow="National content" title="Who delivers petroleum work in Uganda"}
 :::::columns{split="2-1"}
 ::::col
 The petroleum national content regulations reserve land surveying, environment studies and impact assessments, and communications and IT services for Ugandan companies, registered entities and citizens, and suppliers to the crude export pipeline must generally be registered on PAU's National Supplier Database. Where the rules reserve the work, it is delivered through a Ugandan partner or joint venture that meets them, or as a subcontractor to your appointed consultant or contractor, with our analysis, review and reporting unchanged.

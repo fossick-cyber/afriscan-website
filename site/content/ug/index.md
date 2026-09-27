@@ -2,7 +2,7 @@
 key: home
 template: country_home
 title: Wayleave & Right-of-Way Mapping in Uganda | AfriScan
-description: Structures, excavations and cleared ground in pipeline, power-line, road and rail corridors in Uganda. Dated imagery, human-checked results, GIS and PDF.
+description: "Satellite mapping of land change in pipeline, power-line, road and rail corridors in Uganda: structures, excavations and cleared ground, checked by a person."
 h1: Know what has changed inside your corridor in Uganda
 eyebrow: AfriScan · Uganda · Secure your land from the air, remotely
 lead: AfriScan maps structures, excavations, tracks, cleared ground and vegetation along pipelines, transmission lines, roads, railways and fibre routes, and inside oil, mining and industrial sites. Each result is measured against your right-of-way and wayleave widths, checked by a person, and delivered as GIS files and a PDF report. Satellite first, with no drone approvals needed to start.
@@ -37,7 +37,7 @@ faq:
     a: Every report names its imagery and, where the source gives it, the capture date of each scene, so each feature in the register carries a date. Where the archive is too old for the record you need, very-high-resolution scenes can be sourced or a new capture requested; its date depends on satellite availability and weather.
   - q: Do we need drones?
     a: Usually not. Satellite mapping covers the whole corridor and needs no drone approvals. A drone survey in Uganda needs UCAA approval, Chief of Defence Forces security clearance and a district sign-off for each job, so we keep drone work for the stretches that need centimetre detail, subject to the approvals and security clearances each job requires.
-  - q: Will you tell us which structures are illegal?
+  - q: Will you tell us which structures are unauthorised?
     a: No. We map what stands where, and when it first appeared on dated imagery. Whether a structure is authorised, compensated or eligible is for you, your land team and the authorities to decide.
   - q: Do you map people or households?
     a: No. We map structures, cleared ground, excavations and tracks, never people. People and vehicles in drone imagery are blurred, and names and ID numbers stay with your census and land teams.

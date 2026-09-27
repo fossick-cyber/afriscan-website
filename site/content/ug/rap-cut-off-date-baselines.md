@@ -168,4 +168,6 @@ Checking between site visits what has changed in the footprint and at resettleme
 :::
 ::::
 :::::
+
+More on [resettlement cut-off baselines](/solutions/resettlement-cut-off-baselines) in general, on [why the imagery date matters](/insights/dated-imagery-cut-off-dates), and on [ESIA and project-finance baselines](/industries/project-finance-esia).
 ::::

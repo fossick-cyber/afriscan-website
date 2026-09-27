@@ -374,5 +374,5 @@ We map structures, cleared ground, excavations and tracks in and around your cor
 ::::
 :::::
 
-This guide was checked on 27 September 2026 against the gazetted text of S.I. 96 of 2022, UCAA's live drone and regulations pages, advisory circular UCAA-AC-UAS001 and UCAA's requirements checklist, the Civil Aviation Authority (Amendment) Act 2019, PAU's copies of the petroleum Acts and the 2016 Midstream Regulations, and UK travel advice of 2 September 2026.
+This guide was checked on 27 September 2026 against the gazetted text of S.I. 96 of 2022, UCAA's current drone and regulations pages, advisory circular UCAA-AC-UAS001 and UCAA's requirements checklist, the Civil Aviation Authority (Amendment) Act 2019, PAU's copies of the petroleum Acts and the 2016 Midstream Regulations, and UK travel advice of 2 September 2026.
 ::::
