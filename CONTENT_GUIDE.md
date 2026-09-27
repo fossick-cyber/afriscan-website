@@ -196,6 +196,7 @@ Suggested keys and URLs. Industry and solution keys must match `data/catalogue.y
 | `mining` | `/industries/mining` | | | `/za/mining` | |
 | `project-finance-esia` | `/industries/project-finance-esia` | | | `/za/esia-baselines` | `/ng/esia-support` |
 | `rail-roads` | `/industries/rail-roads` | | | `/za/rail-and-roads` | |
+| `telecom-fibre` | `/industries/telecom-fibre` | | | | |
 | `renewables` | `/industries/renewables` | | | `/za/renewables` | |
 | `agriculture-forestry-nature`, `government` | `/industries/<key>` | | | | |
 | `right-of-way-monitoring` | `/solutions/right-of-way-monitoring` | `/mz/protection-zone-survey` | `/mz/pt/levantamento-de-ocupacoes` | | |
@@ -276,7 +277,7 @@ Body content outside a `section` is wrapped in a plain white section automatical
 | `lead` | | Larger intro text. |
 | `country-sites` | `match` (`page`) | Buttons to each country site that exists (renders nothing until one does). With `match="page"` each button goes to that country's version of the current page (same `key`), else to the country home. |
 
-Icons (`icon="…"`): check, arrow-right, globe, pipeline, mine, power, clipboard, rail, sun, tree, building, corridor, boundary, shield, excavation, calendar, route, history, file-check, file-text, houses, compare, leaf, water, drone, satellite, target, map, layers, user-check, scale, search, mail, alert, info, external, clock, lock, download, ruler, flag, x-circle, send, grid, eye, language. Add new ones to `data/icons.yaml` (24×24, stroke style, no fills). Never use emoji.
+Icons (`icon="…"`): check, arrow-right, globe, pipeline, mine, power, clipboard, rail, fibre, sun, tree, building, corridor, boundary, shield, excavation, calendar, route, history, file-check, file-text, houses, compare, leaf, water, drone, satellite, target, map, layers, user-check, scale, search, mail, alert, info, external, clock, lock, download, ruler, flag, x-circle, send, grid, eye, language. Add new ones to `data/icons.yaml` (24×24, stroke style, no fills). Never use emoji.
 
 Headings: write `## Heading {#anchor}` for a stable anchor (industry sections need stable anchors so solution pages can deep-link). Other headings get automatic ids. Every page has one H1 (from front matter); body headings start at `##` or come from a section `title`.
 

@@ -26,7 +26,7 @@ faq:
   - q: Can you detect theft or vandalism on a freight line?
     a: No. Satellites and drones see the land, not what happens to rails, cables or equipment, and they cannot show who was on the line. We map structures, informal crossings, tracks, cleared ground and works along the reserve, confirmed by a reviewer, so your corridor teams know where to look.
   - q: Can you map informal crossings over the line?
-    a: Yes, where they are visible from above. New footpaths, tracks and crossings are mapped between dated surveys and confirmed by a reviewer. Crossings under tree canopy can be missed, and we map the crossings, never the people who use them.
+    a: Yes, where they are wide enough to show at the imagery's resolution. New tracks and crossings are mapped between dated surveys and confirmed by a reviewer. Narrow paths and crossings under tree canopy can be missed, and we map the crossings, never the people who use them.
 cta:
   title: Send us your alignment or reserve file
   text: A centre line or reserve polygon and the widths that apply are enough to scope a baseline register, an alignment comparison or scheduled re-surveys.
@@ -95,7 +95,7 @@ Each structure is placed in its band by its distance to the line; the 100 m band
 ::::col
 **Reserve encroachment.** We map the structures inside the rail reserve and the land beside it, measure each one to the track centre line, place it in the bands you set and rate each 500 m of line for encroachment density. On many freight corridors the reserve is wider than the fenced formation, so the register shows where building has moved inside the reserve long before it reaches the track.
 
-**Informal crossings and tracks.** New footpaths, tracks and informal crossings over the line are mapped between dated surveys, so your safety and reserve teams know where the line is being crossed. We map the crossings themselves, never the people who use them, and crossings under tree canopy can be missed, which is why a reviewer confirms each one.
+**Informal crossings and tracks.** New tracks and informal crossings over the line are mapped between dated surveys where they are wide enough to show at the imagery's resolution, so your safety and reserve teams know where the line is being crossed. We map the crossings themselves, never the people who use them. Narrow paths and crossings under tree canopy can be missed, which is why a reviewer confirms each one.
 
 **New structures along the reserve.** Between dated surveys, new and removed structures are flagged automatically and confirmed by a reviewer, and a trend of built-up land shows where settlement is concentrating around stations, sidings, yards and level crossings.
 
@@ -134,7 +134,7 @@ This is screening of what is visible at the surface. It is not an engineering as
 
 :::checklist
 - Fresh excavation, trenches and earthworks near the line, flagged for checking
-- New buildings and walls beside the reserve, confirmed by a reviewer
+- New structures beside the reserve, confirmed by a reviewer
 - Heavy plant visible at works on each survey date
 - Before-and-after views of each flagged site
 - Drone checks of flagged stretches, subject to approvals

@@ -185,7 +185,7 @@ Around the operation, a ring survey shows how settlement near the lease boundary
 ::::section{id="gemstone-concessions" tone="alt" eyebrow="Gemstone and other concessions" title="Ground disturbance across a concession, mapped for its management and safety"}
 :::::columns{split="1-1"}
 ::::col
-On gemstone concessions, and on other titles where digging by others is common, surface disturbance can spread across large areas between visits: pits, spoil heaps, water-filled excavations, cleared ground and new tracks. The rights holder needs to know where the ground is changing to manage the concession and its dealings with communities and authorities, and open and water-filled pits are a safety hazard whose locations are worth knowing.
+On gemstone concessions, and on other titles where artisanal digging is common, surface disturbance can spread across large areas between visits: pits, spoil heaps, water-filled excavations, cleared ground and new tracks. The rights holder needs to know where the ground is changing to manage the concession and its dealings with communities and authorities, and open and water-filled pits are a safety hazard whose locations are worth knowing.
 
 We map pits, disturbed ground, spoil heaps and water-filled excavations inside and around the concession, flag new and growing sites between dated surveys, and list each with its location, its size on the imagery and its distance to the concession boundary or to the zones you define. New tracks into the concession are mapped between dates, and worked-out ground can be followed as it revegetates. The screening between surveys and the tuning of detection to your imagery work as described under [surface excavation](key:mining#artisanal-mining) below.
 

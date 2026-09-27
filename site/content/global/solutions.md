@@ -21,7 +21,7 @@ faq:
   - q: Can we combine several services in one survey?
     a: Yes, and most projects do. A right-of-way baseline often includes excavation and track mapping, a cut-off-date record usually comes with household estimates and an evidence pack, and drone checks follow wherever satellite screening flags a stretch. The proposal lists every service it includes.
   - q: Are drone services available in every country?
-    a: Drone surveys are available subject to the permits and authorisations each job requires, which differ by country and sometimes by site. Satellite-based services need no drone flight and are available in Mozambique, South Africa and Nigeria.
+    a: Drone surveys are subject to the approvals and security clearances each job requires, which differ by country and sometimes by site. Satellite-based services need no drone flight and are offered through our country sites across Africa.
   - q: Can you detect things other than buildings?
     a: "Yes, where they are visible at the imagery's resolution: excavations, tracks, tanks and containers, heavy plant on work sites and similar objects. Detection tuned to your imagery is checked on part of your area before it runs on the rest. We never detect or track people."
   - q: How are results delivered?

@@ -3,7 +3,7 @@ key: industries
 hub: industries
 template: hub
 title: Encroachment Monitoring by Industry | AfriScan
-description: How AfriScan maps structures and land change for oil and gas, mining, power and water utilities, lenders and ESIA teams, rail and roads, renewables and estates.
+description: How AfriScan maps structures and land change for oil and gas, mining, power and water utilities, lenders and ESIA teams, rail, roads, fibre routes and estates.
 h1: Secure the land you answer for, from the air
 crumb: Industries
 nav_blurb: Oil & gas, mining, power, project finance and more
@@ -23,7 +23,7 @@ faq:
   - q: Can we see work you have done in our industry?
     a: We never publish a client's route, imagery or results without written permission. The sample outputs on this site come from a high-pressure gas pipeline in Mozambique, shown with the route owner's permission. For other industries we can run a labelled demonstration on a boundary or route you choose, from open data.
   - q: Which countries do you work in?
-    a: Satellite-based surveys are available in Mozambique, South Africa and Nigeria with no site visit and no drone flight. Drone surveys are available subject to the permits and authorisations each job requires, and each industry page sets out the country rules that shape the survey.
+    a: Satellite-based surveys need no site visit and no drone flight, and are offered through our country sites across Africa, listed on [where we work](/countries). Drone surveys are subject to the approvals and security clearances each job requires, and each industry page sets out the country rules that shape the survey.
 ---
 
 ::::section{id="tier-1" eyebrow="Core industries" title="Where a dated register changes decisions" lead="Pick the page for the land you manage. Each sets out the problems in your team's own words, the services that answer them, what you receive and the country rules that shape the survey."}

@@ -140,12 +140,12 @@ Fire hotspots detected by satellite near your lines are filtered to the buffer a
 
 ### Vegetation management programmes {#vegetation-management}
 
-For a vegetation-management programme, the same maps help plan the work and look back on it. They show which spans have regrown since the last clearing cycle, where vegetation cover dropped between two dates, and, where drone surveys are flown, where tall vegetation stands inside the servitude. Clearing can then be scoped to the spans that changed, and the next survey shows where the cover changed after the work. After a line is rebuilt or a servitude restored, revegetation of the restored strip is tracked between dates.
+For a vegetation-management programme, the same maps help plan the work and look back on it. They show which stretches have regrown since the last clearing cycle, where vegetation cover dropped between two dates, and, where drone surveys are flown, where tall vegetation stands inside the servitude. Clearing can then be scoped to the stretches that changed, and the next survey shows where the cover changed after the work. After a line is rebuilt or a servitude restored, revegetation of the restored strip is tracked between dates.
 
 The maps show larger patches of change, not individual trees or small plots. They do not measure clearance to conductors or sign off a contractor's work, and cloud in the rainy season can delay results.
 
 :::checklist
-- Spans that have regrown since the last clearing cycle
+- Stretches that have regrown since the last clearing cycle
 - Where vegetation cover dropped between two dates
 - Tall vegetation inside the servitude, from drone elevation models where flown
 - Revegetation of restored servitudes, tracked between dates
