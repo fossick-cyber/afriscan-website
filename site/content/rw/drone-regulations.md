@@ -33,7 +33,7 @@ faq:
   - q: Does a flight along a power line need extra permission?
     a: Yes. Flying at "high tension cables and communication masts" or at strategic installations without RCAA's permission, or outside the conditions of the restriction, is an offence under art. 100 of Law n° 20/2018 as restated in 2024, and RCAA's advisory circular lists power plants among the strategic installations. Ask for an RCAA permission that names the line or site.
   - q: Can a drone fly near Kigali?
-    a: Within 10 NM (about 18.5 km) of the centre of an international controlled aerodrome, and 5 NM of a domestic one, a drone flies only under an agreement with the aerodrome operator and with an observer, or with ATC authorisation at a controlled aerodrome, and only as or under a qualified pilot (27.050, 27.090). Kigali International is one of the international airports Rwanda Airports Company lists, so much of Kigali needs ATC coordination.
+    a: Within 10 NM (about 18.5 km) of the centre of an international controlled aerodrome, and 5 NM of a domestic one, a drone flies only under an agreement with the aerodrome operator and with an observer at an uncontrolled aerodrome, or with ATC authorisation at a controlled one, and only as or under a qualified pilot (27.050, 27.090). Kigali International is one of the international airports Rwanda Airports Company lists, so much of Kigali needs ATC coordination.
   - q: How long do the approvals last?
     a: A remote pilot licence and a UOC are each valid for 12 months at most (27.187, 27.230), and RCAA's advisory circular asks for UOC renewal one month before expiry. A BVLOS area approval lasts up to a year, with renewal filed at least 30 days before it expires (27.455). An activity permit covers the locations and dates in the application.
 cta:
@@ -146,7 +146,7 @@ Within visual line of sight, at or below 120 m (400 ft) above ground, by day; no
 Outside segregated airspace, no flight "within 100 m, measured horizontally, of a person who has not given consent", or "above property unless prior consent has been obtained from any persons occupying that property or the property owner; or the appropriate Authority working on behalf of the public" (27.095(a)(1)). A right-of-way flight over inhabited plots needs consent planning or an authority-level consent.
 :::
 :::card{title="Aerodromes" icon="flag"}
-Not within 10 NM of the centre of an international controlled aerodrome or 5 NM of a domestic one (27.050), except under an agreement with the aerodrome operator and with an observer, or with ATC authorisation at a controlled aerodrome, and only as or under a qualified pilot (27.090). [Rwanda Airports Company](https://rac.co.rw/about-us-1/airports-1) lists Kigali International and Kamembe International, Gisenyi Airport, and the Ruhengeri, Butare and Nemba airstrips.
+Not within 10 NM of the centre of an international controlled aerodrome or 5 NM of a domestic one (27.050), except under an agreement with the aerodrome operator and with an observer at an uncontrolled aerodrome, or with ATC authorisation at a controlled one, and only as or under a qualified pilot (27.090). [Rwanda Airports Company](https://rac.co.rw/about-us-1/airports-1) lists Kigali International and Kamembe International, Gisenyi Airport, and the Ruhengeri, Butare and Nemba airstrips.
 :::
 :::card{title="Height and controlled airspace" icon="map"}
 Above 120 m, outside the aerodrome radii, only in segregated airspace or with a NOTAM requested at least 24 hours ahead through an authorised person (27.095(c)). In controlled airspace, ATC authorisation (27.065).
@@ -219,7 +219,7 @@ The texts this guide relies on set no separate defence permit, but they build se
 ::::col
 ### Part 27 and Law n° 20/2018 {#privacy-rules}
 
-Part 27's privacy rule (27.410) requires consent before a drone is used to observe a person, or private real property without its owner, and forbids photographing or filming an individual without consent for publication, apart from news and public events. Art. 101 of Law n° 20/2018, unchanged in 2024, makes it an offence to use a drone "to take photographs of a prohibited area without a permit or of an individual without the individual's consent".
+Part 27's privacy rule (27.410) forbids using a drone to observe a person without their consent, or private real property without its owner's consent, and forbids photographing or filming an individual without consent for publication, apart from news and public events. Art. 101 of Law n° 20/2018, unchanged in 2024, makes it an offence to use a drone "to take photographs of a prohibited area without a permit or of an individual without the individual's consent".
 
 This is one reason AfriScan maps land and assets, never people. A right-of-way register lists structures, cleared ground, excavations and tracks with their distance to the line; it does not identify who lives or works there, and identifiable people are never published.
 ::::
@@ -248,7 +248,7 @@ The [Data Protection and Privacy Office](https://dpo.gov.rw/) issues those certi
 | Operating before a certificate or licence is issued, not complying with it, forgery or false marks | art. 92, as restated in 2024 | 5 to 10 years and a fine |
 | Flying in published prohibited or restricted areas, or at the listed sites, without RCAA permission | art. 100, as restated in 2024 | 3 to 5 years and a fine |
 | Photographing a prohibited area without a permit, or an individual without consent | art. 101 | 3 to 5 years and a fine |
-| Failing to declare a drone on arrival, or to present its registration documents | art. 102 | 3 to 6 months and a fine |
+| Failing to declare a drone on arrival, or to present its registration documents | art. 102 | 3 to 6 months and a fine, or one of them |
 | Flying without registration marks | art. 105, as restated in 2024 | 1 to 2 months and a fine, or one of them |
 | A false declaration to obtain a drone certificate or permit | art. 106 | 3 to 5 years and a fine |
 | An offence committed with the consent, connivance or negligence of a company's officers | art. 110 | A fine on the company, or its dissolution |

@@ -52,7 +52,7 @@ faq:
 ::::section{id="right-of-way" eyebrow="The rule" title="The right of way is already defined" lead="In Rwanda, the right of way for power lines is set by RURA's Guidelines N°01/GL/EL-EWS/RURA/2015. We measure each structure against the width for your voltage, or against the easement widths in your file."}
 :::::columns{split="2-1"}
 ::::col
-The minimum width is 12 m for 15–30 kV lines, 25 m for 110 kV, 30 m for 220 kV and 50 m for 400 kV, with the line centred. The guidelines forbid building, cultivating, excavating or mining in the right of way without the licensee's consent, fires within 60 m of a transmission right of way, and blasting within 100 m of any power line. They also say the corridor "shall generally be clear of unauthorized structures". What counts as authorised is for the licensee and the authorities to decide. We show you, with dates, which structures stand within the right of way and how far each is from the line.
+The minimum width is 12 m for 15–30 kV lines, 25 m for 110 kV, 30 m for 220 kV and 50 m for 400 kV, with the line centred. The guidelines forbid building or cultivating in the right of way without the licensee's consent, drilling, mining or excavating in it, fires within 60 m of a transmission right of way, and blasting within 100 m of any power line. They also say the corridor "shall generally be clear of unauthorized structures". What counts as authorised is for the licensee and the authorities to decide. We show you, with dates, which structures stand within the right of way and how far each is from the line.
 
 Rwanda's grid is growing on both levels: REG's June 2023 transmission plan records about 1,156 km of high-voltage lines and lists new 110 kV and 220 kV lines, and World Bank-financed programmes are extending distribution. Every new line needs a route, a right of way and a record of what stood on the land.
 
@@ -115,7 +115,7 @@ What stood in the footprint on the date that matters, to support the census and 
 ::::section{id="valuation" tone="alt" eyebrow="Before valuation" title="The date a structure appeared matters"}
 :::::columns{split="2-1"}
 ::::col
-Electric lines, roads, water pipes, gas and oil pipelines and mineral resources in the public domain are all activities of public interest under the Expropriation Law (Law n° 32/2015, art. 5). Once an expropriation decision is published, long-term activities started on the land after it "shall not be compensable" (art. 17), and the law gives 30 days for the valuation (art. 29).
+Electric lines, roads, water pipes, gas and oil pipelines and mineral resources in the public domain are all activities of public interest under the Expropriation Law (Law n° 32/2015, art. 5). Once an expropriation decision is published, long-term activities started on the land after it "shall not be compensable" (art. 17), and the law gives 30 days for the valuation, extendable by up to 15 days (art. 29).
 
 A 2026 resettlement action plan published by REG observes that "The Rwanda national law is silent on cut-off date", and adopts the World Bank's ESS5, so lender-financed projects set one under their own standards. A dated inventory of what stood on each segment, and when, supports the records your RAP team needs. It supports the census and asset inventory; it does not replace them.
 ::::

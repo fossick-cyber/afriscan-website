@@ -18,7 +18,7 @@ service:
 og:
   headline: Power-line rights of way in Rwanda, mapped from the air
   subline: Structures measured against the RURA widths, change between surveys, reviewed by a person
-related: [route-site-selection, resettlement-cut-off-baselines, vegetation-land-cover-fire, rw-drone-law]
+related: [route-site-selection, resettlement-cut-off-baselines, rw-drone-law]
 faq:
   - q: Which right-of-way widths do you measure?
     a: By default, the minimum widths in Schedule I of RURA's guidelines, with the line centred, so the half-widths are 6 m for 15–30 kV, 12.5 m for 110 kV, 15 m for 220 kV and 25 m for 400 kV. The guidelines also say existing lines "may differ" and that a lesser width may apply where a line runs beside a road or railway, so send the easement widths in your file where they differ. We can add wider context bands, such as 60 m and 100 m, and report up to six widths in one survey.
@@ -48,7 +48,7 @@ cta:
 An environmental and social impact assessment REG published for a distribution project in 2024 records the practice: clearance "on 12 meters large (6 m each side from the center line)", and "a residential house found within the 6 m will be relocated and fair compensation will be done", with "maximum efforts" in re-route design to avoid houses under the right of way. Those efforts start from knowing where the houses are.
 :::
 :::card{title="“The easement was agreed years ago.”" icon="history"}
-RURA's guidelines require easements to be registered under the land-registration law. They allow gardens, pastures and fences in the right of way with the licensee's consent, and forbid building, cultivating or excavating without it. A dated record shows what stands there now, next to what was agreed.
+RURA's guidelines require easements to be registered under the land-registration law. They allow gardens, pastures and fences in the right of way with the licensee's consent. They forbid building or cultivating there without it, and any drilling, mining or excavating in it. A dated record shows what stands there now, next to what was agreed.
 :::
 :::card{title="“The valuation starts when the decision is published.”" icon="calendar"}
 Under the Expropriation Law, long-term activities started on the land after the expropriation decision is published "shall not be compensable" (Law n° 32/2015, art. 17). A record of what stood where, and on which date, matters to everyone at the valuation.
@@ -137,7 +137,16 @@ After the baseline, the line is re-surveyed on a schedule you agree with us. New
 ::::
 :::::
 
-:::solutions{keys="right-of-way-monitoring,change-detection,excavation-mapping" cols="3"}
+:::cards{cols="3"}
+:::card{title="Right-of-way monitoring" icon="corridor" key="right-of-way-monitoring"}
+A baseline register of the structures in each right of way by distance to the centreline, at the RURA width for the line's voltage or your easement widths, then re-surveys on a schedule agreed with you.
+:::
+:::card{title="Change between surveys" icon="compare" key="change-detection"}
+New and removed structures between dated surveys, flagged automatically and confirmed by a reviewer, with before-and-after views and a notice of what changed on which stretch.
+:::
+:::card{title="Excavation near the line" icon="excavation" key="excavation-mapping"}
+Fresh digging, spoil heaps, new tracks and cleared ground in and near the right of way between dates, so your field teams know where to check.
+:::
 :::
 ::::
 
@@ -166,7 +175,7 @@ Electric lines are activities of public interest under [Law n° 32/2015 on expro
 - the decision is announced on radio and in a newspaper, and the list of right holders is posted at the City of Kigali, District, Sector and Cell offices (art. 16);
 - after publication, "the land owner shall not develop any other long-term activities on the land. Otherwise, such activities shall not be compensable" (art. 17), a long-term activity being one "likely to remain there for more than one hundred and twenty (120) days" (art. 2);
 - no compensation for activities developed on land where they were prohibited after the relevant laws were enacted (art. 26);
-- valuation within 30 days (art. 29), and payment within 120 days of approval, or the expropriation becomes void unless agreed (art. 36).
+- valuation within 30 days, extendable by up to 15 days (art. 29), and payment within 120 days of the day the compensation is approved by the District or City of Kigali Council or the relevant Ministry, or the expropriation becomes void unless agreed (art. 36).
 
 A dated inventory of what stood on each segment, and when, supports the record your RAP team needs, and supports cut-off-date records under the World Bank's ESS5 and IFC Performance Standard 5. Fair compensation (*indishyi ikwiye*) itself is set by valuation on the ground.
 ::::
