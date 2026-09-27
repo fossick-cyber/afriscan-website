@@ -27,7 +27,7 @@ cta:
 faq:
   - q: Does the 30 m strip apply to every pipeline?
     a: The Land Law lists land occupied by oil and gas installations and conductors, "com uma faixa confinante de 30m de cada lado" (with a 30 m adjoining strip on each side), among its partial reserves (Lei n.º 9/04, article 27(7)(g)). Because reserves are constituted by the Government (paragraph 2), whether the strip binds on a given stretch is a question for the project's counsel. The register measures each structure against that strip and any other width you give us.
-  - q: Do you detect leaks, illegal taps or fuel theft?
+  - q: Do you detect leaks, unauthorised taps or fuel theft?
     a: No. We map what is visible at the surface, such as structures, fresh excavations, spoil heaps, tracks and cleared ground, and flag it so your field teams know where to check. The pipe itself, its condition and anything underground are outside what the imagery shows.
   - q: Does the register replace the Decree 120/08 assessment?
     a: No. The assessment belongs to the Ministry and the national concessionaire, and it covers what imagery cannot show, such as who lives in each structure and what rights they hold over the land. The register gives a dated, located count of structures, fields and tracks, to size the fieldwork and to check the inventories against.

@@ -112,7 +112,7 @@ A Lei de Terras reserva uma faixa de 100 m à volta dos aeroportos e aeródromos
 A Lei de Terras reserva 100 m à volta das instalações militares e de outras instalações de defesa e segurança (alínea k)). A ANAC pode proibir ou restringir o tráfego aéreo sobre áreas determinadas (artigos 16.º e 16.º-B), e o projecto de 2026 afasta os aeromodelos 5 km destas instalações.
 :::
 :::card{title="Fronteira terrestre" icon="boundary"}
-A Lei de Terras reserva uma faixa de 2 km ao longo da fronteira terrestre (artigo 27.º, n.º 7, alínea i)). Os voos perto da fronteira precisam de um plano que a evite ou de uma autorização expressa.
+A Lei de Terras reserva uma faixa de 2 km ao longo da fronteira terrestre (artigo 27.º, n.º 7, alínea i)). O plano de voo deve evitá-la.
 :::
 :::card{title="Zonas restritas e de protecção das minas" icon="mine"}
 A zona restrita vai até 1 km à volta das áreas mineiras e está sinalizada «Zona Restrita. Acesso Proibido» (Código Mineiro, artigo 200.º). Quem lá não trabalha só entra a convite ou com autorização do titular, depois de «prévia comunicação formal ao titular do direito e às autoridades policiais locais» (artigo 201.º, n.º 2). A zona de protecção vai até 5 km dos limites dos jazigos e está sinalizada «Zona de Protecção Mineira – Permanência Proibida» (artigos 202.º e 203.º).

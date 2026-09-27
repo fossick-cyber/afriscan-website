@@ -112,7 +112,7 @@ The Land Law reserves a 100 m strip around airports and aerodromes (article 27(7
 The Land Law reserves 100 m around military and other defence and security installations (article 27(7)(k)). ANAC may ban or restrict air traffic over given areas (articles 16 and 16.º-B), and the 2026 draft keeps model aircraft 5 km from these sites.
 :::
 :::card{title="The land border" icon="boundary"}
-The Land Law reserves a 2 km strip along the land border (article 27(7)(i)). A flight near the border needs a plan that keeps clear of it, or an express authorisation.
+The Land Law reserves a 2 km strip along the land border (article 27(7)(i)). A flight plan should keep clear of it.
 :::
 :::card{title="Mining restricted and protection zones" icon="mine"}
 The restricted zone reaches up to 1 km around mining areas and is signposted "Zona Restrita. Acesso Proibido" (Código Mineiro, article 200). Anyone who does not work there enters only by invitation or with the right holder's authorisation, after "prévia comunicação formal ao titular do direito e às autoridades policiais locais" (article 201(2)). The protection zone reaches up to 5 km from the deposits' outer limits and is signposted "Zona de Protecção Mineira – Permanência Proibida" (articles 202 and 203).
