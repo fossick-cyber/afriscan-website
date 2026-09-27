@@ -3,7 +3,7 @@ key: oil-gas
 template: industry
 slug: pipelines
 title: Pipeline Reserve & Corridor Mapping in Zimbabwe | AfriScan
-description: Structures, trees and digging in the pipeline reserve, and pits or blasting within 125 m, mapped against Zimbabwe's 2026 Pipelines Act, plus rail and road reserves.
+description: Structures, trees and digging in pipeline reserves, and pits or blasting within 125 m, mapped against Zimbabwe's 2026 Pipelines Act, and rail and road reserves.
 h1: Keep your pipeline reserve clear, and show it with dated maps
 crumb: Pipelines
 eyebrow: Oil & gas · Zimbabwe
