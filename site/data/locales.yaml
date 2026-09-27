@@ -65,3 +65,17 @@ ng:
   label: "Nigeria"
   short: "Nigeria"
   sitemap: sitemap-ng.xml
+zm:
+  content: zm
+  prefix: /zm
+  lang: en-ZM
+  hreflang: [en-ZM]
+  og_locale: en_GB
+  i18n: en
+  country: ZM
+  country_name: Zambia
+  label: "Zambia"
+  short: "Zambia"
+  sitemap: sitemap-zm.xml
+  status: live
+  region: Southern
