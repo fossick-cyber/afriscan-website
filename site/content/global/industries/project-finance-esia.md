@@ -186,7 +186,7 @@ A borrower, its consultants, an independent E&S consultant or a lender's adviser
 ::::
 :::::
 
-| What the monitoring report has to show | What we supply |
+| The report asks | What we supply |
 |---|---|
 | Whether structures have appeared in the footprint since the cut-off date | A re-survey against the cut-off register, with new structures flagged and confirmed by a reviewer |
 | Whether construction stayed inside the approved footprint | Clearing and construction footprints compared between dates, and structures, clearing and earthworks inside the no-go buffers you define |
