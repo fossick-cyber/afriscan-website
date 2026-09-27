@@ -248,6 +248,6 @@ foreign_pages:
   about: {label: "Sobre a AfriScan (em inglês)", blurb: "Quem somos, como trabalhamos e a relação com a Afridrone"}
   privacy: {label: "Aviso de privacidade (em inglês)", blurb: "Que dados recolhemos através deste site e do formulário"}
   data-sources: {label: "Fontes de dados e créditos (em inglês)", blurb: "As licenças e os créditos de cada conjunto de dados abertos"}
-  drone-regulations: {label: "Regras de drones por país (em inglês)", blurb: "Moçambique, África do Sul e Nigéria, lado a lado"}
-  countries: {label: "Países (em inglês)", blurb: "Moçambique, África do Sul e Nigéria"}
+  drone-regulations: {label: "Regras de drones por país (em inglês)", blurb: "As regras para drones de cada país, lado a lado"}
+  countries: {label: "Países (em inglês)", blurb: "Os sites de cada país onde trabalhamos"}
   resources: {label: "Recursos (em inglês)", blurb: "Guias, exemplos de resultados, perguntas frequentes e regras por país"}

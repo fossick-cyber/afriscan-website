@@ -44,7 +44,7 @@ AfriScan combines open building-footprint datasets and open-source segmentation 
 ::::
 ::::col
 :::callout{tone="scope" title="What this page is for"}
-Use it to judge whether our registers are fit for your purpose, to brief a colleague, or to answer a tender's methodology question. The same rules apply in Mozambique, South Africa and Nigeria, and to satellite, drone and client imagery.
+Use it to judge whether our registers are fit for your purpose, to brief a colleague, or to answer a tender's methodology question. The same rules apply in every country we work in, and to satellite, drone and client imagery.
 :::
 ::::
 :::::

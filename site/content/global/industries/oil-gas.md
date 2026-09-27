@@ -336,7 +336,7 @@ Where flown: a georeferenced orthophoto, surface and terrain elevation models, a
 :::
 ::::
 
-::::section{id="countries" tone="alt" eyebrow="Mozambique, South Africa, Nigeria" title="The widths and rules your register is measured against" lead="Satellite-based surveys need no site visit and no drone flight, and are offered through our country sites across Africa. This is a summary of public rules for orientation, as of 26 September 2026, not legal advice; the sources are linked."}
+::::section{id="countries" tone="alt" eyebrow="Country rules" title="The widths and rules your register is measured against" lead="Satellite-based surveys need no site visit and no drone flight, and are offered through our country sites across Africa. This is a summary of public rules in three of them, for orientation, as of 26 September 2026, not legal advice; the sources are linked."}
 | Instrument | What it sets |
 |---|---|
 | **Mozambique**<br>[Lei n.º 19/97, de 1 de Outubro (Lei de Terras)](https://www.pdul.gov.mz/content/download/486/2635/file/Lei%20de%20Terras.pdf), arts. 8(g) and 9 | A partial protection zone of 50 m on each side of oil, gas, water, electricity and telecommunications conduits, where no land-use right (DUAT) can be acquired, only special licences |

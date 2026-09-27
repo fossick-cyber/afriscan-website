@@ -308,7 +308,7 @@ A self-contained map of the results that opens in a web browser, including in th
 :::
 ::::
 
-::::section{id="countries" tone="alt" eyebrow="Mozambique, South Africa, Nigeria" title="Mining rules that shape the survey" lead="Satellite-based surveys need no site visit and no drone flight, and are offered through our country sites across Africa. A summary of public rules for orientation, as of 26 September 2026, not legal advice."}
+::::section{id="countries" tone="alt" eyebrow="Country rules" title="Mining rules that shape the survey" lead="Satellite-based surveys need no site visit and no drone flight, and are offered through our country sites across Africa. A summary of public rules in three of them, for orientation, as of 26 September 2026, not legal advice."}
 :::cards{cols="3"}
 :::card{title="Mozambique" icon="map" eyebrow="Português · English"}
 The new Mining Law approved by the Assembleia da República in May 2026 (Lei de Minas n.º 7/2026) reserves areas for artisanal and small-scale mining and creates a community fund ([AIM](https://aimnews.org/2026/05/08/ar-aprova-lei-de-minas-que-proibe-venda-de-produtos-minerais-nao-processados/)), so rights holders need to know where surface activity sits relative to their title. Resettlement for expansions follows [Decreto n.º 31/2012](https://documents1.worldbank.org/curated/en/644941485846310129/pdf/SFG2931-REVISED-RP-PORTUGUESE-P161351-Box402883B-PUBLIC-Disclosed-2-1-2017.pdf). In remote and insecure areas, satellite-first work lets a baseline start without a site visit, and we never publish site maps. Reports can be delivered in Portuguese.

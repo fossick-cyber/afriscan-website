@@ -16,8 +16,9 @@ form:
 # Date the country regulation pages are written "as of" (owner rule 2).
 law_as_of: 2026-09-26
 
-# Countries served (satellite work available in all three; drone work subject to permits).
-countries: [Mozambique, South Africa, Nigeria]
+# The countries served are the countries of the live sections in data/locales.yaml (the Organization
+# and Service JSON-LD areaServed): satellite work in all of them, drone work subject to the approvals
+# and security clearances each job requires.
 
 # Organization JSON-LD (rule 11). Disambiguation from similarly named companies.
 org:

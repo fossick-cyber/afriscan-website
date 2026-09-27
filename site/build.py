@@ -986,14 +986,21 @@ class Build:
         return {"instruments": inst}
 
     def cmp_law_table(self, p, b, ctx):
+        """One row per country with a drone-law guide in the page's language (the page keyed <cc>-drone-law,
+        else its first law page), sorted by country name."""
         rows = []
+        live = lambda q: q["lang2"] == p["lang2"] and not q["noindex"]
         for cc, law in self.law.items():
-            guide = self.resolve(f"{cc}-drone-law", p["loc_key"]) or next(
-                (q for q in self.pages if q["template"] == "law" and q["meta"].get("law") == cc
-                 and q["lang2"] == p["lang2"] and not q["noindex"]), None)
+            key = f"{cc}-drone-law"
+            guide = (self.resolve(key, p["loc_key"])
+                     or next((q for q in self.pages if q["key"] == key and live(q)), None)
+                     or next((q for q in self.pages if q["template"] == "law" and q["meta"].get("law") == cc
+                              and live(q)), None))
             if not guide:
                 continue
-            rows.append({"cc": cc, "law": law, "guide": guide})
+            rows.append({"cc": cc, "law": self.law_for(p, cc), "guide": guide})
+        fold = lambda s: "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c)).casefold()
+        rows.sort(key=lambda r: fold(r["law"]["country_name"]))
         return {"rows": rows}
 
     def cmp_country_sites(self, p, b, ctx):

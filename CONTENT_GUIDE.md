@@ -291,7 +291,7 @@ Body content outside a `section` is wrapped in a plain white section automatical
 | `catalogue` | `services` (e.g. `S01,S08`), `groups` | The service list with public lines from `catalogue.yaml`, filtered for the section (S23 only on `/ng/`, S32 never on `/za/`). |
 | `pages` | `section`*, `limit`, `cols` | Cards for the published pages in that section (this section's pages first, global fallback on English sections). |
 | `sources` | `law`*, `ids` | A cited list of instruments from `data/law/<cc>.yaml`. |
-| `law-table` | | The cross-country drone-law comparison (law hub). |
+| `law-table` | | The cross-country drone-law comparison (law hub): one row per `data/law/<cc>.yaml` with a guide in the page's language (the page keyed `<cc>-drone-law`, else the country's first law page), sorted by country name. |
 | `segments` | `data`* | The 500 m encroachment-density chart from `data/samples/<data>.json`. |
 | `register` | `data`*, `limit` | The register excerpt table from the same file. |
 | `sample-gallery` | `data`*, `views`, `overview`, `cols`, `size`, `priority`, `legend` | Sample views on satellite imagery from `data/samples/<data>.json` (§8.1): the overview, then the close-ups, each with its caption, count, review badge and credit in the page's language, then a legend and the notes. `views="C,D"` picks and orders close-ups (default all); `overview="false"` drops the overview; `cols="1"` stacks them (with `size="wide"` or `"half"`), default two columns; `legend="false"` drops the HTML legend; `priority="true"` only when it holds the first large image. Text inside the block becomes an extra note. |

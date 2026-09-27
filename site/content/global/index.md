@@ -2,7 +2,7 @@
 key: home
 template: home
 title: Right-of-Way & Land Encroachment Monitoring | AfriScan
-description: Satellite and drone mapping of structures, excavations and change on pipelines, power lines and concessions in Mozambique, South Africa and Nigeria.
+description: Satellite and drone mapping of structures, excavations and change on pipelines, power lines and concessions in Southern, East, West and Central Africa.
 h1: Secure your land from the air, remotely.
 eyebrow: AfriScan by Afridrone · Remote land monitoring
 lead: Satellite screening first, drone detail where it is needed, and a person reviews every result. We map the structures, excavations and changes on your pipelines, power lines, concessions and sites, measure each one to your line or boundary, and deliver PDF reports and GIS files your team can use straight away.
@@ -32,7 +32,7 @@ faq:
   - q: Does a person check the results?
     a: Yes. Automatic detection and open building datasets propose structures; a reviewer confirms, corrects and adds to them before anything reaches you. Structures that cannot be confirmed on the imagery are listed for a check on the ground.
   - q: Which countries do you work in?
-    a: Satellite-based surveys are available in Mozambique, South Africa and Nigeria. Drone surveys are available subject to the approvals and security clearances each job requires in each country. See [where we work](/countries).
+    a: Satellite-based surveys are available in Angola, Botswana, the DR Congo, Ghana, Kenya, Malawi, Mozambique, Namibia, Nigeria, Rwanda, South Africa, Tanzania, Uganda, Zambia and Zimbabwe, each with its own country site. Some areas are outside our scope, such as several of the DR Congo's provinces, which its country site lists. Drone surveys are available subject to the approvals and security clearances each job requires in each country. See [where we work](/countries).
   - q: What do we actually receive?
     a: A PDF report with maps, a segment table and a coordinate register; GIS layers (GeoPackage, GeoJSON, KMZ and Shapefile) that open in QGIS, ArcGIS and Google Earth; and an interactive map file your team can open in a browser. See the [sample outputs](/results).
   - q: Will you publish our route or results?
@@ -147,17 +147,10 @@ The Land Law (Lei n.º 19/97, de 1 de Outubro, art. 8) makes the land within 50 
 :::::
 ::::
 
-::::section{id="countries" tone="alt" eyebrow="Where we work" title="Local law, local language" lead="Satellite-based surveys are available in Mozambique, South Africa and Nigeria. Drone surveys are available subject to the approvals and security clearances each job requires in each country."}
-:::cards{cols="3"}
-:::card{title="Mozambique" icon="map" eyebrow="Português · English"}
-Partial protection zones along pipelines and power lines, resettlement under national regulation and IFC PS5, and reports in Portuguese.
-:::
-:::card{title="South Africa" icon="map" eyebrow="English"}
-Pipeline, power-line and bulk-water servitudes, route and site selection for new lines, and analysis of the drone imagery you already fly.
-:::
-:::card{title="Nigeria" icon="map" eyebrow="English"}
-Pipeline and power-line rights of way, dated baselines for new gas lines and handovers, and household estimates for energy-access planning.
-:::
+::::section{id="countries" tone="alt" eyebrow="Where we work" title="Local law, local language" lead="Satellite-based surveys are available in every country below. Drone surveys are available subject to the approvals and security clearances each job requires in each country."}
+Each country site sets out the protection strips, servitudes and wayleaves your register is measured against, the regulators, the drone rules and the local vocabulary. The sites are in English, and Mozambique's and Angola's also in Portuguese, the DR Congo's also in French.
+
+:::country-sites
 :::
 
 [Where we work and what applies in each country](/countries)

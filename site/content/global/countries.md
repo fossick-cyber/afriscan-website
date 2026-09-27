@@ -2,21 +2,21 @@
 key: countries
 hub: countries
 template: hub
-title: "Where We Work: Mozambique, South Africa & Nigeria | AfriScan"
-description: Satellite-based encroachment surveys in Mozambique, South Africa and Nigeria, the protection strips and servitudes that apply, and how drone permits work.
+title: "Where We Work: Country Sites by Region | AfriScan"
+description: Satellite-based encroachment surveys in each country we work in, the protection strips and servitudes that apply, and how drone permits work.
 h1: Where we work
 crumb: Countries
-nav_blurb: Mozambique, South Africa and Nigeria
+nav_blurb: Each country site, grouped by region
 eyebrow: Countries
-lead: Satellite-based surveys are available in Mozambique, South Africa and Nigeria, with no site visit and no drone flight. Drone surveys are available subject to the approvals and security clearances each job requires, which differ in each country.
+lead: Satellite-based surveys are available in every country listed here, with no site visit and no drone flight. Drone surveys are available subject to the approvals and security clearances each job requires, which differ in each country.
 buttons:
   - {label: Request a proposal, intent: proposal}
 og:
   headline: Where we work
-  subline: Mozambique, South Africa and Nigeria
+  subline: Country sites by region
 cta:
-  title: Working in Mozambique, South Africa or Nigeria?
-  text: Send the route or site and the province or state. We reply with the local rules that apply, an imagery plan and a written proposal.
+  title: Working in one of these countries?
+  text: Send the route or site and the province, state or district. We reply with the local rules that apply, an imagery plan and a written proposal.
   button: Request a proposal
 ---
 
@@ -25,7 +25,7 @@ cta:
 :::
 ::::
 
-::::section{id="overview" eyebrow="As of 26 September 2026" title="What applies in each country" lead="A short orientation to the land rules our registers are measured against and the drone rules that shape a survey plan. It summarises public rules for information and is not legal advice; the sources are linked."}
+::::section{id="overview" eyebrow="As of 26 September 2026" title="Three examples of what applies" lead="Every country site sets out the land rules our registers are measured against and the drone rules that shape a survey plan. Three of them in short, for orientation: this summarises public rules for information and is not legal advice; the sources are linked."}
 :::cards{cols="3"}
 :::card{title="Mozambique" icon="map" eyebrow="Português · English"}
 **Land.** The Land Law makes the land within 50 m on each side of oil, gas, water, electricity and telecommunications lines a partial protection zone, where no land-use right (DUAT) can be acquired, only special licences ([Lei n.º 19/97, arts. 8 and 9](https://www.pdul.gov.mz/content/download/486/2635/file/Lei%20de%20Terras.pdf)). The Electricity Law sets a servitude of up to 50 m from a line's axis ([Lei n.º 12/2022, art. 43](https://arene.org.mz/wp-content/uploads/2022/08/Lei-de-Electricidade-2022.pdf)).
@@ -49,8 +49,8 @@ We never assume a permit. Afridrone is working towards the operator approvals ea
 :::
 ::::
 
-::::section{id="language" tone="alt" eyebrow="Language" title="Reports in English or Portuguese"}
-Reports are available in English or Portuguese.
+::::section{id="language" tone="alt" eyebrow="Language" title="Sites in English, Portuguese and French"}
+Every country site is in English, and the sites for Mozambique and Angola are also in Portuguese, the DR Congo's also in French. Reports are available in English or Portuguese.
 
 :::country-sites
 :::

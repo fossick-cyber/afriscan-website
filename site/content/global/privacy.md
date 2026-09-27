@@ -36,7 +36,7 @@ We use what you send only to reply to you, to scope the work you asked about and
 ::::
 
 ::::section{id="browser" eyebrow="In your browser" title="The country-site suggestion" width="prose"}
-The site can suggest a country section (Mozambique, South Africa or Nigeria) that matches where you are browsing from. To do that:
+The site can suggest the country site that matches where you are browsing from. To do that:
 
 - the page asks our hosting provider which country your connection comes from, and receives only a two-letter country code, which the site does not keep;
 - if that answer is not available, the page uses your device's time-zone setting instead, without sending it anywhere;

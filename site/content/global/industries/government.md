@@ -129,7 +129,7 @@ Structure layers and estimated households help health programmes plan campaigns,
 :::
 ::::
 
-::::section{id="countries" tone="alt" eyebrow="Mozambique, South Africa, Nigeria" title="Public programmes in each country" lead="A summary for orientation, as of 26 September 2026, not legal advice."}
+::::section{id="countries" tone="alt" eyebrow="Country rules" title="Public programmes in each country" lead="A summary of three of the countries we work in, for orientation, as of 26 September 2026, not legal advice."}
 :::cards{cols="3"}
 :::card{title="Mozambique" icon="map" eyebrow="Português · English"}
 The cyclone season, roughly November to April, makes pre-season exposure screening and post-event checks the most useful work for the national disaster institute (INGD), municipal councils and urban programmes. Protection zones under the [Land Law](https://www.pdul.gov.mz/content/download/486/2635/file/Lei%20de%20Terras.pdf) (art. 8) are public domain, so structure layers along roads, railways and conduits help public land custodians. Reports can be delivered in Portuguese.

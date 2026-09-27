@@ -1,31 +1,31 @@
 ---
 key: drone-regulations
 template: law_hub
-title: "Drone Survey Rules Compared: MZ, SA and Nigeria | AfriScan"
-description: "What a commercial drone survey needs in Mozambique, South Africa and Nigeria: operator approvals, survey and data permissions, flight limits, sensitive sites."
-h1: Drone survey rules in Mozambique, South Africa and Nigeria, compared
+title: "Drone Survey Rules by Country, Compared | AfriScan"
+description: "What a commercial drone survey needs in each country we work in: the regulator, operator approvals, survey and data permissions, flight limits, sensitive sites."
+h1: Drone survey rules by country, compared
 crumb: Drone rules by country
 section: resources
 nav_group: resources
 nav_langs: [en]
 nav_order: 30
 nav_label: Drone rules by country
-nav_blurb: Mozambique, South Africa and Nigeria side by side
+nav_blurb: Each country's regulator and rules, side by side
 icon: drone
 summary: What a commercial drone survey needs in each country, side by side, with the instruments behind each rule and links to the full country guides.
 eyebrow: Guide · Drone law
-lead: "In all three countries a commercial drone survey needs an operator approval from the civil aviation authority and permissions for each site. The differences decide a survey plan: Mozambique authorises the survey and the release of its data separately from the flight, South Africa adds an Air Service Licence with a local-ownership test, and Nigeria builds a national security clearance into the operator certificate. This page sets them side by side, with the instrument behind each rule."
+lead: "In every country we work in, a commercial drone survey needs an operator approval from the civil aviation authority and permissions for each site, and several add a security clearance or vetting. The table names each country's regulator and key instruments and links its full guide. Below it, three contrasting regimes are set side by side, rule by rule: Mozambique authorises the survey and the release of its data separately from the flight, South Africa adds an Air Service Licence with a local-ownership test, and Nigeria builds a national security clearance into the operator certificate."
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: "Satellite or drone?", href: /insights/satellite-or-drone-corridor-surveys}
 og:
   headline: Drone survey rules compared
-  subline: Mozambique, South Africa and Nigeria, as of 26 September 2026
+  subline: Regulators, approvals and flight limits, country by country
 faq:
   - q: Does a satellite-based survey need any of these permits?
     a: No drone flies in a satellite-based survey, so the drone rules on this page do not govern it. Data-protection law can still apply to imagery that shows people or homes. In Mozambique, whether Lei n.º 6/2024 reaches satellite-only products is an interpretation for counsel to confirm; its definitions refer to sensors carried by aircraft.
-  - q: Can a foreign company fly a drone survey in these countries?
-    a: Not simply. Mozambique's RPAS directive issues operation approvals only to companies registered and domiciled in Mozambique. South Africa's Air Service Licence requires South African residence or majority South African control. Nigeria limits drone registration to Nigerians and Nigerian companies, with separate routes for foreign operators. In practice a local operator or a local partner is part of most plans.
+  - q: Can a foreign company fly a drone survey?
+    a: Not simply, in the three countries compared here. Mozambique's RPAS directive issues operation approvals only to companies registered and domiciled in Mozambique. South Africa's Air Service Licence requires South African residence or majority South African control. Nigeria limits drone registration to Nigerians and Nigerian companies, with separate routes for foreign operators. Each country guide sets out that country's rules. In practice a local operator or a local partner is part of most plans.
   - q: Who is responsible for the permits, the client or the operator?
     a: The operator carries the aviation approvals. The client usually has to help with site permissions, such as landowner consent, access to its own facilities and its security department's clearance, and in Mozambique the client is also bound by the rules on receiving and using aerial survey data. Agree who obtains each permission in the contract.
   - q: How far ahead should a drone survey be planned?
@@ -42,10 +42,10 @@ cta:
 :::law-table
 :::
 
-Each country guide sets out the rules in full, with a checklist to use before you commission a flight: [Mozambique](/mz/drone-regulations) ([em português](/mz/pt/lei-de-drones)), [South Africa](/za/drone-regulations) and [Nigeria](/ng/drone-regulations).
+Each country guide, linked in the last column, sets out that country's rules in full. Three are also in another language: Mozambique's [in Portuguese](/mz/pt/lei-de-drones), Angola's [in Portuguese](/ao/pt/lei-de-drones) and the DR Congo's [in French](/cd/fr/loi-sur-les-drones).
 ::::
 
-::::section{id="approvals" tone="alt" class="compare" eyebrow="The approvals" title="What a commercial survey operation needs in each country"}
+::::section{id="approvals" tone="alt" class="compare" eyebrow="The approvals" title="Three regimes compared: what a commercial survey operation needs" lead="Mozambique, South Africa and Nigeria, rule by rule, as three contrasting examples. Each country guide sets out its own country's rules in full."}
 | Requirement | Mozambique | South Africa | Nigeria |
 |---|---|---|---|
 | **The operator** | Written IACM approval before any flight; a Letter of Approval for Category C1 or C2 commercial work ([DOS-09-2018](https://www.villagereach.org/wp-content/uploads/2019/07/VillageReach-RFP-Amendment-1-UAV-provider-Mozambique.pdf), §8.1(f), §8.3.2) | A UAS Operator Certificate (UASOC, formerly ROC) with Operations Specifications ([CAR 101.04.1](https://www.gov.za/sites/default/files/gcis_document/202303/48228rg11556gon3170.pdf)) | An RPAS Operator Certificate (ROC) with Operations Specifications ([Nig.CARs Part 21](https://ncaa.gov.ng/media/wabn2axn/nigcars-part-21-remotely-piloted-aircraft-system.pdf), 21.4.1) |
@@ -59,7 +59,7 @@ Each country guide sets out the rules in full, with a checklist to use before yo
 Mozambique's directive is quoted from the only full text available, an unofficial English copy of DOS-09-2018 annexed to a 2019 tender; confirm clause numbers with IACM before relying on them.
 ::::
 
-::::section{id="flight" class="compare" eyebrow="The flight" title="The limits that shape a corridor survey" lead="Pipelines and power lines run past homes, roads, airstrips and plant. These are the default limits a flight plan along them has to fit, and where an approval route exists."}
+::::section{id="flight" class="compare" eyebrow="The flight" title="The limits that shape a corridor survey" lead="Pipelines and power lines run past homes, roads, airstrips and plant. These are the default limits a flight plan along them has to fit in the three countries compared, and where an approval route exists."}
 | Limit | Mozambique | South Africa | Nigeria |
 |---|---|---|---|
 | **Height** | 400 ft above ground; flights above it are prohibited outright | 400 ft unless authorised (CAR 101.05.10) | 120 m (400 ft) above ground, by day (21.9.6.4) |
@@ -118,7 +118,7 @@ In every country, security features of an installation stay out of the deliverab
 ::::section{id="satellite" eyebrow="Satellite first" title="Where the drone rules stop"}
 :::::columns{split="2-1"}
 ::::col
-A satellite-based survey involves no drone flight, no pilot and no site visit, so the aviation rules above do not govern it. That is why satellite screening is available in all three countries while drone permissions are arranged, and why a corridor survey usually starts from satellite and sends a drone only to the stretches that need detail.
+A satellite-based survey involves no drone flight, no pilot and no site visit, so the aviation rules above do not govern it. That is why satellite screening is available in every country we work in while drone permissions are arranged, and why a corridor survey usually starts from satellite and sends a drone only to the stretches that need detail.
 
 Two points stay open. In **Mozambique**, Lei n.º 6/2024 defines aerial surveys by reference to sensors on board aircraft, so satellite-only products appear to fall outside it; that is an interpretation, and counsel should confirm it, together with the cartography authority's role in geospatial production. In **Nigeria**, no rule was found requiring a licence to buy or analyse commercial satellite imagery; confirm it with counsel for your project. Data-protection law applies to satellite imagery as it does to drone imagery.
 ::::
@@ -132,7 +132,7 @@ We never assume a permit. Drone surveys are subject to the approvals and securit
 Choosing between the two? Read [satellite or drone for a right-of-way survey](/insights/satellite-or-drone-corridor-surveys).
 ::::
 
-::::section{id="checklist" tone="alt" eyebrow="For clients" title="Five questions to ask any drone operator, in any of the three countries"}
+::::section{id="checklist" tone="alt" eyebrow="For clients" title="Five questions to ask any drone operator, in any country"}
 :::steps{style="list"}
 :::step{title="Which approvals cover this job, and when do they expire?"}
 The operator certificate and its specifications, the Air Service Licence in South Africa, the aircraft registrations and the pilots' licences, each checked against the operations this job needs: night, beyond line of sight, near people, roads, structures or aerodromes.

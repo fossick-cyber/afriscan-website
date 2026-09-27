@@ -325,7 +325,7 @@ A PDF in English or Portuguese; GeoPackage, GeoJSON, KMZ and Shapefile layers fo
 :::
 ::::
 
-::::section{id="countries" eyebrow="Mozambique, South Africa, Nigeria" title="Servitude widths and rules your register is measured against" lead="Satellite-based surveys need no site visit and no drone flight, and are offered through our country sites across Africa. A summary of public rules for orientation, as of 26 September 2026, not legal advice; the sources are linked."}
+::::section{id="countries" eyebrow="Country rules" title="Servitude widths and rules your register is measured against" lead="Satellite-based surveys need no site visit and no drone flight, and are offered through our country sites across Africa. A summary of public rules in three of them, for orientation, as of 26 September 2026, not legal advice; the sources are linked."}
 | Instrument | What it sets |
 |---|---|
 | **Mozambique**<br>[Lei n.º 12/2022, de 11 de Julho (Lei de Electricidade)](https://arene.org.mz/wp-content/uploads/2022/08/Lei-de-Electricidade-2022.pdf), art. 43 | An administrative servitude of up to 50 m from the line axis, with a safety zone inside it, to be registered in the land cadastre and the property register; no compensation is owed to those who acquired their rights after the line was built (art. 43(10)) |

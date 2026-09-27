@@ -3,7 +3,7 @@ key: resources
 hub: resources
 template: hub
 title: "Resources: Guides, Samples, FAQ & Country Rules | AfriScan"
-description: Guides to cut-off dates, imagery and survey scopes, the land and drone rules in Mozambique, South Africa and Nigeria, a reviewed sample, the method and the FAQ.
+description: Guides to cut-off dates, imagery and survey scopes, the land and drone rules in each country we work in, a reviewed sample, the method and the FAQ.
 h1: Resources
 crumb: Resources
 nav_blurb: Guides, sample outputs, FAQ and country rules
@@ -23,7 +23,7 @@ cta:
 :::
 ::::
 
-::::section{id="country-guides" tone="alt" eyebrow="Country guides" title="The rules your registers are measured against" lead="Each guide summarises public rules as of 26 September 2026, links every source and is not legal advice."}
+::::section{id="country-guides" tone="alt" eyebrow="Country guides" title="The rules your registers are measured against" lead="Each guide summarises public rules as of the date it states, links every source and is not legal advice."}
 :::cards{cols="3"}
 :::card{title="The 50 m partial protection zone" icon="scale" eyebrow="Mozambique" href="/mz/50m-protection-zone"}
 What the Land Law's 50 m strip means along pipelines and power lines, the petroleum and electricity laws that build on it, and the draft reform.
@@ -40,18 +40,30 @@ When servitude imagery holds personal information, who carries which duty, and p
 :::card{title="Resettlement cut-off dates in Mozambique" icon="calendar" eyebrow="Mozambique" href="/mz/resettlement-cut-off-date"}
 Decreto n.º 31/2012, the sector laws and IFC Performance Standard 5, and a dated register before, on and after the cut-off date.
 :::
-:::card{title="Where we work" icon="globe" eyebrow="All three countries" href="/countries"}
-A short orientation to the land and drone rules in Mozambique, South Africa and Nigeria, with the sources linked.
+:::card{title="Wayleaves, reserves and rights of way in Zambia" icon="scale" eyebrow="Zambia" href="/zm/wayleave-guide"}
+The 2026 wayleave widths, pipeline siting rules, the railway strip, road reserves and mining consent distances.
+:::
+:::card{title="Wayleaves and reserves in Tanzania" icon="scale" eyebrow="Tanzania" href="/tz/wayleave-law"}
+The Land Act's wayleaves and removal orders, the electricity and petroleum wayleave duties, road and railway reserves, and the valuation date.
+:::
+:::card{title="Wayleaves under Kenyan law" icon="scale" eyebrow="Kenya" href="/ke/wayleave-law-guide"}
+How the Land Act 2012 creates a wayleave, who is notified, what is compensated and when, and what the sector laws add.
+:::
+:::card{title="Kenya's Data Protection Act and aerial mapping" icon="lock" eyebrow="Kenya" href="/ke/data-protection"}
+How the 2019 Act reaches mapping done outside Kenya, why property details matter, and what the processor contract needs.
+:::
+:::card{title="Where we work" icon="globe" eyebrow="Every country site" href="/countries"}
+The country sites by region, and a short orientation to the land and drone rules in three of them, with the sources linked.
 :::
 :::
 
-<span lang="pt-MZ">Em português, para Moçambique: [a zona de protecção parcial de 50 metros](/mz/pt/zona-de-proteccao-parcial-50-metros), [a lei de drones](/mz/pt/lei-de-drones) e [o reassentamento e a data de corte](/mz/pt/reassentamento-data-de-corte).</span>
+<span lang="pt-MZ">Em português, para Moçambique: [a zona de protecção parcial de 50 metros](/mz/pt/zona-de-proteccao-parcial-50-metros), [a lei de drones](/mz/pt/lei-de-drones) e [o reassentamento e a data de corte](/mz/pt/reassentamento-data-de-corte).</span> <span lang="pt-AO">Para Angola: [a lei de drones](/ao/pt/lei-de-drones) e [o conteúdo local](/ao/pt/conteudo-local).</span> <span lang="fr-CD">En français, pour la RD Congo&nbsp;: [la loi sur les drones](/cd/fr/loi-sur-les-drones) et [la date butoir de réinstallation](/cd/fr/reinstallation-date-butoir).</span>
 ::::
 
 ::::section{id="drone-law" eyebrow="Drone law" title="Drone survey rules, country by country"}
 :::cards{cols="4"}
 :::card{title="Compared" icon="drone" eyebrow="Side by side" href="/drone-regulations"}
-Operator approvals, survey and data authorisations, flight limits and sensitive sites in all three countries.
+Each country's regulator and key instruments, and three regimes compared rule by rule.
 :::
 :::card{title="Mozambique" icon="drone" eyebrow="IACM · Lei n.º 6/2024" href="/mz/drone-regulations"}
 Three permissions from three bodies: the flight, the survey and the release of the data.
@@ -63,6 +75,8 @@ UASOC, Air Service Licence, aircraft, pilots and landowner permission for every 
 The operator certificate, ONSA security clearance, the End-User Certificate and survey notice.
 :::
 :::
+
+The drone-law guides for the other country sites: [Angola](/ao/drone-regulations), [Botswana](/bw/drone-regulations), [DR Congo](/cd/drone-regulations), [Ghana](/gh/drone-regulations), [Kenya](/ke/drone-regulations), [Malawi](/mw/drone-regulations), [Namibia](/na/drone-regulations), [Rwanda](/rw/drone-regulations), [Tanzania](/tz/drone-regulations), [Uganda](/ug/drone-regulations), [Zambia](/zm/drone-regulations) and [Zimbabwe](/zw/drone-regulations).
 ::::
 
 ::::section{id="method" tone="alt" eyebrow="Samples, method and data" title="What you receive, and how it is made"}

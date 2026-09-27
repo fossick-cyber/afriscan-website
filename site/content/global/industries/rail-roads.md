@@ -196,7 +196,7 @@ When a plot along the reserve is disputed, the imagery history shows roughly whe
 :::
 ::::
 
-::::section{id="countries" eyebrow="Mozambique, South Africa, Nigeria" title="Reserve widths your register is measured against" lead="A summary of public rules for orientation, as of 26 September 2026, not legal advice; the sources are linked."}
+::::section{id="countries" eyebrow="Country rules" title="Reserve widths your register is measured against" lead="A summary of public rules in three of the countries we work in, for orientation, as of 26 September 2026, not legal advice; the sources are linked."}
 | Instrument | What it sets |
 |---|---|
 | **Mozambique**<br>[Lei n.º 19/97, de 1 de Outubro (Lei de Terras)](https://www.pdul.gov.mz/content/download/486/2635/file/Lei%20de%20Terras.pdf), art. 8 | Partial protection zones of 50 m on each side of a railway's axis, 30 m along primary roads and 15 m along secondary and tertiary roads, where no land-use right (DUAT) can be acquired |

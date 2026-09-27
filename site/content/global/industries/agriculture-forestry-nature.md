@@ -128,7 +128,7 @@ We map land cover, clearing, tracks, structures and excavations. We do not detec
 :::
 ::::
 
-::::section{id="countries" tone="alt" eyebrow="Mozambique, South Africa, Nigeria" title="Where the rules shape the record" lead="A summary for orientation, as of 26 September 2026, not legal advice; the sources are linked."}
+::::section{id="countries" tone="alt" eyebrow="Country rules" title="Where the rules shape the record" lead="A summary of three of the countries we work in, for orientation, as of 26 September 2026, not legal advice; the sources are linked."}
 :::cards{cols="3"}
 :::card{title="Mozambique" icon="map" eyebrow="Português · English"}
 Biodiversity offsets for Category A and A+ projects are required under the offsets directive (Diploma Ministerial n.º 55/2022), with BIOFUND implementing the national [biodiversity offsets programme](https://www.biofund.org.mz/en/projects/biodiversity-offsets-program/). Many reserves are remote and some are insecure, so satellite-first records let monitoring start without a site visit. Reports can be delivered in Portuguese.

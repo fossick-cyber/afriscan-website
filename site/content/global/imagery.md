@@ -90,8 +90,8 @@ Open data is credited as each licence requires. The full licence and credit text
 | NASA FIRMS | Satellite fire hotspots | Credited to NASA FIRMS |
 ::::
 
-::::section{id="countries" eyebrow="Mozambique, South Africa, Nigeria" title="Imagery and permits in each country"}
-Satellite-based surveys are available in Mozambique, South Africa and Nigeria, with no site visit and no drone flight. Drone surveys are available subject to the approvals and security clearances each job requires: aviation approvals in every country and, in some, separate authorisations for the survey itself or for handing over the images. Afridrone is working towards the operator approvals each country requires, and we build the permit timeline into every drone proposal.
+::::section{id="countries" eyebrow="Every country" title="Imagery and permits in each country"}
+Satellite-based surveys are available in every country we work in, with no site visit and no drone flight. Drone surveys are available subject to the approvals and security clearances each job requires: aviation approvals in every country and, in some, separate authorisations for the survey itself or for handing over the images. Afridrone is working towards the operator approvals each country requires, and we build the permit timeline into every drone proposal.
 
 [Where we work](/countries) · [Drone survey rules by country](/drone-regulations) · [How we work with your team](/how-we-work)
 ::::

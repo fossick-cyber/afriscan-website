@@ -121,7 +121,7 @@ In the dry season, grass fires threaten site boundaries, substations and connect
 :::::
 ::::
 
-::::section{id="countries" tone="alt" eyebrow="Mozambique, South Africa, Nigeria" title="Where renewable projects meet land rules" lead="A summary for orientation, as of 26 September 2026, not legal advice."}
+::::section{id="countries" tone="alt" eyebrow="Country rules" title="Where renewable projects meet land rules" lead="A summary of three of the countries we work in, for orientation, as of 26 September 2026, not legal advice."}
 :::cards{cols="3"}
 :::card{title="South Africa" icon="map" eyebrow="English"}
 Grid constraints mean many projects, from public procurement rounds to private wheeling deals, build their own connection lines, and each needs a servitude and a count of the structures it would affect. Lenders apply the Equator Principles and the IFC Performance Standards. Commercial drone work needs a UASOC and an Air Service Licence under [Civil Aviation Regulations Part 101](https://www.gov.za/sites/default/files/gcis_document/202303/48228rg11556gon3170.pdf).

@@ -122,7 +122,6 @@ form:
     - Financiador ou monitor independente
     - Outra
   country: País
-  # Same order as the form template's country codes (mz, za, ng, other).
   countries:        # Cada país com site (a chave de data/countries.yaml) e `other`; o formulário agrupa-os por região
     za: África do Sul
     mz: Moçambique

@@ -153,5 +153,5 @@ Where a record may be relied on later in a grievance, a negotiation or a legal p
 - One set of structure IDs shared by the register, the census and every re-survey
 - A ground-check list for anything the imagery cannot settle
 - A re-survey schedule for the period between the cut-off date and compensation
-- Where the project is in Mozambique, South Africa or Nigeria, the national rules that apply, from the country pages: [Mozambique](/mz/resettlement-cut-off-date), [South Africa](/za/esia-baselines), [Nigeria](/ng/esia-support)
+- The national rules that apply where the project is, from its country site: [DR Congo](/cd/resettlement-cut-off-date), [Ghana](/gh/resettlement-compensation-baselines), [Kenya](/ke/resettlement-cut-off-date), [Mozambique](/mz/resettlement-cut-off-date), [Nigeria](/ng/esia-support), [South Africa](/za/esia-baselines), [Tanzania](/tz/valuation-cut-off-baselines), [Uganda](/ug/rap-cut-off-date-baselines), [Zambia](/zm/resettlement-baselines), or the [country site](/countries) for the others
 :::

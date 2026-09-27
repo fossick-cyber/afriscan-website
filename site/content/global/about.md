@@ -29,7 +29,7 @@ Results are files your team keeps: a PDF report in English or Portuguese, GIS la
 ::::
 ::::col
 :::callout{tone="scope" title="At a glance"}
-- Satellite-based surveys in Mozambique, South Africa and Nigeria
+- Satellite-based surveys in every country with a site here
 - Drone surveys subject to the approvals and security clearances each job requires
 - A person reviews every result before delivery
 - Reports in English or Portuguese
@@ -44,7 +44,7 @@ Results are files your team keeps: a PDF report in English or Portuguese, GIS la
 ::::col
 The platform behind AfriScan was built and tested on high-pressure gas pipeline routes in Mozambique. Our published example, the [sample register](/results) from one of those pipelines, is shown with the route owner's permission and labelled for what it is: a register built from reviewer marks, drawn as strip views and shown on Google satellite imagery with its attribution.
 
-Satellite-based surveys are available in Mozambique, South Africa and Nigeria, with no site visit and no drone flight. Each country has its own section of this site, with the local law, the regulators and the vocabulary our registers are measured against.
+Satellite-based surveys are available in every country with a site here, in Southern, East, West and Central Africa, with no site visit and no drone flight. Each country has its own section of this site, with the local law, the regulators and the vocabulary our registers are measured against.
 ::::
 ::::col
 :::country-sites

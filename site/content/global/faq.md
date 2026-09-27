@@ -120,10 +120,10 @@ As files your team keeps: the PDF, the GIS layers and a self-contained interacti
 
 ::::section{id="drones" eyebrow="Drones and permits" title="Drones and permits"}
 :::details{summary="Do satellite surveys need a drone permit?" open="true"}
-No drone flies in a satellite-based survey. Satellite-based surveys are available in Mozambique, South Africa and Nigeria.
+No drone flies in a satellite-based survey. Satellite-based surveys are available in every country we work in.
 :::
 :::details{summary="Which permits does a drone survey need?"}
-It depends on the country and the site: typically an operator approval from the civil aviation authority, flight permissions for the site and airspace, and in some countries separate authorisation for the survey itself or for handing over the images. Every drone proposal sets out what that flight needs. Drone surveys are subject to the approvals and security clearances each job requires, and Afridrone is working towards the operator approvals each country requires. The three countries are compared in [drone rules by country](/drone-regulations).
+It depends on the country and the site: typically an operator approval from the civil aviation authority, flight permissions for the site and airspace, and in some countries separate authorisation for the survey itself or for handing over the images. Every drone proposal sets out what that flight needs. Drone surveys are subject to the approvals and security clearances each job requires, and Afridrone is working towards the operator approvals each country requires. Each country's regulator and key instruments are listed, and three regimes compared in detail, in [drone rules by country](/drone-regulations).
 :::
 :::details{summary="Who flies the drones?"}
 [Afridrone](https://afridr.one/), which flies AfriScan’s drone work, subject to the approvals and security clearances each job requires.
@@ -163,7 +163,7 @@ Yes. Consultancies can commission structure registers, route comparisons and GIS
 :::
 ::::
 
-::::section{id="countries" tone="alt" eyebrow="Country questions" title="Mozambique, South Africa and Nigeria"}
+::::section{id="countries" tone="alt" eyebrow="Country questions" title="Three examples by country" lead="Each country site sets out its own country's rules: see [where we work](/countries)."}
 :::details{summary="Mozambique: what is the 50 m partial protection zone?" open="true"}
 The Land Law makes the land within 50 m on each side of oil, gas, water, electricity and telecommunications lines a partial protection zone, where no land-use right (DUAT) can be acquired ([Lei n.º 19/97, arts. 8 and 9](https://www.pdul.gov.mz/content/download/486/2635/file/Lei%20de%20Terras.pdf)). Our default bands report structures within 50 m and 100 m. The full guide: [the 50 m partial protection zone](/mz/50m-protection-zone) ([em português](/mz/pt/zona-de-proteccao-parcial-50-metros)).
 :::
