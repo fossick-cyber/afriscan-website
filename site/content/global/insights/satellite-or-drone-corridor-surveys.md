@@ -19,7 +19,7 @@ buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: Drone rules by country, key: drone-regulations}
 related: [imagery, drone-surveys, right-of-way-monitoring]
-about: [home, drone-surveys, imagery, route-site-selection, oil-gas, power-utilities, mining, renewables, mz-drone-law, za-drone-law, ng-drone-law]
+about: [home, drone-surveys, imagery, route-site-selection, oil-gas, power-utilities, mining, renewables, telecom-fibre, mz-drone-law, za-drone-law, ng-drone-law]
 og:
   headline: Satellite or drone?
   subline: Six questions that decide the imagery plan for a corridor or concession survey

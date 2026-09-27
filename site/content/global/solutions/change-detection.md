@@ -6,7 +6,7 @@ description: New and removed structures between dated surveys, flagged automatic
 h1: Change detection between dated surveys
 eyebrow: Change and environment
 lead: One survey tells you what stands on your land. Two dated surveys tell you what has changed. We compare your route or site between dates, flag new and removed structures automatically, and have a reviewer confirm each change with before-and-after views, on a re-survey schedule agreed with you.
-used_in: [oil-gas, mining, power-utilities, project-finance-esia, rail-roads, government]
+used_in: [oil-gas, mining, power-utilities, project-finance-esia, rail-roads, telecom-fibre, government]
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: How change is checked, key: methodology, anchor: "#change"}
@@ -143,4 +143,6 @@ New structures and crossings in road and rail reserves between inspections.
 Municipal and public landholders tracking building on land held for a purpose.
 :::
 :::
+
+Also used by telecom operators along [buried fibre routes](key:telecom-fibre#routes), and by lenders' advisers comparing [each monitoring period](key:project-finance-esia#lender-reporting) with the last.
 ::::

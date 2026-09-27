@@ -6,7 +6,7 @@ description: A baseline register of structures by distance to your pipeline, pow
 h1: Right-of-way and servitude monitoring from the air
 eyebrow: Protect corridors and sites
 lead: Know what stands inside your right of way, how close each structure is to the line, and what has changed since the last survey. We start with a dated baseline register, re-survey on a schedule agreed with you, and send a notice after each survey saying what changed and where. A person reviews every result before it reaches you.
-used_in: [oil-gas, power-utilities, rail-roads]
+used_in: [oil-gas, power-utilities, rail-roads, telecom-fibre]
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: See a reviewed sample, key: results}
@@ -143,7 +143,7 @@ Every proposal names the services it includes. These are the ones this solution 
 ::::
 
 ::::section{id="who" tone="alt" eyebrow="Who uses it" title="Built for the teams answerable for a line"}
-:::cards{cols="3"}
+:::cards{cols="4"}
 :::card{title="Oil & gas" icon="pipeline" key="oil-gas#rights-of-way" cta="Pipeline rights of way"}
 Right-of-way, land and integrity teams on gas, crude and fuel pipelines: structures in the protection zone, counts for class-location reviews, and fresh digging near the line.
 :::
@@ -153,7 +153,10 @@ Servitude and line-maintenance teams on transmission and distribution lines and 
 :::card{title="Rail & roads" icon="rail" key="rail-roads#reserves" cta="Road and rail reserves"}
 Corridor managers on railways and roads: structures in reserves and building restriction areas, new informal crossings and tracks, and change between surveys.
 :::
+:::card{title="Telecom fibre" icon="fibre" key="telecom-fibre#routes" cta="Fibre routes and wayleaves"}
+Wayleave and patrol teams on buried fibre routes: new structures on the wayleave, and fresh digging near the route flagged between surveys.
+:::
 :::
 
-Also used by project finance and ESIA teams monitoring a financed corridor, and by renewables developers along their connection lines.
+Also used by project finance and ESIA teams monitoring [a financed corridor](key:project-finance-esia#financed-corridors), and by renewables developers along their connection lines.
 ::::

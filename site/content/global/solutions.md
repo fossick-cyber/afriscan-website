@@ -21,7 +21,7 @@ faq:
   - q: Can we combine several services in one survey?
     a: Yes, and most projects do. A right-of-way baseline often includes excavation and track mapping, a cut-off-date record usually comes with household estimates and an evidence pack, and drone checks follow wherever satellite screening flags a stretch. The proposal lists every service it includes.
   - q: Are drone services available in every country?
-    a: Drone surveys are available subject to the permits and authorisations each job requires, which differ by country and sometimes by site. Satellite-based services need no drone flight and are available in Mozambique, South Africa and Nigeria.
+    a: Drone surveys are subject to the approvals and security clearances each job requires, which differ by country and sometimes by site. Satellite-based services need no drone flight and are offered through our country sites across Africa.
   - q: Can you detect things other than buildings?
     a: "Yes, where they are visible at the imagery's resolution: excavations, tracks, tanks and containers, heavy plant on work sites and similar objects. Detection tuned to your imagery is checked on part of your area before it runs on the rest. We never detect or track people."
   - q: How are results delivered?
@@ -58,14 +58,15 @@ faq:
 |---|---|
 | **[Oil & gas](key:oil-gas)** | [Right of way](key:right-of-way-monitoring) · [Cut-off baselines](key:resettlement-cut-off-baselines) · [Change detection](key:change-detection) · [Route selection](key:route-site-selection) · [Hazard zones](key:hazard-zone-registers) · [Evidence packs](key:evidence-packs) · [Excavations](key:excavation-mapping) · [Drone surveys](key:drone-surveys) |
 | **[Mining](key:mining)** | [Encroachment surveys](key:encroachment-surveys) · [Cut-off baselines](key:resettlement-cut-off-baselines) · [Change detection](key:change-detection) · [Hazard zones](key:hazard-zone-registers) · [Evidence packs](key:evidence-packs) · [Vegetation & fire](key:vegetation-land-cover-fire) · [Excavations](key:excavation-mapping) · [Drone surveys](key:drone-surveys) · [Your imagery](key:imagery) |
-| **[Power & utilities](key:power-utilities)** | [Right of way](key:right-of-way-monitoring) · [Change detection](key:change-detection) · [Route selection](key:route-site-selection) · [Hazard zones](key:hazard-zone-registers) · [Vegetation & fire](key:vegetation-land-cover-fire) · [Terrain & flood](key:terrain-flood-post-event) · [Household estimates](key:household-estimates) · [Drone surveys](key:drone-surveys) · [Your imagery](key:imagery) |
+| **[Power & utilities](key:power-utilities)** | [Right of way](key:right-of-way-monitoring) · [Change detection](key:change-detection) · [Route selection](key:route-site-selection) · [Cut-off baselines](key:resettlement-cut-off-baselines) · [Evidence packs](key:evidence-packs) · [Hazard zones](key:hazard-zone-registers) · [Vegetation & fire](key:vegetation-land-cover-fire) · [Terrain & flood](key:terrain-flood-post-event) · [Household estimates](key:household-estimates) · [Drone surveys](key:drone-surveys) · [Your imagery](key:imagery) |
 | **[Project finance & ESIA](key:project-finance-esia)** | [Cut-off baselines](key:resettlement-cut-off-baselines) · [Change detection](key:change-detection) · [Route selection](key:route-site-selection) · [Evidence packs](key:evidence-packs) · [Imagery history](key:imagery-history-due-diligence) · [Household estimates](key:household-estimates) · [Your imagery](key:imagery) |
-| **[Rail & roads](key:rail-roads)** | [Right of way](key:right-of-way-monitoring) · [Cut-off baselines](key:resettlement-cut-off-baselines) · [Change detection](key:change-detection) · [Route selection](key:route-site-selection) · [Terrain & flood](key:terrain-flood-post-event) · [Drone surveys](key:drone-surveys) |
+| **[Rail & roads](key:rail-roads)** | [Right of way](key:right-of-way-monitoring) · [Cut-off baselines](key:resettlement-cut-off-baselines) · [Change detection](key:change-detection) · [Route selection](key:route-site-selection) · [Excavations](key:excavation-mapping) · [Terrain & flood](key:terrain-flood-post-event) · [Drone surveys](key:drone-surveys) |
+| **[Telecom fibre](key:telecom-fibre)** | [Excavations](key:excavation-mapping) · [Right of way](key:right-of-way-monitoring) · [Change detection](key:change-detection) · [Route selection](key:route-site-selection) · [Encroachment surveys](key:encroachment-surveys) · [Terrain & flood](key:terrain-flood-post-event) · [Drone surveys](key:drone-surveys) |
 | **[Renewables](key:renewables)** | [Encroachment surveys](key:encroachment-surveys) · [Route selection](key:route-site-selection) · [Imagery history](key:imagery-history-due-diligence) · [Drone surveys](key:drone-surveys) |
 | **[Agriculture, forestry & nature](key:agriculture-forestry-nature)** | [Encroachment surveys](key:encroachment-surveys) · [Imagery history](key:imagery-history-due-diligence) · [Vegetation & fire](key:vegetation-land-cover-fire) |
 | **[Government & public programmes](key:government)** | [Change detection](key:change-detection) · [Terrain & flood](key:terrain-flood-post-event) · [Household estimates](key:household-estimates) · [Your imagery](key:imagery) |
 
-:::industries{cols="4"}
+:::industries{cols="3"}
 :::
 ::::
 

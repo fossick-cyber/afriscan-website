@@ -16,42 +16,50 @@ industries:
     tier: 1
     icon: pipeline
     name: {en: "Oil & gas", pt: "Petróleo e gás"}
-    menu: {en: "Pipelines, rights of way, well pads, LNG and gas sites", pt: "Gasodutos, oleodutos, faixas de servidão, poços e instalações de GNL"}
+    menu: {en: "Pipelines and rights of way, cross-border lines, well pads, LNG host areas", pt: "Gasodutos, oleodutos, faixas de servidão, poços e instalações de GNL"}
     blurb:
-      en: Structures in pipeline protection zones and rights of way, safety zones around plants and LNG sites, and fresh digging near your lines.
+      en: Structures in pipeline protection zones and rights of way, new and rehabilitated cross-border lines, LNG host areas and their corridors, and fresh digging near your lines.
       pt: Construções nas zonas de protecção e faixas de servidão de gasodutos e oleodutos, zonas de segurança à volta de centrais e instalações de GNL, e escavações recentes junto das condutas.
   - key: mining
     tier: 1
     icon: mine
     name: {en: "Mining", pt: "Mineração"}
-    menu: {en: "Concessions, tailings and hazard zones, resettlement, rehabilitation", pt: "Concessões, zonas de rejeitados e de perigo, reassentamento, reabilitação"}
+    menu: {en: "Concessions, tailings and hazard zones, moving mine paths, rehabilitation", pt: "Concessões, zonas de rejeitados e de perigo, reassentamento, reabilitação"}
     blurb:
-      en: Concession edges and boundaries, structures in tailings and hazard zones, surface excavations, resettlement baselines and rehabilitation.
+      en: Concession edges and boundaries, structures in tailings and hazard zones, baselines ahead of moving mine paths, surface excavations and rehabilitation.
       pt: Limites de concessões, construções em zonas de rejeitados e de perigo, escavações à superfície, registos de base para reassentamento e reabilitação.
   - key: power-utilities
     tier: 1
     icon: power
     name: {en: "Power & utilities", pt: "Energia e água"}
-    menu: {en: "Line servitudes and wayleaves, substations, bulk water, dams", pt: "Servidões de linhas, subestações, adutoras e barragens"}
+    menu: {en: "Line servitudes, vegetation, new lines and interconnectors, bulk water", pt: "Servidões de linhas, subestações, adutoras e barragens"}
     blurb:
-      en: Line servitudes and wayleaves, vegetation and fire near lines, bulk water pipelines and dams, and routes for new lines.
+      en: Line servitudes and wayleaves, vegetation management and fire near lines, baselines for new lines and interconnectors, and bulk water pipelines and dams.
       pt: Servidões de linhas de transporte e distribuição, vegetação e queimadas junto das linhas, adutoras e barragens, e traçados de novas linhas.
   - key: project-finance-esia
     tier: 1
     icon: clipboard
     name: {en: "Project finance & ESIA", pt: "Financiamento, EIA e reassentamento"}
-    menu: {en: "Lenders, independent monitors, ESIA and RAP consultancies, resettlement teams", pt: "Financiadores, monitores independentes, consultores de EIA e de PAR"}
+    menu: {en: "DFIs and lenders, independent monitors, ESIA and RAP consultancies", pt: "Financiadores, monitores independentes, consultores de EIA e de PAR"}
     blurb:
-      en: Cut-off-date records, baselines for ESIA and RAP teams, and dated evidence between site visits for lenders and independent monitors.
+      en: Cut-off-date records, baselines for ESIA and RAP teams, and dated evidence for each monitoring period for DFIs, lenders and independent monitors.
       pt: Registos na data de corte, linhas de base para equipas de EIA e de PAR, e informação datada entre visitas para financiadores e monitores independentes.
   - key: rail-roads
     tier: 2
     icon: rail
     name: {en: "Rail & roads", pt: "Ferrovias e estradas"}
-    menu: {en: "Road and rail reserves, building restriction areas, new alignments", pt: "Faixas de estradas e ferrovias, zonas de restrição, novos traçados"}
+    menu: {en: "Road and rail reserves, freight-rail corridors, new alignments", pt: "Faixas de estradas e ferrovias, zonas de restrição, novos traçados"}
     blurb:
-      en: Structures along railway and road corridors measured against their reserves and restriction strips, and dated baselines for new alignments.
+      en: Structures along railway and road corridors measured against their reserves and restriction strips, works beside freight lines, and dated baselines for new alignments.
       pt: Construções ao longo de ferrovias e estradas medidas em relação às respectivas faixas de protecção, e registos datados para novos traçados.
+  - key: telecom-fibre
+    tier: 2
+    icon: fibre
+    name: {en: "Telecom fibre", pt: "Fibra óptica"}
+    menu: {en: "Buried fibre routes, wayleaves and tower sites", pt: "Rotas de fibra óptica enterrada, servidões e locais de torres"}
+    blurb:
+      en: Excavation, construction and new structures along buried fibre routes and wayleaves, flagged between surveys so your patrols know where to look.
+      pt: Escavações, obras e novas construções ao longo de rotas de fibra óptica enterrada e das suas servidões, assinaladas entre levantamentos para orientar as patrulhas.
   - key: renewables
     tier: 2
     icon: sun

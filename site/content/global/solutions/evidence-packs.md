@@ -125,5 +125,5 @@ Resettlement managers, grievance officers and lenders' monitors who need a recor
 :::
 :::
 
-Also used by power utilities, rail and road agencies and public landholders with disputed stretches of servitude or reserve.
+Also used for [the record of each monitoring period](key:project-finance-esia#lender-reporting) on financed projects and [cut-off-date registers for new lines and interconnectors](key:power-utilities#interconnectors), and by power utilities, rail and road agencies and public landholders with disputed stretches of servitude or reserve.
 ::::

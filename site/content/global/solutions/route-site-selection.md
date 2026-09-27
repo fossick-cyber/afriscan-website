@@ -6,7 +6,7 @@ description: Compare structures along alternative alignments or candidate sites,
 h1: Compare routes and sites by the structures they affect
 eyebrow: Baselines and records
 lead: The cheapest structure to deal with is the one your route never crosses. Send us the alignments or candidate sites you are weighing, and we compare how many structures each puts inside the widths that matter, where they cluster, and which stretches are steep, erosion-prone or flood-exposed. Your engineers and land team then choose with the land impact on the table.
-used_in: [power-utilities, oil-gas, project-finance-esia, rail-roads, renewables]
+used_in: [power-utilities, oil-gas, project-finance-esia, rail-roads, renewables, telecom-fibre]
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: How we measure structures, key: methodology, anchor: "#distances"}
@@ -138,5 +138,5 @@ Solar and wind developers comparing candidate sites and the routes of their conn
 :::
 :::
 
-Also used by mining companies weighing haul-road and conveyor routes, and dump or tailings sites.
+Also used for [cross-border interconnectors](key:power-utilities#interconnectors) and [cross-border pipelines](key:oil-gas#cross-border-lines), by telecom operators planning [new fibre routes](key:telecom-fibre#new-routes), and by mining companies weighing haul-road and conveyor routes, and dump or tailings sites.
 ::::

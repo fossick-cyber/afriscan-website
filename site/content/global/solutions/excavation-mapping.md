@@ -6,7 +6,7 @@ description: Fresh digging, pits, spoil heaps, trenches and new tracks near your
 h1: Excavations, pits and ground disturbance, mapped between dates
 eyebrow: Protect corridors and sites
 lead: Third-party works near a pipeline or cable, and surface excavations on a mining right, usually show at the surface before anyone reports them. We map fresh digging, pits, spoil heaps, trenches, water-filled excavations and new tracks between dated surveys, and flag each one so your field teams know where to check. We describe the ground, never the people.
-used_in: [oil-gas, mining]
+used_in: [oil-gas, mining, telecom-fibre, rail-roads]
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: How change is checked, key: methodology, anchor: "#change"}
@@ -116,14 +116,17 @@ Every proposal names the services it includes. These are the ones this solution 
 ::::
 
 ::::section{id="who" eyebrow="Who uses it" title="Owners of lines and land where digging matters"}
-:::cards{cols="2"}
+:::cards{cols="3"}
 :::card{title="Oil & gas" icon="pipeline" key="oil-gas#rights-of-way" cta="Pipeline rights of way"}
 Right-of-way and damage-prevention teams on gas, crude and fuel pipelines, who need to know where third-party works have started near the line.
 :::
 :::card{title="Mining" icon="mine" key="mining#artisanal-mining" cta="Surface excavation"}
 Tenure, environmental and social-performance teams tracking surface excavation on and around their mining rights, reserves and derelict workings.
 :::
+:::card{title="Telecom fibre" icon="fibre" key="telecom-fibre#patrols" cta="Route patrols and planned works"}
+Wayleave, patrol and planned-works teams on buried fibre routes, who need to know where fresh digging has started near the route.
+:::
 :::
 
-Also used by power and telecom utilities along buried cables, by road and rail agencies on their reserves, and by estates and conservation areas.
+Also used by power utilities along buried cables, by road and rail agencies on their reserves and [beside freight lines](key:rail-roads#works-beside-the-line), and by estates and conservation areas.
 ::::

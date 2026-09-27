@@ -119,5 +119,5 @@ Owners of dams, reservoirs and bulk-water schemes tracking structures in inundat
 :::
 :::
 
-Also used by project finance and ESIA teams checking community health and safety commitments, and by public agencies with flood lines to keep clear.
+Also used on concessions where [open and water-filled pits are listed against the zones you draw](key:mining#gemstone-concessions), by project finance and ESIA teams checking community health and safety commitments, and by public agencies with flood lines to keep clear.
 ::::

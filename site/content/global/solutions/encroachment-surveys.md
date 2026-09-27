@@ -133,5 +133,5 @@ Estate and plantation managers, conservation areas and offset sites tracking str
 :::
 :::
 
-Also used for well pads, LNG and plant perimeters, substation sites, and public land held by government and development agencies.
+Also used for well pads, plant perimeters and [LNG host areas and their corridors](key:oil-gas#lng-corridors), substation sites, and public land held by government and development agencies.
 ::::

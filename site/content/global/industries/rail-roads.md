@@ -2,11 +2,11 @@
 key: rail-roads
 template: industry
 title: Road & Rail Reserve Encroachment Mapping | AfriScan
-description: Structures mapped against road and rail reserves and building restriction areas, dated baselines for new alignments, and construction progress from the air.
+description: Structures in road and rail reserves, informal crossings and works beside freight lines, and dated baselines for new alignments, mapped from the air.
 h1: Secure road and rail reserves from the air
 crumb: Rail & roads
 eyebrow: Rail & roads
-lead: A register of the structures inside your road or rail reserve and building restriction area, each measured to the centre line or the reserve boundary, with change between surveys confirmed by a reviewer. For new alignments, structure counts per option and a dated baseline before land take.
+lead: A register of the structures inside your road or rail reserve and building restriction area, each measured to the centre line or the reserve boundary, with change between surveys confirmed by a reviewer. On freight-rail corridors, new informal crossings and works beside the line are flagged too, and for new alignments you receive structure counts per option and a dated baseline before land take.
 buttons:
   - {label: Send us your alignment or reserve file, intent: proposal}
   - {label: How the method works, key: methodology}
@@ -23,6 +23,10 @@ faq:
     a: Yes. We count the structures each alignment option would affect within the same widths, and screen each for slope, drainage crossings and flood exposure, as an input to your route selection.
   - q: Are your volumes a statutory survey?
     a: No. Borrow-pit and earthworks volumes from drone elevation models support your surveyors and engineers; they are not a certified or statutory survey.
+  - q: Can you detect theft or vandalism on a freight line?
+    a: No. Satellites and drones see the land, not what happens to rails, cables or equipment, and they cannot show who was on the line. We map structures, informal crossings, tracks, cleared ground and works along the reserve, confirmed by a reviewer, so your corridor teams know where to look.
+  - q: Can you map informal crossings over the line?
+    a: Yes, where they are wide enough to show at the imagery's resolution. New tracks and crossings are mapped between dated surveys and confirmed by a reviewer. Narrow paths and crossings under tree canopy can be missed, and we map the crossings, never the people who use them.
 cta:
   title: Send us your alignment or reserve file
   text: A centre line or reserve polygon and the widths that apply are enough to scope a baseline register, an alignment comparison or scheduled re-surveys.
@@ -50,6 +54,7 @@ Supervising engineers and project owners need dated evidence of earthworks and b
 - Road and rail reserve and land managers
 - Road agencies' land-acquisition and RAP units
 - Rail property and reserve managers
+- Freight-rail corridor, track and safety teams
 - EPC contractors and supervising engineers
 - ESIA and RAP consultancies on road and rail projects
 :::
@@ -83,6 +88,62 @@ Each structure is placed in its band by its distance to the line; the 100 m band
 
 :::solutions{keys="right-of-way-monitoring,change-detection" cols="2"}
 :::
+::::
+
+::::section{id="freight-rail" eyebrow="Freight-rail corridors" title="The reserve, the crossings and what is built beside the line" lead="A freight line runs for long distances through farmland, towns and sidings, and its reserve is some of the easiest land in a district to build on. What imagery shows is land change: new structures, crossings, tracks and works. It cannot see theft, vandalism or people."}
+:::::columns{split="2-1"}
+::::col
+**Reserve encroachment.** We map the structures inside the rail reserve and the land beside it, measure each one to the track centre line, place it in the bands you set and rate each 500 m of line for encroachment density. On many freight corridors the reserve is wider than the fenced formation, so the register shows where building has moved inside the reserve long before it reaches the track.
+
+**Informal crossings and tracks.** New tracks and informal crossings over the line are mapped between dated surveys where they are wide enough to show at the imagery's resolution, so your safety and reserve teams know where the line is being crossed. We map the crossings themselves, never the people who use them. Narrow paths and crossings under tree canopy can be missed, which is why a reviewer confirms each one.
+
+**New structures along the reserve.** Between dated surveys, new and removed structures are flagged automatically and confirmed by a reviewer, and a trend of built-up land shows where settlement is concentrating around stations, sidings, yards and level crossings.
+
+**Rehabilitation and upgrading.** Before a freight line is rehabilitated, doubled or given new sidings and passing loops, a dated baseline of the reserve records what stood inside it. Where structures are affected, a dated register supports the census and asset inventory for the resettlement plan, and where a realignment is considered, the options are compared by the structures they affect.
+::::
+::::col
+### What you receive
+
+:::checklist
+- A register of structures inside the rail reserve, by band and chainage
+- An encroachment-density rating for each 500 m of line
+- New informal crossings and tracks over the line, mapped between dates
+- New and removed structures along the reserve between dated surveys
+- Settlement growth around stations, sidings and yards
+- A dated baseline before rehabilitation or upgrading works
+:::
+
+:::callout{tone="scope" title="Land change, not theft"}
+Satellites and drones cannot see cable or rail theft, vandalism or who was on the line. They show structures, crossings, tracks, cleared ground and works along the reserve, so your corridor teams know where to look.
+:::
+::::
+:::::
+::::
+
+::::section{id="works-beside-the-line" tone="alt" eyebrow="Construction next to the line" title="Excavation, earthworks and building beside the track"}
+:::::columns{split="1-1"}
+::::col
+Works next to a railway can affect it long before anyone reports them: a borrow pit cut near the embankment, a new building across a drainage line, a trench for another utility through the reserve, spoil tipped at the edge of the formation. Fresh digging, spoil heaps, trenches and earthworks on or near the reserve are flagged between surveys, with their chainage and distance to the line, so track and reserve teams know where to check first. Heavy plant visible at a site is recorded on each survey date as a snapshot of activity on the land, never as tracking.
+
+Where a flagged stretch needs detail, a drone survey captures it, subject to the approvals and security clearances each job requires. Drainage crossings and erosion-prone stretches can be screened from elevation data alongside, as described under [terrain and flood](key:rail-roads#terrain-flood).
+
+This is screening of what is visible at the surface. It is not an engineering assessment of the track, the formation or the embankments, and it does not measure ground movement.
+::::
+::::col
+### What you receive
+
+:::checklist
+- Fresh excavation, trenches and earthworks near the line, flagged for checking
+- New structures beside the reserve, confirmed by a reviewer
+- Heavy plant visible at works on each survey date
+- Before-and-after views of each flagged site
+- Drone checks of flagged stretches, subject to approvals
+:::
+
+:::solutions{keys="excavation-mapping,drone-surveys" cols="1"}
+:::
+::::
+:::::
 ::::
 
 ::::section{id="new-alignments" eyebrow="New alignments and widening" title="Count the structures before the land take"}

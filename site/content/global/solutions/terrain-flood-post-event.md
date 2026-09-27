@@ -122,5 +122,5 @@ Public agencies and programmes mapping flood exposure before the rainy season an
 :::
 :::
 
-Also used by oil and gas and mining operators along pipelines, haul roads and tailings sites, and by ESIA teams screening route options.
+Also used by oil and gas and mining operators along pipelines, haul roads and tailings sites, by telecom operators screening [new fibre routes](key:telecom-fibre#new-routes), and by ESIA teams screening route options.
 ::::
