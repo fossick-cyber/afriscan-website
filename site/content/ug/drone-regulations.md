@@ -78,7 +78,7 @@ A remote pilot authorisation or licence issued only after a security threat asse
 | **Air traffic services and aerodrome operators** | Flight plans and air traffic control contact in controlled airspace, and written permission within 4 km of an aerodrome | Regs 48, 51, 52 and 60 |
 | **Personal Data Protection Office** | Personal data captured in imagery | [Data Protection and Privacy Act 2019](https://ulii.org/akn/ug/act/2019/9/eng@2023-12-31) |
 
-The Regulations were made on 12 August 2022 and published on 15 August 2022, and they revoked the Civil Aviation (Remotely Piloted Aircraft Systems) Regulations, 2020 (S.I. 23 of 2020). No amending instrument appears on ULII or on [UCAA's regulations page](https://caa.go.ug/regulations/), and the arrangement of sections of the Civil Aviation Authority (Amendment) Act 2024 shows no drone clauses. UCAA's [drone page](https://caa.go.ug/unmanned-aircraft-systems-drones/) carries the Regulations, the application form, the designated medical examiners, the advisory circular and the requirements checklist. Every instrument this guide relies on is listed in the Sources table at the end, with its Gazette reference where it has one.
+The Regulations were made on 12 August 2022 and published on 15 August 2022, and they revoked the Civil Aviation (Remotely Piloted Aircraft Systems) Regulations, 2020 (S.I. 23 of 2020). No amending instrument appears on ULII or on [UCAA's regulations page](https://caa.go.ug/regulations/), and the arrangement of sections of the Civil Aviation Authority (Amendment) Act 2024 shows no drone clauses. UCAA's [drone page](https://caa.go.ug/unmanned-aircraft-systems-drones/) carries the Regulations, the application form, the designated medical examiners, the advisory circular and the requirements checklist. The main instruments this guide relies on are listed in the Sources table at the end, with their Gazette reference where they have one.
 ::::
 
 ::::section{id="categories" class="compare" eyebrow="The categories" title="Three categories, and where a mapping flight fits" lead="Regulation 4 and Schedule 2 sort operations by risk. Every category must stay within the territorial borders of Uganda."}
@@ -88,7 +88,7 @@ The Regulations were made on 12 August 2022 and published on 15 August 2022, and
 | **B, standard** (medium risk) | Visual line of sight; at most 400 ft (122 m) above ground; 50 m lateral distance; at most 5 kg including payload; in non-segregated airspace away from controlled airspace, and away from notified prohibited, restricted or danger areas unless expressly authorised | A remote pilot authorisation; a report to local authorities first; compliance with the state security requirements; a concept of operations; a safety risk assessment accepted by UCAA. Reg 6 documents: the application form, the line-ministry letter, the user manual, a pilot training certificate or licence, a Class III medical, the location and map, third-party insurance, a dangerous goods manual where applicable and the safety risk assessment |
 | **C, complex** (high risk) | Beyond visual line of sight, with suitable equipment and a suitably rated pilot, only in airspace not classified prohibited, restricted or danger | A UAS operator certificate (UOC) and operations specifications; a remote pilot licence endorsed for the type; a certificate of airworthiness where applicable; a safety management system. Reg 7 adds an operations manual, a security programme, a training programme, an SMS manual and a type certificate where applicable |
 
-**Where a corridor survey fits.** A small mapping drone flown within sight, at or below 400 ft and under 5 kg, is a Category B operation. A flight beyond visual line of sight along a corridor is Category C. A flight within sight with a drone heavier than 5 kg does not fit Category B; confirm with UCAA how it is classed before planning one.
+**Where a corridor survey fits.** A small mapping drone flown within sight, at or below 400 ft and at most 5 kg including payload, is a Category B operation. A flight beyond visual line of sight along a corridor is Category C. A flight within sight with a drone heavier than 5 kg does not fit Category B; confirm with UCAA how it is classed before planning one.
 ::::
 
 ::::section{id="ownership" tone="alt" eyebrow="Ownership and registration" title="Who may own a drone, and registration before any flight"}
@@ -327,7 +327,7 @@ These points are not settled by the Regulations, the advisory circular or the ch
 A UCAA certificate of registration for each aircraft (reg 9), owned by an eligible person or company (reg 8).
 :::
 :::step{title="The right category"}
-Category B (within sight, at or below 400 ft, under 5 kg, away from controlled airspace), or Category C with a UOC and a remote pilot licence endorsed for the type.
+Category B (within sight, at or below 400 ft, at most 5 kg including payload, away from controlled airspace), or Category C with a UOC and a remote pilot licence endorsed for the type.
 :::
 :::step{title="The pilot"}
 A remote pilot authorisation (Category B) or licence (Category C), a Class III medical, and completed security vetting (reg 77).

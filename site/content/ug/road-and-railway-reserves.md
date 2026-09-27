@@ -6,7 +6,7 @@ description: Structures and works inside road reserves and railway corridors in 
 h1: "Road and railway reserves in Uganda: structures and works, dated"
 crumb: Roads and railways
 eyebrow: Rail & roads · Uganda
-lead: The Roads Act 2019 gives no compensation for a structure built in a road reserve without authorisation, so the date a structure first appeared matters. We map structures, excavations and utility works inside each reserve band, show roughly when each first appeared on dated imagery, and do the same for railway corridors and fibre routes. A person reviews every result.
+lead: The Roads Act 2019 gives no compensation for a structure built in a road reserve without authorisation, so the date a structure first appeared matters as evidence. We map structures, excavations and utility works inside each reserve band, show roughly when each first appeared on dated imagery, and do the same for railway corridors and fibre routes. A person reviews every result.
 buttons:
   - {label: Send your road or railway for a proposal, intent: proposal}
   - {label: See sample outputs, key: results}
@@ -39,10 +39,10 @@ cta:
   secondary_href: /ug/drone-regulations
 ---
 
-::::section{id="problem" eyebrow="The problem, in your words" title="Reserves are wide, towns grow into them, and dates decide compensation" lead="A road reserve is only protected if someone can see what stands inside it, and since when. The same is true of a railway corridor being acquired, and of the fibre and utility lines laid along roads."}
+::::section{id="problem" eyebrow="The problem, in your words" title="Reserves are wide, towns grow into them, and the dates are the evidence" lead="A road reserve is only protected if someone can see what stands inside it, and since when. The same is true of a railway corridor being acquired, and of the fibre and utility lines laid along roads."}
 :::cards{cols="2"}
 :::card{title="“When did that building go up?”" icon="calendar"}
-A structure built in the reserve without authorisation carries no compensation. Whether it stood before the reserve was declared, or appeared after, is a question of dates.
+A structure built in the reserve without authorisation carries no compensation. Whether it stood before the reserve was declared, or appeared after, is a question of dates; whether it was authorised is for the road authority.
 :::
 :::card{title="“We are widening the road.”" icon="route"}
 Before works begin, the structures inside the reserve and the building line need counting, band by band, for the resettlement plan and the contractor.
@@ -72,7 +72,7 @@ Trenches and works for pipelines, cables and fibre in a reserve need written aut
 |---|---|
 | **s.15, road reserves** | The Minister declares road reserves by statutory instrument and may set different widths for different classes of road |
 | **s.16(2)(b), utilities in the reserve** | Written authorisation is needed for "pipelines, telephone lines, electric supplies, optic fibre cables and posts" in a road reserve |
-| **s.16(4)–(6), relocation** | When the road authority needs the reserve, a utility relocates its lines at its own cost, without any compensation, on up to 90 days' notice or a shorter period the road authority specifies |
+| **s.16(4)–(6), relocation** | When the road authority needs the reserve, a utility relocates its lines at its own cost, without any compensation, on at least 90 days' notice before road works start, or a shorter period the road authority specifies in the notice |
 | **s.16(8), unauthorised structures** | "A person who constructs any structure in or on a road reserve … without authorisation … is not entitled to any compensation" |
 | **s.17, building lines** | Building lines and no-build distances measured from the centre line of the road |
 | **s.24, removal** | The road authority may remove encroachments from a reserve, with or without notice, at the cost of the person responsible |
@@ -144,7 +144,7 @@ Structure counts along alternative alignments, band by band, before a route is f
 ::::section{id="fibre" eyebrow="Fibre and utility routes" title="Works along roads, flagged between surveys"}
 :::::columns{split="2-1"}
 ::::col
-Pipelines, telephone and electric lines and optic fibre cables need written authorisation to be placed in a road reserve, and are relocated at the owner's cost, without compensation, on up to 90 days' notice, or a shorter period the road authority specifies, when the authority needs the reserve (Roads Act s.16). For fibre and utility operators, and for road authorities checking works in their reserves, we flag fresh excavations, trenches and earthworks along the route between dated surveys, and list new structures along it.
+Pipelines, telephone and electric lines and optic fibre cables need written authorisation to be placed in a road reserve, and are relocated at the owner's cost, without compensation, on at least 90 days' notice before road works start, or a shorter period the road authority specifies in the notice, when the authority needs the reserve (Roads Act s.16). For fibre and utility operators, and for road authorities checking works in their reserves, we flag fresh excavations, trenches and earthworks along the route between dated surveys, and list new structures along it.
 
 Imagery cannot see a buried cable or detect cable theft. It shows where the ground along the route has been disturbed, and when, so field teams know where to check.
 ::::
