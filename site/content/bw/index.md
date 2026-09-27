@@ -58,7 +58,7 @@ On the typical designs for BPC's World Bank-financed 66 kV and 33 kV lines, the 
 Placing power, water or communication lines inside a road reserve needs an "Access Control to Road Reserve Space (Wayleave)" permit, and the A1 drawings sent with the application must show the utilities already in the reserve or close to it ([gov.bw](https://www.gov.bw/transport/access-control-road-reserve-space-wayleave)).
 :::
 :::card{title="Mining: surface rights first" icon="mine" eyebrow="Mining licence"}
-A mining licence application needs surface rights from the land authority or landowner, with a stamped sketch plan showing coordinates, environmental authorisation from the Department of Environmental Affairs and archaeological clearance ([gov.bw](https://www.gov.bw/mining/mining-license-application)). The Minister of Minerals and Energy says the Mines and Minerals (Amendment) Act, 2024, enacted in October 2025 and now in force, brought revised penalties ([BOPA, 25 August 2026](https://dailynews.gov.bw/news-detail/92924)).
+A mining licence application needs surface rights from the land authority or landowner, with a stamped sketch plan showing coordinates, environmental authorisation from the Department of Environmental Affairs and archaeological clearance ([gov.bw](https://www.gov.bw/mining/mining-license-application)). The Mines and Minerals (Amendment) Act, 2024, enacted in October 2025 and now in force, brought revised penalties, according to the Minister quoted by [BOPA on 25 August 2026](https://dailynews.gov.bw/news-detail/92924).
 :::
 :::
 

@@ -384,7 +384,7 @@ Drone surveys are subject to the approvals and security clearances each job requ
 :::callout{tone="scope" title="What this guide is, and isn't"}
 A summary of the public rules as last reviewed on 27 September 2026, with the source for each requirement. Several points are open, including the status of the 2016 bye-law and the aerial work permit, so have your own counsel and CAAB review a drone plan before you rely on it.
 
-[Request a proposal](/bw/contact?intent=proposal&country=bw) · [Satellite-first surveys in Botswana](/bw/)
+[Request a proposal](/bw/contact?intent=proposal&country=bw) · [Satellite-first surveys in Botswana](/bw/) · [Drone law in other countries](/drone-regulations)
 :::
 ::::
 :::::

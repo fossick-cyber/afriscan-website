@@ -191,7 +191,7 @@ The report and GIS layers go to the contacts you name, and re-surveys follow the
 :::
 :::
 
-More on [how it works](/features), the [methodology](/methodology) and [imagery and data sources](/imagery).
+More on [how it works](/features), the [methodology](/methodology), [imagery and data sources](/imagery) and our global [power and water utilities page](/industries/power-utilities).
 ::::
 
 ::::section{id="scope" tone="alt" eyebrow="Honest scope" title="What we do, and what we don't"}

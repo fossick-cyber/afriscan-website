@@ -178,6 +178,8 @@ The area is compared again on the schedule you agree with us, and new pits, spoi
 A person checks every result before the report and GIS layers go to the contacts you name, with a notice of what changed.
 :::
 :::
+
+More on [how it works](/features), the [methodology](/methodology), [imagery and data sources](/imagery) and our global [mining page](/industries/mining).
 ::::
 
 ::::section{id="scope" tone="alt" eyebrow="Honest scope" title="What we do, and what we don't"}
