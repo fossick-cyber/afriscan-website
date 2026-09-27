@@ -86,7 +86,7 @@ For the use of the land and for damage to "trees crops and buildings" (s.148(1))
 The Land Act's Schedule (s.161) repealed the **Wayleaves Act (Cap. 292)** and the **Land Acquisition Act (Cap. 295)**. Some published utility pages still cite the Wayleaves Act.
 ::::
 
-::::section{id="definitions" eyebrow="Words that decide cases" title="Four definitions in section 2"}
+::::section{id="definitions" class="compare" eyebrow="Words that decide cases" title="Four definitions in section 2"}
 | Term | What the Act says | Why it matters for a register |
 |---|---|---|
 | **Building** | "any structure or erection of any kind whatsoever whether permanent or temporary, whether movable or immovable and whether completed or uncompleted" | Kiosks, stalls, mabati sheds and unfinished structures all count |
@@ -120,7 +120,7 @@ A structure can only be dated between two images, so the record is as precise as
 **Evictions from public land** follow their own procedure in sections 152A to 152I, added by the Land Laws (Amendment) Act 2016. The Commission gives notice in writing, in the Gazette, in one national newspaper and by radio in a local language "at least three months before the eviction" (s.152C); for community land, a similar notice goes through the county (s.152D).
 ::::
 
-::::section{id="sector-laws" eyebrow="Sector laws" title="What the energy, petroleum, roads, mining and community land laws add"}
+::::section{id="sector-laws" class="compare" eyebrow="Sector laws" title="What the energy, petroleum, roads, mining and community land laws add"}
 | Law | Section | What it says |
 |---|---|---|
 | Energy Act 2019 | s.170 | Energy infrastructure may be developed "on, through, over or under any public, community or private land" |

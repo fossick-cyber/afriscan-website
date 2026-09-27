@@ -92,7 +92,7 @@ KCAA's online services run through its [RPAS Operations Management System](https
 :::::
 ::::
 
-::::section{id="who" eyebrow="The layers" title="Who authorises what"}
+::::section{id="who" class="compare" eyebrow="The layers" title="Who authorises what"}
 | Layer | Body | Instrument | What it controls |
 |---|---|---|---|
 | Airspace, safety, drones and operators | Kenya Civil Aviation Authority | UAS Regulations 2025 (LN 40/2026) | Registration, import and export permits, operation authorisations, the RPAS Operator Certificate, remote pilot licences, training organisations, resellers, security programmes |

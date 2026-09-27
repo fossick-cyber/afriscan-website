@@ -70,7 +70,7 @@ Compensation covers the use of the land and damage to trees, crops and buildings
 A "building" in the Act is any structure or erection of any kind, permanent or temporary, movable or not, finished or not (section 2), so kiosks, stalls, mabati sheds and jua kali workshops all count. The [wayleave law guide](/ke/wayleave-law-guide) sets out the procedure from notice to Gazette order, with the sections behind each step.
 ::::
 
-::::section{id="why-now" tone="alt" eyebrow="Why it matters now" title="Corridors are being built, extended and re-dated" lead="Kenya is adding lines, rails and fibre while older wayleaves fill up. Each new corridor starts with a notice, a census or a cut-off date, and each one later asks what stood there."}
+::::section{id="why-now" tone="alt" eyebrow="Why it matters now" title="Corridors are being built and extended" lead="Kenya is adding lines, rails and fibre while older wayleaves fill up. Each new corridor starts with a notice, a census or a cut-off date, and each one later asks what stood there."}
 :::cards{cols="4"}
 :::card{title="A transmission grid still growing" icon="power" eyebrow="Power"}
 Twenty-nine transmission lines are due for completion by 2028 ([KBC, 4 September 2025](https://www.kbc.co.ke/ketraco-to-complete-29-transmission-line-project-by-2028/)), with interconnectors to Ethiopia, Tanzania and Uganda and further lines planned under the Transmission Master Plan 2025–2044.
