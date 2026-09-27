@@ -142,7 +142,7 @@ After a notice exercise, a relocation or a compensation round, the next scan sho
 
 The busiest segments are where the route runs beside an existing track through farmland and homesteads; the quietest cross bush and burnt grassland. The operator's own facilities near both ends of the route are part of the asset, not encroachment, and are not in the register. For a Kenyan wayleave the bands follow your widths, and the format, the rating rule and the deliverables stay the same.
 
-[The full sample, with the register excerpt and example segments](/results)
+[The full sample, with the register excerpt and example segments](/results) · [Oil and gas pipelines across Africa](/industries/oil-gas)
 ::::
 
 ::::section{id="new-lines" tone="alt" eyebrow="New lines and extensions" title="Weigh the land before a route is fixed"}

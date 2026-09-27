@@ -53,6 +53,8 @@ Each structure the review confirms is listed with its distance from the centreli
 - New and removed structures at each repeat scan
 - A PDF report in English and GIS layers
 :::
+
+[Rail and roads across Africa](/industries/rail-roads)
 ::::
 :::::
 ::::
@@ -97,7 +99,7 @@ When a relocation notice arrives, we compare alternative routes for the cable by
 ::::section{id="wayleaves" tone="alt" eyebrow="Wayleaves along the way" title="Counties, forests and other crossings"}
 :::::columns{split="2-1"}
 ::::col
-The government has named the fees and levies demanded by county governments, including wayleave acquisition challenges, among the obstacles for fibre builders ([KBC, 15 August 2025](https://www.kbc.co.ke/counties-urged-to-ease-wayleave-fee-hurdles-to-boost-ict-investments/)), and routes that leave the road reserve need their own wayleaves across public, community and private land under the Land Act (sections 143–148). A route comparison that counts the structures, parcels of cleared land and forest cover each option crosses helps choose between staying in the reserve and leaving it.
+In August 2025 a government Principal Secretary cited the "high fees and levies demanded by county governments including wayleave acquisition challenges" as a hurdle for fibre builders ([KBC, 15 August 2025](https://www.kbc.co.ke/counties-urged-to-ease-wayleave-fee-hurdles-to-boost-ict-investments/)), and routes that leave the road reserve need their own wayleaves across public, community and private land under the Land Act (sections 143–148). A route comparison that counts the structures, parcels of cleared land and forest cover each option crosses helps choose between staying in the reserve and leaving it.
 
 We describe the ground. The permissions, the fees and the negotiations with counties and landowners stay with your wayleave team.
 ::::

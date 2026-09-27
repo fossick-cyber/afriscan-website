@@ -2,7 +2,7 @@
 key: home
 template: country_home
 title: Wayleave & Encroachment Mapping in Kenya | AfriScan
-description: Structures, excavations, tracks and cleared ground mapped in pipeline, power-line, road, rail and fibre wayleaves in Kenya. Dated imagery, GIS files, PDF reports.
+description: We map structures, excavations and cleared ground in pipeline, power-line, road, rail and fibre wayleaves in Kenya. Dated imagery, GIS files, PDF reports.
 h1: Know what stands inside your wayleave in Kenya
 eyebrow: AfriScan · Kenya · Wayleaves, reserves and project land
 lead: AfriScan maps structures, excavations, tracks and cleared ground along pipelines, transmission and distribution lines, roads, railways and fibre routes, and inside mining and project areas. Each result is measured against your wayleave or reserve width, dated to the image it came from, checked by a person, and delivered as GIS files and a PDF report.

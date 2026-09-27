@@ -89,7 +89,7 @@ On operating lines, the question moves from the cut-off date to the wayleave its
 - A PDF report in English and GIS layers
 :::
 
-[Vegetation, land cover and fire](/solutions/vegetation-land-cover-fire)
+[Vegetation, land cover and fire](/solutions/vegetation-land-cover-fire) · [Power and utilities across Africa](/industries/power-utilities)
 ::::
 :::::
 ::::

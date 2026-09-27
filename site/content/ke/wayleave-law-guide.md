@@ -67,7 +67,7 @@ The use of the land and damage to trees, crops and buildings, including damage f
 A wayleave may be created for national or county government, a public authority "or any corporate body" (s.143). The Commission may create a public right of way "subject to… section 146".
 :::
 :::step{title="The applicant serves notice"}
-On all occupiers of the land, including those with "customary pastoral rights"; on the county; on "all persons in actual occupation of land in an urban and per-urban area"; and on other interested persons (s.144(4)). This is the step where a map of the structures along the route shows who the notice has to reach.
+On all occupiers of the land, including those with "customary pastoral rights"; on the county; on "all persons in actual occupation of land in an urban and per-urban area"; and on other interested persons (s.144(4)). This is the step where a map of the structures along the route shows where the notice has to reach.
 :::
 :::step{title="The National Land Commission reviews and recommends"}
 After at least 30 days, the Commission recommends one of three routes to the Cabinet Secretary: a public inquiry, a referral to the county, or negotiations (s.146).
@@ -165,7 +165,7 @@ The amounts are in the Acts; see the Sources below.
 Damage from survey work is compensated, so a dated imagery record from before anyone enters the land shows what stood there first.
 :::
 :::card{title="At the notice" icon="houses" eyebrow="ss.144(4) and 2"}
-A map of the structures along the route shows who the notice has to reach, and fixes what stood there on the valuation date.
+A map of the structures along the route shows where the notice has to reach, and records what stood there on the valuation date.
 :::
 :::card{title="After the order" icon="compare" eyebrow="s.143(3)"}
 Repeat scans show what has appeared in the wayleave since it was created, so the holder can follow up through its own lawful process.
@@ -173,4 +173,6 @@ Repeat scans show what has appeared in the wayleave since it was created, so the
 :::
 
 We map structures, dates and distances. We do not identify people, and we do not decide whether a structure is authorised: that is for the wayleave holder, the National Land Commission and the courts. Our records are made to support lawful processes, including notices and compensation under the Land Act and lender standards such as IFC Performance Standard 5. The Community Land Act 2016 (No. 27 of 2016, Kenya Gazette Supplement No. 148 of 7 September 2016) is cited from its Gazette text; the other instruments are listed with links below.
+
+[Right-of-way monitoring](/solutions/right-of-way-monitoring) · [Evidence packs](/solutions/evidence-packs) · [Change detection](/solutions/change-detection)
 ::::

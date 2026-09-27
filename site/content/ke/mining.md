@@ -98,7 +98,7 @@ Several of the recent gold rushes and site closures were in West Pokot, where go
 - Not real-time: each flag compares two dated images
 :::
 
-[Artisanal mining and excavation mapping](/solutions/excavation-mapping)
+[Artisanal mining and excavation mapping](/solutions/excavation-mapping) · [Mining across Africa](/industries/mining)
 ::::
 :::::
 ::::

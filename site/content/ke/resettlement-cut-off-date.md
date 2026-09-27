@@ -54,7 +54,7 @@ Compulsory acquisition runs under Part VIII of the [Land Act 2012](https://new.k
 ::::col
 ### Resettlement plans and lenders {#rap}
 
-Kenya has no standalone resettlement statute. Resettlement rests on the Land Act, on the Mining Act's rule that people who prefer to be compensated by resettlement are settled on suitable alternative land at the licence holder's cost (s.153(8)–(9)), and on lender standards such as IFC Performance Standard 5 and the World Bank's ESS5, which ask for a census and a cut-off date.
+We found no standalone resettlement statute in Kenya. Resettlement rests on the Land Act, on the Mining Act's rule that people who prefer to be compensated by resettlement are settled on suitable alternative land at the licence holder's cost (s.153(8)–(9)), and on lender standards such as IFC Performance Standard 5 and the World Bank's ESS5, which ask for a census and a cut-off date.
 
 Published resettlement action plans for transmission lines define the cut-off date as the completion of the census and asset inventory, and provide for re-ratifying it by Gazette notice after a delay of two years or more. Some of those dates were fixed years before construction. See [power-line wayleaves](/ke/power-line-wayleaves#cut-off).
 

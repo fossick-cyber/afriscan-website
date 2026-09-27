@@ -92,6 +92,8 @@ A structure register is built to carry the least personal data the job allows:
 - **A written processor agreement** covering the contents regulation 24 sets.
 - **People blurred or left out** of any drone imagery, and nothing captured outside the approved flight area kept or shared.
 - **Results only to the contacts you name.** We never publish maps of a client's assets or of the settlements around them without written permission.
+
+[Privacy notice](/privacy) · [Data sources and credits](/data-sources)
 ::::
 ::::col
 :::callout{tone="legal" title="Why property details matter"}

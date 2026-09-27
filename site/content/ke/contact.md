@@ -20,7 +20,7 @@ faq:
     a: The one your process turns on, such as a notice of intention, a Gazette notice, a resettlement cut-off date or the date of an earlier scan. Tell us in the request, and the proposal says which dated imagery exists close to it before you commit.
   - q: Can we send tender or prequalification documents?
     a: Yes. Send the documents with your request, and tell us the portal and the tender reference your process uses. Our [procurement notes](/ke/procurement) set out what applies to this kind of work in Kenya.
-  - q: Our route crosses a county where no one should travel. Can you still help?
+  - q: Our route crosses an area where travel advice warns against travel. Can you still help?
     a: Yes, from satellite imagery. In the areas where government travel advice warns against travel, including Mandera, Wajir, Garissa, Lamu mainland, Tana River and West Pokot, the work is satellite only, with no one on the ground and no drone flight.
 ---
 

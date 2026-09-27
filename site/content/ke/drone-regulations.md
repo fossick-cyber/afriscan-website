@@ -257,7 +257,7 @@ There is no drone-specific rule for mines. The licence holder and the landowner 
 
 **The Survey Act.** The Director of Surveys may ask for the photographs to be produced for inspection, and for copies at the Director's cost (s.42).
 
-**Installations.** Never publish drone imagery of pipeline, power, military or airport installations: the Official Secrets Act makes photographing a prohibited place without authority an offence. We never publish imagery of a client's installations without the client's written permission.
+**Installations.** Drone imagery of pipeline, power, military or airport installations is never published: the Official Secrets Act makes photographing a prohibited place without the authority of the officer in charge an offence. Survey imagery goes only to the client's named contacts.
 ::::
 :::::
 ::::
@@ -330,7 +330,7 @@ No field or drone work in Mandera, Wajir and Garissa counties, Lamu County outsi
 ::::section{id="afriscan" eyebrow="How we work" title="AfriScan and drone work in Kenya"}
 :::::columns{split="1-1"}
 ::::col
-AfriScan screens corridors from satellite imagery. A satellite register needs no aircraft, no flight authorisation and no Survey Act notice for a flight, so it can cover a whole wayleave, including in the counties where no one should travel, before anyone decides whether a drone is worth sending.
+AfriScan screens corridors from satellite imagery. A satellite register needs no aircraft, no flight authorisation and no Survey Act notice for a flight, so it can cover a whole wayleave, including in the areas where government travel advice warns against travel, before anyone decides whether a drone is worth sending.
 
 Where drone detail is needed, the flights are carried out by a company registered in Kenya with a current KCAA RPAS Operator Certificate, under that company's certificate and subject to the approvals and security clearances each job requires. Every AfriScan proposal with a drone element names that company and the approvals its flights need, so your team can check them against this page.
 ::::
@@ -338,7 +338,7 @@ Where drone detail is needed, the flights are carried out by a company registere
 :::callout{tone="scope" title="What this guide is, and isn't"}
 A summary of the public rules as last reviewed on 27 September 2026, with the source for each requirement. Kenya's drone rules were rewritten in 2026 and KCAA has not said when the 2020 rules stopped applying, so have your own counsel review a drone plan before you rely on it.
 
-[Request a proposal](/ke/contact?intent=proposal&country=ke) · [Satellite-first wayleave mapping](/ke/)
+[Request a proposal](/ke/contact?intent=proposal&country=ke) · [Satellite-first wayleave mapping](/ke/) · [Drone surveys](/solutions/drone-surveys) · [Drone law in other countries](/drone-regulations)
 :::
 ::::
 :::::
