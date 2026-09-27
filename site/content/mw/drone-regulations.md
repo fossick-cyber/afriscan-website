@@ -54,8 +54,9 @@ faq:
     a: >-
       The Surveyor General, as well as you. Within 30 days of completing an aerial survey, one printed copy
       of every photograph taken for it, with any plan made from it, and copies of all data and subsequent
-      maps and plans go to the Surveyor General (s.42(2)). Agree in the contract who makes the deposit and how
-      personal data in the imagery is handled.
+      maps and plans go to the Surveyor General. The Act puts the deposit on whoever carries out the aerial
+      survey (s.42(2)); agree in the contract how it will be made and how personal data in the imagery is
+      handled.
   - q: Can drone imagery of our site appear on your website?
     a: >-
       Only with your written permission. We publish no imagery of State, military or police sites, and our
@@ -66,7 +67,7 @@ cta:
   button: Request a proposal
 ---
 
-::::section{id="at-a-glance" eyebrow="At a glance" title="What a commercial survey flight needs in Malawi" lead="A drone survey is lawful only when each of these is in place for that job. MCAA publishes no timeline for drone authorisations, so they belong in the plan from the first day."}
+::::section{id="at-a-glance" eyebrow="At a glance" title="What a commercial survey flight needs in Malawi" lead="Check each of these for every commercial survey flight; the ones that apply must be in place before it flies. MCAA publishes no timeline for drone authorisations, so they belong in the plan from the first day."}
 :::cards{cols="3"}
 :::card{title="Written MCAA authorisation" icon="file-check" eyebrow="Civil Aviation Act, s.43"}
 No aircraft may be operated in Malawi, other than for military, police, customs or immigration operations, without a certificate, licence or other authorisation from MCAA. With no drone rules, that authorisation is decided case by case.
@@ -94,7 +95,7 @@ Imagery of homes and survey or census lists can be personal data: registration t
 |---|---|---|
 | **MCAA**, Malawi Civil Aviation Authority | Any civil drone operation; aircraft, personnel and operator licensing; aircraft registration; airspace | [Civil Aviation Act 2017](https://malawilii.org/akn/mw/act/2017/28/eng@2017-08-22), ss.4, 6, 33, 43 and 89; the saved 2013 Aviation Regulations |
 | **Surveyor General**, Department of Surveys, Ministry of Lands | The 30-day aerial-survey notice and the deposit; registration of drones used in survey and mapping work; quality control of aerial images used in surveys; approved imagery for customary-estate demarcation | [Land Survey Act](https://malawilii.org/akn/mw/act/1952/14/eng@2017-12-31), s.42; [Land Survey Regulations 2020](https://malawilii.org/akn/mw/act/gn/2020/49/eng@2020-08-12), regs 92–93 and 100–101 |
-| **The Minister** responsible for civil aviation, and the security agencies | Restricted areas declared by Gazette notice; protected places | Civil Aviation Act s.82; [Protected Places and Areas Act](https://malawilii.org/akn/mw/act/1960/6/eng@2014-12-31), ss.4 and 7 |
+| **The Minister** (Civil Aviation Act s.82), the **Permanent Secretary** (Protected Places and Areas Act) and the security agencies | Restricted areas declared by Gazette notice; protected places | Civil Aviation Act s.82; [Protected Places and Areas Act](https://malawilii.org/akn/mw/act/1960/6/eng@2014-12-31), ss.4 and 7 |
 | **MACRA**, Malawi Communications Regulatory Authority | Radio equipment and spectrum | Communications Act 2016, s.96 (type approval); [MACRA type approval](https://macra.mw/type-approval/) |
 | **Data Protection Authority** (MACRA) | Personal data in imagery, census and survey lists | [Data Protection Act 2024](https://www.dpa.mw/download/data-protection-act-2024/) |
 
@@ -158,7 +159,7 @@ Damage caused "by an aircraft in flight, during take-off or landing" is recovera
 **Land Survey Act (Cap. 59:03), s.42, "Aerial and topographic survey and topographic mapping":**
 
 1. Notice in writing to the Surveyor General "at least thirty days before the survey is carried out", for "an aerial survey of any land in Malaŵi" (s.42(1)).
-2. Within 30 days of completion, "one printed copy of every photograph taken for the purpose of such aerial survey together with one copy of any plan made as a result of the survey; and … copies of all data and subsequent maps and plans" (s.42(2)).
+2. Within 30 days of completion, the person who carries out the aerial survey submits "one printed copy of every photograph taken for the purpose of such aerial survey together with one copy of any plan made as a result of the survey; and … copies of all data and subsequent maps and plans" (s.42(2)).
 3. A surveyor's topographical mapping data go to the Surveyor General "for quality control and archiving" (s.42(3)).
 4. Failing to give the notice or make the deposit is an offence (s.42(6)).
 
@@ -228,7 +229,7 @@ The [Data Protection Act 2024](https://www.dpa.mw/download/data-protection-act-2
 ::::
 ::::col
 :::callout{tone="scope" title="What to agree with any mapping supplier"}
-Who is the controller and who the processor; whether either party must register under s.41; where imagery and results are processed and stored, and the s.38 basis for any transfer out of Malawi; how the supplier will tell you of a breach in time for the 72-hour notice; how long files are kept; who may publish the orthophotos; and who makes the Surveyor General's deposit.
+Who is the controller and who the processor; whether either party must register under s.41; where imagery and results are processed and stored, and the s.38 basis for any transfer out of Malawi; how the supplier will tell you of a breach in time for the 72-hour notice; how long files are kept; who may publish the orthophotos; and how the Surveyor General's deposit, which the Act puts on whoever carries out the survey, will be made.
 :::
 
 This is one reason AfriScan maps land and assets, never people: a register lists structures, cleared ground, excavations and tracks with their distance to the line, and carries no names.
@@ -264,7 +265,7 @@ The Public Procurement Regulations 2020 list "Unmanned Aerial Systems (UAS)" in 
 Covering this operation: the area, dates, altitudes, aircraft and pilots, and any MCAA registration of the aircraft.
 :::
 :::step{title="The Surveyor General's registration and notice"}
-The drone's registration number under reg. 100 of the Land Survey Regulations 2020, and a copy of the 30-day notice under s.42(1). Agree who deposits the photographs, plans and data within 30 days of completion (s.42(2)).
+The drone's registration number under reg. 100 of the Land Survey Regulations 2020, and a copy of the 30-day notice under s.42(1). The Act puts the deposit of the photographs, plans and data, within 30 days of completion, on whoever carries out the aerial survey (s.42(2)); agree in the contract how it will be made.
 :::
 :::step{title="Pilot credentials MCAA accepts"}
 For example a foreign remote pilot licence MCAA has validated, with logbooks and training records.
@@ -276,7 +277,7 @@ Evidence of coordination with MCAA air traffic services near aerodromes, and no 
 The landowner or occupier; the Traditional Authority and Group Village Head on customary land; the utility's permit to work; the mining-licence holder.
 :::
 :::step{title="Third-party liability insurance"}
-Naming the project, since the owner of the aircraft is strictly liable for damage on the ground (s.80(2)).
+Naming the project, since the owner of the aircraft is strictly liable for damage it causes to other people or property (s.80(2)).
 :::
 :::step{title="A data clause"}
 Registration status, lawful basis, storage location, the s.38 transfer basis, the 72-hour breach notice, retention and who may publish the orthophotos.

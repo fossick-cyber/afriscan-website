@@ -35,14 +35,15 @@ faq:
     a: >-
       The ones that apply to your asset. For roads we use the reserve the Public Roads Act lists for the
       road class: 60 m for a main road, 36 m for secondary, tertiary and district roads and 18 m for
-      branch and estate roads, centred on the carriageway. Wayleave widths depend on the line: a recent
+      branch and estate roads, centred on the carriageway unless the Minister directs otherwise by Gazette
+      notice (s.10(2)). Wayleave widths depend on the line: a recent
       400 kV line from Mozambique was planned with a 55 m wayleave, and we quote no standard width for lower
       voltages, so send the width for each line or section. Up to six widths can be reported in
       one survey.
   - q: Does satellite screening need MCAA authorisation or the Surveyor General's notice?
     a: >-
       Satellite screening involves no flights over your site, so no aircraft is operated in Malawi for it.
-      The Land Survey Act asks for 30 days' notice to the Surveyor General before an aerial survey, and it
+      The Land Survey Act requires 30 days' notice to the Surveyor General before an aerial survey, and it
       defines "survey" to include aerial surveys without defining "aerial survey". Whether that reaches the
       analysis of satellite imagery is a question for your counsel, and our proposals flag it. Drone
       stretches are planned separately, subject to the approvals and security clearances each job requires.
@@ -69,7 +70,8 @@ faq:
       Registration with the Data Protection Authority applies to anyone processing the personal data of more
       than 10,000 people resident in Malawi, or data of significance to the economy, society or security of
       Malawi (s.41). A breach must be notified to the Authority within 72 hours (s.36), and personal data may
-      leave Malawi only on a basis that is recorded (ss.38 to 40). Our registers describe structures and carry
+      leave Malawi only where the recipient gives adequate protection or a s.39(4) condition applies, and
+      the basis must be recorded (ss.38 to 40). Our registers describe structures and carry
       no names, and each proposal says who is the controller and who is the processor.
 ---
 
@@ -91,10 +93,10 @@ Malawian resettlement plans tie the cut-off date to the census and asset invento
 :::
 ::::
 
-::::section{id="why-now" tone="alt" eyebrow="Why it matters now" title="New lines, busy reserves and corridors to the coast" lead="Malawi's power, road and rail links to Mozambique are being built and upgraded now, and the land beside them changes between patrols."}
+::::section{id="why-now" tone="alt" eyebrow="Why it matters now" title="New lines, busy reserves and corridors to the coast" lead="Malawi's power and road links to Mozambique are being built and upgraded now, and the land beside them changes between patrols."}
 :::cards{cols="2"}
 :::card{title="Power from Mozambique" icon="power" eyebrow="400 kV · August 2026"}
-A 400 kV interconnector from Mozambique was energised in August 2026, with commercial trading waiting on tariff agreements. On its Malawian section the resettlement census, in April and May 2019, covered the people living in a 55 m wayleave; the resettlement plan relocates the houses in it and allows low-lying crops, but no trees, under the line. A wayleave cleared for construction does not stay clear by itself.
+A 400 kV interconnector from Mozambique was energised in August 2026, with commercial trading waiting on tariff agreements. On its Malawian section the resettlement census, in April and May 2019, covered the project-affected people in its 55 m wayleave; the resettlement plan relocates the houses in it and allows low-lying crops, but no trees, under the line. A wayleave cleared for construction does not stay clear by itself.
 :::
 :::card{title="More interconnectors to route" icon="route" eyebrow="Zambia · Tanzania"}
 Interconnectors to Zambia and to Tanzania are at feasibility stage, and grant funding to update the feasibility and ESIA studies for the 400 kV Tanzanian line was announced in July 2025. Route options compared by the structures they affect, and a dated baseline before the census, are most useful at this stage.
@@ -141,11 +143,11 @@ New excavations, earthworks and construction along buried cable routes, so your 
 :::card{title="Resettlement and ESIA baselines" icon="clipboard" key="project-finance-esia"}
 Dated structure layers for RAP and ESIA teams, lenders and their supervisors, from the cut-off date to the end of implementation.
 :::
-:::card{title="Mining licence areas" icon="mine" key="mining"}
-Structures across a licence area and a ring around it, and pits and disturbed ground inside it, for licence holders and their consultants.
-:::
 :::card{title="Routes for new lines and roads" icon="compare" key="route-site-selection"}
 Structure counts along each alignment option, before the route is fixed and the census starts.
+:::
+:::card{title="Routes into Mozambique" icon="route" href="#baselines"}
+Lines and roads that cross the border, covered on both sides, with the widths that apply in each country.
 :::
 :::
 ::::
@@ -217,7 +219,7 @@ Malawi's 400 kV interconnector comes in from Mozambique, and its railway links t
 ::::
 ::::col
 :::callout{tone="scope" title="Where we do not send field or drone teams"}
-- **In Mozambique:** districts where the UK Foreign, Commonwealth & Development Office advises against all or all but essential travel (advice of 20 August 2026): Cabo Delgado province, Memba and Eráti in Nampula, and Mecula and Marrupa in Niassa.
+- **In Mozambique:** the areas where the UK Foreign, Commonwealth & Development Office advises against all or all but essential travel (advice of 20 August 2026): Cabo Delgado province, Memba and Eráti in Nampula, and Mecula and Marrupa in Niassa.
 - **In Malawi:** no part of the country is under an FCDO warning against travel (advice updated 3 July 2026). Drone flights still stay away from State, military and police sites, border posts and borderlands, and artisanal pits, and we do not work on the disputed Lake Malawi boundary, on contested evictions or in displacement camps.
 :::
 ::::
