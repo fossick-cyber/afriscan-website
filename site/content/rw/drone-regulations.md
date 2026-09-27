@@ -67,7 +67,7 @@ RCAA permission for restricted sites such as high-tension cables and masts, ATC 
 :::
 ::::
 
-::::section{id="who" tone="alt" eyebrow="Who regulates what" title="The bodies, and what each one controls"}
+::::section{id="who" tone="alt" class="compare" eyebrow="Who regulates what" title="The bodies, and what each one controls"}
 | Body | What it authorises or controls | Legal basis |
 |---|---|---|
 | **RCAA**, Rwanda Civil Aviation Authority, established by Law N° 007/2019 of 13/04/2019 | Drone registration (9XR-), remote pilot licences, activity permits, UAS Operator Certificates, BVLOS area approvals | [RCAR Part 27](https://www.caa.gov.rw/fileadmin/user_upload/RCAA/Laws___Regulations/Aviation_Orders/__Ministerial_Orders/____Rwanda_Civil_Aviation_Regulations/RCARs_Part_27_-_Unmanned_Aircraft_Systems_Regulations.pdf), under [Law n° 20/2018](https://rwandalii.org/akn/rw/act/law/2018/20/eng@2018-04-30) as amended by [Law n° 059/2024](https://rwandalii.org/akn/rw/officialGazette/government-gazette/2024-07-24/special/mul@2024-07-24) |
@@ -81,7 +81,7 @@ RCAA permission for restricted sites such as high-tension cables and masts, ATC 
 Part 27 covers "basic and specific" operations and, "unless otherwise exempted", does not apply to international operations of drones (27.001(c)). Part 27 has been re-issued twice as special regulations of the Director General: RSR/01/2024 of 15 November 2024, and the current RSR/01/2026 of 15 February 2026, which added Subpart I on BVLOS area approvals. RCAA's service pages still point to its [advisory circular RCAA-AC-UAS-21-001](https://www.caa.gov.rw/fileadmin/user_upload/RCAA/Laws___Regulations/Advisory_Circulars/unmanned_aircraft_system__uas__advisory_circular_in_compliance_with_part_27.pdf), which predates both and adds document lists this guide cites where they apply.
 ::::
 
-::::section{id="categories" eyebrow="The categories" title="Basic or Specific: where a survey drone fits"}
+::::section{id="categories" class="compare" eyebrow="The categories" title="Basic or Specific: where a survey drone fits"}
 :::::columns{split="2-1"}
 ::::col
 Part 27 sorts operations into two classes (27.020 and Table 27.020):
@@ -241,7 +241,7 @@ The [Data Protection and Privacy Office](https://dpo.gov.rw/) issues those certi
 "Declare your drone to Rwanda National Police at any point of entry into the country, failure to abide calls for penalty" ([RCAA](https://www.caa.gov.rw/drones)). Unless it is authorised, any drone brought in, registered abroad or not registered at all, is handed over on a seizure form until registration or authorisation is complete (App. 1 §1.2.4), and drones left unclaimed for more than six months are destroyed or auctioned (§1.2.6). Imported drone parts may not be held without RCAA's authorisation (§1.2.3). The UK's travel advice puts it plainly: "You must declare drones when you arrive. They may be confiscated or held until you leave the country."
 ::::
 
-::::section{id="penalties" eyebrow="Enforcement" title="Penalties in Law n° 20/2018"}
+::::section{id="penalties" class="compare" eyebrow="Enforcement" title="Penalties in Law n° 20/2018"}
 | Offence | Article | Penalty |
 |---|---|---|
 | Operating a drone without authorisation | art. 99 | 3 to 5 years' imprisonment and a fine |
