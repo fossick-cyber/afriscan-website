@@ -143,7 +143,7 @@ Our Angola guide to mining zones is in Portuguese: [concessões de diamantes e z
 ::::col
 **Mining zones and regrouping.** The Mining Code bars residence in restricted zones and allows the zones to be created only if the residents are regrouped nearby, in housing "nunca inferiores" (never inferior) to what they had, with equivalent social infrastructure (Lei n.º 31/11, art. 207). A dated count of structures before and after is the kind of baseline such a programme starts from.
 
-**Environmental licensing.** The impact-assessment procedure is set by [Decreto Presidencial n.º 117/20](https://anrm.gov.ao/wp-content/uploads/2025/08/DP-117-20-de-22-de-Abril-Novo-Regulamento-Geral-de-Avaliacao-de-Impacte-Ambiental-e-do-Procedimento-de-Licenciamento-Ambiental.pdf). Our layers drop into the EIAS team's maps.
+**Environmental licensing.** The impact-assessment procedure is set by [Decreto Presidencial n.º 117/20](https://anrm.gov.ao/wp-content/uploads/2025/08/DP-117-20-de-22-de-Abril-Novo-Regulamento-Geral-de-Avaliacao-de-Impacte-Ambiental-e-do-Procedimento-de-Licenciamento-Ambiental.pdf). Our layers drop into the ESIA (EIAS) team's maps.
 
 [Resettlement cut-off-date baselines](/solutions/resettlement-cut-off-baselines)
 ::::

@@ -3,7 +3,7 @@ key: home
 template: country_home
 title: Monitorização de Faixas de Servidão em Angola | AfriScan
 description: "Localizamos construções na faixa de 30 m de oleodutos, gasodutos e linhas eléctricas em Angola e alterações no terreno em concessões. SIG e PDF em português."
-h1: Saiba o que está construído na faixa de servidão do seu oleoduto ou da sua linha eléctrica
+h1: Saiba o que está construído na sua faixa de servidão
 eyebrow: AfriScan by Afridrone · Angola
 lead: Localizamos as casas e as outras construções ao longo de oleodutos, gasodutos, linhas de transporte de electricidade e caminhos-de-ferro, e mapeamos as alterações no terreno em concessões mineiras e áreas de projecto. Cada construção é medida até ao eixo e agrupada por faixa, uma pessoa revê cada resultado, e recebe ficheiros SIG e um relatório em português. Primeiro o satélite; o drone só onde o detalhe o exigir.
 buttons:
