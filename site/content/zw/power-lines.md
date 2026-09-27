@@ -90,7 +90,7 @@ The clearances were read from the gazetted page of S.I. 177 of 2018, whose Arran
 ::::section{id="existing-lines" eyebrow="Existing lines" title="A register of what stands in the wayleave, then what changed"}
 :::::columns{split="2-1"}
 ::::col
-We buffer your line in its UTM zone at the clearance for its voltage, or at the wayleave polygons you send, and list each structure the review confirms with its distance to the line, its distance to the wayleave edge, its span or chainage and its coordinates. Cleared and cultivated ground inside the clearance is shown as its own layer, because the regulations treat farming in the wayleave like building in it.
+We buffer your line in its UTM zone at the clearance for its voltage, or at the wayleave polygons you send, and list each structure the review confirms with its distance to the line, its distance to the wayleave edge, its span or chainage and its coordinates. Cleared and cultivated ground inside the clearance is shown as its own layer, because s.9(1) bars farming in the wayleave as well as building.
 
 Each 500 m stretch, or each span if you send tower positions, is rated for **encroachment density**, high, medium or low, by a count rule. The rating is a way to plan visits, not a safety rating.
 

@@ -131,7 +131,7 @@ Structures are coloured by band: <span class="band band--a">Inner band, such as 
 ::::section{id="expansion" tone="alt" eyebrow="Expansions and new routes" title="A baseline before the contractors arrive"}
 :::::columns{split="2-1"}
 ::::col
-Fuel pipelines cross into Zimbabwe from Mozambique, the 2025 State of the Nation Address announced further upgrades to pipeline capacity ([SONA, 28 October 2025](https://www.veritaszim.net/node/7687)), and the Ministry of Energy and Power Development says the Government is interested in extending the network to the southern regions, "such as Bulawayo" ([Ministry](https://www.energy.gov.zw/?page_id=2032)).
+A fuel pipeline crosses into Zimbabwe from Mozambique, the 2025 State of the Nation Address announced further upgrades to pipeline capacity ([SONA, 28 October 2025](https://www.veritaszim.net/node/7687)), and the Ministry of Energy and Power Development says the Government is interested in extending the network to the southern regions, "such as Bulawayo" ([Ministry](https://www.energy.gov.zw/?page_id=2032)).
 
 Pipelines are First Schedule projects under the Environmental Management Act and may not be implemented without an EMA certificate (s.97). For a loop, branch or new route we count the structures along each alternative alignment in the same bands, screen slope, drainage crossings and flood-prone ground, and pull the imagery history of contested parcels. Once the route is fixed, a dated register on the cut-off date supports the census and asset inventory, and repeat surveys during construction show new tracks, laydown areas and earthworks.
 

@@ -218,7 +218,7 @@ Temporary import under s.7 does not by itself register the drone, and an ROC app
 
 The [Land Survey Act [Chapter 20:12]](https://www.veritaszim.net/node/207) reserves surveys for Deeds Registry diagrams and general plans, and boundary and beacon surveys, to practising land surveyors, and forbids anyone else to "hold himself out in any manner whatever as a land surveyor" (s.16). Section 7(1)(b) gives the Surveyor-General supervision and control of "all matters pertaining to aerial and space surveys conducted and geoinformation obtained in relation to Zimbabwe"; no registration, deposit or permit rule under it was found.
 
-A drone orthophoto, and a structure register built from it, is a mapping record. Where your deliverable must be relied on as a survey, add certification by a registered land surveyor to the scope.
+A drone orthophoto, and a structure register built from it, is a mapping record. Where your deliverable must be relied on as a survey, it needs a registered land surveyor's certification.
 ::::
 ::::col
 ### Personal data

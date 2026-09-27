@@ -69,7 +69,7 @@ Each of these distances is written as a band on the ground. We turn it into a re
 ::::
 
 ::::section{id="corridors" tone="alt" eyebrow="Across the border" title="One method on both sides of the border"}
-Fuel pipelines cross into Zimbabwe from Mozambique, and the State of the Nation Address of 28 October 2025 announced further upgrades to pipeline capacity ([SONA 2025](https://www.veritaszim.net/node/7687)). The Ministry of Energy and Power Development says the Government is "interested in expanding its pipeline network to the southern regions of the country, such as Bulawayo" ([Ministry](https://www.energy.gov.zw/?page_id=2032)).
+A fuel pipeline crosses into Zimbabwe from Mozambique, and the State of the Nation Address of 28 October 2025 announced further upgrades to pipeline capacity ([SONA 2025](https://www.veritaszim.net/node/7687)). The Ministry of Energy and Power Development says the Government is "interested in expanding its pipeline network to the southern regions of the country, such as Bulawayo" ([Ministry](https://www.energy.gov.zw/?page_id=2032)).
 
 More capacity means works along the lines, and the 2026 amendment to the Pipelines Act was written, in the words of its memorandum, "to ensure maximum protection of the pipelines by prohibiting all activities within the pipeline reserve". A corridor that crosses a border needs the same record on both sides: the reserve and the 125 m band in Zimbabwe, the [50 m partial protection zone in Mozambique](/mz/pipelines), each measured with one method and one register format.
 

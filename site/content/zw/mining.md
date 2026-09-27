@@ -11,7 +11,7 @@ buttons:
   - {label: Send us your location boundary, intent: proposal}
   - {label: See sample outputs, key: results}
 service:
-  name: Mining-location land-change survey, Zimbabwe
+  name: Mining-location land-change mapping, Zimbabwe
   type: Excavation and ground-disturbance mapping, boundary change and resettlement baselines
   description: Pits, spoil heaps, water-filled excavations, cleared ground, tracks and structures inside and around mining locations in Zimbabwe, measured to the boundary and banded at the distances the client sets, compared between dated surveys, reviewed by a person and delivered as PDF reports with GIS layers.
 og:
