@@ -42,7 +42,7 @@ cta:
 
 | Question | Satellite scenes | Drone orthophotos | Your own imagery | Web-map basemaps |
 |---|---|---|---|---|
-| **Coverage** | Whole routes and networks, concessions, districts | Stretches and sites, flown in line-of-sight legs | Whatever you fly or buy | Wide, but for screening only |
+| **Coverage** | Whole routes and networks, concessions, districts | Stretches and sites, flown in line-of-sight legs | Whatever you fly or buy | Wide; used to screen and plan, not survey imagery |
 | **Detail** | Houses, outbuildings, cleared plots, larger excavations | Adds small structures, fresh digging, materials and the layout of a compound | Depends on its resolution | Varies; not survey imagery |
 | **Date** | The archive's dates, or a requested window | The day you fly | As captured | Unknown |
 | **The past** | **Yes**: archive scenes can show last year, or five years ago | No | Only from when you started | No usable date |
@@ -101,7 +101,7 @@ Structures and ground disturbance inside the boundary and in a ring around it fr
 - Neither replaces a cadastral survey: drone positions without ground control are good to a few metres, not to a boundary surveyor's standard
 :::
 
-Whatever the imagery, a person reviews every result before delivery, the report names the imagery and its capture date, and anything the imagery cannot settle goes on a ground-check list. Web-map basemaps are used only to screen and plan; they are never delivered and never the basis of a dated record. The detail is in the [methodology](/methodology#imagery).
+Whatever the imagery, a person reviews every result before delivery, the report names the imagery and its capture date, and anything the imagery cannot settle goes on a ground-check list. Web-map basemaps are used to screen and plan, and Google's, credited, to show our [pipeline sample](/results); they are never delivered as survey imagery and never the basis of a dated record. The detail is in the [methodology](/methodology#imagery).
 
 ## In each country {#countries}
 
