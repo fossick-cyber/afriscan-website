@@ -118,7 +118,7 @@ Some corridors and installations are declared protected areas or places under th
 
 ## Records and personal data {#data}
 
-A register of structures is not in itself a record about people, but it becomes one quickly: imagery of homes linked to names, census lists or grievance files is personal data under the [Data Protection Act 2021](https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%203%20The%20Data%20Protection%20Act%202021_0.pdf). A data controller registers with the Data Protection Commission (s.19), stores personal data on a server or data centre in Zambia (s.70(1)), transfers it abroad only on the conditions in s.71, and notifies the Commissioner of a breach within 24 hours (s.49). Keep the names in your own systems and the register on structure IDs and coordinates.
+A register of structures can quickly become a record about people: imagery of homes linked to names, census lists or grievance files is personal data under the [Data Protection Act 2021](https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%203%20The%20Data%20Protection%20Act%202021_0.pdf). A data controller registers with the Data Protection Commission (s.19), stores personal data on a server or data centre in Zambia (s.70(1)), transfers it abroad only on the conditions in s.71, and notifies the Commissioner of a breach within 24 hours (s.49). Keep the names in your own systems and the register on structure IDs and coordinates.
 
 ## A checklist for wayleave holders {#checklist}
 

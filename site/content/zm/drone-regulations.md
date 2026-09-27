@@ -246,7 +246,7 @@ Before flying: NOTAM and AIP checks, a weather assessment and crew roles "define
 **What this means for a corridor.** Standard work is flown in VLOS legs of up to 500 m below 400 ft. Unlike Mozambique, Zambia has an approval route for B-VLOS, but only through an operator whose Operations Manual the Director-General has approved for it.
 ::::
 
-::::section{id="protected-places" eyebrow="Protected places and areas" title="Pipeline corridors, pumping stations, mine workings and bridges" lead="The Protected Places and Areas Act (Cap. 125) works on the ground, not in the air, but its orders cover exactly the assets corridor surveys are about."}
+::::section{id="protected-places" eyebrow="Protected places and areas" title="Pipeline corridors, pumping stations, mine workings and bridges" lead="The Protected Places and Areas Act (Cap. 125) controls who may be in protected premises, which include any land. Whether it reaches a drone overflight is for counsel, and its orders cover exactly the assets corridor surveys are about."}
 :::::columns{split="2-1"}
 ::::col
 **How the Act works.** In a *protected place*, no one may "be in those premises" without a pass or permit from the named authority or an authorised officer's permission (s.5). In a *protected area*, anyone present must obey an authorised officer's directions and may be searched (s.6). "Premises" includes any land. Breaking either rule is an offence punishable by a fine or imprisonment of up to five years (ss.5(3) and 6(3)).

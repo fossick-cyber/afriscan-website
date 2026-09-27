@@ -168,7 +168,7 @@ Imagery of homes linked to names, census lists or grievance files is personal da
 ::::col
 The [Data Protection Commission](https://www.dataprotection.gov.zm/)'s 2025 guide to registering data controllers and processors adds that storage abroad, including "A cloud-based system which stores data outside Zambia", needs "a separate authorization", that representatives of foreign entities have their own part of the process, and that registration may be refused if the applicant's entity is not legally registered or authorised to operate in Zambia.
 
-**What to put in the contract:** the controller and processor roles, where project data will be processed and stored and any Commission authorisation for storage abroad, breach notice, retention and deletion, who may receive results, and the masking of personal and security-sensitive details in deliverables. Our registers carry structure IDs and coordinates rather than names, which keeps most of a survey's data out of scope; the proposal states the arrangements for your contract.
+**What to put in the contract:** the controller and processor roles, where project data will be processed and stored and any Commission authorisation for storage abroad, breach notice, retention and deletion, who may receive results, and the masking of personal and security-sensitive details in deliverables. Our registers carry structure IDs and coordinates rather than names, so names stay in your own systems; whether any layer is personal data for your project is for your data protection officer or counsel. The proposal states the arrangements for your contract.
 ::::
 :::::
 ::::
