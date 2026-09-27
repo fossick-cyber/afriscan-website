@@ -181,7 +181,7 @@ main:focus { outline: none; }
 .region-menu {
   position: absolute; right: 0; top: calc(100% + 10px); z-index: 110;
   width: 280px; max-width: calc(100vw - 24px); max-height: calc(100vh - var(--header-h) - 20px);
-  overflow-y: auto; overscroll-behavior: contain;
+  overflow-y: auto; overscroll-behavior: contain; white-space: normal;   /* .region is nowrap for the summary */
   background: var(--ink-2); border: 1px solid var(--d-line); border-radius: var(--radius); box-shadow: 0 20px 40px rgba(0, 0, 0, .45); padding: 12px;
 }
 @supports (height: 100dvh) { .region-menu { max-height: calc(100dvh - var(--header-h) - 20px); } }
