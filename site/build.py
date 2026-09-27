@@ -250,16 +250,59 @@ class Build:
                 return v
         return None
 
+    def catalogue_texts(self):
+        """(where, {lang: text}) for every industry and solution name, blurb and menu line and every group name."""
+        out = []
+        for part in ("industries", "solutions"):
+            for c in self.catalogue[part]:
+                out += [(f"{part}.{c['key']}.{f}", c.get(f)) for f in ("name", "blurb", "menu") if f != "menu" or "menu" in c]
+        for part in ("solution_groups", "service_groups"):
+            out += [(f"{part}.{g['key']}.name", g.get("name")) for g in self.catalogue.get(part) or []]
+        return [(w, d if isinstance(d, dict) else {}) for w, d in out]
+
+    def check_catalogue_langs(self, pages):
+        """The catalogue language each page language uses (cat_lang). A language published pages are in must be
+        in every entry: a gap fails the build, naming the entries, so an English name never replaces one on a
+        live page unnoticed. A language the catalogue has no entry in yet (fr) uses English with a WARN, and so
+        do the gaps of a language only draft pages are in. False when an English text is missing (every page
+        falls back to it, so nothing can be rendered)."""
+        texts = self.catalogue_texts()
+        written = {lang for _, d in texts for lang in d}
+        by_lang = defaultdict(lambda: [set(), set()])          # lang2 -> [published sections, draft sections]
+        for p in pages:
+            by_lang[p["lang2"]][1 if p["draft"] else 0].add(p["loc_key"])
+        by_lang.setdefault("en", [{"global"}, set()])          # the fallback itself is always checked
+        self._cat_langs, renderable = {}, True
+        for lang2, (live, drafts) in sorted(by_lang.items()):
+            gaps = [w for w, d in texts if not d.get(lang2)]
+            self._cat_langs[lang2] = "en" if gaps else lang2
+            if not gaps:
+                continue
+            renderable = renderable and lang2 != "en"
+            gap_list = ", ".join(gaps[:8]) + (f" and {len(gaps) - 8} more" if len(gaps) > 8 else "")
+            if lang2 == "en":
+                self.err(f"data/catalogue.yaml: no 'en' text in {gap_list} (every page language falls back to English)")
+            elif live:
+                if lang2 in written:
+                    self.err(f"data/catalogue.yaml: no '{lang2}' text in {gap_list} (the {', '.join(sorted(live))} pages are "
+                             f"published in '{lang2}'; English is never swapped in on them)")
+                else:
+                    self.warn(f"data/catalogue.yaml has no '{lang2}' names yet: the {', '.join(sorted(live | drafts))} "
+                              f"pages use the English industry and solution names")
+            else:
+                what = f"no '{lang2}' text in {gap_list}" if lang2 in written else f"has no '{lang2}' names yet"
+                self.warn(f"data/catalogue.yaml: {what}; the draft {', '.join(sorted(drafts))} pages use the English "
+                          f"industry and solution names")
+        return renderable
+
     def cat_lang(self, lang2):
-        """The data/catalogue.yaml language key for a page language: its own when every industry, solution
-        and service group has it (en, pt; fr once written), else en."""
+        """The data/catalogue.yaml language key for a page language (check_catalogue_langs): its own when every
+        entry has it, else en."""
         if not hasattr(self, "_cat_langs"):
-            dicts = [d for c in self.catalogue["industries"] + self.catalogue["solutions"]
-                     for d in (c["name"], c["blurb"], c.get("menu") or c["blurb"])]
-            dicts += [g["name"] for g in self.catalogue.get("service_groups", []) + self.catalogue.get("solution_groups", [])
-                      if isinstance(g.get("name"), dict)]
-            self._cat_langs = set.intersection(*(set(d) for d in dicts)) if dicts else {"en"}
-        return lang2 if lang2 in self._cat_langs else "en"
+            self._cat_langs = {}
+        if lang2 not in self._cat_langs:
+            self._cat_langs[lang2] = lang2 if all(d.get(lang2) for _, d in self.catalogue_texts()) else "en"
+        return self._cat_langs[lang2]
 
     def lang_name(self, lk):
         loc = self.locales[lk]
@@ -1910,7 +1953,8 @@ class Build:
             missing = sorted(allk - s)
             for k in missing:
                 if n != "en" and optional(k):
-                    if not optional(k.rsplit(".", 1)[0]) or k.rsplit(".", 1)[0] not in missing:
+                    parent = k.rsplit(".", 1)[0] if "." in k else None
+                    if not (parent and optional(parent) and parent in missing):   # once, for the top-most missing key
                         self.warn(f"data/i18n/{n}.yaml: no '{k}'; the English string is used")
                 else:
                     self.err(f"data/i18n/{n}.yaml: missing key '{k}'")
@@ -1922,6 +1966,8 @@ class Build:
         self.check_locales()
         self.check_i18n()
         pages = self.read_pages()
+        if not self.check_catalogue_langs(pages):
+            return self.report(pages, [])
         self.check_reviews(pages)
         self.check_deploy_config()
         if self.dist.exists():
@@ -2017,7 +2063,6 @@ def selftest():
         "withdrawn-dot":  ("global", append("Our sample is the QX.7 line."), "[withdrawn-name]"),
         "svg-text":       ("global", append('<svg viewBox="0 0 120 20" role="img"><text x="0" y="14">Real-time alerts</text></svg>'),
                            "[overstatement]"),
-        "draft-link":     ("global", append("See [our Zambia site](/zm/)."), "[draft-leak]"),
         "law-only-name":  ("global", append("Our sample is near the Morlock field."), "[withdrawn-name]"),
         "on-sample-page": ("global/results.md", append("See regulation 12/3456."), "[withdrawn-name]"),
         "law-page-ok":    ("mz/en/50m-protection-zone.md", append("The Morlock corridor has its own zone."), None),
@@ -2083,6 +2128,20 @@ def selftest():
             print(f"{'PASS' if code == 1 and hit else 'FAIL'}  {name:15s} {(hit or b.errors or ['no error raised'])[0][:105]}")
             if not (code == 1 and hit):
                 failed.append(name)
+        # data: a catalogue entry without the language of a live section (English must not be swapped in
+        # silently), and a language file without a whole fallback block (English is used, with a WARN)
+        for name, patch, expect, kind in (
+                ("catalogue-gap", lambda b: next(c for c in b.catalogue["industries"] if "menu" in c)["menu"].pop("pt"),
+                 "no 'pt' text in", "error"),
+                ("i18n-fallback", lambda b: b.i18n["pt-MZ"].pop("regions", None), "no 'regions'", "warn")):
+            b = make(dist=tmp / name / "dist")
+            patch(b)
+            code = b.run()
+            hit = [m for m in (b.errors if kind == "error" else b.warnings) if expect in m]
+            ok = hit and code == (1 if kind == "error" else 0)
+            print(f"{'PASS' if ok else 'FAIL'}  {name:15s} {(hit or b.errors or ['no ' + kind + ' raised'])[0][:105]}")
+            if not ok:
+                failed.append(name)
         # near-duplicate: an English country page that copies the global one
         content = tmp / "dup" / "content"
         shutil.copytree(SITE / "content", content)
@@ -2124,21 +2183,45 @@ def selftest():
     return 1 if failed else 0
 
 
+SELFTEST_DRAFT = ("xq", {"content": "xq", "prefix": "/xq", "lang": "en-XQ", "hreflang": ["en-XQ"], "og_locale": "en_GB",
+                          "i18n": "en", "country": "XQ", "country_name": "Selftest Land", "label": "Selftest Land",
+                          "short": "Selftest Land", "sitemap": "sitemap-xq.xml", "status": "draft", "region": "East"},
+                  {"name": "Selftest Land", "region": "East", "languages": ["en"], "status": "launching",
+                   "timezones": ["Africa/Selftest_Town"]})
+SELFTEST_DRAFT_HOME = """---
+key: home
+template: country_home
+title: Selftest draft country site | AfriScan
+description: A home page for the synthetic draft section the selftest adds, to prove the draft guards. Never published.
+h1: Selftest draft section
+summary: A home page for the synthetic draft section the selftest adds, to prove the draft guards. Never published.
+---
+Selftest fixture for a draft section. It is never published.
+"""
+
+
 def selftest_drafts(make, tmp):
     """Draft sections (data/locales.yaml status: draft). A normal build never builds them and nothing it
     publishes may point into one; a --drafts build marks their pages and never writes into a dist/.
-    Each seeded leak stands for a regression in one place that could publish a pointer to a draft."""
-    draft = next((lk for lk, l in load_yaml(SITE / "data/locales.yaml").items() if l.get("status") == "draft"), None)
-    if not draft:
-        print("SKIP  draft sections: every section in data/locales.yaml is live")
-        return []
-    loc = load_yaml(SITE / "data/locales.yaml")[draft]
+    Each seeded leak stands for a regression in one place that could publish a pointer to a draft.
+
+    The draft is a synthetic section (SELFTEST_DRAFT, country XQ) added to each Build, so these cases run
+    whatever data/locales.yaml holds: with every real section live, or with a new draft that has no pages."""
+    draft, loc, country = SELFTEST_DRAFT
     home, code = loc["prefix"] + "/", loc["hreflang"][0]
-    fixture = SITE / "tests/fixtures/demo/content" / loc["content"] / "index.md"
+
+    def make_d(**kw):
+        b = make(**kw)
+        b.locales[draft] = dict(loc)
+        b.countries[loc["country"].lower()] = dict(country)
+        for t in b.i18n.values():
+            if isinstance(t.get("sites"), dict):
+                t["sites"][draft] = loc["label"]
+        return b
 
     def with_home(content):
         (content / loc["content"]).mkdir(parents=True, exist_ok=True)
-        shutil.copy2(fixture, content / loc["content"] / "index.md")
+        (content / loc["content"] / "index.md").write_text(SELFTEST_DRAFT_HOME, encoding="utf-8")
 
     def wrap(b, method, after):
         orig = getattr(b, method)
@@ -2153,6 +2236,10 @@ def selftest_drafts(make, tmp):
         f = b.dist / name
         f.write_text(f.read_text(encoding="utf-8").replace("</urlset>", text + "</urlset>") if name.endswith(".xml")
                      else f.read_text(encoding="utf-8") + text, encoding="utf-8")
+
+    def append_page(b, rel, text):
+        f = b.content_dir / rel
+        f.write_text(f.read_text(encoding="utf-8").rstrip() + f"\n\n{text}\n", encoding="utf-8")
 
     def strip_draft_marks(b, what):
         def after(_, p):
@@ -2175,6 +2262,8 @@ def selftest_drafts(make, tmp):
         "drafts-in-other": (True, fake / "dist/preview", False, None, "--drafts never writes"),
         "draft-built":     (False, None, True, lambda b: setattr(b, "section_built", lambda lk: True),
                             "a file in a draft section"),
+        "draft-link":      (False, None, False, lambda b: append_page(b, "global/faq.md", f"See [the draft site]({home})."),
+                            "[draft-leak] /faq: internal link"),
         "draft-hreflang":  (False, None, False, lambda b: wrap(b, "alternates", lambda r, p: r and r + [
                                 {"code": code, "href": b.base + home}]), "hreflang alternate"),
         "draft-menu":      (False, None, False, lambda b: wrap(b, "region_links", lambda r, p: r + [item]),
@@ -2204,7 +2293,7 @@ def selftest_drafts(make, tmp):
         shutil.copytree(SITE / "content", content)
         if add_home:
             with_home(content)
-        b = make(content_dir=content, dist=dist or tmp / name / "dist", drafts=drafts)
+        b = make_d(content_dir=content, dist=dist or tmp / name / "dist", drafts=drafts)
         if patch:
             patch(b)
         code_ = b.run()

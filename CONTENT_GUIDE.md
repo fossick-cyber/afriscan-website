@@ -13,7 +13,7 @@ Everything runs with the app's virtualenv Python (Jinja2 3.1, Pillow 12, markdow
 ```bash
 cd /home/claude/afriscan-site
 /opt/favhousecheck/.venv/bin/python3 site/build.py            # build dist/ and run every guard; exit 1 on any error
-/opt/favhousecheck/.venv/bin/python3 site/build.py --selftest # prove each guard still fails on a seeded mistake (~1 min)
+/opt/favhousecheck/.venv/bin/python3 site/build.py --selftest # prove each guard still fails on a seeded mistake (~70 builds: 20-25 min)
 /opt/favhousecheck/.venv/bin/python3 site/build.py --demo /tmp/x   # real content + template fixtures, a drafts build (checks layouts; never deploy)
 /opt/favhousecheck/.venv/bin/python3 site/build.py --drafts --dist /tmp/y   # include status: draft pages and draft sections (local preview only)
 ```
@@ -234,7 +234,7 @@ Every section is an entry in `data/locales.yaml` with `status: live` or `status:
 - **Going live** (one country branch per country): set the section's `status: live` in `data/locales.yaml` and the country's `status: live` in `data/countries.yaml` (the build warns until you do); add `content/<folder>/index.md` (template `country_home`) and the pages; a non-English section also needs its `data/i18n/<i18n>.yaml` with every key of `en.yaml` except `regions`, `sites`, `region.stay` and `region.banner`, which fall back to English with a WARN; list the pages the owner put live before review under `pending` in `data/reviews.yaml` with `owner_decision: 2026-09-27` (below). Keep the other sections' entries untouched so the branches merge cleanly.
 - **hreflang codes** come from `hreflang:` in `data/locales.yaml`: the first is the section's own; `pt` stays on mz-pt and `fr` is on cd-fr as the catch-alls; no code is carried by two sections.
 - **Review lists** (`data/reviews.yaml`): `pending.native_pt_ao`, `pending.native_fr_cd` (and `native_<lang>` for any other language) hold non-English pages; `pending.counsel` or a `pending.counsel_<cc>` list hold law pages and `counsel_required` pages. An entry, a list or the whole file can carry `owner_decision: YYYY-MM-DD`; the entry's date wins. The owner decided on 2026-09-27 to publish the new country sites before their counsel and native reviews, as on 2026-09-26 for MZ/ZA/NG, so their pages go on these lists with that date. Never invent a reviewer or a sign-off.
-- **Catalogue and law wording** follow the page language when the data has it: a catalogue language is used once every industry, solution and group name in `catalogue.yaml` has it (English otherwise); services use `name_<lang>` / `line_<lang>` and law instruments `title_<lang>` / `identifier_<lang>` / `note_<lang>` (`_pt` today).
+- **Catalogue and law wording** follow the page language when the data has it: every industry and solution name, blurb and menu line and every group name in `catalogue.yaml` needs the language of each published page (a gap fails the build, naming the entries, so English is never swapped in on a live page); a language the catalogue has no names in yet (`fr` today) uses the English ones with a WARN, as do the gaps of a language only draft pages use; services use `name_<lang>` / `line_<lang>` and law instruments `title_<lang>` / `identifier_<lang>` / `note_<lang>` (`_pt` today).
 
 ---
 

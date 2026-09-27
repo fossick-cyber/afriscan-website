@@ -1,3 +1,4 @@
+{# The card headings carry a class so add_heading_ids gives them no id: the page's own country headings keep theirs (/countries#mozambique). #}
 {% if groups %}
 <div class="countries-directory">
 {% for g in groups %}
@@ -8,14 +9,14 @@
       {% if c.links %}
       <div class="card country-card">
         <p class="card-eyebrow">{{ c.langs }}</p>
-        <h4><a href="{{ c.href }}" hreflang="{{ c.lang }}">{{ c.title }}</a>{% if c.draft %} <span class="lang-badge">Draft</span>{% endif %}</h4>
+        <h4 class="country-card-title"><a href="{{ c.href }}" hreflang="{{ c.lang }}">{{ c.title }}</a>{% if c.draft %} <span class="lang-badge">Draft</span>{% endif %}</h4>
         <p class="country-card-text">{{ c.text }}</p>
         <p class="country-card-links">{% for l in c.links %}<a href="{{ l.href }}" hreflang="{{ l.lang }}" lang="{{ l.lang }}">{{ l.label }} {{ icon('arrow-right', 'icon icon-xs') }}</a>{% endfor %}</p>
       </div>
       {% else %}
       <a class="card card--link country-card" href="{{ c.href }}" hreflang="{{ c.lang }}">
         <p class="card-eyebrow">{{ c.langs }}</p>
-        <h4>{{ c.title }}{% if c.draft %} <span class="lang-badge">Draft</span>{% endif %}</h4>
+        <h4 class="country-card-title">{{ c.title }}{% if c.draft %} <span class="lang-badge">Draft</span>{% endif %}</h4>
         <p class="country-card-text">{{ c.text }}</p>
         <span class="card-more">{{ t.labels.open }} {{ icon('arrow-right', 'icon icon-xs') }}</span>
       </a>
