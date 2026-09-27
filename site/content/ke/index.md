@@ -79,7 +79,7 @@ Twenty-nine transmission lines are due for completion by 2028 ([KBC, 4 September
 Published resettlement action plans for lines not yet built fixed their cut-off dates in December 2021, and in one county November 2022. Each provides for re-ratifying the cut-off date by Gazette notice after a delay of two years or more.
 :::
 :::card{title="New rail, new pipelines" icon="rail" eyebrow="Transport and fuel"}
-Work on the standard gauge railway from Naivasha to Kisumu and Malaba was launched in March 2026 ([Capital FM, 21 March 2026](https://capitalfm.africa/kisumu-malaba-sgr-launch-trade-link/)). A new eastern products pipeline from Mombasa to Nairobi and a cross-border line from Eldoret towards Uganda are planned.
+Work on the standard gauge railway from Naivasha to Kisumu and Malaba was launched in March 2026 ([Capital FM, 21 March 2026](https://capitalfm.africa/kisumu-malaba-sgr-launch-trade-link/)). A new eastern pipeline from Mombasa to Nairobi and a cross-border line from Eldoret towards Uganda are planned.
 :::
 :::card{title="Fibre in the road reserve" icon="route" eyebrow="Telecoms"}
 About 13,000 km of national backbone fibre is in place ([Capital FM, 15 October 2025](https://capitalfm.africa/state-spends-sh34-4bn-expanding-fiber-optic-network/)), and the Digital Superhighway programme aims for 100,000 km ([Capital FM, 30 January 2026](https://capitalfm.africa/ps-isaboke-kenyas-digital-superhighway-on-the-right-track/)). Much of it runs in road reserves, where utilities must relocate on the road authority's written request (Kenya Roads Act, s.27).
@@ -168,7 +168,7 @@ Who authorises what, the operator certificate and its defence clearance, the 30 
 ::::section{id="scope" tone="alt" eyebrow="Where we work" title="The whole country from satellite, field work where it is safe"}
 :::::columns{split="2-1"}
 ::::col
-Satellite registers cover any corridor in Kenya. Field and drone work does not go where the UK, Canadian, US or Australian government advises against travel ([FCDO, updated 4 September 2026](https://www.gov.uk/foreign-travel-advice/kenya/warnings-and-insurance); [Global Affairs Canada, updated 24 September 2026](https://travel.gc.ca/destinations/kenya)):
+Satellite registers cover any corridor in Kenya. Field and drone work does not go where the UK, Canadian, US or Australian government advises against travel ([FCDO, updated 4 September 2026](https://www.gov.uk/foreign-travel-advice/kenya/warnings-and-insurance); [Global Affairs Canada, updated 24 September 2026](https://travel.gc.ca/destinations/kenya); [US State Department, 17 March 2025](https://web.archive.org/web/20260630122444/https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/kenya-travel-advisory.html); [Smartraveller, updated 27 January 2026](https://web.archive.org/web/20260222012553/https://www.smartraveller.gov.au/destinations/africa/kenya)):
 
 - Mandera, Wajir and Garissa counties;
 - Lamu County, except Lamu Island and Manda Island;

@@ -148,7 +148,7 @@ The busiest segments are where the route runs beside an existing track through f
 ::::section{id="new-lines" tone="alt" eyebrow="New lines and extensions" title="Weigh the land before a route is fixed"}
 :::::columns{split="2-1"}
 ::::col
-A new eastern products pipeline from Mombasa to Nairobi and a cross-border line from Eldoret towards Uganda are planned. For new lines, loops and extensions, we compare the structures along alternative alignments, so the land and compensation each option would affect can be weighed before the route is fixed. Once a route is chosen, a dated imagery record from before the preliminary survey work shows what stood on the land before anyone entered it, which matters because the Land Act compensates damage from that work (section 148(3)).
+A new eastern pipeline from Mombasa to Nairobi and a cross-border line from Eldoret towards Uganda are planned. For new lines, loops and extensions, we compare the structures along alternative alignments, so the land and compensation each option would affect can be weighed before the route is fixed. Once a route is chosen, a dated imagery record from before the preliminary survey work shows what stood on the land before anyone entered it, which matters because the Land Act compensates damage from that work (section 148(3)).
 
 The comparison supports your ESIA consultant's work and your engagement with landowners and counties; it is not the alternatives assessment itself.
 ::::

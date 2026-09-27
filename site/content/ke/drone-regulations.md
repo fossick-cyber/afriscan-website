@@ -171,7 +171,7 @@ Command-and-control and video links need type approval from the Communications A
 A KCAA remote pilot licence for the pilot in command and the co-pilot in categories B and C; category A skills "as prescribed". Training only at an RPAS Training Organisation KCAA has certificated.
 :::
 :::card{title="Categories" icon="layers" eyebrow="Reg 6"}
-A (open, low risk), B (specific, medium risk) and C (high risk, where Part B also applies). The text sets no weight or distance thresholds; KCAA "may from time to time determine additional requirements" (reg 6(2)).
+A (open, low risk), B (specific, medium risk) and C, the certification category (high risk, where Part B also applies). The text sets no weight or distance thresholds; KCAA "may from time to time determine additional requirements" (reg 6(2)).
 :::
 :::
 
@@ -322,7 +322,7 @@ Flight lines and sensor footprint inside the approved polygon, and nothing outsi
 The safety management system, a site risk assessment, and emergency and contingency procedures (regs 29 and 53).
 :::
 :::step{title="Only where field work is safe"}
-No field or drone work in Mandera, Wajir and Garissa counties, Lamu County outside Lamu and Manda islands, Tana River County, the Kilifi coast north of Malindi, the Turkana and Marsabit border areas, or West Pokot and western Turkana, where government travel advice warns against travel ([FCDO](https://www.gov.uk/foreign-travel-advice/kenya/warnings-and-insurance), [Canada](https://travel.gc.ca/destinations/kenya)); and a written security plan for field work in the North Rift, where security operations were being expanded to Samburu and Isiolo in September 2026 ([Capital FM, 27 September 2026](https://capitalfm.africa/over-3000-illegal-guns-8000-rounds-recovered-in-kerio-valley-as-murkomen-warns-bandits/)).
+No field or drone work in Mandera, Wajir and Garissa counties, Lamu County outside Lamu and Manda islands, Tana River County, the Kilifi coast north of Malindi, the Turkana and Marsabit border areas, or West Pokot and western Turkana, where government travel advice warns against travel ([FCDO](https://www.gov.uk/foreign-travel-advice/kenya/warnings-and-insurance), [Canada](https://travel.gc.ca/destinations/kenya), [US](https://web.archive.org/web/20260630122444/https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/kenya-travel-advisory.html), [Australia](https://web.archive.org/web/20260222012553/https://www.smartraveller.gov.au/destinations/africa/kenya)); and a written security plan for field work in the North Rift, where security operations were being expanded to Samburu and Isiolo in September 2026 ([Capital FM, 27 September 2026](https://capitalfm.africa/over-3000-illegal-guns-8000-rounds-recovered-in-kerio-valley-as-murkomen-warns-bandits/)).
 :::
 :::
 ::::

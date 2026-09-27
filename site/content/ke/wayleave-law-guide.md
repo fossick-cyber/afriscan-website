@@ -35,7 +35,7 @@ faq:
   - q: When does a wayleave take effect?
     a: Thirty days after the Cabinet Secretary's Gazette order is published (s.146). The order delineates the route, is notified to the county and publicised, and can be appealed on a point of law within six weeks. The Registrar then records the route on the titles it crosses (s.147).
   - q: Does a wayleave bind people who hold no title?
-    a: Yes. It attaches to the servient land and binds "all owners from time to time" of it, including those who hold under customary law and those who occupy it in any other way (s.143(3)). Compensation, and the notice before it, reach occupiers as well as owners.
+    a: Yes. It attaches to the servient land and binds "all owners from time to time" of it, including those who hold under customary law and those who occupy it in any other way (s.143(3)). The notice before it goes to occupiers as well as owners (s.144(4)).
   - q: Can a county charge for a wayleave for energy infrastructure?
     a: The Energy Act 2019 says no public body may charge levies on public energy infrastructure without the Cabinet Secretary's written consent (s.223). The Energy (Amendment) Bill 2025 would exempt county governments from needing that consent (Capital FM, 6 October 2025); check its status before relying on either position.
   - q: What if a landowner cannot be found before a survey?
@@ -135,7 +135,7 @@ A structure can only be dated between two images, so the record is as precise as
 | | s.153(8)–(9) | Those who prefer to be compensated by resettlement are settled on suitable alternative land at the licence holder's cost |
 | Community Land Act 2016 | s.36(1) and (3) | Investment agreements on community land follow "a free, open consultative process", cover impact assessment, consultation, ongoing monitoring and evaluation of the investment's impact, compensation and royalties, rehabilitation and mitigation, and need approval by two-thirds of adult members at an assembly with a two-thirds quorum |
 
-**Power-line practice.** No statute sets transmission wayleave widths; they are set per project. KETRACO's published resettlement action plans use 40 m for a 220 kV line and 30 m for a 132 kV line, and its land FAQ explains that the corridor is compensated for its use rather than bought, with structures, crops and trees assessed separately and part of the payment made once relocation from the corridor is confirmed. See [power-line wayleaves](/ke/power-line-wayleaves).
+**Power-line practice.** The Energy Act 2019 sets no wayleave width for power lines; widths are set per project, in the resettlement action plans. KETRACO's published plans use 40 m for a 220 kV line and 30 m for a 132 kV line, and its land FAQ explains that the corridor is compensated for its use rather than bought, with structures, crops and trees assessed separately and part of the payment made once relocation from the corridor is confirmed. See [power-line wayleaves](/ke/power-line-wayleaves).
 
 **Forests.** A 2026 amendment to the forest law allows the Kenya Forest Service to approve easements and wayleaves in forests; it has been challenged in the Environment and Land Court ([Capital FM, 2 July 2026](https://capitalfm.africa/green-belt-movement-seeks-to-nullify-new-forest-act/)).
 ::::
@@ -146,7 +146,7 @@ A structure can only be dated between two images, so the record is as precise as
 **Petroleum Act 2019, s.99.**
 
 - Trespassing or encroaching "on to any petroleum pipeline wayleaves or installations" is an offence carrying a minimum fine or a minimum term of imprisonment (s.99(1)(h)); an attempt carries lower minimums (s.99(2)).
-- Illegally acquiring an interest in public land set aside for petroleum infrastructure (s.99(1)(i)), and vandalising, interfering with or illegally interconnecting with a pipeline (s.99(1)(d)), carry higher minimums, including at least five years' imprisonment.
+- Illegally acquiring an interest in public land set aside for petroleum infrastructure (s.99(1)(i)), and vandalising, interfering with or illegally interconnecting with a pipeline (s.99(1)(d)), carry a higher minimum fine or at least five years' imprisonment.
 ::::
 ::::col
 **Energy Act 2019, ss.168–169.**

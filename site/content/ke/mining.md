@@ -84,7 +84,7 @@ In March 2026 the government invited expressions of interest for mineral rights 
 ::::section{id="artisanal" eyebrow="Artisanal mining" title="Pits, spoil and cleared ground, mapped as land change"}
 :::::columns{split="2-1"}
 ::::col
-Artisanal mining in Kenya needs an artisanal mining permit. In July 2026 the government set up a team to reconfirm and verify "demarcated artisanal mining areas" and validate cooperatives ahead of permits at one northern goldfield ([Capital FM, 22 July 2026](https://capitalfm.africa/govt-gives-team-seven-days-to-chart-reopening-of-marsabits-hillo-gold-mines/)). Knowing where the ground has been worked, and where it has not, is part of that work.
+Artisanal mining in Kenya needs an artisanal mining permit. In July 2026 the government set up a team to reconfirm and verify "demarcated artisanal mining areas" and validate cooperatives ahead of permits at one northern goldfield (reported by Capital FM, 22 July 2026). Knowing where the ground has been worked, and where it has not, is part of that work.
 
 We map artisanal workings as land change: pits, disturbed ground, spoil heaps, water-filled excavations, cleared ground and temporary structures, inside and around a licence area or a demarcated area, with new sites flagged between dated images. We map land, never people, and we do not decide whether a site is permitted.
 

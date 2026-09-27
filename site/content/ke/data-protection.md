@@ -100,7 +100,7 @@ A structure register is built to carry the least personal data the job allows:
 The Act lists "property details" among sensitive personal data (s.2). On its own, a register of structures with coordinates and dates describes land, not a person. Joined to the census, to a list of plot holders or to compensation files, it can describe a person's property. Decide at the start who holds the joined record, who may see it, and how long it is kept.
 :::
 
-**An enforcement example.** In a determination of 14 April 2026, the Office of the Data Protection Commissioner found a microfinance bank liable for publishing a former employee's images and details on social media without consent ([Capital FM, 19 April 2026](https://capitalfm.africa/odpc-faults-lolc-kenya-over-data-breach-orders-deletion-of-client-data/)).
+**An enforcement example.** In a determination of 14 April 2026, the Office of the Data Protection Commissioner found a microfinance bank liable for publishing a former employee's images and details on social media without consent (reported by Capital FM, 19 April 2026).
 ::::
 :::::
 ::::
