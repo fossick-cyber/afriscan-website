@@ -14,11 +14,11 @@ buttons:
 service:
   name: Road and rail reserve encroachment survey, Malawi
   type: Reserve encroachment survey, alignment baselines and change detection
-  description: Structures, cleared and cultivated ground, tracks and excavations inside road reserves, measured against the width for the road class, and inside rail reserves and along buried cable routes in Malawi, compared between dated surveys, reviewed by a person and delivered as PDF reports and GIS layers.
+  description: Structures, tracks and excavations inside road reserves, measured against the width for the road class, inside rail reserves and along buried cable routes in Malawi, with larger patches of new clearing flagged, compared between dated surveys, reviewed by a person and delivered as PDF reports and GIS layers.
 og:
   headline: Road and rail reserves in Malawi, mapped against the legal width
   subline: Structures, cleared ground and excavations, and what changed between dated surveys
-related: [route-site-selection, change-detection, resettlement-cut-off-baselines]
+related: [route-site-selection, change-detection, resettlement-cut-off-baselines, power-utilities]
 faq:
   - q: Do you measure from the centre line or the reserve edge?
     a: >-
@@ -30,14 +30,15 @@ faq:
     a: >-
       The one for its class, as the consolidated Act lists them: 60 m for a main road; 36 m for a secondary,
       tertiary or district road; 18 m for a branch or estate road. A newly designated road can take a reserve
-      of up to 60 m in total (s.28). Send the class of each section, or the widths you work to, and up to six
+      of up to 60 m in total. Send the class of each section, or the widths you work to, and up to six
       widths can be reported in one survey.
   - q: Can you map farming inside the reserve?
     a: >-
-      We map cleared and cultivated ground inside the reserve as areas, alongside the structure register,
-      and flag new clearing between dated surveys. Small plots under tree cover can be missed, so a reviewer
-      checks each flagged area. Whether a plot had the highway authority's consent, or was already cultivated
-      when the land became road reserve, is for the authority to establish.
+      In part. The register lists structures. Alongside it, cropland along the road is shown from generalised
+      land-cover maps, and larger patches of new clearing are flagged between dated surveys for a reviewer to
+      check. Small plots, and gardens under tree cover, can be missed. Whether a plot had the highway
+      authority's consent, or was already cultivated when the land became road reserve, is for the authority
+      to establish.
   - q: Do you decide which structures must be removed?
     a: >-
       No. The highway authority may direct, in writing, anyone who encroaches on a road reserve to remove the
@@ -72,7 +73,7 @@ At trading centres and on the edges of towns, the reserve is where people trade 
 A lender-funded upgrade of a road on the Nacala corridor was reported in July 2026 to be more than a year behind schedule, partly because of compensation issues along the construction path. A dated record of what stood on the land settles questions that otherwise wait.
 :::
 :::card{title="“Road works cut our fibre.”" icon="excavation"}
-Telecom operators in Malawi have reported fibre outages caused by vandalism and by road construction works. Earthworks beside a buried route are visible from the air before a cable is hit.
+A telecom operator in Malawi has reported fibre outages caused by vandalism and by road construction works. Earthworks beside a buried route are visible from the air before a cable is hit.
 :::
 :::
 
@@ -99,9 +100,9 @@ From the top: a main road (60 m); a secondary, tertiary or district road (36 m);
 The consolidated [Public Roads Act](https://malawilii.org/akn/mw/act/1962/11/eng@2017-12-31) (Cap. 69:02) lists road reserves of "60 metres" for a main road, "36 metres" for secondary, tertiary and district roads and "18 metres" for branch and estate roads, and the reserve's centre line "shall in every case lie down the centre line of the carriageway".
 
 - **Consent (s.10(6)).** Without "the consent in writing of the highway authority", no one may "erect or alter any structure", "plant any tree or bush" or prepare for cultivation land that was not prepared for cultivation when it became road reserve. Even with consent, no compensation is due for what was done if the land is later needed for the road.
-- **Notice before works (s.10(4)–(5)).** One month's notice before works likely to damage a structure, three months for a building, with compensation for the damage.
-- **New roads (s.28).** A newly designated road's reserve is up to "a total width of 60 metres", and "Compensation shall be payable".
-- **Encroachment (s.36).** No one may encroach on a road or road reserve by building, digging or planting. The highway authority may direct the person in writing to remove it (s.36(4)), and may do the work itself and recover the cost (s.36(5)–(6)).
+- **Notice before works.** The highway authority gives one month's notice before works likely to damage a structure, three months for a building, with compensation for the damage.
+- **New roads.** A newly designated road's reserve is up to "a total width of 60 metres", and "Compensation shall be payable".
+- **Encroachment.** No one may encroach on a road or road reserve by making or altering a structure, ditch or other obstacle, or by planting trees. The highway authority may, by notice in writing, direct the person to remove it or fill it in (s.36(4)), and may do the work itself and recover the cost.
 ::::
 :::::
 
@@ -123,7 +124,7 @@ In the consolidated text on MalawiLII the list of widths stands apart from s.10(
 ::::col
 We buffer the road centre line you supply at half the reserve width either side, or use your reserve polygons, and list each structure the review confirms with its distance to the centre line, whether it stands inside the reserve, its chainage and its coordinates. Each 500 m segment is rated high, medium or low for **encroachment density** by a count rule, so your inspection teams know which stretches to walk first. The rating is not a road-safety rating.
 
-Cleared and cultivated ground inside the reserve is mapped as areas, and new tracks and access points onto the road are mapped between dates. After the baseline, the road is re-surveyed on a schedule agreed with you: new and removed structures are flagged automatically and confirmed by a reviewer, with before-and-after views, and your team receives a notice after each survey.
+New tracks and access routes onto the road are mapped between dates, and larger patches of new clearing along the reserve are flagged for a reviewer to check; cropland along the road comes from generalised land-cover maps. After the baseline, the road is re-surveyed on a schedule agreed with you: new and removed structures are flagged automatically and confirmed by a reviewer, with before-and-after views, and your team receives a notice after each survey.
 ::::
 ::::col
 ### What you receive
@@ -131,8 +132,8 @@ Cleared and cultivated ground inside the reserve is mapped as areas, and new tra
 :::checklist
 - A reserve register: ID, distance to the centre line, inside or outside the reserve, chainage, coordinates
 - An encroachment-density rating for each 500 m segment
-- Cleared and cultivated ground inside the reserve, as areas
-- New tracks and access points onto the road
+- Larger patches of new clearing along the reserve, and generalised cropland maps
+- New tracks and access routes onto the road
 - New and removed structures between surveys, confirmed by a reviewer
 - A PDF report and GIS layers your engineers can load straight away
 :::
@@ -146,7 +147,7 @@ Cleared and cultivated ground inside the reserve is mapped as areas, and new tra
 ::::section{id="resettlement" tone="alt" eyebrow="Upgrades and new alignments" title="Count the structures first, then date the record"}
 :::::columns{split="2-1"}
 ::::col
-Land for a public road is acquired under the Public Roads Act rather than the Land Act's public-utility procedure, and compensation is payable for a newly designated reserve (s.28). Lender-funded road projects add a resettlement action plan with a cut-off date. A road-corridor plan disclosed in September 2026 applied a cut-off date of 30 April 2023; its census was done in 2023, and valuation and verification in 2025.
+Land for a public road is acquired under the Public Roads Act rather than the Land Act's public-utility procedure, and compensation is payable for a newly designated reserve. Lender-funded road projects add a resettlement action plan with a cut-off date. A road-corridor plan disclosed in September 2026 applied a cut-off date of 30 April 2023; its census was done in 2023, and valuation and verification in 2025.
 
 Before the alignment is fixed, we compare the structures along each option within the same reserve width. At the cut-off date, a reviewed register on the closest dated imagery the archive holds gives the census team a starting layer and gives everyone the same record of what stood where. During implementation, a comparison shows what is new since the cut-off date, so questions about late arrivals are answered from the imagery rather than from memory.
 ::::
@@ -185,7 +186,7 @@ Inside the reserve and in a band beyond it we list structures, new tracks, infor
 ::::section{id="fibre" tone="alt" eyebrow="Fibre and cable routes" title="Find the works before they find the cable"}
 :::::columns{split="2-1"}
 ::::col
-Road construction works are among the causes of fibre outages that telecom operators in Malawi have reported, alongside vandalism. Along a buried route we map new excavations, trenches, spoil heaps, earthworks and construction between dated surveys, the third-party works that damage cables, so your patrols know where to check.
+Road construction works are among the causes of fibre outages that a telecom operator in Malawi has reported, alongside vandalism. Along a buried route we map new excavations, trenches, spoil heaps, earthworks and construction between dated surveys, the third-party works that damage cables, so your patrols know where to check.
 
 Only works visible at the surface are flagged, and each flag is confirmed by a reviewer. We cannot see a cable cut or cable theft, and the register does not replace route patrols.
 ::::
@@ -227,7 +228,7 @@ A person checks every result; each structure is measured, each segment rated, an
 :::
 :::
 
-More on [how it works](/features), the [methodology](/methodology) and [imagery and data sources](/imagery).
+More on [how it works](/features), the [methodology](/methodology) and [imagery and data sources](/imagery), and on [rail and road work across Africa](/industries/rail-roads).
 ::::
 
 ::::section{id="scope" eyebrow="Honest scope" title="What we do, and what we don't"}
@@ -236,7 +237,7 @@ More on [how it works](/features), the [methodology](/methodology) and [imagery 
 ### What we do
 
 :::checklist
-- Map structures, cleared and cultivated ground, tracks and excavations inside the reserve
+- Map structures, tracks and excavations inside the reserve, and larger patches of clearing along it
 - Measure each structure from the centre line, against the width for the road class or the reserve you supply
 - Flag change between dated surveys, confirmed by a reviewer
 - Deliver dated records that support consent, compensation, engagement and legal processes

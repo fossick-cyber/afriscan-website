@@ -21,7 +21,7 @@ buttons:
 og:
   headline: "Drone surveys in Malawi: what the law requires"
   subline: MCAA authorisation, the Surveyor General's notice and deposit, and data rules, as of 27 September 2026
-related: [drone-surveys, imagery]
+related: [drone-surveys, imagery, drone-regulations]
 faq:
   - q: Does satellite screening need MCAA authorisation or the Surveyor General's notice?
     a: >-
@@ -106,7 +106,7 @@ MCAA "officially opened its doors in October 2023" and has taken over the regula
 ::::col
 MCAA's [RPAS and Drones](https://www.caa.gov.mw/rpas-and-drones/) page is empty, its Legislations and Exemptions pages say "No documents found", and its [Regulations](https://www.caa.gov.mw/regulations/) page lists only the 2013 Aviation Regulations and the Civil Aviation (Security) Regulations 2024 (read 27 September 2026). The Ministry of Transport and Public Works' civil aviation plan put it plainly: "There are no regulations covering the operation of remotely piloted aircraft systems (commonly known as drones), and these should be prepared urgently" ([NTMP Civil Aviation Sub-Sectoral Plan](https://www.transport.gov.mw/index.php/resource-centre/downloads/strategic-plan?download=18:ntmp-aviation-sub-sectoral-plan), §5.5). That plan predates MCAA, and MCAA's regulations list shows the gap is still open.
 
-MCAA told Parliament's Transport and Public Infrastructure Committee in July 2024 that it had drafted regulations. Whether they cover drones is not public, and none covering drones had been published by 27 September 2026. The Act says the Authority "shall publish" the rules, orders and directives it makes (s.89(3)), so a drone rule will be visible when it arrives.
+MCAA told Parliament's Transport and Public Infrastructure Committee in July 2024 that it had drafted regulations. Whether they cover drones is not public, and none covering drones had been published by 27 September 2026. The Act says the Authority "shall publish" the rules, orders and directives it makes (s.89(3)), so any drone rules it makes must be published.
 
 The Aviation Regulations 2013, saved by s.96(3) of the 2017 Act "until replaced", do not fill the gap. The Aerial Work Regulations cover agricultural operations, rotorcraft external loads, glider and banner towing, film and television work, fish spotting and news and traffic reporting; the word "unmanned" appears in the 2013 set only for free balloons.
 ::::
@@ -307,6 +307,8 @@ Drone surveys are subject to the approvals and security clearances each job requ
 
 [Drone orthophoto surveys](/solutions/drone-surveys) · [Satellite or drone?](/insights/satellite-or-drone-corridor-surveys)
 :::
+
+Satellite registers in Malawi, with no flights over your site: [power-line wayleaves](/mw/power-lines) · [road and rail reserves](/mw/road-and-rail-reserves). Drone rules in other countries: [the comparison](/drone-regulations).
 ::::
 :::::
 ::::

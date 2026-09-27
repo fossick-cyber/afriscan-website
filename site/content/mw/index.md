@@ -97,7 +97,7 @@ Malawian resettlement plans tie the cut-off date to the census and asset invento
 A 400 kV interconnector from Mozambique was energised in August 2026, with commercial trading waiting on tariff agreements. On its Malawian section the resettlement census, in April and May 2019, covered the people living in a 55 m wayleave; the resettlement plan relocates the houses in it and allows low-lying crops, but no trees, under the line. A wayleave cleared for construction does not stay clear by itself.
 :::
 :::card{title="More interconnectors to route" icon="route" eyebrow="Zambia · Tanzania"}
-Interconnectors to Zambia and to Tanzania are at feasibility stage, and grant funding to update the feasibility and ESIA studies for the 400 kV Tanzanian line was announced in July 2025. Route options compared by the structures they affect, and a dated baseline before the census, cost least at this stage.
+Interconnectors to Zambia and to Tanzania are at feasibility stage, and grant funding to update the feasibility and ESIA studies for the 400 kV Tanzanian line was announced in July 2025. Route options compared by the structures they affect, and a dated baseline before the census, are most useful at this stage.
 :::
 :::card{title="Campaigns against wayleave encroachment" icon="houses" eyebrow="November 2025"}
 The national utility ran a two-month campaign in the Southern Region against vandalism and rising wayleave encroachment, working through more than 100 Traditional Authorities and over 2,000 Group Village Heads and urging people not to build or farm under power lines.
@@ -153,11 +153,11 @@ Structure counts along each alignment option, before the route is fixed and the 
 ::::section{id="baselines" eyebrow="Project land and resettlement" title="Fix the cut-off date on a dated record"}
 :::::columns{split="2-1"}
 ::::col
-Malawi has no stand-alone resettlement statute. Resettlement follows the Constitution, the Lands Acquisition and Compensation Act, the Land Act 2016, the Customary Land Act 2016 and, for roads, the Public Roads Act, with the National Land Policy 2002 and lender standards such as IFC Performance Standard 5 alongside. Where unallocated customary land is acquired for a public utility, the consolidated Land Act has the Minister serve notice on the Traditional Authority, gazette it and give claimants two months to submit their particulars (s.17).
+Malawi has no stand-alone resettlement statute. Resettlement follows the Constitution, the Lands Acquisition and Compensation Act, the Land Act 2016, the Customary Land Act 2016 and, for roads, the Public Roads Act, with the National Land Policy 2002 and lender standards such as IFC Performance Standard 5 alongside.
 
-The resettlement plan for a recent 400 kV line defines the cut-off date as the date the census and asset inventory of affected people were completed; people occupying the project area after it are not eligible for compensation or resettlement assistance. A road-corridor plan disclosed in September 2026 applied a cut-off date of 30 April 2023, with its census in 2023 and valuation and verification in 2025.
+The glossary of the resettlement plan for a recent 400 kV line defines the cut-off date as the date the census and asset inventory of affected people were completed; people occupying the project area after it are not eligible for compensation or resettlement assistance. A road-corridor plan disclosed in September 2026 applied a cut-off date of 30 April 2023, with its census in 2023 and valuation and verification in 2025.
 
-That gap between the census and implementation is where a dated record helps: a baseline register on imagery captured as close to the cut-off date as the archive allows, then a comparison showing what is new since. Prescribed projects also need an approved environmental and social impact assessment before they go ahead (Environment Management Act 2016, s.31; approvals by MEPA), and a dated structure baseline feeds straight into it. Critical-minerals projects, and the power lines and rail links they need, bring large land footprints in farmed areas.
+That gap between the census and implementation is where a dated record helps: a baseline register on imagery captured as close to the cut-off date as the archive allows, then a comparison showing what is new since. Prescribed projects also need an approved environmental and social impact assessment before they go ahead (Environment Management Act 2016, s.31; approvals by MEPA), and a dated structure baseline feeds straight into it. Critical-minerals projects bring large land footprints in farmed areas.
 ::::
 ::::col
 :::callout{tone="scope" title="For RAP, ESIA and lender teams"}
@@ -211,7 +211,7 @@ Why there are no drone regulations yet, the Civil Aviation Act authorisation, th
 ::::section{id="mozambique" tone="alt" eyebrow="Corridors that start in Mozambique" title="One route, two countries' rules"}
 :::::columns{split="1-1"}
 ::::col
-Malawi's new 400 kV supply comes from Mozambique, and its railway and the Nacala road corridor run to the port of Nacala on the Mozambican coast. For a route that crosses the border, the proposal covers both sides, with the widths that apply in each country. On the Mozambican side those are the 50 m partial protection zone and the servitudes in Mozambican law, set out on our Mozambique pages in English and Portuguese.
+Malawi's 400 kV interconnector comes in from Mozambique, and its railway links to the Nacala line, the rail route through Mozambique to the port of Nacala. For a route that crosses the border, the proposal covers both sides, with the widths that apply in each country. On the Mozambican side those are the 50 m partial protection zone and the servitudes in Mozambican law, set out on our Mozambique pages in English and Portuguese.
 
 [The Mozambique site](/mz/) · [Power lines in Mozambique](/mz/power-lines) · [The 50 m partial protection zone](/mz/50m-protection-zone)
 ::::

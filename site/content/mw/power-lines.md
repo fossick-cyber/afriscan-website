@@ -18,7 +18,7 @@ service:
 og:
   headline: Power-line wayleaves in Malawi, mapped and dated
   subline: Structures by distance to the line, and what is new since the last survey or the census
-related: [route-site-selection, resettlement-cut-off-baselines, vegetation-land-cover-fire]
+related: [route-site-selection, resettlement-cut-off-baselines, vegetation-land-cover-fire, rail-roads]
 faq:
   - q: What wayleave width do you measure to?
     a: >-
@@ -150,7 +150,7 @@ Structures are coloured by band: <span class="band band--a">Within 50 m</span> <
 ::::section{id="new-lines" tone="alt" eyebrow="New lines and interconnectors" title="Count the homes on each route, then fix the census baseline"}
 :::::columns{split="2-1"}
 ::::col
-Malawi's first 400 kV link, from Mozambique, was energised in August 2026, and interconnectors to Zambia and to Tanzania are at feasibility stage while the grid inside the country is reinforced. Each new line needs a route, a wayleave and a resettlement plan.
+A 400 kV interconnector from Mozambique was energised in August 2026, and interconnectors to Zambia and to Tanzania are at feasibility stage while the grid inside the country is reinforced. Each new line needs a route, a wayleave and a resettlement plan.
 
 Resettlement plans for new lines census the households, structures and trees in the wayleave. We compare the structures along each route option within the same widths, so the choice can weigh the land it affects. Once the route is fixed, we produce the structure layer as a reviewed, dated GIS file that the census team can start from and that later surveys are compared with. It supports the census and asset inventory; it does not replace them.
 
@@ -161,7 +161,7 @@ Lines that cross the border continue into Mozambique, where the servitude rules 
 ::::col
 :::callout{tone="scope" title="For a new line"}
 - Structure counts along each route option, within the same widths
-- Steep, erosion-prone and flood-exposed stretches screened from elevation data
+- Steep and erosion-prone stretches screened from elevation data, and ground seen flooded in past satellite records
 - A reviewed, dated structure layer for the census team
 - New structures since the cut-off date, during compensation and construction
 
@@ -203,7 +203,7 @@ A person checks every result. Each structure is measured to the line and the way
 :::
 :::
 
-More on [how it works](/features), the [methodology](/methodology) and [imagery and data sources](/imagery).
+More on [how it works](/features), the [methodology](/methodology) and [imagery and data sources](/imagery), and on [power-line and utility work across Africa](/industries/power-utilities).
 ::::
 
 ::::section{id="scope" eyebrow="Honest scope" title="What we do, and what we don't"}
