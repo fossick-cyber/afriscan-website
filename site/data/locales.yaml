@@ -65,3 +65,17 @@ ng:
   label: "Nigeria"
   short: "Nigeria"
   sitemap: sitemap-ng.xml
+na:
+  content: na
+  prefix: /na
+  lang: en-NA
+  hreflang: [en-NA]
+  og_locale: en_GB
+  i18n: en
+  country: NA
+  country_name: Namibia
+  label: "Namibia"
+  short: "Namibia"
+  sitemap: sitemap-na.xml
+  status: live
+  region: Southern

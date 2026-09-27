@@ -95,7 +95,7 @@ Part 101 also lists what it does not apply to (101.01.2(2)), including "RPA oper
 
 **What it covers.** An RLA covers "all drones and pilots who the operator intends to use, as per the serial numbers and names listed on the application form" (AD 1/2/3-6, 5.5). Changing a drone or a pilot is an amendment (5.6).
 
-**What goes in** (101.03.3(1)): operator and owner details and the drone's technical data; a certified registration or airworthiness certificate where relevant; the radiotelephony identification; a foreign RPA operator certificate "where applicable"; each remote pilot's certificate; any aircraft radio station licence; a description of the operation (line of sight or beyond, dates, route, levels and duration); control-link and communications-failure procedures; the payload; "proof of adequate insurance liability, including third party insurance coverage"; and "proof of registration as a surveyor, for purposes of commercial aerial and survey mapping, where applicable". Documents in another language need a sworn English translation (101.03.3(2)).
+**What goes in** (101.03.3(1)): operator and owner details and the drone's technical data; the registration or airworthiness certificate where relevant; the radiotelephony identification; a foreign RPA operator certificate "where applicable"; each remote pilot's certificate; any aircraft radio station licence; a description of the operation (line of sight or beyond, dates, route, levels and duration); control-link and communications-failure procedures; the payload; "proof of adequate insurance liability, including third party insurance coverage"; and "proof of registration as a surveyor, for purposes of commercial aerial and survey mapping, where applicable". Documents in another language need a sworn English translation (101.03.3(2)).
 
 **Issue and display.** NCAA issues the approval when the requirements are met, the personnel are competent and it is "not contrary to the interests of aviation safety" (101.03.4). The holder displays it at its principal place of business and produces the original on request (101.03.6).
 ::::
@@ -116,7 +116,7 @@ The directive names form FSS-OPS-FORM-612-01, while the form NCAA publishes is F
 ::::
 :::::
 
-**Lead times, in NCAA's words.** "Please apply 30 days prior to your flight." Payment must reach NCAA "a minimum of 10 days before the required approval date", "international payment transfers can take on average three weeks", and "Providing we have received all the correct documentation and payment the processing time is one week". Applications go to rpas@ncaa.na. NCAA's charges are set in [Part 187, replaced in April 2026](https://www.ncaa.com.na/publications/legislations/NAMCARS/GRN%20Gazette%208890%20Part%20187%20%2016%20April%202026.pdf); budget from that schedule, not an older one.
+**Lead times, in NCAA's words.** "Please apply 30 days prior to your flight." Payment must reach NCAA "a minimum of 10 days before the required approval date", "international payment transfers can take on average three weeks", and "Providing we have received all the correct documentation and payment the processing time is one week". Applications go to rpas@ncaa.na. NCAA's current charges are set in [Part 187, replaced in April 2026](https://www.ncaa.com.na/publications/legislations/NAMCARS/GRN%20Gazette%208890%20Part%20187%20%2016%20April%202026.pdf).
 ::::
 
 ::::section{id="operator-certificate" tone="alt" eyebrow="Flights beyond sight" title="The RPAS Operator Certificate, for Namibian operators only"}
@@ -130,7 +130,7 @@ The certificate follows a five-phase certification process and an operations man
 :::callout{tone="legal" title="Who can hold one"}
 "A RPAS Operator Certificate shall be available to a Namibian natural or juristic person only" (AD 1/2/3-6, 5.5). By contrast, "An RPAS Letter of Approval will be issued to a Namibian or foreign operator, that is a natural or juristic person".
 
-So a long corridor is flown in blocks within the pilot's sight, unless a Namibian ROC holder flies it beyond sight.
+So a long corridor is flown in blocks within the pilot's sight, unless an operator with a Namibian ROC flies it beyond sight.
 :::
 
 **Advertising and records.** "Any advertisement made by the holder of an ROC shall reflect the certificate number of the ROC" (5.4). NCAA keeps a register of the RLAs and ROCs it issues, amends or reviews (5.8), but does not publish it, so ask for the numbers and check them with NCAA. An RLA or ROC "may be varied, suspended, or revoked" (5.7).
@@ -171,7 +171,7 @@ An applicant (8.2.1):
 | **Height** | A drone under 25 kg may not fly "at a height of more than 50 metres above the ground or water, unless the flight is approved by the Executive Director" (101.05.2(5)(f)). The AIP (ENR 1.1 §12.1(a)) and NCAA's checklist use 150 ft above the surface | Get the height written into the approval; a CAUA approval above 150 ft |
 | **Airfields** | Not within 3 km of an aerodrome during aircraft operations without the aerodrome operator's permission (101.05.2(5)(b)), nor near its reference point, approach and take-off paths, navigation aids or traffic zone without permission (101.05.9). The AIP and the checklist use 5 NM from an aerodrome boundary | Keep 5 NM from farm, lodge and mine airstrips, or apply for permission |
 | **Controlled and restricted airspace** | Not in a prohibited area, a restricted area or controlled airspace "without specific approval from the Executive Director" (101.05.2(5)(a)); not in a published control zone or traffic zone (AIP §12.1(b)) | A CAUA approval from ANSSO; some prohibited areas are closed outright (below) |
-| **Beyond sight** | Not beyond direct unaided visual line of sight, and not further than 300 m from the point of operation, without BVLOS approval (101.05.2(5)(e)) | Corridors flown in blocks, or by a Namibian ROC holder |
+| **Beyond sight** | Not beyond direct unaided visual line of sight, and not further than 300 m from the point of operation, without BVLOS approval (101.05.2(5)(e)) | Corridors flown in blocks, or by an operator with a Namibian ROC |
 | **People and structures** | Not at any distance from a person, vessel, vehicle or structure unless the drone is under the operator's direct control; gatherings of people need direct control, "an approved fail safe system" and approval (101.05.2(5)(c)–(d)) | Direct control along settled stretches; no flights over gatherings |
 | **Roads** | Not flown so as to endanger or obstruct traffic on a public road (101.05.2(1)(c)) | A traffic plan at road crossings |
 | **Flight plans** | Needed for BVLOS flights and flights above 120 m; in uncontrolled airspace above 120 m, flights within five kilometres of the launch area notify the nearest air traffic control, and flights beyond it file a flight plan (101.05.5) | Filed with the operation plan |
@@ -183,7 +183,7 @@ An applicant (8.2.1):
 
 **Airspace approvals.** NCAA's instructions say: "Filming in restricted airspace or above 150ft requires CAUA approval from NCAA ANSSO department, please submit forms 7 and 8 with land owners permission." CAUA stands for civil activity use airspace, the approval under Part 71.
 
-**Insurance.** Part 101 requires "adequate liability insurance in respect of third party risks", with a certified copy available for inspection (101.06.2); the Executive Director may dispense with it depending on the class and category.
+**Insurance.** Part 101 requires "adequate liability insurance in respect of third party risks", with a copy of the policy available for inspection (101.06.2); the Executive Director may dispense with it depending on the class and category.
 
 **Equipment.** Importing or exporting a drone or its components must comply with customs requirements "as specified in Document NAM-CATS-RPA" (101.04.1(1)), a document NCAA has not published, so ask NCAA and customs before shipping equipment. The Communications Regulatory Authority of Namibia (CRAN) may prescribe type approval for categories of radio equipment and may seize equipment that does not comply ([Communications Act, s.80](https://www.lac.org.na/laws/annoSTAT/Communications%20Act%208%20of%202009.pdf)).
 ::::
