@@ -1963,6 +1963,7 @@ class Build:
         return self.report(pages, specials)
 
     def report(self, pages, specials):
+        self.errors, self.warnings = list(dict.fromkeys(self.errors)), list(dict.fromkeys(self.warnings))
         if not self.quiet:
             for w in self.warnings:
                 print("WARN ", w)
