@@ -38,7 +38,7 @@ faq:
   - q: Do we need a drone survey?
     a: Usually not. Most corridors can be screened from satellite imagery without anyone flying. Where a stretch needs more detail, drone flights are carried out by a company registered and based in Kenya with a current KCAA RPAS Operator Certificate, subject to the approvals and security clearances each job requires, and after one month's written notice to the Director of Surveys. See [drone law in Kenya](/ke/drone-regulations).
   - q: What about cloud in the rainy seasons?
-    a: Optical satellite imagery cannot see through cloud, so captures are planned around the rains and each register uses the clearest dated scene for each stretch. Radar comparisons can show larger changes, such as clearing, earthworks and new large buildings, even under rainy-season cloud.
+    a: Optical satellite imagery cannot see through cloud, so captures are planned around the rains and each register uses the clearest dated scene for each stretch. Radar comparisons can show larger changes, such as clearing, earthworks and new large buildings, even under rainy-season cloud, and areas they flag are followed up on optical imagery or with a drone check.
   - q: Do you work in Mandera, Wajir, Garissa, Lamu, Tana River or West Pokot?
     a: From satellite imagery only. We send no one into the counties and border areas where the UK, Canadian, US or Australian government advises against travel, and no drone flies there. A satellite register needs no one on the ground, so those corridors can still be mapped.
   - q: Can you tell us which structures are unauthorised?

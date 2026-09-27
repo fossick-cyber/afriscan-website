@@ -128,7 +128,7 @@ After a notice exercise, a relocation or a compensation round, the next scan sho
 - How fast the busiest segments change
 - The dates your own process needs: a notice, a Gazette order, a follow-up visit
 - Archive and new-capture availability for the stretch
-- Cloud in the rainy seasons: optical imagery cannot see through it, so radar comparisons can cover larger changes in between
+- Cloud in the rainy seasons: optical imagery cannot see through it, so radar comparisons can cover larger changes in between, with flagged areas followed up on optical imagery or with a drone check
 
 [Change detection and repeat scans](/solutions/change-detection)
 :::

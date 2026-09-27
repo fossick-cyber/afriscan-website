@@ -97,7 +97,7 @@ A structure can only be dated between two images: the last one that does not sho
 ::::col
 **Before the census.** How many structures stand in the footprint and the buffers around it, and where they cluster, so the census and asset-inventory teams are sized and routed before they go. On a long wayleave, the busiest 500 m segments come first.
 
-**On the date.** A register of the structures on dated imagery, with IDs, coordinates and reviewer categories such as main building, outbuilding, livestock enclosure or under construction. Where the record may be tested later, it is packaged as an evidence pack with file fingerprints and an independent timestamp.
+**On the date.** A register of the structures on dated imagery, with IDs, coordinates and reviewer categories such as main building, outbuilding, livestock enclosure or under construction. Categories describe what the imagery shows; use, occupancy and value are for your census, and compensation needs verification on the ground. Where the record may be tested later, it is packaged as an evidence pack with file fingerprints and an independent timestamp.
 
 **After.** Repeat scans of the footprint and any resettlement site, with new structures since the cut-off date flagged automatically and confirmed by a reviewer, and a location check for single grievances and claims: every dated image covering one point, on one sheet.
 

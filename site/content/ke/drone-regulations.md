@@ -67,7 +67,7 @@ The asset owner's and landowners' permission for take-off and landing sites, and
 :::
 ::::
 
-::::section{id="which-rules" tone="alt" eyebrow="Before anything else" title="Which rules apply: confirm it with KCAA" lead="The 2025 Regulations are published, but the 2020 ones have not been expressly revoked."}
+::::section{id="which-rules" tone="alt" eyebrow="Before anything else" title="Which rules apply: confirm it with KCAA" lead="The 2025 Regulations are published, but Legal Notice 40 neither revokes the 2020 ones nor says when it commences."}
 :::::columns{split="2-1"}
 ::::col
 The Civil Aviation (Unmanned Aircraft Systems) Regulations, 2025 were made on 15 December 2025 by the Cabinet Secretary for Transport and Roads under section 82 of the Civil Aviation Act (Cap. 394), and published as Legal Notice No. 40 of 2026 in Kenya Gazette Supplement No. 50 of 6 March 2026. They are one of 36 revised regulations KCAA uploaded in its notice on the [Kenya Civil Aviation Regulations](https://www.kcaa.or.ke/published-regs-2025), alongside the Civil Aviation (Security) Regulations, 2025 (Legal Notice No. 31 of 2026) and the Civil Aviation (Aerial Work – General Operations) Regulations, 2025 (Legal Notice No. 44 of 2026).
@@ -336,7 +336,7 @@ Where drone detail is needed, the flights are carried out by a company registere
 ::::
 ::::col
 :::callout{tone="scope" title="What this guide is, and isn't"}
-A summary of the public rules as last reviewed on 27 September 2026, with the source for each requirement. Kenya's drone rules were rewritten in 2026 and KCAA has not said when the 2020 rules stopped applying, so have your own counsel review a drone plan before you rely on it.
+A summary of the public rules as last reviewed on 27 September 2026, with the source for each requirement. Kenya's drone rules were rewritten in the 2025 Regulations, which say neither when they commence nor whether the 2020 rules are revoked, so have your own counsel review a drone plan before you rely on it.
 
 [Request a proposal](/ke/contact?intent=proposal&country=ke) · [Satellite-first wayleave mapping](/ke/) · [Drone surveys](/solutions/drone-surveys) · [Drone law in other countries](/drone-regulations)
 :::
