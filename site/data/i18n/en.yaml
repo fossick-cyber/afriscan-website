@@ -196,6 +196,7 @@ sites:
   mz-en: "Mozambique (English)"
   za: "South Africa"
   ng: "Nigeria"
+  rw: "Rwanda"
 
 # Pages in another language that this language's pages link to (menus, footer, breadcrumbs, cards).
 # English pages link only to English pages and the country homes, so this list is empty.
