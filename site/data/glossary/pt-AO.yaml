@@ -1,8 +1,7 @@
 # Português de Angola (pt-AO) for /ao/pt/. Style: Diário da República, pre-AO90 spelling
 # ("protecção", "actividade", "projecto", "electricidade", "direcção"), as in RNT's 2026 releases.
-# Same structure as pt-MZ.yaml. Today's build (site/build.py) loads only pt-MZ.yaml and applies it to
-# pt-MZ pages; this file is ready for a per-locale glossary check. Until then, writers check /ao/pt/
-# pages against it by hand. `banned` would fail the build, `ao90` and `warn` would warn.
+# Same structure as pt-MZ.yaml. site/build.py applies data/glossary/<lang>.yaml to every page in that
+# language, so this file checks the pt-AO pages: `banned` fails the build, `ao90` and `warn` warn.
 # Source: fhc-notes/website/regional/ao.FINAL.md (Keywords, local vocabulary, "Avoid").
 
 banned:            # regex -> use instead (Brazilian forms, as in pt-MZ.yaml)
@@ -53,7 +52,7 @@ warn:              # usable, but check the word
   # Mozambican terms that differ in Angola
   '(?i)\bmachambas?\b': "lavras"
   '(?i)\bDUAT\b': "direito de superfície / título de concessão (Angola has no DUAT)"
-  '(?i)\bmonitoria\b': "monitorização (the catalogue's shared PT names still say 'monitoria')"
+  '(?i)\bmonitoria\b': "monitorização (catalogue names: add a pt-AO text next to the pt one)"
   '(?i)zona de protec[çc][ãa]o parcial': "reserva parcial / faixa de 30 m (Lei n.º 9/04, art. 27.º)"
   '(?i)\bPAR\b': "plano de realojamento (PAR is the Mozambican acronym)"
   # enforcement words: never in AfriScan's voice; only in a quoted law title

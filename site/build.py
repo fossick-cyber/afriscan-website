@@ -87,6 +87,25 @@ COMPONENTS = {
 COMPONENTS["sample-gallery"] = sample_gallery.SPEC        # lib/sample_gallery.py
 
 
+class LangText(dict):
+    """A catalogue text by language ({en, pt, fr}). A locale key (pt-AO) overrides its language (pt) in one
+    entry only: reading a locale this entry has no text for gives the language's text."""
+    def __missing__(self, key):
+        if isinstance(key, str) and "-" in key:
+            return self[key.split("-")[0]]
+        raise KeyError(key)
+
+
+def lang_texts(v):
+    """The catalogue with every {lang: text} mapping as a LangText."""
+    if isinstance(v, list):
+        return [lang_texts(x) for x in v]
+    if isinstance(v, dict):
+        d = {k: lang_texts(x) for k, x in v.items()}
+        return LangText(d) if d and "en" in d and all(isinstance(x, str) for x in d.values()) else d
+    return v
+
+
 def load_yaml(p):
     return yaml.safe_load(Path(p).read_text(encoding="utf-8"))
 
@@ -209,9 +228,10 @@ class Build:
         self.i18n = {n: load_yaml(SITE / f"data/i18n/{n}.yaml")
                      for n in dict.fromkeys(l.get("i18n", "en") for l in self.locales.values())
                      if (SITE / f"data/i18n/{n}.yaml").exists()}
-        self.catalogue = load_yaml(SITE / "data/catalogue.yaml")
+        self.catalogue = lang_texts(load_yaml(SITE / "data/catalogue.yaml"))
         self.rules = load_yaml(SITE / "data/rules.yaml")
-        self.glossary = load_yaml(SITE / "data/glossary/pt-MZ.yaml")
+        # data/glossary/<lang>.yaml: the vocabulary guard for the pages in that language (pt-MZ, pt-AO)
+        self.glossaries = {p.stem: load_yaml(p) for p in sorted((SITE / "data/glossary").glob("*.yaml"))}
         self.redirects = load_yaml(SITE / "data/redirects.yaml")
         self.reviews = load_yaml(SITE / "data/reviews.yaml")
         self.icons = load_yaml(SITE / "data/icons.yaml")
@@ -270,6 +290,14 @@ class Build:
         falls back to it, so nothing can be rendered)."""
         texts = self.catalogue_texts()
         written = {lang for _, d in texts for lang in d}
+        section_langs = {loc["lang"] for loc in self.locales.values()}
+        for w, d in texts:
+            for k in d:
+                if "-" in k and k not in section_langs:
+                    self.err(f"data/catalogue.yaml: {w} has a '{k}' text, but no section in data/locales.yaml "
+                             f"has that language")
+                elif "-" not in k and len(k) != 2:
+                    self.err(f"data/catalogue.yaml: {w}: '{k}' is not a two-letter language or a section language")
         by_lang = defaultdict(lambda: [set(), set()])          # lang2 -> [published sections, draft sections]
         for p in pages:
             by_lang[p["lang2"]][1 if p["draft"] else 0].add(p["loc_key"])
@@ -297,14 +325,16 @@ class Build:
                           f"industry and solution names")
         return renderable
 
-    def cat_lang(self, lang2):
+    def cat_lang(self, lang):
         """The data/catalogue.yaml language key for a page language (check_catalogue_langs): its own when every
-        entry has it, else en."""
+        entry has it, else en. Given a page's full language (pt-AO), the locale itself when its two-letter
+        language is complete: entries with a pt-AO text then show it, the others their pt text (LangText)."""
         if not hasattr(self, "_cat_langs"):
             self._cat_langs = {}
+        lang2 = lang[:2]
         if lang2 not in self._cat_langs:
             self._cat_langs[lang2] = lang2 if all(d.get(lang2) for _, d in self.catalogue_texts()) else "en"
-        return self._cat_langs[lang2]
+        return lang if self._cat_langs[lang2] == lang2 and lang != lang2 else self._cat_langs[lang2]
 
     def lang_name(self, lk):
         loc = self.locales[lk]
@@ -488,7 +518,7 @@ class Build:
             return m["crumb"]
         if m.get("nav_label"):
             return m["nav_label"]
-        lang = self.cat_lang(p["lang2"])
+        lang = self.cat_lang(p["lang"])
         cat = self.cat_ind.get(p["key"]) or self.cat_sol.get(p["key"])
         if cat:
             return cat["name"][lang]
@@ -653,7 +683,7 @@ class Build:
     # ------------------------------------------------------------------ navigation
     def nav_for(self, lk):
         page_lang = self.locales[lk]["lang"]
-        lang = self.cat_lang(page_lang[:2])
+        lang = self.cat_lang(page_lang)
         t = self.t_of(lk)
 
         def item(p, label=None, blurb=None, **kw):
@@ -832,7 +862,7 @@ class Build:
         return {"rows": rows}
 
     def _cards_from_catalogue(self, p, items):
-        lang = self.cat_lang(p["lang2"])
+        lang = self.cat_lang(p["lang"])
         cards = []
         for c in items:
             if p["loc_key"] in c.get("exclude", []):
@@ -868,7 +898,7 @@ class Build:
         return {"cards": self._cards_from_catalogue(p, items)}
 
     def services_for(self, p, ids=None, groups=None):
-        lang = self.cat_lang(p["lang2"])
+        lang = self.cat_lang(p["lang"])
         out = []
         for s in self.catalogue["services"]:
             if ids and s["id"] not in ids:
@@ -885,7 +915,7 @@ class Build:
         return out
 
     def cmp_catalogue(self, p, b, ctx):
-        lang = self.cat_lang(p["lang2"])
+        lang = self.cat_lang(p["lang"])
         ids = [x.strip() for x in b.attrs["services"].split(",")] if b.attrs.get("services") else None
         groups = [x.strip() for x in b.attrs["groups"].split(",")] if b.attrs.get("groups") else None
         if ids:
@@ -1036,7 +1066,7 @@ class Build:
         return dict(page=p, loc=p["loc"], t=p["t"], site=self.site, nav=self.navs[lk], build=self,
                     icon=self.icon, md=self.md_inline, mdblock=self.md_block, contact=self.contact_url,
                     fmt_date=lambda d: self.fmt_date(d, p["t"]), assets=self.asset_urls,
-                    lang_key=self.cat_lang(p["lang2"]), catalogue=self.catalogue,
+                    lang_key=self.cat_lang(p["lang"]), catalogue=self.catalogue,
                     resolve=lambda k: self.resolve(k, lk), footer=self.footers[lk], today=self.today,
                     region_js=self.region_js_url, thanks_url=self.thanks_url(p),
                     label_of=lambda q: self.label_in(q, lk))
@@ -1075,7 +1105,7 @@ class Build:
         return [i for i in items if i.get("key") in flagged] if flagged else items[:8]
 
     def related_cards(self, p, keys):
-        lang = self.cat_lang(p["lang2"])
+        lang = self.cat_lang(p["lang"])
         cards = []
         for k in keys or []:
             tp = self.resolve(k, p["loc_key"])
@@ -1135,7 +1165,7 @@ class Build:
         """Articles: the industry pages (in the article's own section and language) that its `about` keys name."""
         if p["template"] != "article":
             return []
-        lang = self.cat_lang(p["lang2"])
+        lang = self.cat_lang(p["lang"])
         out = []
         for k in p["meta"].get("about") or []:
             tp = self.resolve(k, p["loc_key"])
@@ -1145,7 +1175,7 @@ class Build:
         return out
 
     def used_in(self, p):
-        lang = self.cat_lang(p["lang2"])
+        lang = self.cat_lang(p["lang"])
         out = []
         for k in p["meta"].get("used_in", []) or []:
             if k not in self.cat_ind:
@@ -1542,13 +1572,13 @@ class Build:
                     msg = f"{p['url']}: [{chk['id']}] {chk['message']}: {m.group(0)!r} in “…{snippet}…”"
                     (self.err if chk["level"] == "error" else self.warn)(msg)
                     break
-        if p["lang"] == "pt-MZ":
-            for level, table in (("error", self.glossary["banned"]), ("warn", self.glossary["ao90"]),
-                                 ("warn", self.glossary["warn"])):
+        if g := self.glossaries.get(p["lang"]):
+            for level, table in (("error", g.get("banned") or {}), ("warn", g.get("ao90") or {}),
+                                 ("warn", g.get("warn") or {})):
                 for pat, use in table.items():
                     if m := re.search(pat, text):
                         (self.err if level == "error" else self.warn)(
-                            f"{p['url']}: [pt-MZ] {m.group(0)!r}: use {use}")
+                            f"{p['url']}: [{p['lang']}] {m.group(0)!r}: use {use}")
 
     def check_withdrawn_names(self, built):
         """data/rules.yaml withdrawn_names, in the guard text and every URL-like value of each page, in

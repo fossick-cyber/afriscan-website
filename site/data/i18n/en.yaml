@@ -82,7 +82,7 @@ footer:
   afridrone: Afridrone drone services
   contact: Request a proposal
   rights: All rights reserved.
-  drones: Drone surveys are subject to the permits and authorisations each job requires.
+  drones: Drone surveys are subject to the approvals and security clearances each job requires.
 
 law:
   as_of: "As of {date}"
@@ -93,7 +93,7 @@ law:
   date: Date
   checked: Checked
   last_reviewed: Last reviewed
-  drone_note: Drone surveys are subject to the permits and authorisations each job requires. Satellite-based work involves no drone flight.
+  drone_note: Drone surveys are subject to the approvals and security clearances each job requires. Satellite-based work involves no drone flight.
   compare_title: Drone rules at a glance
   regulator: Regulator
   key_instruments: Key instruments

@@ -7,93 +7,111 @@
 # solution page use it in front matter (`key: oil-gas`). Hubs, nav and footer read names and blurbs
 # from here and link each item to the page with that key in the visitor's section, falling back to
 # the global page. Items without any built page are listed without a link.
-# PT names are drafts in Mozambican Portuguese (pre-AO); a native reviewer must check them.
-# Services carry `name_pt` and `line_pt`: the :::catalogue component shows them on /mz/pt/ pages
-# (falling back to the English name or line when one is missing).
+# PT names are drafts in Mozambican Portuguese (pre-AO); a native reviewer must check them. A `pt-AO`
+# text overrides `pt` on the /ao/pt/ pages for that entry only, where the Mozambican term is not the
+# Angolan one (data/glossary/pt-AO.yaml: monitorização, realojamento, EIAS, caminhos-de-ferro); every
+# other entry shows its `pt` text there. FR names (fr-CD, /cd/fr/) are drafts too, pending the native
+# Congolese review of the /cd/fr/ pages; they use the pages' vocabulary (emprise, servitude, fouilles,
+# terres remuées, analyste) and curly apostrophes.
+# Services carry `name_pt` and `line_pt` (and `name_fr` / `line_fr` when a French page lists them):
+# the :::catalogue component shows them on PT pages (falling back to the English name or line when one
+# is missing). No /cd/fr/ page uses :::catalogue yet, so the services have no French lines.
 
 industries:
   - key: oil-gas
     tier: 1
     icon: pipeline
-    name: {en: "Oil & gas", pt: "Petróleo e gás"}
-    menu: {en: "Pipelines and rights of way, cross-border lines, well pads, LNG host areas", pt: "Gasodutos, oleodutos, faixas de servidão, poços e instalações de GNL"}
+    name: {en: "Oil & gas", pt: "Petróleo e gás", fr: "Pétrole et gaz"}
+    menu: {en: "Pipelines and rights of way, cross-border lines, well pads, LNG host areas", pt: "Gasodutos, oleodutos, faixas de servidão, poços e instalações de GNL", fr: "Pipelines et emprises, lignes transfrontalières, plateformes de puits, sites de GNL"}
     blurb:
       en: Structures in pipeline protection zones and rights of way, new and rehabilitated cross-border lines, LNG host areas and their corridors, and fresh digging near your lines.
       pt: Construções nas zonas de protecção e faixas de servidão de gasodutos e oleodutos, zonas de segurança à volta de centrais e instalações de GNL, e escavações recentes junto das condutas.
+      fr: Constructions dans les zones de protection et les emprises des pipelines, lignes transfrontalières nouvelles ou réhabilitées, sites de GNL et leurs corridors, et fouilles récentes près de vos conduites.
   - key: mining
     tier: 1
     icon: mine
-    name: {en: "Mining", pt: "Mineração"}
-    menu: {en: "Concessions, tailings and hazard zones, moving mine paths, rehabilitation", pt: "Concessões, zonas de rejeitados e de perigo, reassentamento, reabilitação"}
+    name: {en: "Mining", pt: "Mineração", fr: "Mines"}
+    menu: {en: "Concessions, tailings and hazard zones, moving mine paths, rehabilitation", pt: "Concessões, zonas de rejeitados e de perigo, reassentamento, reabilitação", fr: "Concessions, parcs à résidus et zones de danger, avancée de l’exploitation, réhabilitation", pt-AO: "Concessões, zonas de rejeitados e de perigo, realojamento, reabilitação"}
     blurb:
       en: Concession edges and boundaries, structures in tailings and hazard zones, baselines ahead of moving mine paths, surface excavations and rehabilitation.
       pt: Limites de concessões, construções em zonas de rejeitados e de perigo, escavações à superfície, registos de base para reassentamento e reabilitação.
+      fr: Limites et abords des concessions, constructions dans les zones de résidus et de danger, états initiaux avant l’avancée de l’exploitation, fouilles en surface et réhabilitation.
+      pt-AO: Limites de concessões, construções em zonas de rejeitados e de perigo, escavações à superfície, registos de base para realojamento e reabilitação.
   - key: power-utilities
     tier: 1
     icon: power
-    name: {en: "Power & utilities", pt: "Energia e água"}
-    menu: {en: "Line servitudes, vegetation, new lines and interconnectors, bulk water", pt: "Servidões de linhas, subestações, adutoras e barragens"}
+    name: {en: "Power & utilities", pt: "Energia e água", fr: "Électricité et eau"}
+    menu: {en: "Line servitudes, vegetation, new lines and interconnectors, bulk water", pt: "Servidões de linhas, subestações, adutoras e barragens", fr: "Servitudes des lignes, végétation, lignes nouvelles et interconnexions, adduction d’eau"}
     blurb:
       en: Line servitudes and wayleaves, vegetation management and fire near lines, baselines for new lines and interconnectors, and bulk water pipelines and dams.
       pt: Servidões de linhas de transporte e distribuição, vegetação e queimadas junto das linhas, adutoras e barragens, e traçados de novas linhas.
+      fr: Servitudes et emprises des lignes, gestion de la végétation et feux près des lignes, états initiaux pour les lignes nouvelles et les interconnexions, conduites d’adduction d’eau et barrages.
   - key: project-finance-esia
     tier: 1
     icon: clipboard
-    name: {en: "Project finance & ESIA", pt: "Financiamento, EIA e reassentamento"}
-    menu: {en: "DFIs and lenders, independent monitors, ESIA and RAP consultancies", pt: "Financiadores, monitores independentes, consultores de EIA e de PAR"}
+    name: {en: "Project finance & ESIA", pt: "Financiamento, EIA e reassentamento", fr: "Financement de projets et EIES", pt-AO: "Financiamento, EIAS e realojamento"}
+    menu: {en: "DFIs and lenders, independent monitors, ESIA and RAP consultancies", pt: "Financiadores, monitores independentes, consultores de EIA e de PAR", fr: "Bailleurs de fonds, contrôleurs indépendants, bureaux d’études EIES et PAR", pt-AO: "Financiadores, monitores independentes, consultores de EIAS e de realojamento"}
     blurb:
       en: Cut-off-date records, baselines for ESIA and RAP teams, and dated evidence for each monitoring period for DFIs, lenders and independent monitors.
       pt: Registos na data de corte, linhas de base para equipas de EIA e de PAR, e informação datada entre visitas para financiadores e monitores independentes.
+      fr: Registres à la date butoir, états initiaux pour les équipes EIES et PAR, et éléments datés pour chaque période de suivi, à l’intention des bailleurs et des contrôleurs indépendants.
+      pt-AO: Registos na data de corte, linhas de base para equipas de EIAS e de realojamento, e informação datada entre visitas para financiadores e monitores independentes.
   - key: rail-roads
     tier: 2
     icon: rail
-    name: {en: "Rail & roads", pt: "Ferrovias e estradas"}
-    menu: {en: "Road and rail reserves, freight-rail corridors, new alignments", pt: "Faixas de estradas e ferrovias, zonas de restrição, novos traçados"}
+    name: {en: "Rail & roads", pt: "Ferrovias e estradas", fr: "Rail et routes", pt-AO: "Caminhos-de-ferro e estradas"}
+    menu: {en: "Road and rail reserves, freight-rail corridors, new alignments", pt: "Faixas de estradas e ferrovias, zonas de restrição, novos traçados", fr: "Emprises routières et ferroviaires, corridors de fret, nouveaux tracés", pt-AO: "Faixas de estradas e caminhos-de-ferro, zonas de restrição, novos traçados"}
     blurb:
       en: Structures along railway and road corridors measured against their reserves and restriction strips, works beside freight lines, and dated baselines for new alignments.
       pt: Construções ao longo de ferrovias e estradas medidas em relação às respectivas faixas de protecção, e registos datados para novos traçados.
+      fr: Constructions le long des voies ferrées et des routes, mesurées par rapport à leurs emprises et zones non aedificandi, travaux près des lignes de fret, et registres datés pour les nouveaux tracés.
+      pt-AO: Construções ao longo de caminhos-de-ferro e estradas medidas em relação às respectivas faixas de protecção, e registos datados para novos traçados.
   - key: telecom-fibre
     tier: 2
     icon: fibre
-    name: {en: "Telecom fibre", pt: "Fibra óptica"}
-    menu: {en: "Buried fibre routes, wayleaves and tower sites", pt: "Rotas de fibra óptica enterrada, servidões e locais de torres"}
+    name: {en: "Telecom fibre", pt: "Fibra óptica", fr: "Fibre optique"}
+    menu: {en: "Buried fibre routes, wayleaves and tower sites", pt: "Rotas de fibra óptica enterrada, servidões e locais de torres", fr: "Tracés de fibre enterrée, emprises et sites de pylônes"}
     blurb:
       en: Excavation, construction and new structures along buried fibre routes and wayleaves, flagged between surveys so your patrols know where to look.
       pt: Escavações, obras e novas construções ao longo de rotas de fibra óptica enterrada e das suas servidões, assinaladas entre levantamentos para orientar as patrulhas.
+      fr: Fouilles, travaux et constructions nouvelles le long des tracés de fibre enterrée et de leurs emprises, signalés entre deux relevés pour orienter vos patrouilles.
   - key: renewables
     tier: 2
     icon: sun
-    name: {en: "Renewables", pt: "Energias renováveis"}
-    menu: {en: "Solar and wind sites and their connection lines", pt: "Parques solares e eólicos e respectivas linhas de ligação"}
+    name: {en: "Renewables", pt: "Energias renováveis", fr: "Énergies renouvelables"}
+    menu: {en: "Solar and wind sites and their connection lines", pt: "Parques solares e eólicos e respectivas linhas de ligação", fr: "Sites solaires et éoliens et leurs lignes de raccordement"}
     blurb:
       en: Site histories, structures and land-use change on and around solar and wind sites and their connection lines, before and during construction.
       pt: Histórico dos terrenos, construções e alterações do uso do solo em parques solares e eólicos e nas suas linhas de ligação, antes e durante a obra.
+      fr: Historique des terrains, constructions et évolution de l’occupation du sol sur les sites solaires et éoliens, autour d’eux et le long de leurs lignes de raccordement, avant et pendant les travaux.
   - key: agriculture-forestry-nature
     tier: 2
     icon: tree
-    name: {en: "Agriculture, forestry & nature", pt: "Florestas, agricultura e conservação"}
-    menu: {en: "Estates, plantations, protected areas and offsets", pt: "Propriedades, plantações, áreas de conservação e compensações"}
+    name: {en: "Agriculture, forestry & nature", pt: "Florestas, agricultura e conservação", fr: "Agriculture, forêts et nature"}
+    menu: {en: "Estates, plantations, protected areas and offsets", pt: "Propriedades, plantações, áreas de conservação e compensações", fr: "Domaines, plantations, aires protégées et compensations"}
     blurb:
       en: Cleared ground, boundary change, new tracks and structures across estates, plantations, conservation areas and biodiversity offsets.
       pt: Terreno desmatado, alterações nos limites, novos acessos e construções em propriedades, plantações, áreas de conservação e compensações de biodiversidade.
+      fr: Défrichements, évolution des limites, nouvelles pistes et constructions dans les domaines, les plantations, les aires protégées et les compensations de biodiversité.
   - key: government
     tier: 2
     icon: building
-    name: {en: "Government & public programmes", pt: "Governo e programas públicos"}
-    menu: {en: "Public land, settlement planning, energy access, recovery after floods", pt: "Terras públicas, planeamento, acesso à energia, recuperação após cheias"}
+    name: {en: "Government & public programmes", pt: "Governo e programas públicos", fr: "Administrations et programmes publics"}
+    menu: {en: "Public land, settlement planning, energy access, recovery after floods", pt: "Terras públicas, planeamento, acesso à energia, recuperação após cheias", fr: "Domaine public, aménagement, accès à l’énergie, relèvement après les inondations"}
     blurb:
       en: Structure layers and estimated households for planning, and before-and-after mapping of public land, programmes and areas hit by floods or cyclones.
       pt: Camadas de construções e estimativas de agregados familiares para planeamento, e mapeamento antes e depois em terras públicas, programas e zonas afectadas por cheias ou ciclones.
+      fr: Couches de constructions et ménages estimés pour la planification, et cartographie avant et après du domaine public, des programmes et des zones touchées par des inondations ou des cyclones.
 
 solution_groups:
   - key: protect
-    name: {en: "Protect corridors and sites", pt: "Proteger corredores e locais"}
+    name: {en: "Protect corridors and sites", pt: "Proteger corredores e locais", fr: "Protéger les emprises et les sites"}
   - key: baselines
-    name: {en: "Baselines and records", pt: "Linhas de base e registos"}
+    name: {en: "Baselines and records", pt: "Linhas de base e registos", fr: "États initiaux et registres"}
   - key: change
-    name: {en: "Change and environment", pt: "Alterações e ambiente"}
+    name: {en: "Change and environment", pt: "Alterações e ambiente", fr: "Changements et environnement"}
   - key: capture
-    name: {en: "Drone, imagery and custom detection", pt: "Drone, imagens e detecção à medida"}
+    name: {en: "Drone, imagery and custom detection", pt: "Drone, imagens e detecção à medida", fr: "Drones, images et détection sur mesure"}
 
 # `footer: true`: the solutions listed in the site footer (INDUSTRIES.FINAL §2.1).
 solutions:
@@ -102,38 +120,42 @@ solutions:
     code: U1
     group: protect
     icon: corridor
-    name: {en: "Right-of-way & servitude monitoring", pt: "Monitoria de faixas de servidão"}
+    name: {en: "Right-of-way & servitude monitoring", pt: "Monitoria de faixas de servidão", fr: "Suivi des emprises et des servitudes", pt-AO: "Monitorização de faixas de servidão"}
     blurb:
       en: A baseline register of structures by distance to your line, then re-surveys on a schedule agreed with you and a notice of what changed.
       pt: Um registo de base das construções por distância à linha, seguido de levantamentos periódicos acordados consigo e de um aviso do que mudou.
+      fr: Un registre initial des constructions par distance à votre ligne, puis de nouveaux relevés selon un calendrier convenu avec vous et un avis de ce qui a changé.
     services: [S01, S08, S09, S10, S18, S22, S13, S38, S45]
   - key: encroachment-surveys
     footer: true
     code: U2
     group: protect
     icon: boundary
-    name: {en: "Encroachment surveys", pt: "Ocupações em concessões e terrenos"}
+    name: {en: "Encroachment surveys", pt: "Ocupações em concessões e terrenos", fr: "Relevés de concessions et de limites"}
     blurb:
       en: Structures inside a concession, site or boundary, in a ring around it, or both, mapped and listed so you can see where land is being occupied.
       pt: Construções dentro de uma concessão, terreno ou limite, numa faixa à sua volta, ou em ambos, mapeadas e listadas para ver onde a terra está a ser ocupada.
+      fr: Les constructions à l’intérieur d’une concession, d’un site ou d’une limite, dans une bande autour, ou les deux, cartographiées et listées pour voir où le terrain est occupé.
     services: [S02, S05, S06, S07, S17, S18]
   - key: hazard-zone-registers
     code: U6
     group: protect
     icon: shield
-    name: {en: "Hazard & safety-zone registers", pt: "Construções em zonas de segurança"}
+    name: {en: "Hazard & safety-zone registers", pt: "Construções em zonas de segurança", fr: "Constructions en zones de danger"}
     blurb:
       en: Structures inside the safety, tailings, blast or inundation zones your engineers define, each with its distance to the source.
       pt: Construções dentro das zonas de segurança, de rejeitados, de explosão ou de inundação definidas pelos seus engenheiros, cada uma com a distância à origem.
+      fr: Les constructions dans les zones de sécurité, de résidus, de tir ou d’inondation fixées par vos ingénieurs, chacune avec sa distance à la source.
     services: [S03, S10, S09, S28, S35, S07]
   - key: excavation-mapping
     code: U11
     group: protect
     icon: excavation
-    name: {en: "Excavation & ground-disturbance mapping", pt: "Escavações e perturbação do terreno"}
+    name: {en: "Excavation & ground-disturbance mapping", pt: "Escavações e perturbação do terreno", fr: "Fouilles et terres remuées"}
     blurb:
       en: Pits, fresh digging, spoil heaps and new tracks mapped between dates, so your field teams know where to check.
       pt: Covas, escavações recentes, montes de terra e novos acessos mapeados entre datas, para que as equipas de campo saibam onde verificar.
+      fr: Fosses, fouilles récentes, remblais et nouvelles pistes cartographiés d’une date à l’autre, pour que vos équipes de terrain sachent où vérifier.
     services: [S22, S21, S18, S12, S14]
   - key: resettlement-cut-off-baselines
     footer: true
@@ -141,10 +163,12 @@ solutions:
     group: baselines
     icon: calendar
     flagship: true
-    name: {en: "Resettlement cut-off-date baselines", pt: "Registo na data de corte para reassentamento"}
+    name: {en: "Resettlement cut-off-date baselines", pt: "Registo na data de corte para reassentamento", fr: "Registres à la date butoir", pt-AO: "Registo na data de corte para realojamento"}
     blurb:
       en: A dated register of the structures in your project footprint at the cut-off date, to support your census and asset inventory under IFC Performance Standard 5.
       pt: Um registo datado das construções na área do projecto na data de corte, para apoiar o censo e o inventário de bens segundo a Norma de Desempenho 5 da IFC.
+      fr: Un registre daté des constructions dans l’emprise du projet à la date butoir, pour appuyer le recensement et l’inventaire des biens selon la norme de performance 5 de la SFI.
+      pt-AO: Um registo datado das construções na área do projecto na data de corte, para apoiar o recenseamento e o inventário de bens segundo a Norma de Desempenho 5 da IFC.
     services: [S31, S07, S06, S08, S09, S32, S35, S34, S43, S44]
   - key: route-site-selection
     footer: true
@@ -152,111 +176,121 @@ solutions:
     group: baselines
     icon: route
     flagship: true
-    name: {en: "Route & site selection", pt: "Comparação de traçados e locais"}
+    name: {en: "Route & site selection", pt: "Comparação de traçados e locais", fr: "Choix de tracés et de sites"}
     blurb:
       en: Structure counts along alternative alignments or across candidate sites, so land impact is weighed before a route is fixed.
       pt: Contagens de construções ao longo de traçados alternativos ou em locais candidatos, para pesar o impacto sobre a terra antes de fixar o traçado.
+      fr: Les constructions comptées le long des variantes de tracé ou sur les sites candidats, pour peser l’impact foncier avant de fixer le tracé.
     services: [S04, S27, S28, S33, S35, S36]
   - key: imagery-history-due-diligence
     code: U8
     group: baselines
     icon: history
-    name: {en: "Imagery history & land due diligence", pt: "Histórico de imagens e due diligence de terras"}
+    name: {en: "Imagery history & land due diligence", pt: "Histórico de imagens e due diligence de terras", fr: "Historique d’images et due diligence foncière"}
     blurb:
       en: What was on a parcel, route or site, and roughly when, from archived satellite imagery and open datasets.
       pt: O que existia num terreno, traçado ou local, e aproximadamente quando, a partir de imagens de satélite históricas e de dados abertos.
+      fr: Ce qui se trouvait sur une parcelle, un tracé ou un site, et à peu près quand, d’après les archives d’images satellite et les données ouvertes.
     services: [S33, S41, S36, S10, S32]
   - key: evidence-packs
     code: U7
     group: baselines
     icon: file-check
     exclude: [za]
-    name: {en: "Evidence packs & grievance checks", pt: "Dossiês documentais e verificação de reclamações"}
+    name: {en: "Evidence packs & grievance checks", pt: "Dossiês documentais e verificação de reclamações", fr: "Dossiers documentaires et examen des réclamations"}
     blurb:
       en: Dated imagery, registers and maps packaged with file fingerprints and an independent timestamp, to support legal and community processes.
       pt: Imagens datadas, registos e mapas reunidos com um código de verificação (hash SHA-256) de cada ficheiro e um carimbo temporal independente, para apoiar processos legais e comunitários.
+      fr: Images datées, registres et cartes réunis avec l’empreinte numérique de chaque fichier et un horodatage indépendant, à l’appui des démarches juridiques et communautaires.
     services: [S32, S34, S33, S31, S41]
   - key: household-estimates
     code: U13
     group: baselines
     icon: houses
-    name: {en: "Settlement & household estimates", pt: "Estimativas de agregados familiares"}
+    name: {en: "Settlement & household estimates", pt: "Estimativas de agregados familiares", fr: "Estimations de ménages"}
     blurb:
       en: Structure layers and estimated households for mini-grid sizing, service planning and consultation planning, with the assumptions stated.
       pt: Camadas de construções e estimativas de agregados familiares para dimensionar mini-redes e planear serviços e consultas, com os pressupostos indicados.
+      fr: Couches de constructions et ménages estimés pour dimensionner des mini-réseaux et planifier les services et les consultations, avec les hypothèses indiquées.
     services: [S05, S35, S10, S07, S06]
   - key: change-detection
     footer: true
     code: U4
     group: change
     icon: compare
-    name: {en: "Change detection & scheduled re-surveys", pt: "Detecção de alterações e levantamentos periódicos"}
+    name: {en: "Change detection & scheduled re-surveys", pt: "Detecção de alterações e levantamentos periódicos", fr: "Détection des changements et relevés périodiques"}
     blurb:
       en: New and removed structures between dated surveys, flagged automatically and confirmed by a reviewer, with before-and-after views.
       pt: Construções novas e desaparecidas entre levantamentos datados, assinaladas automaticamente e confirmadas por um revisor, com vistas de antes e depois.
+      fr: Les constructions nouvelles ou disparues entre deux relevés datés, signalées automatiquement et confirmées par un analyste, avec des vues avant et après.
     services: [S08, S09, S10, S14, S16, S17]
   - key: vegetation-land-cover-fire
     code: U9
     group: change
     icon: leaf
-    name: {en: "Vegetation, land cover & fire", pt: "Vegetação, cobertura do solo e queimadas"}
+    name: {en: "Vegetation, land cover & fire", pt: "Vegetação, cobertura do solo e queimadas", fr: "Végétation, occupation du sol et feux"}
     blurb:
       en: Where vegetation has been cleared, has regrown or has burnt along servitudes, estates and concessions, compared between dates.
       pt: Onde a vegetação foi cortada, voltou a crescer ou ardeu ao longo de servidões, propriedades e concessões, comparando datas.
+      fr: Là où la végétation a été coupée, a repoussé ou a brûlé le long des emprises, dans les domaines et les concessions, d’une date à l’autre.
     services: [S11, S12, S13, S15, S30, S36]
   - key: terrain-flood-post-event
     code: U10
     group: change
     icon: water
-    name: {en: "Terrain, flood & post-event mapping", pt: "Relevo, cheias e mapeamento após eventos"}
+    name: {en: "Terrain, flood & post-event mapping", pt: "Relevo, cheias e mapeamento após eventos", fr: "Relief, inondations et après-événement"}
     blurb:
       en: Steep, erosion-prone and flood-exposed stretches highlighted, and before-and-after checks along your route after storms and floods.
       pt: Troços íngremes, sujeitos a erosão ou expostos a cheias assinalados, e verificação de antes e depois ao longo do traçado após tempestades e cheias.
+      fr: Les tronçons en pente, sujets à l’érosion ou exposés aux crues, et une comparaison avant et après le long de votre tracé après les orages et les inondations.
     services: [S27, S28, S29, S14]
   - key: drone-surveys
     footer: true
     code: U14
     group: capture
     icon: drone
-    name: {en: "Drone surveys", pt: "Levantamentos por drone"}
+    name: {en: "Drone surveys", pt: "Levantamentos por drone", fr: "Levés par drone"}
     blurb:
-      en: Orthophotos, elevation models and volumes where the detail matters, subject to the permits and authorisations each job requires.
-      pt: Ortofotomapas, modelos de elevação e volumes onde o detalhe conta, sujeitos às licenças e autorizações que cada trabalho exige.
+      en: Orthophotos, elevation models and volumes where the detail matters, subject to the approvals and security clearances each job requires.
+      pt: Ortofotomapas, modelos de elevação e volumes onde o detalhe conta, sujeitos às autorizações e credenciações de segurança exigidas para cada operação.
+      fr: Orthophotos, modèles d’élévation et volumes là où le détail compte, sous réserve des autorisations et habilitations de sécurité que chaque mission exige.
     services: [S37, S38, S16, S39, S30]
   - key: imagery
     code: U15
     group: capture
     icon: satellite
-    name: {en: "Imagery: yours, archive or new capture", pt: "Imagens: as suas, de catálogo ou novas"}
+    name: {en: "Imagery: yours, archive or new capture", pt: "Imagens: as suas, de catálogo ou novas", fr: "Images : les vôtres, d’archive ou nouvelle prise de vue"}
     blurb:
       en: Analysis of the imagery you already hold, dated very-high-resolution archive scenes, or a new satellite capture of your site.
       pt: Análise das imagens que já tem, cenas datadas de muito alta resolução já captadas ou uma nova captação por satélite do seu local.
+      fr: L’analyse des images que vous détenez déjà, des scènes datées d’archive à très haute résolution ou une nouvelle prise de vue satellite de votre site.
     services: [S40, S41, S42]
   - key: custom-detection
     code: U12
     group: capture
     icon: target
-    name: {en: "Custom object detection", pt: "Detecção de objectos à medida"}
+    name: {en: "Custom object detection", pt: "Detecção de objectos à medida", fr: "Détection sur mesure"}
     blurb:
       en: Detection tuned to your imagery and to what matters on your land, checked on part of your area before it runs on the rest.
       pt: Detecção adaptada às suas imagens e ao que importa no seu terreno, verificada numa parte da área antes de ser aplicada ao resto.
+      fr: Une détection adaptée à vos images et à ce qui compte sur votre terrain, vérifiée sur une partie de la zone avant d’être appliquée au reste.
     services: [S19, S20, S24, S25, S26]
 
 service_groups:
   - key: structures
-    name: {en: "Encroachment and structure mapping", pt: "Ocupações e mapeamento de construções"}
+    name: {en: "Encroachment and structure mapping", pt: "Ocupações e mapeamento de construções", fr: "Constructions dans les emprises et les périmètres"}
   - key: change
-    name: {en: "Change and repeat surveys", pt: "Alterações e levantamentos periódicos"}
+    name: {en: "Change and repeat surveys", pt: "Alterações e levantamentos periódicos", fr: "Changements et relevés périodiques"}
   - key: features
-    name: {en: "Detection of specific features", pt: "Detecção de elementos específicos"}
+    name: {en: "Detection of specific features", pt: "Detecção de elementos específicos", fr: "Détection d’éléments précis"}
   - key: terrain
-    name: {en: "Terrain, water and hazard screening", pt: "Relevo, água e zonas de perigo"}
+    name: {en: "Terrain, water and hazard screening", pt: "Relevo, água e zonas de perigo", fr: "Relief, eau et zones de danger"}
   - key: baselines
-    name: {en: "Land and social baselines", pt: "Linhas de base fundiárias e sociais"}
+    name: {en: "Land and social baselines", pt: "Linhas de base fundiárias e sociais", fr: "États initiaux fonciers et sociaux"}
   - key: capture
-    name: {en: "Drone and imagery", pt: "Drone e imagens"}
+    name: {en: "Drone and imagery", pt: "Drone e imagens", fr: "Drones et images"}
   - key: delivery
-    name: {en: "Reports and delivery", pt: "Relatórios e entrega"}
+    name: {en: "Reports and delivery", pt: "Relatórios e entrega", fr: "Rapports et livraison"}
 
 # `only`: shown only on these sections' pages. `exclude`: never shown on these sections' pages.
 services:
@@ -296,8 +330,8 @@ services:
   - {id: S34, group: baselines, name: "Location check for grievances and claims", name_pt: "Verificação de reclamações num local", line: "For a single point or claim, a sheet of every dated image covering it, so your team can see what was there on each date.", line_pt: "Para um único ponto ou reclamação, uma folha com cada imagem datada que o cobre, para que a sua equipa veja o que lá existia em cada data."}
   - {id: S35, group: baselines, name: "Household and population estimates", name_pt: "Estimativas de agregados familiares e população", line: "Estimated households and people from structure counts, for mini-grid sizing, service planning, consultation planning and health or census microplanning.", line_pt: "Estimativas de agregados familiares e de população a partir das contagens de construções, para dimensionar mini-redes, planear serviços e consultas públicas e apoiar a microplanificação de campanhas de saúde ou de recenseamento."}
   - {id: S36, group: baselines, name: "Land-use and land-cover baseline", name_pt: "Linha de base de uso e cobertura do solo", line: "A baseline map of built-up land, cropland, bare ground, water and tree cover around your project, combined with our structure register.", line_pt: "Um mapa de base da área construída, terras de cultivo, solo nu, água e cobertura arbórea à volta do seu projecto, combinado com o nosso registo de construções."}
-  - {id: S37, group: capture, name: "Drone orthophoto and elevation survey", name_pt: "Levantamento por drone: ortofotomapa e modelos de elevação", line: "A georeferenced orthophoto, surface and terrain elevation models, a point cloud, a 3D model and a processing quality report from a drone survey of your site or corridor, subject to the permits and authorisations each job requires.", line_pt: "Um ortofotomapa georreferenciado, modelos digitais de superfície e de terreno, uma nuvem de pontos, um modelo 3D e um relatório de qualidade do processamento, a partir de um levantamento por drone do seu local ou corredor, sujeito às licenças e autorizações que cada trabalho exige."}
-  - {id: S38, group: capture, name: "Drone checks of flagged areas", name_pt: "Verificação por drone das áreas assinaladas", line: "Satellite screening narrows the search, then drone flights over the flagged stretches capture the detail your team needs, subject to the permits each job requires.", line_pt: "O rastreio por satélite reduz a área a verificar; depois, voos de drone sobre os troços assinalados captam o detalhe de que a sua equipa precisa, sujeitos às licenças e autorizações que cada trabalho exige."}
+  - {id: S37, group: capture, name: "Drone orthophoto and elevation survey", name_pt: "Levantamento por drone: ortofotomapa e modelos de elevação", line: "A georeferenced orthophoto, surface and terrain elevation models, a point cloud, a 3D model and a processing quality report from a drone survey of your site or corridor, subject to the approvals and security clearances each job requires.", line_pt: "Um ortofotomapa georreferenciado, modelos digitais de superfície e de terreno, uma nuvem de pontos, um modelo 3D e um relatório de qualidade do processamento, a partir de um levantamento por drone do seu local ou corredor, sujeito às autorizações e credenciações de segurança exigidas para cada operação."}
+  - {id: S38, group: capture, name: "Drone checks of flagged areas", name_pt: "Verificação por drone das áreas assinaladas", line: "Satellite screening narrows the search, then drone flights over the flagged stretches capture the detail your team needs, subject to the approvals and security clearances each job requires.", line_pt: "O rastreio por satélite reduz a área a verificar; depois, voos de drone sobre os troços assinalados captam o detalhe de que a sua equipa precisa, sujeitos às autorizações e credenciações de segurança exigidas para cada operação."}
   - {id: S39, group: capture, name: "Stockpile and earthworks volumes", name_pt: "Volumes de pilhas e de movimentos de terra", line: "Volumes of stockpiles, spoil heaps, borrow pits and cut-and-fill areas calculated from drone elevation models.", line_pt: "Volumes de pilhas, montes de terra, áreas de empréstimo e zonas de escavação e aterro, calculados a partir de modelos de elevação de drone."}
   - {id: S40, group: capture, name: "Analysis of your own imagery", name_pt: "Análise das suas próprias imagens", line: "Send the drone orthophotos or satellite scenes you already have, and we run the same structure, change and corridor analysis on them.", line_pt: "Envie os ortofotomapas de drone ou as cenas de satélite que já tem, e fazemos sobre eles a mesma análise de construções, alterações e corredor."}
   - {id: S41, group: capture, name: "Very-high-resolution satellite imagery sourcing", name_pt: "Aquisição de imagens de satélite de muito alta resolução", line: "Dated, very-high-resolution satellite scenes of your area sourced from commercial archives, used in your analysis and delivered as imagery.", line_pt: "Cenas de satélite datadas de muito alta resolução da sua área, obtidas em catálogos comerciais, usadas na análise e entregues como imagens."}
