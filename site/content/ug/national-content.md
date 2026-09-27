@@ -54,7 +54,7 @@ Where will imagery and results be processed and stored, and on what basis under 
 :::
 ::::
 
-::::section{id="petroleum" tone="alt" eyebrow="Oil and gas" title="The petroleum national content regulations"}
+::::section{id="petroleum" tone="alt" class="compare" eyebrow="Oil and gas" title="The petroleum national content regulations"}
 | | Midstream | Upstream |
 |---|---|---|
 | **Instrument** | [Petroleum (RCTMS) (National Content) Regulations 2016](https://www.pau.go.ug/cms/2025/07/Midstream-National-Content-Regulations-2016.pdf), S.I. 34 of 2016 | [Petroleum (EDP) (National Content) Regulations 2016](https://www.pau.go.ug/cms/2025/07/Upstream-National-content-Regulations-2016.pdf), S.I. 44 of 2016 |

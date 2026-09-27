@@ -69,7 +69,7 @@ What lies in the corridor matters twice: as a safety risk to the people living a
 :::
 ::::
 
-::::section{id="law" tone="alt" eyebrow="The bands in Ugandan law" title="What the Midstream Act and the 2016 Regulations draw around a pipeline" lead="A summary of the public rules as of 27 September 2026, for orientation. It is not legal advice; the sources are linked."}
+::::section{id="law" tone="alt" class="compare" eyebrow="The bands in Ugandan law" title="What the Midstream Act and the 2016 Regulations draw around a pipeline" lead="A summary of the public rules as of 27 September 2026, for orientation. It is not legal advice; the sources are linked."}
 | Rule | What it says | Instrument |
 |---|---|---|
 | **Activity next to a pipeline** | "A person shall not undertake any activity in an area adjacent to a pipeline system without the written consent of the Authority, in consultation with the licensee." The Regulations do not define the adjacent area | [Petroleum (RCTMS) Regulations 2016](https://www.pau.go.ug/cms/2025/07/Midstream_General_Regulations-2016.pdf), S.I. 36 of 2016, reg 68 |
@@ -90,7 +90,7 @@ Red: within 6 m of the pipe (reg 97). Grey: the right of way, whose width is set
 ::::col
 The six-metre rule in regulation 91 applies only "where there is no pipeline right of way"; near any pipeline, regulation 97 lets machines dig within 6 m only under the licensee's supervision. We report each band separately, so your team can apply the rule that fits each stretch.
 
-We report structures within **6 m of the pipe**, inside the **right of way** and within **30 m of its edge** by default, measured from the centreline and the right-of-way polygon you send. PAU approves a surveyed route within 30 days (reg 60), so the approved route is on record from the start.
+We report structures within **6 m of the pipe**, inside the **right of way** and within **30 m of its edge** by default, measured from the centreline and the right-of-way polygon you send. PAU approves a surveyed route within 30 days (reg 60); send us the approved route and we measure from it.
 
 :::sources{law="ug" ids="midstream-regs-2016,midstream-act-2013,edp-act-2013"}
 :::
@@ -183,6 +183,21 @@ A person checks every result. Each feature is measured to the pipe and the right
 :::
 :::
 
+### Who delivers petroleum work in Uganda {#national-content}
+
+:::::columns{split="2-1"}
+::::col
+The petroleum national content regulations reserve land surveying, environment studies and impact assessments, and communications and IT services for Ugandan companies, registered entities and citizens, and suppliers to the crude export pipeline must generally be registered on PAU's National Supplier Database. Where the rules reserve the work, it is delivered through a Ugandan partner or joint venture that meets them, or as a subcontractor to your appointed consultant or contractor, with our analysis, review and reporting unchanged.
+::::
+::::col
+:::callout{tone="legal" title="The detail"}
+The reserved lists, the definition of a "Ugandan company", the NSD and the PPDA reservation schemes.
+
+[National content and procurement](/ug/national-content)
+:::
+::::
+:::::
+
 More on [how it works](/features), the [methodology](/methodology), [imagery and data sources](/imagery), and [pipelines and oil and gas sites](/industries/oil-gas) beyond Uganda.
 ::::
 
@@ -224,21 +239,6 @@ Onshore only: we map land along the corridor and around facilities, not open wat
 We have mapped structures along a high-pressure gas pipeline in Mozambique. This stretch of the sample was rated high: sixteen structures within 100 m of one 500 m stretch, each listed with its distance and band. A Ugandan register uses the same format, measured to the 6 m and 30 m bands or your own, and names the imagery used and its capture dates.
 
 [See the full sample](/results) · [Ask for a redacted sample report](/ug/contact?intent=sample-report&industry=oil-gas&country=ug)
-::::
-:::::
-::::
-
-::::section{id="national-content" tone="alt" eyebrow="National content" title="Who delivers petroleum work in Uganda"}
-:::::columns{split="2-1"}
-::::col
-The petroleum national content regulations reserve land surveying, environment studies and impact assessments, and communications and IT services for Ugandan companies, registered entities and citizens, and suppliers to the crude export pipeline must generally be registered on PAU's National Supplier Database. Where the rules reserve the work, it is delivered through a Ugandan partner or joint venture that meets them, or as a subcontractor to your appointed consultant or contractor, with our analysis, review and reporting unchanged.
-::::
-::::col
-:::callout{tone="legal" title="The detail"}
-The reserved lists, the definition of a "Ugandan company", the NSD and the PPDA reservation schemes.
-
-[National content and procurement](/ug/national-content)
-:::
 ::::
 :::::
 ::::

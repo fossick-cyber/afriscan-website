@@ -65,7 +65,7 @@ A remote pilot authorisation or licence issued only after a security threat asse
 :::
 ::::
 
-::::section{id="who" tone="alt" eyebrow="Who regulates what" title="The layers of approval, and the rule behind each"}
+::::section{id="who" tone="alt" class="compare" eyebrow="Who regulates what" title="The layers of approval, and the rule behind each"}
 | Body | What it approves or controls | Legal basis |
 |---|---|---|
 | **UCAA**, Uganda Civil Aviation Authority | Drone categories, registration, operator certificates, pilots, operating limits, security programmes, privacy rules | Civil Aviation Authority Act s.61(1) (Cap. 354 as cited in the Regulations; Cap. 348 in the revised edition), as amended by [Act 7 of 2019](https://archive.gazettes.africa/archive/ug/2019/ug-government-gazette-acts-supplement-dated-2019-04-18-no-18.pdf); [S.I. 96 of 2022](https://archive.gazettes.africa/archive/ug/2022/ug-government-gazette-statutory-instruments-supplement-dated-2022-08-15-no-51.pdf) |
@@ -81,7 +81,7 @@ A remote pilot authorisation or licence issued only after a security threat asse
 The Regulations were made on 12 August 2022 and published on 15 August 2022, and they revoked the Civil Aviation (Remotely Piloted Aircraft Systems) Regulations, 2020 (S.I. 23 of 2020). No amending instrument appears on ULII or on [UCAA's regulations page](https://caa.go.ug/regulations/), and the arrangement of sections of the Civil Aviation Authority (Amendment) Act 2024 shows no drone clauses. UCAA's [drone page](https://caa.go.ug/unmanned-aircraft-systems-drones/) carries the Regulations, the application form, the designated medical examiners, the advisory circular and the requirements checklist. Every instrument this guide relies on is listed with its Gazette reference in the Sources table at the end.
 ::::
 
-::::section{id="categories" eyebrow="The categories" title="Three categories, and where a mapping flight fits" lead="Regulation 4 and Schedule 2 sort operations by risk. Every category must stay within the territorial borders of Uganda."}
+::::section{id="categories" class="compare" eyebrow="The categories" title="Three categories, and where a mapping flight fits" lead="Regulation 4 and Schedule 2 sort operations by risk. Every category must stay within the territorial borders of Uganda."}
 | Category | Main limits | What it needs |
 |---|---|---|
 | **A, basic** (low risk) | Visual line of sight; at most 30 ft (10 m) above ground; 50 m from persons, buildings or objects not involved; within 200 m of the control station; 06:00 to 18:00; at most 20 km/h | UCAA approval and a valid authorisation for the drone (reg 5); a report to local authorities first; registration with UCAA or flight under an authorised club. Recreational and sports flying only inside a registered club |

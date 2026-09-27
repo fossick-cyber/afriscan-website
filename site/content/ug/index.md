@@ -49,7 +49,7 @@ faq:
 **The law behind the register** Constitution art. 26 · Land Acquisition Act (Cap. 235) · Petroleum (RCTMS) Regulations 2016, regs 68, 87, 91–98 · Electricity Act ss.67–71 · Roads Act 2019 ss.15–17, 24 · S.I. 53 of 2026 · National Environment Act 2019 s.53 · S.I. 96 of 2022 · Data Protection and Privacy Act 2019
 ::::
 
-::::section{id="law" eyebrow="The law already sets the lines" title="The bands your register is measured against" lead="Uganda's rules draw clear lines around linear assets. What asset owners need is a dated, measured record of what stands inside each band, and since when. That is what we provide."}
+::::section{id="law" class="compare" eyebrow="The law already sets the lines" title="The bands your register is measured against" lead="Uganda's rules draw clear lines around linear assets. What asset owners need is a dated, measured record of what stands inside each band, and since when. That is what we provide."}
 :::cards{cols="2"}
 :::card{title="Pipelines: 6 m, 30 m and the land next to the line" icon="pipeline" eyebrow="Midstream Regulations 2016" key="oil-gas#law"}
 No one may carry out "any activity in an area adjacent to a pipeline system" without PAU's written consent (reg 68). Anyone planning work within 30 m of a pipeline right of way must first find out where the pipe is (reg 92), and machines may dig within 6 m only under the licensee's supervision (reg 97). Licensees survey their routes every six months (reg 87(7)).
@@ -67,12 +67,12 @@ Compulsory acquisition needs "prompt payment of fair and adequate compensation, 
 
 | Strip | Rule | Width | Where to read it |
 |---|---|---|---|
-| Next to a pipeline | Work within 30 m of the right of way only after finding the pipe; machines within 6 m only under the licensee's supervision; where there is no pipeline right of way, no ground disturbance within 6 m without approval | 6 m and 30 m | [S.I. 36 of 2016](https://www.pau.go.ug/cms/2025/07/Midstream_General_Regulations-2016.pdf), regs 91, 92 and 97 |
+| Next to a pipeline | Work within 30 m of the right of way only after finding the pipe; machines within 6 m only under the licensee's supervision; where there is no pipeline right of way, no ground disturbance within 6 m without approval | 6 m and 30 m | [S.I. 36 of 2016](https://www.pau.go.ug/cms/2025/07/Midstream_General_Regulations-2016.pdf), regs 91, 92 and 97 |
 | Petroleum facilities | A safety zone around each facility, set by PAU | Set by PAU | Midstream Act 2013 s.67; EDP Act 2013 s.144 |
-| A new 400 kV line | A 10 m right of way acquired outright and 25 m of wayleave each side, registered as an easement | 60 m, project-specific | [UETCL resettlement framework](https://uetcl.go.ug/wp-content/uploads/2026/01/RPF-Wobulenzi-Masaka-Mutukula-29January2026.pdf), January 2026 |
-| Road reserves | Maximum widths by road class, from 10 m on park and community access roads to 40 m on expressways | Up to 10–40 m by class | [S.I. 53 of 2026](https://ulii.org/akn/ug/act/si/2026/53/eng@2026-06-26), Sch. 12 |
-| Lakeshores and river banks | Land up to 100 m bordering a lake, and a river bank up to 100 m; the Minister may declare protected zones | Up to 100 m | [National Environment Act 2019](https://www.pau.go.ug/cms/2025/07/national_environment_act-_2019_1.pdf) s.53 |
-| Aerodromes (drones) | No drone within 4 km without the aerodrome's and the air navigation service provider's written permission and UCAA approval | 4 km | [S.I. 96 of 2022](/ug/drone-regulations#corridor-rules), reg 52 |
+| A new 400 kV line | A 10 m right of way acquired outright and 25 m of wayleave each side, registered as an easement | 60 m, project-specific | [UETCL resettlement framework](https://uetcl.go.ug/wp-content/uploads/2026/01/RPF-Wobulenzi-Masaka-Mutukula-29January2026.pdf), January 2026 |
+| Road reserves | Maximum widths by road class, from 10 m on park and community access roads to 40 m on expressways | Up to 10–40 m by class | [S.I. 53 of 2026](https://ulii.org/akn/ug/act/si/2026/53/eng@2026-06-26), Sch. 12 |
+| Lakeshores and river banks | Land up to 100 m bordering a lake, and a river bank up to 100 m; the Minister may declare protected zones | Up to 100 m | [National Environment Act 2019](https://www.pau.go.ug/cms/2025/07/national_environment_act-_2019_1.pdf) s.53 |
+| Aerodromes (drones) | No drone within 4 km without the aerodrome's and the air navigation service provider's written permission and UCAA approval | 4 km | [S.I. 96 of 2022](/ug/drone-regulations#corridor-rules), reg 52 |
 
 A summary of public rules as of 27 September 2026, for orientation. It is not legal advice; the sources are linked.
 ::::
@@ -195,8 +195,8 @@ We respond to tenders, RFQs and requests from primes and consultants. Send the d
 :::::
 ::::
 
-::::section{id="where" eyebrow="Where we work" title="Where we offer field and drone work"}
-:::callout{tone="scope" title="Field and drone work: out of scope"}
-We do not offer field or drone work in districts along the DRC and South Sudan borders, or in Karamoja and its neighbouring districts, and we follow current travel advice for every field visit elsewhere. Satellite mapping needs no one on site.
+::::section{id="where" eyebrow="Where we work" title="Satellite mapping across Uganda, field work within clear limits"}
+:::callout{tone="scope" title="Where we do not offer field or drone work" icon="info"}
+We map assets across Uganda from satellite imagery, which needs no one on site. We do not offer field or drone work in districts along the DRC and South Sudan borders, or in Karamoja and its neighbouring districts, and we follow current travel advice for every field visit elsewhere.
 :::
 ::::
