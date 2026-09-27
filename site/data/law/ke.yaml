@@ -1,0 +1,108 @@
+# Kenya: the instruments behind /ke/drone-regulations, /ke/wayleave-law-guide and /ke/data-protection.
+# Facts ONLY from regional/ke.FINAL.md (fact-checked 2026-09-27 against the primary texts; ke.verified.md
+# has the same content and the corrections log). Items the brief marks [unverified] or [carried] stay out:
+# whether LN 44/2026 applies to drones, KPC's wayleave width, road and riparian reserve widths, the Forest
+# Act section number, the prescribed PPADA threshold, the outcome of the e-GP court case. Instruments the
+# brief gives without a link (Survey Act Cap. 299, Official Secrets Act Cap. 187, Protected Areas Act
+# Cap. 204, Community Land Act 2016) are cited in the page text instead of this table. Kenya Law pages were
+# read through Wayback captures because the live site returns 403; the links go to the live consolidations.
+# No fee, fine or penalty amount appears anywhere (owner rule: no prices, rates, fees or currency amounts).
+country_name: Kenya
+last_reviewed: 2026-09-27
+regulator:
+  name: Kenya Civil Aviation Authority (KCAA)
+  url: https://www.kcaa.or.ke/safety-security-oversight/unmanned-aircraft-systems
+summary:
+  regulator: Kenya Civil Aviation Authority (KCAA), with a defence security clearance required for every RPAS Operator Certificate
+  instruments: Civil Aviation (Unmanned Aircraft Systems) Regulations, 2025 (Legal Notice 40 of 2026); Survey Act (Cap. 299) s.42 notice before aerial photography for mapping
+instruments:
+  - id: uas-2025
+    title: Civil Aviation (Unmanned Aircraft Systems) Regulations, 2025
+    identifier: Legal Notice No. 40 of 2026, Kenya Gazette Supplement No. 50 (Legislative Supplement No. 35)
+    date: 2026-03-06
+    url: https://drive.google.com/file/d/17liSxxn25BQHbdfeS0LX2RwEZJUbvHak/view
+    last_checked: 2026-09-27
+    note: Made on 15 December 2025 under the Civil Aviation Act (Cap. 394) s.82. The text has no commencement clause and no revocation clause.
+  - id: security-2025
+    title: Civil Aviation (Security) Regulations, 2025
+    identifier: Legal Notice No. 31 of 2026, Kenya Gazette Supplement No. 42
+    date: 2026-03-03
+    url: https://drive.google.com/file/d/1D_VVH4QJxlNROPx_SlQWNek2Xd2ZfeHw/view
+    last_checked: 2026-09-27
+  - id: aerial-work-2025
+    title: Civil Aviation (Aerial Work – General Operations) Regulations, 2025
+    identifier: Legal Notice No. 44 of 2026, Kenya Gazette Supplement No. 70
+    date: 2026-03-25
+    url: https://drive.google.com/file/d/16Wo8FF5cpfvrZ0kD2O14zaQbhhNwR7Wo/view
+    last_checked: 2026-09-27
+    note: Authorisation for aerial survey done for business or hire (regs 51–55). Whether its other rules apply to drones is a question for KCAA.
+  - id: uas-2020
+    title: Civil Aviation (Unmanned Aircraft Systems) Regulations, 2020
+    identifier: Legal Notice No. 42 of 2020, Kenya Gazette Supplement No. 34 (Legislative Supplement No. 22)
+    date: 2020-03-30
+    url: https://www.kcaa.or.ke/sites/default/files/regulation/Civil%20Aviation%20%28Unmanned%20Aircraft%20Systems%29%20Regulations%202020.pdf
+    last_checked: 2026-09-27
+    note: The earlier rules, still offered as a download on KCAA's drone page on 27 September 2026.
+  - id: land-act
+    title: Land Act 2012 (Cap. 280), consolidated to the Land (Amendment) Act 2025
+    identifier: Act No. 6 of 2012; Kenya Law consolidation as at 4 November 2025
+    date: 2025-11-04
+    url: https://new.kenyalaw.org/akn/ke/act/2012/6/eng@2025-11-04
+    last_checked: 2026-09-27
+    note: Wayleaves and public rights of way (ss.143–148), compulsory acquisition (Part VIII), the Land Acquisition Tribunal (s.133C) and evictions from public land (ss.152A–152I).
+  - id: energy-act
+    title: Energy Act 2019
+    identifier: Act No. 1 of 2019, Kenya Gazette Supplement No. 29
+    date: 2019-03-14
+    url: https://new.kenyalaw.org/akn/ke/act/2019/1/eng@2022-12-31
+    last_checked: 2026-09-27
+    note: Energy infrastructure on public, community or private land (ss.170–178); offences (ss.168–169).
+  - id: petroleum-act
+    title: Petroleum Act 2019
+    identifier: Act No. 2 of 2019, Kenya Gazette Supplement No. 30
+    date: 2019
+    url: https://new.kenyalaw.org/akn/ke/act/2019/2/eng@2022-12-31
+    last_checked: 2026-09-27
+    note: Offences involving petroleum pipeline wayleaves and installations (s.99).
+  - id: roads-act
+    title: Kenya Roads Act 2007 (Cap. 408)
+    identifier: Act No. 2 of 2007; Kenya Law consolidation as at 26 August 2025
+    date: 2025-08-26
+    url: https://new.kenyalaw.org/akn/ke/act/2007/2/eng@2025-08-26
+    last_checked: 2026-09-27
+    note: Utilities in road reserves (s.27); structures on a road reserve or in a building restricted area (s.49).
+  - id: mining-act
+    title: Mining Act 2016
+    identifier: Act No. 12 of 2016, Kenya Gazette Supplement No. 71
+    date: 2016-05-13
+    url: https://new.kenyalaw.org/akn/ke/act/2016/12/eng@2025-06-20
+    last_checked: 2026-09-27
+    note: Compensation before mining (s.153); the mining cadastre and registry (ss.191–192).
+  - id: dpa-2019
+    title: Data Protection Act 2019
+    identifier: Act No. 24 of 2019
+    date: 2019
+    url: https://www.odpc.go.ke/
+    last_checked: 2026-09-27
+    note: Applies to controllers and processors outside Kenya that process personal data of people in Kenya (s.4(b)(ii)); "property details" are sensitive personal data (s.2).
+  - id: dpa-general-2021
+    title: Data Protection (General) Regulations, 2021
+    identifier: Legal Notice No. 263 of 2021, Kenya Gazette Supplement No. 236
+    date: 2021-12-31
+    url: https://www.odpc.go.ke/
+    last_checked: 2026-09-27
+    note: Controller–processor contracts (reg 24), sub-processors (reg 25), processing in Kenya for strategic-interest purposes (reg 26).
+  - id: dpa-registration-2021
+    title: Data Protection (Registration of Data Controllers and Data Processors) Regulations, 2021
+    identifier: Legal Notice No. 265 of 2021, Kenya Gazette Supplement No. 236
+    date: 2021-12-31
+    url: https://www.odpc.go.ke/
+    last_checked: 2026-09-27
+    note: Who must register with the Office of the Data Protection Commissioner, and the exemption (reg 13).
+  - id: ppada-2015
+    title: Public Procurement and Asset Disposal Act 2015 (Cap. 412C)
+    identifier: Act No. 33 of 2015; Kenya Law consolidation as at 31 December 2022
+    date: 2022-12-31
+    url: https://new.kenyalaw.org/akn/ke/act/2015/33/eng@2022-12-31
+    last_checked: 2026-09-27
+    note: Citizen and local preferences, and the 40 per cent citizen-contractor rule for foreign tenderers in international tenders (s.157).

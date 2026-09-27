@@ -65,3 +65,17 @@ ng:
   label: "Nigeria"
   short: "Nigeria"
   sitemap: sitemap-ng.xml
+ke:
+  content: ke
+  prefix: /ke
+  lang: en-KE
+  hreflang: [en-KE]
+  og_locale: en_GB
+  i18n: en
+  country: KE
+  country_name: Kenya
+  label: "Kenya"
+  short: "Kenya"
+  sitemap: sitemap-ke.xml
+  status: live
+  region: East
