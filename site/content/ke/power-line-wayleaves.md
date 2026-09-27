@@ -51,7 +51,7 @@ KETRACO's published resettlement action plans set a **40 m wayleave** (20 m each
 
 Each plan defines the cut-off date as the completion of the census and asset inventory, and provides that a delay of two years or more would see it "ratified by the gazette notice". So the first question on any old corridor is which date applies. At least one KETRACO plan, for another 132 kV line, already lists "use of satellite imagery" in its methodology.
 
-Documentation matters to the payments too. In May 2026 the Energy Cabinet Secretary told Parliament that payments to 163 of 836 people affected on three transmission lines were still pending, citing "budget constraints, documentation gaps and other administrative challenges" ([Capital FM, 6 May 2026](https://capitalfm.africa/govt-pays-sh2-23bn-in-wayleave-compensation/)).
+Documentation matters to the payments too. The Energy Cabinet Secretary told Parliament that, as of 13 March 2026, payments to 163 of 836 people affected on three transmission lines were still pending, citing "budget constraints, documentation gaps and other administrative challenges" ([Capital FM, 6 May 2026](https://capitalfm.africa/govt-pays-sh2-23bn-in-wayleave-compensation/)).
 ::::
 :::::
 
