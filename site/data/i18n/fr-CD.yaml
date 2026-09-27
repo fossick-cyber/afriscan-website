@@ -19,7 +19,7 @@ nav:
   resources: Ressources
   contact: Demander une proposition
   contact_short: Proposition
-  overview: Vue d'ensemble
+  overview: "Vue d'ensemble "   # suivi de « : » dans le gabarit
   menu_open: Ouvrir le menu
   menu_close: Fermer le menu
   show_submenu: "Afficher le menu {label}"
@@ -28,7 +28,7 @@ nav:
 
 region:
   label: Site pays
-  choose: Choisir un site pays
+  choose: "Choisir un site pays "   # suivi de « : » dans le gabarit
   current: Vous êtes ici
   # À décommenter à la fusion avec la branche gw-core, qui ajoute ces clés à en.yaml (la construction
   # d'aujourd'hui exige les mêmes clés dans chaque fichier ; celle de gw-core accepte leur absence).
@@ -96,7 +96,7 @@ law:
   reference: Référence
   date: Date
   checked: Vérifié le
-  last_reviewed: Dernière vérification
+  last_reviewed: "Dernière vérification "   # le gabarit ajoute « : » juste après
   drone_note: Les levés par drone sont soumis aux autorisations et habilitations de sécurité que chaque mission exige. Un relevé réalisé à partir d'images satellite ne fait voler aucun drone.
   compare_title: Les règles des drones en bref
   regulator: Autorité
