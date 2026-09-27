@@ -4,7 +4,7 @@ template: law
 law: bw
 as_of: 2026-09-27
 title: "Drone Regulations in Botswana (CAAB, SI 71/2024) | AfriScan"
-description: "What a commercial drone survey in Botswana needs under S.I. No. 71 of 2024: CAAB registration, security vetting, an RPAS Operator Certificate and pilot licences."
+description: "What a commercial drone survey in Botswana needs under S.I. No. 71 of 2024: CAAB registration, security vetting, an RPAS Operator Certificate, pilot licences."
 h1: "Hiring a drone survey in Botswana: what the rules require"
 crumb: Drone law
 nav_group: countries
