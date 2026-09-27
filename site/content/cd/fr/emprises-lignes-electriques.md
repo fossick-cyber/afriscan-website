@@ -56,7 +56,7 @@ Le dossier d'approbation d'un tracé comprend un plan parcellaire des terrains f
 :::
 ::::
 
-::::section{id="textes" tone="alt" eyebrow="Ce que disent les textes" title="L'arrêté de 1993 et la loi sur l'électricité" lead="Vérifié le 27 septembre 2026 sur les textes publiés. Les deux textes ne disent pas la même chose sur les constructions sous une ligne : lisez-les ensemble."}
+::::section{id="textes" tone="alt" eyebrow="Ce que disent les textes" title="L'arrêté de 1993 et la loi sur l'électricité" lead="Vérifié le 27 septembre 2026 sur les textes publiés. Résumé des règles publiques à titre d'information ; ce n'est pas un avis juridique. Les deux textes ne disent pas la même chose sur les constructions sous une ligne : lisez-les ensemble."}
 :::::columns{split="2-1"}
 ::::col
 ### Les servitudes de l'arrêté interministériel de 1993 {#arrete-1993}

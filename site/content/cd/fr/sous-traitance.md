@@ -1,4 +1,5 @@
 ---
+# Slug differs from the brief's /cd/fr/fournisseurs: the page explains Loi n° 17/001 on sous-traitance, the term buyers search for (brief keyword table, P1).
 key: cd-subcontracting
 title: "Sous-traitance en RDC : loi 17/001 et ARSP | AfriScan"
 description: "La loi n° 17/001, modifiée en 2026, réserve la sous-traitance aux entreprises à capitaux congolais. Ce qu'elle impose, et la place d'AfriScan comme fournisseur."

@@ -4,7 +4,7 @@
 #   - fine and levy amounts (owner rule: no currency amounts or regulators' charges), including
 #     the 1.2 % ARSP levy of AM n° 01/2021;
 #   - anything the brief marks [unverified] or [secondary]: an AAC drone regulation or registration
-#     procedure (none was published on 27 Sep 2026), the ministerial arrêté on AAC fine rates, the
+#     procedure (we found none published as of 27 Sep 2026), the ministerial arrêté on AAC fine rates, the
 #     unamended "travail aérien" articles, any security-clearance text, the Code du Numérique
 #     (primary text not read), the rest of Loi n° 26/017 beyond the columns read, Loi n° 26/018.
 # Titles are the official French titles, so the same rows read correctly on the English and French
@@ -23,7 +23,7 @@ summary:
 instruments:
   - id: loi-23-001
     title: Loi n° 23/001 du 12 janvier 2023 modifiant et complétant la Loi n° 10/014 du 31 décembre 2010 relative à l'aviation civile
-    identifier: "Loi n° 23/001 · art. 3, 7, 58 bis, 58 ter, 104, 105, 135, 159, 169 bis, 169 quater, 172, 177"
+    identifier: "Loi n° 10/014 modifiée par la loi n° 23/001 · art. 2, 3, 7, 58 bis, 58 ter, 90, 104, 105, 135, 159, 169 bis, 169 quater, 172, 175, 177, 177 bis, 179 ter, 183 bis, 188"
     date: 2023-01-12
     url: https://www.leganet.be/Legislation/Droit%20economique/transport/Loi.23.001.12.01.2023.html
     last_checked: 2026-09-27

@@ -51,7 +51,7 @@ faq:
 **The rules behind the work** Loi n° 10/014 on civil aviation, art. 58 bis · Arrêté interministériel n° 0021 of 29 October 1993 (servitudes) · Loi n° 14/011 on electricity · Mining Code, arts 279 and 281 · Loi n° 17/001 on subcontracting · Décret n° 14/019 (ESIA) · IFC Performance Standard 5
 ::::
 
-::::section{id="rules" eyebrow="What the texts say" title="Distances set in Congolese law, measured structure by structure" lead="Three sets of rules give a survey in the DRC its widths: the servitudes, the electricity law and the Mining Code. Checked against the published texts on 27 September 2026."}
+::::section{id="rules" eyebrow="What the texts say" title="Distances set in Congolese law, measured structure by structure" lead="Three sets of rules give a survey in the DRC its widths: the servitudes, the electricity law and the Mining Code. Checked against the published texts on 27 September 2026. A summary of the public rules for orientation; it is not legal advice."}
 :::::columns{split="2-1"}
 ::::col
 **Servitudes.** [Arrêté interministériel n° 0021 of 29 October 1993](https://www.leganet.be/Legislation/Droit%20civil/AM.021.29.10.1993.Servitude.htm) lists among the servitudes "les emprises des lignes de haute tension sur une distance de 25 mètres de part et d'autre" (the emprises of high-voltage lines, 25 metres on each side) and railway emprises "de 5 à 50 mètres suivant catégories" (5 to 50 metres, depending on category). It prohibits "toute occupation, toute construction et tout lotissement" there: any occupation, construction or subdivision (art. 2).
@@ -66,7 +66,7 @@ AfriScan measures each structure it records against these distances, or against 
 :::callout{tone="legal" title="Who decides"}
 Whether a structure is permitted is for you and the competent authorities to decide. How the 1993 arrêté fits with art. 108 of the electricity law, which does not stop a land holder building under a line that crosses the concession, is a point for counsel.
 
-[Power-line emprises (in French)](/cd/fr/emprises-lignes-electriques) · [Mining perimeters](/cd/mining)
+[Power-line emprises](/cd/power-lines) · [Rail and road emprises](/cd/rail-and-roads) · [Mining perimeters](/cd/mining)
 :::
 ::::
 :::::
@@ -107,7 +107,7 @@ A dated register of structures at the cut-off date, for the census and asset inv
 
 **For lenders and E&S teams.** Dated structure registers support your census and asset inventory and the cut-off-date record that IFC Performance Standard 5 and the World Bank's ESS5 expect. They do not replace the census. Congolese ESIA rules also ask for "l'inventaire précis et détaillé de l'état initial du site", a precise and detailed inventory of the site's initial state (Décret n° 14/019, art. 19), and a dated register feeds straight into it.
 
-The French pages go further on [power-line emprises](/cd/fr/emprises-lignes-electriques), [rail and road emprises](/cd/fr/corridors-ferroviaires-et-routiers) and [resettlement cut-off dates](/cd/fr/reinstallation-date-butoir) (all in French).
+Each has its own page: [power-line emprises](/cd/power-lines), [rail and road emprises](/cd/rail-and-roads), [mining perimeters](/cd/mining) and [resettlement cut-off dates](/cd/resettlement-cut-off-date).
 ::::
 
 ::::section{id="satellite" tone="alt" eyebrow="Satellite first" title="Documented remotely, with no site access and no overflight"}

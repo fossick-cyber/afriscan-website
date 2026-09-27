@@ -88,7 +88,7 @@ A dated map of pits on both sides of a boundary documents the state of the groun
 :::::
 ::::
 
-::::section{id="article-279" eyebrow="Structures nearby" title="Article 279: what lies within 800 and 1,000 metres of your works"}
+::::section{id="article-279" eyebrow="Structures nearby" title="Article 279: what lies within 800 and 1,000 metres of your works" lead="Checked against the published texts on 27 September 2026. The summaries on this page are for orientation; they are not legal advice."}
 :::::columns{split="1-1"}
 ::::col
 [Article 279 of the Mining Code](https://www.leganet.be/Legislation/Droit%20economique/Code%20Minier/Code_minier.pdf), as amended by [Loi n° 18/001 of 9 March 2018](https://www.leganet.be/Legislation/Droit%20economique/Code%20Minier/Loi.18.001.09.03.2018.html), sets out the land a mining right holder may not occupy without consent.
@@ -124,7 +124,7 @@ Deciding what is permitted, and whose consent to seek, is for you and the compet
 ::::section{id="relocation" tone="alt" eyebrow="Before any relocation" title="Article 281: compensate and resettle first"}
 :::::columns{split="2-1"}
 ::::col
-Since 2018, art. 281 of the Mining Code has read: "En cas de déplacement des populations, l'opérateur minier est tenu préalablement de procéder à l'indemnisation, à la compensation et à la réinstallation des populations concernées." Where people are displaced, the mining operator must first compensate and resettle them. Occupation that deprives rightful users of the land, or leaves it unfit for farming, gives a right to fair compensation; if no amicable settlement is reached, the courts can be seized after three months.
+Since 2018, art. 281 of the Mining Code has read: "En cas de déplacement des populations, l'opérateur minier est tenu préalablement de procéder à l'indemnisation, à la compensation et à la réinstallation des populations concernées." Where people are displaced, the mining operator must first compensate and resettle them. Occupation that deprives rightful users of the land, or leaves it unfit for farming, gives a right to fair compensation; if no amicable settlement is reached, the matter can be taken to court after three months.
 
 A dated record supports the census and the asset inventory; it does not replace them. We produce a register of the structures in the expansion footprint at the cut-off date, each with an ID, coordinates, the image date and a category (main building, outbuilding, enclosure, under construction), then the changes between the cut-off date and the census. Categories describe what the imagery shows; they establish neither use, ownership nor value.
 ::::
@@ -132,7 +132,7 @@ A dated record supports the census and the asset inventory; it does not replace 
 :::callout{tone="note" title="Cut-off dates and resettlement plans"}
 Where lenders apply IFC Performance Standard 5 or the World Bank's ESS5, the dated register supports the cut-off-date records.
 
-[Resettlement cut-off-date baselines](/solutions/resettlement-cut-off-baselines) · [The cut-off-date register (in French)](/cd/fr/reinstallation-date-butoir)
+[Resettlement cut-off-date baselines](/solutions/resettlement-cut-off-baselines) · [The cut-off-date register in the DRC](/cd/resettlement-cut-off-date)
 :::
 ::::
 :::::

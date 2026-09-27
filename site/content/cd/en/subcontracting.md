@@ -1,4 +1,5 @@
 ---
+# Slug differs from the brief's /cd/suppliers: the page explains the subcontracting law, the term buyers search for (brief keyword table, P1).
 key: cd-subcontracting
 title: DRC Subcontracting Law and ARSP for Foreign Firms | AfriScan
 description: "Loi n° 17/001, amended in 2026, reserves subcontracting in the DRC to Congolese-owned firms. What it requires, and how AfriScan works as a technology supplier."
@@ -28,7 +29,7 @@ faq:
   - q: Can a subcontractor subcontract in turn?
     a: "Yes, unless the contract says otherwise, but \"le sous-traitant de second rang est soumis aux mêmes conditions de forme et de fond que le sous-traitant originel\" (art. 7): a second-tier subcontractor meets the same conditions as the first. A supplier to a subcontractor may therefore be held to the same eligibility conditions; that is a point to review with counsel for each arrangement."
   - q: How much of a contract may be subcontracted?
-    a: "\"Est interdite, la sous-traitance de plus de quarante pourcent de la valeur globale d'un marché\" (art. 11): no more than 40 % of a contract's total value may be subcontracted. The 2026 amending law adds a penalty for exceeding it."
+    a: "\"Est interdite, la sous-traitance de plus de quarante pourcent de la valeur globale d'un marché\" (art. 11): no more than 40% of a contract's total value may be subcontracted. The 2026 amending law adds a penalty for exceeding it."
   - q: Can a foreign company obtain a derogation?
     a: "Yes, from ARSP. A derogation normally lasts six months at most, but some may be granted permanently or for longer because of the specific nature of certain markets. The request, from the principal or the subcontractor, includes a justification, a training policy and, for a contract of more than six months, proof of a representation in the DRC; the beneficiary formally undertakes to train Congolese staff (Arrêté ministériel n° 03/2021)."
   - q: What happens if a principal breaches art. 6?
@@ -46,10 +47,10 @@ cta:
 Congolese-owned companies, promoted by Congolese nationals, with their registered office in the DRC (Loi n° 17/001, art. 6), unless ARSP grants a derogation.
 :::
 :::card{title="Who is eligible" icon="file-check"}
-At least 51 % of the capital held by Congolese nationals, and Congolese-majority management and staff (Arrêté ministériel n° 02/2021, art. 4).
+At least 51% of the capital held by Congolese nationals, and Congolese-majority management and staff (Arrêté ministériel n° 02/2021, art. 4).
 :::
 :::card{title="How much of the contract" icon="scale"}
-No more than 40 % of a contract's total value subcontracted (art. 11), with each subcontractor accepted by the project owner (art. 17).
+No more than 40% of a contract's total value subcontracted (art. 11), with each subcontractor accepted by the project owner (art. 17).
 :::
 :::card{title="Who does what" icon="layers"}
 In the DRC, AfriScan supplies the image analysis and the registers to an eligible Congolese company, which holds the contract.
@@ -63,7 +64,7 @@ In the DRC, AfriScan supplies the image analysis and the registers to an eligibl
 - **Art. 6:** "L'activité de sous-traitance est réservée aux entreprises à capitaux congolais promues par les congolais, quelle que soit leur forme juridique, dont le siège social est situé sur le territoire national." Where expertise is unavailable or inaccessible, with proof, the principal may use a foreign company "pour autant que l'activité ne dépasse pas six mois ; à défaut, elle crée une société de droit congolais": for no more than six months, failing which it sets up a company under Congolese law.
 - **Art. 7:** unless the contract says otherwise, a subcontractor may subcontract, but the second-tier subcontractor meets the same formal and substantive conditions as the first.
 - **Art. 9:** the subcontractor shows an RCCM registration, a national identification number, a tax number, a tax certificate and social-security affiliation.
-- **Art. 10:** a tender is required above a threshold set by the law.
+- **Art. 10:** a tender is required at or above a threshold set by the law.
 - **Art. 11:** "Est interdite, la sous-traitance de plus de quarante pourcent de la valeur globale d'un marché."
 - **Art. 12:** the principal publishes each year its turnover with subcontractors and their list, and runs a training policy for Congolese staff.
 - **Art. 17:** each subcontractor is accepted by the project owner (maître de l'ouvrage).
@@ -79,7 +80,7 @@ In mining, art. 108 quinquies of the Mining Code applies the subcontracting law 
 [Loi n° 26/017 of 30 June 2026](https://www.arsp.cd/api/files/attachments/140) amends and supplements Loi n° 17/001. Published in the Journal Officiel (special issue of 8 July 2026), it came into force on promulgation (art. 5). Subcontracting authorisations granted earlier remain valid until they expire (art. 3).
 
 In its decisions, ARSP summarises the amended art. 6 as "réservant la sous-traitance aux sociétés à capitaux congolais dont le siège social est situé sur le territoire national, sauf dérogation". Among the provisions read:
-- a penalty on the share of a contract subcontracted beyond 40 %;
+- a penalty on the share of a contract subcontracted beyond 40%;
 - a penalty for a principal that does not send ARSP its annual turnover with subcontractors and their list, doubled on a repeat offence, with ARSP publishing at each year-end "l'index des entreprises en conformité avec leurs obligations et celles défaillantes", an index of compliant and defaulting companies (art. 30 decies);
 - official reports, public prosecution by the Ministère public and administrative action by ARSP (arts 30 undecies and 30 duodecies).
 
@@ -92,12 +93,12 @@ Only some columns of the Journal Officiel could be read: have your counsel check
 ### Eligibility {#eligibility-am-02}
 
 [Arrêté ministériel n° 02/2021](https://www.leganet.be/Legislation/Droit%20civil/Dobligations/AM.02.06.01.2021.htm) (art. 4) asks a company for:
-- articles of association showing capital "détenu majoritairement par des congolais", at least 51 % Congolese-held;
+- articles of association showing capital "détenu majoritairement par des congolais", at least 51% Congolese-held;
 - a Congolese majority in the administrative or management bodies;
 - a majority-Congolese workforce;
 - its RCCM, national identification number, tax number, tax certificate and CNSS affiliation.
 
-A consortium of Congolese and foreign parties is eligible "que si au moins 51 % des parts sont détenus par les congolais", only if Congolese nationals hold at least 51 % of the shares. The certificate is issued within seven working days, failing which registration is deemed granted (art. 6).
+A consortium of Congolese and foreign parties is eligible "que si au moins 51 % des parts sont détenus par les congolais", only if Congolese nationals hold at least 51% of the shares. The certificate is issued within seven working days, failing which registration is deemed granted (art. 6).
 ::::
 ::::col
 ### Derogations {#derogations}
@@ -120,7 +121,7 @@ AfriScan is not a Congolese company. In the DRC we therefore work as a technolog
 - **AfriScan** supplies the image analysis, the registers of structures and changes, the GIS files and the report, each checked by an analyst;
 - **any field or drone work** is carried out by an eligible Congolese company, subject to the approvals and security clearances each job requires, including the AAC's prior authorisation.
 
-Three points in every arrangement are for counsel: how analysis done outside the DRC is classified, art. 7 on second-tier subcontractors, and the 40 % cap in art. 11. For your contract, the proposal sets out the arrangement and the documents available. [How we work and respond to tenders](/how-we-work)
+Three points in every arrangement are for counsel: how analysis done outside the DRC is classified, art. 7 on second-tier subcontractors, and the 40% cap in art. 11. For your contract, the proposal sets out the arrangement and the documents available. [How we work and respond to tenders](/how-we-work)
 ::::
 ::::col
 :::callout{tone="scope" title="What this arrangement is not"}
@@ -136,10 +137,10 @@ Three points in every arrangement are for counsel: how analysis done outside the
 :::checklist
 - The ARSP registration certificate, or a derogation decision in its name
 - The RCCM, national identification number, tax number, tax certificate and CNSS affiliation
-- Articles of association showing at least 51 % Congolese capital, and the make-up of management and staff
+- Articles of association showing at least 51% Congolese capital, and the make-up of management and staff
 - An insurance certificate from an insurer established in the DRC
 - For a drone survey: the AAC's prior authorisation for the job and the documents on the [client checklist](/cd/drone-regulations#checklist)
-- The share of the contract subcontracted, to check the 40 % cap
+- The share of the contract subcontracted, to check the 40% cap
 :::
 
 :::sources{law="cd" ids="loi-17-001,loi-26-017,am-02-2021,am-03-2021"}

@@ -14,7 +14,7 @@ nav_label: Loi sur les drones en RDC
 nav_blurb: Art. 58 bis, AAC, zones interdites et liste de contrôle
 summary: L'autorisation préalable de l'AAC exigée pour tout vol de drone en RDC, les licences, l'importation, les zones interdites, les sanctions et une liste de contrôle en onze points pour le client.
 eyebrow: Conformité · République démocratique du Congo
-lead: "En RDC, aucun drone ne peut survoler le territoire ni y être exploité sans une autorisation préalable de l'Autorité de l'Aviation Civile (AAC). La règle figure à l'article 58 bis de la loi n° 10/014 relative à l'aviation civile, inséré par la loi n° 23/001 du 12 janvier 2023, et ne prévoit ni seuil de poids ni exception selon l'usage. L'AAC fixe les conditions d'exploitation, mais aucune procédure n'était publiée au 27 septembre 2026. Cette page résume les textes publiés et ce qu'un client doit vérifier avant de commander un levé par drone."
+lead: "En RDC, aucun drone ne peut survoler le territoire ni y être exploité sans une autorisation préalable de l'Autorité de l'Aviation Civile (AAC). La règle figure à l'article 58 bis de la loi n° 10/014 relative à l'aviation civile, inséré par la loi n° 23/001 du 12 janvier 2023, et ne prévoit ni seuil de poids ni exception selon l'usage. L'AAC fixe les conditions d'exploitation, mais nous n'avons trouvé aucune procédure publiée au 27 septembre 2026. Cette page résume les textes publiés et ce qu'un client doit vérifier avant de commander un levé par drone."
 buttons:
   - {label: Demander une proposition, intent: proposal}
   - {label: La liste de contrôle, href: "#liste"}
@@ -30,17 +30,17 @@ faq:
   - q: Un relevé par satellite exige-t-il une autorisation de l'AAC ?
     a: "L'article 58 bis vise le survol et l'exploitation d'aéronefs télépilotés ou autonomes ; dans un relevé par satellite, aucun drone ne vole. Cela ne règle pas les autres questions que peuvent poser les données, en particulier sur des zones minières ou des sites sensibles : faites-les confirmer par votre conseil pour votre projet."
   - q: Un petit drone de loisir est-il dispensé ?
-    a: "Le texte ne prévoit aucun seuil : « aucun aéronef, télépiloté ou autonome » ne peut voler sans autorisation préalable, quels que soient son poids et son usage. Les dérogations sont renvoyées à un texte réglementaire ; aucun n'était publié au 27 septembre 2026."
+    a: "Le texte ne prévoit aucun seuil : « aucun aéronef, télépiloté ou autonome » ne peut voler sans autorisation préalable, quels que soient son poids et son usage. Les dérogations sont renvoyées à un texte réglementaire ; nous n'en avons trouvé aucun au 27 septembre 2026."
   - q: Une entreprise étrangère peut-elle réaliser le levé ?
     a: "L'article 58 bis ne pose pas de condition de nationalité. Mais confier un levé par drone à une entreprise est une activité de sous-traitance, que la loi n° 17/001 réserve aux entreprises à capitaux congolais dont le siège social est en RDC, sauf dérogation de l'ARSP. La voie réaliste est un opérateur congolais éligible, qui obtient lui-même les autorisations de l'AAC. Voir [la sous-traitance en RDC](/cd/fr/sous-traitance)."
   - q: Comment enregistrer un drone auprès de l'AAC ?
-    a: "Le site de l'AAC présente l'enregistrement des drones parmi ses services, mais aucune procédure, aucun formulaire et aucun texte n'y étaient publiés au 27 septembre 2026. Renseignez-vous directement auprès de l'AAC avant tout projet, et demandez par écrit ce qui est exigé pour votre mission."
+    a: "Le site de l'AAC présente l'enregistrement des drones parmi ses services, mais nous n'y avons trouvé, au 27 septembre 2026, ni procédure, ni formulaire, ni texte. Renseignez-vous directement auprès de l'AAC avant tout projet, et demandez par écrit ce qui est exigé pour votre mission."
   - q: Les vols hors vue du télépilote sont-ils possibles ?
     a: "Aucune règle publiée ne fixe de régime pour les vols hors vue (BVLOS), de nuit, ni de limite d'altitude ou de distance. Un levé de corridor se planifie donc en blocs successifs, drone à vue, de jour et à basse altitude, chacun couvert par l'autorisation, et se convient au cas par cas avec l'AAC."
   - q: Que faire en cas d'accident ou d'incident ?
     a: "Le déclarer sans délai au bureau chargé des enquêtes, à l'AAC, à l'autorité aéroportuaire la plus proche, au contrôle de la circulation aérienne et à l'autorité administrative locale (article 159)."
   - q: Peut-on publier les orthophotos d'un levé ?
-    a: "Pas sans accord écrit. Le gouvernement britannique rappelle qu'il est interdit de photographier certains bâtiments publics et militaires, en particulier aux frontières. Le contrat du levé doit dire à qui appartiennent les images, où elles sont conservées et qui peut les publier."
+    a: "Pas sans accord écrit. Le gouvernement britannique rappelle qu'il est interdit de photographier certains bâtiments officiels et militaires, en particulier aux frontières. Le contrat du levé doit dire à qui appartiennent les images, où elles sont conservées et qui peut les publier."
 ---
 
 ::::section{id="en-bref" eyebrow="En bref" title="Six points à régler avant tout levé par drone" lead="Un levé par drone n'est licite en RDC que si chacun de ces points est réglé pour la mission concernée. Aucun délai d'instruction n'est publié : prévoyez-les dès le premier jour du projet."}
@@ -49,7 +49,7 @@ faq:
 Aucun aéronef télépiloté ou autonome ne peut survoler le territoire ni y être exploité sans autorisation préalable de l'AAC. Demandez qu'elle précise l'appareil, le télépilote, la zone, les dates et l'altitude.
 :::
 :::card{title="Les conditions de l'AAC" icon="scale" eyebrow="AAC · art. 58 ter"}
-L'AAC fixe les conditions de conception, de fabrication, d'exploitation, de survol et de circulation des drones. Aucun texte d'application n'était publié au 27 septembre 2026.
+L'AAC fixe les conditions de conception, de fabrication, d'exploitation, de survol et de circulation des drones. Nous n'avons trouvé aucun texte d'application publié au 27 septembre 2026.
 :::
 :::card{title="Un télépilote qualifié" icon="user-check" eyebrow="Art. 104 et 135"}
 La loi prévoit une « licence de télépilote » et des organismes de formation au télépilotage agréés ou homologués par l'AAC.
@@ -70,7 +70,7 @@ Le survol délibéré d'une zone interdite ou réglementée est puni d'une servi
 | Autorité ou acteur | Ce qu'il autorise ou contrôle | Base |
 |---|---|---|
 | **AAC**, Autorité de l'Aviation Civile | L'autorisation préalable de chaque survol ou exploitation ; les conditions de conception, d'exploitation et de circulation des drones ; les licences ; l'agrément des formations ; l'importation | [Loi n° 10/014, modifiée par la loi n° 23/001](https://www.leganet.be/Legislation/Droit%20economique/transport/Loi.23.001.12.01.2023.html), art. 7, 58 bis, 58 ter, 104, 135 |
-| **AAC**, enregistrement | Le [site de l'AAC](https://aac.cd/) présente l'enregistrement des drones parmi ses services ; aucune procédure n'y était publiée au 27 septembre 2026 | À demander à l'AAC |
+| **AAC**, enregistrement | Le [site de l'AAC](https://aac.cd/) présente l'enregistrement des drones parmi ses services ; nous n'y avons trouvé aucune procédure au 27 septembre 2026 | À demander à l'AAC |
 | **Ministre des Transports et AAC** | Les servitudes autour des aérodromes, pour la création de « zones de dégagement » | [Ordonnance-loi n° 62-330 du 27 septembre 1952](https://www.leganet.be/Legislation/Droit%20economique/transport/OL.62.330.27.09.1952.html) |
 | **Autorités de défense et de sécurité** | L'accès aux zones militaires, frontalières et stratégiques | Aucun texte publié trouvé ; à traiter comme une exigence réelle |
 | **ARSP**, Autorité de régulation de la sous-traitance dans le secteur privé | Qui peut être engagé pour réaliser le levé | [Loi n° 17/001](https://www.leganet.be/Legislation/Droit%20civil/Dobligations/Loi.17.001.08.02.2017.html), art. 6 |
@@ -124,7 +124,7 @@ Autour des aérodromes, l'ordonnance-loi n° 62-330 crée des servitudes « po
 
 ### Sites militaires et frontières {#sites-militaires}
 
-Le gouvernement britannique rappelle qu'il est illégal de photographier certains bâtiments publics et militaires, en particulier aux frontières et près des installations militaires, avec un risque d'arrestation et de détention ([conseils aux voyageurs](https://www.gov.uk/foreign-travel-advice/democratic-republic-of-the-congo)).
+Le gouvernement britannique rappelle qu'il est illégal de photographier certains bâtiments officiels et militaires, en particulier aux frontières et près des installations militaires, avec un risque d'arrestation et de détention ([conseils aux voyageurs](https://www.gov.uk/foreign-travel-advice/democratic-republic-of-the-congo)).
 ::::
 ::::col
 ### L'est du pays et la Tshopo {#est}
@@ -149,7 +149,7 @@ Nous n'acceptons aucune mission dans le Nord-Kivu, le Sud-Kivu, l'Ituri, le Haut
 | 172 | Personnel aéronautique, télépilotes compris, exerçant sans licence en cours de validité | Servitude pénale de six à douze mois et amende |
 | 177 | Survol délibéré d'une zone interdite ou restreinte | Servitude pénale de cinq à dix ans et amende |
 | 177 bis | Pénétrer dans l'espace aérien national sans l'autorisation de survol requise ; refuser les ordres d'interception | Servitude pénale d'un à cinq ans et amende. La portée du point a) pour un vol de drone intérieur est à faire confirmer par un conseil |
-| 179 ter | Présence sans autorisation dans la zone réservée d'un aéroport | Servitude pénale de dix jours à deux mois et amende, ou l'une de ces peines |
+| 179 ter | Présence sans autorisation dans la zone réservée d'un aéroport | Emprisonnement de dix jours à deux mois et amende, ou l'une de ces peines |
 | 183 bis | Violation des servitudes aéronautiques légales | Servitude pénale de six mois à deux ans et amende |
 
 Les inspecteurs de l'aviation civile et les officiers de police judiciaire des aéroports et des services de navigation aérienne constatent les infractions, aux côtés de la police judiciaire générale (article 188). Les montants des amendes figurent dans le texte de la loi.

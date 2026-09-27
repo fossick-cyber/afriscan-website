@@ -14,7 +14,7 @@ nav_label: Drone law in the DRC
 nav_blurb: Art. 58 bis, the AAC, prohibited zones and a client checklist
 summary: The prior AAC authorisation every drone flight in the DRC needs, pilot licences, import, prohibited zones, penalties, who may be hired to fly, and an 11-point checklist for clients.
 eyebrow: Compliance · Democratic Republic of the Congo
-lead: "In the DRC, no drone may fly over the country or be operated there without prior authorisation from the Autorité de l'Aviation Civile (AAC). The rule is in art. 58 bis of Loi n° 10/014 on civil aviation, inserted by Loi n° 23/001 of 12 January 2023, and it has no weight threshold and no exemption by purpose. The AAC sets the operating conditions, but no procedure had been published by 27 September 2026. This guide sums up the published texts and what a client should check before commissioning a drone survey."
+lead: "In the DRC, no drone may fly over the country or be operated there without prior authorisation from the Autorité de l'Aviation Civile (AAC). The rule is in art. 58 bis of Loi n° 10/014 on civil aviation, inserted by Loi n° 23/001 of 12 January 2023, and it has no weight threshold and no exemption by purpose. The AAC sets the operating conditions, but we found no published procedure as of 27 September 2026. This guide sums up the published texts and what a client should check before commissioning a drone survey."
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: Checklist for clients, href: "#checklist"}
@@ -30,11 +30,11 @@ faq:
   - q: Does a satellite survey need AAC authorisation?
     a: "Art. 58 bis covers the overflight and operation of remotely piloted or autonomous aircraft, and no drone flies in a satellite survey. That does not settle other questions the data may raise, particularly over mining areas or sensitive sites: have your counsel confirm them for your project."
   - q: Is a small drone exempt?
-    a: "The text sets no threshold: \"aucun aéronef, télépiloté ou autonome\", no remotely piloted or autonomous aircraft, may fly without prior authorisation, whatever its weight or use. Exemptions are left to a regulation, and none had been published by 27 September 2026."
+    a: "The text sets no threshold: \"aucun aéronef, télépiloté ou autonome\", no remotely piloted or autonomous aircraft, may fly without prior authorisation, whatever its weight or use. Exemptions are left to a regulation, and we found none published as of 27 September 2026."
   - q: Can a foreign company carry out the survey?
     a: "Art. 58 bis sets no nationality condition. But hiring a company for a drone survey is subcontracting, which Loi n° 17/001 reserves to Congolese-owned companies with their registered office in the DRC, unless ARSP grants a derogation. The realistic route is an eligible Congolese operator that obtains the AAC authorisations itself. See [subcontracting in the DRC](/cd/subcontracting)."
   - q: How is a drone registered with the AAC?
-    a: "The AAC website lists drone registration among its services, but no procedure, form or legal text was published there on 27 September 2026. Ask the AAC directly before any project, and ask in writing what your job requires."
+    a: "The AAC website lists drone registration among its services, but we found no procedure, form or legal text there as of 27 September 2026. Ask the AAC directly before any project, and ask in writing what your job requires."
   - q: Are beyond-visual-line-of-sight flights possible?
     a: "No published rule sets a regime for flights beyond visual line of sight (BVLOS) or at night, or any altitude or distance limit. A corridor survey is therefore planned as a series of blocks flown in visual line of sight, in daylight and at low altitude, each covered by the authorisation, and agreed case by case with the AAC."
   - q: What happens after an accident or incident?
@@ -49,7 +49,7 @@ faq:
 No remotely piloted or autonomous aircraft may fly over the country or be operated there without the AAC's prior authorisation. Ask for it to specify the aircraft, the pilot, the area, the dates and the altitude.
 :::
 :::card{title="The AAC's conditions" icon="scale" eyebrow="AAC · art. 58 ter"}
-The AAC sets the conditions for the design, manufacture, operation, overflight and movement of drones. No implementing text had been published by 27 September 2026.
+The AAC sets the conditions for the design, manufacture, operation, overflight and movement of drones. We found no implementing text published as of 27 September 2026.
 :::
 :::card{title="A qualified remote pilot" icon="user-check" eyebrow="Arts 104 and 135"}
 The law provides for a "licence de télépilote" (remote pilot licence) and for remote-pilot training organisations approved or recognised by the AAC.
@@ -70,7 +70,7 @@ Deliberately overflying a prohibited or restricted zone is punishable by five to
 | Authority or party | What it authorises or controls | Basis |
 |---|---|---|
 | **AAC**, Autorité de l'Aviation Civile | Prior authorisation of every overflight or operation; conditions for the design, operation and movement of drones; licences; approval of training; import | [Loi n° 10/014, as amended by Loi n° 23/001](https://www.leganet.be/Legislation/Droit%20economique/transport/Loi.23.001.12.01.2023.html), arts 7, 58 bis, 58 ter, 104, 135 |
-| **AAC**, registration | The [AAC website](https://aac.cd/) lists drone registration among its services; no procedure had been published there by 27 September 2026 | Ask the AAC |
+| **AAC**, registration | The [AAC website](https://aac.cd/) lists drone registration among its services; we found no procedure there as of 27 September 2026 | Ask the AAC |
 | **Minister of Transport and AAC** | Servitudes around aerodromes, for "zones de dégagement" (obstacle clearance zones) | [Ordonnance-loi n° 62-330 of 27 September 1952](https://www.leganet.be/Legislation/Droit%20economique/transport/OL.62.330.27.09.1952.html) |
 | **Defence and security authorities** | Access to military, border and strategic zones | No published text found; treat as a real requirement |
 | **ARSP**, the subcontracting regulator | Who may be hired to carry out the survey | [Loi n° 17/001](https://www.leganet.be/Legislation/Droit%20civil/Dobligations/Loi.17.001.08.02.2017.html), art. 6 |
@@ -133,13 +133,13 @@ The UK government warns that photographing some government and military building
 ::::col
 ### The east and Tshopo {#east}
 
-Armed drones are used in the east of the country, and the UK government advises against all but essential travel to Kisangani's airport because of multiple drone attacks. No drone survey is considered in the east of the country or in Tshopo.
+Armed drones are used in the east of the country, and the UK government advises against all but essential travel to Kisangani's airport because of multiple drone attacks. We offer no drone survey in the east of the country or in Tshopo.
 
 ### Occupied or contested sites {#occupied-sites}
 
 Where part of a perimeter can no longer be reached by the right holder's teams, only satellite imagery is used: no drone flies over an occupied or contested area.
 
-:::callout{tone="scope" title="Where we work"}
+:::callout{tone="scope" title="Where we do not work"}
 We accept no work in North Kivu, South Kivu, Ituri, Haut-Uélé, Bas-Uélé, Tshopo, Maniema, Tanganyika, Haut-Lomami, Sud-Ubangi, Kwilu or Kwango, in the Kwamouth territory, or within 50 km of the border with the Central African Republic. [Why](/cd/#scope)
 :::
 ::::
@@ -153,7 +153,7 @@ We accept no work in North Kivu, South Kivu, Ituri, Haut-Uélé, Bas-Uélé, Tsh
 | 172 | Aeronautical personnel, remote pilots included, working without a valid licence | Six to twelve months' penal servitude and a fine |
 | 177 | Deliberate overflight of a prohibited or restricted zone | Five to ten years' penal servitude and a fine |
 | 177 bis | Entering national airspace without the required overflight authorisation; refusing interception orders | One to five years' penal servitude and a fine. Whether point a) reaches a domestic drone flight is a point for counsel |
-| 179 ter | Being in an airport's reserved zone without authorisation | Ten days to two months' penal servitude and a fine, or either |
+| 179 ter | Being in an airport's reserved zone without authorisation | Ten days to two months' imprisonment and a fine, or either |
 | 183 bis | Breaching legal aeronautical servitudes | Six months to two years' penal servitude and a fine |
 
 Civil aviation inspectors and the judicial police officers at airports and air navigation services record offences, alongside the general judicial police (art. 188). The fine amounts are set out in the text of the law.
@@ -179,7 +179,7 @@ Eligibility, ARSP derogations, the 2026 law and the documents to ask a subcontra
 ::::section{id="checklist" eyebrow="Checklist for clients" title="Eleven points to check before a drone survey" lead="Ask the company that will carry out the survey for each of these in writing, for that specific job."}
 :::steps{style="list"}
 :::step{title="Its eligibility to subcontract"}
-The ARSP registration certificate or a derogation decision; the RCCM, national identification number, tax number, tax certificate and CNSS affiliation; proof of at least 51 % Congolese-held capital, Congolese-majority management and a majority-Congolese workforce (Arrêté ministériel n° 02/2021, art. 4).
+The ARSP registration certificate or a derogation decision; the RCCM, national identification number, tax number, tax certificate and CNSS affiliation; proof of at least 51% Congolese-held capital, Congolese-majority management and a majority-Congolese workforce (Arrêté ministériel n° 02/2021, art. 4).
 :::
 :::step{title="The AAC's prior authorisation for this job"}
 The art. 58 bis authorisation, specifying the aircraft, the remote pilot, the area, the dates and the altitude.
@@ -209,7 +209,7 @@ Who owns the imagery and where it is stored; no images of people, military sites
 Blocks flown in visual line of sight, in daylight; safe distances from high-voltage lines; incident declaration under art. 159.
 :::
 :::step{title="The subcontract rules"}
-A tender above the threshold the law sets (art. 10); no more than 40 % of a contract's total value subcontracted (art. 11); acceptance of each subcontractor by the project owner (art. 17).
+A tender at or above the threshold the law sets (art. 10); no more than 40% of a contract's total value subcontracted (art. 11); acceptance of each subcontractor by the project owner (art. 17).
 :::
 :::
 ::::

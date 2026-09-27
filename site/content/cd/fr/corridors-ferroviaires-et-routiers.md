@@ -1,4 +1,5 @@
 ---
+# Slug differs from the brief's /cd/fr/rail-et-routes: the page is about the export corridors, and "corridors ferroviaires et routiers" is the term the market uses.
 key: rail-roads
 template: industry
 title: Emprises ferroviaires et routières en RDC | AfriScan
@@ -50,7 +51,7 @@ Les projets cités sur cette page sont des programmes publics, mentionnés pour 
 :::::
 ::::
 
-::::section{id="textes" tone="alt" eyebrow="Ce que disent les textes" title="Les emprises ferroviaires et routières" lead="Vérifié le 27 septembre 2026 sur les textes publiés."}
+::::section{id="textes" tone="alt" eyebrow="Ce que disent les textes" title="Les emprises ferroviaires et routières" lead="Vérifié le 27 septembre 2026 sur les textes publiés. Résumé des règles publiques à titre d'information ; ce n'est pas un avis juridique."}
 :::::columns{split="2-1"}
 ::::col
 L'[arrêté interministériel n° 0021 du 29 octobre 1993](https://www.leganet.be/Legislation/Droit%20civil/AM.021.29.10.1993.Servitude.htm) range parmi les servitudes :

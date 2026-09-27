@@ -54,7 +54,7 @@ Les projets cités sont des programmes publics, mentionnés d'après leurs docum
 :::::
 ::::
 
-::::section{id="cadre" tone="alt" eyebrow="Le cadre" title="Les textes congolais et les normes des bailleurs" lead="Vérifié le 27 septembre 2026. Les normes des bailleurs s'ajoutent aux textes congolais lorsque le financement les impose."}
+::::section{id="cadre" tone="alt" eyebrow="Le cadre" title="Les textes congolais et les normes des bailleurs" lead="Vérifié le 27 septembre 2026. Résumé des règles publiques à titre d'information ; ce n'est pas un avis juridique. Les normes des bailleurs s'ajoutent aux textes congolais lorsque le financement les impose."}
 :::::columns{split="1-1"}
 ::::col
 ### Les textes congolais {#textes-congolais}

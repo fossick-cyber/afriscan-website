@@ -28,7 +28,7 @@ faq:
   - q: Votre relevé remplace-t-il le recensement avant un déplacement ?
     a: "Non. Un état des lieux daté des constructions et des champs soutient le recensement et l'inventaire des biens que l'article 281 du Code minier et les normes des bailleurs exigent avant tout déplacement ; il ne les remplace pas. Les catégories décrivent ce que montre l'image ; l'indemnisation demande une vérification au sol."
   - q: Pouvez-vous confirmer les limites de notre permis ?
-    a: "Non. Nous travaillons à partir des limites que vous nous fournissons, par exemple les coordonnées de votre titre, et nous ne vérifions ni le titre ni les droits fonciers. Les périmètres sont aussi consultables sur le [portail cartographique du Cadastre minier](https://drclicences.cami.cd/EN/)."
+    a: "Non. Nous travaillons à partir des limites que vous nous fournissez, par exemple les coordonnées de votre titre, et nous ne vérifions ni le titre ni les droits fonciers. Les périmètres sont aussi consultables sur le [portail cartographique du Cadastre minier](https://drclicences.cami.cd/EN/)."
   - q: Les images de notre périmètre seront-elles publiées ?
     a: "Non. Nous ne publions jamais le tracé, les images ou les résultats d'un client sans son accord écrit, et les registres ne portent aucun nom de personne."
 cta:
@@ -86,7 +86,7 @@ Une carte datée des fosses de part et d'autre d'une limite aide à documenter l
 :::::
 ::::
 
-::::section{id="article-279" eyebrow="Constructions à proximité" title="L'article 279 : ce qui se trouve à 800 et 1 000 mètres de vos travaux"}
+::::section{id="article-279" eyebrow="Constructions à proximité" title="L'article 279 : ce qui se trouve à 800 et 1 000 mètres de vos travaux" lead="Vérifié le 27 septembre 2026 sur les textes publiés. Les résumés de cette page sont donnés à titre d'information ; ce n'est pas un avis juridique."}
 :::::columns{split="1-1"}
 ::::col
 L'[article 279 du Code minier](https://www.leganet.be/Legislation/Droit%20economique/Code%20Minier/Code_minier.pdf), dans sa rédaction issue de la [loi n° 18/001 du 9 mars 2018](https://www.leganet.be/Legislation/Droit%20economique/Code%20Minier/Loi.18.001.09.03.2018.html), fixe les terrains qu'un titulaire de droit minier ne peut pas occuper sans consentement.

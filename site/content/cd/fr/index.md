@@ -51,7 +51,7 @@ faq:
 **Les textes derrière le travail** Loi n° 10/014 sur l'aviation civile, art. 58 bis · Arrêté interministériel n° 0021 du 29 octobre 1993 (servitudes) · Loi n° 14/011 sur l'électricité · Code minier, art. 279 et 281 · Loi n° 17/001 sur la sous-traitance · Décret n° 14/019 (EIES) · Norme de performance 5 de la SFI
 ::::
 
-::::section{id="textes" eyebrow="Ce que prévoient les textes" title="Des distances fixées par les textes, mesurées construction par construction" lead="Trois familles de règles donnent aux relevés leurs largeurs en RDC : les servitudes, la loi sur l'électricité et le Code minier. Vérifié le 27 septembre 2026 sur les textes publiés."}
+::::section{id="textes" eyebrow="Ce que prévoient les textes" title="Des distances fixées par les textes, mesurées construction par construction" lead="Trois familles de règles donnent aux relevés leurs largeurs en RDC : les servitudes, la loi sur l'électricité et le Code minier. Vérifié le 27 septembre 2026 sur les textes publiés. Résumé des règles publiques à titre d'information ; ce n'est pas un avis juridique."}
 :::::columns{split="2-1"}
 ::::col
 L'[arrêté interministériel n° 0021 du 29 octobre 1993](https://www.leganet.be/Legislation/Droit%20civil/AM.021.29.10.1993.Servitude.htm) range parmi les servitudes « les emprises des lignes de haute tension sur une distance de 25 mètres de part et d'autre » et « les emprises des chemins de fer de 5 à 50 mètres suivant catégories ». Il y interdit « toute occupation, toute construction et tout lotissement » (article 2).
