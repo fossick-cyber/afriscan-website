@@ -1,0 +1,84 @@
+# Português de Angola (pt-AO) for /ao/pt/. Style: Diário da República, pre-AO90 spelling
+# ("protecção", "actividade", "projecto", "electricidade", "direcção"), as in RNT's 2026 releases.
+# Same structure as pt-MZ.yaml. Today's build (site/build.py) loads only pt-MZ.yaml and applies it to
+# pt-MZ pages; this file is ready for a per-locale glossary check. Until then, writers check /ao/pt/
+# pages against it by hand. `banned` would fail the build, `ao90` and `warn` would warn.
+# Source: fhc-notes/website/regional/ao.FINAL.md (Keywords, local vocabulary, "Avoid").
+
+banned:            # regex -> use instead (Brazilian forms, as in pt-MZ.yaml)
+  '(?i)\bmonitoramentos?\b': "monitorização"
+  '(?i)\bequipes?\b': "equipa"
+  '(?i)\bcontatos?\b': "contacto"
+  '(?i)\busu[áa]rios?\b': "utilizador"
+  '(?i)\bregistr(?:o|os|ar|ado|ada|ados|adas|amos)\b': "registo / registar / registado"
+  '(?i)\bconosco\b': "connosco"
+  '(?i)\bcelulares?\b': "telemóvel"
+  '(?i)\bplanejamentos?\b|\bplanejar\b': "planeamento / planear"
+  '(?i)\bgerenciamento\b|\bgerenciar\b|\bgerenciad[oa]s?\b': "gestão / gerir"
+  '(?i)\baterriss\w*': "aterragem / aterrar"
+  '(?i)\bdecolage[mn]s?\b|\bdecolar\b': "descolagem / descolar"
+  '(?i)\bcontrole de\b': "controlo de"
+  '(?i)\bde fato\b': "de facto"
+  '(?i)\bloteamentos?\b': "parcelamento / talhões"
+  '(?i)\b\w*(?:ômic|ônic|ômetr|ênero|êmic|ônim|ômen|ônom)\w*\b': "acento agudo (económico, electrónico, quilómetro, género, fenómeno)"
+  '(?i)\bótim[oa]s?\b': "óptimo"
+  '(?i)\bônibus\b': "autocarro"
+  '(?i)\bpedágios?\b': "portagem"
+  '(?i)\bbanheiros?\b': "casa de banho"
+
+ao90:              # regex -> pre-AO form the site uses
+  '(?i)\bprote[çc][ãa]o\b': "protecção"
+  '(?i)\bprojetos?\b': "projecto"
+  '(?i)\bsetor(?:es)?\b': "sector / sectores"
+  '(?i)\binfraestruturas?\b': "infra-estrutura"
+  '(?i)\ba[çc][ãa]o\b|\ba[çc][õo]es\b': "acção / acções"
+  '(?i)\bdire[çc][ãa]o\b': "direcção"
+  '(?i)\beletric\w*|\bel[ée]tric\w*': "electricidade / eléctrico"
+  '(?i)\bdetet\w*|\bdete[çc][ãa]o\b': "detectar / detecção"
+  '(?i)\batua(?:l|is|lizad\w*|lizar)\b': "actual / actualizado"
+  '(?i)\bobjetivos?\b': "objectivo"
+  '(?i)\bativ(?:o|os|a|as|idade|idades)\b': "activo / actividade"
+  '(?i)\bafetad\w*|\bafetar\b': "afectado / afectar"
+  '(?i)\bexato\b|\bexata\b': "exacto"
+  '(?i)\bselecionad\w*|\bsele[çc][ãa]o\b': "seleccionado / selecção"
+  '(?i)\bcoletiv\w*': "colectivo"
+
+warn:              # usable, but check the word
+  '(?i)\bvocê\b': "prefer impersonal or 'a sua empresa' constructions"
+  '(?i)\barquivos?\b': "ficheiro (file); 'arquivo' only for archive"
+  '(?i)\bbaixar\b': "descarregar"
+  '(?i)\btelas?\b': "ecrã"
+  '(?i)\bcadastrar\b': "registar (the noun is fine: Cadastro Predial, certidão cadastral)"
+  '(?i)\blinha de transmiss[ãa]o\b': "linha de transporte de electricidade"
+  # Mozambican terms that differ in Angola
+  '(?i)\bmachambas?\b': "lavras"
+  '(?i)\bDUAT\b': "direito de superfície / título de concessão (Angola has no DUAT)"
+  '(?i)\bmonitoria\b': "monitorização (the catalogue's shared PT names still say 'monitoria')"
+  '(?i)zona de protec[çc][ãa]o parcial': "reserva parcial / faixa de 30 m (Lei n.º 9/04, art. 27.º)"
+  '(?i)\bPAR\b': "plano de realojamento (PAR is the Mozambican acronym)"
+  # enforcement words: never in AfriScan's voice; only in a quoted law title
+  '(?i)\binvas[ãa]o\b|\binvas[õo]es\b|\binvasor\w*': "ocupação / construções (land, not people)"
+  '(?i)\bgarimpeir\w*': "describe the land: escavações, terreno revolvido"
+  '(?i)minera[çc][ãa]o ilegal|ocupa[çc][ãa]o ilegal': "alterações no terreno / construções; law title only: Lei n.º 8/24"
+
+preferred:         # guidance only
+  - reserva parcial / terrenos reservados (Lei n.º 9/04, artigo 27.º)
+  - faixa de 30 metros / faixa confinante / faixa de protecção
+  - zona de servidão / servidão administrativa
+  - ocupação desordenada (RNT's term)
+  - construções / benfeitorias
+  - lavras
+  - aldeias / bairros
+  - autoridades tradicionais
+  - realojamento (Lei n.º 1/21; Código Mineiro, art. 17.º) / reagrupamento residencial (art. 207.º) / reassentamento (lender usage)
+  - data de corte / recenseamento
+  - EIAS / EPDA
+  - zona restrita / zona de protecção mineira / titular de direitos mineiros
+  - direito de superfície / NIP / certidão cadastral
+  - ortofotomapa / cobertura aerofotográfica / levantamento aerofotogramétrico
+  - linha de transporte de electricidade / caminho-de-ferro / oleoduto / gasoduto
+  - Governo Provincial / Administração Municipal
+  - NIF
+  - equipa, contacto, registo, utilizador, ficheiro, telemóvel, connosco, monitorização
+  - "Laws: Lei n.º 9/04, de 9 de Novembro (Lei de Terras); Decreto Presidencial n.º 271/20, de 20 de Outubro"
+  - "Dates: 27 de Setembro de 2026 (months capitalised, pre-AO)"
