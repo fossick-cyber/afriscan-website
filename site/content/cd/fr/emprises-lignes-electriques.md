@@ -2,49 +2,49 @@
 key: power-utilities
 template: industry
 title: Emprise des lignes haute tension (25 m), RDC | AfriScan
-description: "Relevé daté des constructions et de la végétation dans l'emprise de 25 m de part et d'autre des lignes haute tension en RDC, puis des changements."
+description: "Relevé daté des constructions et de la végétation dans l’emprise de 25 m de part et d’autre des lignes haute tension en RDC, puis des changements."
 h1: Votre emprise de 25 mètres, construction par construction
 crumb: Lignes électriques
 eyebrow: Électricité · Lignes à haute tension
-lead: "Un relevé daté des constructions, des pistes, des fouilles et de la végétation haute dans l'emprise de vos lignes à haute tension, mesurées depuis l'axe par bandes de 10, 25 et 50 m et classées par tronçon de 500 m. Il prépare l'état des lieux, l'enquête et le dialogue avec les riverains, puis montre ce qui change entre deux relevés. Par satellite, sans survol, et vérifié par un analyste."
+lead: "Un relevé daté des constructions, des pistes, des fouilles et de la végétation haute dans l’emprise de vos lignes à haute tension, mesurées depuis l’axe par bandes de 10, 25 et 50 m et classées par tronçon de 500 m. Il prépare l’état des lieux, l’enquête et le dialogue avec les riverains, puis montre ce qui change entre deux relevés. Par satellite, sans survol, et vérifié par un analyste."
 buttons:
   - {label: Demander une proposition, intent: proposal}
   - {label: Ce que disent les textes, href: "#textes"}
 service:
   name: Relevé des constructions et de la végétation dans les emprises des lignes à haute tension en RDC
-  type: Relevé d'emprise, détection des changements et végétation dans l'emprise
-  description: Registre daté des constructions, pistes, fouilles et végétation haute dans l'emprise des lignes à haute tension en République démocratique du Congo, par bande de distance à l'axe et par tronçon de 500 m, comparé d'un relevé à l'autre, vérifié par un analyste et livré en fichiers SIG et en rapport PDF.
+  type: Relevé d’emprise, détection des changements et végétation dans l’emprise
+  description: Registre daté des constructions, pistes, fouilles et végétation haute dans l’emprise des lignes à haute tension en République démocratique du Congo, par bande de distance à l’axe et par tronçon de 500 m, comparé d’un relevé à l’autre, vérifié par un analyste et livré en fichiers SIG et en rapport PDF.
 og:
   headline: Votre emprise de 25 mètres, construction par construction
   subline: Constructions et végétation sous les lignes à haute tension en RDC, vérifiées par un analyste
 related: [cd-drone-law, cd-subcontracting]
 faq:
-  - q: L'emprise de 25 m se mesure-t-elle depuis l'axe de la ligne ?
-    a: "L'arrêté de 1993 parle d'une distance de 25 mètres « de part et d'autre » sans préciser la ligne de référence, l'axe ou le conducteur extérieur. Nous mesurons depuis le tracé que vous nous fournissez, en général l'axe de la ligne, ou depuis les conducteurs extérieurs si vous nous donnez leur position. Le point est à trancher avec votre conseil."
+  - q: L’emprise de 25 m se mesure-t-elle depuis l’axe de la ligne ?
+    a: "L’arrêté de 1993 parle d’une distance de 25 mètres « de part et d’autre » sans préciser la ligne de référence, l’axe ou le conducteur extérieur. Nous mesurons depuis le tracé que vous nous fournissez, en général l’axe de la ligne, ou depuis les conducteurs extérieurs si vous nous donnez leur position. Le point est à trancher avec votre conseil."
   - q: Peut-on bâtir sous une ligne à haute tension ?
-    a: "Les textes ne répondent pas de la même façon. L'arrêté interministériel n° 0021 de 1993 interdit toute construction dans l'emprise de 25 m, et la loi n° 14/011 sanctionne quiconque construit sur ou sous les lignes électriques ou occupe les emprises des installations électriques du domaine public de l'État (article 125). Son article 108 dispose pourtant que le passage des conducteurs au-dessus d'une concession foncière n'empêche pas le titulaire de la clôturer ou d'y bâtir, moyennant un préavis de trois mois (article 109). Leur articulation relève d'un conseil ; notre registre dit ce qui se trouve où."
+    a: "Les textes ne répondent pas de la même façon. L’arrêté interministériel n° 0021 de 1993 interdit toute construction dans l’emprise de 25 m, et la loi n° 14/011 sanctionne quiconque construit sur ou sous les lignes électriques ou occupe les emprises des installations électriques du domaine public de l’État (article 125). Son article 108 dispose pourtant que le passage des conducteurs au-dessus d’une concession foncière n’empêche pas le titulaire de la clôturer ou d’y bâtir, moyennant un préavis de trois mois (article 109). Leur articulation relève d’un conseil ; notre registre dit ce qui se trouve où."
   - q: Mesurez-vous la distance entre la végétation et les conducteurs ?
-    a: "Non. Nous cartographions l'emplacement de la végétation haute dans l'emprise, à partir des modèles d'élévation d'un levé par drone et de données ouvertes de hauteur de canopée. Ce n'est pas une mesure des distances de sécurité aux conducteurs. Les données ouvertes sont plus anciennes par endroits : un levé par drone donne l'état actuel."
+    a: "Non. Nous cartographions l’emplacement de la végétation haute dans l’emprise, à partir des modèles d’élévation d’un levé par drone et de données ouvertes de hauteur de canopée. Ce n’est pas une mesure des distances de sécurité aux conducteurs. Les données ouvertes sont plus anciennes par endroits : un levé par drone donne l’état actuel."
   - q: Faut-il survoler la ligne ?
-    a: "Non. Le relevé part du tracé de la ligne et d'images satellite. Un levé par drone n'est ajouté que là où un tronçon en a besoin, sous réserve des autorisations et habilitations de sécurité que chaque mission exige, avec des distances de sécurité par rapport aux conducteurs. Voir [la loi sur les drones en RDC](/cd/fr/loi-sur-les-drones)."
+    a: "Non. Le relevé part du tracé de la ligne et d’images satellite. Un levé par drone n’est ajouté que là où un tronçon en a besoin, sous réserve des autorisations et habilitations de sécurité que chaque mission exige, avec des distances de sécurité par rapport aux conducteurs. Voir [la loi sur les drones en RDC](/cd/fr/loi-sur-les-drones)."
   - q: Le registre peut-il servir à une procédure ?
-    a: "Il appuie l'état des lieux, l'enquête, le dialogue avec les riverains et, le cas échéant, les indemnisations prévues par la loi (articles 111 à 113 de la loi n° 14/011). Il ne remplace ni l'enquête ni la décision de l'autorité, et il ne porte sur aucune personne."
+    a: "Il appuie l’état des lieux, l’enquête, le dialogue avec les riverains et, le cas échéant, les indemnisations prévues par la loi (articles 111 à 113 de la loi n° 14/011). Il ne remplace ni l’enquête ni la décision de l’autorité, et il ne porte sur aucune personne."
   - q: Quelle largeur retenir pour une ligne donnée ?
-    a: "La largeur de 25 m vient de l'arrêté de 1993, pas de la loi sur l'électricité, et les textes publiés ne donnent pas de largeur par niveau de tension. Demandez à l'exploitant de la ligne la norme qu'il applique ; nous mesurons les largeurs que vous retenez, jusqu'à six dans un même relevé."
+    a: "La largeur de 25 m vient de l’arrêté de 1993, pas de la loi sur l’électricité, et nous n’avons trouvé aucune largeur par niveau de tension dans les textes publiés. Demandez à l’exploitant de la ligne la norme qu’il applique ; nous mesurons les largeurs que vous retenez, jusqu’à six dans un même relevé."
 cta:
   title: Envoyez le tracé de votre ligne
-  text: "Le tracé (KML, KMZ, Shapefile, GeoJSON ou GeoPackage) ou les coordonnées des pylônes, la tension, la province et les largeurs à mesurer. Nous répondons avec un périmètre de travail, un plan d'imagerie et une proposition écrite."
+  text: "Le tracé (KML, KMZ, Shapefile, GeoJSON ou GeoPackage) ou les coordonnées des pylônes, la tension, la province et les largeurs à mesurer. Nous répondons avec un périmètre de travail, un plan d’imagerie et une proposition écrite."
   button: Demander une proposition
   secondary: La loi sur les drones en RDC
   secondary_href: /cd/fr/loi-sur-les-drones
 ---
 
-::::section{id="probleme" eyebrow="Le problème, dans vos mots" title="Entre deux inspections, l'emprise change"}
+::::section{id="probleme" eyebrow="Le problème, dans vos mots" title="Entre deux inspections, l’emprise change"}
 :::cards{cols="2"}
 :::card{title="« Des constructions apparaissent sous la ligne entre deux passages. »" icon="houses"}
 Une ligne à haute tension traverse des kilomètres de quartiers, de champs et de brousse. Une construction repérée tôt se traite par le dialogue ; repérée tard, elle devient un dossier d'indemnisation ou un litige.
 :::
-:::card{title="« La végétation gagne l'emprise. »" icon="tree"}
+:::card{title="« La végétation gagne l’emprise. »" icon="tree"}
 L'élagage des branches proches des conducteurs fait partie des droits de l'exploitant (loi n° 14/011, article 106). Encore faut-il savoir où la végétation haute se trouve, tronçon par tronçon.
 :::
 :::card{title="« On creuse près des pylônes. »" icon="excavation"}
@@ -56,7 +56,7 @@ Le dossier d'approbation d'un tracé comprend un plan parcellaire des terrains f
 :::
 ::::
 
-::::section{id="textes" tone="alt" eyebrow="Ce que disent les textes" title="L'arrêté de 1993 et la loi sur l'électricité" lead="Vérifié le 27 septembre 2026 sur les textes publiés. Résumé des règles publiques à titre d'information ; ce n'est pas un avis juridique. Les deux textes ne disent pas la même chose sur les constructions sous une ligne : lisez-les ensemble."}
+::::section{id="textes" tone="alt" eyebrow="Ce que disent les textes" title="L’arrêté de 1993 et la loi sur l’électricité" lead="Vérifié le 27 septembre 2026 sur les textes publiés. Résumé des règles publiques à titre d’information ; ce n’est pas un avis juridique. Les deux textes ne disent pas la même chose sur les constructions sous une ligne : lisez-les ensemble."}
 :::::columns{split="2-1"}
 ::::col
 ### Les servitudes de l'arrêté interministériel de 1993 {#arrete-1993}
@@ -91,7 +91,7 @@ Ces questions relèvent d'un conseil. La décision sur ce qui est autorisé appa
 ::::section{id="livrables" eyebrow="Ce que vous recevez" title="Un registre par bande et par tronçon"}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="diagrams/cd-emprise-ht" alt="Schéma en plan d'une ligne à haute tension avec trois pylônes, et trois bandes de part et d'autre de l'axe à 10, 25 et 50 mètres ; les constructions à moins de 25 mètres sont en rouge, celles entre 25 et 50 mètres en orange" caption="Schéma : l'emprise de 25 m et les bandes du registre" size="half" credit="Schéma dessiné par AfriScan à titre d'illustration ; ce n'est pas une ligne réelle."}
+:::figure{src="diagrams/cd-emprise-ht" alt="Schéma en plan d’une ligne à haute tension avec trois pylônes, et trois bandes de part et d’autre de l’axe à 10, 25 et 50 mètres ; les constructions à moins de 25 mètres sont en rouge, celles entre 25 et 50 mètres en orange" caption="Schéma : l’emprise de 25 m et les bandes du registre" size="half" credit="Schéma dessiné par AfriScan à titre d’illustration ; ce n’est pas une ligne réelle."}
 Les distances sont mesurées depuis l'axe de la ligne. <span class="band band--a">Moins de 25 m</span> dans l'emprise de l'arrêté de 1993, dont une bande intérieure de 10 m en pointillés ; <span class="band band--b">25 à 50 m</span> dans la bande extérieure du registre.
 :::
 ::::

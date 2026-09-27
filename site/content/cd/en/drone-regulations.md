@@ -95,7 +95,7 @@ Article 6 of [Loi n° 23/001 of 12 January 2023](https://www.leganet.be/Legisla
 A drone is an aircraft under the law. An "aéronef télépiloté" is an "aéronef non habité, piloté depuis un poste de télépilotage", an unmanned aircraft flown from a remote pilot station (art. 3(16)); an "aéronef autonome" flies with no one on board and no possibility for a pilot to intervene in the flight (art. 3(10)).
 ::::
 ::::col
-:::callout{tone="warn" title="What is not published"}
+:::callout{tone="warn" title="What we could not find online"}
 As of 27 September 2026 we found no online:
 - AAC decision or regulation under art. 58 ter;
 - drone registration procedure;
@@ -185,7 +185,7 @@ The ARSP registration certificate or a derogation decision; the RCCM, national i
 The art. 58 bis authorisation, specifying the aircraft, the remote pilot, the area, the dates and the altitude.
 :::
 :::step{title="Registration of each drone"}
-If the AAC issues one for the job; ask for the document.
+If the AAC issues one; ask for the document for each aircraft.
 :::
 :::step{title="The remote pilot licence and training"}
 The licence de télépilote (art. 104) and training with an organisation approved or recognised by the AAC (art. 135).

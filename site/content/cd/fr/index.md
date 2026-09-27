@@ -5,53 +5,53 @@ title: Suivi des emprises et concessions minières, RDC | AfriScan
 description: "Suivi des emprises par satellite en RDC : constructions, fosses et terres remuées sous les lignes HT, le long des voies ferrées et dans les périmètres miniers."
 h1: Sachez ce qui a changé dans votre emprise ou votre concession
 eyebrow: AfriScan · RD Congo · Emprises et périmètres miniers
-lead: "AfriScan localise et compte les constructions, les fosses, les terres remuées et les pistes le long des lignes électriques, des voies ferrées et des routes, et dans les périmètres miniers en République démocratique du Congo. Chaque construction relevée est mesurée par rapport à votre tracé ou à vos limites, rattachée à l'image dont elle provient et vérifiée par un analyste, puis livrée en fichiers SIG et en rapport PDF."
+lead: "AfriScan localise et compte les constructions, les fosses, les terres remuées et les pistes le long des lignes électriques, des voies ferrées et des routes, et dans les périmètres miniers en République démocratique du Congo. Chaque construction relevée est mesurée par rapport à votre tracé ou à vos limites, rattachée à l’image dont elle provient et vérifiée par un analyste, puis livrée en fichiers SIG et en rapport PDF."
 buttons:
   - {label: Demander une proposition, intent: proposal}
   - {label: Travailler avec nous en RDC, key: cd-subcontracting}
 hero:
   image: samples/sample-pipeline-route-hero
-  alt: Vue satellite de brousse et de champs au Mozambique, avec le tracé d'un gazoduc haute pression dessiné en orange dans sa bande de 100 m
-  credit: "Notre exemple publié vient du Mozambique : le tracé d'un gazoduc haute pression et sa bande de 100 m, sur une scène Copernicus Sentinel-2 du 2 août 2026. Contient des données Copernicus Sentinel modifiées (2026)."
+  alt: Vue satellite de brousse et de champs au Mozambique, avec le tracé d’un gazoduc haute pression dessiné en orange dans sa bande de 100 m
+  credit: "Notre exemple publié vient du Mozambique : le tracé d’un gazoduc haute pression et sa bande de 100 m, sur une scène Copernicus Sentinel-2 du 2 août 2026. Contient des données Copernicus Sentinel modifiées (2026)."
   chips:
-    - {title: "25 m de part et d'autre", text: "L'emprise des lignes à haute tension"}
-    - {title: "800 m · 1 000 m", text: "Les distances de l'article 279 du Code minier"}
+    - {title: "25 m de part et d’autre", text: "L’emprise des lignes à haute tension"}
+    - {title: "800 m · 1 000 m", text: "Les distances de l’article 279 du Code minier"}
     - {title: "Tronçons de 500 m", text: "Classés par densité de constructions"}
 service:
   name: Relevés des constructions et des changements dans les emprises et les périmètres miniers en RDC
-  type: Relevé d'emprise, détection des changements et registre initial daté
-  description: Registres des constructions, fosses, terres remuées et pistes dans les emprises des lignes électriques, des voies ferrées et des routes et dans les périmètres miniers en République démocratique du Congo, mesurés par rapport au tracé ou aux limites fournis, comparés d'une date à l'autre, vérifiés par un analyste et livrés en fichiers SIG et en rapport PDF.
+  type: Relevé d’emprise, détection des changements et registre initial daté
+  description: Registres des constructions, fosses, terres remuées et pistes dans les emprises des lignes électriques, des voies ferrées et des routes et dans les périmètres miniers en République démocratique du Congo, mesurés par rapport au tracé ou aux limites fournis, comparés d’une date à l’autre, vérifiés par un analyste et livrés en fichiers SIG et en rapport PDF.
 og:
   headline: Ce qui a changé dans votre emprise ou votre concession
   subline: Constructions, fosses et terres remuées en RDC, vérifiées par un analyste
 cta:
   title: Sachez ce qui se trouve dans votre emprise avant que cela ne devienne un litige.
-  text: "Envoyez le tracé de la ligne ou de la voie, ou les limites du périmètre (KML, KMZ, GeoJSON, Shapefile, GPX ou GeoPackage), la province et les distances à mesurer. Nous répondons avec un périmètre de travail, un plan d'imagerie et une proposition écrite."
+  text: "Envoyez le tracé de la ligne ou de la voie, ou les limites du périmètre (KML, KMZ, GeoJSON, Shapefile, GPX ou GeoPackage), la province et les distances à mesurer. Nous répondons avec un périmètre de travail, un plan d’imagerie et une proposition écrite."
   button: Demander une proposition
   secondary: La loi sur les drones en RDC
   secondary_href: /cd/fr/loi-sur-les-drones
 faq:
   - q: Quelles largeurs mesurez-vous ?
-    a: "Celles que vous fixez, jusqu'à six distances dans un même relevé. Les textes en donnent plusieurs : 25 m de part et d'autre d'une ligne à haute tension et de 5 à 50 m pour une voie ferrée selon sa catégorie (arrêté interministériel n° 0021 du 29 octobre 1993), 800 et 1 000 m autour des terrains qu'un titulaire de droit minier veut occuper (article 279 du Code minier). Votre cahier des charges ou votre norme interne peut en fixer d'autres ; indiquez-les avec le tracé."
+    a: "Celles que vous fixez, jusqu’à six distances dans un même relevé. Les textes en donnent plusieurs : 25 m de part et d’autre d’une ligne à haute tension et de 5 à 50 m pour une voie ferrée selon sa catégorie (arrêté interministériel n° 0021 du 29 octobre 1993), 800 et 1 000 m autour des terrains qu’un titulaire de droit minier veut occuper (article 279 du Code minier). Votre cahier des charges ou votre norme interne peut en fixer d’autres ; indiquez-les avec le tracé."
   - q: Faut-il un accès au site ou un vol de drone ?
-    a: "Non. Un relevé par satellite part de votre fichier de tracé ou de limites et d'images satellite : il ne demande ni accès au site ni survol, et l'analyse se fait à distance. Un levé par drone n'est ajouté que là où un tronçon demande plus de détail, sous réserve des autorisations et habilitations de sécurité que chaque mission exige, dont l'autorisation préalable de l'AAC. Voir [la loi sur les drones en RDC](/cd/fr/loi-sur-les-drones)."
+    a: "Non. Un relevé par satellite part de votre fichier de tracé ou de limites et d’images satellite : il ne demande ni accès au site ni survol, et l’analyse se fait à distance. Un levé par drone n’est ajouté que là où un tronçon demande plus de détail, sous réserve des autorisations et habilitations de sécurité que chaque mission exige, dont l’autorisation préalable de l’AAC. Voir [la loi sur les drones en RDC](/cd/fr/loi-sur-les-drones)."
   - q: De quand datent les images ?
-    a: "Cela dépend de ce qui existe pour votre zone et de l'objet du relevé. Chaque rapport nomme ses sources et, lorsque la source l'indique, la date de prise de vue. Quand la date compte, pour une date butoir ou une comparaison entre deux dates, nous travaillons sur des images datées : une scène satellite acquise pour le projet, un levé par drone ou les images géoréférencées que vous détenez déjà."
+    a: "Cela dépend de ce qui existe pour votre zone et de l’objet du relevé. Chaque rapport nomme ses sources et, lorsque la source l’indique, la date de prise de vue. Quand la date compte, pour une date butoir ou une comparaison entre deux dates, nous travaillons sur des images datées : une scène satellite acquise pour le projet, un levé par drone ou les images géoréférencées que vous détenez déjà."
   - q: Pouvez-vous dire si une construction est autorisée ?
-    a: "Non. Nous relevons ce qui se trouve sur le terrain et la date à laquelle cela apparaît sur les images. Savoir si une construction est autorisée, antérieure à l'emprise ou couverte par un accord relève de vous et des autorités compétentes. Le registre leur donne une liste datée et localisée pour travailler."
+    a: "Non. Nous relevons ce qui se trouve sur le terrain et la date à laquelle cela apparaît sur les images. Savoir si une construction est autorisée, antérieure à l’emprise ou couverte par un accord relève de vous et des autorités compétentes. Le registre leur donne une liste datée et localisée pour travailler."
   - q: Dans quelle langue sont les rapports ?
-    a: "Les rapports PDF sont livrés en anglais. Les fichiers SIG (GeoPackage, GeoJSON, KMZ et Shapefile) s'ouvrent dans QGIS, ArcGIS et Google Earth, et la carte interactive s'ouvre dans un navigateur."
+    a: "Les rapports PDF sont livrés en anglais. Les fichiers SIG (GeoPackage, GeoJSON, KMZ et Shapefile) s’ouvrent dans QGIS, ArcGIS et Google Earth, et la carte interactive s’ouvre dans un navigateur."
   - q: Travaillez-vous dans toutes les provinces ?
-    a: "Non. Pour des raisons de sécurité et de santé publique, nous n'acceptons aucune mission dans les provinces du Nord-Kivu, du Sud-Kivu, de l'Ituri, du Haut-Uélé, du Bas-Uélé, de la Tshopo, du Maniema, du Tanganyika, du Haut-Lomami, du Sud-Ubangi, du Kwilu et du Kwango, ni dans le territoire de Kwamouth ou à moins de 50 km de la frontière centrafricaine. Voir [où nous n'intervenons pas](#perimetre)."
+    a: "Non. Pour des raisons de sécurité et de santé publique, nous n’acceptons aucune mission dans les provinces du Nord-Kivu, du Sud-Kivu, de l’Ituri, du Haut-Uélé, du Bas-Uélé, de la Tshopo, du Maniema, du Tanganyika, du Haut-Lomami, du Sud-Ubangi, du Kwilu et du Kwango, ni dans le territoire de Kwamouth ou à moins de 50 km de la frontière centrafricaine. Voir [où nous n’intervenons pas](#perimetre)."
   - q: Publiez-vous nos tracés ou nos résultats ?
-    a: "Non. Nous ne publions jamais le tracé, les images ou les résultats d'un client sans son accord écrit. L'exemple de ce site, un gazoduc haute pression au Mozambique, est présenté avec l'autorisation du propriétaire du tracé."
+    a: "Non. Nous ne publions jamais le tracé, les images ou les résultats d’un client sans son accord écrit. L’exemple de ce site, un gazoduc haute pression au Mozambique, est présenté avec l’autorisation du propriétaire du tracé."
 ---
 
 ::::section{tone="dark" class="home-strip"}
 **Les textes derrière le travail** Loi n° 10/014 sur l'aviation civile, art. 58 bis · Arrêté interministériel n° 0021 du 29 octobre 1993 (servitudes) · Loi n° 14/011 sur l'électricité · Code minier, art. 279 et 281 · Loi n° 17/001 sur la sous-traitance · Décret n° 14/019 (EIES) · Norme de performance 5 de la SFI
 ::::
 
-::::section{id="textes" eyebrow="Ce que prévoient les textes" title="Des distances fixées par les textes, mesurées construction par construction" lead="Trois familles de règles donnent aux relevés leurs largeurs en RDC : les servitudes, la loi sur l'électricité et le Code minier. Vérifié le 27 septembre 2026 sur les textes publiés. Résumé des règles publiques à titre d'information ; ce n'est pas un avis juridique."}
+::::section{id="textes" eyebrow="Ce que prévoient les textes" title="Des distances fixées par les textes, mesurées construction par construction" lead="Trois familles de règles donnent aux relevés leurs largeurs en RDC : les servitudes, la loi sur l’électricité et le Code minier. Vérifié le 27 septembre 2026 sur les textes publiés. Résumé des règles publiques à titre d’information ; ce n’est pas un avis juridique."}
 :::::columns{split="2-1"}
 ::::col
 L'[arrêté interministériel n° 0021 du 29 octobre 1993](https://www.leganet.be/Legislation/Droit%20civil/AM.021.29.10.1993.Servitude.htm) range parmi les servitudes « les emprises des lignes de haute tension sur une distance de 25 mètres de part et d'autre » et « les emprises des chemins de fer de 5 à 50 mètres suivant catégories ». Il y interdit « toute occupation, toute construction et tout lotissement » (article 2).
@@ -108,7 +108,7 @@ Un registre daté des constructions à la date butoir, pour le recensement et l'
 Pour les pipelines et les autres secteurs, les pages internationales décrivent la même méthode : [pétrole et gaz (en anglais)](/industries/oil-gas), [mines (en anglais)](/industries/mining), [suivi des emprises (en anglais)](/solutions/right-of-way-monitoring).
 ::::
 
-::::section{id="satellite" tone="alt" eyebrow="Le satellite d'abord" title="Documenter à distance, sans accès au site ni survol"}
+::::section{id="satellite" tone="alt" eyebrow="Le satellite d’abord" title="Documenter à distance, sans accès au site ni survol"}
 :::::columns{split="2-1"}
 ::::col
 Un relevé par satellite ne demande ni accès au site ni survol. Il part de votre fichier de tracé ou de limites et d'images satellite, de bases de données ouvertes de bâtiments ou des images que vous détenez déjà, et permet de documenter l'évolution d'une emprise ou d'un périmètre sur plusieurs dates. L'analyse est réalisée à distance.
@@ -127,7 +127,7 @@ Aucun drone ne peut survoler le territoire ni y être exploité sans autorisatio
 :::::
 ::::
 
-::::section{id="sous-traitance" eyebrow="Travailler avec nous en RDC" title="Un fournisseur de technologie, aux côtés d'une entreprise congolaise"}
+::::section{id="sous-traitance" eyebrow="Travailler avec nous en RDC" title="Un fournisseur de technologie, aux côtés d’une entreprise congolaise"}
 En RDC, la sous-traitance est réservée aux entreprises à capitaux congolais dont le siège social est situé sur le territoire national (loi n° 17/001 du 8 février 2017, modifiée par la loi n° 26/017 du 30 juin 2026), sauf dérogation accordée par l'Autorité de régulation de la sous-traitance dans le secteur privé (ARSP). AfriScan y intervient donc comme fournisseur de technologie d'une entreprise congolaise éligible, titulaire du contrat : l'entreprise principale porte le marché, AfriScan fournit l'analyse des images et les registres.
 
 Chaque proposition précise le montage retenu pour votre contrat et les pièces disponibles. [La sous-traitance en RDC, pour les équipes achats](/cd/fr/sous-traitance)
@@ -152,7 +152,7 @@ Aucun tracé, aucune image et aucun résultat n'est publié sans votre accord é
 :::
 ::::
 
-::::section{id="perimetre" tone="alt" eyebrow="Où nous n'intervenons pas" title="Les provinces hors de notre champ d'intervention"}
+::::section{id="perimetre" tone="alt" eyebrow="Où nous n’intervenons pas" title="Les provinces hors de notre champ d’intervention"}
 :::::columns{split="2-1"}
 ::::col
 Pour des raisons de sécurité et de santé publique, nous n'acceptons aucune mission, ni par satellite, ni par drone, ni sur le terrain, dans les provinces du Nord-Kivu, du Sud-Kivu, de l'Ituri, du Haut-Uélé, du Bas-Uélé, de la Tshopo, du Maniema, du Tanganyika, du Haut-Lomami, du Sud-Ubangi, du Kwilu et du Kwango, ni dans le territoire de Kwamouth ou à moins de 50 km de la frontière avec la République centrafricaine.

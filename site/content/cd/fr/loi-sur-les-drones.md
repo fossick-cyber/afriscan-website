@@ -4,17 +4,17 @@ template: law
 law: cd
 as_of: 2026-09-27
 icon: drone
-title: "Drones en RDC : autorisation de l'AAC et règles | AfriScan"
-description: "Loi sur l'aviation civile, art. 58 bis : tout vol de drone en RDC exige une autorisation préalable de l'AAC. Ce qu'un client vérifie avant un levé par drone."
-h1: "Drones en RDC : l'autorisation de l'AAC et les règles à connaître"
+title: "Drones en RDC : autorisation de l’AAC et règles | AfriScan"
+description: "Loi sur l’aviation civile, art. 58 bis : tout vol de drone en RDC exige une autorisation préalable de l’AAC. Ce qu’un client vérifie avant un levé par drone."
+h1: "Drones en RDC : l’autorisation de l’AAC et les règles à connaître"
 crumb: Loi sur les drones
 nav_group: countries
 nav_order: 20
 nav_label: Loi sur les drones en RDC
 nav_blurb: Art. 58 bis, AAC, zones interdites et liste de contrôle
-summary: L'autorisation préalable de l'AAC exigée pour tout vol de drone en RDC, les licences, l'importation, les zones interdites, les sanctions et une liste de contrôle en onze points pour le client.
+summary: L’autorisation préalable de l’AAC exigée pour tout vol de drone en RDC, les licences, l’importation, les zones interdites, les sanctions et une liste de contrôle en onze points pour le client.
 eyebrow: Conformité · République démocratique du Congo
-lead: "En RDC, aucun drone ne peut survoler le territoire ni y être exploité sans une autorisation préalable de l'Autorité de l'Aviation Civile (AAC). La règle figure à l'article 58 bis de la loi n° 10/014 relative à l'aviation civile, inséré par la loi n° 23/001 du 12 janvier 2023, et ne prévoit ni seuil de poids ni exception selon l'usage. L'AAC fixe les conditions d'exploitation, mais nous n'avons trouvé aucune procédure publiée au 27 septembre 2026. Cette page résume les textes publiés et ce qu'un client doit vérifier avant de commander un levé par drone."
+lead: "En RDC, aucun drone ne peut survoler le territoire ni y être exploité sans une autorisation préalable de l’Autorité de l’Aviation Civile (AAC). La règle figure à l’article 58 bis de la loi n° 10/014 relative à l’aviation civile, inséré par la loi n° 23/001 du 12 janvier 2023, et ne prévoit ni seuil de poids ni exception selon l’usage. L’AAC fixe les conditions d’exploitation, mais nous n’avons trouvé aucune procédure publiée au 27 septembre 2026. Cette page résume les textes publiés et ce qu’un client doit vérifier avant de commander un levé par drone."
 buttons:
   - {label: Demander une proposition, intent: proposal}
   - {label: La liste de contrôle, href: "#liste"}
@@ -23,32 +23,32 @@ og:
   subline: Art. 58 bis, AAC, zones interdites et liste de contrôle, au 27 septembre 2026
 related: [cd-subcontracting]
 cta:
-  title: Besoin d'un relevé sans vol ?
+  title: Besoin d’un relevé sans vol ?
   text: Un relevé par satellite part de votre fichier de tracé ou de limites, sans drone et sans accès au site. Quand un tronçon exige une orthophoto, la proposition précise les autorisations nécessaires et leur place dans le calendrier.
   button: Demander une proposition
 faq:
-  - q: Un relevé par satellite exige-t-il une autorisation de l'AAC ?
-    a: "L'article 58 bis vise le survol et l'exploitation d'aéronefs télépilotés ou autonomes ; dans un relevé par satellite, aucun drone ne vole. Cela ne règle pas les autres questions que peuvent poser les données, en particulier sur des zones minières ou des sites sensibles : faites-les confirmer par votre conseil pour votre projet."
+  - q: Un relevé par satellite exige-t-il une autorisation de l’AAC ?
+    a: "L’article 58 bis vise le survol et l’exploitation d’aéronefs télépilotés ou autonomes ; dans un relevé par satellite, aucun drone ne vole. Cela ne règle pas les autres questions que peuvent poser les données, en particulier sur des zones minières ou des sites sensibles : faites-les confirmer par votre conseil pour votre projet."
   - q: Un petit drone de loisir est-il dispensé ?
-    a: "Le texte ne prévoit aucun seuil : « aucun aéronef, télépiloté ou autonome » ne peut voler sans autorisation préalable, quels que soient son poids et son usage. Les dérogations sont renvoyées à un texte réglementaire ; nous n'en avons trouvé aucun au 27 septembre 2026."
+    a: "Le texte ne prévoit aucun seuil : « aucun aéronef, télépiloté ou autonome » ne peut voler sans autorisation préalable, quels que soient son poids et son usage. Les dérogations sont renvoyées à un texte réglementaire ; nous n’en avons trouvé aucun au 27 septembre 2026."
   - q: Une entreprise étrangère peut-elle réaliser le levé ?
-    a: "L'article 58 bis ne pose pas de condition de nationalité. Mais confier un levé par drone à une entreprise est une activité de sous-traitance, que la loi n° 17/001 réserve aux entreprises à capitaux congolais dont le siège social est en RDC, sauf dérogation de l'ARSP. La voie réaliste est un opérateur congolais éligible, qui obtient lui-même les autorisations de l'AAC. Voir [la sous-traitance en RDC](/cd/fr/sous-traitance)."
-  - q: Comment enregistrer un drone auprès de l'AAC ?
-    a: "Le site de l'AAC présente l'enregistrement des drones parmi ses services, mais nous n'y avons trouvé, au 27 septembre 2026, ni procédure, ni formulaire, ni texte. Renseignez-vous directement auprès de l'AAC avant tout projet, et demandez par écrit ce qui est exigé pour votre mission."
+    a: "L’article 58 bis ne pose pas de condition de nationalité. Mais confier un levé par drone à une entreprise est une activité de sous-traitance, que la loi n° 17/001 réserve aux entreprises à capitaux congolais dont le siège social est en RDC, sauf dérogation de l’ARSP. La voie réaliste est un opérateur congolais éligible, qui obtient lui-même les autorisations de l’AAC. Voir [la sous-traitance en RDC](/cd/fr/sous-traitance)."
+  - q: Comment enregistrer un drone auprès de l’AAC ?
+    a: "Le site de l’AAC présente l’enregistrement des drones parmi ses services, mais nous n’y avons trouvé, au 27 septembre 2026, ni procédure, ni formulaire, ni texte. Renseignez-vous directement auprès de l’AAC avant tout projet, et demandez par écrit ce qui est exigé pour votre mission."
   - q: Les vols hors vue du télépilote sont-ils possibles ?
-    a: "Aucune règle publiée ne fixe de régime pour les vols hors vue (BVLOS), de nuit, ni de limite d'altitude ou de distance. Un levé de corridor se planifie donc en blocs successifs, drone à vue, de jour et à basse altitude, chacun couvert par l'autorisation, et se convient au cas par cas avec l'AAC."
-  - q: Que faire en cas d'accident ou d'incident ?
-    a: "Le déclarer sans délai au bureau chargé des enquêtes, à l'AAC, à l'autorité aéroportuaire la plus proche, au contrôle de la circulation aérienne et à l'autorité administrative locale (article 159)."
-  - q: Peut-on publier les orthophotos d'un levé ?
-    a: "Pas sans accord écrit. Le gouvernement britannique rappelle qu'il est interdit de photographier certains bâtiments officiels et militaires, en particulier aux frontières. Le contrat du levé doit dire à qui appartiennent les images, où elles sont conservées et qui peut les publier."
+    a: "Aucune règle publiée ne fixe de régime pour les vols hors vue (BVLOS), de nuit, ni de limite d’altitude ou de distance. Un levé de corridor se planifie donc en blocs successifs, drone à vue, de jour et à basse altitude, chacun couvert par l’autorisation, et se définit au cas par cas avec l’AAC."
+  - q: Que faire en cas d’accident ou d’incident ?
+    a: "Le déclarer sans délai au bureau chargé des enquêtes, à l’AAC, à l’autorité aéroportuaire la plus proche, au contrôle de la circulation aérienne et à l’autorité administrative locale (article 159)."
+  - q: Peut-on publier les orthophotos d’un levé ?
+    a: "Pas sans accord écrit. Le gouvernement britannique rappelle qu’il est interdit de photographier certains bâtiments officiels et militaires, en particulier aux frontières. Le contrat du levé doit dire à qui appartiennent les images, où elles sont conservées et qui peut les publier."
 ---
 
-::::section{id="en-bref" eyebrow="En bref" title="Six points à régler avant tout levé par drone" lead="Réglez chacun de ces points pour la mission avant tout levé par drone en RDC. Nous n'avons trouvé aucun délai d'instruction publié : prévoyez-les dès le premier jour du projet."}
+::::section{id="en-bref" eyebrow="En bref" title="Six points à régler avant tout levé par drone" lead="Réglez chacun de ces points pour la mission avant tout levé par drone en RDC. Nous n’avons trouvé aucun délai d’instruction publié : prévoyez-les dès le premier jour du projet."}
 :::cards{cols="3"}
 :::card{title="Une autorisation préalable" icon="file-check" eyebrow="AAC · art. 58 bis"}
 Aucun aéronef télépiloté ou autonome ne peut survoler le territoire ni y être exploité sans autorisation préalable de l'AAC. Demandez qu'elle précise l'appareil, le télépilote, la zone, les dates et l'altitude.
 :::
-:::card{title="Les conditions de l'AAC" icon="scale" eyebrow="AAC · art. 58 ter"}
+:::card{title="Les conditions de l’AAC" icon="scale" eyebrow="AAC · art. 58 ter"}
 L'AAC fixe les conditions de conception, de fabrication, d'exploitation, de survol et de circulation des drones. Nous n'avons trouvé aucun texte d'application publié au 27 septembre 2026.
 :::
 :::card{title="Un télépilote qualifié" icon="user-check" eyebrow="Art. 104 et 135"}
@@ -91,7 +91,7 @@ L'article 6 de la [loi n° 23/001 du 12 janvier 2023](https://www.leganet.be/Le
 Un drone est un aéronef au sens de la loi. L'« aéronef télépiloté » est un « aéronef non habité, piloté depuis un poste de télépilotage » (article 3, point 16), et l'« aéronef autonome » vole « sans présence humaine à bord et sans possibilité d'intervention d'un pilote dans la gestion de son vol » (article 3, point 10).
 ::::
 ::::col
-:::callout{tone="warn" title="Ce qui n'est pas publié"}
+:::callout{tone="warn" title="Ce que nous n’avons pas trouvé en ligne"}
 Au 27 septembre 2026, nous n'avons trouvé en ligne :
 - aucune décision ou réglementation de l'AAC prise en application de l'article 58 ter ;
 - aucune procédure d'enregistrement des drones ;
@@ -135,7 +135,7 @@ Des drones armés sont utilisés dans l'est du pays, et le gouvernement britanni
 
 Là où une partie d'un périmètre n'est plus accessible aux équipes du titulaire, seul le satellite est utilisé : aucun drone ne survole une zone occupée ou contestée.
 
-:::callout{tone="scope" title="Notre périmètre d'intervention"}
+:::callout{tone="scope" title="Notre périmètre d’intervention"}
 Nous n'acceptons aucune mission dans le Nord-Kivu, le Sud-Kivu, l'Ituri, le Haut-Uélé, le Bas-Uélé, la Tshopo, le Maniema, le Tanganyika, le Haut-Lomami, le Sud-Ubangi, le Kwilu et le Kwango, ni dans le territoire de Kwamouth ou à moins de 50 km de la frontière centrafricaine. [Pourquoi](/cd/fr/#perimetre)
 :::
 ::::
@@ -172,30 +172,30 @@ L'éligibilité, les dérogations de l'ARSP, la loi de 2026 et les pièces à de
 :::::
 ::::
 
-::::section{id="liste" eyebrow="Liste de contrôle" title="Onze points à vérifier avant un levé par drone" lead="À demander par écrit à l'entreprise qui réalisera le levé, pour cette mission précise."}
+::::section{id="liste" eyebrow="Liste de contrôle" title="Onze points à vérifier avant un levé par drone" lead="À demander par écrit à l’entreprise qui réalisera le levé, pour cette mission précise."}
 :::steps{style="list"}
 :::step{title="Son éligibilité à la sous-traitance"}
 L'attestation d'enregistrement de l'ARSP ou une décision de dérogation ; le RCCM, l'identification nationale, le NIF, l'attestation fiscale et l'affiliation à la CNSS ; la preuve d'un capital détenu à au moins 51 % par des Congolais, d'organes de gestion majoritairement congolais et d'un personnel majoritairement congolais (arrêté ministériel n° 02/2021, article 4).
 :::
-:::step{title="L'autorisation préalable de l'AAC pour cette mission"}
+:::step{title="L’autorisation préalable de l’AAC pour cette mission"}
 L'autorisation de l'article 58 bis, qui précise l'appareil, le télépilote, la zone, les dates et l'altitude.
 :::
-:::step{title="L'enregistrement de chaque drone"}
-Si l'AAC en délivre un pour la mission ; demandez la pièce correspondante.
+:::step{title="L’enregistrement de chaque drone"}
+Si l'AAC en délivre un ; demandez la pièce pour chaque aéronef.
 :::
 :::step{title="La licence de télépilote et la formation"}
 La licence de télépilote (article 104) et la formation suivie auprès d'un organisme agréé ou homologué par l'AAC (article 135).
 :::
-:::step{title="L'importation régulière de l'appareil"}
+:::step{title="L’importation régulière de l’appareil"}
 L'autorisation d'importation de l'AAC (article 7) et le dédouanement, ou un appareil déjà régulièrement présent dans le pays.
 :::
 :::step{title="Les autorisations de sécurité"}
 Les autorisations écrites que l'AAC ou la province exigent pour la zone. Aucun vol près des sites militaires, des frontières ou des aéroports (article 177 ; ordonnance-loi n° 62-330).
 :::
-:::step{title="L'accord des titulaires des droits"}
+:::step{title="L’accord des titulaires des droits"}
 L'accord écrit du titulaire de la concession ou de l'emprise et des occupants du terrain, y compris sur les concessions voisines que le vol traverse.
 :::
-:::step{title="L'assurance"}
+:::step{title="L’assurance"}
 Une police auprès d'une société d'assurances installée en RDC, comme l'exige la loi n° 17/001 pour les sous-traitants (article 27).
 :::
 :::step{title="Une clause sur les données"}
@@ -210,7 +210,7 @@ Un appel d'offres à partir du seuil fixé par la loi (article 10) ; pas plus 
 :::
 ::::
 
-::::section{id="approche" tone="alt" eyebrow="Notre approche" title="Le satellite d'abord, le drone sous réserve des autorisations et habilitations"}
+::::section{id="approche" tone="alt" eyebrow="Notre approche" title="Le satellite d’abord, le drone sous réserve des autorisations et habilitations"}
 Un relevé AfriScan commence par l'image satellite, qui ne demande ni vol ni accès au site. Lorsqu'un tronçon demande plus de détail, le levé par drone est réalisé par un opérateur congolais éligible, sous réserve des autorisations et habilitations de sécurité que chaque mission exige, dont l'autorisation préalable de l'AAC. La proposition précise, pour votre mission, l'opérateur retenu, les autorisations nécessaires et leur place dans le calendrier.
 
 Informations vérifiées le 27 septembre 2026 à partir des textes publiés ; les modalités détaillées sont fixées par l'AAC. [Les règles des drones dans les autres pays (en anglais)](/drone-regulations)

@@ -30,7 +30,7 @@ faq:
   - q: Can the register be used in a procedure?
     a: "It supports the record of condition, the inquiry, talks with the people who live along the line and, where it applies, the compensation the law provides for (Loi n° 14/011, arts 111 to 113). It replaces neither the inquiry nor the authority's decision, and it records no one."
   - q: Which width should we use for a given line?
-    a: "The 25 m width comes from the 1993 arrêté, not from the electricity law, and the published texts give no width by voltage. Ask the line's operator which standard it applies; we measure the widths you choose, up to six in one survey."
+    a: "The 25 m width comes from the 1993 arrêté, not from the electricity law, and we found no width by voltage in the published texts. Ask the line's operator which standard it applies; we measure the widths you choose, up to six in one survey."
 cta:
   title: Send us your line route
   text: "The route (KML, KMZ, Shapefile, GeoJSON or GeoPackage) or the tower coordinates, the voltage, the province and the widths to measure. We reply with a scope, an imagery plan and a written proposal."

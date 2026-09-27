@@ -22,7 +22,7 @@ faq:
   - q: What emprise width do you use for a railway?
     a: "The one that applies to your line. Arrêté interministériel n° 0021 of 29 October 1993 sets railway emprises \"de 5 à 50 mètres suivant catégories\", from 5 to 50 metres by category. Tell us the width the line's manager or the project uses; we can measure up to six distances in one survey."
   - q: And for a road?
-    a: "For roads, the 1993 arrêté refers to town-planning and cadastral plans. In practice the width is often the project's own: a resettlement plan published for a World Bank-financed road moved from a 9 m emprise to a 15 m one, reduced to 12 m in constrained areas."
+    a: "For roads, the 1993 arrêté refers to town-planning and cadastral plans. In practice the width is often the project's own: a resettlement plan published for a World Bank-financed road moved from a 9 m emprise to a 15 m one on its first 10 km, with the rest to be updated at 15 m, or 12 m in constrained areas."
   - q: Can you track progress on the works?
     a: "Yes. Dated drone orthophotos and elevation models are compared from one visit to the next, with the cut and fill areas. Drone surveys are subject to the approvals and security clearances each job requires. It does not stand in for a land surveyor's topographic survey or a measurement of quantities."
   - q: Do you detect damage to cables laid in the emprise?
@@ -38,7 +38,7 @@ cta:
 ::::section{id="context" eyebrow="The context" title="Corridors rehabilitated through emprises occupied for years"}
 :::::columns{split="2-1"}
 ::::col
-The Katanga export corridors, the railways and roads to the ports and to neighbouring countries, are the subject of concession contracts and rehabilitation programmes, including a thirty-year rail concession signed in August 2026. These projects run through emprises that have been occupied for a long time; where a lender finances them, its resettlement standards call for a census closed at a cut-off date.
+The Katanga export corridors, the railways and roads to the ports and to neighbouring countries, are the subject of concession contracts and rehabilitation programmes, including a thirty-year rail concession signed in August 2026 ([zoom-eco, 26 August 2026](https://zoom-eco.net/autres-actualites/corridor-de-lobito-1258-milliard-usd-engages-sur-30-ans-pour-la-ligne-dilolo-sakania/)). These projects run through emprises that have been occupied for a long time; where a lender finances them, its resettlement standards call for a census closed at a cut-off date.
 
 The same need arises on roads, where a project can widen its emprise partway through and redefine its cut-off date, and on fibre-optic cables laid in road emprises.
 ::::
