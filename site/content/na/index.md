@@ -36,7 +36,7 @@ faq:
   - q: Does a satellite survey need NCAA approval or landowner permission?
     a: No aircraft is flown, so the NCAA's Part 101 approvals and the landowner permission a drone flight needs do not apply to the satellite work itself; counsel should confirm this for your project. Drone stretches, where you want them, are planned separately and are subject to the approvals and security clearances each job requires.
   - q: Can you work in diamond restricted areas and national parks?
-    a: From satellite imagery, yes, because nobody enters the area. A drone flight there needs the permissions for that area as well as NCAA approval, such as a Minister's permit under the Diamond Act with the licence holder's consent, or MEFT approval in a national park. See [drone law in Namibia](/na/drone-regulations#restricted-areas).
+    a: From satellite imagery, yes, because nobody enters the area. Entering or being in a diamond restricted area needs a Minister's permit under the Diamond Act, and whether a drone overflight also needs one is unresolved, so the licence holder's consent and counsel's view come first. In a national park a drone flight needs approval, and filming needs MEFT approval. See [drone law in Namibia](/na/drone-regulations#restricted-areas).
   - q: Can you tell us whether a structure is lawful?
     a: No. We map what stands where and when it first appears in the imagery. Whether a structure is covered by a wayleave, a customary land right, a lease or a permission under the roads ordinances is for your land team, the land board, the traditional authority, the Roads Authority or the courts to decide. The register gives them one dated, located list to work from.
   - q: Do you detect copper theft or vandalism?
@@ -51,7 +51,7 @@ faq:
 
 ::::section{id="law" eyebrow="Already in your agreements and the law" title="The distances your register is measured against" lead="Namibian wayleave agreements, road ordinances and licence laws already draw lines around your assets. A line only protects the asset if someone can see what stands inside it, and when it arrived."}
 :::cards{cols="2"}
-:::card{title="Power lines: towers only inside the servitude" icon="power" eyebrow="Wayleaves · Electricity Safety Code"}
+:::card{title="Power lines: widths by wayleave, clearances by the Code" icon="power" eyebrow="Wayleaves · Electricity Safety Code"}
 Power-line servitude widths are set in wayleave agreements. For one new 400 kV line, NamPower's published resettlement framework describes an 80 m servitude in which "no permanent structures other than the towers are allowed", with a 12 m strip cleared of vegetation ([NamPower, November 2023](https://www.nampower.com.na/Media/Document/2029f04a-3d58-4a66-8302-31ea9d6ef0c7.pdf)). The [Electricity Safety Code](https://www.ecb.org.na/wp-content/uploads/2022/07/Namibia-Electricity-Safety-Code.pdf) sets minimum clearances between live conductors and structures, from 3.0 m up to 33 kV to 5.6 m at 400 kV (Table 1).
 :::
 :::card{title="Roads: a 60 m reserve and a 100 m building restriction" icon="route" eyebrow="Roads Ordinance 1972 · Ribbon Development Ordinance 1960"}

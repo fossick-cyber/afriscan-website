@@ -23,7 +23,7 @@ faq:
   - q: How wide is a power-line servitude in Namibia?
     a: There is no single national width. Widths are agreed in each wayleave. For one new 400 kV line, the published resettlement framework describes an 80 m servitude, 40 m either side of the line, and 25 m either side in densely populated areas, with a 12 m strip cleared of vegetation. Send the widths in your agreements, per line or per section, or the servitude polygons from your GIS, and we measure against those.
   - q: Does the register check the Electricity Safety Code clearances?
-    a: No. Table 1 of the Code sets the minimum distance between live conductors and a structure, which depends on the conductor's height and sag at that point. We map where each structure stands in plan and how far it is from the centre line and the servitude edge. Checking clearance to the conductors stays with your line engineers, and the register tells them where to look first.
+    a: No. Table 1 of the Code sets the minimum distance between live conductors and a structure by voltage; whether a structure meets it depends on the conductor's height and sag at that point, which we don't measure. We map where each structure stands in plan and how far it is from the centre line and the servitude edge. Checking clearance to the conductors stays with your line engineers, and the register tells them where to look first.
   - q: Our line runs over farms on a wayleave agreement, not a registered servitude. Can you still map it?
     a: Yes. The survey measures against the widths you give us, whether they come from a wayleave agreement, a registered servitude or your own standard. Up to six widths can be reported in one survey, so a stretch with 40 m either side and another with 25 m either side sit in the same register.
   - q: Do you detect copper theft or vandalism?
@@ -71,7 +71,7 @@ Fresh excavation, spoil and new tracks near tower bases are visible from above. 
 ::::section{id="wayleaves" tone="alt" eyebrow="What the Code and your wayleaves say" title="The widths come from your agreements, the clearances from the Code" lead="A summary of the public rules as last reviewed on 27 September 2026, for orientation. It is not legal advice; the sources are linked."}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="diagrams/na-wayleave" alt="Plan-view schematic of a 400 kV line with towers along it: an 80 m red servitude band, 40 m either side of the line, narrowing to a 50 m band through a settled stretch, with a 12 m grey strip along the line; square markers stand for structures, red inside the servitude and teal outside" caption="An example servitude, drawn to scale" credit="Schematic drawn by AfriScan for illustration; the structures are invented." size="half"}
+:::figure{src="diagrams/na-wayleave" alt="Plan-view schematic of a 400 kV line with towers along it: an 80 m red servitude band, 40 m either side of the line, narrowing to a 50 m band through a settled stretch, with a 12 m grey strip along the line; square markers stand for structures, red inside the servitude and teal outside" caption="An example servitude, widths drawn to scale" credit="Schematic drawn by AfriScan for illustration; the structures are invented." size="half"}
 Red: an 80 m servitude, 40 m either side of the line, narrowing to 25 m either side through a densely populated stretch; grey: the 12 m strip cleared of vegetation for a service road. The widths are the ones one published framework for a new 400 kV line describes. Your register uses the widths in your own agreements.
 :::
 ::::
@@ -190,7 +190,7 @@ Results depend on your imagery's resolution and quality, so we check a sample be
 ::::section{id="drones" eyebrow="Drones along the line" title="Why a line survey in Namibia starts from satellite"}
 :::::columns{split="1-1"}
 ::::col
-Under NAMCAR Part 101, a drone may not fly beyond the pilot's direct unaided sight, or more than 300 m from the point of operation, without a specific approval, and flights beyond sight need an RPAS Operator Certificate that the NCAA issues only to Namibian persons and companies. Near any person, vehicle or structure the drone must be under the operator's direct control, and Part 101 bars using a drone to observe someone's property without the owner's consent.
+Under NAMCAR Part 101, a drone may not fly beyond the pilot's direct unaided sight, or more than 300 m from the point of operation, without a specific approval, and flights beyond sight need an RPAS Operator Certificate that the NCAA issues only to Namibian persons and companies. Near any person, vehicle or structure the drone must be under the operator's direct control, and Part 101 bars using a drone to keep someone's property under watch without the owner's consent.
 
 So we screen the whole line from satellite first and propose drone checks only for the spans that need them, subject to the approvals and security clearances each job requires. Afridrone is working towards the approvals Namibia requires; every drone proposal names the company that will fly and its approvals.
 ::::

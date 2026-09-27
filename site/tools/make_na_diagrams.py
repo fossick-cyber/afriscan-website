@@ -3,7 +3,7 @@
 
     /opt/favhousecheck/.venv/bin/python3 site/tools/make_na_diagrams.py
 
-Writes site/images/diagrams/na-wayleave.png: a plan view of a 400 kV line drawn to scale, with the
+Writes site/images/diagrams/na-wayleave.png: a plan view of a 400 kV line, widths drawn to scale, with the
 servitude described in a published resettlement framework for a new Namibian 400 kV line (Nov 2023):
 80 m wide, 40 m either side of the line, narrowing to 25 m either side through a densely populated
 stretch, with a 12 m strip along the line cleared of vegetation for a service road. The only words in

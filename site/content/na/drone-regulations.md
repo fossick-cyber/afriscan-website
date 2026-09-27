@@ -37,7 +37,7 @@ faq:
   - q: Is there a height limit?
     a: Two figures are in force. Part 101 limits a drone under 25 kg to 50 m above the ground or water unless the Executive Director approves more, and the AIP and NCAA's checklist use 150 ft above the surface. Flying above 150 ft needs a CAUA approval from NCAA's ANSSO department. Ask for the approved height to be written into the approval.
   - q: Can a drone fly over our own servitude where other people's homes stand?
-    a: Part 101 requires direct control of the drone near any person, vehicle or structure, and bars using a drone to observe another person or their property without consent. Whose consent covers third-party structures inside a servitude is a question for counsel before the flight plan is fixed. Satellite imagery is the usual first step along settled stretches.
+    a: Part 101 requires direct control of the drone near any person, vehicle or structure, and bars using a drone to keep a person, or someone's property, under watch without their consent. Whose consent covers third-party structures inside a servitude is a question for counsel before the flight plan is fixed. Satellite imagery is the usual first step along settled stretches.
   - q: Can a drone fly over a diamond restricted area or a national park?
     a: Only with the permissions for that area. Entering or being in a diamond restricted area needs a permit from the Minister under the Diamond Act, and whether an overflight counts is unresolved, so the licence holder's consent and counsel's view come first. NCAA's checklist says no flight within a national park unless approval is granted, and filming in national parks needs MEFT approval. The AIP closes three coastal nature reserves to all aircraft.
   - q: Does Namibia have a data-protection law that covers drone imagery?
@@ -72,7 +72,7 @@ Part 101 covers remotely piloted aircraft (RPA), unmanned free balloons, kites a
 - **Category II:** sport, recreation and research, including tourism, with no commercial reward.
 - **Category III:** a "commercial operation… for purposes of business, and for remuneration, hire, reward or gain". Mapping a servitude or a licence area for a client falls here.
 
-A drone counts as a recreational toy only if it weighs under 250 g, has no fuel system, cannot carry a payload, is "not fitted with a camera", stays within 120 m above ground and 50 m of the operator, and flies at 10 knots or less (101.02.1(2)). No survey drone meets that test.
+Part 101 treats a drone as used for recreation if it weighs under 250 g, has no fuel system, cannot carry a payload, is "not fitted with a camera", and flies within 120 m above ground, 50 m of the operator and 10 knots (101.02.1(2)). A survey drone carries a camera, so that rule does not apply to it, and survey work is done for reward, so it is Category III.
 ::::
 ::::col
 :::callout{tone="legal" title="What a Category III operator must show"}
@@ -210,7 +210,7 @@ NCAA's checklist says "Not within a national park unless approval is granted", a
 :::
 :::
 
-**Key points.** Part 101 also excludes recreational flying "in or around any key points as described in Document NAMCATS-RPA", a document NCAA has not published, and we found no Namibian key-points statute. NCAA supplies a map of restricted areas to applicants. At oil and gas, power and mining sites we found no site-specific drone ban: the landowner rule, the consent rules and the airfield rules near mine and lodge strips apply.
+**Key points.** Part 101's exemption for recreational flying does not cover flights "in or around any key points as described in Document NAMCATS-RPA" (101.01.2(2)(c)), a document NCAA has not published, and we found no Namibian key-points statute. NCAA supplies a map of restricted areas to applicants. At oil and gas, power and mining sites we found no site-specific drone ban: the landowner rule, the consent rules and the airfield rules near mine and lodge strips apply.
 ::::
 
 ::::section{id="privacy" tone="alt" eyebrow="People and property" title="Consent, private property and privacy"}
@@ -218,8 +218,8 @@ NCAA's checklist says "Not within a national park unless approval is granted", a
 ::::col
 Part 101 bars using a drone (101.05.4(4)):
 
-- to observe another person, unless that person has consented;
-- to observe anyone's movable or immovable property, unless the owner has consented;
+- to keep another person under watch, unless that person has consented;
+- to keep anyone's movable or immovable property under watch, unless the owner has consented;
 - to photograph or film a person for publication or other public dissemination, unless that person has consented.
 
 NCAA's instructions add: "No filming may be conducted on private property without the express permission of the property owner." Article 13(1) of the Constitution protects the privacy of homes, correspondence and communications. We found no general data-protection Act in Namibia, so the protection of imagery and registers rests on these rules and on the contract.
@@ -256,7 +256,7 @@ The [Air Services Act 51 of 1949](https://www.ncaa.com.na/publications/legislati
 The directive points to Part 47, which excludes remotely piloted aircraft, while Part 185 makes it an offence to operate an aircraft without a valid certificate of registration. Whether, and how, a foreign-owned drone can be registered follows from the answer.
 :::
 :::step{title="Whose consent covers third-party structures in a servitude?"}
-Part 101's consent rules speak of the owner of the property observed. Along a servitude that crosses farms and communal land, counsel should say whether the servitude holder's rights, the landowner's consent or the consent of each occupant is needed.
+Part 101's consent rules speak of the owner of the property kept under watch. Along a servitude that crosses farms and communal land, counsel should say whether the servitude holder's rights, the landowner's consent or the consent of each occupant is needed.
 :::
 :::step{title="Does an overflight need a Diamond Act permit?"}
 The permit covers entering or being in a restricted area. Whether a drone flying over one needs it, in addition to the licence holder's consent, is unresolved.
