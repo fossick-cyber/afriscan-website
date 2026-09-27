@@ -1,0 +1,52 @@
+# Rwanda: the instruments behind /rw/drone-regulations.
+# Facts ONLY from regional/rw.FINAL.md (verified 2026-09-27 against the primary texts; rw.verified.md
+# carries the same content with its corrections log). Items the brief marks [unverified] stay out:
+# Bugesera International Airport's status for the aerodrome radii, whether RURA radio type approval
+# covers drones, the AIP's list of prohibited and restricted areas (not read), actual permit
+# turnaround times. Whether satellite-imagery work is a "space activity" under Law 22/2021 is stated
+# on the page as an open question for counsel, not answered. No fee, fine or penalty amount appears
+# here or on the pages (owner rule 1): imprisonment ranges only, and a link to RCAA's fee circular.
+country_name: Rwanda
+last_reviewed: 2026-09-27
+regulator:
+  name: Rwanda Civil Aviation Authority (RCAA)
+  url: https://www.caa.gov.rw/drones
+summary:
+  regulator: Rwanda Civil Aviation Authority (RCAA), with security vetting built into every approval
+  instruments: RCAR Part 27, Unmanned Aircraft Systems (Special Regulations RSR/01/2026 of 15 February 2026); Law n° 20/2018 as amended by Law n° 059/2024
+instruments:
+  - id: rcar-part27
+    title: Rwanda Civil Aviation Regulations, Part 27 (Unmanned Aircraft Systems)
+    identifier: Special Regulations RSR/01/2026, under art. 5 of Law n° 059/2024 (Part 27 of Ministerial Order n° 01/CAB.M/019 of 06/02/2019)
+    date: 2026-02-15
+    url: https://www.caa.gov.rw/fileadmin/user_upload/RCAA/Laws___Regulations/Aviation_Orders/__Ministerial_Orders/____Rwanda_Civil_Aviation_Regulations/RCARs_Part_27_-_Unmanned_Aircraft_Systems_Regulations.pdf
+    last_checked: 2026-09-27
+    note: Classes (27.020), registration (App. 1), pilot licences (27.160–27.187), the activity permit and UOC (27.205–27.230), operating rules (27.050–27.130), BVLOS and the area approval (27.105; Subpart I, new in 2026), security (27.375–27.395), insurance (27.405), privacy (27.410).
+  - id: law-20-2018
+    title: Law n° 20/2018 of 29/04/2018 establishing regulations governing civil aviation
+    identifier: Official Gazette n° 18 of 30/04/2018
+    date: 2018-04-29
+    url: https://rwandalii.org/akn/rw/act/law/2018/20/eng@2018-04-30
+    last_checked: 2026-09-27
+    note: Drone offences in arts. 99–108 and 111, and company liability in art. 110. Arts. 99, 101, 102, 104, 106 and 110 apply as enacted in 2018.
+  - id: law-059-2024
+    title: Law n° 059/2024 of 20/06/2024 amending Law n° 20/2018 establishing regulations governing civil aviation
+    identifier: Official Gazette n° Special of 24/07/2024
+    date: 2024-06-20
+    url: https://rwandalii.org/akn/rw/officialGazette/government-gazette/2024-07-24/special/mul@2024-07-24
+    last_checked: 2026-09-27
+    note: Lets the Director General issue special regulations (art. 5); restates arts. 92, 100, 103, 105 and 111 of Law n° 20/2018 (arts. 29–33).
+  - id: rcaa-ac-uas
+    title: RCAA Advisory Circular on unmanned aircraft systems, in compliance with Part 27
+    identifier: RCAA-AC-UAS-21-001
+    date: 2022-01-11
+    url: https://www.caa.gov.rw/fileadmin/user_upload/RCAA/Laws___Regulations/Advisory_Circulars/unmanned_aircraft_system__uas__advisory_circular_in_compliance_with_part_27.pdf
+    last_checked: 2026-09-27
+    note: Application documents for registration, pilot licences and activity permits, and RCAA's list of restricted areas (FAQ 2.19). It predates the 2024 and 2026 special regulations.
+  - id: law-058-2021
+    title: Law n° 058/2021 of 13/10/2021 relating to the protection of personal data and privacy
+    identifier: Official Gazette n° Special of 15/10/2021
+    date: 2021-10-13
+    url: https://rwandalii.org/akn/rw/act/law/2021/58/eng@2021-10-15
+    last_checked: 2026-09-27
+    note: Scope outside Rwanda (art. 2), registration (art. 29), transfer (arts. 48–49) and storage (art. 50) of personal data.

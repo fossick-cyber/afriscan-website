@@ -100,7 +100,7 @@ rw:
   name: Rwanda
   region: East
   languages: [en]
-  status: launching
+  status: live
   timezones: [Africa/Kigali]
 bi:
   name: Burundi

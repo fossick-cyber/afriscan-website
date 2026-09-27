@@ -281,5 +281,5 @@ rw:
   label: "Rwanda"
   short: "Rwanda"
   sitemap: sitemap-rw.xml
-  status: draft
+  status: live
   region: East
