@@ -1,6 +1,6 @@
 ---
 key: cd-subcontracting
-title: DRC Subcontracting Law and ARSP for Suppliers | AfriScan
+title: DRC Subcontracting Law and ARSP for Foreign Firms | AfriScan
 description: "Loi n° 17/001, amended in 2026, reserves subcontracting in the DRC to Congolese-owned firms. What it requires, and how AfriScan works as a technology supplier."
 h1: "For procurement teams: the DRC subcontracting law, and where we fit"
 crumb: Subcontracting
@@ -19,11 +19,11 @@ buttons:
 og:
   headline: The DRC subcontracting law, and where we fit
   subline: Loi n° 17/001, Loi n° 26/017 and ARSP, as of 27 September 2026
-related: [cd-drone-law]
+related: [cd-drone-law, how-we-work]
 faq:
   - q: Is AfriScan a Congolese company?
     a: "No. That is why, in the DRC, AfriScan works as a technology supplier to an eligible Congolese company, which holds the contract and the relationship with the principal. The proposal sets out the arrangement for your contract."
-  - q: Is image analysis done outside the DRC subcontracting?
+  - q: Is image analysis done from outside the DRC still subcontracting?
     a: "That is not settled. The law also covers related activities, meaning any service a company needs to carry out its main activity, and ARSP's sector guide lists externalised work such as geophysical surveys and feasibility studies for a mining company as subcontracting. Assume that a service to a mine is caught, and have your counsel confirm the arrangement for your contract."
   - q: Can a subcontractor subcontract in turn?
     a: "Yes, unless the contract says otherwise, but \"le sous-traitant de second rang est soumis aux mêmes conditions de forme et de fond que le sous-traitant originel\" (art. 7): a second-tier subcontractor meets the same conditions as the first. A supplier to a subcontractor may therefore be held to the same eligibility conditions; that is a point to review with counsel for each arrangement."
@@ -120,7 +120,7 @@ AfriScan is not a Congolese company. In the DRC we therefore work as a technolog
 - **AfriScan** supplies the image analysis, the registers of structures and changes, the GIS files and the report, each checked by an analyst;
 - **any field or drone work** is carried out by an eligible Congolese company, subject to the approvals and security clearances each job requires, including the AAC's prior authorisation.
 
-Three points in every arrangement are for counsel: how analysis done outside the DRC is classified, art. 7 on second-tier subcontractors, and the 40 % cap in art. 11. For your contract, the proposal sets out the arrangement and the documents available.
+Three points in every arrangement are for counsel: how analysis done outside the DRC is classified, art. 7 on second-tier subcontractors, and the 40 % cap in art. 11. For your contract, the proposal sets out the arrangement and the documents available. [How we work and respond to tenders](/how-we-work)
 ::::
 ::::col
 :::callout{tone="scope" title="What this arrangement is not"}

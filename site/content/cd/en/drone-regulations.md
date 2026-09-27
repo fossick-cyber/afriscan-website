@@ -21,7 +21,7 @@ buttons:
 og:
   headline: "Drones in the DRC: what the law says"
   subline: Art. 58 bis, the AAC, prohibited zones and a client checklist, as of 27 September 2026
-related: [cd-subcontracting]
+related: [cd-subcontracting, drone-surveys]
 cta:
   title: Need a survey with no flight?
   text: A satellite survey starts from your route or boundary file, with no drone and no site access. Where a stretch needs an orthophoto, the proposal sets out the authorisations it requires and where they fall in the schedule.

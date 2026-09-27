@@ -120,7 +120,7 @@ AfriScan n'est pas une entreprise congolaise. En RDC, nous intervenons donc comm
 - **AfriScan** fournit l'analyse des images, les registres des constructions et des changements, les fichiers SIG et le rapport, vérifiés par un analyste ;
 - **tout travail de terrain ou par drone** est réalisé par une entreprise congolaise éligible, sous réserve des autorisations et habilitations de sécurité que chaque mission exige, dont l'autorisation préalable de l'AAC.
 
-Trois points de chaque montage relèvent d'un conseil : la qualification d'une analyse réalisée hors de RDC, l'article 7 sur les sous-traitants de second rang et le plafond de 40 % de l'article 11. La proposition précise, pour votre contrat, le montage retenu et les pièces disponibles.
+Trois points de chaque montage relèvent d'un conseil : la qualification d'une analyse réalisée hors de RDC, l'article 7 sur les sous-traitants de second rang et le plafond de 40 % de l'article 11. La proposition précise, pour votre contrat, le montage retenu et les pièces disponibles. [Notre façon de travailler et de répondre aux appels d'offres (en anglais)](/how-we-work)
 ::::
 ::::col
 :::callout{tone="scope" title="Ce que ce montage n'est pas"}

@@ -17,7 +17,7 @@ service:
 og:
   headline: What is changing on your DRC mining perimeter
   subline: Pits, disturbed ground and structures in the Copperbelt, date by date, checked by an analyst
-related: [cd-subcontracting, cd-drone-law]
+related: [cd-subcontracting, cd-drone-law, excavation-mapping, resettlement-cut-off-baselines]
 faq:
   - q: Can you tell us who is digging on our perimeter?
     a: "No. We map the ground: pits, disturbed ground, spoil heaps, water-filled excavations, tracks and structures, with new sites flagged between dates and confirmed by an analyst. We never identify, count or follow people."
@@ -138,7 +138,7 @@ Where lenders apply IFC Performance Standard 5 or the World Bank's ESS5, the dat
 :::::
 ::::
 
-::::section{id="boundaries" eyebrow="Boundaries and perimeters" title="What stands inside your title, and in a band around it"}
+::::section{id="boundaries" eyebrow="Concession encroachment surveys" title="What stands inside your title, and in a band around it"}
 We list the structures inside your boundaries and in a band around them, map new structures, cleared ground and tracks at the boundary between dates, and produce a structure layer for the whole permit for your land teams. Fences and barriers are too thin to be detected automatically on satellite imagery: an analyst checks them on drone imagery where it exists.
 
 We work from the boundaries you supply and verify neither title nor land rights. Mining title perimeters can be viewed on the [Cadastre Minier (CAMI) map portal](https://drclicences.cami.cd/EN/).
