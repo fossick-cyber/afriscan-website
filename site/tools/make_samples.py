@@ -14,7 +14,7 @@ The reviewer placed the sample's marks on Google satellite imagery in the app. W
                    and its 100 m band, the overview colours each 500 m of route by its rating.
   Google views     the reviewer's marks, the route and its 50 m and 100 m bands on Google satellite
                    imagery (owner decision 2026-09-27: allowed, with "Imagery © Google" on the image
-                   and in the caption): five close-ups and one overview of the whole route, English
+                   and in the caption): six close-ups and one overview of the whole route, English
                    and Portuguese (-pt). No names, coordinates or chainage labels on the images.
 
   site/images/samples/*.jpg          masters for the image pipeline (build.py makes AVIF/WebP)
@@ -863,7 +863,10 @@ def g_overview(tiles, line, marks, frames, lang):
 
 def google_views(line, marks, tiles):
     assert [v[0] for v in G_VIEWS] == list(G_SCENE), "write a G_SCENE entry for every view, from its image"
-    km = lambda m, lang: f"{m / 1000:.1f}".replace(".", GSTR[lang]["dec"])
+    def km(m, lang):
+        # Half up on whole metres, so 4350 m reads 4.4 like 4950 m reads 5.0 (float formatting gave 4.3).
+        t = (round(m) + 50) // 100
+        return f"{t // 10}{GSTR[lang]['dec']}{t % 10}"
     data = {
         "sample": "sample-pipeline",
         "description": "Reviewer marks from the pipeline sample on Google satellite imagery",
