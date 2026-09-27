@@ -266,7 +266,7 @@ cd:
   name: DR Congo
   region: Central
   languages: [fr, en]
-  status: launching
+  status: live
   timezones: [Africa/Kinshasa, Africa/Lubumbashi]
 cg:
   name: Republic of the Congo

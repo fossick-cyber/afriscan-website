@@ -169,7 +169,7 @@ cd-fr:
   label: "RD Congo (Français)"
   short: "RD Congo · FR"
   sitemap: sitemap-cd.xml
-  status: draft
+  status: live
   region: Central
 cd-en:
   content: cd/en
@@ -183,7 +183,7 @@ cd-en:
   label: "DR Congo (English)"
   short: "DR Congo · EN"
   sitemap: sitemap-cd.xml
-  status: draft
+  status: live
   region: Central
 ao-pt:
   content: ao/pt

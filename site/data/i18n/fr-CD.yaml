@@ -1,0 +1,275 @@
+# Textes de l’interface pour /cd/fr/ (français de la République démocratique du Congo, registre
+# administratif). Mêmes clés que en.yaml : une clé absente fait échouer la construction du site.
+# Relecture par un locuteur natif congolais en attente (data/reviews.yaml, pending.native_fr_cd).
+# Typographie : espace fine insécable (U+202F) avant « ; ? ! » et dans les nombres (1 000 m) ; espace
+# insécable (U+00A0) avant « : » et à l’intérieur des guillemets. Les pages de content/cd/fr/ suivent la même règle.
+lang_name: Français
+skip: Aller au contenu
+brand_by: by Afridrone
+home_crumb: AfriScan
+months: [janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre]
+date_format: "{d} {month} {y}"
+
+nav:
+  primary: Navigation principale
+  industries: Secteurs
+  solutions: Solutions
+  how: Notre méthode
+  countries: Pays
+  resources: Ressources
+  contact: Demander une proposition
+  contact_short: Proposition
+  overview: "Vue d’ensemble "   # suivi de « : » dans le gabarit
+  menu_open: Ouvrir le menu
+  menu_close: Fermer le menu
+  show_submenu: "Afficher le menu {label}"
+  more_industries: Autres secteurs
+  lang_badge: EN
+
+region:
+  label: Site pays
+  choose: "Choisir un site pays "   # suivi de « : » dans le gabarit
+  current: Vous êtes ici
+  # À décommenter à la fusion avec la branche gw-core, qui ajoute ces clés à en.yaml (la construction
+  # d’aujourd’hui exige les mêmes clés dans chaque fichier ; celle de gw-core accepte leur absence).
+  # stay: Rester sur ce site
+  # banner: "Vous êtes en {country} ? Consultez notre site pour ce pays."
+
+# Titres des régions (sélecteur de pays, menu Pays, /countries), eux aussi à décommenter à la fusion.
+# regions:
+#   Southern: Afrique australe
+#   East: Afrique de l’Est
+#   West: Afrique de l’Ouest
+#   Central: Afrique centrale
+#   North: Afrique du Nord
+
+cta:
+  title: Sachez ce qui se trouve dans votre emprise avant que cela ne devienne un litige.
+  text: Envoyez-nous votre tracé ou les limites de votre site et les distances qui comptent pour vous. Nous répondons avec un périmètre de travail, un plan d’imagerie et une proposition écrite.
+  button: Demander une proposition
+  secondary: Voir des exemples de résultats
+
+labels:
+  faq: Questions fréquentes
+  breadcrumb: Fil d’Ariane
+  footer_nav: Pied de page
+  related: À lire aussi
+  used_in: Utilisé pour
+  who_uses: Qui l’utilise
+  solutions_used: Comment nous aidons
+  in_this_site: Sur ce site pays
+  read: Lire
+  open: Ouvrir
+  sample: Exemple de résultat
+  reviewed_badge: Vérifié · pointage manuel
+  on_this_page: Sur cette page
+  back_to_top: Haut de page
+  services_included: Services compris
+  last_updated: Dernière mise à jour
+  guides: Guides
+  in_your_country: Dans votre pays
+  in_your_country_note: Le droit, les autorités et le vocabulaire propres à ce service, sur chaque site pays.
+  written_for: Écrit pour
+
+footer:
+  tagline: Suivi à distance du foncier pour les pipelines, les lignes électriques, les concessions et les sites de projet.
+  review: Un analyste vérifie chaque résultat avant la livraison.
+  credits_title: Crédits des données
+  credits: "Empreintes de bâtiments : Google Open Buildings (CC BY 4.0), Microsoft Building Footprints (CDLA-Permissive-2.0) et © les contributeurs d’OpenStreetMap (ODbL). Les travaux sur la végétation et l’occupation du sol utilisent des données Copernicus Sentinel. La source de chaque image est indiquée avec l’image."
+  credits_link: Crédits et licences complets (en anglais).
+  explore: Explorer
+  industries: Secteurs
+  solutions: Solutions
+  how: Notre méthode
+  countries: Sites pays
+  company: Entreprise
+  afridrone: Afridrone, services de drones
+  contact: Demander une proposition
+  rights: Tous droits réservés.
+  drones: Les levés par drone sont soumis aux autorisations et habilitations de sécurité que chaque mission exige.
+
+law:
+  as_of: "À jour au {date}"
+  not_advice: Cette page résume des règles publiques à titre d’information. Elle ne constitue pas un avis juridique.
+  sources: Sources
+  instrument: Texte
+  reference: Référence
+  date: Date
+  checked: Vérifié le
+  last_reviewed: "Dernière vérification "   # le gabarit ajoute « : » juste après
+  drone_note: Les levés par drone sont soumis aux autorisations et habilitations de sécurité que chaque mission exige. Un relevé réalisé à partir d’images satellite ne fait voler aucun drone.
+  compare_title: Les règles des drones en bref
+  regulator: Autorité
+  key_instruments: Principaux textes
+  country: Pays
+  guide: Guide
+
+article:
+  published: Publié le
+  updated: Mis à jour le
+  min_read: "{n} min de lecture"
+  author: AfriScan
+
+form:
+  legend_you: Vous
+  legend_job: Le tracé ou le site
+  name: Nom et prénom
+  email: Adresse e-mail professionnelle
+  org: Entreprise ou organisme
+  role: Votre fonction
+  roles:
+    - Foncier et réinstallation
+    - Emprises ou intégrité des ouvrages
+    - HSE, EIES ou performance sociale
+    - Achats ou approvisionnement
+    - Bureau d’études EIES ou PAR
+    - Bailleur ou contrôleur indépendant
+    - Autre
+  country: Pays
+  countries: [Mozambique, Afrique du Sud, Nigeria, Autre]
+  asset: Ouvrage ou site à relever
+  assets:
+    - Gazoduc ou oléoduc
+    - Ligne électrique
+    - Voie ferrée ou route
+    - Concession minière
+    - Domaine ou site
+    - Zone de projet ou de réinstallation
+    - Autre
+  size: Longueur approximative (km) ou superficie (km²)
+  when: Pour quand vous faut-il les résultats ?
+  needs: De quoi avez-vous besoin ?
+  needs_options:
+    - Registre initial des constructions
+    - Relevés périodiques et avis de changement
+    - Registre à la date butoir (réinstallation)
+    - Comparaison de tracés ou de sites
+    - Levé par drone
+    - Autre chose
+  message: Parlez-nous du tracé ou du site
+  message_hint: La province et la localisation, les distances à vérifier et la date que le registre doit refléter.
+  heard: Comment nous avez-vous connus ?
+  heard_options: [Moteur de recherche, LinkedIn, Événement, Recommandation, Portail fournisseurs ou appel d’offres, Autre]
+  required: obligatoire
+  choose: Choisir…
+  submit: Envoyer la demande
+  sending: Envoi en cours…
+  success: Merci. Votre demande a bien été envoyée ; nous vous répondrons par e-mail.
+  error: Impossible d’envoyer votre demande pour le moment. Nouvelle tentative par un autre moyen…
+  privacy: Votre demande nous parvient par FormSubmit, un service d’acheminement de formulaires.
+  privacy_link: Lire l’avis de confidentialité (en anglais).
+  honeypot: Laissez ce champ vide
+  subject: Nouvelle demande AfriScan (RDC, FR)
+  next_title: La suite
+  next_steps:
+    - Nous répondons par e-mail pour confirmer ce dont nous avons besoin.
+    - Un court échange sur le tracé ou le site, les distances qui comptent et les images disponibles.
+    - "Une proposition écrite : périmètre, plan d’imagerie, méthode, livrables et calendrier."
+  send_title: Ce qu’il faut envoyer
+  send_text: "Le fichier du tracé ou des limites (KML, KMZ, GeoJSON, Shapefile, GPX ou GeoPackage), le pays et la province, les distances à vérifier, la date que le registre doit refléter, les livrables attendus et votre échéance. Pas encore de fichier ? Décrivez la localisation : nous dessinons le tracé avec vous."
+  procurement_title: Équipes achats
+  procurement_text: Joignez à votre demande vos formulaires fournisseur ou de préqualification, ou le dossier d’appel d’offres. La proposition indique, pour votre contrat, les pièces disponibles et celles en cours.
+
+notfound:
+  title: Page introuvable | AfriScan
+  h1: Page introuvable
+  text: Cette page n’existe pas ou a été déplacée. Ces pages sont un bon point de départ.
+  home: Accueil AfriScan
+
+thanks:
+  title: Merci | AfriScan
+  h1: Merci, votre demande a été envoyée
+  text: Nous avons bien reçu votre demande et vous répondrons par e-mail. Si vous avez un fichier de tracé ou de limites que vous n’avez pas joint, gardez-le à portée de main pour le premier échange.
+  next: En attendant
+
+samples:
+  register_label: Extrait du registre
+  id: N°
+  chainage: Point kilométrique (km)
+  distance: Distance au tracé (m)
+  band: Bande
+  source: Origine
+  reviewer_mark: Pointage de l’analyste
+  band_a: 0–50 m
+  band_b: 50–100 m
+  band_c: au-delà de 100 m
+  seg_title: Densité de constructions par tronçon de 500 m
+  seg_desc: "{n} tronçons : {high} à densité élevée, {medium} moyenne et {low} faible. Les valeurs complètes figurent dans le tableau des tronçons."
+  high: "Élevée : plus de {n} constructions à moins de {b} m"
+  medium: "Moyenne : de 1 à {n}"
+  low: "Faible : aucune"
+  seg_table: Tableau des tronçons
+  segment_km: Tronçon (km)
+  within: "Constructions à moins de {b} m"
+  rating: Classement
+  ratings: {high: Élevée, medium: Moyenne, low: Faible}
+
+# Nom de chaque section en français (menu Pays, pied de page, sélecteur, boutons des pays).
+# Une section d’une autre langue garde son nom d’origine ou porte « (en anglais) ».
+sites:
+  global: "International (en anglais)"
+  mz-pt: "Moçambique (Português)"
+  mz-en: "Mozambique (en anglais)"
+  za: "Afrique du Sud (en anglais)"
+  ng: "Nigeria (en anglais)"
+  cd-fr: "RD Congo (Français)"
+  cd-en: "RD Congo (en anglais)"
+  # Sections des autres branches pays : à décommenter au moment de la fusion, quand en.yaml et
+  # pt-MZ.yaml ont les mêmes clés (la construction exige les mêmes clés dans chaque fichier).
+  # zm: "Zambie (en anglais)"
+  # tz: "Tanzanie (en anglais)"
+  # ke: "Kenya (en anglais)"
+  # gh: "Ghana (en anglais)"
+  # ug: "Ouganda (en anglais)"
+  # ao-pt: "Angola (Português)"
+  # ao-en: "Angola (en anglais)"
+  # zw: "Zimbabwe (en anglais)"
+  # mw: "Malawi (en anglais)"
+  # na: "Namibie (en anglais)"
+  # bw: "Botswana (en anglais)"
+  # rw: "Rwanda (en anglais)"
+
+# Pages en anglais vers lesquelles renvoient les pages françaises (menus, pied de page, fil d’Ariane,
+# cartes). Chaque clé est la clé de groupe (key) de la page. Une page anglaise liée depuis /cd/fr/
+# sans entrée ici fait échouer la construction du site.
+foreign_pages:
+  how-it-works: {label: "Comment ça marche, étape par étape (en anglais)", blurb: "Du fichier de tracé au registre vérifié"}
+  how-we-work: {label: "Notre façon de travailler (en anglais)", blurb: "Relevés, propositions et réponses aux appels d’offres"}
+  methodology: {label: "Méthode et vérification (en anglais)", blurb: "Sources, contrôles de l’analyste, règles de distance et limites"}
+  imagery-data: {label: "Images et sources de données (en anglais)", blurb: "Scènes datées, orthophotos de drone, vos propres images et données ouvertes"}
+  faq: {label: "Questions fréquentes (en anglais)", blurb: "Dates des images, vérification, formats, autorisations et propositions"}
+  results: {label: "Exemples de résultats (en anglais)", blurb: "Registre et densité par tronçon d’un gazoduc haute pression au Mozambique"}
+  about: {label: "À propos d’AfriScan (en anglais)", blurb: "Qui nous sommes, notre façon de travailler et le lien avec Afridrone"}
+  privacy: {label: "Avis de confidentialité (en anglais)", blurb: "Les données recueillies par ce site et par le formulaire"}
+  data-sources: {label: "Sources de données et crédits (en anglais)", blurb: "Les licences et les crédits de chaque jeu de données ouvert"}
+  drone-regulations: {label: "Règles des drones par pays (en anglais)", blurb: "Les autorités et les textes de chaque pays, côte à côte"}
+  countries: {label: "Pays (en anglais)", blurb: "Les sites pays d’AfriScan"}
+  resources: {label: "Ressources (en anglais)", blurb: "Guides, exemples de résultats, questions fréquentes et règles par pays"}
+  industries: {label: "Secteurs (en anglais)", blurb: "Pipelines, lignes électriques, mines, rail et routes, et plus"}
+  solutions: {label: "Solutions (en anglais)", blurb: "Relevés d’emprise, registres initiaux, détection des changements et drones"}
+  insight-dated-imagery-cut-off: {label: "Images datées et date butoir (en anglais)", blurb: "Ce qu’une image datée peut établir à la date butoir d’un recensement"}
+  insight-survey-scope: {label: "Cadrer un relevé d’emprise (en anglais)", blurb: "Largeurs, dates et livrables à fixer avant de commander"}
+  insight-satellite-or-drone: {label: "Satellite ou drone ? (en anglais)", blurb: "Quand l’image satellite suffit, et quand un drone apporte le détail"}
+  oil-gas: {label: "Pétrole et gaz (en anglais)", blurb: "Constructions dans les emprises des pipelines"}
+  mining: {label: "Mines (en anglais)", blurb: "Concessions, fosses et bandes de protection"}
+  power-utilities: {label: "Électricité (en anglais)", blurb: "Constructions et végétation sous les lignes"}
+  project-finance-esia: {label: "Financement de projets et EIES (en anglais)", blurb: "Registres initiaux datés et suivi à distance pour les bailleurs"}
+  rail-roads: {label: "Rail et routes (en anglais)", blurb: "Constructions dans les emprises ferroviaires et routières"}
+  renewables: {label: "Énergies renouvelables (en anglais)", blurb: "Registres initiaux des sites et des lignes de raccordement"}
+  agriculture-forestry-nature: {label: "Agriculture, forêts et nature (en anglais)", blurb: "Occupation du sol des domaines et des forêts"}
+  government: {label: "Programmes publics (en anglais)", blurb: "Cartes des constructions pour les programmes publics"}
+  right-of-way-monitoring: {label: "Suivi des emprises (en anglais)", blurb: "Constructions par bande de distance et par tronçon"}
+  encroachment-surveys: {label: "Relevés de concessions et de limites (en anglais)", blurb: "Constructions à l’intérieur et autour d’un périmètre"}
+  hazard-zone-registers: {label: "Constructions en zones de danger (en anglais)", blurb: "Constructions dans les zones fixées par vos ingénieurs"}
+  excavation-mapping: {label: "Cartographie des fouilles et terres remuées (en anglais)", blurb: "Fosses, remblais et sols remaniés, date par date"}
+  resettlement-cut-off-baselines: {label: "Registres à la date butoir (en anglais)", blurb: "Un état daté des constructions pour le recensement"}
+  route-site-selection: {label: "Choix de tracés et de sites (en anglais)", blurb: "Constructions touchées par chaque variante"}
+  imagery-history-due-diligence: {label: "Historique d’images et due diligence foncière (en anglais)", blurb: "Ce qui a été bâti ou défriché, et à peu près quand"}
+  evidence-packs: {label: "Dossiers documentaires (en anglais)", blurb: "Images, registres et cartes datés et horodatés"}
+  household-estimates: {label: "Estimations de ménages (en anglais)", blurb: "Ménages estimés à partir des constructions"}
+  change-detection: {label: "Détection des changements (en anglais)", blurb: "Constructions nouvelles ou disparues entre deux dates"}
+  vegetation-land-cover-fire: {label: "Végétation, occupation du sol et feux (en anglais)", blurb: "Évolution de la végétation et zones brûlées"}
+  terrain-flood-post-event: {label: "Relief, inondations et après-événement (en anglais)", blurb: "Pentes, exposition aux crues et dégâts"}
+  drone-surveys: {label: "Levés par drone (en anglais)", blurb: "Orthophotos et modèles d’élévation"}
+  imagery: {label: "Vos images, archives ou nouvelle prise de vue (en anglais)", blurb: "Les images sur lesquelles repose le relevé"}
+  custom-detection: {label: "Détection sur mesure (en anglais)", blurb: "Des objets propres à votre site, sur vos images"}

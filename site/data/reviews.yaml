@@ -32,6 +32,11 @@ counsel_required:
   - /zm/procurement
   # Tanzania: the wayleave-law guide is an article rather than a law page, but it states the law, so counsel reviews it too
   - /tz/wayleave-law
+  # DR Congo: the brief's launch gate asks counsel to review the supplier and power-line pages too (regional/cd.FINAL.md, Content plan)
+  - /cd/fr/sous-traitance
+  - /cd/subcontracting
+  - /cd/fr/emprises-lignes-electriques
+  - /cd/power-lines
 
 pending:
   native_pt:
@@ -64,7 +69,15 @@ pending:
     pages: []
   native_fr_cd:
     owner_decision: 2026-09-27
-    pages: []
+    pages:
+      - /cd/fr/
+      - /cd/fr/concessions-minieres
+      - /cd/fr/contact
+      - /cd/fr/corridors-ferroviaires-et-routiers
+      - /cd/fr/emprises-lignes-electriques
+      - /cd/fr/loi-sur-les-drones
+      - /cd/fr/reinstallation-date-butoir
+      - /cd/fr/sous-traitance
   counsel_zm:
     owner_decision: 2026-09-27
     pages:
@@ -90,3 +103,12 @@ pending:
     owner_decision: 2026-09-27
     pages:
       /gh/drone-regulations: Ghana counsel
+  counsel_cd:
+    owner_decision: 2026-09-27
+    pages:
+      /cd/fr/loi-sur-les-drones: DR Congo counsel
+      /cd/drone-regulations: DR Congo counsel
+      /cd/fr/sous-traitance: DR Congo counsel
+      /cd/subcontracting: DR Congo counsel
+      /cd/fr/emprises-lignes-electriques: DR Congo counsel
+      /cd/power-lines: DR Congo counsel
