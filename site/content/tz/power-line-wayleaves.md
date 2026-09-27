@@ -29,7 +29,7 @@ faq:
   - q: Can you list homes under our lines that are not yet connected?
     a: We can list the structures under and near a line, with their distances and coordinates. Whether a house is connected to the grid is not visible from above, so the register is a starting list for your connection teams, not a connection survey.
   - q: Do you watch for fires near our lines?
-    a: We send notices of satellite-detected fire hotspots near your lines and substations, from NASA FIRMS data, and map the burnt area afterwards. It is not an emergency or early-warning service: small, short-lived or cloud-covered fires can be missed.
+    a: We send notices of satellite-detected fire hotspots near your lines and substations, from NASA FIRMS data, and map the burnt area afterwards. It is not an emergency or early-warning service, and small, short-lived or cloud-covered fires can be missed.
   - q: How close can a drone fly to a live line?
     a: GN 268 of 2026 sets no live-line distance, so the utility's own safety rules decide it. Lines, towers and substations are structures, so the regulations' 50 m rule applies unless TCAA approves closer work. Drone surveys are subject to the TCAA approvals and security clearances each job requires.
 cta:
