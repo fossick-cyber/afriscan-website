@@ -1,0 +1,119 @@
+# Ghana: the instruments the drone-law page (/gh/drone-regulations) relies on. Facts ONLY from
+# regional/gh.FINAL.md (verified 2026-09-27 against the GCAA's own PDFs, the Act 1120 scan, Ghana
+# Gazette No. 21 of 1 February 2024, the DPC registration page and the Minerals Commission's 6th-edition
+# Local Procurement List). Documents the brief dates only by month carry their year (Part 28 and Part
+# 11: November 2018; AC 28-007, AC 28-008 and AC 28-009: February 2023; AC 28-003: August 2024; AC
+# 28-004: August 2020; AC 28-12: 2024; AC 28-13: June 2024), because `date` takes a full date or a year
+# and `identifier` feeds legislationIdentifier. Undated documents (the RPAS Sanctions, the RPAS FAQs,
+# the Certified RPAS Operators page) are linked from the page body instead of this table. Items the
+# brief marks [unverified] stay out: a stand-alone National Security clearance procedure, the RPAS
+# content of the 2024 Aviation Security Directives, the cedi value of a penalty unit. No fee, charge,
+# penalty amount, notice period or certificate-validity figure appears anywhere (owner rule 1; gh.FINAL
+# copy rules).
+country_name: Ghana
+last_reviewed: 2026-09-27
+regulator:
+  name: Ghana Civil Aviation Authority (GCAA)
+  url: https://www.gcaa.com.gh/web/rpas-advisory-circulars/
+summary:
+  regulator: Ghana Civil Aviation Authority (GCAA); no-fly zones set with the Ministry of National Security
+  instruments: Ghana Civil Aviation Act 2024 (Act 1120); GCAD Part 28, RPAS Directives (2018), and the GCAA's RPAS advisory circulars
+instruments:
+  - id: act-1120
+    title: Ghana Civil Aviation Act, 2024 (Act 1120)
+    identifier: Act 1120
+    date: 2024-07-31
+    url: https://www.gcaa.com.gh/web/wp-content/uploads/2025/GHANA%20CIVIL%20AVIATION%20ACT%20%202024%20%20ACT%201120.pdf
+    last_checked: 2026-09-27
+    note: Repeals Acts 678, 906 and 985 and carries their directives and circulars forward (s.75); administrative penalties under directives (s.37); prohibited areas (s.40); "air transport" includes "all forms of remotely piloted operations" (s.74).
+  - id: gcad-part28
+    title: Ghana Civil Aviation Directives, Part 28, Remotely Piloted Aircraft Systems (RPAS) Directives, with Implementing Standards
+    identifier: GCAD Part 28
+    date: 2018
+    url: https://www.gcaa.com.gh/web/wp-content/uploads/2018/directives/GCA_FLIGHT_STANDARDS_DIRECTIVE/PART_28_REMOTELY_PILOTED_AIRCRAFT_SYSTEMS_DIRECTIVES.pdf
+    last_checked: 2026-09-27
+    note: Categories (28.3), special authorisations (28.4), registration (28.6), permits (28.7), pilots (28.9), the RPAS Operator Certificate (28.1(8), 28.10.1), populous areas and the 30 m rule (28.10.7), foreign operators (28.16).
+  - id: gcad-part11
+    title: Ghana Civil Aviation Directives, Part 11, Aerial Work
+    identifier: GCAD Part 11
+    date: 2018
+    url: https://www.gcaa.com.gh/web/wp-content/uploads/2018/directives/GCA_FLIGHT_STANDARDS_DIRECTIVE/PART_11_AERIAL_WORK.pdf
+    last_checked: 2026-09-27
+    note: Aerial work needs certification by the Authority (11.1.1(2)); aerial work by remotely piloted aircraft follows Part 28 (11.1.1(4)).
+  - id: ac-28-007
+    title: GCAA Advisory Circular AC 28-007, RPAS Certification Process
+    identifier: AC 28-007, Issue 1 Rev 0
+    date: 2023
+    url: https://www.gcaa.com.gh/web/wp-content/uploads/2023/RPAS%20AOC/AC%2028-007%20-%20RPAS%20Certification%20Process.pdf
+    last_checked: 2026-09-27
+    note: The five phases of commercial certification; only "a registered company under the laws of Ghana" can complete them (§2.2).
+  - id: ac-28-009
+    title: GCAA Advisory Circular AC 28-009, RPAS No Fly Zones
+    identifier: AC 28-009
+    date: 2023
+    url: https://www.gcaa.com.gh/web/wp-content/uploads/2023/RPAS%20AOC/AC%2028-009%20-%20RPAS%20NO%20Fly%20Zones.pdf
+    last_checked: 2026-09-27
+    note: Zones determined by the GCAA and the Ministry of National Security around security facilities, airports and listed sites (§3.1).
+  - id: ac-28-003
+    title: GCAA Advisory Circular AC 28-003, Guidelines for Presentation of RPAS Category of Operations (CONOPS)
+    identifier: AC 28-003, Issue 2
+    date: 2024
+    url: "https://www.gcaa.com.gh/web/wp-content/uploads/2025/RPAS/AC%2028-003%20-%20Guidelines%20for%20Presentation%20of%20RPAS%20Category%20of%20Operations%20(CONOPS)%20Clean.pdf"
+    last_checked: 2026-09-27
+    note: The concept of operations an applicant presents at pre-application.
+  - id: ac-28-004
+    title: GCAA Advisory Circular AC 28-004, Assessment of Risk for RPAS Operators (ARRO) Methodology
+    identifier: AC 28-004, Issue 1
+    date: 2020
+    url: https://www.gcaa.com.gh/web/wp-content/uploads/2023/RPAS%20AOC/AC%2028-004%20-%20Assessment%20of%20Risk%20for%20RPAS%20Operators%20%28ARRO%29%20Methodology.pdf
+    last_checked: 2026-09-27
+    note: The risk assessment the CONOPS is reviewed against; the GCAA says it adapts JARUS SORA.
+  - id: ac-28-008
+    title: GCAA Advisory Circular AC 28-008, RPAS Registration Process
+    identifier: AC 28-008
+    date: 2023
+    url: https://www.gcaa.com.gh/web/wp-content/uploads/2023/RPAS%20AOC/AC%2028-008%20-%20RPAS%20REGISTRATION%20PROCESS.pdf
+    last_checked: 2026-09-27
+    note: Registration of recreational and private RPAS and the 9GR- registration marks; it "does not apply to commercial RPAS operators" (§1.4).
+  - id: ac-28-12
+    title: GCAA Advisory Circular AC 28-12, RPAS Importation Process
+    identifier: AC 28-12, Issue 1 Rev 0
+    date: 2024
+    url: https://www.gcaa.com.gh/web/wp-content/uploads/2025/RPAS/AC%2028-12%20-%20RPAS%20IMPORTATION%20PROCESS%20-%20Clean.pdf
+    last_checked: 2026-09-27
+    note: Import approval and the GCAA's Clearance Authorization Letter to Customs (§4.1).
+  - id: ac-28-13
+    title: GCAA Advisory Circular AC 28-13, RPAS Remote Registration Renewal
+    identifier: AC 28-13
+    date: 2024
+    url: https://www.gcaa.com.gh/web/wp-content/uploads/2025/RPAS/AC%2028-13%20RPAS%20Remote%20Registration%20Renewal%20-%20Clean.pdf
+    last_checked: 2026-09-27
+    note: Remote renewal of registration for small and light RPAS, recreational (§3.1) and private or commercial (§3.2).
+  - id: ac-28-10-draft
+    title: GCAA draft Advisory Circular AC 28-10, Determination of Category of RPAS Operations
+    identifier: AC 28-10 (draft)
+    date: 2024
+    url: https://www.gcaa.com.gh/web/wp-content/uploads/2024/DRAFTS/AC%2028-10%20Determination%20of%20Category%20of%20RPAS%20Operations%201.pdf
+    last_checked: 2026-09-27
+    note: Worked examples of recreational, private and commercial operations. Still filed under the GCAA's drafts.
+  - id: avsec-directives-2024
+    title: Ghana Civil Aviation (Aviation Security) Directives, notice of issuance
+    identifier: Ghana Gazette No. 21, p. 1138
+    date: 2024-02-01
+    url: https://www.gcaa.com.gh/web/wp-content/uploads/2024/SECURITY/GAZETTE%20AVIATION%20SECURITY%20DIRECTIVES.pdf
+    last_checked: 2026-09-27
+    note: The Directives took effect on 31 January 2024 and revoked the (Security) Directives of 2018 that Part 28.10.16 refers to.
+  - id: act-843
+    title: Data Protection Act, 2012 (Act 843)
+    identifier: Act 843
+    date: 2012
+    url: https://dpc.gov.gh/registration/
+    last_checked: 2026-09-27
+    note: Registration of data controllers and processors, including foreign companies processing personal data in Ghana (s.27(1)); processing while unregistered is an offence (ss.53 and 56). Link is the Data Protection Commission's registration page.
+  - id: mincom-local-list-6
+    title: Minerals Commission, Local Procurement List for the mining industry, 6th edition
+    identifier: Minerals Commission, under L.I. 2431
+    date: 2025-01-01
+    url: https://www.mincom.gov.gh/wp-content/uploads/2025/02/Local-Content-Sixth-Edition-2025.pdf
+    last_checked: 2026-09-27
+    note: Item 35 ("Geophysical Ground-based Survey; Mapping, Pitting and Trenching") and item 36 ("Geophysical Airborne-based Survey") set Ghanaian-ownership conditions for firms doing that work for mines.

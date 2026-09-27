@@ -141,7 +141,7 @@ gh:
   label: "Ghana"
   short: "Ghana"
   sitemap: sitemap-gh.xml
-  status: draft
+  status: live
   region: West
 ug:
   content: ug

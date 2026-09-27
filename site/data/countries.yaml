@@ -174,7 +174,7 @@ gh:
   name: Ghana
   region: West
   languages: [en]
-  status: launching
+  status: live
   timezones: [Africa/Accra]
 ci:
   name: Côte d’Ivoire
