@@ -152,7 +152,7 @@ Nous n'acceptons aucune mission dans le Nord-Kivu, le Sud-Kivu, l'Ituri, le Haut
 | 179 ter | Présence sans autorisation dans la zone réservée d'un aéroport | Servitude pénale de dix jours à deux mois et amende, ou l'une de ces peines |
 | 183 bis | Violation des servitudes aéronautiques légales | Servitude pénale de six mois à deux ans et amende |
 
-Les inspecteurs de l'aviation civile et les officiers de police judiciaire des aéroports et des services de navigation aérienne constatent les infractions, aux côtés de la police judiciaire générale (article 188). Cette page ne cite aucun montant.
+Les inspecteurs de l'aviation civile et les officiers de police judiciaire des aéroports et des services de navigation aérienne constatent les infractions, aux côtés de la police judiciaire générale (article 188). Les montants des amendes figurent dans le texte de la loi.
 ::::
 
 ::::section{id="qui-vole" tone="alt" eyebrow="Qui peut voler" title="La loi sur la sous-traitance décide qui réalise le levé"}

@@ -2,7 +2,7 @@
 key: power-utilities
 template: industry
 title: Emprise des lignes haute tension (25 m), RDC | AfriScan
-description: "Relevé daté des constructions et de la végétation dans l'emprise de 25 m de part et d'autre des lignes à haute tension en RDC, et des changements entre deux relevés."
+description: "Relevé daté des constructions et de la végétation dans l'emprise de 25 m de part et d'autre des lignes haute tension en RDC, puis des changements."
 h1: Votre emprise de 25 mètres, construction par construction
 crumb: Lignes électriques
 eyebrow: Électricité · Lignes à haute tension

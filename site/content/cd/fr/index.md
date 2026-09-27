@@ -2,7 +2,7 @@
 key: home
 template: country_home
 title: Suivi des emprises et concessions minières, RDC | AfriScan
-description: "Constructions, fosses et terres remuées dans les emprises des lignes électriques et des voies ferrées et dans les périmètres miniers en RDC, relevées par satellite."
+description: "Suivi des emprises par satellite en RDC : constructions, fosses et terres remuées sous les lignes HT, le long des voies ferrées et dans les périmètres miniers."
 h1: Sachez ce qui a changé dans votre emprise ou votre concession
 eyebrow: AfriScan · RD Congo · Emprises et périmètres miniers
 lead: "AfriScan localise et compte les constructions, les fosses, les terres remuées et les pistes le long des lignes électriques, des voies ferrées et des routes, et dans les périmètres miniers en République démocratique du Congo. Chaque construction relevée est mesurée par rapport à votre tracé ou à vos limites, rattachée à l'image dont elle provient et vérifiée par un analyste, puis livrée en fichiers SIG et en rapport PDF."

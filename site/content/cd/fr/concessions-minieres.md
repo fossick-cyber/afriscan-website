@@ -2,7 +2,7 @@
 key: mining
 template: industry
 title: "Périmètres miniers en RDC : fosses et changements | AfriScan"
-description: "Cartographie datée des fosses, terres remuées, constructions et pistes dans et autour de votre périmètre minier en RDC, avec les changements d'une date à l'autre."
+description: "Cartographie datée des fosses, terres remuées, constructions et pistes dans et autour de votre périmètre minier en RDC, et des changements d'une date à l'autre."
 h1: Ce qui change dans votre périmètre minier, date par date
 crumb: Mines et concessions
 eyebrow: Mines · Haut-Katanga et Lualaba

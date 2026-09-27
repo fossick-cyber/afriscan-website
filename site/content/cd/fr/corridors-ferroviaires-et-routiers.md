@@ -2,7 +2,7 @@
 key: rail-roads
 template: industry
 title: Emprises ferroviaires et routières en RDC | AfriScan
-description: "Constructions et travaux dans les emprises des voies ferrées (de 5 à 50 m selon la catégorie) et des routes en RDC, avant les travaux et pendant, vérifiés par un analyste."
+description: "Constructions et terrassements dans les emprises ferroviaires (5 à 50 m selon la catégorie) et routières en RDC, avant et pendant les travaux."
 h1: L'état de votre emprise avant les travaux, et ce qui change pendant
 crumb: Rail et routes
 eyebrow: Rail et routes · Corridors d'exportation

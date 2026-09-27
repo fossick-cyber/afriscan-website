@@ -2,7 +2,7 @@
 key: contact
 template: contact
 title: Demander une proposition de relevé en RDC | AfriScan
-description: "Envoyez votre tracé ou votre périmètre (KML, Shapefile, GeoJSON), la province et les distances à mesurer. Nous répondons avec un périmètre de travail et une proposition."
+description: "Envoyez votre tracé ou votre périmètre (KML, Shapefile, GeoJSON), la province et les distances à mesurer : nous répondons par une proposition écrite."
 h1: Demander une proposition pour un relevé en RDC
 crumb: Demander une proposition
 eyebrow: RD Congo · Contact

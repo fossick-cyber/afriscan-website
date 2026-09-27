@@ -1,7 +1,7 @@
 ---
 key: cd-subcontracting
 title: "Sous-traitance en RDC : loi 17/001 et ARSP | AfriScan"
-description: "La loi n° 17/001, modifiée en 2026, réserve la sous-traitance aux entreprises à capitaux congolais. Ce qu'elle impose, et comment AfriScan s'y inscrit comme fournisseur."
+description: "La loi n° 17/001, modifiée en 2026, réserve la sous-traitance aux entreprises à capitaux congolais. Ce qu'elle impose, et la place d'AfriScan comme fournisseur."
 h1: "Pour les équipes achats : la loi sur la sous-traitance et nous"
 crumb: Sous-traitance
 section: how
