@@ -147,7 +147,7 @@ A corridor that crosses a border is surveyed the same way on both sides: our Moz
 ::::
 
 ::::section{id="rail-roads" eyebrow="Rail and road reserves" title="Where the corridor runs beside a railway or a road"}
-Pipelines, lines and haul roads cross and follow railways and public roads, and each reserve has its own rule. We measure every structure in the same register against the distances that apply to each stretch, from the reserve widths you supply or the defaults in the Acts.
+Pipelines, lines and haul roads cross and follow railways and public roads, and each reserve has its own rule. We measure each structure in the same register against the distances that apply to its stretch, from the reserve widths you supply or the defaults in the Acts.
 
 :::cards{cols="4"}
 :::card{title="Railways: 45 m" icon="rail" eyebrow="Railways Act, s.38(4)(c)"}

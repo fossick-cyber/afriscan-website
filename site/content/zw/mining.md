@@ -51,7 +51,7 @@ Ground within 450 m of a principal homestead is not open to prospecting without 
 On 10 June 2025 Cabinet said that "use it/lose it" would be strengthened ([Post-Cabinet briefing](https://www.veritaszim.net/node/7547)). Dated imagery of the ground over the years shows what was worked, cleared or built, and when.
 :::
 :::card{title="“The plant expansion needs a baseline.”" icon="building"}
-New processing plants, dumps and tailings facilities need an EMA certificate and, where people live on the footprint, a record of what stood there on the cut-off date.
+Mining is a First Schedule project that needs an EMA certificate before it is implemented, and where people live on a new footprint, lenders ask for a record of what stood there on the cut-off date.
 :::
 :::
 
