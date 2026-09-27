@@ -71,7 +71,7 @@ Projects financed by the World Bank apply ESS5, which UETCL's framework describe
 How many structures stand in the footprint and the buffers around it, where they cluster, and estimated households with the assumptions stated, so the census and asset-inventory teams are sized and routed before they go.
 :::
 :::card{title="At the cut-off date" icon="calendar" eyebrow="The record"}
-A register of the structures on dated imagery, with IDs, coordinates and reviewer categories such as main building, outbuilding, enclosure or under construction, packaged with file fingerprints and an independent timestamp.
+A register of the structures on dated imagery, with IDs, coordinates and reviewer categories such as main building, outbuilding, enclosure or under construction, packaged with file fingerprints and an independent timestamp. Categories describe what the imagery shows; they do not establish use, ownership or value, and compensation needs ground verification.
 :::
 :::card{title="After the cut-off date" icon="compare" eyebrow="Change"}
 Re-surveys of the footprint and of resettlement sites, with new structures since the cut-off date flagged automatically and confirmed by a reviewer, and location checks for single grievances.
