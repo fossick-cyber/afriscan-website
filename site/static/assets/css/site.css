@@ -142,8 +142,8 @@ main:focus { outline: none; }
   .nav-item.has-panel:hover > .nav-panel { display: block; }
 }
 .nav-panel--how, .nav-panel--countries, .nav-panel--resources { width: min(520px, calc(100vw - 2 * var(--gutter))); }
-.nav-panel--countries.nav-panel--g3 { width: min(680px, calc(100vw - 2 * var(--gutter))); }
-.nav-panel--countries.nav-panel--g4, .nav-panel--countries.nav-panel--g5 { width: min(860px, calc(100vw - 2 * var(--gutter))); }
+.nav-panel--countries.nav-panel--g3 { width: min(720px, calc(100vw - 2 * var(--gutter))); }
+.nav-panel--countries.nav-panel--g4, .nav-panel--countries.nav-panel--g5 { width: min(960px, calc(100vw - 2 * var(--gutter))); }
 .panel-groups--regions { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
 .panel-list--after { border-top: 1px solid var(--d-line); margin-top: 12px; padding-top: 10px; }
 .panel-list { list-style: none; padding: 0; display: grid; gap: 2px; }
@@ -185,16 +185,17 @@ main:focus { outline: none; }
   background: var(--ink-2); border: 1px solid var(--d-line); border-radius: var(--radius); box-shadow: 0 20px 40px rgba(0, 0, 0, .45); padding: 12px;
 }
 @supports (height: 100dvh) { .region-menu { max-height: calc(100dvh - var(--header-h) - 20px); } }
-.region-menu--g2 { width: 460px; }
-.region-menu--g3 { width: 640px; }
-.region-menu--g4, .region-menu--g5 { width: 820px; }
+.region-menu--g2 { width: 480px; }
+.region-menu--g3 { width: 700px; }
+.region-menu--g4, .region-menu--g5 { width: 920px; }
 .region-title { font-size: 0.72rem; font-weight: 750; letter-spacing: 0.12em; text-transform: uppercase; color: var(--d-dim); padding: 2px 8px 8px; }
 .region-menu ul { list-style: none; padding: 0; }
 .region-menu li + li { margin-top: 2px; }
 .region-top { padding-bottom: 8px; margin-bottom: 4px; border-bottom: 1px solid var(--d-line); }
-.region-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(172px, 100%), 1fr)); gap: 4px 14px; }
+.region-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 4px 14px; }
+.region-group { min-width: 0; }
 .region-group-title { font-size: 0.7rem; font-weight: 750; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal); padding: 10px 10px 4px; }
-.region-menu a { display: block; padding: 8px 10px; border-radius: 6px; color: var(--d-text); text-decoration: none; font-size: 0.95rem; line-height: 1.35; }
+.region-menu a { display: block; padding: 8px 10px; border-radius: 6px; color: var(--d-text); text-decoration: none; font-size: 0.95rem; line-height: 1.35; overflow-wrap: break-word; }
 .region-menu a:hover { background: var(--ink-3); color: #fff; }
 .region-menu a[aria-current] { color: var(--accent-on-dark); font-weight: 650; background: rgba(251, 146, 60, .1); box-shadow: inset 3px 0 0 var(--accent); }
 
@@ -233,7 +234,6 @@ main:focus { outline: none; }
     position: fixed; left: 12px; right: 12px; top: calc(var(--header-h) + 8px);
     width: auto; min-width: 0; max-width: none;
   }
-  .region-groups { grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); }
   .region-menu a { padding: 11px 10px; min-height: 44px; }
 }
 @media (max-width: 560px) {
@@ -669,6 +669,7 @@ tbody th { font-weight: 700; }
 /* Draft preview builds only (build.py --drafts) */
 /* fixed, so it takes no room from the sticky header, the drawer or the country menu, and stays in view */
 .draft-banner { position: fixed; left: 12px; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); z-index: 300; margin: 0; padding: 6px 12px; border-radius: 6px; background: var(--amber); color: var(--ink); font-weight: 750; font-size: 0.85rem; letter-spacing: .02em; box-shadow: 0 6px 18px rgba(0, 0, 0, .35); pointer-events: none; }
+.menu-open .draft-banner, .region-open .draft-banner { visibility: hidden; }   /* never over the menus */
 
 /* Grid items default to min-width:auto, so a wide table inside a column widened the page on phones */
 .columns > * { min-width: 0; }
