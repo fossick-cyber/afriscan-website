@@ -1296,7 +1296,8 @@ class Build:
         sites, tz, ui = {}, {}, {}
         for cc, secs in by_cc.items():
             first = self.locales[secs[0]]
-            own = self.tr(secs[0], "region", "banner") if first["i18n"] in self.i18n else None
+            # the banner speaks the country's first language only when that i18n file has its own sentence
+            own = (self.i18n.get(first["i18n"], {}).get("region") or {}).get("banner")
             text = (own or self.i18n["en"]["region"]["banner"]).format(
                 country=first["country_name"] if own else (self.country_of(secs[0]) or {}).get("name", first["country_name"]))
             sites[cc] = {"lang": first["lang"] if own else "en", "text": text,
