@@ -17,6 +17,7 @@ owner_decision: 2026-09-26
 counsel_required:
   - /mz/pt/zona-de-proteccao-parcial-50-metros
   - /mz/pt/fornecedor
+  - /ao/pt/conteudo-local
 
 pending:
   native_pt:
@@ -42,3 +43,17 @@ pending:
     /mz/pt/fornecedor: Mozambican counsel
     /za/drone-regulations: South African aviation counsel
     /ng/drone-regulations: Nigerian counsel, after NCAA answers the four written questions on its conflicting figures
+    # owner decision 2026-09-27: publish before review
+    /ao/drone-regulations: Angolan counsel
+    /ao/pt/lei-de-drones: Angolan counsel
+    /ao/pt/conteudo-local: Angolan counsel
+  # owner decision 2026-09-27: publish before review
+  native_pt_ao:
+    - /ao/pt/
+    - /ao/pt/concessoes-de-diamantes
+    - /ao/pt/contacto
+    - /ao/pt/conteudo-local
+    - /ao/pt/corredores-ferroviarios
+    - /ao/pt/lei-de-drones
+    - /ao/pt/linhas-de-transporte-de-electricidade
+    - /ao/pt/oleodutos-e-gasodutos

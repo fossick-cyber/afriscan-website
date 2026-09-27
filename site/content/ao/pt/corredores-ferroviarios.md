@@ -2,7 +2,7 @@
 key: rail-roads
 template: industry
 title: Caminhos-de-Ferro e Estradas em Angola | AfriScan
-description: "Registo datado das construções ao longo de caminhos-de-ferro e estradas em Angola: faixas da Lei de Terras, obras de reabilitação, realojamento e danos de cheias."
+description: "Registo datado das construções ao longo de caminhos-de-ferro e estradas em Angola: faixas da Lei de Terras, obras, realojamento e alterações após cheias."
 h1: Registo de construções ao longo de caminhos-de-ferro e corredores logísticos
 crumb: Caminhos-de-ferro
 eyebrow: Caminhos-de-ferro e estradas · Angola

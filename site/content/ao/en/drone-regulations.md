@@ -5,7 +5,7 @@ law: ao
 as_of: 2026-09-27
 icon: drone
 title: "Angola Drone Regulations for Commercial Surveys | AfriScan"
-description: "Who authorises drone flights and aerial surveys in Angola: ANAC's special authorisation, aerial work, registration, insurance, mining and military zones, and data."
+description: "Who authorises drone flights and aerial surveys in Angola: ANAC's special authorisation, aerial work, registration, insurance, mining zones and data."
 h1: "Angola drone law: what a commercial aerial survey needs"
 crumb: Drone regulations
 nav_group: countries

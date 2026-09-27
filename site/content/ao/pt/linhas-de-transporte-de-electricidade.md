@@ -2,7 +2,7 @@
 key: power-utilities
 template: industry
 title: Zonas de Servidão de Linhas Eléctricas em Angola | AfriScan
-description: "Construções e alterações no terreno nas zonas de servidão das linhas de transporte de electricidade em Angola, com a data das imagens, para linhas existentes e novas."
+description: "Construções e alterações no terreno nas zonas de servidão de linhas de transporte de electricidade em Angola, com imagens datadas e revisão humana."
 h1: Construções nas zonas de servidão das linhas de transporte de electricidade
 crumb: Linhas de transporte
 eyebrow: Energia · Angola

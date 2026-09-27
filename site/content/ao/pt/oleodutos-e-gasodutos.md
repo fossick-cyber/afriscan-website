@@ -1,7 +1,7 @@
 ---
 key: oil-gas
 template: industry
-title: Oleodutos e Gasodutos em Angola: a Faixa de 30 m | AfriScan
+title: "Oleodutos e Gasodutos em Angola: a Faixa de 30 m | AfriScan"
 description: "Construções junto de oleodutos, gasodutos, terminais e refinarias em Angola: a faixa de 30 m da Lei de Terras, a avaliação do Decreto n.º 120/08, SIG e PDF."
 h1: Construções e ocupação ao longo de oleodutos, gasodutos e instalações petrolíferas em terra
 crumb: Oleodutos e gasodutos

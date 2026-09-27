@@ -5,7 +5,7 @@ law: ao
 as_of: 2026-09-27
 icon: drone
 title: "Lei de Drones em Angola: Autorização da ANAC | AfriScan"
-description: "Quem autoriza voos e levantamentos com drone em Angola: autorização especial da ANAC, trabalho aéreo, registo, seguro, zonas mineiras e militares e dados pessoais."
+description: "Quem autoriza voos e levantamentos com drone em Angola: autorização especial da ANAC, trabalho aéreo, registo, seguro, zonas mineiras e militares, e dados."
 h1: "Lei de drones em Angola: o que é preciso para um levantamento aéreo"
 crumb: Lei de drones
 nav_group: countries
