@@ -1,0 +1,588 @@
+{
+  "sample": "sample-pipeline",
+  "description": "Reviewer marks from the pipeline sample on Google satellite imagery",
+  "imagery": {
+    "provider": "google",
+    "capture_date": null,
+    "attribution": {
+      "en": "Imagery © Google",
+      "pt": "Imagens © Google"
+    },
+    "zoom": {
+      "close-ups": 20,
+      "overview": 16
+    }
+  },
+  "marks": "reviewer marks only (manual review); no automatic detections",
+  "marks_total": 59,
+  "strings": {
+    "en": {
+      "attribution": "Imagery © Google",
+      "route": "Pipeline route",
+      "b50": "Within 50 m",
+      "b100": "50 to 100 m",
+      "beyond": "Beyond 100 m",
+      "badge": "Reviewed · manual marks",
+      "rings": "Rings: structures marked by a reviewer",
+      "note": "Each ring is centred on a mark the reviewer placed. Roofs without a ring were not marked in this review: the views show the sample's marks exactly as recorded, with nothing added.",
+      "summary": "Together the close-ups show {shown} of the {total} reviewer-marked structures within 100 m of the route."
+    },
+    "pt": {
+      "attribution": "Imagens © Google",
+      "route": "Traçado do gasoduto",
+      "b50": "Até 50 m",
+      "b100": "50 a 100 m",
+      "beyond": "Além de 100 m",
+      "badge": "Revisto · marcação manual",
+      "rings": "Círculos: construções marcadas pelo revisor",
+      "note": "Cada círculo está centrado numa marcação feita pelo revisor. As coberturas sem círculo não foram marcadas nesta revisão: as vistas mostram as marcações do exemplo exactamente como foram registadas, sem acrescentos.",
+      "summary": "No conjunto, as vistas de perto mostram {shown} das {total} construções marcadas pelo revisor a menos de 100 m do traçado."
+    }
+  },
+  "shown_within_100": 34,
+  "within_100_total": 36,
+  "views": [
+    {
+      "id": "A",
+      "src": {
+        "en": "samples/google/pipeline-view-a",
+        "pt": "samples/google/pipeline-view-a-pt"
+      },
+      "alt": {
+        "en": "Satellite view of about 600 by 400 m along the pipeline route, north up: the route as an orange line, the 50 m band shaded red and the 100 m band shaded amber on both sides, and 6 rings on the structures the reviewer marked (1 within 50 m, 4 between 50 and 100 m, 1 beyond 100 m). The route follows a dirt track west to east through small fields and scattered homesteads, with a larger cluster of homesteads to the north.",
+        "pt": "Vista de satélite de cerca de 600 por 400 m ao longo do traçado do gasoduto, com o norte em cima: o traçado como uma linha cor de laranja, a faixa de 50 m sombreada a vermelho e a de 100 m a âmbar dos dois lados, e 6 círculos nas construções que o revisor marcou (1 a menos de 50 m, 4 entre 50 e 100 m, 1 além de 100 m). O traçado segue uma picada de oeste para leste entre pequenas machambas e habitações dispersas, com um aglomerado maior de habitações a norte."
+      },
+      "caption": {
+        "en": "View A · km 3.7 to 4.3",
+        "pt": "Vista A · km 3,7 a 4,3"
+      },
+      "text": {
+        "en": "5 reviewer-marked structures within 100 m of the route in this view, 1 of them within 50 m; 1 more beyond 100 m.",
+        "pt": "5 construções marcadas pelo revisor a menos de 100 m do traçado nesta vista, uma delas a menos de 50 m; mais 1 além dos 100 m."
+      },
+      "credit": {
+        "en": "Imagery © Google, capture date not stated. Reviewer marks only, no automatic detections: a person reviewed every result.",
+        "pt": "Imagens © Google, sem data de captação indicada. Só marcações do revisor, sem detecções automáticas: uma pessoa reviu todos os resultados."
+      },
+      "drawn_text": {
+        "en": [
+          "View A",
+          "Reviewer mark",
+          "Pipeline route",
+          "Within 50 m",
+          "50 to 100 m",
+          "Beyond 100 m",
+          "Imagery © Google",
+          "N",
+          "100 m"
+        ],
+        "pt": [
+          "Vista A",
+          "Marcação do revisor",
+          "Traçado do gasoduto",
+          "Até 50 m",
+          "50 a 100 m",
+          "Além de 100 m",
+          "Imagens © Google",
+          "N",
+          "100 m"
+        ]
+      },
+      "km": [
+        3.72,
+        4.32
+      ],
+      "ground_m": [
+        600,
+        400
+      ],
+      "marks_in_view": 6,
+      "within_50": 1,
+      "within_100": 5,
+      "beyond_100": 1,
+      "register_ids": [
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10"
+      ],
+      "within_100_ids": [
+        "R05",
+        "R06",
+        "R08",
+        "R09",
+        "R10"
+      ],
+      "size": [
+        2400,
+        1600
+      ]
+    },
+    {
+      "id": "B",
+      "src": {
+        "en": "samples/google/pipeline-view-b",
+        "pt": "samples/google/pipeline-view-b-pt"
+      },
+      "alt": {
+        "en": "Satellite view of about 600 by 400 m along the pipeline route, north up: the route as an orange line, the 50 m band shaded red and the 100 m band shaded amber on both sides, and 9 rings on the structures the reviewer marked (2 within 50 m, 5 between 50 and 100 m, 2 beyond 100 m). The route follows the same track east and bends where it meets a paved road near the eastern edge; homesteads, fields and trees line both sides.",
+        "pt": "Vista de satélite de cerca de 600 por 400 m ao longo do traçado do gasoduto, com o norte em cima: o traçado como uma linha cor de laranja, a faixa de 50 m sombreada a vermelho e a de 100 m a âmbar dos dois lados, e 9 círculos nas construções que o revisor marcou (2 a menos de 50 m, 5 entre 50 e 100 m, 2 além de 100 m). O traçado continua pela mesma picada e faz uma curva junto de uma estrada asfaltada, perto do limite leste; há habitações, machambas e árvores dos dois lados."
+      },
+      "caption": {
+        "en": "View B · km 4.4 to 5.0",
+        "pt": "Vista B · km 4,4 a 5,0"
+      },
+      "text": {
+        "en": "7 reviewer-marked structures within 100 m of the route in this view, 2 of them within 50 m; 2 more beyond 100 m.",
+        "pt": "7 construções marcadas pelo revisor a menos de 100 m do traçado nesta vista, 2 delas a menos de 50 m; mais 2 além dos 100 m."
+      },
+      "credit": {
+        "en": "Imagery © Google, capture date not stated. Reviewer marks only, no automatic detections: a person reviewed every result.",
+        "pt": "Imagens © Google, sem data de captação indicada. Só marcações do revisor, sem detecções automáticas: uma pessoa reviu todos os resultados."
+      },
+      "drawn_text": {
+        "en": [
+          "View B",
+          "Reviewer mark",
+          "Pipeline route",
+          "Within 50 m",
+          "50 to 100 m",
+          "Beyond 100 m",
+          "Imagery © Google",
+          "N",
+          "100 m"
+        ],
+        "pt": [
+          "Vista B",
+          "Marcação do revisor",
+          "Traçado do gasoduto",
+          "Até 50 m",
+          "50 a 100 m",
+          "Além de 100 m",
+          "Imagens © Google",
+          "N",
+          "100 m"
+        ]
+      },
+      "km": [
+        4.35,
+        4.95
+      ],
+      "ground_m": [
+        600,
+        400
+      ],
+      "marks_in_view": 9,
+      "within_50": 2,
+      "within_100": 7,
+      "beyond_100": 2,
+      "register_ids": [
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17",
+        "R18",
+        "R19"
+      ],
+      "within_100_ids": [
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R18",
+        "R19"
+      ],
+      "size": [
+        2400,
+        1600
+      ]
+    },
+    {
+      "id": "C",
+      "src": {
+        "en": "samples/google/pipeline-view-c",
+        "pt": "samples/google/pipeline-view-c-pt"
+      },
+      "alt": {
+        "en": "Satellite view of about 600 by 400 m along the pipeline route, north up: the route as an orange line, the 50 m band shaded red and the 100 m band shaded amber on both sides, and 4 rings on the structures the reviewer marked (3 within 50 m, 1 between 50 and 100 m, 0 beyond 100 m). The route bends from east to north-east beside a dirt road, with homesteads, fields and palm trees on both sides of the bend.",
+        "pt": "Vista de satélite de cerca de 600 por 400 m ao longo do traçado do gasoduto, com o norte em cima: o traçado como uma linha cor de laranja, a faixa de 50 m sombreada a vermelho e a de 100 m a âmbar dos dois lados, e 4 círculos nas construções que o revisor marcou (3 a menos de 50 m, 1 entre 50 e 100 m, 0 além de 100 m). O traçado faz uma curva de leste para nordeste junto de uma estrada de terra, com habitações, machambas e palmeiras dos dois lados da curva."
+      },
+      "caption": {
+        "en": "View C · km 4.9 to 5.5",
+        "pt": "Vista C · km 4,9 a 5,5"
+      },
+      "text": {
+        "en": "4 reviewer-marked structures within 100 m of the route in this view, 3 of them within 50 m.",
+        "pt": "4 construções marcadas pelo revisor a menos de 100 m do traçado nesta vista, 3 delas a menos de 50 m."
+      },
+      "credit": {
+        "en": "Imagery © Google, capture date not stated. Reviewer marks only, no automatic detections: a person reviewed every result.",
+        "pt": "Imagens © Google, sem data de captação indicada. Só marcações do revisor, sem detecções automáticas: uma pessoa reviu todos os resultados."
+      },
+      "drawn_text": {
+        "en": [
+          "View C",
+          "Reviewer mark",
+          "Pipeline route",
+          "Within 50 m",
+          "50 to 100 m",
+          "Beyond 100 m",
+          "Imagery © Google",
+          "N",
+          "100 m"
+        ],
+        "pt": [
+          "Vista C",
+          "Marcação do revisor",
+          "Traçado do gasoduto",
+          "Até 50 m",
+          "50 a 100 m",
+          "Além de 100 m",
+          "Imagens © Google",
+          "N",
+          "100 m"
+        ]
+      },
+      "km": [
+        4.92,
+        5.47
+      ],
+      "ground_m": [
+        600,
+        400
+      ],
+      "marks_in_view": 4,
+      "within_50": 3,
+      "within_100": 4,
+      "beyond_100": 0,
+      "register_ids": [
+        "R19",
+        "R20",
+        "R21",
+        "R22"
+      ],
+      "within_100_ids": [
+        "R19",
+        "R20",
+        "R21",
+        "R22"
+      ],
+      "size": [
+        2400,
+        1600
+      ]
+    },
+    {
+      "id": "D",
+      "src": {
+        "en": "samples/google/pipeline-view-d",
+        "pt": "samples/google/pipeline-view-d-pt"
+      },
+      "alt": {
+        "en": "Satellite view of about 600 by 400 m along the pipeline route, north up: the route as an orange line, the 50 m band shaded red and the 100 m band shaded amber on both sides, and 16 rings on the structures the reviewer marked (2 within 50 m, 12 between 50 and 100 m, 2 beyond 100 m). The route runs north-east beside a wide dirt track, with homesteads and palm trees to the west and bush and woodland to the south-east.",
+        "pt": "Vista de satélite de cerca de 600 por 400 m ao longo do traçado do gasoduto, com o norte em cima: o traçado como uma linha cor de laranja, a faixa de 50 m sombreada a vermelho e a de 100 m a âmbar dos dois lados, e 16 círculos nas construções que o revisor marcou (2 a menos de 50 m, 12 entre 50 e 100 m, 2 além de 100 m). O traçado segue para nordeste ao lado de uma picada larga, com habitações e palmeiras a oeste e mato e floresta a sudeste."
+      },
+      "caption": {
+        "en": "View D · km 5.6 to 6.1",
+        "pt": "Vista D · km 5,6 a 6,1"
+      },
+      "text": {
+        "en": "14 reviewer-marked structures within 100 m of the route in this view, 2 of them within 50 m; 2 more beyond 100 m.",
+        "pt": "14 construções marcadas pelo revisor a menos de 100 m do traçado nesta vista, 2 delas a menos de 50 m; mais 2 além dos 100 m."
+      },
+      "credit": {
+        "en": "Imagery © Google, capture date not stated. Reviewer marks only, no automatic detections: a person reviewed every result.",
+        "pt": "Imagens © Google, sem data de captação indicada. Só marcações do revisor, sem detecções automáticas: uma pessoa reviu todos os resultados."
+      },
+      "drawn_text": {
+        "en": [
+          "View D",
+          "Reviewer mark",
+          "Pipeline route",
+          "Within 50 m",
+          "50 to 100 m",
+          "Beyond 100 m",
+          "Imagery © Google",
+          "N",
+          "100 m"
+        ],
+        "pt": [
+          "Vista D",
+          "Marcação do revisor",
+          "Traçado do gasoduto",
+          "Até 50 m",
+          "50 a 100 m",
+          "Além de 100 m",
+          "Imagens © Google",
+          "N",
+          "100 m"
+        ]
+      },
+      "km": [
+        5.58,
+        6.07
+      ],
+      "ground_m": [
+        600,
+        400
+      ],
+      "marks_in_view": 16,
+      "within_50": 2,
+      "within_100": 14,
+      "beyond_100": 2,
+      "register_ids": [
+        "R24",
+        "R25",
+        "R26",
+        "R27",
+        "R28",
+        "R29",
+        "R30",
+        "R31",
+        "R32",
+        "R33",
+        "R34",
+        "R35",
+        "R36",
+        "R37",
+        "R39",
+        "R40"
+      ],
+      "within_100_ids": [
+        "R25",
+        "R26",
+        "R27",
+        "R28",
+        "R29",
+        "R30",
+        "R31",
+        "R32",
+        "R33",
+        "R34",
+        "R35",
+        "R36",
+        "R37",
+        "R39"
+      ],
+      "size": [
+        2400,
+        1600
+      ]
+    },
+    {
+      "id": "E",
+      "src": {
+        "en": "samples/google/pipeline-view-e",
+        "pt": "samples/google/pipeline-view-e-pt"
+      },
+      "alt": {
+        "en": "Satellite view of about 600 by 400 m along the pipeline route, north up: the route as an orange line, the 50 m band shaded red and the 100 m band shaded amber on both sides, and 6 rings on the structures the reviewer marked (2 within 50 m, 1 between 50 and 100 m, 3 beyond 100 m). The route runs north-east beside the track through fields and bush, with a cluster of homesteads to the west.",
+        "pt": "Vista de satélite de cerca de 600 por 400 m ao longo do traçado do gasoduto, com o norte em cima: o traçado como uma linha cor de laranja, a faixa de 50 m sombreada a vermelho e a de 100 m a âmbar dos dois lados, e 6 círculos nas construções que o revisor marcou (2 a menos de 50 m, 1 entre 50 e 100 m, 3 além de 100 m). O traçado segue para nordeste ao lado da picada, entre machambas e mato, com um aglomerado de habitações a oeste."
+      },
+      "caption": {
+        "en": "View E · km 6.5 to 7.1",
+        "pt": "Vista E · km 6,5 a 7,1"
+      },
+      "text": {
+        "en": "3 reviewer-marked structures within 100 m of the route in this view, 2 of them within 50 m; 3 more beyond 100 m.",
+        "pt": "3 construções marcadas pelo revisor a menos de 100 m do traçado nesta vista, 2 delas a menos de 50 m; mais 3 além dos 100 m."
+      },
+      "credit": {
+        "en": "Imagery © Google, capture date not stated. Reviewer marks only, no automatic detections: a person reviewed every result.",
+        "pt": "Imagens © Google, sem data de captação indicada. Só marcações do revisor, sem detecções automáticas: uma pessoa reviu todos os resultados."
+      },
+      "drawn_text": {
+        "en": [
+          "View E",
+          "Reviewer mark",
+          "Pipeline route",
+          "Within 50 m",
+          "50 to 100 m",
+          "Beyond 100 m",
+          "Imagery © Google",
+          "N",
+          "100 m"
+        ],
+        "pt": [
+          "Vista E",
+          "Marcação do revisor",
+          "Traçado do gasoduto",
+          "Até 50 m",
+          "50 a 100 m",
+          "Além de 100 m",
+          "Imagens © Google",
+          "N",
+          "100 m"
+        ]
+      },
+      "km": [
+        6.53,
+        7.1
+      ],
+      "ground_m": [
+        600,
+        400
+      ],
+      "marks_in_view": 6,
+      "within_50": 2,
+      "within_100": 3,
+      "beyond_100": 3,
+      "register_ids": [
+        "R46",
+        "R47",
+        "R48",
+        "R49",
+        "R51",
+        "R54"
+      ],
+      "within_100_ids": [
+        "R46",
+        "R47",
+        "R51"
+      ],
+      "size": [
+        2400,
+        1600
+      ]
+    },
+    {
+      "id": "F",
+      "src": {
+        "en": "samples/google/pipeline-view-f",
+        "pt": "samples/google/pipeline-view-f-pt"
+      },
+      "alt": {
+        "en": "Satellite view of about 600 by 400 m along the pipeline route, north up: the route as an orange line, the 50 m band shaded red and the 100 m band shaded amber on both sides, and 2 rings on the structures the reviewer marked (2 within 50 m, 0 between 50 and 100 m, 0 beyond 100 m). The route runs west to east along the track through bush and grassland, with a wetland to the north.",
+        "pt": "Vista de satélite de cerca de 600 por 400 m ao longo do traçado do gasoduto, com o norte em cima: o traçado como uma linha cor de laranja, a faixa de 50 m sombreada a vermelho e a de 100 m a âmbar dos dois lados, e 2 círculos nas construções que o revisor marcou (2 a menos de 50 m, 0 entre 50 e 100 m, 0 além de 100 m). O traçado segue de oeste para leste pela picada, entre mato e capim, com uma zona húmida a norte."
+      },
+      "caption": {
+        "en": "View F · km 8.8 to 9.4",
+        "pt": "Vista F · km 8,8 a 9,4"
+      },
+      "text": {
+        "en": "2 reviewer-marked structures within 100 m of the route in this view, all of them within 50 m.",
+        "pt": "2 construções marcadas pelo revisor a menos de 100 m do traçado nesta vista, todas a menos de 50 m."
+      },
+      "credit": {
+        "en": "Imagery © Google, capture date not stated. Reviewer marks only, no automatic detections: a person reviewed every result.",
+        "pt": "Imagens © Google, sem data de captação indicada. Só marcações do revisor, sem detecções automáticas: uma pessoa reviu todos os resultados."
+      },
+      "drawn_text": {
+        "en": [
+          "View F",
+          "Reviewer mark",
+          "Pipeline route",
+          "Within 50 m",
+          "50 to 100 m",
+          "Beyond 100 m",
+          "Imagery © Google",
+          "N",
+          "100 m"
+        ],
+        "pt": [
+          "Vista F",
+          "Marcação do revisor",
+          "Traçado do gasoduto",
+          "Até 50 m",
+          "50 a 100 m",
+          "Além de 100 m",
+          "Imagens © Google",
+          "N",
+          "100 m"
+        ]
+      },
+      "km": [
+        8.76,
+        9.35
+      ],
+      "ground_m": [
+        600,
+        400
+      ],
+      "marks_in_view": 2,
+      "within_50": 2,
+      "within_100": 2,
+      "beyond_100": 0,
+      "register_ids": [
+        "R58",
+        "R59"
+      ],
+      "within_100_ids": [
+        "R58",
+        "R59"
+      ],
+      "size": [
+        2400,
+        1600
+      ]
+    }
+  ],
+  "overview": {
+    "id": "overview",
+    "src": {
+      "en": "samples/google/pipeline-overview",
+      "pt": "samples/google/pipeline-overview-pt"
+    },
+    "alt": {
+      "en": "Satellite overview of the whole pipeline route, about 10 km from west to east, north up: the route as an orange line with its 100 m band, the reviewer's 59 marks as dots coloured by distance band, and 6 outlined frames, A to F, for the close-up views. It starts at a gas facility in the west, passes fields and settlements, and ends beside a wetland in the east.",
+      "pt": "Vista geral de satélite de todo o traçado do gasoduto, com cerca de 10 km de oeste para leste e o norte em cima: o traçado como uma linha cor de laranja com a faixa de 100 m, as 59 marcações do revisor como pontos coloridos pela faixa de distância, e 6 molduras, de A a F, para as vistas de perto. Começa numa instalação de gás a oeste, passa por machambas e povoações e termina junto de uma zona húmida a leste."
+    },
+    "caption": {
+      "en": "The whole route, with close-up views A to F outlined",
+      "pt": "Todo o traçado, com as vistas de perto A a F assinaladas"
+    },
+    "credit": {
+      "en": "Imagery © Google, capture date not stated. Route, 100 m band and the reviewer's 59 marks drawn by AfriScan; a person reviewed every result.",
+      "pt": "Imagens © Google, sem data de captação indicada. Traçado, faixa de 100 m e as 59 marcações do revisor desenhados pela AfriScan; uma pessoa reviu todos os resultados."
+    },
+    "drawn_text": {
+      "en": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "Pipeline route",
+        "100 m band",
+        "Within 50 m",
+        "50 to 100 m",
+        "Beyond 100 m",
+        "Close-up views",
+        "Dots: reviewer marks",
+        "Imagery © Google",
+        "N",
+        "1 km"
+      ],
+      "pt": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "Traçado do gasoduto",
+        "Faixa de 100 m",
+        "Até 50 m",
+        "50 a 100 m",
+        "Além de 100 m",
+        "Vistas de perto",
+        "Pontos: marcações do revisor",
+        "Imagens © Google",
+        "N",
+        "1 km"
+      ]
+    },
+    "size": [
+      2400,
+      820
+    ],
+    "marks_in_view": 59
+  }
+}

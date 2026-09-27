@@ -24,7 +24,7 @@ faq:
   - q: We already fly our own drones. Can you use that imagery?
     a: Yes. Send georeferenced orthophotos or satellite scenes and we run the same structure, change and corridor analysis on them. This is often the fastest way to start where survey teams already fly.
   - q: Do you deliver the basemap imagery shown in web maps?
-    a: No. Map-service basemaps have no stated capture date and their terms do not make them survey imagery. We use them only for internal screening and planning.
+    a: No. Map-service basemaps have no stated capture date and their terms do not make them survey imagery. We use them to screen and plan, and Google's, credited, to show our pipeline sample on this site. They are never delivered as survey imagery.
 related: [imagery, drone-surveys, insight-satellite-or-drone]
 cta:
   title: Not sure which imagery your route needs?
@@ -37,7 +37,7 @@ cta:
 Every report names its imagery and, where the source provides it, the capture date. Where the date matters (cut-off dates, change detection, evidence packs) we use dated imagery: a drone survey, a purchased satellite scene or your own georeferenced imagery.
 :::
 
-That rule matters most when a record may be relied on later. A register for a resettlement cut-off date, a comparison between two surveys, or a pack prepared for a community or legal process all depend on knowing when the image was taken. Map-service basemaps, the satellite layers behind common web maps, carry no capture date, so we use them only to screen and plan, and never pass them off as survey imagery.
+That rule matters most when a record may be relied on later. A register for a resettlement cut-off date, a comparison between two surveys, or a pack prepared for a community or legal process all depend on knowing when the image was taken. Map-service basemaps, the satellite layers behind common web maps, carry no capture date, so we use them to screen and plan, and Google's, credited, to show our pipeline sample, but never pass them off as survey imagery.
 ::::
 
 ::::section{id="sources" tone="alt" eyebrow="Imagery options" title="Four ways to get the right picture"}

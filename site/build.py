@@ -38,6 +38,7 @@ from lib import brand  # noqa: E402
 from lib.content import (Block, ContentError, add_heading_ids, make_markdown, parse_blocks,  # noqa: E402
                          slugify, split_front_matter, wrap_tables)
 from lib.images import ImageError, Images  # noqa: E402
+from lib import sample_gallery  # noqa: E402
 
 TEMPLATES = {"home", "page", "industry", "solution", "country_home", "law", "law_hub", "article", "hub", "contact"}
 DEFAULT_SECTION = {"industry": "industries", "solution": "solutions", "article": "insights"}
@@ -83,6 +84,7 @@ COMPONENTS = {
     "country-sites": {"allowed": {"match"}},
     "countries": {"allowed": {"cols"}},
 }
+COMPONENTS["sample-gallery"] = sample_gallery.SPEC        # lib/sample_gallery.py
 
 
 def load_yaml(p):
@@ -1000,6 +1002,9 @@ class Build:
         if b.attrs.get("limit"):
             rows = rows[: int(b.attrs["limit"])]
         return {"data": data, "rows": rows}
+
+    def cmp_sample_gallery(self, p, b, ctx):
+        return sample_gallery.context(self, p, b, ctx)
 
     def cmp_figure(self, p, b, ctx):
         size = b.attrs.get("size", "wide")
@@ -2002,6 +2007,7 @@ class Build:
             self.check_structure(p)
         self.check_links(built)
         self.check_withdrawn_names(built)
+        sample_gallery.check(self, built, name_candidates, name_digest)
         self.check_duplicates(built)
         self.check_similarity(built)
         self.check_law()
@@ -2177,6 +2183,7 @@ def selftest():
             if not (code == 1 and hit):
                 failed.append(name)
         failed += selftest_drafts(make, tmp)
+        failed += sample_gallery.selftest(make, tmp, SITE)
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     print("selftest:", "all guards fired" if not failed else f"FAILED {failed}")

@@ -42,7 +42,7 @@ Results are files your team keeps: a PDF report in English or Portuguese, GIS la
 ::::section{id="where" tone="alt" eyebrow="Where we work" title="Built on real corridors in Mozambique"}
 :::::columns{split="1-1"}
 ::::col
-The platform behind AfriScan was built and tested on high-pressure gas pipeline routes in Mozambique. Our published example, the [sample register](/results) from one of those pipelines, is shown with the route owner's permission and labelled for what it is: a register built from reviewer marks, drawn as strip views without imagery.
+The platform behind AfriScan was built and tested on high-pressure gas pipeline routes in Mozambique. Our published example, the [sample register](/results) from one of those pipelines, is shown with the route owner's permission and labelled for what it is: a register built from reviewer marks, drawn as strip views and shown on Google satellite imagery with its attribution.
 
 Satellite-based surveys are available in Mozambique, South Africa and Nigeria, with no site visit and no drone flight. Each country has its own section of this site, with the local law, the regulators and the vocabulary our registers are measured against.
 ::::

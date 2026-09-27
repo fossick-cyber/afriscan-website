@@ -1,14 +1,11 @@
 // Suggests the visitor's country site. Never redirects. Remembers the choice in this browser.
-// Built by site/build.py: SITES lists only the country sections that exist.
+// Built by site/build.py from data/locales.yaml: DATA lists only the live country sections (never a draft),
+// with each country's banner text, its sites, and the time zones used when /geo gives no country.
 (() => {
-  const SITES = {"MZ": {"links": [["pt-MZ", "/mz/pt/", "Português"], ["en-MZ", "/mz/", "English"]]}, "ZA": {"links": [["en-ZA", "/za/", "South Africa"]]}, "NG": {"links": [["en-NG", "/ng/", "Nigeria"]]}};
-  const TEXT = {
-    MZ: { lang: "pt-MZ", text: "Está em Moçambique? Veja o site de Moçambique." },
-    ZA: { lang: "en-ZA", text: "In South Africa? See our South Africa site." },
-    NG: { lang: "en-NG", text: "In Nigeria? See our Nigeria site." },
-  };
-  const PT = (document.documentElement.lang || "").startsWith("pt");
-  const UI = PT ? { bar: "Site do país", stay: "Ficar neste site" } : { bar: "Country site", stay: "Stay on this site" };
+  const DATA = {"sites": {"MZ": {"lang": "pt-MZ", "links": [["pt-MZ", "/mz/pt/", "Português"], ["en-MZ", "/mz/", "English"]], "text": "Está em Moçambique? Veja o site de Moçambique."}, "NG": {"lang": "en-NG", "links": [["en-NG", "/ng/", "Nigeria"]], "text": "In Nigeria? See our Nigeria site."}, "ZA": {"lang": "en-ZA", "links": [["en-ZA", "/za/", "South Africa"]], "text": "In South Africa? See our South Africa site."}}, "tz": {"Africa/Johannesburg": "ZA", "Africa/Lagos": "NG", "Africa/Maputo": "MZ"}, "ui": {"en": {"bar": "Country site", "stay": "Stay on this site"}, "en-GB": {"bar": "Country site", "stay": "Stay on this site"}, "en-MZ": {"bar": "Country site", "stay": "Stay on this site"}, "en-NG": {"bar": "Country site", "stay": "Stay on this site"}, "en-ZA": {"bar": "Country site", "stay": "Stay on this site"}, "pt-MZ": {"bar": "Site do país", "stay": "Ficar neste site"}}};
+  const SITES = DATA.sites, TZ = DATA.tz;
+  const L = document.documentElement.lang || "";
+  const UI = DATA.ui[L] || DATA.ui[Object.keys(DATA.ui).find(k => k.slice(0, 2) === L.slice(0, 2))] || DATA.ui.en;
   const store = (area, k, v) => {
     try { const s = window[area]; if (v === undefined) return s.getItem(k); s.setItem(k, v); } catch (e) { return null; }
     return null;
@@ -21,9 +18,7 @@
   });
   if (store("localStorage", CHOICE)) return;
   const tzGuess = () => {
-    try {
-      return { "Africa/Maputo": "MZ", "Africa/Johannesburg": "ZA", "Africa/Lagos": "NG" }[Intl.DateTimeFormat().resolvedOptions().timeZone];
-    } catch (e) { return undefined; }
+    try { return TZ[Intl.DateTimeFormat().resolvedOptions().timeZone]; } catch (e) { return undefined; }
   };
   const alt = code => {
     const l = document.querySelector(`link[rel="alternate"][hreflang="${code}" i]`);
@@ -35,14 +30,15 @@
         .then(({ country }) => { const cc = SITES[country] ? country : (tzGuess() || "none");
                                  store("sessionStorage", GEO, cc); return cc; });
   geo.then(cc => {
-    if (!SITES[cc] || !TEXT[cc] || cc === here) return;
+    if (!SITES[cc] || cc === here) return;
+    const site = SITES[cc];
     const bar = document.createElement("aside");
     bar.className = "region-banner";
     bar.setAttribute("aria-label", UI.bar);
     const p = document.createElement("p");
-    p.lang = TEXT[cc].lang; p.textContent = TEXT[cc].text;
+    p.lang = site.lang; p.textContent = site.text;
     bar.append(p);
-    for (const [code, home, label] of SITES[cc].links) {
+    for (const [code, home, label] of site.links) {
       const a = document.createElement("a");
       a.href = alt(code) || home;
       a.hreflang = code; a.lang = code; a.textContent = label; a.className = "btn btn-sm";

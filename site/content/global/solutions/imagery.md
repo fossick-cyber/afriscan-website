@@ -30,7 +30,7 @@ faq:
   - q: Which satellites do you use?
     a: We choose per job from commercial archives and operators, based on the date you need, the season, cloud and the resolution the job needs, and name the source and capture date in the report.
   - q: Do you deliver the satellite view from web maps?
-    a: No. Map-service basemaps carry no capture date and their terms do not make them survey imagery. We use them only to screen and plan internally, never as delivered imagery or as the basis of a dated record.
+    a: No. Map-service basemaps carry no capture date and their terms do not make them survey imagery. We use them to screen and plan, and Google's, credited, to show our pipeline sample on this site, never as delivered imagery or as the basis of a dated record.
   - q: Is there a minimum area for archive or new imagery?
     a: Yes. Commercial suppliers set minimum order areas for archive scenes and new captures, which we take into account when we plan the imagery for your route or site and set out in the proposal.
 ---
@@ -75,7 +75,7 @@ Every report names its imagery and, where the source provides it, the capture da
 :::
 
 :::callout{tone="scope" title="Basemaps are not survey imagery"}
-The satellite layers behind common web maps carry no capture date. We use them only to screen and plan, never as delivered imagery.
+The satellite layers behind common web maps carry no capture date. We use them to screen and plan, and Google's, credited, to show our pipeline sample, never as delivered imagery.
 :::
 ::::
 :::::

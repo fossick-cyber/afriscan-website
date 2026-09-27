@@ -14,7 +14,7 @@ faq:
   - q: Can we reuse the GIS layers you deliver in our own maps and reports?
     a: Yes. The layers are yours to use in your own work. Where a layer contains open data, its licence travels with it, so keep the credit line that comes with the layer. For OpenStreetMap-derived layers, the ODbL also has share-alike terms for databases you publish; your GIS team can check them at the ODbL link in the table above.
   - q: Do you deliver the basemap imagery shown in web maps?
-    a: No. Map-service basemaps carry no capture date and their terms do not make them survey imagery. We use them only to screen and plan, and never as delivered imagery or as the basis of a dated record.
+    a: No. Map-service basemaps carry no capture date and their terms do not make them survey imagery. We use them to screen and plan, and Google's, credited, to show our pipeline sample on this site. They are never delivered as survey imagery or used as the basis of a dated record.
   - q: Which satellite operators do you buy from?
     a: We source very-high-resolution scenes from commercial archives and request new captures from commercial operators, choosing per job by date, season and cloud. The report names the imagery used, and the proposal sets out its licence terms for your use.
   - q: Why credit data that is free to use?
@@ -34,7 +34,7 @@ Every report names its imagery and, where the source provides it, the capture da
 The open datasets we use are listed below with the credit and licence text each one requires.
 :::
 :::card{title="Basemaps are not survey imagery" icon="eye"}
-Google, Bing and Esri web-map layers are used only to screen and plan. They are never delivered, and never the basis of a dated record.
+Google, Bing and Esri web-map layers are used to screen and plan, and Google's to show the pipeline sample on this site with its attribution. They are never delivered, and never the basis of a dated record.
 :::
 :::
 ::::
@@ -96,8 +96,8 @@ Orthophotos and scenes you send stay yours, and we never publish them without yo
 ::::
 
 ::::section{id="site-images" tone="alt" eyebrow="On this website" title="Images shown on this site"}
-- **The sample pipeline.** The route of a high-pressure gas pipeline in Mozambique is shown with the route owner's permission. Its reviewer marks appear only as register strip views, drawn by AfriScan from the sample register: no imagery and no coordinates. The route views and the page headers use a Copernicus Sentinel-2 scene of 2 August 2026 (contains modified Copernicus Sentinel data 2026), shown for location; at 10 m per pixel it cannot show individual structures.
-- **No map-service imagery.** No Google, Bing or Esri basemap imagery is shown on this site.
+- **The sample pipeline.** The route of a high-pressure gas pipeline in Mozambique is shown with the route owner's permission. Its reviewer marks appear as register strip views, drawn by AfriScan from the sample register, and on Google satellite imagery, the imagery the review used. No coordinates are published. The route views and the page headers use a Copernicus Sentinel-2 scene of 2 August 2026 (contains modified Copernicus Sentinel data 2026), shown for location; at 10 m per pixel it cannot show individual structures.
+- **Google imagery, for the sample only.** The sample's overview and close-ups on the [sample outputs](/results) page are on Google satellite imagery, shown with permission and credited "Imagery © Google" on each image and in its caption. Google states no capture date for this imagery, so the views show where each mark sits, not when a structure appeared. No Bing or Esri imagery is shown on this site.
 - **Schematics.** Diagrams labelled "Schematic" are drawn by AfriScan with invented geometry to explain how a register is read. They are not real routes or sites.
 - **No people.** We show no photographs that identify anyone, and no client logos.
 
