@@ -581,6 +581,21 @@ class Build:
         q.update(extra or {})
         return href + ("?" + "&".join(f"{k}={v}" for k, v in q.items()) if q else "")
 
+    def form_countries(self, lk):
+        """The contact form's country options: every country with a live section, under its region heading,
+        named by i18n `form.countries` (a live country missing there fails the build), then `other`."""
+        names = self.t_of(lk)["form"]["countries"]
+        fold = lambda s: "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c)).casefold()
+        groups = defaultdict(list)
+        for cc in dict.fromkeys(self.locales[k]["country"].lower() for k in self.live_locales if self.locales[k]["country"]):
+            if not names.get(cc):
+                self.err(f"data/i18n/{self.locales[lk]['i18n']}.yaml: form.countries has no name for '{cc}', a live country")
+                continue
+            groups[(self.countries.get(cc) or {}).get("region")].append({"code": cc, "name": names[cc]})
+        return {"groups": [{"title": self.tr(lk, "regions", r), "options": sorted(groups[r], key=lambda o: fold(o["name"]))}
+                           for r in REGIONS if groups[r]],
+                "other": names.get("other")}
+
     def fmt_date(self, d, t):
         if isinstance(d, int) or (isinstance(d, str) and re.fullmatch(r"\d{4}", d)):
             return str(d)                       # year only, e.g. an Act known by its year and number
@@ -1069,7 +1084,8 @@ class Build:
                     lang_key=self.cat_lang(p["lang"]), catalogue=self.catalogue,
                     resolve=lambda k: self.resolve(k, lk), footer=self.footers[lk], today=self.today,
                     region_js=self.region_js_url, thanks_url=self.thanks_url(p),
-                    label_of=lambda q: self.label_in(q, lk))
+                    label_of=lambda q: self.label_in(q, lk), label_text=lambda q: self.label_in(q, lk, text=True),
+                    form_countries=(lambda: self.form_countries(lk)))
 
     def own_specials(self, lk):
         """A section gets its own 404 and thank-you pages when it has its own (non-English) UI strings."""
@@ -1732,7 +1748,10 @@ class Build:
     def check_similarity(self, built):
         lim = self.rules["limits"]
         idx = [p for p in built if not p["noindex"] and not p.get("special")]
-        sh = {p["url"]: self.shingles(self.visible_text(p["html"], main_only=True).replace("¶", " ")) for p in idx}
+        # a <select>'s options (the contact form's country list) are generated form chrome, the same on every
+        # contact page, not copy: they stay out of the comparison (the guards still read them)
+        copy = lambda h: re.sub(r"(?s)<select\b.*?</select>", " ", h)
+        sh = {p["url"]: self.shingles(self.visible_text(copy(p["html"]), main_only=True).replace("¶", " ")) for p in idx}
         for i, a in enumerate(idx):
             for b in idx[i + 1:]:
                 if a["loc_key"] == b["loc_key"] or a["lang2"] != b["lang2"]:

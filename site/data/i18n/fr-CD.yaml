@@ -126,7 +126,23 @@ form:
     - Bailleur ou contrôleur indépendant
     - Autre
   country: Pays
-  countries: [Mozambique, Afrique du Sud, Nigeria, Autre]
+  countries:        # Chaque pays qui a un site (sa clé dans data/countries.yaml) et `other` ; le formulaire les groupe par région
+    za: Afrique du Sud
+    mz: Mozambique
+    zm: Zambie
+    zw: Zimbabwe
+    mw: Malawi
+    na: Namibie
+    bw: Botswana
+    ao: Angola
+    ke: Kenya
+    tz: Tanzanie
+    ug: Ouganda
+    rw: Rwanda
+    ng: Nigeria
+    gh: Ghana
+    cd: RD Congo
+    other: Autre
   asset: Ouvrage ou site à relever
   assets:
     - Gazoduc ou oléoduc

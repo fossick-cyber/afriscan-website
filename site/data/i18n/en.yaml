@@ -122,7 +122,23 @@ form:
     - Lender or independent monitor
     - Other
   country: Country
-  countries: [Mozambique, South Africa, Nigeria, Other]
+  countries:        # Every live country (its data/countries.yaml key) and `other`; the form groups them by region
+    za: South Africa
+    mz: Mozambique
+    zm: Zambia
+    zw: Zimbabwe
+    mw: Malawi
+    na: Namibia
+    bw: Botswana
+    ao: Angola
+    ke: Kenya
+    tz: Tanzania
+    ug: Uganda
+    rw: Rwanda
+    ng: Nigeria
+    gh: Ghana
+    cd: DR Congo
+    other: Other
   asset: What needs surveying
   assets:
     - Pipeline

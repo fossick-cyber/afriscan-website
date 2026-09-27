@@ -121,7 +121,23 @@ form:
     - Financiador ou monitor independente
     - Outra
   country: País
-  countries: [Moçambique, África do Sul, Nigéria, Outro]
+  countries:        # Cada país com site (a chave de data/countries.yaml) e `other`; o formulário agrupa-os por região
+    za: África do Sul
+    mz: Moçambique
+    zm: Zâmbia
+    zw: Zimbabué
+    mw: Malawi
+    na: Namíbia
+    bw: Botsuana
+    ao: Angola
+    ke: Quénia
+    tz: Tanzânia
+    ug: Uganda
+    rw: Ruanda
+    ng: Nigéria
+    gh: Gana
+    cd: RD Congo
+    other: Outro
   asset: O que precisa de levantar
   assets:
     - Gasoduto ou oleoduto

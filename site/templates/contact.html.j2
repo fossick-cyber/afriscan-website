@@ -28,7 +28,7 @@
         <legend>{{ f.legend_job }}</legend>
         <div class="form-grid">
           <div class="field"><label for="f-country">{{ f.country }} <span class="req" aria-hidden="true">*</span></label>
-            <select id="f-country" name="country" required><option value="">{{ f.choose }}</option>{% set here = (loc.country or '')|lower %}{% for o in f.countries %}{% set code = ['mz','za','ng','other'][loop.index0] %}<option data-code="{{ code }}"{% if code == here %} selected{% endif %}>{{ o }}</option>{% endfor %}</select></div>
+            <select id="f-country" name="country" required><option value="">{{ f.choose }}</option>{% set here = (loc.country or '')|lower %}{% set fc = form_countries() %}{% for g in fc.groups %}<optgroup label="{{ g.title }}">{% for o in g.options %}<option data-code="{{ o.code }}"{% if o.code == here %} selected{% endif %}>{{ o.name }}</option>{% endfor %}</optgroup>{% endfor %}<option data-code="other">{{ fc.other }}</option></select></div>
           <div class="field"><label for="f-asset">{{ f.asset }} <span class="req" aria-hidden="true">*</span></label>
             <select id="f-asset" name="asset" required><option value="">{{ f.choose }}</option>{% for o in f.assets %}<option>{{ o }}</option>{% endfor %}</select></div>
           <div class="field"><label for="f-size">{{ f.size }}</label><input id="f-size" name="size" inputmode="decimal"></div>

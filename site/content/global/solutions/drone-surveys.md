@@ -2,7 +2,7 @@
 key: drone-surveys
 template: solution
 title: Drone Orthophoto & Elevation Surveys | AfriScan
-description: Drone orthophotos, elevation models, point clouds and volumes for the stretches that need detail, subject to the approvals and security clearances each job requires.
+description: Drone orthophotos, elevation models, point clouds and volumes where detail matters, subject to the approvals and security clearances each job requires.
 h1: Drone orthophotos, elevation models and volumes where the detail matters
 eyebrow: Drone, imagery and custom detection
 lead: Satellite screening covers the whole route or site. Drone surveys then capture the stretches that need a closer look, a dated cut-off record, or a measurement of earthworks and stockpiles. AfriScan is Afridrone’s land and corridor monitoring service; Afridrone flies the drone work, subject to the approvals and security clearances each job requires.
