@@ -139,7 +139,7 @@ def dist_refusal(dist):
     d = Path(dist).resolve()
     for cd in sorted(checkout_dists()):
         if d == cd or cd in d.parents:
-            return f"{d} is inside {cd}, a checkout's dist/"
+            return f"{d} is the dist/ of a checkout" if d == cd else f"{d} is inside {cd}, a checkout's dist/"
     for anc in (d, *d.parents):
         if anc.name == "dist" and (anc.parent / "site" / "build.py").exists():
             return f"{d} is inside {anc}, the dist/ of a checkout at {anc.parent}"
