@@ -2,7 +2,7 @@
 key: oil-gas
 template: industry
 title: Pipeline Right-of-Way Encroachment Mapping | AfriScan
-description: Structures, excavations and change mapped along pipeline rights of way and at LNG and gas sites, from satellite and drone imagery. Reviewed by a person.
+description: Structures, excavations and change along pipeline rights of way, cross-border lines, LNG host areas and gas sites, from satellite and drone imagery.
 h1: Secure your pipelines, rights of way and gas sites from the air
 crumb: Oil & gas
 eyebrow: Oil & gas
@@ -155,7 +155,7 @@ The comparison is an input to route selection, not a full alternatives assessmen
 ::::col
 Long-distance pipelines carrying crude, refined products or gas often run through several countries, each with its own protection strip, servitude or right-of-way width, land law and working language. We survey the line as one register and measure each segment against the widths that apply in its country, so your land and integrity teams see every segment side by side in the same table, and each country team receives the part it answers for.
 
-**New build.** Before the route is fixed, we compare alignment options by the structures they would affect. Once it is fixed, a dated baseline of the corridor records what stood along it before construction, and where structures are affected, a dated register supports the census and asset inventory for the resettlement cut-off date. During construction, re-surveys flag new structures along the corridor, new access tracks are mapped between dates, and dated drone orthophotos of camps, laydown areas and crossings show earthworks progress, subject to the permits each job requires.
+**New build.** Before the route is fixed, we compare alignment options by the structures they would affect. Once it is fixed, a dated baseline of the corridor records what stood along it before construction, and where structures are affected, a dated register supports the census and asset inventory for the resettlement cut-off date. During construction, re-surveys flag new structures along the corridor, new access tracks are mapped between dates, and dated drone orthophotos of camps, laydown areas and crossings show earthworks progress, subject to the approvals and security clearances each job requires.
 
 **Rehabilitation and replacement.** When a line built decades ago is rehabilitated, looped or partly replaced, its right of way has often filled in since. A current register shows which structures now stand inside the strip the works will need. The imagery history of the corridor shows roughly when the land around the line changed, where the archive allows, and where a replacement section leaves the old alignment, the options are compared by the structures they affect.
 ::::
@@ -336,7 +336,7 @@ Where flown: a georeferenced orthophoto, surface and terrain elevation models, a
 :::
 ::::
 
-::::section{id="countries" tone="alt" eyebrow="Mozambique, South Africa, Nigeria" title="The widths and rules your register is measured against" lead="Satellite-based surveys are available in all three countries with no site visit and no drone flight. This is a summary of public rules for orientation, as of 26 September 2026, not legal advice; the sources are linked."}
+::::section{id="countries" tone="alt" eyebrow="Mozambique, South Africa, Nigeria" title="The widths and rules your register is measured against" lead="Satellite-based surveys need no site visit and no drone flight, and are offered through our country sites across Africa. This is a summary of public rules for orientation, as of 26 September 2026, not legal advice; the sources are linked."}
 | Instrument | What it sets |
 |---|---|
 | **Mozambique**<br>[Lei n.º 19/97, de 1 de Outubro (Lei de Terras)](https://www.pdul.gov.mz/content/download/486/2635/file/Lei%20de%20Terras.pdf), arts. 8(g) and 9 | A partial protection zone of 50 m on each side of oil, gas, water, electricity and telecommunications conduits, where no land-use right (DUAT) can be acquired, only special licences |

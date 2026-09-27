@@ -2,7 +2,7 @@
 key: rail-roads
 template: industry
 title: Road & Rail Reserve Encroachment Mapping | AfriScan
-description: Structures mapped against road and rail reserves and building restriction areas, dated baselines for new alignments, and construction progress from the air.
+description: Structures in road and rail reserves, informal crossings and works beside freight lines, and dated baselines for new alignments, mapped from the air.
 h1: Secure road and rail reserves from the air
 crumb: Rail & roads
 eyebrow: Rail & roads
@@ -125,7 +125,7 @@ Satellites and drones cannot see cable or rail theft, vandalism or who was on th
 ::::col
 Works next to a railway can affect it long before anyone reports them: a borrow pit cut near the embankment, a new building across a drainage line, a trench for another utility through the reserve, spoil tipped at the edge of the formation. Fresh digging, spoil heaps, trenches and earthworks on or near the reserve are flagged between surveys, with their chainage and distance to the line, so track and reserve teams know where to check first. Heavy plant visible at a site is recorded on each survey date as a snapshot of activity on the land, never as tracking.
 
-Where a flagged stretch needs detail, a drone survey captures it, subject to the permits and authorisations each job requires. Drainage crossings and erosion-prone stretches can be screened from elevation data alongside, as described under [terrain and flood](key:rail-roads#terrain-flood).
+Where a flagged stretch needs detail, a drone survey captures it, subject to the approvals and security clearances each job requires. Drainage crossings and erosion-prone stretches can be screened from elevation data alongside, as described under [terrain and flood](key:rail-roads#terrain-flood).
 
 This is screening of what is visible at the surface. It is not an engineering assessment of the track, the formation or the embankments, and it does not measure ground movement.
 ::::
@@ -137,7 +137,7 @@ This is screening of what is visible at the surface. It is not an engineering as
 - New buildings and walls beside the reserve, confirmed by a reviewer
 - Heavy plant visible at works on each survey date
 - Before-and-after views of each flagged site
-- Drone checks of flagged stretches, subject to permits
+- Drone checks of flagged stretches, subject to approvals
 :::
 
 :::solutions{keys="excavation-mapping,drone-surveys" cols="1"}

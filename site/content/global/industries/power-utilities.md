@@ -2,11 +2,11 @@
 key: power-utilities
 template: industry
 title: Power-Line Servitude Encroachment Mapping | AfriScan
-description: Structures, vegetation and change in transmission and distribution servitudes and around bulk water pipelines and dams, mapped from satellite and drone imagery.
+description: Structures, vegetation and change in line servitudes, baselines for new lines and interconnectors, and bulk water pipelines and dams, mapped from the air.
 h1: Secure your line servitudes and water infrastructure from the air
 crumb: Power & utilities
 eyebrow: Power & utilities
-lead: A register of the structures inside each servitude and wayleave, measured to the line axis, with vegetation change, fire near the line and fresh digging near towers flagged between surveys. For bulk water pipelines and dams, the same register along the pipeline and inside the zones your engineers define. A person reviews every result before it reaches you.
+lead: A register of the structures inside each servitude and wayleave, measured to the line axis, with vegetation change, fire near the line and fresh digging near towers flagged between surveys. For new lines and cross-border interconnectors, a route baseline and a cut-off-date register; for bulk water pipelines and dams, the same register along the pipeline and inside the zones your engineers define. A person reviews every result before it reaches you.
 buttons:
   - {label: Send us your line or pipeline route, intent: proposal}
   - {label: How the method works, key: methodology}
@@ -211,7 +211,7 @@ Building a line opens the land along it: access roads, tower-site platforms, str
 
 Clearing inside and outside the servitude is compared between dates from Copernicus Sentinel data, and once the line is energised, revegetation of camps, access roads and the restored working areas is tracked between dates. Together these give the owner and its lenders' advisers dated evidence of the works between site visits. The evidence supports audits and environmental and social reporting; it does not prove compliance, and it is not a certified survey or a quantity surveyor's valuation.
 
-Drone surveys are subject to the permits and authorisations each job requires. Where the contractor or the owner already flies the works, we run the same comparisons on that imagery.
+Drone surveys are subject to the approvals and security clearances each job requires. Where the contractor or the owner already flies the works, we run the same comparisons on that imagery.
 ::::
 ::::col
 ### What you receive
@@ -325,7 +325,7 @@ A PDF in English or Portuguese; GeoPackage, GeoJSON, KMZ and Shapefile layers fo
 :::
 ::::
 
-::::section{id="countries" eyebrow="Mozambique, South Africa, Nigeria" title="Servitude widths and rules your register is measured against" lead="Satellite-based surveys are available in all three countries with no site visit and no drone flight. A summary of public rules for orientation, as of 26 September 2026, not legal advice; the sources are linked."}
+::::section{id="countries" eyebrow="Mozambique, South Africa, Nigeria" title="Servitude widths and rules your register is measured against" lead="Satellite-based surveys need no site visit and no drone flight, and are offered through our country sites across Africa. A summary of public rules for orientation, as of 26 September 2026, not legal advice; the sources are linked."}
 | Instrument | What it sets |
 |---|---|
 | **Mozambique**<br>[Lei n.º 12/2022, de 11 de Julho (Lei de Electricidade)](https://arene.org.mz/wp-content/uploads/2022/08/Lei-de-Electricidade-2022.pdf), art. 43 | An administrative servitude of up to 50 m from the line axis, with a safety zone inside it, to be registered in the land cadastre and the property register; no compensation is owed to those who acquired their rights after the line was built (art. 43(10)) |

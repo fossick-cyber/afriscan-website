@@ -115,7 +115,7 @@ After each survey, your team receives a notice listing the stretches where the g
 
 Where you already know works are planned along the route, such as a road widening, another utility's trench or a new development beside the reserve, dated imagery before and after the works shows where the ground was opened and what was built. Imagery is captured on particular dates, so the before and after views depend on when new imagery of your route is available; a new capture can be requested, but its date is never guaranteed.
 
-Where a flagged stretch needs more detail, drone checks capture it, subject to the permits and authorisations each job requires.
+Where a flagged stretch needs more detail, drone checks capture it, subject to the approvals and security clearances each job requires.
 ::::
 ::::col
 :::callout{tone="scope" title="What imagery can and cannot see"}
@@ -126,7 +126,7 @@ Satellites and drones see the surface: fresh digging, spoil, trenches, new struc
 - A flagged-site list after each survey, by chainage
 - Before-and-after views of each flagged site
 - Before-and-after checks along planned works
-- Drone checks of flagged stretches, subject to permits
+- Drone checks of flagged stretches, subject to approvals
 - An interactive map file for field teams
 :::
 ::::
@@ -150,7 +150,7 @@ The comparison is an input to route selection. The terrain work is screening, no
 - Slope, erosion and drainage-crossing screening per stretch
 - Flood-exposure screening from past satellite water records
 - A dated baseline register of the chosen route
-- Construction progress from dated drone surveys, subject to permits
+- Construction progress from dated drone surveys, subject to approvals
 - Revegetation of the reinstated route, tracked between dates
 :::
 
@@ -196,7 +196,7 @@ Structure counts and screening results for each option, for your route selection
 A PDF report in English or Portuguese; GeoPackage, GeoJSON, KMZ and Shapefile layers for QGIS, ArcGIS and Google Earth; and a self-contained interactive map file.
 :::
 :::card{title="Drone outputs" icon="drone"}
-Where flown: a georeferenced orthophoto, surface and terrain elevation models and a processing quality report, subject to the permits each job requires.
+Where flown: a georeferenced orthophoto, surface and terrain elevation models and a processing quality report, subject to the approvals and security clearances each job requires.
 :::
 :::
 
@@ -217,7 +217,7 @@ Where flown: a georeferenced orthophoto, surface and terrain elevation models an
 
 Where a route has to move for a road, or a structure stands on a reserve without permission, when things appeared on the ground can matter. A dated register records what stood where on the imagery date; it does not decide who is responsible or who pays.
 
-Satellite-based surveys need no site visit and no drone flight, and are offered through our country sites across Africa. Drone surveys are subject to the permits and authorisations each job requires, and Afridrone is working towards the operator approvals each country requires. The rules are compared in [drone survey rules by country](/drone-regulations) and summarised on [where we work](/countries).
+Satellite-based surveys need no site visit and no drone flight, and are offered through our country sites across Africa. Drone surveys are subject to the approvals and security clearances each job requires, and Afridrone is working towards the operator approvals each country requires. The rules are compared in [drone survey rules by country](/drone-regulations) and summarised on [where we work](/countries).
 
 :::country-sites{match="page"}
 :::
@@ -232,7 +232,7 @@ You send the route and tell us what the record is for. We agree the bands, the d
 Structures, excavations and tracks are mapped along the whole route from dated satellite imagery, open building datasets or imagery you already hold.
 :::
 :::step{title="Check up close"}
-Drone surveys capture the stretches that need detail, subject to the permits and authorisations each job requires.
+Drone surveys capture the stretches that need detail, subject to the approvals and security clearances each job requires.
 :::
 :::step{title="Review and deliver"}
 A person checks every automatic result, then each feature is measured, banded and listed, and the files are delivered.

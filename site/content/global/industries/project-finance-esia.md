@@ -2,11 +2,11 @@
 key: project-finance-esia
 template: industry
 title: Resettlement Baselines & Remote E&S Monitoring | AfriScan
-description: Dated, reviewed structure registers for cut-off dates, ESIA and RAP baselines, and evidence between site visits, for lenders, monitors and consultancies.
+description: Dated, reviewed structure registers for cut-off dates, ESIA and RAP baselines and periodic monitoring, for DFIs, lenders, monitors and consultancies.
 h1: Dated land evidence for project finance, ESIA and resettlement
 crumb: Project finance & ESIA
 eyebrow: Project finance & ESIA
-lead: A dated, reviewed record of the structures in a project footprint on the cut-off date, baselines your ESIA and RAP teams can build on, and dated evidence of what changed between site visits. Built to support your census, your monitoring plan and your legal and community processes, never to replace them.
+lead: A dated, reviewed record of the structures in a project footprint on the cut-off date, baselines your ESIA and RAP teams can build on, and dated evidence of what changed in each monitoring period and between site visits. Built to support your census, your monitoring plan and your legal and community processes, never to replace them.
 buttons:
   - {label: Tell us about your project footprint, intent: proposal}
   - {label: How the method works, key: methodology}
@@ -191,7 +191,7 @@ The borrower or its consultants commission the work and decide what to share. In
 | Whether structures have appeared in the footprint since the cut-off date | A re-survey against the cut-off register, with new structures flagged and confirmed by a reviewer |
 | Whether construction stayed inside the approved footprint | Clearing and construction footprints compared between dates, and structures and activity inside the no-go buffers you define |
 | Progress of rehabilitation and revegetation | Vegetation cover on rehabilitated areas, tracked between dates |
-| Progress at resettlement sites | Dated drone orthophotos, subject to permits, or dated satellite scenes of each site |
+| Progress at resettlement sites | Dated drone orthophotos, subject to approvals, or dated satellite scenes of each site |
 | Settlement growth around the project | Built-up land trends around the footprint, camps and access roads |
 | Checks on single grievances | A location sheet with every dated image of the plot |
 | A record that can be shared and checked later | An evidence pack for each period, with file fingerprints and an independent timestamp |
