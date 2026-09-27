@@ -14,7 +14,7 @@ nav_blurb: ZCARs Part 18, ZCAA's 2026 circulars and a client checklist
 summary: The operator certificate, the Air Services Permit, aircraft and pilot approvals, the per-operation authorisation and Air Force clearance, protected places and an 11-point checklist.
 icon: drone
 eyebrow: Compliance · Zambia
-lead: "Drone operations in Zambia are regulated by the Zambia Civil Aviation Authority (ZCAA) under the Zambia Civil Aviation Requirements, Part 18. A company flying survey work needs an RPAS Operator Certificate and, for commercial work, an Air Services Permit; every drone and every pilot needs its own approval; and ZCAA guidance adds, for each operation, a special authorisation, a ZCAA inspector on site and Zambia Air Force airspace clearance. This guide sets out the public rules and what to check before a drone team works on your wayleave, right of way or licence area. Last reviewed 27 September 2026; it is not legal advice."
+lead: "Drone operations in Zambia are regulated by the Zambia Civil Aviation Authority (ZCAA) under the Zambia Civil Aviation Requirements, Part 18. A company flying survey work needs an RPAS Operator Certificate and, for commercial work, an Air Services Permit; every drone and every pilot needs its own approval; and ZCAA guidance adds, for each operation, a special authorisation, a ZCAA inspector on site and Zambia Air Force airspace clearance. This guide sets out the public rules and what to check before a drone team works on your wayleave, right of way or licence area. Last reviewed 27 September 2026."
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: Checklist for clients, href: "#checklist"}
@@ -93,7 +93,7 @@ How ZICTA applies its approval rule to drone radios in practice is a question to
 ::::col
 **Who needs one.** Part 18 requires an ROC "in the case of commercial, corporate and non-profit operations" (18.4.1(a)(1)). A corporate operation is "a non-commercial operation or use of RPAS by an entity for professional or aerial work as an aid to the conduct of business of that entity" (18.1.1(h)), so a utility or a mine that flies its own drones needs one too. Only private flying escapes it, and private use is limited to reduced line of sight with a Class 1A or 1B drone (18.1.4).
 
-**What the application contains.** The registration and Letter of Approval of each drone, an original Operations Manual and the prescribed fee; ZCAA's list of requirements also names a valid Air Services Permit ([ZCAA ROC guidance](https://www.caa.co.zm/api/admin/rpas/download/14)). Certification runs in five phases, so allow for it in any programme that depends on a new certificate.
+**What the application contains.** The registration and Letter of Approval of each drone, and an original Operations Manual; ZCAA's list of requirements also names a valid Air Services Permit ([ZCAA ROC guidance](https://www.caa.co.zm/api/admin/rpas/download/14)). Certification runs in five phases, so allow for it in any programme that depends on a new certificate.
 
 **How long it lasts.** One year. Renewal is due at least 60 days before expiry, the certificate cannot be transferred (18.4.10), and no drone may be listed on more than one ROC.
 

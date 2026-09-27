@@ -141,14 +141,11 @@ The line, pipeline or reserve route, or the licence-area boundary, with the widt
 :::step{title="Satellite screening"}
 Structures, excavations and cleared ground are mapped along the whole route from dated satellite imagery, open building datasets or the orthophotos you already hold.
 :::
-:::step{title="A person reviews every result"}
-A reviewer confirms, corrects and adds to every automatic result, and each structure is measured, banded and rated.
-:::
 :::step{title="Drone detail where needed"}
 Stretches that need more detail than satellite imagery shows are flown, subject to the ZCAA approvals and Zambia Air Force clearance each operation requires.
 :::
-:::step{title="Report and GIS files"}
-The PDF report and GIS layers go to the contacts you name. Re-surveys follow the schedule you set.
+:::step{title="A person reviews every result"}
+A reviewer confirms, corrects and adds to every automatic result, and each structure is measured, banded and rated. The PDF report and GIS layers go to the contacts you name, and re-surveys follow the schedule you set.
 :::
 :::
 

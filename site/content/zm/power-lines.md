@@ -91,7 +91,7 @@ The Regulations' worked examples put three parallel 132 kV lines at 57.0 m and t
 ::::col
 ### In a recognised forestry area (Table 2.4)
 
-| Voltage | Each side of the centreline | Total |
+| Voltage | Each side | Total |
 |---|---|---|
 | 11 and 33 kV | 25 m | 50 m |
 | 66 and 88 kV | 33 m | 66 m |

@@ -55,7 +55,7 @@ Other assets use other words. A pipeline has a right of way, which the Energy Re
 
 The [Electricity (Wayleave and Clearances) Regulations 2026](https://www.erb.org.zm/wp-content/uploads/Electricity-Wayleave-and-Clearances-Regulation-2026.pdf), SI No. 2 of 2026, were made under s.52 of the Electricity Act, signed by the Minister of Energy on 23 December 2025 and gazetted on 2 January 2026. They cover lines of 0.4 to 400 kV and "the entire Zambian electricity supply industry".
 
-| Voltage | Minimum wayleave, one line (Table 2.1) | In a recognised forestry area (Table 2.4) |
+| Voltage | One line (Table 2.1) | Forestry area (Table 2.4) |
 |---|---|---|
 | 11 kV | 10 m urban, 15 m rural | 50 m |
 | 22 kV | 22 m | |
