@@ -1,0 +1,167 @@
+# Angola: the instruments the drone-law pages (/ao/drone-regulations and /ao/pt/lei-de-drones) and the
+# other /ao/ pages rely on. Facts ONLY from regional/ao.FINAL.md (verified 2026-09-27 against the
+# Diário da República scans and the regulators' own sites). Titles use the Diário da República form, so
+# the same rows read correctly on the English and Portuguese pages; `note` is English and `note_pt`
+# replaces it on /ao/pt/ pages (build.py law_for).
+# Left out on purpose: every fee and fine amount (owner rule 1: the ANAC fee schedule is cited for the
+# kinds of RPA lines it contains, never for amounts); the technical rule behind the RPA fee lines, which
+# ANAC does not publish [unverified]; which "autoridade competente" authorises aerophotogrammetric
+# equipment (LAC art. 155(1)(d)) [unverified]; any Defence or security clearance instrument [none found];
+# DP 117/16 on realojamento [number, date and text unverified]; Lei 8/24 (brief: law page only, and not
+# needed by these pages); the ANPG list contents [not readable].
+country_name: Angola
+country_name_pt: Angola
+last_reviewed: 2026-09-27
+regulator:
+  name: Autoridade Nacional da Aviação Civil (ANAC)
+  url: https://www.anac.ao/ao/legislacao-e-regulamentacao/leis/
+summary:
+  regulator: Autoridade Nacional da Aviação Civil (ANAC), which took over INAVIC's powers in 2021; a special ANAC authorisation for every unmanned flight
+  instruments: Lei da Aviação Civil (Lei n.º 14/19, altered and republished by Lei n.º 31/21), art. 16.º-A; Lei n.º 28/21 (ANAC)
+instruments:
+  - id: lei-31-21
+    title: Lei n.º 31/21, de 20 de Dezembro (altera e republica a Lei n.º 14/19, Lei da Aviação Civil)
+    identifier: DR I Série n.º 238
+    date: 2021-12-20
+    url: https://doc.anac.ao/share/s/neWfA1YVT4-WGO9cBmuGsg
+    last_checked: 2026-09-27
+    note: "Special ANAC authorisation for any aircraft able to fly without a pilot (art. 16.º-A); ANAC licenses and controls unmanned aircraft (art. 11(1)(ii)); specialised aerial services, including aerial photography, photogrammetry and topography (arts. 54–55); compulsory insurance (art. 122); aerophotogrammetric equipment (art. 155(1)(d)); infractions (art. 156(2)(b), (k), (l))."
+    note_pt: "Autorização especial da ANAC para qualquer aeronave capaz de navegar sem piloto (art. 16.º-A); licenciamento e controlo dos sistemas de aeronaves não tripuladas (art. 11.º, n.º 1, al. ii)); serviços aéreos especializados, incluindo aerofotografia, aerofotogrametria e aerotopografia (arts. 54.º e 55.º); seguro obrigatório (art. 122.º); equipamento aerofotogramétrico (art. 155.º, n.º 1, al. d)); infracções (art. 156.º, n.º 2, als. b), k) e l))."
+  - id: lei-28-21
+    title: Lei n.º 28/21, de 25 de Outubro (Lei da Autoridade Nacional da Aviação Civil)
+    identifier: DR I Série n.º 202
+    date: 2021-10-25
+    url: https://doc.anac.ao/share/s/_O1uG0TFSm2P4qc6D-tKCg
+    last_checked: 2026-09-27
+    note: "Civil operation of unmanned aircraft is subject to ANAC licensing (art. 37(2)(f)); ANAC authorises aerial work by operators (art. 37(5)(f)); ANAC takes over INAVIC's powers (arts. 68 and 72)."
+    note_pt: "A operação civil de aeronaves não tripuladas está sujeita ao licenciamento da ANAC (art. 37.º, n.º 2, al. f)); a ANAC autoriza o trabalho aéreo dos operadores (art. 37.º, n.º 5, al. f)); a ANAC sucede ao INAVIC (arts. 68.º e 72.º)."
+  - id: anac-taxas-2023
+    title: Regulamento de Taxas da Autoridade Nacional da Aviação Civil
+    identifier: DR II Série n.º 7, pp. 352–358
+    date: 2023-01-11
+    url: https://doc.anac.ao/share/s/uYJ4VC35S66DfDW8i5WtYw
+    last_checked: 2026-09-27
+    note: "Homologation lines for RPAs (block 9.3: registration, matrícula and airworthiness certificates, inspections, RPA pilot licences, pilot-training certificates) and generic aerial-work lines (5.16, 5.19, 5.27.1). This site quotes no amounts."
+    note_pt: "Linhas de homologação de RPA (bloco 9.3: registo, certificados de matrícula e de navegabilidade, inspecções, licenças de piloto de RPA, certificados de treino de pilotos) e linhas genéricas de trabalho aéreo (5.16, 5.19, 5.27.1). Este site não indica valores."
+  - id: anac-cp-003-2026
+    title: ANAC, Consulta Pública n.º 003/2026, Projecto de Regulação de Aviação Desportiva
+    identifier: Consultation 29/05/2026 to 13/06/2026 (closed)
+    identifier_pt: Consulta de 29/05/2026 a 13/06/2026 (fechada)
+    date: 2026-05-29
+    url: https://www.anac.ao/ao/consulta-publica/consultas-em-curso/consulta-publica-n-003-2026-projecto-de-regulacao-de-aviacao-desportiva/
+    last_checked: 2026-09-27
+    note: "A draft, not in force: model aircraft (art. 2(1)(a)), where they may not fly (art. 106) and the specific authorisation for any non-sport use (art. 107). Adoption not confirmed on 27 September 2026."
+    note_pt: "Um projecto, não está em vigor: aeromodelos (art. 2.º, n.º 1, al. a)), onde não podem voar (art. 106.º) e a autorização específica para qualquer utilização não desportiva (art. 107.º). Aprovação não confirmada a 27 de Setembro de 2026."
+  - id: dp-115-21
+    title: Decreto Presidencial n.º 115/21, de 4 de Maio (Estatuto Orgânico do IGCA)
+    identifier: DR I Série n.º 79
+    date: 2021-05-04
+    url: https://faolex.fao.org/docs/pdf/ang203438.pdf
+    last_checked: 2026-09-27
+    note: "IGCA grants alvarás for cadastre, cartography, geodesy, topography and GIS work and homologates geographic information (art. 6(1)(s), (u)); it supervises private cartography and photogrammetry (art. 14(2)(d))."
+    note_pt: "O IGCA concede alvarás para o cadastro, a cartografia, a geodesia, a topografia e os SIG e homologa a informação geográfica (art. 6.º, n.º 1, als. s) e u)); supervisiona a cartografia e a fotogrametria privadas (art. 14.º, n.º 2, al. d))."
+  - id: lei-22-11
+    title: Lei n.º 22/11, de 17 de Junho (Lei da Protecção de Dados Pessoais)
+    identifier: DR I Série n.º 114
+    date: 2011-06-17
+    url: https://apd.ao/fotos/frontend_1/editor2/110617_lei_22-11_de_17_junho-proteccao_dados_pessoais.pdf
+    last_checked: 2026-09-27
+    note: "Prior notification to the APD or its authorisation (art. 35); transfers abroad (arts. 33–34); security (arts. 30–31)."
+    note_pt: "Notificação prévia à APD ou autorização desta (art. 35.º); transferências para o estrangeiro (arts. 33.º e 34.º); segurança (arts. 30.º e 31.º)."
+  - id: apd-circular-02-2024
+    title: APD, Circular n.º 02/APD/2024
+    identifier: Agência de Protecção de Dados
+    date: 2024-10-25
+    url: https://apd.ao/fotos/frontend_1/editor2/circular_002.pdf
+    last_checked: 2026-09-27
+    note: Notify the APD of a personal-data breach as soon as it is known.
+    note_pt: Notificação à APD de uma violação de dados pessoais logo que dela se tome conhecimento.
+  - id: lei-2-20
+    title: Lei n.º 2/20, de 22 de Janeiro
+    identifier: DR I Série n.º 7
+    date: 2020-01-22
+    url: https://apd.ao/fotos/frontend_1/editor2/200222_lei_2-20_de_22_janeiro-videovigilancia.pdf
+    last_checked: 2026-09-27
+    note: "Image-capture systems used for public-security reasons, fixed or mobile (arts. 2(1) and 3(1)); in strictly private places, capture may not cover neighbouring properties (art. 2(4))."
+    note_pt: "Sistemas de captação de imagens por razões de segurança pública, fixos ou móveis (arts. 2.º, n.º 1, e 3.º, n.º 1); em locais estritamente privados, a captação não pode abranger propriedades limítrofes (art. 2.º, n.º 4)."
+  - id: lei-9-04
+    title: Lei n.º 9/04, de 9 de Novembro (Lei de Terras)
+    identifier: FAOLEX text
+    identifier_pt: Texto no FAOLEX
+    date: 2004-11-09
+    url: https://faolex.fao.org/docs/pdf/ang49570.pdf
+    last_checked: 2026-09-27
+    note: "Reserved land (art. 27): the 30 m strip on each side of electricity, water, telecom, oil and gas installations and conductors (n.º 7(g)), road and rail strips, airports and military sites (100 m) and the 2 km land border; expropriation or servitude with fair compensation (n.º 9–10); rural communities (art. 33)."
+    note_pt: "Terrenos reservados (art. 27.º): a faixa de 30 m de cada lado das instalações e condutores de electricidade, água, telecomunicações, petróleo e gás (n.º 7, al. g)), faixas de estradas e caminhos-de-ferro, aeroportos e instalações militares (100 m) e a fronteira terrestre (2 km); expropriação ou servidão com justa indemnização (n.ºs 9 e 10); comunidades rurais (art. 33.º)."
+  - id: codigo-mineiro
+    title: Lei n.º 31/11, de 23 de Setembro (Código Mineiro)
+    identifier: Portal do Governo de Angola
+    date: 2011-09-23
+    url: https://c2a.portais.gov.ao/uploads/Codigo_Mineiro_de_Angola_2011_1dfcae949b.pdf
+    last_checked: 2026-09-27
+    note: "Restricted zone up to 1,000 m (art. 200) and protection zone up to 5 km (art. 202); access only after formal notice to the right holder and the local police (art. 201(2)); no residence in restricted zones and residential regrouping (art. 207); community consultation and realojamento (arts. 16–17)."
+    note_pt: "Zona restrita até 1000 m (art. 200.º) e zona de protecção até 5 km (art. 202.º); acesso só após comunicação formal ao titular e às autoridades policiais locais (art. 201.º, n.º 2); proibição de residência nas zonas restritas e reagrupamento residencial (art. 207.º); consulta às comunidades e realojamento (arts. 16.º e 17.º)."
+  - id: decreto-120-08
+    title: Decreto n.º 120/08, de 22 de Dezembro (acesso a terras para operações petrolíferas)
+    identifier: DR I Série n.º 240
+    date: 2008-12-22
+    url: https://faolex.fao.org/docs/pdf/ang119457.pdf
+    last_checked: 2026-09-27
+    note: "Before a prospecting licence or bid round: an assessment of the area's social and population structure and of land-rights holders, updated before exploration and before development (art. 11); pipelines and servitudes (arts. 11(5) and 28); notice to landholders (art. 29(2))."
+    note_pt: "Antes da licença de prospecção ou do concurso: avaliação da estrutura social e populacional da área e dos titulares de direitos fundiários, actualizada antes da pesquisa e antes do desenvolvimento (art. 11.º); oleodutos, gasodutos e servidões (arts. 11.º, n.º 5, e 28.º); aviso aos titulares (art. 29.º, n.º 2)."
+  - id: lei-1-21
+    title: Lei n.º 1/21, de 7 de Janeiro (Lei de Expropriação por Utilidade Pública)
+    identifier: DR I Série n.º 4
+    date: 2021-01-07
+    url: https://faolex.fao.org/docs/pdf/ang201252.pdf
+    last_checked: 2026-09-27
+    note: "Expropriation by zones or alignments: improvements made between the declaration of public utility and possession count in the compensation (art. 33); servitudes and realojamento are outside its scope (art. 2(2)–(3))."
+    note_pt: "Expropriação por zonas ou alinhamentos: as benfeitorias introduzidas entre a declaração de utilidade pública e a posse contam na indemnização (art. 33.º); as servidões e o realojamento ficam fora do seu âmbito (art. 2.º, n.ºs 2 e 3)."
+  - id: lei-27-15
+    title: Lei n.º 27/15 (altera e republica a Lei n.º 14-A/96, de 31 de Maio, Lei Geral de Electricidade)
+    identifier: DR I Série n.º 170
+    date: 2015-12-14
+    url: https://www.irsea.gov.ao/wp-content/uploads/2019/12/Lei-n%C2%BA-27-15-Altera-a-Lei-Geral-de-Electricidade.pdf
+    last_checked: 2026-09-27
+    note: "The concessionaire may constitute servitudes and request expropriation (art. 22(b)) and must pay the compensation due (art. 23(d))."
+    note_pt: "A concessionária pode constituir servidões e requerer a expropriação (art. 22.º, al. b)) e deve pagar as indemnizações devidas (art. 23.º, al. d))."
+  - id: lei-6-25
+    title: Lei n.º 6/25, de 23 de Julho (altera a Lei Geral de Electricidade)
+    identifier: DR I Série n.º 137
+    date: 2025-07-23
+    url: https://irsea.gov.ao/wp-content/uploads/2025/08/Lei-no-6-25-de-23-de-Julho-Altera-a-Lei-no-14-A-de-1996-de-31-de-Maio-Lei-Geral-de-Electricidade-1.pdf
+    last_checked: 2026-09-27
+    note: "Transmission in the national grid and interconnections are exercised as a public-service concession, open to public or private legal persons (new art. 9(5))."
+    note_pt: "O transporte na Rede Nacional de Transporte e as interligações são exercidos em regime de concessão de serviço público, aberta a pessoas colectivas públicas ou privadas (novo art. 9.º, n.º 5)."
+  - id: dp-117-20
+    title: Decreto Presidencial n.º 117/20, de 22 de Abril (Regulamento Geral de Avaliação de Impacte Ambiental e do Procedimento de Licenciamento Ambiental)
+    identifier: DR I Série n.º 54
+    date: 2020-04-22
+    url: https://anrm.gov.ao/wp-content/uploads/2025/08/DP-117-20-de-22-de-Abril-Novo-Regulamento-Geral-de-Avaliacao-de-Impacte-Ambiental-e-do-Procedimento-de-Licenciamento-Ambiental.pdf
+    last_checked: 2026-09-27
+    note: The environmental impact assessment and licensing procedure.
+    note_pt: O procedimento de avaliação de impacte ambiental e de licenciamento ambiental.
+  - id: dp-72-25
+    title: Decreto Presidencial n.º 72/25 (Plano Director do Gás)
+    identifier: DR I Série n.º 53
+    date: 2025-03-21
+    url: https://c2a.portais.gov.ao/uploads/Plano_Director_do_Gas_DP_72_25_Aprovado_d3725c0829.pdf
+    last_checked: 2026-09-27
+    note: "Figure 22 shows a development model for an inland gas transmission pipeline; it is a model, not a route."
+    note_pt: "A Figura 22 mostra um modelo de desenvolvimento de um gasoduto de transporte para o interior; é um modelo, não um traçado."
+  - id: dp-271-20
+    title: Decreto Presidencial n.º 271/20, de 20 de Outubro (Regime Jurídico do Conteúdo Local no Sector Petrolífero)
+    identifier: DR I Série n.º 167
+    date: 2020-10-20
+    url: https://c2a.portais.gov.ao/uploads/12dp_271_20_regime_juridico_conteudo_local_6719699885ff5e777dacbc_53ae2c7ae0.pdf
+    last_checked: 2026-09-27
+    note: "Exclusivity, preference and competition regimes (art. 3(n)–(o)); an Angolan commercial company is one whose share capital is held entirely by Angolan citizens or companies (art. 3(q)); lists defined by ANPG (art. 11)."
+    note_pt: "Regimes de exclusividade, de preferência e de concorrência (art. 3.º, als. n) e o)); sociedade comercial angolana é aquela cujo capital social é detido na totalidade por cidadãos ou sociedades angolanas (art. 3.º, al. q)); listas definidas pela ANPG (art. 11.º)."
+  - id: instrutivo-6-21
+    title: Instrutivo n.º 6/21, de 4 de Novembro (ANPG, Conteúdo Local)
+    identifier: DR II Série n.º 147
+    date: 2021-11-04
+    url: https://c2a.portais.gov.ao/uploads/15instrutivo_conteudo_local_de_4_de_novembro_publicado_48245926261a888d816ba8_fa579201ed.pdf
+    last_checked: 2026-09-27
+    note: "ANPG draws up the lists each year after hearing the competition authority (art. 9(1)), publishes them on its website (arts. 5(f) and 12) and registers and certifies suppliers (art. 5(h))."
+    note_pt: "A ANPG elabora as listas todos os anos, ouvida a Autoridade Reguladora da Concorrência (art. 9.º, n.º 1), publica-as no seu sítio (arts. 5.º, al. f), e 12.º) e regista e certifica os fornecedores (art. 5.º, al. h))."

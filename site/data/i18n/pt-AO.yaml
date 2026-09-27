@@ -1,5 +1,6 @@
-# Textos da interface para /mz/pt/ (português de Moçambique, grafia do Boletim da República, pré-AO).
-# Revisão por um falante nativo moçambicano pendente. Mesmas chaves que en.yaml.
+# Textos da interface para /ao/pt/ (português de Angola, grafia do Diário da República, pré-AO90).
+# Adaptado de pt-MZ.yaml ao uso angolano (monitorização, realojamento, linhas eléctricas, EIAS,
+# caminho-de-ferro). Revisão por um falante nativo angolano pendente. Mesmas chaves que en.yaml.
 lang_name: Português
 skip: Saltar para o conteúdo
 brand_by: by Afridrone
@@ -29,8 +30,8 @@ region:
   current: Está aqui
 
 cta:
-  title: Saiba o que está construído na sua faixa de servidão antes que se torne um conflito.
-  text: Envie-nos o traçado ou o limite do terreno e as distâncias que lhe interessam. Respondemos com o âmbito do trabalho, um plano de imagens e uma proposta escrita.
+  title: Saiba o que está construído na faixa de servidão antes que o problema cresça.
+  text: Envie-nos o traçado ou o limite do terreno e as larguras que lhe interessam. Respondemos com o âmbito do trabalho, um plano de imagens e uma proposta escrita.
   button: Pedir proposta
   secondary: Ver exemplos de resultados
 
@@ -57,7 +58,7 @@ labels:
   written_for: Escrito para
 
 footer:
-  tagline: Monitoria remota de terras para gasodutos, linhas de energia, concessões e locais de projecto.
+  tagline: Monitorização remota de terras para oleodutos, gasodutos, linhas eléctricas, concessões e áreas de projecto.
   review: Uma pessoa revê todos os resultados antes da entrega.
   credits_title: Créditos dos dados
   credits: "Contornos de edifícios: Google Open Buildings (CC BY 4.0), Microsoft Building Footprints (CDLA-Permissive-2.0) e © contribuidores do OpenStreetMap (ODbL). Os trabalhos de vegetação e cobertura do solo utilizam dados Copernicus Sentinel. A fonte de cada imagem é indicada junto da mesma."
@@ -71,7 +72,7 @@ footer:
   afridrone: Afridrone, serviços de drone
   contact: Pedir proposta
   rights: Todos os direitos reservados.
-  drones: Os levantamentos por drone estão sujeitos às licenças e autorizações que cada trabalho exige.
+  drones: Os levantamentos com drone estão sujeitos às autorizações exigidas para cada operação.
 
 law:
   as_of: "Situação a {date}"
@@ -82,7 +83,7 @@ law:
   date: Data
   checked: Verificado em
   last_reviewed: Última revisão
-  drone_note: Os levantamentos por drone estão sujeitos às licenças e autorizações que cada trabalho exige. O trabalho feito a partir de imagens de satélite não envolve voos de drone.
+  drone_note: Os levantamentos com drone estão sujeitos às autorizações exigidas para cada operação. O trabalho feito a partir de imagens de satélite não envolve voos.
   compare_title: Regras para drones, em resumo
   regulator: Entidade reguladora
   key_instruments: Principais diplomas
@@ -103,23 +104,24 @@ form:
   org: Empresa ou organização
   role: Função
   roles:
-    - Terras e reassentamento
+    - Terras e realojamento
     - Faixa de servidão ou integridade de activos
-    - HSE, EIA ou desempenho social
+    - HSE, EIAS ou desempenho social
     - Compras ou aprovisionamento
-    - Consultor de EIA ou de reassentamento (PAR)
+    - Consultor de EIAS ou de realojamento
     - Financiador ou monitor independente
     - Outra
   country: País
+  # Same order as the form template's country codes (mz, za, ng, other).
   countries: [Moçambique, África do Sul, Nigéria, Outro]
   asset: O que precisa de levantar
   assets:
-    - Gasoduto ou oleoduto
-    - Linha de energia
-    - Ferrovia ou estrada
+    - Oleoduto ou gasoduto
+    - Linha eléctrica
+    - Caminho-de-ferro ou estrada
     - Concessão mineira
     - Propriedade ou instalação
-    - Área de projecto ou de reassentamento
+    - Área de projecto ou de realojamento
     - Outro
   size: Extensão aproximada (km) ou área (km²)
   when: Quando precisa dos resultados?
@@ -127,12 +129,12 @@ form:
   needs_options:
     - Registo de base das construções
     - Levantamentos periódicos com avisos de alterações
-    - Registo na data de corte (reassentamento)
+    - Registo na data de corte (realojamento)
     - Comparação de traçados ou de locais
-    - Levantamento por drone
+    - Levantamento com drone
     - Outra coisa
   message: Fale-nos do traçado ou do terreno
-  message_hint: Localização ou província, as larguras das faixas a verificar e a data que o registo deve reflectir.
+  message_hint: A província e o município, as larguras das faixas a verificar e a data que o registo deve reflectir.
   heard: Como soube de nós?
   heard_options: [Motor de pesquisa, LinkedIn, Evento, Recomendação, Portal de fornecedores ou concurso, Outro]
   required: obrigatório
@@ -144,14 +146,14 @@ form:
   privacy: O seu pedido chega-nos através do FormSubmit, um serviço de envio de formulários.
   privacy_link: Leia o aviso de privacidade (em inglês).
   honeypot: Deixe este campo em branco
-  subject: Novo pedido AfriScan (PT)
+  subject: Novo pedido AfriScan (Angola, PT)
   next_title: O que acontece a seguir
   next_steps:
     - Respondemos por e-mail para confirmar o que precisamos de si.
-    - Uma breve conversa sobre o traçado ou o terreno, as distâncias que interessam e as imagens.
+    - Uma breve conversa sobre o traçado ou o terreno, as larguras que contam e as imagens.
     - "Uma proposta escrita: âmbito, plano de imagens, método, produtos a entregar e calendário."
   send_title: O que enviar
-  send_text: "O ficheiro do traçado ou do limite (KML, KMZ, GeoJSON, Shapefile, GPX ou GeoPackage), o país e a província, as distâncias a verificar, a data que o registo deve reflectir, os produtos de que precisa e o prazo. Ainda não tem ficheiro? Descreva a localização e desenhamos o traçado consigo."
+  send_text: "O ficheiro do traçado ou do limite (KML, KMZ, GeoJSON, Shapefile, GPX ou GeoPackage), o país e a província, as larguras a verificar, a data que o registo deve reflectir, os produtos de que precisa e o prazo. Ainda não tem ficheiro? Descreva a localização e desenhamos o traçado consigo."
   procurement_title: Equipas de compras
   procurement_text: Envie, com o pedido, o formulário de registo ou de pré-qualificação de fornecedor ou os documentos do concurso. A proposta indica que registos já estão feitos para o seu contrato e quais estão a ser tratados.
 
@@ -189,7 +191,21 @@ samples:
   rating: Classificação
   ratings: {high: Alta, medium: Média, low: Baixa}
 
-# Como cada secção é nomeada em português (menu Países, rodapé, selector, botões dos países).
+# Como cada secção é nomeada em português de Angola (menu Países, rodapé, selector, botões dos países).
+# The build requires the same keys in every i18n file, so this list holds only the sections in
+# locales.yaml. When the other country sections are merged, add their labels here too:
+#   zm: "Zâmbia (em inglês)"
+#   tz: "Tanzânia (em inglês)"
+#   ke: "Quénia (em inglês)"
+#   gh: "Gana (em inglês)"
+#   ug: "Uganda (em inglês)"
+#   cd-fr: "RD Congo (em francês)"
+#   cd-en: "RD Congo (em inglês)"
+#   zw: "Zimbabwe (em inglês)"
+#   mw: "Malawi (em inglês)"
+#   na: "Namíbia (em inglês)"
+#   bw: "Botswana (em inglês)"
+#   rw: "Ruanda (em inglês)"
 sites:
   global: "Global (em inglês)"
   mz-pt: "Moçambique (Português)"
@@ -199,17 +215,21 @@ sites:
   ao-pt: "Angola (Português)"
   ao-en: "Angola (em inglês)"
 
-# Páginas em inglês para onde as páginas portuguesas remetem (menus, rodapé, caminho de navegação,
+# Páginas em inglês para onde as páginas de /ao/pt/ remetem (menus, rodapé, caminho de navegação,
 # cartões). Cada chave é a chave de grupo (key) da página. Uma página inglesa ligada a partir de
-# /mz/pt/ sem entrada aqui faz falhar a construção do site.
+# /ao/pt/ sem entrada aqui faz falhar a construção do site.
 foreign_pages:
   how-it-works: {label: "Como funciona, passo a passo (em inglês)", blurb: "Do ficheiro do traçado a um registo revisto"}
+  how-we-work: {label: "Como trabalhamos (em inglês)", blurb: "Modelos de contratação, o que enviar e o que recebe"}
   methodology: {label: "Metodologia e revisão (em inglês)", blurb: "Fontes, verificações do revisor, regras de distância e limites"}
   imagery-data: {label: "Imagens e fontes de dados (em inglês)", blurb: "Cenas datadas, ortofotomapas de drone, as suas imagens e dados abertos"}
+  results: {label: "Exemplos de resultados (em inglês)", blurb: "O registo, os troços e os ficheiros de um exemplo real"}
   faq: {label: "Perguntas frequentes (em inglês)", blurb: "Datas das imagens, revisão, formatos, autorizações e propostas"}
   about: {label: "Sobre a AfriScan (em inglês)", blurb: "Quem somos, como trabalhamos e a relação com a Afridrone"}
   privacy: {label: "Aviso de privacidade (em inglês)", blurb: "Que dados recolhemos através deste site e do formulário"}
   data-sources: {label: "Fontes de dados e créditos (em inglês)", blurb: "As licenças e os créditos de cada conjunto de dados abertos"}
-  drone-regulations: {label: "Regras de drones por país (em inglês)", blurb: "Moçambique, África do Sul e Nigéria, lado a lado"}
-  countries: {label: "Países (em inglês)", blurb: "Moçambique, África do Sul e Nigéria"}
+  drone-regulations: {label: "Regras de drones por país (em inglês)", blurb: "As regras para drones de cada país, lado a lado"}
+  countries: {label: "Países (em inglês)", blurb: "Os sites de cada país onde trabalhamos"}
   resources: {label: "Recursos (em inglês)", blurb: "Guias, exemplos de resultados, perguntas frequentes e regras por país"}
+  industries: {label: "Sectores (em inglês)", blurb: "Os sectores para que trabalhamos"}
+  solutions: {label: "Soluções (em inglês)", blurb: "Os serviços, agrupados pelo que resolvem"}

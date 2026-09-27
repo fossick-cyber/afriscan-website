@@ -65,3 +65,31 @@ ng:
   label: "Nigeria"
   short: "Nigeria"
   sitemap: sitemap-ng.xml
+ao-pt:
+  content: ao/pt
+  prefix: /ao/pt
+  lang: pt-AO
+  hreflang: [pt-AO]
+  og_locale: pt_PT
+  i18n: pt-AO
+  country: AO
+  country_name: Angola
+  label: "Angola (Português)"
+  short: "Angola · PT"
+  sitemap: sitemap-ao.xml
+  status: live
+  region: Southern
+ao-en:
+  content: ao/en
+  prefix: /ao
+  lang: en-AO
+  hreflang: [en-AO]
+  og_locale: en_GB
+  i18n: en
+  country: AO
+  country_name: Angola
+  label: "Angola (English)"
+  short: "Angola · EN"
+  sitemap: sitemap-ao.xml
+  status: live
+  region: Southern
