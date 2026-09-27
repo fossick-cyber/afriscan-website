@@ -19,7 +19,7 @@ faq:
   - q: Which date can the register reflect?
     a: The date the imagery was captured. For a cut-off date, a lease renewal or the date a line was built, we look for dated scenes close to that date and tell you what exists before you commit. A new capture can be requested when the archive is too old; its date depends on satellite availability and weather.
   - q: We work on a mining lease. Who would we contract with?
-    a: With a qualifying Ghanaian firm, which holds the contract under the Minerals Commission's local procurement list; AfriScan supplies the imagery analysis and reviewed registers to it. If you already work with a Ghanaian survey or GIS firm, name it in your request. See [working with AfriScan in Ghana](/gh/working-with-afriscan).
+    a: With a qualifying Ghanaian firm, which holds the contract, because we treat mining-lease work as falling under the Minerals Commission's local procurement list until counsel settles whether it does; AfriScan supplies the imagery analysis and reviewed registers to it. If you already work with a Ghanaian survey or GIS firm, name it in your request. See [working with AfriScan in Ghana](/gh/working-with-afriscan).
   - q: Can we send tender or prequalification documents?
     a: Yes. Send the documents with your request, and tell us the portal (GHANEPS, the PPA Supplier Portal or your own), the tender reference and any local-content or permit requirements, so the proposal can answer each one.
   - q: We have no route file yet. Can we still ask?
