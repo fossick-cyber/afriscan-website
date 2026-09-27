@@ -232,7 +232,7 @@ A person checks every result; each structure is measured, banded and rated, and 
 :::
 :::
 
-More on [how it works](/features), the [methodology](/methodology) and [imagery and data sources](/imagery).
+More on [how it works](/features), the [methodology](/methodology), [imagery and data sources](/imagery) and [power and utilities across our countries](/industries/power-utilities).
 ::::
 
 ::::section{id="scope" eyebrow="Honest scope" title="What we do, and what we don't"}

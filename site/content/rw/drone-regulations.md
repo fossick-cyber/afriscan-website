@@ -3,7 +3,7 @@ key: rw-drone-law
 template: law
 law: rw
 as_of: 2026-09-27
-title: "Drone Regulations in Rwanda: RCAR Part 27 Guide | AfriScan"
+title: "Drone Regulations in Rwanda (2026): RCAR Part 27 | AfriScan"
 description: "What a commercial drone survey in Rwanda needs under RCAR Part 27 (2026): 9XR- registration, pilot licence, activity permit, UOC, restricted sites and BVLOS."
 h1: "Drone surveys in Rwanda: what the rules require"
 crumb: Drone law
@@ -313,5 +313,5 @@ We also take extra care near the Burundi border, which Burundi closed to Rwanda 
 ::::
 :::::
 
-This guide was checked on 27 September 2026 against the text of RCAR Part 27 (RSR/01/2026), the 2024 Official Gazette (Law n° 059/2024), Law n° 20/2018, RCAA's advisory circular, service pages and FAQs, Rwanda Airports Company's list of airports, and UK, US and Canadian travel advice.
+This guide was checked on 27 September 2026 against the text of RCAR Part 27 (RSR/01/2026), the 2024 Official Gazette (Law n° 059/2024), Law n° 20/2018, RCAA's advisory circular, service pages and FAQs, Rwanda Airports Company's list of airports, and UK, US and Canadian travel advice. For the rules in the other countries we cover, see the [drone-law overview](/drone-regulations).
 ::::

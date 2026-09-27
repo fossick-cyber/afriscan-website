@@ -6,7 +6,7 @@ description: Dated maps of excavations, tailings, cleared ground and rehabilitat
 h1: Land change in and around your mining licence area in Rwanda
 crumb: Mining
 eyebrow: Mining · Rwanda
-lead: Dated maps of the pits, excavations, spoil, cleared ground, tracks, tailings and rehabilitated land in and around your licence area, with the river and wetland buffers in RMB's guidelines checked and change flagged between surveys. For tin, tantalum, tungsten, gold and other licence holders working under Law n° 072/2024. Satellite first, and a person reviews every result before it reaches you.
+lead: Dated maps of the pits, excavations, spoil, cleared ground, tracks, tailings and rehabilitated land in and around your licence area, with the river and wetland buffers in RMB's guidelines checked and change flagged between surveys. For licence holders working tin, tantalum, lithium, gold, gemstones and other minerals under Law n° 072/2024. Satellite first, and a person reviews every result before it reaches you.
 buttons:
   - {label: Send us your licence area, intent: proposal}
   - {label: See sample outputs, key: results}
@@ -44,7 +44,7 @@ cta:
 ::::section{id="problem" eyebrow="The problem, in your words" title="Small licence blocks, busy ground"}
 :::cards{cols="2"}
 :::card{title="“New pits keep opening near our block.”" icon="excavation"}
-RMB's investment prospectus (October 2025) notes that "artisanal mining still exists in Rwanda" while the sector moves towards "professionalization and industrialization". Excavations just outside a licence area are where questions start, and a dated map is where the answers begin.
+RMB's investment prospectus (October 2025) presents a portfolio of tantalum, tin, lithium, gold, gemstones, industrial minerals and beryllium, and notes that "artisanal mining still exists in Rwanda" while the sector moves towards "professionalization and industrialization". Excavations just outside a licence area are where questions start, and a dated map is where the answers begin.
 :::
 :::card{title="“RMB wants the rivers and wetlands kept clear.”" icon="water"}
 RMB's 2026 environmental and social guidelines say "Mining is not permitted within 20 meters of wetlands, 10 meters of main rivers, and 5 meters from the banks of smaller rivers". A dated map shows where the ground inside those distances has changed.
@@ -217,6 +217,8 @@ A reviewer confirms, corrects and adds features, and marks new sites since the l
 A PDF report in English and GeoPackage, GeoJSON, KMZ and Shapefile layers go to the contacts you name. Re-surveys follow the schedule you set.
 :::
 :::
+
+More on [mining concessions across our countries](/industries/mining), the [methodology](/methodology) and [imagery and data sources](/imagery).
 ::::
 
 ::::section{id="scope" tone="alt" eyebrow="Honest scope" title="What we do, and what we don't"}
