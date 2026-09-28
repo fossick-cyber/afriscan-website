@@ -178,7 +178,7 @@ Who approves what, the operator certificate, the two sets of pilot-licence rules
 Public bodies, including ministries and parastatals, buy under the Public Procurement Act, 2021, in force since 14 April 2022. Section 76 reserves works, services and supplies procurement for citizens or citizen contractors, with reservation schemes prescribed for different areas, and accounting officers must satisfy themselves that no suitable citizen contractor is available before engaging others ([PPRA, quoted by BOPA, 26 April 2023](https://dailynews.gov.bw/news-detail/72749)). Suppliers register with the Public Procurement Regulatory Authority on its [Integrated Procurement Management System](https://ipms.ppadb.co.bw/login), by registration code and by citizen-ownership category: wholly citizen-owned, majority or minority citizen-owned, or wholly foreign-owned.
 ::::
 ::::col
-We respond to RFQs and tenders. Send the tender or RFQ number and any supplier or prequalification forms with your request, and tell us whether the procurement is reserved for citizen contractors. The proposal states which registrations are in place for your contract and which are being arranged. If your organisation buys through its own supplier portal, name it.
+We respond to RFQs and tenders. Mention the tender or RFQ number in your message, and whether the procurement is reserved for citizen contractors; we'll ask for any supplier or prequalification forms when we reply. The proposal states which registrations are in place for your contract and which are being arranged. If your organisation buys through its own supplier portal, name it.
 
 [How we work](/how-we-work) · [Send tender documents](/bw/contact?intent=tender&country=bw)
 ::::

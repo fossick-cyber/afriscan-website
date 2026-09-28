@@ -156,7 +156,7 @@ Send the route or boundary, the country and province, the distances that matter 
 Yes. Many projects start with one stretch, one site or one concession boundary, so your team can check the register against what it knows before the rest is surveyed.
 :::
 :::details{summary="Do you respond to tenders and supplier forms?"}
-Yes. Send the tender documents, or your supplier or prequalification forms, with your request; the proposal states which registrations are in place for your contract and which are being arranged. Our guide to [scoping an encroachment survey](/insights/encroachment-survey-scope) sets out what a good scope asks for, whoever you buy from.
+Yes. Mention the tender in your message and we'll ask for the documents, or your supplier or prequalification forms, when we reply; the proposal states which registrations are in place for your contract and which are being arranged. Our guide to [scoping an encroachment survey](/insights/encroachment-survey-scope) sets out what a good scope asks for, whoever you buy from.
 :::
 :::details{summary="Can you work under an ESIA or engineering consultancy?"}
 Yes. Consultancies can commission structure registers, route comparisons and GIS layers for their own reports, delivered in the formats their teams already use.

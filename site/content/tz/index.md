@@ -185,7 +185,7 @@ Oil and gas work in Tanzania carries the local-content rules of the Petroleum Ac
 [Working with AfriScan in Tanzania](/tz/working-with-afriscan)
 ::::
 ::::col
-We respond to RFQs and tenders. Send the tender or RFQ number and any prequalification forms with your request; each proposal states which company contracts, its local-content position for your contract, and how personal data are handled.
+We respond to RFQs and tenders. Mention the tender or RFQ number in your message and we'll ask for any prequalification forms when we reply; each proposal states which company contracts, its local-content position for your contract, and how personal data are handled.
 
 [How we work](/how-we-work) · [Send tender documents](/tz/contact?intent=tender&country=tz)
 ::::

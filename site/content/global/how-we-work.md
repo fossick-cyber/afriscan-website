@@ -20,7 +20,7 @@ faq:
   - q: Can we start with part of the route?
     a: Yes. Many projects start with one stretch, one site or one concession boundary, so your team can check the register against what it knows before the rest is surveyed. Work tuned to your imagery, such as a custom detector, is tuned and checked on part of your area before it runs on the rest.
   - q: Do you respond to tenders and RFPs?
-    a: Yes. Send the tender documents or the RFQ with your request and we reply in the format the tender asks for. Send your supplier or prequalification forms too; the proposal states which registrations are in place for your contract and which are being arranged.
+    a: Yes. Mention the tender or RFQ in your message; we'll ask for the documents and any supplier or prequalification forms when we reply, and answer in the format the tender asks for. The proposal states which registrations are in place for your contract and which are being arranged.
   - q: Can you work as part of a consultancy's team?
     a: Yes. ESIA, RAP and engineering consultancies can commission structure registers, route comparisons and GIS layers for their own reports, delivered in the formats their teams already use.
   - q: How do you quote?

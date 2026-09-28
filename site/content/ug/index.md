@@ -193,7 +193,7 @@ Where Ugandan law reserves work for Ugandan companies, such as land surveying an
 [National content and procurement notes](/ug/national-content)
 ::::
 ::::col
-We respond to tenders, RFQs and requests from primes and consultants. Send the documents with your request; the proposal sets out how the engagement is structured for your contract and which registrations the delivering party has in place.
+We respond to tenders, RFQs and requests from primes and consultants. Mention the tender or RFQ in your message and we'll ask for the documents when we reply; the proposal sets out how the engagement is structured for your contract and which registrations the delivering party has in place.
 
 [How we work](/how-we-work) · [Send tender documents](/ug/contact?intent=tender&country=ug)
 ::::

@@ -28,7 +28,7 @@ faq:
   - q: Respondem no formato do nosso concurso?
     a: Sim. Envie o caderno de encargos, os termos de referência ou o pedido de cotação, e respondemos no formato pedido, com o âmbito, o plano de imagens, o método, os produtos a entregar e o calendário.
   - q: E os questionários de qualificação de fornecedores?
-    a: Envie-os com o pedido, juntamente com os formulários de registo ou de conformidade. A proposta indica que registos já estão feitos para o seu contrato e quais estão a ser tratados.
+    a: Indique na mensagem que os tem e pedimo-los, com os formulários de registo ou de conformidade, quando respondermos. A proposta indica que registos já estão feitos para o seu contrato e quais estão a ser tratados.
   - q: Os levantamentos por satélite estão abrangidos pelas regras de conteúdo local?
     a: A Lei n.º 9/2026 aplica-se aos projectos de petróleo e gás e às entidades que contratam com eles, e inclui os «serviços de topografia» no regime de exclusividade. Se um levantamento por satélite ou por drone cabe nessa categoria num contrato concreto é uma questão para a sua equipa jurídica; a proposta descreve o serviço com o detalhe necessário para essa avaliação.
   - q: De que autorizações precisa um trabalho com drone?
