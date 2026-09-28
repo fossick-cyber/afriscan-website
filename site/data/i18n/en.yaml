@@ -120,7 +120,7 @@ form:
   err_email_format: Please enter an email address like name@example.com.
   submit: Send
   sending: Sending…
-  success: Thank you. Your message has been sent and we'll get back to you.
+  success: Thank you. Your message has been sent and we’ll get back to you.
   error: We could not send your message just now. Sending it another way…
   privacy: Your request reaches us through FormSubmit, a form-delivery service.
   privacy_link: Read the privacy notice.
@@ -132,9 +132,9 @@ form:
     - A short call about the route or site, the distances that matter and the imagery.
     - "A written proposal: scope, imagery plan, method, deliverables and schedule."
   send_title: No need to prepare anything
-  send_text: "A short note is enough. If you have a route or boundary file (KML, KMZ, GeoJSON, Shapefile, GPX or GeoPackage), keep it to hand: we'll ask for it when we get back to you. No file yet? We can draw the route with you."
+  send_text: "A short note is enough. If you have a route or boundary file (KML, KMZ, GeoJSON, Shapefile, GPX or GeoPackage), keep it to hand: we’ll ask for it when we get back to you. No file yet? We can draw the route with you."
   procurement_title: Procurement teams
-  procurement_text: Mention the tender or the supplier portal in your message, and we'll ask for the documents when we get back to you. The proposal states which registrations are in place for your contract and which are being arranged.
+  procurement_text: Mention the tender or the supplier portal in your message, and we’ll ask for the documents when we get back to you. The proposal states which registrations are in place for your contract and which are being arranged.
 
 notfound:
   title: Page not found | AfriScan
@@ -145,7 +145,7 @@ notfound:
 thanks:
   title: Thank you | AfriScan
   h1: Thank you, your request has been sent
-  text: "We have your details and we'll get back to you. If you have a route or boundary file, keep it to hand: we'll ask for it when we reply."
+  text: "We have your details and we’ll get back to you. If you have a route or boundary file, keep it to hand: we’ll ask for it when we reply."
   next: While you wait
 
 samples:
