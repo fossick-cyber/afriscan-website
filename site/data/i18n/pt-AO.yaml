@@ -120,7 +120,7 @@ form:
   err_email_format: Indique um endereço de e-mail válido, por exemplo nome@example.com.
   submit: Enviar
   sending: A enviar…
-  success: Obrigado. A sua mensagem foi enviada e responderemos em breve.
+  success: Obrigado. A sua mensagem foi enviada e vamos responder-lhe.
   error: Não foi possível enviar a mensagem neste momento. A tentar de outra forma…
   privacy: O seu pedido chega-nos através do FormSubmit, um serviço de envio de formulários.
   privacy_link: Leia o aviso de privacidade (em inglês).
