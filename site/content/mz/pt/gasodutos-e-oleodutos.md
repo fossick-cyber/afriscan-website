@@ -136,7 +136,7 @@ As instalações do operador perto das duas pontas do traçado fazem parte do ac
 ::::section{id="novos-gasodutos" eyebrow="Gasodutos novos e variantes" title="Pesar a terra antes de fixar o traçado"}
 Um traçado escolhido sem contar as construções que atravessa paga essa escolha no reassentamento. A Lei do Petróleo faz o titular de direitos suportar os custos do reassentamento, depois de consulta prévia, com «condições de vida condignas e superiores» para as pessoas abrangidas (artigo 61), e o licenciamento das infra-estruturas depende da aprovação prévia do estudo de impacto ambiental (artigo 76, n.º 2).
 
-As redes são longas: o gasoduto entre Moçambique e Secunda, na África do Sul, tem 865 km e atravessa três províncias do sul do país. Em traçados desta escala, a diferença entre duas variantes mede-se em construções dentro dos 50 metros.
+As redes são longas: um gasoduto transfronteiriço para a África do Sul atravessa várias províncias do sul do país. Em traçados desta escala, a diferença entre duas variantes mede-se em construções dentro dos 50 metros.
 
 :::cards{cols="3"}
 :::card{title="Comparação de variantes" icon="route"}

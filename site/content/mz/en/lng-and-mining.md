@@ -74,7 +74,7 @@ Under the Petroleum Law, the rights holder bears the costs of resettlement after
 ::::section{id="lng" tone="alt" eyebrow="LNG and gas plants" title="Around the plant, its roads and its resettlement villages"}
 :::::columns{split="2-1"}
 ::::col
-Mozambique's onshore LNG plants are being built on the Afungi peninsula in Palma district. Mozambique LNG announced the full restart of its onshore and offshore activities on 29 January 2026 and expects first LNG in 2029 ([TotalEnergies](https://totalenergies.com/news/press-releases/mozambique-lng-announces-full-restart-all-its-activities-onshore-and-offshore)). Rovuma LNG selected its engineering, procurement and construction contractor in August 2026, with a final investment decision aimed for 2026 ([ExxonMobil](https://corporate.exxonmobil.com/locations/mozambique/mozambique-newsroom/exxonmobil-in-mozambique-selects-epc-contractor-for-rovuma-lng-project)).
+Mozambique's onshore LNG plants are being built in the far north of the country. Work on the first of them restarted in full in January 2026, and a second LNG project selected its engineering, procurement and construction contractor in August 2026.
 
 Around sites like these, the line becomes a boundary and the question becomes a ring. We map what stands inside the site or licence area, in a band around it and inside the safety and exclusion zones you define, each structure listed with its distance to the boundary or the source. Re-surveys then show how settlement grows around the plant, along its access roads and in and around the resettlement villages. During construction, dated drone orthophotos show earthworks and laydown progress, and inventories of tanks, containers and plant record what the imagery shows on each survey date.
 ::::
@@ -100,7 +100,7 @@ Satellite work needs no one on site, so a baseline can start where access is res
 ::::section{id="mining" eyebrow="Mining concessions" title="Concession edges, excavations and hazard zones"}
 :::::columns{split="1-1"}
 ::::col
-Mozambique's large mines sit in provinces where access can change quickly: graphite at Balama, where force majeure was declared in December 2024 because site access could not be secured during post-election unrest and lifted by July 2025 ([African Mining Market](https://africanminingmarket.com/syrah-resources-lifts-force-majeure-declaration-at-the-balama-graphite-operation/22985/)); rubies near Montepuez; coal at Moatize in Tete. A register built from the air keeps working when the road to site does not.
+Mozambique's large mines sit in provinces where access can change quickly. A graphite mine in the north declared force majeure in December 2024 because site access could not be secured during post-election unrest, and lifted it by July 2025; ruby and coal mines work in the north and in Tete. A register built from the air keeps working when the road to site does not.
 
 For a concession we map the structures inside the boundary and in a ring around it, the pits, disturbed ground, spoil heaps and water-filled excavations inside and around the mining right, and the new tracks that reach them, with new sites flagged between dates. We list the structures inside the zones your engineers define, such as tailings dam-break inundation areas and blast exclusion zones, each with its distance to the source.
 ::::

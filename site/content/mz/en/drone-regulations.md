@@ -289,8 +289,6 @@ Drone surveys are subject to the approvals and security clearances each job requ
 ::::col
 :::callout{tone="scope" title="Why this site shows no Mozambican drone orthophotos"}
 Reproducing aerial photographs, mosaics or orthophotos of Mozambique without authorisation is an infraction under Lei n.º 6/2024, art. 16(1)(c). Until that authorisation covers a published image, the only Mozambican sample on this site is drawn on a satellite basemap, credited and shown for illustration.
-
-[See the pipeline sample](/results)
 :::
 ::::
 :::::

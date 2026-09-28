@@ -72,7 +72,7 @@ New gas import and transmission infrastructure needs routes, servitudes and a da
 ::::section{id="context" tone="alt" eyebrow="The South African picture" title="Fuel lines, gas lines and the infrastructure still to come"}
 :::::columns{split="1-1"}
 ::::col
-NERSA issues the licences for petroleum and gas pipelines under the Petroleum Pipelines Act 60 of 2003 and the Gas Act 48 of 2001. The network spans very different ground: Transnet's multi-product fuel trunk line from Durban inland ([Transnet Pipelines](https://www.transnet.net/SubsiteRender.aspx?id=6794475)); Transnet's gas lines from Secunda to Ingogo and from Ingogo to Durban, about 153 km and 420 km ([NERSA](https://www.nersa.org.za/files/files/2024/07/RFD-Transnet-SOC-Ltds-Application-for-Piped-Gas-Tariff-for-2023-to-2026.pdf)); and the cross-border gas pipeline from Mozambique to Secunda, reported at 865 km ([World Pipelines, 18 August 2025](https://www.worldpipelines.com/project-news/18082025/rompco-driving-regional-energy-security-in-southern-africa/)).
+NERSA issues the licences for petroleum and gas pipelines under the Petroleum Pipelines Act 60 of 2003 and the Gas Act 48 of 2001. The network spans very different ground: Transnet's multi-product fuel trunk line from Durban inland ([Transnet Pipelines](https://www.transnet.net/SubsiteRender.aspx?id=6794475)); Transnet's gas lines from Secunda to Ingogo and from Ingogo to Durban, about 153 km and 420 km ([NERSA](https://www.nersa.org.za/files/files/2024/07/RFD-Transnet-SOC-Ltds-Application-for-Piped-Gas-Tariff-for-2023-to-2026.pdf)); and a long cross-border gas pipeline from Mozambique.
 
 More is coming. Supplies from Mozambique's onshore gas fields, which have provided most of South Africa's gas for two decades, are expected to begin falling after 2028 ([The Conversation, 21 July 2026](https://theconversation.com/a-sharp-fall-in-gas-supplies-in-2028-threatens-south-africas-economy-how-to-manage-the-fallout-286861)), which brings new import and transmission infrastructure, and with it new routes and servitudes. The [Gas Bill B6-2026](https://www.parliament.gov.za/bill/2327140), introduced in Parliament on 5 March 2026, would repeal the Gas Act.
 ::::
@@ -135,7 +135,7 @@ Your own stations, valve sites and yards are part of the asset. We record them a
 ::::
 ::::col
 :::callout{tone="legal" title="Key points and security measures"}
-Some stations are national key points: [ROMPCO](https://www.rompco.co.za/about-us/) states that its Komatipoort Compressor Station has been declared one. Drone flights adjacent to or above a key point need SACAA notice on form CA 101-20 with the controlling authority's permission. Our deliverables leave the security measures at your stations out of every image and report, and we never publish imagery of a client's installations without the client's written permission.
+Some stations are national key points: one cross-border gas pipeline operator states that a compressor station near the border has been declared one. Drone flights adjacent to or above a key point need SACAA notice on form CA 101-20 with the controlling authority's permission. Our deliverables leave the security measures at your stations out of every image and report, and we never publish imagery of a client's installations without the client's written permission.
 
 [Drone law in South Africa](/za/drone-regulations#sensitive-sites)
 :::

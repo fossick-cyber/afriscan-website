@@ -119,7 +119,7 @@ Each proposal names the imagery the work will use and its capture dates. Open da
 ::::col
 State bodies buy under the public-procurement regulation, and UFSA keeps the single supplier register, the *Cadastro Único* (Decreto n.º 79/2022, art. 43), which can be consulted free of charge ([UFSA](https://www.ufsa.gov.mz/cadastro_unico.php)).
 
-The large energy buyers run their own supplier platforms, including the [Mozambique LNG supplier registration platform](https://www.mozambiquelng.co.mz/opportunities/suppliers/), the [Rovuma LNG supplier portal through MozUP](https://mozup.org/en/supplier-registration-portal/), and the supplier portals of [ENH](https://pfornecedores.enh.co.mz/) and [EDM](https://fornecedores.edm.co.mz). If your process runs through one of them, name it in your request.
+Large LNG and energy projects run their own supplier platforms, as do the state companies [ENH](https://pfornecedores.enh.co.mz/) and [EDM](https://fornecedores.edm.co.mz). If your process runs through one of them, name it in your request.
 ::::
 ::::col
 ### What we send for your supplier file

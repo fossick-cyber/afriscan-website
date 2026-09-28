@@ -87,9 +87,9 @@ The regulator for petroleum operations is the Instituto Nacional de Petróleo (I
 ::::section{id="corridors" eyebrow="Where the corridors run" title="Southern gas lines, and the new ones being planned"}
 :::::columns{split="1-1"}
 ::::col
-Most of Mozambique's onshore gas infrastructure runs through the south, where the 865 km Mozambique–Secunda gas pipeline crosses three provinces on its way to South Africa. Its operator aims to raise capacity and to take regasified LNG from an import terminal at Matola ([World Pipelines, August 2025](https://www.worldpipelines.com/project-news/18082025/rompco-driving-regional-energy-security-in-southern-africa/)). These are long servitudes through farmland, bush and growing villages, where roads and settlements follow the line.
+Most of Mozambique's onshore gas infrastructure runs through the south, where a long cross-border gas pipeline crosses several provinces on its way to South Africa. These are long servitudes through farmland, bush and growing villages, where roads and settlements follow the line.
 
-New corridors are being planned too. In November 2025 the Council of Ministers approved a concession for gas reception, storage, regasification and transport in the Port of Beira and at Inhassoro ([INP](https://www.inp.gov.mz/en/20-11-2025-mocambique-aprova-concessao-para-terminal-de-gas-natural-liquefeito-e-autoriza-medidas-para-a-retoma-do-projecto-golfinho-atum/)), and an agreement for a Beira–Ndola gas pipeline to Zambia was signed in May 2025 ([AIM](https://aimnews.org/2025/05/07/gasoduto-orcado-em-15-biliao-de-dolares-liga-mocambique-e-zambia/)).
+New corridors are being planned too. In November 2025 the Council of Ministers approved a concession for gas reception, storage, regasification and transport at a port in the centre of the country, and in May 2025 an agreement was signed for a gas pipeline from a central port to Zambia.
 ::::
 ::::col
 ### For a new line or loop {#new-pipelines}

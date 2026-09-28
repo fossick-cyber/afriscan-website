@@ -30,8 +30,13 @@ withdrawn_names:
     - 56bb2ea96cae857b658cc291dc88f975ec9c53e16bab6c7fa18537cd77569b79
   outside_law:
     - 2de259335b6ba92b373c02c3a4ab79ed15ccec33e5544d359eef5b329ba3cba6
+    - f9c87442bbcc832e19d470e6e00df05e2a133ac3c2338b734bf8b1caeba8a705
   on_sample_pages:
     - 793295c1eea6894427307c0c6f1ed33a22b1fa37a7dd126ca4257601b349f0c7
+    - f9c87442bbcc832e19d470e6e00df05e2a133ac3c2338b734bf8b1caeba8a705
+    - 52bcf8792923a15525cd2528e01bc20290c0a8991b061227c9dde3ad832a75ef
+    - 82e8fb4a85b3fc78be3f7152d72c24683af35f6f5924cd4a85c5c104a900e747
+    - 409eee5ead428eda991825f08df8a9a8b735fca462fbacfeb9d0621167f33ef2
 
 negation_window: 48
 negations: [not, never, "no", nor, without, "isn't", "aren't", "don't", "doesn't", "won't", cannot, "can't",
