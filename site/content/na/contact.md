@@ -19,7 +19,7 @@ faq:
   - q: Part of the area is a diamond restricted area or a national park. Can you still cover it?
     a: Yes, from satellite imagery, since nobody enters the area. Say which parts are restricted, and the proposal keeps drone work out of them unless your permits and consents cover a partner's crew.
   - q: Can we send our own drone orthophotos?
-    a: Yes. Tell us roughly how many kilometres or hectares they cover, the capture dates and the format, and we check a sample before we commit. Large files are transferred by a link you choose or one we send; the form below is for your request, not for imagery.
+    a: Yes. Tell us roughly how many kilometres or hectares they cover, the capture dates and the format, and we check a sample before we commit. Large files are transferred by a link you choose or one we send; the form on this page is for your request, not for imagery.
   - q: We have no route file yet. Can we still ask?
     a: Yes. Describe the line, road or licence area and the regions it crosses, or send tower, beacon or kilometre-post coordinates, and we draw the route or boundary with you and send it back for your confirmation before any survey runs.
   - q: Our procurement runs through a bid process. Can you respond to it?

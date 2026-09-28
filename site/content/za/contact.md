@@ -15,7 +15,7 @@ faq:
   - q: Do you need a site visit or a drone flight to start?
     a: No. A survey starts from your route or boundary file and dated satellite imagery, open building datasets or the orthophotos you already hold, so nobody travels and no aircraft flies. Drone detail is added only where a stretch needs it, subject to the SACAA approvals and landowner permissions each flight requires.
   - q: Can we send our own drone orthophotos?
-    a: Yes. Tell us roughly how many kilometres or hectares they cover, the capture dates and the format, and we check a sample before we commit. Large files are transferred by a link you choose or one we send; the form below is for your request, not for imagery.
+    a: Yes. Tell us roughly how many kilometres or hectares they cover, the capture dates and the format, and we check a sample before we commit. Large files are transferred by a link you choose or one we send; the form on this page is for your request, not for imagery.
   - q: We have no route file yet. Can we still ask?
     a: Yes. Describe the line or pipeline, the province and the municipality, or send tower, valve or kilometre-post coordinates, and we draw the route with you and send it back for your confirmation before any survey runs.
   - q: Our procurement runs through a portal. Can you respond there?
