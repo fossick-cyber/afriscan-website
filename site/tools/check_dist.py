@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Independent checks on a built dist/: hreflang, canonicals, sitemaps, links, JSON-LD, orphans, and
-that nothing published points into a draft country section.
+"""Independent checks on a built dist/: hreflang, canonicals, sitemaps, links, JSON-LD, orphans, the
+contact forms, and that nothing published points into a draft country section.
 
     /opt/favhousecheck/.venv/bin/python3 site/tools/check_dist.py [DIST] [--drafts] [--data DIR]
 
@@ -29,6 +29,9 @@ DRAFT_BANNER = "Draft: not published"
 # elements whose links are reported by what holds them (class on the element or an ancestor)
 HOLDERS = [("region", "country menu"), ("country-sites", "country-sites button"),
            ("countries-directory", "/countries entry")]
+# The contact form (owner, 2026-09-28): the only visible fields, name: (type, autocomplete, required)
+FORM_FIELDS = {"name": ("text", "name", True), "email": ("email", "email", True), "phone": ("tel", "tel", False),
+               "company": ("text", "organization", False), "message": ("textarea", None, False)}
 
 
 class Sections:
@@ -96,6 +99,10 @@ class Page(HTMLParser):
         self.stack = []          # (tag, holder) for open elements
         self.h1 = 0
         self.text = []
+        self.forms = []          # {"attrs", "controls": [(tag, attrs, in_honeypot_box)], "submits"}
+        self.labels = set()      # ids named by <label for>
+        self._form = None
+        self._hp_at = None       # stack depth of the open .hp honeypot box
 
     VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
 
@@ -114,9 +121,20 @@ class Page(HTMLParser):
         if tag == "h1":
             self.h1 += 1
         classes = (a.get("class") or "").split()
+        if tag == "form":
+            self._form = {"attrs": a, "controls": [], "submits": 0}
+            self.forms.append(self._form)
+        elif tag == "label" and a.get("for"):
+            self.labels.add(a["for"])
+        elif self._form is not None and tag in ("input", "select", "textarea"):
+            self._form["controls"].append((tag, a, self._hp_at is not None))
+        elif self._form is not None and tag == "button" and (a.get("type") or "submit") == "submit":
+            self._form["submits"] += 1
         own = next((what for cls, what in HOLDERS if cls in classes), None)
         holder = own or next((h for _, h in reversed(self.stack) if h), None)
         if tag not in self.VOID:
+            if self._hp_at is None and "hp" in classes:
+                self._hp_at = len(self.stack)
             self.stack.append((tag, own))
         reg = self.region[0] if self.region else "body"
         holder = holder or (f"{reg} link" if reg in ("header", "footer") else "internal link")
@@ -156,10 +174,14 @@ class Page(HTMLParser):
         if tag == "script" and self._in_ld:
             self._in_ld = False
             self.jsonld.append("".join(self._ld))
+        if tag == "form":
+            self._form = None
         for i in range(len(self.stack) - 1, -1, -1):
             if self.stack[i][0] == tag:
                 del self.stack[i:]
                 break
+        if self._hp_at is not None and len(self.stack) <= self._hp_at:
+            self._hp_at = None
         if tag in ("header", "footer", "nav", "main") and self.region:
             # pop the innermost matching region
             for i in range(len(self.region) - 1, -1, -1):
@@ -306,6 +328,71 @@ def check_drafts(dist, S, pages, in_sitemap, sitemap_files, drafts, errors):
         for tz, cc in (data.get("tz") or {}).items():
             if cc not in (data.get("sites") or {}):
                 errors.append(f"/assets/js/{f.name}: time zone {tz} maps to {cc}, which the banner does not offer")
+
+
+def check_forms(dist, S, pages, site, errors):
+    """Every form posts to the FormSubmit endpoint in data/site.yaml, shows only the five contact fields
+    (name and email required), carries the honeypot and FormSubmit's hidden fields, and sends the visitor
+    to a thank-you page in the page's language. Every ContactPage has exactly one form."""
+    action, ajax = site["form"]["action"], site["form"]["ajax"]
+    n = 0
+    for u, p in sorted(pages.items()):
+        if any('"ContactPage"' in b for b in p.jsonld) and len(p.forms) != 1:
+            errors.append(f"{u}: ContactPage with {len(p.forms)} forms")
+        for f in p.forms:
+            n += 1
+            bad = lambda m: errors.append(f"{u}: form: {m}")
+            fa = f["attrs"]
+            if fa.get("action") != action:
+                bad(f"action {fa.get('action')!r} is not the FormSubmit endpoint in site.yaml")
+            if fa.get("data-ajax") != ajax:
+                bad(f"data-ajax {fa.get('data-ajax')!r} is not the FormSubmit AJAX endpoint in site.yaml")
+            if (fa.get("method") or "").upper() != "POST":
+                bad("method is not POST")
+            if f["submits"] != 1:
+                bad(f"{f['submits']} submit buttons")
+            seen, hidden, honey = set(), {}, []
+            for tag, a, in_hp in f["controls"]:
+                name = a.get("name") or ""
+                typ = (a.get("type") or "text").lower() if tag == "input" else tag
+                if name == "_honey":
+                    honey.append((a, in_hp))
+                    continue
+                if typ == "hidden":
+                    hidden[name] = a.get("value") or ""
+                    continue
+                if name not in FORM_FIELDS:
+                    bad(f"visible {typ} field {name!r} outside {sorted(FORM_FIELDS)}")
+                    continue
+                if name in seen:
+                    bad(f"field {name!r} twice")
+                seen.add(name)
+                want_type, want_ac, want_req = FORM_FIELDS[name]
+                if typ != want_type:
+                    bad(f"{name!r} is {typ}, expected {want_type}")
+                if want_ac and a.get("autocomplete") != want_ac:
+                    bad(f"{name!r} autocomplete {a.get('autocomplete')!r}, expected {want_ac!r}")
+                if ("required" in a) != want_req:
+                    bad(f"{name!r} {'must be' if want_req else 'must not be'} required")
+                if a.get("id") not in p.labels:
+                    bad(f"{name!r} has no <label for>")
+            for name, (_, _, req) in FORM_FIELDS.items():
+                if req and name not in seen:
+                    bad(f"no {name!r} field")
+            if len(honey) != 1 or not honey[0][1] or honey[0][0].get("tabindex") != "-1":
+                bad("no honeypot (_honey, tabindex -1, inside .hp)")
+            for name in ("_subject", "_template", "_captcha", "_next"):
+                if name not in hidden:
+                    bad(f"no hidden {name}")
+            nxt = hidden.get("_next", "")
+            if fa.get("data-thanks") != nxt:
+                bad(f"data-thanks {fa.get('data-thanks')!r} != _next {nxt!r}")
+            tp = nxt[len(ORIGIN):] if nxt.startswith(ORIGIN + "/") else None
+            if tp is None or file_for(dist, tp) is None:
+                bad(f"_next {nxt!r} is not a built page")
+            elif (S.lang(tp) or "")[:2] != (S.lang(u) or "")[:2]:
+                bad(f"_next {tp} is in {S.lang(tp)}, the page in {S.lang(u)}")
+    return n
 
 
 def main():
@@ -534,11 +621,15 @@ def main():
                 if t == "FAQPage" and not n.get("mainEntity"):
                     errors.append(f"{u}: FAQPage without questions")
 
+    # --- contact forms ---
+    site = yaml.safe_load(Path(args.data, "site.yaml").read_text(encoding="utf-8"))
+    forms = check_forms(dist, S, pages, site, errors)
+
     # --- draft sections ---
     check_drafts(dist, S, pages, in_sitemap, sitemap_files, args.drafts, errors)
 
     print(f"pages {len(pages)}, indexable {len(indexable)}, hreflang pages {clusters}, "
-          f"sitemap URLs {len(in_sitemap)}, links checked {checked}, JSON-LD blocks {ld_blocks}; "
+          f"sitemap URLs {len(in_sitemap)}, links checked {checked}, JSON-LD blocks {ld_blocks}, forms {forms}; "
           f"sections live {len(S.live)}, draft {len(S.draft)}{' (drafts preview)' if args.drafts else ''}")
     print("JSON-LD types:", ", ".join(f"{k} {v}" for k, v in sorted(types.items(), key=lambda x: -x[1])))
     if body_only:

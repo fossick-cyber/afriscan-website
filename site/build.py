@@ -55,6 +55,12 @@ LANG_NAMES = {"en": "English", "pt": "Português", "fr": "Français"}   # only f
 THANKS_SLUGS = {"pt": "obrigado", "fr": "merci"}                     # thank-you page per language (English: thanks)
 DRAFT_BANNER = "Draft: not published"
 TABLE_LABEL = {"pt": "Tabela", "fr": "Tableau"}                       # aria-label of the scrolling table box
+# The contact form (owner, 2026-09-28: "just get their deets and we can be in touch"): the only fields a
+# visitor sees, the two of them that are required, and the hidden FormSubmit fields every form needs.
+FORM_VISIBLE = {"name": ("text", "name"), "email": ("email", "email"), "phone": ("tel", "tel"),
+                "company": ("text", "organization"), "message": ("textarea", None)}   # name: (type, autocomplete)
+FORM_REQUIRED = {"name", "email"}
+FORM_HIDDEN = ("_subject", "_template", "_captcha", "_next")
 
 # Components usable in content bodies:  :::name{attr="value"} ... :::
 COMPONENTS = {
@@ -184,6 +190,42 @@ def dist_refusal(dist):
         if anc.name == "dist" and (anc.parent / "site" / "build.py").exists():
             return f"{d} is inside {anc}, the dist/ of a checkout at {anc.parent}"
     return None
+
+
+class FormScan(HTMLParser):
+    """The <form>s of a built page: each form's attributes and controls (tag, attributes, inside the .hp
+    honeypot box or not), the ids that have a <label for>, and the submit buttons."""
+    VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.forms, self.labels, self.stack, self.form, self.hp_at = [], set(), [], None, None
+
+    def handle_starttag(self, tag, attrs):
+        a = {k: (v if v is not None else "") for k, v in attrs}
+        if tag == "form":
+            self.form = {"attrs": a, "controls": [], "submits": 0}
+            self.forms.append(self.form)
+        elif tag == "label" and a.get("for"):
+            self.labels.add(a["for"])
+        elif self.form is not None and tag in ("input", "select", "textarea"):
+            self.form["controls"].append((tag, a, self.hp_at is not None))
+        elif self.form is not None and tag == "button" and a.get("type", "submit") == "submit":
+            self.form["submits"] += 1
+        if tag not in self.VOID:
+            if self.hp_at is None and "hp" in (a.get("class") or "").split():
+                self.hp_at = len(self.stack)
+            self.stack.append(tag)
+
+    def handle_endtag(self, tag):
+        if tag == "form":
+            self.form = None
+        for i in range(len(self.stack) - 1, -1, -1):
+            if self.stack[i] == tag:
+                del self.stack[i:]
+                break
+        if self.hp_at is not None and len(self.stack) <= self.hp_at:
+            self.hp_at = None
 
 
 class PageRefs(HTMLParser):
@@ -1693,6 +1735,68 @@ class Build:
         for src, dst, code in self.redirects:
             scan("data/redirects.yaml", f"{src} ¶ {dst}", ["anywhere", "outside_law"])
 
+    def check_forms(self, built):
+        """Every form posts to the FormSubmit endpoint in data/site.yaml, shows only the five contact fields
+        (name and email required, the rest optional), carries the honeypot and the hidden FormSubmit fields,
+        and sends visitors to their language's thank-you page. Every contact page has exactly one."""
+        endpoint, ajax = self.site["form"]["action"], self.site["form"]["ajax"]
+        for p in built:
+            scan = FormScan()
+            scan.feed(p["html"])
+            if p.get("template") == "contact" and len(scan.forms) != 1:
+                self.err(f"{p['url']}: contact page with {len(scan.forms)} forms (needs exactly one)")
+            for form in scan.forms:
+                err = lambda m: self.err(f"{p['url']}: contact form: {m}")
+                fa = form["attrs"]
+                if fa.get("action") != endpoint:
+                    err(f"posts to {fa.get('action')!r}, not the FormSubmit endpoint in data/site.yaml")
+                if fa.get("data-ajax") != ajax:
+                    err(f"sends to {fa.get('data-ajax')!r}, not the FormSubmit AJAX endpoint in data/site.yaml")
+                if (fa.get("method") or "").upper() != "POST":
+                    err("method must be POST")
+                if form["submits"] != 1:
+                    err(f"{form['submits']} submit buttons (needs one)")
+                visible, hidden, honey = {}, {}, []
+                for tag, a, in_hp in form["controls"]:
+                    name, typ = a.get("name", ""), (a.get("type") or "text").lower() if tag == "input" else tag
+                    if name == "_honey":
+                        honey.append((a, in_hp))
+                    elif typ == "hidden":
+                        hidden[name] = a
+                    elif name in visible:
+                        err(f"field '{name}' appears twice")
+                    else:
+                        visible[name] = (tag, typ, a)
+                for name, (tag, typ, a) in visible.items():
+                    if name not in FORM_VISIBLE:
+                        err(f"visible field '{name or tag}' ({typ}): only {', '.join(FORM_VISIBLE)} are shown "
+                            f"(owner, 2026-09-28)")
+                        continue
+                    want_type, want_ac = FORM_VISIBLE[name]
+                    if typ != want_type:
+                        err(f"'{name}' is a {typ} field, expected {want_type}")
+                    if want_ac and a.get("autocomplete") != want_ac:
+                        err(f"'{name}' needs autocomplete=\"{want_ac}\"")
+                    if ("required" in a) != (name in FORM_REQUIRED):
+                        err(f"'{name}' must be required" if name in FORM_REQUIRED else f"'{name}' is optional and must not be required")
+                    if not a.get("id") or a["id"] not in scan.labels:
+                        err(f"'{name}' has no visible <label for>")
+                for name in FORM_REQUIRED:
+                    if name not in visible:
+                        err(f"no '{name}' field")
+                if len(honey) != 1 or not honey[0][1] or honey[0][0].get("tabindex") != "-1":
+                    err("needs one honeypot: an input named _honey with tabindex=\"-1\" inside the .hp box")
+                for name in FORM_HIDDEN:
+                    if name not in hidden:
+                        err(f"no hidden '{name}' field")
+                nxt = (hidden.get("_next") or {}).get("value", "")
+                if not p.get("special") and "_next" in hidden and nxt != self.thanks_url(p):
+                    err(f"_next is {nxt!r}, not this language's thank-you page {self.thanks_url(p)}")
+                if nxt and nxt[len(self.base):] not in self.special_by_url:
+                    err(f"_next {nxt!r} is not a built thank-you page")
+                if fa.get("data-thanks") != nxt:
+                    err(f"data-thanks {fa.get('data-thanks')!r} differs from _next {nxt!r}")
+
     def check_structure(self, p):
         h, url, lim = p["html"], p["url"], self.rules["limits"]
         n_h1 = len(re.findall(r"<h1\b", h))
@@ -2110,6 +2214,7 @@ class Build:
             if not p["noindex"] or p.get("special"):
                 self.run_guards(p, self.guard_text(p))
             self.check_structure(p)
+        self.check_forms(built)
         self.check_links(built)
         self.check_withdrawn_names(built)
         urls = {q["url"] for q in built}
@@ -2265,6 +2370,29 @@ def selftest():
             ok = hit and code == (1 if kind == "error" else 0)
             print(f"{'PASS' if ok else 'FAIL'}  {name:15s} {(hit or b.errors or ['no ' + kind + ' raised'])[0][:105]}")
             if not ok:
+                failed.append(name)
+        # the contact form, seeded on every rendered contact page: an extra visible field, another endpoint,
+        # an optional email and a missing honeypot
+        def on_contact(b, fn):
+            render = b.render_page
+            def patched(p):
+                render(p)
+                if p["template"] == "contact" and p.get("html"):
+                    p["html"] = fn(p["html"])
+            b.render_page = patched
+        for name, fn, expect in (
+                ("form-field", lambda h: h.replace("</form>", '<label for="f-role">Role</label><select id="f-role" name="role">'
+                                                              "<option>Other</option></select></form>"), "visible field 'role'"),
+                ("form-endpoint", lambda h: h.replace('action="https://formsubmit.co/', 'action="https://example.org/'),
+                 "not the FormSubmit endpoint"),
+                ("form-email-opt", lambda h: re.sub(r'(<input id="f-email"[^>]*?) required', r"\1", h), "'email' must be required"),
+                ("form-honeypot", lambda h: re.sub(r'<div class="hp".*?</div>', "", h), "needs one honeypot")):
+            b = make(dist=tmp / name / "dist")
+            on_contact(b, fn)
+            code = b.run()
+            hit = [e for e in b.errors if expect in e]
+            print(f"{'PASS' if code == 1 and hit else 'FAIL'}  {name:15s} {(hit or b.errors or ['no error raised'])[0][:105]}")
+            if not (code == 1 and hit):
                 failed.append(name)
         # near-duplicate: an English country page that copies the global one
         content = tmp / "dup" / "content"
