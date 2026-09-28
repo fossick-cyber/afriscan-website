@@ -91,20 +91,27 @@
   // ---------------------------------------------------------------- contact form (FormSubmit)
   const form = $("#contactForm");
   if (!form) return;
+  // Links from industry, solution and country pages carry their context; it travels in hidden fields.
   const params = new URLSearchParams(location.search);
-  const setVal = (id, v) => { const el = document.getElementById(id); if (el && v) el.value = v.slice(0, 80); };
-  setVal("f-intent", params.get("intent"));
-  setVal("f-industry", params.get("industry"));
-  setVal("f-service", params.get("service"));
-  const cc = (params.get("country") || "").toLowerCase();
-  const country = document.getElementById("f-country");
-  if (country && cc) {
-    const opt = $$("option", country).find(o => o.dataset.code === cc);
-    if (opt) opt.selected = true;
-  }
-  const assetIndex = { "oil-gas": 1, "power-utilities": 2, "rail-roads": 3, "mining": 4 }[params.get("industry")];
-  const asset = document.getElementById("f-asset");
-  if (asset && assetIndex && asset.options[assetIndex]) asset.selectedIndex = assetIndex;
+  const param = k => (params.get(k) || "").replace(/[^\w-]/g, "").slice(0, 80);
+  for (const k of ["intent", "industry", "service"]) if (param(k)) form.elements[k].value = param(k);
+  const country = form.elements.country;
+  try {
+    const name = JSON.parse(country.dataset.names || "{}")[param("country").toLowerCase()];
+    if (name) country.value = name;
+  } catch (_) { /* keep the page's own country */ }
+
+  // Name and email are the only required fields; their messages come from the page's language.
+  form.noValidate = true;
+  const required = $$("[data-err-required]", form);
+  const problem = el => !el.value.trim() ? el.dataset.errRequired
+    : !el.validity.valid ? (el.dataset.errFormat || el.dataset.errRequired) : "";
+  const flag = (el, text) => {
+    const box = document.getElementById(el.getAttribute("aria-describedby"));
+    if (text) el.setAttribute("aria-invalid", "true"); else el.removeAttribute("aria-invalid");
+    if (box) { box.textContent = text; box.hidden = !text; }
+  };
+  required.forEach(el => el.addEventListener("input", () => { if (el.hasAttribute("aria-invalid")) flag(el, problem(el)); }));
 
   const msg = document.getElementById("formMsg");
   const button = $('button[type="submit"]', form);
@@ -113,11 +120,16 @@
 
   form.addEventListener("submit", async e => {
     e.preventDefault();
-    if ($('input[name="_honey"]', form).value) { location.assign(form.dataset.thanks); return; }
-    const fd = new FormData(form);
+    if (form.elements._honey.value) { location.assign(form.dataset.thanks); return; }
+    const bad = required.filter(el => { const p = problem(el); flag(el, p); return p; });
+    if (bad.length) { bad[0].focus(); return; }
     const data = {};
-    for (const [k, v] of fd.entries()) data[k] = data[k] ? `${data[k]}, ${v}` : v;
-    data._subject = `${form.dataset.subject}: ${data.name || ""}${data.organisation ? " (" + data.organisation + ")" : ""}`;
+    for (const [k, v] of new FormData(form).entries()) {
+      const s = String(v).trim();
+      if (s || k.startsWith("_")) data[k] = s;
+    }
+    data._subject = `${form.dataset.subject}: ${data.name}${data.company ? " (" + data.company + ")" : ""}`;
+    form.elements._subject.value = data._subject;
     if (button) button.disabled = true;
     if (label) label.textContent = form.dataset.sending;
     msg.textContent = "";

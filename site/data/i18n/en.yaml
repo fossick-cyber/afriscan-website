@@ -107,80 +107,34 @@ article:
   author: AfriScan
 
 form:
-  legend_you: About you
-  legend_job: About the route or site
-  name: Full name
-  email: Work email
-  org: Organisation
-  role: Your role
-  roles:
-    - Land and resettlement
-    - Right of way or asset integrity
-    - HSE, ESIA or social performance
-    - Procurement or supply chain
-    - ESIA or RAP consultant
-    - Lender or independent monitor
-    - Other
-  country: Country
-  countries:        # Every live country (its data/countries.yaml key) and `other`; the form groups them by region
-    za: South Africa
-    mz: Mozambique
-    zm: Zambia
-    zw: Zimbabwe
-    mw: Malawi
-    na: Namibia
-    bw: Botswana
-    ao: Angola
-    ke: Kenya
-    tz: Tanzania
-    ug: Uganda
-    rw: Rwanda
-    ng: Nigeria
-    gh: Ghana
-    cd: DR Congo
-    other: Other
-  asset: What needs surveying
-  assets:
-    - Pipeline
-    - Power line
-    - Rail or road
-    - Mining concession
-    - Estate or site
-    - Project or resettlement area
-    - Other
-  size: Approximate length (km) or area (km²)
-  when: When do you need results?
-  needs: What do you need?
-  needs_options:
-    - Baseline structure register
-    - Scheduled re-surveys and change notices
-    - Resettlement cut-off-date baseline
-    - Route or site option comparison
-    - Drone survey
-    - Something else
-  message: Tell us about the route or site
-  message_hint: Location or province, the buffer distances to check, and any date the record must reflect.
-  heard: How did you hear about us?
-  heard_options: [Search engine, LinkedIn, Event, Referral, Supplier portal or tender, Other]
-  required: required
-  choose: Choose…
-  submit: Send request
+  intro: Only your name and email are needed. Everything else is optional.
+  name: Name
+  email: Email
+  phone: Phone or WhatsApp
+  company: Company
+  message: Message
+  message_placeholder: "What do you need? A route, an area, a date: anything helps."
+  optional: optional
+  err_name: Please enter your name.
+  err_email: Please enter your email address.
+  err_email_format: Please enter an email address like name@example.com.
+  submit: Send
   sending: Sending…
-  success: Thank you. Your request has been sent and we will reply by email.
-  error: We could not send your request just now. Sending it another way…
+  success: Thank you. Your message has been sent and we'll get back to you.
+  error: We could not send your message just now. Sending it another way…
   privacy: Your request reaches us through FormSubmit, a form-delivery service.
   privacy_link: Read the privacy notice.
   honeypot: Leave this field empty
   subject: New AfriScan enquiry
   next_title: What happens next
   next_steps:
-    - We reply by email to confirm what we need from you.
-    - A short scoping call about the route or site, the distances that matter and the imagery.
+    - We get back to you by email, or by phone if you left a number.
+    - A short call about the route or site, the distances that matter and the imagery.
     - "A written proposal: scope, imagery plan, method, deliverables and schedule."
-  send_title: What to send
-  send_text: "The route or boundary file (KML, KMZ, GeoJSON, Shapefile, GPX or GeoPackage), the country and province, the distances to check, the date the record must reflect, the deliverables you need and your deadline. No file yet? Describe the location and we can draw the route with you."
+  send_title: No need to prepare anything
+  send_text: "A short note is enough. If you have a route or boundary file (KML, KMZ, GeoJSON, Shapefile, GPX or GeoPackage), keep it to hand: we'll ask for it when we get back to you. No file yet? We can draw the route with you."
   procurement_title: Procurement teams
-  procurement_text: Send your supplier or prequalification forms, or the tender documents, with your request. The proposal states which registrations are in place for your contract and which are being arranged.
+  procurement_text: Mention the tender or the supplier portal in your message, and we'll ask for the documents when we get back to you. The proposal states which registrations are in place for your contract and which are being arranged.
 
 notfound:
   title: Page not found | AfriScan
@@ -191,7 +145,7 @@ notfound:
 thanks:
   title: Thank you | AfriScan
   h1: Thank you, your request has been sent
-  text: We have your request and will reply by email. If you have a route or boundary file you did not attach, keep it ready for the scoping call.
+  text: "We have your details and we'll get back to you. If you have a route or boundary file, keep it to hand: we'll ask for it when we reply."
   next: While you wait
 
 samples:

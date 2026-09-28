@@ -2,50 +2,31 @@
 {% block main %}
 {% include "partials/pagehead.html.j2" %}
 {% set f = t.form %}
+{% set names = form_country_names() %}
+{% set subject = f.subject ~ " · " ~ loc.label %}
 <section class="section">
   <div class="container contact-grid">
-    <form class="contact-form" id="contactForm" action="{{ site.form.action }}" method="POST" data-ajax="{{ site.form.ajax }}" data-thanks="{{ thanks_url }}" data-sending="{{ f.sending }}" data-error="{{ f.error }}" data-success="{{ f.success }}" data-subject="{{ f.subject }}">
-      <input type="hidden" name="_subject" value="{{ f.subject }}">
+    <form class="contact-form" id="contactForm" action="{{ site.form.action }}" method="POST" data-ajax="{{ site.form.ajax }}" data-thanks="{{ thanks_url }}" data-sending="{{ f.sending }}" data-error="{{ f.error }}" data-success="{{ f.success }}" data-subject="{{ subject }}">
+      <input type="hidden" name="_subject" value="{{ subject }}">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="{{ thanks_url }}">
+      <input type="hidden" name="site_section" value="{{ loc.label }}">
+      <input type="hidden" name="country" id="f-country" value="{{ names.get((loc.country or '')|lower, '') }}" data-names='{{ names|tojson }}'>
       <input type="hidden" name="intent" id="f-intent" value="">
       <input type="hidden" name="industry" id="f-industry" value="">
       <input type="hidden" name="service" id="f-service" value="">
-      <input type="hidden" name="site_section" value="{{ loc.label }}">
       <div class="hp" aria-hidden="true"><label for="f-honey">{{ f.honeypot }}</label><input type="text" name="_honey" id="f-honey" tabindex="-1" autocomplete="off"></div>
-      <fieldset>
-        <legend>{{ f.legend_you }}</legend>
-        <div class="form-grid">
-          <div class="field"><label for="f-name">{{ f.name }} <span class="req" aria-hidden="true">*</span></label><input id="f-name" name="name" autocomplete="name" required></div>
-          <div class="field"><label for="f-email">{{ f.email }} <span class="req" aria-hidden="true">*</span></label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
-          <div class="field"><label for="f-org">{{ f.org }} <span class="req" aria-hidden="true">*</span></label><input id="f-org" name="organisation" autocomplete="organization" required></div>
-          <div class="field"><label for="f-role">{{ f.role }} <span class="req" aria-hidden="true">*</span></label>
-            <select id="f-role" name="role" required><option value="">{{ f.choose }}</option>{% for o in f.roles %}<option>{{ o }}</option>{% endfor %}</select></div>
-        </div>
-      </fieldset>
-      <fieldset>
-        <legend>{{ f.legend_job }}</legend>
-        <div class="form-grid">
-          <div class="field"><label for="f-country">{{ f.country }} <span class="req" aria-hidden="true">*</span></label>
-            <select id="f-country" name="country" required><option value="">{{ f.choose }}</option>{% set here = (loc.country or '')|lower %}{% set fc = form_countries() %}{% for g in fc.groups %}<optgroup label="{{ g.title }}">{% for o in g.options %}<option data-code="{{ o.code }}"{% if o.code == here %} selected{% endif %}>{{ o.name }}</option>{% endfor %}</optgroup>{% endfor %}<option data-code="other">{{ fc.other }}</option></select></div>
-          <div class="field"><label for="f-asset">{{ f.asset }} <span class="req" aria-hidden="true">*</span></label>
-            <select id="f-asset" name="asset" required><option value="">{{ f.choose }}</option>{% for o in f.assets %}<option>{{ o }}</option>{% endfor %}</select></div>
-          <div class="field"><label for="f-size">{{ f.size }}</label><input id="f-size" name="size" inputmode="decimal"></div>
-          <div class="field"><label for="f-when">{{ f.when }}</label><input id="f-when" name="deadline"></div>
-        </div>
-        <div class="field field--checks" role="group" aria-labelledby="f-needs-label">
-          <p class="label" id="f-needs-label">{{ f.needs }}</p>
-          <div class="checks">
-          {% for o in f.needs_options %}<label class="check"><input type="checkbox" name="needs" value="{{ o }}"><span>{{ o }}</span></label>{% endfor %}
-          </div>
-        </div>
-        <div class="field"><label for="f-msg">{{ f.message }}</label><textarea id="f-msg" name="message" rows="5" aria-describedby="f-msg-hint"></textarea><p class="hint" id="f-msg-hint">{{ f.message_hint }}</p></div>
-        <div class="field field--half"><label for="f-heard">{{ f.heard }}</label>
-          <select id="f-heard" name="heard"><option value="">{{ f.choose }}</option>{% for o in f.heard_options %}<option>{{ o }}</option>{% endfor %}</select></div>
-      </fieldset>
+      <p class="form-intro">{{ f.intro }}</p>
+      <div class="form-grid">
+        <div class="field"><label for="f-name">{{ f.name }}</label><input id="f-name" name="name" autocomplete="name" required aria-describedby="f-name-err" data-err-required="{{ f.err_name }}"><p class="field-error" id="f-name-err" hidden></p></div>
+        <div class="field"><label for="f-email">{{ f.email }}</label><input id="f-email" name="email" type="email" autocomplete="email" spellcheck="false" autocapitalize="off" required aria-describedby="f-email-err" data-err-required="{{ f.err_email }}" data-err-format="{{ f.err_email_format }}"><p class="field-error" id="f-email-err" hidden></p></div>
+        <div class="field"><label for="f-phone">{{ f.phone }} <span class="opt">({{ f.optional }})</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel"></div>
+        <div class="field"><label for="f-company">{{ f.company }} <span class="opt">({{ f.optional }})</span></label><input id="f-company" name="company" autocomplete="organization"></div>
+        <div class="field field--wide"><label for="f-msg">{{ f.message }} <span class="opt">({{ f.optional }})</span></label><textarea id="f-msg" name="message" rows="3" placeholder="{{ f.message_placeholder }}"></textarea></div>
+      </div>
+      <button type="submit" class="btn btn-lg form-submit">{{ icon('send', 'icon icon-sm') }}<span>{{ f.submit }}</span></button>
       <p class="form-privacy">{{ icon('lock', 'icon icon-xs') }} {{ f.privacy }}{% set pv = resolve('privacy') %}{% if pv and not pv.noindex %} <a href="{{ pv.url }}"{% if pv.lang2 != page.lang2 %} hreflang="{{ pv.lang }}"{% endif %}>{{ f.privacy_link }}</a>{% endif %}</p>
-      <button type="submit" class="btn btn-lg">{{ icon('send', 'icon icon-sm') }}<span>{{ f.submit }}</span></button>
       <p class="form-status" id="formMsg" role="status" aria-live="polite"></p>
     </form>
     <aside class="contact-aside" aria-label="{{ f.next_title }}">

@@ -609,21 +609,13 @@ class Build:
         q.update(extra or {})
         return href + ("?" + "&".join(f"{k}={v}" for k, v in q.items()) if q else "")
 
-    def form_countries(self, lk):
-        """The contact form's country options: every country with a published (status: live) section, under
-        its region heading, named by i18n `form.countries` (one missing there fails the build), then `other`.
-        Draft sections, built only by --drafts, stay out of the list."""
-        names = self.t_of(lk)["form"]["countries"]
-        fold = lambda s: "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c)).casefold()
-        groups = defaultdict(list)
-        for cc in dict.fromkeys(self.locales[k]["country"].lower() for k in self.public_locales if self.locales[k]["country"]):
-            if not names.get(cc):
-                self.err(f"data/i18n/{self.locales[lk]['i18n']}.yaml: form.countries has no name for '{cc}', a live country")
-                continue
-            groups[(self.countries.get(cc) or {}).get("region")].append({"code": cc, "name": names[cc]})
-        return {"groups": [{"title": self.tr(lk, "regions", r), "options": sorted(groups[r], key=lambda o: fold(o["name"]))}
-                           for r in REGIONS if groups[r]],
-                "other": names.get("other")}
+    def form_country_names(self):
+        """{code: English name} for every country with a published (status: live) section. The contact
+        form sends the name of the page's own country, or of the one a link names in ?country=, as a hidden
+        field; draft sections stay out."""
+        return {cc: self.countries[cc]["name"] for cc in dict.fromkeys(
+            self.locales[k]["country"].lower() for k in self.public_locales if self.locales[k]["country"])
+            if (self.countries.get(cc) or {}).get("name")}
 
     def fmt_date(self, d, t):
         if isinstance(d, int) or (isinstance(d, str) and re.fullmatch(r"\d{4}", d)):
@@ -1131,7 +1123,7 @@ class Build:
                     resolve=lambda k: self.resolve(k, lk), footer=self.footers[lk], today=self.today,
                     region_js=self.region_js_url, thanks_url=self.thanks_url(p),
                     label_of=lambda q: self.label_in(q, lk), label_text=lambda q: self.label_in(q, lk, text=True),
-                    form_countries=(lambda: self.form_countries(lk)))
+                    form_country_names=self.form_country_names)
 
     def own_specials(self, lk):
         """A section gets its own 404 and thank-you pages when it has its own (non-English) UI strings."""
@@ -1812,9 +1804,9 @@ class Build:
     def check_similarity(self, built):
         lim = self.rules["limits"]
         idx = [p for p in built if not p["noindex"] and not p.get("special")]
-        # a <select>'s options (the contact form's country list) are generated form chrome, the same on every
-        # contact page, not copy: they stay out of the comparison (the guards still read them)
-        copy = lambda h: re.sub(r"(?s)<select\b.*?</select>", " ", h)
+        # the contact form is generated chrome, the same on every contact page of a language, not copy: it
+        # stays out of the comparison (the guards still read it)
+        copy = lambda h: re.sub(r"(?s)<form\b.*?</form>", " ", h)
         sh = {p["url"]: self.shingles(self.visible_text(copy(p["html"]), main_only=True).replace("¶", " ")) for p in idx}
         for i, a in enumerate(idx):
             for b in idx[i + 1:]:

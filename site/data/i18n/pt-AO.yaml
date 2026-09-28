@@ -107,80 +107,34 @@ article:
   author: AfriScan
 
 form:
-  legend_you: Sobre si
-  legend_job: Sobre o traçado ou o terreno
-  name: Nome completo
-  email: E-mail profissional
-  org: Empresa ou organização
-  role: Função
-  roles:
-    - Terras e realojamento
-    - Faixa de servidão ou integridade de activos
-    - HSE, EIAS ou desempenho social
-    - Compras ou aprovisionamento
-    - Consultor de EIAS ou de realojamento
-    - Financiador ou monitor independente
-    - Outra
-  country: País
-  countries:        # Cada país com site (a chave de data/countries.yaml) e `other`; o formulário agrupa-os por região
-    za: África do Sul
-    mz: Moçambique
-    zm: Zâmbia
-    zw: Zimbabwe
-    mw: Malawi
-    na: Namíbia
-    bw: Botswana
-    ao: Angola
-    ke: Quénia
-    tz: Tanzânia
-    ug: Uganda
-    rw: Ruanda
-    ng: Nigéria
-    gh: Gana
-    cd: RD Congo
-    other: Outro
-  asset: O que precisa de levantar
-  assets:
-    - Oleoduto ou gasoduto
-    - Linha eléctrica
-    - Caminho-de-ferro ou estrada
-    - Concessão mineira
-    - Propriedade ou instalação
-    - Área de projecto ou de realojamento
-    - Outro
-  size: Extensão aproximada (km) ou área (km²)
-  when: Quando precisa dos resultados?
-  needs: De que precisa?
-  needs_options:
-    - Registo de base das construções
-    - Levantamentos periódicos com relatório de alterações
-    - Registo na data de corte (realojamento)
-    - Comparação de traçados ou de locais
-    - Levantamento com drone
-    - Outra coisa
-  message: Fale-nos do traçado ou do terreno
-  message_hint: A província e o município, as larguras das faixas a verificar e a data que o registo deve reflectir.
-  heard: Como soube de nós?
-  heard_options: [Motor de pesquisa, LinkedIn, Evento, Recomendação, Portal de fornecedores ou concurso, Outro]
-  required: obrigatório
-  choose: Escolha…
-  submit: Enviar pedido
+  intro: Só precisamos do seu nome e do seu e-mail. O resto é opcional.
+  name: Nome
+  email: E-mail
+  phone: Telemóvel ou WhatsApp
+  company: Empresa
+  message: Mensagem
+  message_placeholder: "De que precisa? Um traçado, uma zona, uma data: qualquer detalhe ajuda."
+  optional: opcional
+  err_name: Indique o seu nome.
+  err_email: Indique o seu endereço de e-mail.
+  err_email_format: Indique um endereço de e-mail válido, por exemplo nome@example.com.
+  submit: Enviar
   sending: A enviar…
-  success: Obrigado. O seu pedido foi enviado e responderemos por e-mail.
-  error: Não foi possível enviar o pedido neste momento. A tentar de outra forma…
+  success: Obrigado. A sua mensagem foi enviada e responderemos em breve.
+  error: Não foi possível enviar a mensagem neste momento. A tentar de outra forma…
   privacy: O seu pedido chega-nos através do FormSubmit, um serviço de envio de formulários.
   privacy_link: Leia o aviso de privacidade (em inglês).
   honeypot: Deixe este campo em branco
-  subject: Novo pedido AfriScan (Angola, PT)
+  subject: Novo pedido AfriScan
   next_title: O que acontece a seguir
   next_steps:
-    - Respondemos por e-mail para confirmar o que precisamos de si.
+    - Respondemos-lhe por e-mail, ou por telemóvel se nos deixar um número.
     - Uma breve conversa sobre o traçado ou o terreno, as larguras que contam e as imagens.
     - "Uma proposta escrita: âmbito, plano de imagens, método, produtos a entregar e calendário."
-  send_title: O que enviar
-  send_text: "O ficheiro do traçado ou do limite (KML, KMZ, GeoJSON, Shapefile, GPX ou GeoPackage), o país e a província, as larguras a verificar, a data que o registo deve reflectir, os produtos de que precisa e o prazo. Ainda não tem ficheiro? Descreva a localização e desenhamos o traçado consigo."
+  send_title: Não precisa de preparar nada
+  send_text: "Basta uma nota curta. Se tiver o ficheiro do traçado ou do limite (KML, KMZ, GeoJSON, Shapefile, GPX ou GeoPackage), tenha-o à mão: pedimo-lo quando lhe respondermos. Ainda não tem ficheiro? Desenhamos o traçado consigo."
   procurement_title: Equipas de compras
-  procurement_text: Envie, com o pedido, o formulário de registo ou de pré-qualificação de fornecedor ou os documentos do concurso. A proposta indica que registos o seu processo exige e em que ponto está cada um.
+  procurement_text: Mencione o concurso ou o portal de fornecedores na mensagem, e pedimos-lhe os documentos quando lhe respondermos. A proposta indica que registos o seu processo exige e em que ponto está cada um.
 
 notfound:
   title: Página não encontrada | AfriScan
@@ -191,7 +145,7 @@ notfound:
 thanks:
   title: Obrigado | AfriScan
   h1: Obrigado, o seu pedido foi enviado
-  text: Recebemos o seu pedido e responderemos por e-mail. Se tiver um ficheiro do traçado ou do limite que não anexou, tenha-o à mão para a conversa inicial.
+  text: "Recebemos os seus dados e vamos responder-lhe. Se tiver um ficheiro do traçado ou do limite, tenha-o à mão: pedimo-lo quando lhe respondermos."
   next: Enquanto espera
 
 samples:

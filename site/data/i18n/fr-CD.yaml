@@ -111,80 +111,34 @@ article:
   author: AfriScan
 
 form:
-  legend_you: Vous
-  legend_job: Le tracé ou le site
-  name: Nom et prénom
-  email: Adresse e-mail professionnelle
-  org: Entreprise ou organisme
-  role: Votre fonction
-  roles:
-    - Foncier et réinstallation
-    - Emprises ou intégrité des ouvrages
-    - HSE, EIES ou performance sociale
-    - Achats ou approvisionnement
-    - Bureau d’études EIES ou PAR
-    - Bailleur ou contrôleur indépendant
-    - Autre
-  country: Pays
-  countries:        # Chaque pays qui a un site (sa clé dans data/countries.yaml) et `other` ; le formulaire les groupe par région
-    za: Afrique du Sud
-    mz: Mozambique
-    zm: Zambie
-    zw: Zimbabwe
-    mw: Malawi
-    na: Namibie
-    bw: Botswana
-    ao: Angola
-    ke: Kenya
-    tz: Tanzanie
-    ug: Ouganda
-    rw: Rwanda
-    ng: Nigeria
-    gh: Ghana
-    cd: RD Congo
-    other: Autre
-  asset: Ouvrage ou site à relever
-  assets:
-    - Gazoduc ou oléoduc
-    - Ligne électrique
-    - Voie ferrée ou route
-    - Concession minière
-    - Domaine ou site
-    - Zone de projet ou de réinstallation
-    - Autre
-  size: Longueur approximative (km) ou superficie (km²)
-  when: Pour quand vous faut-il les résultats ?
-  needs: De quoi avez-vous besoin ?
-  needs_options:
-    - Registre initial des constructions
-    - Relevés périodiques et avis de changement
-    - Registre à la date butoir (réinstallation)
-    - Comparaison de tracés ou de sites
-    - Levé par drone
-    - Autre chose
-  message: Parlez-nous du tracé ou du site
-  message_hint: La province et la localisation, les distances à vérifier et la date que le registre doit refléter.
-  heard: Comment nous avez-vous connus ?
-  heard_options: [Moteur de recherche, LinkedIn, Événement, Recommandation, Portail fournisseurs ou appel d’offres, Autre]
-  required: obligatoire
-  choose: Choisir…
-  submit: Envoyer la demande
+  intro: Seuls votre nom et votre adresse e-mail sont demandés. Le reste est facultatif.
+  name: Nom
+  email: Adresse e-mail
+  phone: Téléphone ou WhatsApp
+  company: Entreprise ou organisme
+  message: Message
+  message_placeholder: "De quoi avez-vous besoin ? Un tracé, une zone, une date : tout renseignement est utile."
+  optional: facultatif
+  err_name: Veuillez indiquer votre nom.
+  err_email: Veuillez indiquer votre adresse e-mail.
+  err_email_format: Veuillez indiquer une adresse e-mail valide, par exemple nom@example.com.
+  submit: Envoyer
   sending: Envoi en cours…
-  success: Merci. Votre demande a bien été envoyée ; nous vous répondrons par e-mail.
-  error: Impossible d’envoyer votre demande pour le moment. Nouvelle tentative par un autre moyen…
+  success: Merci. Votre message a bien été envoyé ; nous reviendrons vers vous.
+  error: Impossible d’envoyer votre message pour le moment. Nouvelle tentative par un autre moyen…
   privacy: Votre demande nous parvient par FormSubmit, un service d’acheminement de formulaires.
   privacy_link: Lire la politique de confidentialité (en anglais).
   honeypot: Laissez ce champ vide
-  subject: Nouvelle demande AfriScan (RDC, FR)
+  subject: Nouvelle demande AfriScan
   next_title: La suite
   next_steps:
-    - Nous répondons par e-mail pour confirmer ce dont nous avons besoin.
+    - Nous revenons vers vous par e-mail, ou par téléphone si vous avez laissé un numéro.
     - Un court échange sur le tracé ou le site, les distances qui comptent et les images disponibles.
     - "Une proposition écrite : périmètre, plan d’imagerie, méthode, livrables et calendrier."
-  send_title: Ce qu’il faut envoyer
-  send_text: "Le fichier du tracé ou des limites (KML, KMZ, GeoJSON, Shapefile, GPX ou GeoPackage), le pays et la province, les distances à vérifier, la date que le registre doit refléter, les livrables attendus et votre échéance. Pas encore de fichier ? Décrivez la localisation : nous dessinons le tracé avec vous."
+  send_title: Rien à préparer
+  send_text: "Un court message suffit. Si vous avez le fichier du tracé ou des limites (KML, KMZ, GeoJSON, Shapefile, GPX ou GeoPackage), gardez-le à portée de main : nous vous le demanderons en revenant vers vous. Pas encore de fichier ? Nous dessinons le tracé avec vous."
   procurement_title: Équipes achats
-  procurement_text: Joignez à votre demande vos formulaires fournisseur ou de préqualification, ou le dossier d’appel d’offres. La proposition indique, pour votre contrat, les pièces disponibles et celles en cours.
+  procurement_text: Mentionnez l’appel d’offres ou le portail fournisseurs dans votre message ; nous vous demanderons les pièces en revenant vers vous. La proposition indique, pour votre contrat, les pièces disponibles et celles en cours.
 
 notfound:
   title: Page introuvable | AfriScan
@@ -195,7 +149,7 @@ notfound:
 thanks:
   title: Merci | AfriScan
   h1: Merci, votre demande a été envoyée
-  text: Nous avons bien reçu votre demande et vous répondrons par e-mail. Si vous avez un fichier de tracé ou de limites que vous n’avez pas joint, gardez-le à portée de main pour le premier échange.
+  text: "Nous avons bien reçu vos coordonnées et reviendrons vers vous. Si vous avez un fichier de tracé ou de limites, gardez-le à portée de main : nous vous le demanderons en vous répondant."
   next: En attendant
 
 samples:
