@@ -157,7 +157,7 @@ The southern green-hydrogen concessions lie inside Tsau ǁKhaeb National Park, w
 :::callout{tone="legal" title="Environmental clearance"}
 The Environmental Management Act 7 of 2007 lists activities that need an Environmental Clearance Certificate from the Environmental Commissioner, among them "the transmission and supply of electricity", mining and quarrying, "oil, water, gas and petrochemical and other bulk supply pipelines", public roads, railways and harbours, and communication networks ([GN 29 of 2012](https://www.lac.org.na/laws/2012/4878.pdf)). We supply dated layers your ESIA consultant can use in the assessment and in monitoring.
 
-For the Southern Corridor, a Strategic Environmental and Social Assessment for green energy production and industrialisation was put out for public comment until 4 September 2026 ([Namibia Green Hydrogen Programme](https://gh2namibia.com/sesa-findings-ready-for-public-review/)).
+For a green-hydrogen development corridor in the south, a Strategic Environmental and Social Assessment for green energy production and industrialisation was put out for public comment until 4 September 2026.
 :::
 
 We found no statutory protection strip for pipelines in Namibia: send the widths your servitude agreements or standards use. A draft Downstream Gas Bill published by the Electricity Control Board in August 2026 is not law.

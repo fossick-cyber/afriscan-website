@@ -74,7 +74,7 @@ Other services want to cross or share your servitude: roads, power lines, fibre,
 :::
 ::::
 
-::::section{id="context" tone="alt" eyebrow="The South African picture" title="What a bulk-water utility's own paper says" lead="A 2026 paper by a Rand Water author sets out the problem more clearly than any sales brochure. It is the author's account, not an official Rand Water statement."}
+::::section{id="context" tone="alt" eyebrow="The South African picture" title="What a bulk-water utility's own paper says" lead="A 2026 paper by an author at a large bulk-water utility sets out the problem more clearly than any sales brochure. It is the author's account, not an official statement by the utility."}
 :::::columns{split="2-1"}
 ::::col
 The paper, presented at the [FIG Congress 2026](https://fig.net/resources/proceedings/fig_proceedings/fig2026/papers/ts05h/TS05H_singh_13637.pdf), describes a network of about 3,660 km of pipelines, with servitude encroachment ranked second on the utility's strategic risk register. A 2016 baseline by SANSA identified 22 informal encroachments; after that there is a gap in encroachment data from 2017 to 2025, and in December 2025 a consultant was appointed for six months to map the servitudes. The paper also describes the utility's engagement with other servitude holders, Eskom and Transnet among them.

@@ -4,7 +4,7 @@ template: industry
 slug: power-lines
 title: Power-Line Wayleave Encroachment in Zambia | AfriScan
 description: Structures and tall vegetation inside 33 to 400 kV wayleaves in Zambia, measured against the 2026 Wayleave and Clearances Regulations and dated.
-h1: Structures and vegetation inside power-line wayleaves, mapped and dated
+h1: Structures and vegetation inside power-line wayleaves in Zambia, mapped and dated
 crumb: Power lines
 eyebrow: Power & utilities · Zambia · Wayleaves and interconnectors
 lead: The 2026 Wayleave and Clearances Regulations give every voltage a minimum wayleave width, and the Electricity Act says no one may build in a way that is likely to interfere with a line without the licensee's permission. AfriScan measures each structure's distance to your line's centreline and to the wayleave edge you give us, groups them by 500 m stretch, and shows which ones are new since the last survey. A person reviews every result.

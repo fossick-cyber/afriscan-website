@@ -12,6 +12,7 @@ nav_label: Wayleave law in Tanzania
 nav_blurb: Land Act removal orders, sector wayleaves, road and rail reserves
 summary: The Land Act's wayleaves and removal orders, the electricity and petroleum wayleave duties, road and railway reserves, and the valuation-date rule, with sources.
 icon: scale
+eyebrow: Guide · Tanzania
 lead: "Tanzanian law protects linear infrastructure in several places at once: the Land Act's public rights of way, the wayleave duties in the Electricity and Petroleum Acts, and the reserves the Roads and Railways Acts set. This guide is for wayleave officers, land and valuation teams, integrity engineers and their counsel: what each law says, where the widths come from, and why the date a structure appeared matters. A summary of public rules for Mainland Tanzania as of 27 September 2026; it is not legal advice."
 related: [oil-gas, power-utilities, rail-roads]
 about: [home, oil-gas, tz-gas-lng, power-utilities, rail-roads, mining, resettlement-cut-off-baselines, right-of-way-monitoring, encroachment-surveys]

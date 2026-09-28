@@ -2,6 +2,7 @@
 key: insight-dated-imagery-cut-off
 template: article
 published: 2026-09-26
+updated: 2026-09-28
 parent: resources
 nav_group: resources
 nav_langs: [en]

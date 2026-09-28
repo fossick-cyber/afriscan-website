@@ -2,6 +2,7 @@
 key: mz-protection-zone
 template: article
 published: 2026-09-26
+updated: 2026-09-27
 title: "Zona de Protecção Parcial de 50 m: Lei de Terras | AfriScan"
 description: "O que diz a lei sobre a faixa de 50 m ao longo de gasodutos, oleodutos e linhas de energia: Lei de Terras, Lei do Petróleo, Lei de Electricidade e Pande–Temane."
 h1: A zona de protecção parcial de 50 metros, explicada

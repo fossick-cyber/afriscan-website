@@ -136,7 +136,7 @@ The Land Law protects 50 m on each side of a railway's axis and 30 m or 15 m alo
 ::::
 
 ::::section{id="standard" tone="dark" eyebrow="Our standard" title="Land and assets, never people"}
-AfriScan maps what is on the land: structures, cleared ground, excavations and tracks. We do not identify, count or follow people, and whether a structure is authorised is for you and the authorities to decide. We write *construções*, never *invasões*.
+AfriScan maps what is on the land: structures, cleared ground, excavations and tracks. We do not identify, count or follow people, and whether a structure is authorised is for you and the authorities to decide. We describe structures and land, never the people who live there.
 
 :::cards{cols="4"}
 :::card{title="A person reviews every result" icon="user-check"}

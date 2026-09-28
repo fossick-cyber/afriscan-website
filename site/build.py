@@ -125,6 +125,25 @@ def name_digest(name):
     return _NAME_DIGESTS[joined]
 
 
+UNIT_GAP = re.compile(r"(?<=\d) (?=(?:km²|km|m²|m|kV|MW|ha)(?![^\W\d_]))")
+UNIT_SKIP = re.compile(r"(?is)<(script|style|code|pre|textarea)\b.*?</\1>|<[^>]+>")
+
+
+def nbsp_units(html):
+    """A no-break space between a number and its unit ("100\u00a0m") in the text of <body>, so the
+    two never wrap apart; tags, attributes, scripts and code are left alone."""
+    head, sep, body = html.partition("<body")
+    if not sep:
+        return html
+    out, pos = [], 0
+    for m in UNIT_SKIP.finditer(body):
+        out.append(UNIT_GAP.sub("\u00a0", body[pos:m.start()]))
+        out.append(m.group(0))
+        pos = m.end()
+    out.append(UNIT_GAP.sub("\u00a0", body[pos:]))
+    return head + sep + "".join(out)
+
+
 def name_candidates(text, words=3):
     """Every run of up to WORDS tokens joined only by spaces, full stops, hyphens, dashes or slashes."""
     text = text.lower()
@@ -543,6 +562,14 @@ class Build:
     def site_label(self, lk, viewer_lk):
         return self.tr(viewer_lk, "sites", lk) or self.locales[lk]["label"]
 
+    def label_lang(self, lk, viewer_lk):
+        """The lang= a link to section LK needs on a VIEWER_LK page: LK's language when the label is LK's own
+        name for itself in another language ("Moçambique (Português)" on an English page), else None, since a
+        label written in the page's language ("Quénia (em inglês)") takes the page's."""
+        if self.locales[lk]["lang"][:2] == self.locales[viewer_lk]["lang"][:2]:
+            return None
+        return self.locales[lk]["lang"] if self.site_label(lk, viewer_lk) == self.site_label(lk, lk) else None
+
     def by_region(self, items, viewer_lk, key="section"):
         """Items that carry a section key, as (items with no region, i.e. global) and region groups in REGIONS
         order. Within a region, countries sort by how the viewer's language names them (the label of the
@@ -662,6 +689,7 @@ class Build:
             target = self.find(p["key"], lk) or self.home_of(lk)
             loc = self.locales[lk]
             links.append({"key": lk, "section": lk, "label": self.site_label(lk, p["loc_key"]), "lang": loc["lang"],
+                          "text_lang": self.label_lang(lk, p["loc_key"]),
                           "href": target["url"], "current": lk == p["loc_key"], "draft": not self.is_live(lk)})
         return links
 
@@ -714,6 +742,11 @@ class Build:
             d.update(kw)
             return d
 
+        def foreign_lang(hub, items):
+            """The hub (or first item) a group heading links to: its language when it is not the page's."""
+            target = hub or next((q for q in self.pages if q["url"] == items[0]["href"]), None)
+            return target["lang"] if target and target["lang2"] != page_lang[:2] else None
+
         groups = []
         # industries / solutions from the catalogue
         for gname, cat in (("industries", self.catalogue["industries"]), ("solutions", self.catalogue["solutions"])):
@@ -733,7 +766,7 @@ class Build:
             hub = self.hub_page(gname, lk)
             if items or hub:
                 groups.append({"key": gname, "label": t["nav"][gname], "href": (hub or {"url": items[0]["href"]})["url"],
-                               "items": items})
+                               "items": items, "hub_lang": foreign_lang(hub, items)})
         # how / resources: pages that set nav_group (this section first, then global by key)
         for gname in ("how", "countries", "resources"):
             items, seen = [], set()
@@ -749,14 +782,15 @@ class Build:
             extra = {}
             if gname == "countries":
                 homes = [item(self.home_of(k), self.site_label(k, lk), "", lang=None if self.locales[k]["lang"][:2] == page_lang[:2] else self.locales[k]["lang"],
-                              section=k, draft=not self.is_live(k))
+                              text_lang=self.label_lang(k, lk), section=k, draft=not self.is_live(k))
                          for k in self.live_locales if k != "global"]
                 extra = {"regions": self.by_region(homes, lk)[1], "pages": items}   # the panel groups homes by region
                 items = homes + items
             hub = self.hub_page(gname, lk)
             if items or hub:
                 groups.append({"key": gname, "label": t["nav"][gname],
-                               "href": (hub or {"url": items[0]["href"]})["url"], "items": items, **extra})
+                               "href": (hub or {"url": items[0]["href"]})["url"], "items": items,
+                               "hub_lang": foreign_lang(hub, items), **extra})
         order = {g: i for i, g in enumerate(NAV_GROUPS)}
         groups.sort(key=lambda g: order[g["key"]])
         return groups
@@ -796,6 +830,8 @@ class Build:
                 pending.append(n)
         flush_default()
         html = "\n".join(out)
+        # ids the components already set (a section's id="scope") win over a heading's automatic slug
+        used_ids.update(re.findall(r'<(?!h[1-6]\b)[a-z][^>]*\sid="([^"]+)"', html))
         html = add_heading_ids(html, used_ids)
         html = wrap_tables(html, TABLE_LABEL.get(p["lang2"], "Table"))
         html = self.resolve_key_links(p, html)
@@ -1015,7 +1051,8 @@ class Build:
             if not target or target["noindex"]:
                 target = self.home_of(k)
             sites.append({"section": k, "label": self.site_label(k, p["loc_key"]), "href": target["url"],
-                          "lang": self.locales[k]["lang"], "draft": not self.is_live(k)})
+                          "lang": self.locales[k]["lang"], "text_lang": self.label_lang(k, p["loc_key"]),
+                          "draft": not self.is_live(k)})
         return {"sites": sites, "groups": self.by_region(sites, p["loc_key"])[1]}
 
     def cmp_countries(self, p, b, ctx):
@@ -1114,7 +1151,8 @@ class Build:
         g = {x["key"]: x for x in nav}
         explore = [{"label": x["label"], "href": x["href"], "lang": None, "badge": None} for x in nav]
         sites = [{"section": k, "label": self.site_label(k, lk), "href": self.home_of(k)["url"],
-                  "lang": self.locales[k]["lang"], "draft": not self.is_live(k)} for k in self.live_locales]
+                  "lang": self.locales[k]["lang"], "text_lang": self.label_lang(k, lk),
+                  "draft": not self.is_live(k)} for k in self.live_locales]
         top, regions = self.by_region(sites, lk)
         return {"explore": explore,
                 "industries": g.get("industries", {}).get("items", []),
@@ -1167,7 +1205,8 @@ class Build:
             found.append((rank, a["meta"].get("nav_order", 50), a["title"], a))
         found.sort(key=lambda x: x[:3])
         return [{"title": self.label_in(a, p["loc_key"]), "text": a["meta"].get("summary") or a["description"], "href": a["url"],
-                 "icon": a["meta"].get("icon"), "eyebrow": a["meta"].get("eyebrow")} for *_, a in found[:6]]
+                 "icon": a["meta"].get("icon"), "eyebrow": a["meta"].get("eyebrow")}
+                for *_, a in found[:9 if p["loc_key"] == "global" else 6]]   # global pages: room for every country's guide
 
     def country_row(self, p):
         """Global solution pages: one button per country site, to that country's version of the service or its home."""
@@ -1182,7 +1221,8 @@ class Build:
             if not target or target["noindex"]:
                 target = self.home_of(k)
             sites.append({"section": k, "label": self.site_label(k, p["loc_key"]), "href": target["url"],
-                          "lang": self.locales[k]["lang"], "draft": not self.is_live(k)})
+                          "lang": self.locales[k]["lang"], "text_lang": self.label_lang(k, p["loc_key"]),
+                          "draft": not self.is_live(k)})
         return self.by_region(sites, p["loc_key"])[1]
 
     def written_for(self, p):
@@ -1257,7 +1297,7 @@ class Build:
         if p["template"] in ("law", "law_hub"):
             ctx["as_of"] = m.get("as_of", self.site["law_as_of"])
         html = self.env.get_template(f"{p['template']}.html.j2").render(**ctx)
-        html = re.sub(r"\n\s*\n+", "\n", html)
+        html = nbsp_units(re.sub(r"\n\s*\n+", "\n", html))
         p["html"] = html
         p["out"].parent.mkdir(parents=True, exist_ok=True)
         p["out"].write_text(html, encoding="utf-8")
@@ -1452,7 +1492,7 @@ class Build:
         ctx["links"] = [q for q in [self.resolve(k, p["loc_key"]) for k in
                                     ("home", "industries", "solutions", "results", "contact")] if q]
         html = self.env.get_template(f"{p['template']}.html.j2").render(**ctx)
-        html = re.sub(r"\n\s*\n+", "\n", html)
+        html = nbsp_units(re.sub(r"\n\s*\n+", "\n", html))
         p["html"] = html
         p["out"].parent.mkdir(parents=True, exist_ok=True)
         p["out"].write_text(html, encoding="utf-8")
@@ -1483,7 +1523,9 @@ class Build:
             rows = []
             for p in sorted(members, key=lambda p: p["url"]):
                 deps = [p["src"]] + ([SITE / f"data/law/{p['meta']['law']}.yaml"] if p["template"] == "law" else [])
-                lm = self.git_lastmod(*deps)
+                # an article states its own dates (visible, and in its Article JSON-LD): the sitemap agrees
+                lm = (str(p["meta"].get("updated") or p["meta"]["published"]) if p["template"] == "article"
+                      else self.git_lastmod(*deps))
                 im = "".join(f"\n    <image:image><image:loc>{self.base}{u}</image:loc></image:image>"
                              for u in imgs.get(p["url"], []))
                 rows.append(f"  <url>\n    <loc>{p['abs_url']}</loc>\n    <lastmod>{lm}</lastmod>{im}\n  </url>")

@@ -14,7 +14,7 @@ nav_blurb: Each country's regulator and rules, side by side
 icon: drone
 summary: What a commercial drone survey needs in each country, side by side, with the instruments behind each rule and links to the full country guides.
 eyebrow: Guide · Drone law
-lead: "In every country we work in, a commercial drone survey needs an operator approval from the civil aviation authority and permissions for each site, and several add a security clearance or vetting. The table names each country's regulator and key instruments and links its full guide. Below it, three contrasting regimes are set side by side, rule by rule: Mozambique authorises the survey and the release of its data separately from the flight, South Africa adds an Air Service Licence with a local-ownership test, and Nigeria builds a national security clearance into the operator certificate."
+lead: "In every country we work in, a commercial drone survey needs an authorisation from the civil aviation authority, whether an operator certificate or an authorisation for each flight or operation, and permissions for each site, and several add a security clearance or vetting. The table names each country's regulator and key instruments and links its full guide. Below it, three contrasting regimes are set side by side, rule by rule: Mozambique authorises the survey and the release of its data separately from the flight, South Africa adds an Air Service Licence with a local-ownership test, and Nigeria builds a national security clearance into the operator certificate."
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: "Satellite or drone?", href: /insights/satellite-or-drone-corridor-surveys}

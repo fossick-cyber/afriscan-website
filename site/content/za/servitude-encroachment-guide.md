@@ -2,6 +2,7 @@
 key: za-servitude-guide
 template: article
 published: 2026-09-26
+updated: 2026-09-28
 title: "Servitude Encroachment in South Africa: A Guide | AfriScan"
 description: What servitude holders in South Africa should know about structures in power-line, pipeline, water, rail and road strips, from the law to the records.
 h1: "Servitude encroachment in South Africa: what servitude holders need to know"
@@ -54,7 +55,7 @@ A **wayleave** is the other side of the same coin: permission to place a service
 |---|---|---|
 | **Power-line servitudes** | Eskom has publicly urged people not to build structures under high-voltage lines ([Engineering News, 19 February 2024](https://www.engineeringnews.co.za/article/eskom-urges-public-not-to-build-structures-below-high-voltage-powerlines-2024-02-19)). A February 2026 High Court judgment concerned a refused wayleave for a solar plant crossing an Eskom servitude ([Eskom](https://www.eskom.co.za/eskom-notes-the-high-court-judgment-in-a-matter-brought-by-sibanye-stillwater-and-others-for-a-wayleave-application/)). | [Power lines](/za/power-lines) |
 | **Fuel and gas pipeline servitudes** | NERSA licenses pipelines under the Petroleum Pipelines Act 60 of 2003 and the Gas Act 48 of 2001. A Gas Bill introduced in March 2026 would repeal the Gas Act ([Parliament](https://www.parliament.gov.za/bill/2327140)). | [Pipelines](/za/pipelines) |
-| **Bulk-water servitudes** | A 2026 paper by a Rand Water author ranks encroachment second on the utility's strategic risk register, across about 3,660 km of pipelines, and describes a gap in encroachment data from 2017 to 2025 ([FIG 2026](https://fig.net/resources/proceedings/fig_proceedings/fig2026/papers/ts05h/TS05H_singh_13637.pdf)). It is the author's account, not an official statement. | [Water utilities](/za/water-utilities) |
+| **Bulk-water servitudes** | A 2026 paper by an author at a large bulk-water utility ranks encroachment second on the utility's strategic risk register, across about 3,660 km of pipelines, and describes a gap in encroachment data from 2017 to 2025 ([FIG 2026](https://fig.net/resources/proceedings/fig_proceedings/fig2026/papers/ts05h/TS05H_singh_13637.pdf)). It is the author's account, not an official statement. | [Water utilities](/za/water-utilities) |
 | **Rail reserves** | In March 2024 the Housing Development Agency told Parliament that 3,941 households were living on the Central Line between Philippi and Khayelitsha ([GroundUp, 14 March 2024](https://groundup.org.za/article/thousands-of-shack-dwellers-are-still-living-on-prasa-rail-lines-in-langa-philippi-and-khayelitsha/)). | [Rail and roads](/za/rail-and-roads) |
 | **National road building restriction areas** | Not a servitude, but managed like one: any structure in the building restriction area needs SANRAL's written permission. Outside urban areas it covers land within 60 m of the road boundary, or within 500 m of a point of intersection ([SANRAL Act 7 of 1998, s48](https://www.sagc.org.za/pdf/legislation/S%20A%20National%20Roads%20Agency%20Act%207%20of%201998.pdf)). | [Rail and roads](/za/rail-and-roads#roads) |
 
@@ -98,7 +99,7 @@ On South African work we scope registers for planning, maintenance and engagemen
 
 ## New servitudes: count before you acquire {#new}
 
-South Africa is adding transmission capacity fast. NTCSA's Transmission Development Plan 2024 plans about 14,494 km of lines over ten years and names delays in servitude acquisition among its risks; the Kusile–Lulamisa 400 kV line "was delayed due to servitude acquisition challenges" ([TDP 2024](https://www.ntcsa.co.za/wp-content/uploads/2024/12/TDP-2024-Public-Report_Rev1.pdf)). Seven bidders were prequalified for the first Independent Transmission Projects in December 2025 ([DBSA](https://www.dbsa.org/sites/default/files/media/documents/2025-12/15%20Dec%202025%20ITP%20PQBs%20and%20REIPPPP%20BW7.pdf)).
+South Africa is adding transmission capacity fast. NTCSA's Transmission Development Plan 2024 plans about 14,494 km of lines over ten years and names delays in servitude acquisition among its risks; one 400 kV line "was delayed due to servitude acquisition challenges" ([TDP 2024](https://www.ntcsa.co.za/wp-content/uploads/2024/12/TDP-2024-Public-Report_Rev1.pdf)). Seven bidders were prequalified for the first Independent Transmission Projects in December 2025 ([DBSA](https://www.dbsa.org/sites/default/files/media/documents/2025-12/15%20Dec%202025%20ITP%20PQBs%20and%20REIPPPP%20BW7.pdf)).
 
 For any new line or pipeline, the cheapest time to understand the land is before the route is fixed:
 

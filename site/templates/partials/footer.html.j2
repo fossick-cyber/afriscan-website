@@ -24,17 +24,17 @@
         <ul>
           <li><a href="{{ contact(page) }}">{{ t.footer.contact }}</a></li>
           <li><a href="{{ site.parent.url }}">{{ t.footer.afridrone }}</a></li>
-          {% for k in ['about', 'privacy'] %}{% set cp = resolve(k) %}{% if cp and not cp.noindex %}<li><a href="{{ cp.url }}"{% if cp.lang2 != page.lang2 %} hreflang="{{ cp.lang }}" lang="{{ cp.lang }}"{% endif %}>{{ label_of(cp) }}</a></li>{% endif %}{% endfor %}
+          {% for k in ['about', 'privacy'] %}{% set cp = resolve(k) %}{% if cp and not cp.noindex %}<li><a href="{{ cp.url }}"{% if cp.lang2 != page.lang2 %} hreflang="{{ cp.lang }}"{% endif %}>{{ label_of(cp) }}</a></li>{% endif %}{% endfor %}
         </ul>
       </div>
       {% if footer.countries|length > 1 %}
       <div class="footer-countries">
         <p class="footer-title">{{ t.footer.countries }}</p>
-        {% if footer.countries_top %}<ul class="footer-country-top">{% for c in footer.countries_top %}<li><a href="{{ c.href }}" hreflang="{{ c.lang }}" lang="{{ c.lang }}">{{ c.label }}</a></li>{% endfor %}</ul>{% endif %}
+        {% if footer.countries_top %}<ul class="footer-country-top">{% for c in footer.countries_top %}<li><a href="{{ c.href }}" hreflang="{{ c.lang }}"{% if c.get('text_lang') %} lang="{{ c.text_lang }}"{% endif %}{% if c.get('section') == page.loc_key %} aria-current="{{ 'page' if c.href == page.url else 'true' }}"{% endif %}>{{ c.label }}</a></li>{% endfor %}</ul>{% endif %}
         <div class="footer-country-grid">
         {% for g in footer.country_regions %}
           <div><p class="footer-sub">{{ g.title }}</p>
-          <ul>{% for c in g['items'] %}<li><a href="{{ c.href }}" hreflang="{{ c.lang }}" lang="{{ c.lang }}">{{ c.label }}{% if c.draft %} <span class="lang-badge">Draft</span>{% endif %}</a></li>{% endfor %}</ul></div>
+          <ul>{% for c in g['items'] %}<li><a href="{{ c.href }}" hreflang="{{ c.lang }}"{% if c.get('text_lang') %} lang="{{ c.text_lang }}"{% endif %}{% if c.get('section') == page.loc_key %} aria-current="{{ 'page' if c.href == page.url else 'true' }}"{% endif %}>{{ c.label }}{% if c.draft %} <span class="lang-badge">Draft</span>{% endif %}</a></li>{% endfor %}</ul></div>
         {% endfor %}
         </div>
       </div>

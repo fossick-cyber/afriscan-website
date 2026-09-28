@@ -58,7 +58,7 @@ The Transmission Development Plan for 2025 to 2034 plans about 14,494 km of new 
 Seven bidders were prequalified on 15 December 2025 for the first Independent Transmission Projects, with the final request for proposals expected in the 2026/27 financial year ([DBSA](https://www.dbsa.org/sites/default/files/media/documents/2025-12/15%20Dec%202025%20ITP%20PQBs%20and%20REIPPPP%20BW7.pdf)). Every one of them needs route and servitude baselines.
 :::
 :::card{title="Encroachment on the risk register" icon="water" eyebrow="Bulk water"}
-A paper by a Rand Water author at the FIG Congress 2026 reports servitude encroachment as the second risk on that utility's strategic risk register, and a gap in encroachment data from 2017 to 2025 ([FIG 2026](https://fig.net/resources/proceedings/fig_proceedings/fig2026/papers/ts05h/TS05H_singh_13637.pdf)).
+A paper by an author at a large bulk-water utility at the FIG Congress 2026 reports servitude encroachment as the second risk on that utility's strategic risk register, and a gap in encroachment data from 2017 to 2025 ([FIG 2026](https://fig.net/resources/proceedings/fig_proceedings/fig2026/papers/ts05h/TS05H_singh_13637.pdf)).
 :::
 :::card{title="Building under lines, despite the warnings" icon="houses" eyebrow="Eskom"}
 Eskom has publicly urged people not to build structures under high-voltage power lines ([Engineering News, 19 February 2024](https://www.engineeringnews.co.za/article/eskom-urges-public-not-to-build-structures-below-high-voltage-powerlines-2024-02-19)). The structures still appear between inspections.

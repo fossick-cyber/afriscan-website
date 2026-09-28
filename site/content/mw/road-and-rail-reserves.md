@@ -71,7 +71,7 @@ The Roads Authority is running nationwide sensitisation against farming in road 
 At trading centres and on the edges of towns, the reserve is where people trade and build. Each new structure is easier to discuss before it is finished than after the road is widened.
 :::
 :::card{title="“The upgrade is waiting on compensation.”" icon="calendar"}
-A lender-funded upgrade of a road on the Nacala corridor was reported in July 2026 to be more than a year behind schedule, partly because of compensation issues along the construction path. A dated record of what stood on the land gives those questions a dated starting point.
+A lender-funded upgrade of a road on the corridor to the Mozambican coast was reported in July 2026 to be more than a year behind schedule, partly because of compensation issues along the construction path. A dated record of what stood on the land gives those questions a dated starting point.
 :::
 :::card{title="“Road works cut our fibre.”" icon="excavation"}
 A telecom operator in Malawi has reported fibre outages caused by vandalism and by road construction works. Earthworks beside a buried route are visible from the air before a cable is hit.
@@ -169,7 +169,7 @@ Before the alignment is fixed, we compare the structures along each option withi
 ::::section{id="rail" eyebrow="Rail reserves" title="What stands beside the railway"}
 :::::columns{split="1-1"}
 ::::col
-Malawi's railway runs under a concession and connects to the line to the port of Nacala in Mozambique. We do not assume a rail-reserve width: we work from the reserve polygons or the width the railway gives us.
+Malawi's railway runs under a concession and connects to a rail route through Mozambique to a port on its northern coast. We do not assume a rail-reserve width: we work from the reserve polygons or the width the railway gives us.
 
 Inside the reserve and in a band beyond it we list structures, new tracks, informal crossings that show as worn paths, and fresh excavations near the track, compared between dated surveys and confirmed by a reviewer. Paths under tree cover and very narrow ones can be missed.
 ::::
@@ -198,10 +198,10 @@ Only works visible at the surface are flagged, and each flag is confirmed by a r
 :::::
 ::::
 
-::::section{id="nacala" eyebrow="The Nacala corridor" title="Routes that continue into Mozambique"}
+::::section{id="nacala" eyebrow="The corridor to the coast" title="Routes that continue into Mozambique"}
 :::::columns{split="1-1"}
 ::::col
-Road and rail on the Nacala corridor continue into Mozambique to the port of Nacala. For a route that crosses the border, the proposal covers both sides, with the widths that apply in each country. The Mozambican rules, including the 50 m partial protection zone, are on our Mozambique pages.
+Road and rail on this corridor continue into Mozambique to a port on its northern coast. For a route that crosses the border, the proposal covers both sides, with the widths that apply in each country. The Mozambican rules, including the 50 m partial protection zone, are on our Mozambique pages.
 
 [The Mozambique site](/mz/) · [The 50 m partial protection zone](/mz/50m-protection-zone)
 ::::

@@ -2,6 +2,7 @@
 key: zm-wayleave-guide
 template: article
 published: 2026-09-27
+updated: 2026-09-28
 title: "Wayleaves & Rights of Way in Zambia: A Guide | AfriScan"
 description: "What Zambian law says about wayleaves, pipeline rights of way, railway strips, road reserves and mining consents: widths, permissions and the records to keep."
 h1: "Wayleaves, reserves and rights of way in Zambia: what the law says"

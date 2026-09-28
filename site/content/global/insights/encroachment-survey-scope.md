@@ -2,6 +2,7 @@
 key: insight-survey-scope
 template: article
 published: 2026-09-26
+updated: 2026-09-28
 parent: resources
 nav_group: resources
 nav_langs: [en]
@@ -141,5 +142,5 @@ A pilot stretch with a sample check against your own field data is the cheapest 
 :::
 
 :::callout{tone="warn" title="Claims to test before you accept them"}
-Be careful with bids that promise more than imagery allows. No optical satellite or drone sees through cloud or at night. No satellite can be booked for a guaranteed date. A single accuracy figure with no method behind it tells you nothing about your route. A land survey should not identify, count or follow people, and a structure register should not call anyone an intruder: whether a structure is authorised is for you and the authorities to decide.
+Be careful with bids that promise more than imagery allows. No optical satellite or drone sees through cloud or at night. No satellite can be booked for a guaranteed date. A single accuracy figure with no method behind it tells you nothing about your route. A land survey should not identify, count or follow people, and a structure register should describe structures and land, never the people who live there: whether a structure is authorised is for you and the authorities to decide.
 :::

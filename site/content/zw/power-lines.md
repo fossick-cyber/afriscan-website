@@ -4,7 +4,7 @@ template: industry
 slug: power-lines
 title: Wayleave Encroachment on Power Lines, Zimbabwe | AfriScan
 description: Structures, farming and vegetation inside 11 kV to 400 kV wayleaves in Zimbabwe, measured against the S.I. 177 of 2018 clearances and compared between surveys.
-h1: Structures and vegetation inside power-line wayleaves, mapped and dated
+h1: "Structures and vegetation inside Zimbabwe's power-line wayleaves, mapped and dated"
 crumb: Power lines
 eyebrow: Power & utilities · Zimbabwe
 lead: Zimbabwe's Electricity (Public Safety) Regulations set a wayleave clearance for every voltage, measured either side of the outermost conductor, and require licensees to keep trees from encroaching on conductors. We measure each structure's distance to your line and to the wayleave edge, group the results by span or 500 m stretch, and show what is new since the last survey. Satellite first, and a person reviews every result.

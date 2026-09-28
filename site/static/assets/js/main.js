@@ -62,6 +62,8 @@
       if (!d.open) return;
       setMenu(false);
       closePanels();
+      const current = $(".region-menu a[aria-current]", d);   // the menu scrolls: bring this site into view
+      if (current) current.scrollIntoView({ block: "nearest" });
     });
     d.addEventListener("focusout", e => {
       if (e.relatedTarget && !d.contains(e.relatedTarget)) d.removeAttribute("open");
@@ -70,6 +72,13 @@
   // A mega-menu also opens on :hover (the same media query as in site.css), which pointerdown never
   // sees: close the country menu and any clicked-open panel first.
   const hoverPanels = window.matchMedia("(hover: hover) and (min-width: 1200px)");
+  // A panel opened with its toggle closes when keyboard focus moves on past it (the drawer keeps its sections).
+  const desktop = window.matchMedia("(min-width: 1200px)");
+  $$(".nav-item.has-panel").forEach(li => {
+    li.addEventListener("focusout", e => {
+      if (desktop.matches && e.relatedTarget && !li.contains(e.relatedTarget)) closePanels();
+    });
+  });
   $$(".nav-item.has-panel").forEach(li => {
     li.addEventListener("pointerenter", e => {
       if (e.pointerType !== "mouse" || !hoverPanels.matches) return;

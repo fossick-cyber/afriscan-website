@@ -54,7 +54,7 @@ Lines run for hundreds of kilometres across farmland, townships and open veld, a
 Roads, pipelines, fibre, housing projects and solar plants all want to cross or share the strip. Each application needs a view of what already stands there, and wayleaves can end up in court: in February 2026 the Gauteng High Court gave judgment on a refused wayleave for a solar plant crossing an Eskom servitude ([Eskom statement](https://www.eskom.co.za/eskom-notes-the-high-court-judgment-in-a-matter-brought-by-sibanye-stillwater-and-others-for-a-wayleave-application/)).
 :::
 :::card{title="“Servitude acquisition is holding up the new line.”" icon="calendar"}
-The national Transmission Development Plan names servitude acquisition among its risks, and records that the Kusile–Lulamisa 400 kV line "was delayed due to servitude acquisition challenges" ([TDP 2024](https://www.ntcsa.co.za/wp-content/uploads/2024/12/TDP-2024-Public-Report_Rev1.pdf)).
+The national Transmission Development Plan names servitude acquisition among its risks, and records that one 400 kV line "was delayed due to servitude acquisition challenges" ([TDP 2024](https://www.ntcsa.co.za/wp-content/uploads/2024/12/TDP-2024-Public-Report_Rev1.pdf)).
 :::
 :::
 

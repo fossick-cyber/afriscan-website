@@ -1,4 +1,4 @@
-{% macro region_link(r) %}<li><a href="{{ r.href }}" hreflang="{{ r.lang }}" lang="{{ r.lang }}" data-region="{{ r.key }}"{% if r.current %} aria-current="page"{% endif %}>{{ r.label }}{% if r.draft %} <span class="lang-badge">Draft</span>{% endif %}</a></li>{% endmacro %}
+{% macro region_link(r) %}<li><a href="{{ r.href }}" hreflang="{{ r.lang }}"{% if r.get('text_lang') %} lang="{{ r.text_lang }}"{% endif %} data-region="{{ r.key }}"{% if r.current %} aria-current="page"{% endif %}>{{ r.label }}{% if r.draft %} <span class="lang-badge">Draft</span>{% endif %}</a></li>{% endmacro %}
 {% set menu = page.region_menu %}
 <details class="region">
   <summary><span class="sr-only">{{ t.region.choose }}: </span>{{ icon('globe', 'icon icon-sm') }}<span class="region-current">{{ loc.short }}</span>{{ icon('chevron-down', 'icon icon-xs') }}</summary>

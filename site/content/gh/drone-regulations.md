@@ -6,10 +6,10 @@ as_of: 2026-09-27
 title: "Drone Regulations in Ghana: GCAA Part 28 | AfriScan"
 description: "What a commercial drone survey in Ghana needs in 2026: a GCAA operator certificate, drone registration and permits, pilot licences and no-fly zone approvals."
 h1: "Hiring a drone survey in Ghana: what the rules require"
-crumb: Drone rules
+crumb: Drone law
 nav_group: countries
 nav_order: 20
-nav_label: Drone rules in Ghana
+nav_label: Drone law in Ghana
 nav_blurb: GCAA Part 28, the ROC, no-fly zones and a client checklist
 summary: The GCAA approvals a commercial drone survey needs in Ghana, the five-phase certification path, the no-fly zones set with the Ministry of National Security, the rules along a right of way, data protection and a client checklist.
 icon: drone

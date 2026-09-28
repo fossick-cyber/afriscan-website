@@ -2,6 +2,7 @@
 key: ng-pipeline-row-guide
 template: article
 published: 2026-09-26
+updated: 2026-09-27
 title: "Pipeline Right of Way in Nigeria: A Guide | AfriScan"
 description: How Nigerian law creates and protects a pipeline right of way, from survey permit to licence and s.12 orders, and what a dated baseline records at each stage.
 h1: "Pipeline rights of way in Nigeria: the law, and what a dated baseline records"

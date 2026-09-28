@@ -137,7 +137,7 @@ This is a stretch rated high in our pipeline sample: sixteen structures within 1
 ::::section{id="corridors" tone="alt" eyebrow="Where the lines run" title="From the creeks of the Delta to the gas lines of the north"}
 :::::columns{split="1-1"}
 ::::col
-Crude trunklines such as the Trans-Niger and Trans-Forcados lines cross the swamps, creeks and farmland of the Niger Delta to the export terminals. Gas networks such as the Escravos–Lagos Pipeline System run west towards Lagos, and new gas trunklines such as the Ajaokuta–Kaduna–Kano (AKK) line carry gas north through savannah and growing towns. Each of those settings changes differently: fishing settlements and creek landings in the swamp, farm clearings and new roads on dry land, and fast-growing towns where lines meet the road network.
+Crude trunklines cross the swamps, creeks and farmland of the Niger Delta to the export terminals. Gas trunklines run west towards Lagos, and newer ones carry gas north through savannah and growing towns. Each of those settings changes differently: fishing settlements and creek landings in the swamp, farm clearings and new roads on dry land, and fast-growing towns where lines meet the road network.
 
 The survey is set up for the stretch, not for the country. Dense mangrove and tree canopy hide small structures, so swamp stretches lean on reviewer checks, with radar comparisons for larger clearing; small structures under canopy can be missed; urban stretches need the finest imagery and the most review; savannah stretches are where new tracks and clearings show best.
 ::::

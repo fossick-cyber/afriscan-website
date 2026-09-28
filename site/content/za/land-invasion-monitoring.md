@@ -67,7 +67,7 @@ More structures, larger roofs and services follow. From here, the question is a 
 ::::section{id="why-early" tone="alt" eyebrow="Why the first survey after it starts matters most" title="Early knowledge keeps the options open"}
 :::::columns{split="2-1"}
 ::::col
-Once people live in a structure, resolving an unlawful occupation goes through the courts under the Prevention of Illegal Eviction from and Unlawful Occupation of Land Act (PIE Act), with the Constitution's protection of access to housing (s26) and of property (s25) on either side, and it takes a long time. A 2026 paper by a Rand Water author makes the same point about bulk-water servitudes: the value is in finding encroachment early ([FIG Congress 2026](https://fig.net/resources/proceedings/fig_proceedings/fig2026/papers/ts05h/TS05H_singh_13637.pdf)).
+Once people live in a structure, resolving an unlawful occupation goes through the courts under the Prevention of Illegal Eviction from and Unlawful Occupation of Land Act (PIE Act), with the Constitution's protection of access to housing (s26) and of property (s25) on either side, and it takes a long time. A 2026 paper by an author at a large bulk-water utility makes the same point about bulk-water servitudes: the value is in finding encroachment early ([FIG Congress 2026](https://fig.net/resources/proceedings/fig_proceedings/fig2026/papers/ts05h/TS05H_singh_13637.pdf)).
 
 Early knowledge does not decide anything. It gives the servitude holder time to choose, with the municipality and the community, among options that are much harder later:
 

@@ -87,6 +87,7 @@ class Page(HTMLParser):
         self.robots = ""
         self.og_url = None
         self.ids = set()
+        self.dup_ids = []
         self.links = []          # (tag, attr, value, region, holder)
         self.jsonld = []
         self._in_ld = False
@@ -103,6 +104,8 @@ class Page(HTMLParser):
         if tag == "html":
             self.lang = a.get("lang")
         if "id" in a:
+            if a["id"] in self.ids:
+                self.dup_ids.append(a["id"])
             self.ids.add(a["id"])
         if tag == "a" and "name" in a:
             self.ids.add(a["name"])
@@ -333,6 +336,8 @@ def main():
 
     # --- canonical, og:url, lang, H1 ---
     for u, p in sorted(pages.items()):
+        if p.dup_ids:
+            errors.append(f"{u}: duplicate element ids {sorted(set(p.dup_ids))}")
         if is_404(u):
             continue
         noindex = u not in indexable

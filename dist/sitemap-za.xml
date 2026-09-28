@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://afri-scan.com/za/</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <image:image><image:loc>https://afri-scan.com/assets/img/samples-sample-pipeline-register-km5-6-e34fab1b-1798.jpg</image:loc></image:image>
     <image:image><image:loc>https://afri-scan.com/assets/img/samples-google-pipeline-view-b-208ecfa8-2400.jpg</image:loc></image:image>
     <image:image><image:loc>https://afri-scan.com/assets/img/samples-google-pipeline-view-d-6a6c6065-2400.jpg</image:loc></image:image>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://afri-scan.com/za/land-invasion-monitoring</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <image:image><image:loc>https://afri-scan.com/assets/img/diagrams-za-servitude-change-f0d46c8c-1800.jpg</image:loc></image:image>
   </url>
   <url>
@@ -40,7 +40,7 @@
   </url>
   <url>
     <loc>https://afri-scan.com/za/power-lines</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <image:image><image:loc>https://afri-scan.com/assets/img/diagrams-corridor-0f7aae1c-1800.jpg</image:loc></image:image>
   </url>
   <url>
@@ -58,7 +58,7 @@
   </url>
   <url>
     <loc>https://afri-scan.com/za/servitude-encroachment-guide</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
   </url>
   <url>
     <loc>https://afri-scan.com/za/transmission-route-baseline</loc>
@@ -66,6 +66,6 @@
   </url>
   <url>
     <loc>https://afri-scan.com/za/water-utilities</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
   </url>
 </urlset>

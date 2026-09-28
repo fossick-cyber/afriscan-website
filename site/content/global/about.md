@@ -87,7 +87,7 @@ Afridrone is working towards the operator approvals each country requires. Until
 ::::
 ::::col
 :::callout{tone="note" title="Not to be confused with"}
-AfriScan by Afridrone is not affiliated with Afriscan Construction in South Africa or with Afriscan Kenya.
+AfriScan by Afridrone is not affiliated with other companies of a similar name.
 :::
 ::::
 :::::
