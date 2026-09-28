@@ -61,7 +61,7 @@ faq:
 - **Before petroleum operations:** [Decreto n.º 120/08](https://faolex.fao.org/docs/pdf/ang119457.pdf) requires the area's social and population structure and its land-rights holders to be assessed before a prospecting licence, and the assessment to be updated before exploration and again before development and production, including along pipeline routes and "servidões legais de passagem" (art. 11).
 ::::
 ::::col
-:::figure{src="diagrams/ao-strips" alt="Plan view of a pipe or line axis with a red 30 m band, an amber band to 60 m and a dashed line at 100 m on each side; squares stand for structures, red within 30 m, amber between 30 and 60 m and teal beyond 60 m" caption="The bands, drawn to scale" credit="Schematic drawn by AfriScan for illustration; the structures are invented." size="half"}
+:::figure{src="diagrams/ao-strips" alt="Plan view of a pipe or line axis with a red 30 m band, an amber band to 60 m and a dashed line at 100 m on each side; squares stand for structures, red within 30 m, amber between 30 and 60 m and teal beyond 60 m" caption="The bands, drawn to scale" credit="Schematic drawn by AfriScan for illustration; the structures are illustrative." size="half"}
 <span class="band band--a">Within 30 m</span> the Land Law's adjoining strip (art. 27(7)(g)). <span class="band band--b">30–60 m</span> and, dashed, 100 m: examples of bands you can add to a survey.
 :::
 ::::
@@ -181,7 +181,7 @@ Satellite screening starts from the route file and dated imagery, open building 
 
 Where satellite imagery is not enough, we propose drone surveys of the flagged stretches, subject to the approvals and security clearances each job requires. In Angola, no aircraft able to fly without a pilot may overfly the territory without a special authorisation from the Autoridade Nacional da Aviação Civil (Lei da Aviação Civil, art. 16.º-A), and aerial photography, photogrammetry and aerial topography are specialised aerial services whose requirements ANAC sets (arts. 54–55).
 
-Afridrone is working towards the operator approvals each country requires. Every drone proposal says who flies, under which authorisations and on what timetable.
+Afridrone is working towards the operator approvals Angola requires. Every drone proposal says who flies, under which authorisations and on what timetable.
 ::::
 ::::col
 :::callout{tone="legal" title="Who authorises what, in short"}

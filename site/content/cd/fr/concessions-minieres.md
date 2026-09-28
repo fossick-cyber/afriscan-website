@@ -39,7 +39,7 @@ cta:
   secondary_href: /cd/fr/loi-sur-les-drones
 ---
 
-::::section{id="probleme" eyebrow="Le problème, dans vos mots" title="Un périmètre fixé sur le papier, un terrain qui bouge"}
+::::section{id="probleme" eyebrow="Ce que vous constatez" title="Un périmètre fixé sur le papier, un terrain qui bouge"}
 :::cards{cols="2"}
 :::card{title="« Une partie du périmètre n’est plus accessible à nos équipes. »" icon="lock"}
 Quand l'accès au terrain se ferme, il faut encore savoir ce qui s'y passe : combien de fosses nouvelles, quelles surfaces remuées, quelles pistes ouvertes depuis la dernière visite.
@@ -116,7 +116,7 @@ En orange, la zone que le titulaire prévoit d'occuper ; en pointillés, les l
 - Un tableau par bande et par secteur du périmètre, et des fichiers SIG pour vos équipes
 :::
 
-La décision sur ce qui est autorisé, et sur le consentement à rechercher, appartient à vous et aux autorités compétentes. Notre inventaire dit ce qui se trouve où, et depuis quand l'image le montre.
+La décision sur ce qui est autorisé, et sur le consentement à rechercher, vous appartient, à vous et aux autorités compétentes. Notre inventaire dit ce qui se trouve où, et depuis quand l'image le montre.
 ::::
 
 ::::section{id="deplacement" tone="alt" eyebrow="Avant tout déplacement" title="L’article 281 : indemniser et réinstaller au préalable"}
@@ -171,7 +171,7 @@ Images datées, registres des constructions et cartes, réunis avec l'empreinte 
 :::::
 ::::
 
-::::section{id="comment" eyebrow="Comment ça marche" title="Des limites de votre titre au registre vérifié"}
+::::section{id="comment" eyebrow="Notre démarche" title="Des limites de votre titre au registre vérifié"}
 :::steps
 :::step{title="Cadrer"}
 Vous envoyez les limites du permis et des zones de travaux prévues, et vous nous dites à quoi servira le registre. Nous convenons des distances, des images et des livrables dans une proposition écrite.
@@ -182,7 +182,7 @@ Les images satellite, datées lorsque l'objet l'exige, et les bases de données 
 :::step{title="Vérifier"}
 Un analyste confirme, corrige et complète chaque résultat. Ce que l'image ne permet pas de trancher est listé pour une vérification au sol par vos équipes.
 :::
-:::step{title="Livrer et répéter"}
+:::step{title="Livrer, puis renouveler"}
 Le rapport et les fichiers SIG vont aux contacts que vous désignez. Les nouveaux relevés suivent le calendrier convenu, avec un avis de changement après chacun.
 :::
 :::

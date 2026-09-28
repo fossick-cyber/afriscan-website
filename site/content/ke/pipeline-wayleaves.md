@@ -2,7 +2,7 @@
 key: oil-gas
 template: industry
 title: Pipeline Wayleave Structure Registers in Kenya | AfriScan
-description: Structures, kiosks and new works inside petroleum pipeline wayleaves in Kenya, mapped by band and segment from dated imagery, with repeat scans.
+description: Structures, kiosks and new works inside petroleum pipeline wayleaves in Kenya, mapped by band and segment from dated imagery, with re-surveys.
 h1: Pipeline wayleave structure registers for Kenya
 crumb: Pipelines
 eyebrow: Oil & gas · Kenya
@@ -12,11 +12,11 @@ buttons:
   - {label: See sample outputs, key: results}
 service:
   name: Pipeline wayleave structure register, Kenya
-  type: Wayleave structure register, excavation flagging and repeat scans
-  description: Registers of the structures, new excavations, tracks and cleared ground inside petroleum pipeline wayleaves and station buffers in Kenya, each measured to the centreline, ranked by 500 m segment, compared between dated scans, checked by a person and delivered as a PDF report with GeoPackage, GeoJSON, KMZ and Shapefile layers.
+  type: Wayleave structure register, excavation flagging and re-surveys
+  description: Registers of the structures, new excavations, tracks and cleared ground inside petroleum pipeline wayleaves and station buffers in Kenya, each measured to the centreline, ranked by 500 m segment, compared between dated surveys, checked by a person and delivered as a PDF report with GeoPackage, GeoJSON, KMZ and Shapefile layers.
 og:
   headline: Pipeline wayleave structure registers for Kenya
-  subline: Structures and new works by band and 500 m segment, compared between dated scans
+  subline: Structures and new works by band and 500 m segment, compared between dated surveys
 related: [route-site-selection, excavation-mapping, change-detection]
 faq:
   - q: What width is a pipeline wayleave in Kenya?
@@ -82,7 +82,7 @@ New lines need routes, wayleaves and a dated record of what stood on the land be
 | Petroleum Act 2019, s.99(1)(h) | Trespassing or encroaching on a petroleum pipeline wayleave or installation is an offence carrying a minimum fine or a minimum term of imprisonment |
 ::::
 ::::col
-The same facts run through all of these: which structures stand inside the wayleave, how far each is from the line, and whether it was there on the date of a notice, a Gazette order or an earlier scan. Occupiers can claim for loss or damage within three months after the development (Energy Act, s.173(1)(b)), so a record made before work starts is part of the project file.
+The same facts run through all of these: which structures stand inside the wayleave, how far each is from the line, and whether it was there on the date of a notice, a Gazette order or an earlier survey. Occupiers can claim for loss or damage within three months after the development (Energy Act, s.173(1)(b)), so a record made before work starts is part of the project file.
 
 A summary for orientation as of 27 September 2026, not legal advice. The [wayleave law guide](/ke/wayleave-law-guide) sets out the procedure, the compensation rules and the offences in full, with sources.
 ::::
@@ -116,12 +116,12 @@ Fresh excavations, spoil heaps, trenches, new tracks and cleared ground on or ne
 :::
 ::::
 
-::::section{id="repeat-scans" tone="alt" eyebrow="After the baseline" title="Repeat scans that show what is new"}
+::::section{id="repeat-scans" tone="alt" eyebrow="After the baseline" title="Re-surveys that show what is new"}
 :::::columns{split="1-1"}
 ::::col
-Repeat scans show where new structures or works have appeared in the corridor since the last dated image, so the operator can follow up through its own lawful process. The route is re-scanned on a schedule agreed with you. New and removed structures between dated scans are flagged automatically and confirmed by a reviewer, with before-and-after views, and your team receives a notice after each scan saying what changed and where.
+Re-surveys show where new structures or works have appeared in the corridor since the last dated image, so the operator can follow up through its own lawful process. The route is re-surveyed on a schedule agreed with you. New and removed structures between dated surveys are flagged automatically and confirmed by a reviewer, with before-and-after views, and your team receives a notice after each scan saying what changed and where.
 
-After a notice exercise, a relocation or a compensation round, the next scan shows whether the wayleave has stayed as the record left it, stretch by stretch.
+After a notice exercise, a relocation or a compensation round, the next survey shows whether the wayleave has stayed as the record left it, stretch by stretch.
 ::::
 ::::col
 :::callout{tone="note" title="What decides the schedule"}
@@ -130,7 +130,7 @@ After a notice exercise, a relocation or a compensation round, the next scan sho
 - Archive and new-capture availability for the stretch
 - Cloud in the rainy seasons: optical imagery cannot see through it, so radar comparisons can cover larger changes in between, with flagged areas followed up on optical imagery or with a drone check
 
-[Change detection and repeat scans](/solutions/change-detection)
+[Change detection and re-surveys](/solutions/change-detection)
 :::
 ::::
 :::::

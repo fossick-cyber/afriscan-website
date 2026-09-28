@@ -88,7 +88,7 @@ The standards are [RURA's Guidelines N°01/GL/EL-EWS/RURA/2015 on Right-of-Way f
 | 400 kV | 50 m | 25 m |
 ::::
 ::::col
-:::figure{src="diagrams/rw-rura-row" alt="Plan-view schematic of four overhead lines drawn to one scale: a 400 kV line with a 50 m red band, a 220 kV line with a 30 m band, a 110 kV line with a 25 m band and a 15–30 kV line with a 12 m band, each centred on the line with pole symbols along it; square markers stand for structures, red inside the band and teal outside" caption="The Schedule I rights of way, drawn to one scale" credit="Schematic drawn by AfriScan for illustration; the structures are invented." size="half"}
+:::figure{src="diagrams/rw-rura-row" alt="Plan-view schematic of four overhead lines drawn to one scale: a 400 kV line with a 50 m red band, a 220 kV line with a 30 m band, a 110 kV line with a 25 m band and a 15–30 kV line with a 12 m band, each centred on the line with pole symbols along it; square markers stand for structures, red inside the band and teal outside" caption="The Schedule I rights of way, drawn to one scale" credit="Schematic drawn by AfriScan for illustration; the structures are illustrative." size="half"}
 Red: the minimum right of way for each voltage in Schedule I of RURA's 2015 guidelines, with the line centred. The squares show how a register bands structures: red inside the right of way, teal outside it.
 :::
 ::::

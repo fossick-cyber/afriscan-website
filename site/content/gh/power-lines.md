@@ -66,7 +66,7 @@ As GRIDCo, the national transmission company, described them in September 2026, 
 We report those strips by default for 161 kV and 330 kV lines, and measure to the widths you give us for other voltages and for distribution lines.
 ::::
 ::::col
-:::figure{src="diagrams/gh-line-strips" alt="Plan view of two overhead lines drawn to the same scale: a 330 kV line with a shaded strip 20 m either side of its centre and a 161 kV line with a strip 15 m either side, with invented structures inside the strips in red and outside them in teal" caption="Schematic: the protected strips either side of 161 kV and 330 kV lines, drawn to scale" size="full" credit="Schematic drawn by AfriScan for illustration. The structures are invented."}
+:::figure{src="diagrams/gh-line-strips" alt="Plan view of two overhead lines drawn to the same scale: a 330 kV line with a shaded strip 20 m either side of its centre and a 161 kV line with a strip 15 m either side, with illustrative structures inside the strips in red and outside them in teal" caption="Schematic: the protected strips either side of 161 kV and 330 kV lines, drawn to scale" size="full" credit="Schematic drawn by AfriScan for illustration. The structures are illustrative."}
 Red squares stand inside the strip, teal squares outside it; the orange line is the centre of the line and the crossed squares are towers.
 :::
 ::::

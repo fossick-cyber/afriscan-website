@@ -27,6 +27,7 @@ industries:
       en: Structures in pipeline protection zones and rights of way, new and rehabilitated cross-border lines, LNG host areas and their corridors, and fresh digging near your lines.
       pt: Construções nas zonas de protecção e faixas de servidão de gasodutos e oleodutos, zonas de segurança à volta de centrais e instalações de GNL, e escavações recentes junto das condutas.
       fr: Constructions dans les zones de protection et les emprises des pipelines, lignes transfrontalières nouvelles ou réhabilitées, sites de GNL et leurs corridors, et fouilles récentes près de vos conduites.
+      pt-AO: Construções na faixa de 30 m de oleodutos e gasodutos, à volta de terminais e refinarias e ao longo de novos traçados, e escavações recentes junto das condutas.
   - key: mining
     tier: 1
     icon: mine
@@ -186,7 +187,7 @@ solutions:
     code: U8
     group: baselines
     icon: history
-    name: {en: "Imagery history & land due diligence", pt: "Histórico de imagens e due diligence de terras", fr: "Historique d’images et due diligence foncière"}
+    name: {en: "Imagery history & land due diligence", pt: "Histórico de imagens e due diligence de terras", fr: "Historique d’images et vérification foncière préalable"}
     blurb:
       en: What was on a parcel, route or site, and roughly when, from archived satellite imagery and open datasets.
       pt: O que existia num terreno, traçado ou local, e aproximadamente quando, a partir de imagens de satélite históricas e de dados abertos.
@@ -238,7 +239,7 @@ solutions:
     code: U10
     group: change
     icon: water
-    name: {en: "Terrain, flood & post-event mapping", pt: "Relevo, cheias e mapeamento após eventos", fr: "Relief, inondations et après-événement"}
+    name: {en: "Terrain, flood & post-event mapping", pt: "Relevo, cheias e mapeamento após eventos", fr: "Relief, inondations et relevés après un événement"}
     blurb:
       en: Steep, erosion-prone and flood-exposed stretches highlighted, and before-and-after checks along your route after storms and floods.
       pt: Troços íngremes, sujeitos a erosão ou expostos a cheias assinalados, e verificação de antes e depois ao longo do traçado após tempestades e cheias.
@@ -249,7 +250,7 @@ solutions:
     code: U14
     group: capture
     icon: drone
-    name: {en: "Drone surveys", pt: "Levantamentos por drone", fr: "Levés par drone"}
+    name: {en: "Drone surveys", pt: "Levantamentos por drone", fr: "Levés par drone", pt-AO: "Levantamentos com drone"}
     blurb:
       en: Orthophotos, elevation models and volumes where the detail matters, subject to the approvals and security clearances each job requires.
       pt: Ortofotomapas, modelos de elevação e volumes onde o detalhe conta, sujeitos às autorizações e credenciações de segurança exigidas para cada operação.

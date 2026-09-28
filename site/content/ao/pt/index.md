@@ -183,7 +183,7 @@ O rastreio por satélite começa a partir do ficheiro do traçado e de imagens d
 
 Quando a imagem de satélite não basta, propomos levantamentos com drone dos troços assinalados, sujeitos às autorizações e credenciações de segurança exigidas para cada operação. Em Angola, «nenhuma aeronave capaz de navegar sem piloto pode sobrevoar o território angolano sem autorização especial da Autoridade Nacional da Aviação Civil» (Lei da Aviação Civil, artigo 16.º-A), e a aerofotografia, a aerofotogrametria e a aerotopografia são serviços aéreos especializados, cujos requisitos a ANAC fixa (artigos 54.º e 55.º).
 
-A Afridrone está a trabalhar para obter as autorizações de operador que cada país exige. Cada proposta com drone indica quem voa, com que autorizações e com que prazo.
+A Afridrone está a trabalhar para obter as autorizações de operador que Angola exige. Cada proposta com drone indica quem voa, com que autorizações e com que prazo.
 ::::
 ::::col
 :::callout{tone="legal" title="Quem autoriza o quê, em resumo"}

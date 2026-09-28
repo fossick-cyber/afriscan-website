@@ -104,7 +104,7 @@ A "wayleave" is "a parcel of land with a predetermined uniform width over its le
 ::::
 :::::
 
-:::figure{src="diagrams/zm-wayleave-widths" alt="Plan-view schematic of three overhead lines drawn to one scale: a 132 kV line with a 32 m red band, a 330 kV line with a 48 m band and a 400 kV line with a 50 m band, each centred on the line with tower symbols, and dashed green lines further out at 72, 78 and 80 m; square markers stand for structures, red inside the red band and teal outside it" caption="The 2026 wayleave widths, drawn to one scale" size="wide" credit="Schematic drawn by AfriScan for illustration from SI No. 2 of 2026, Tables 2.1 and 2.4; the structures are invented."}
+:::figure{src="diagrams/zm-wayleave-widths" alt="Plan-view schematic of three overhead lines drawn to one scale: a 132 kV line with a 32 m red band, a 330 kV line with a 48 m band and a 400 kV line with a 50 m band, each centred on the line with tower symbols, and dashed green lines further out at 72, 78 and 80 m; square markers stand for structures, red inside the red band and teal outside it" caption="The 2026 wayleave widths, drawn to one scale" size="wide" credit="Schematic drawn by AfriScan for illustration from SI No. 2 of 2026, Tables 2.1 and 2.4; the structures are illustrative."}
 Red band: the minimum wayleave for one line (Table 2.1). Dashed green lines: the wider strip where the line crosses a recognised forestry area (Table 2.4). Structures are coloured the way the register bands them: <span class="band band--a">Inside the wayleave</span> <span class="band band--c">Outside it</span>.
 :::
 

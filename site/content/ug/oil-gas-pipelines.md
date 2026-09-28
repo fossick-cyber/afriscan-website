@@ -83,7 +83,7 @@ What lies in the corridor matters twice: as a safety risk to the people living a
 
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="diagrams/ug-pipeline-bands" alt="Plan-view schematic of a buried pipeline drawn as a dashed orange line, with a grey right-of-way strip around it, a red band 6 m either side of the pipe, and amber bands 30 m wide beyond each edge of the right of way; square markers stand for structures, red within 6 m of the pipe, amber within 30 m of the right of way and teal beyond" caption="The 2016 Midstream Regulations bands, drawn to one scale" credit="Schematic drawn by AfriScan for illustration; the right-of-way width and the structures are invented." size="half"}
+:::figure{src="diagrams/ug-pipeline-bands" alt="Plan-view schematic of a buried pipeline drawn as a dashed orange line, with a grey right-of-way strip around it, a red band 6 m either side of the pipe, and amber bands 30 m wide beyond each edge of the right of way; square markers stand for structures, red within 6 m of the pipe, amber within 30 m of the right of way and teal beyond" caption="The 2016 Midstream Regulations bands, drawn to one scale" credit="Schematic drawn by AfriScan for illustration; the right-of-way width and the structures are illustrative." size="half"}
 Red: within 6 m of the pipe (reg 97). Grey: the right of way, whose width is set line by line. Amber: within 30 m of the right of way (reg 92).
 :::
 ::::

@@ -189,7 +189,7 @@ A [cut-off-date baseline](key:resettlement-cut-off-baselines) records the struct
 ::::col
 Diamond restricted areas include onshore diamond mining licence areas, bulk-sampling areas, processing places and areas the Minister declares, and anyone who is not a listed official needs the Minister's permit "to enter, reside, travel, work or be in, or to visit a restricted area" ([Diamond Act 13 of 1999](https://www.lac.org.na/laws/annoSTAT/Diamond%20Act%2013%20of%201999.pdf), ss.27(k), 52). In national parks, NCAA's checklist allows no drone flight unless approval is granted.
 
-In diamond restricted areas and national parks we work from satellite imagery unless your permits and consents cover a partner's crew. Elsewhere, drone surveys are subject to the approvals and security clearances each job requires: an NCAA Letter of Approval for each operation, the landowner's permission, and the airfield rules near mine and lodge airstrips. Afridrone is working towards the approvals Namibia requires.
+In diamond restricted areas and national parks we work from satellite imagery unless your permits and consents cover a partner's crew. Elsewhere, drone surveys are subject to the approvals and security clearances each job requires. In Namibia that includes an NCAA Letter of Approval for each operation, the landowner's permission, and the airfield rules near mine and lodge airstrips. Afridrone is working towards the approvals Namibia requires.
 ::::
 ::::col
 :::callout{tone="legal" title="The Namibia drone-law guide"}
@@ -210,7 +210,7 @@ You send the licence or site boundary, the footprint of the planned workings or 
 Structures, excavations, tracks and cleared ground are mapped across the licence area from dated satellite imagery, open building datasets or your own orthophotos.
 :::
 :::step{title="Check up close"}
-Your own flights, or drone surveys where approvals and permits allow, cover the areas that need more detail.
+Your own flights, or drone surveys where the approvals and security clearances allow, cover the areas that need more detail.
 :::
 :::step{title="Review and deliver"}
 A person checks every result, and the register, the change layers and the report go to the contacts you name.

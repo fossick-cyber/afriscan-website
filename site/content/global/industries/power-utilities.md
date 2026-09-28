@@ -99,7 +99,7 @@ Fresh excavation and earthworks visible at the surface near towers and along cab
 - A change notice after each scheduled re-survey
 - Settlement growth trends and new tracks
 - Fresh excavation near towers, flagged for checking
-- Drone checks of flagged spans, subject to permits
+- Drone checks of flagged spans, subject to the approvals each job requires
 :::
 ::::
 :::::

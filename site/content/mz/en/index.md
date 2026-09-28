@@ -5,7 +5,7 @@ title: Protection Zone & Servitude Surveys, Mozambique | AfriScan
 description: Structures inside the 50 m partial protection zones of pipelines and power lines in Mozambique, mapped from the air and reviewed by a person.
 h1: Know what is built inside your protection zones in Mozambique
 eyebrow: AfriScan · Mozambique · Secure your land from the air, remotely
-lead: We map the structures, cleared ground and fresh excavations inside the protection zones and servitudes of your pipelines, power lines and sites, measure each one to the line and deliver a dated register in Portuguese or English. Satellite first, drone detail where the permits allow, and a person reviews every result.
+lead: We map the structures, cleared ground and fresh excavations inside the protection zones and servitudes of your pipelines, power lines and sites, measure each one to the line and deliver a dated register in Portuguese or English. Satellite first, drone detail where the approvals and security clearances allow, and a person reviews every result.
 buttons:
   - {label: Request a proposal, intent: proposal}
   - {label: See the pipeline sample, key: results}
@@ -154,7 +154,7 @@ Our registers support regularisation, community engagement, legal processes and 
 :::
 ::::
 
-::::section{id="drones" eyebrow="Satellite first, drones where the permits allow" title="Two routes to the picture, and the rules for each"}
+::::section{id="drones" eyebrow="Satellite first, drones subject to the approvals each job requires" title="Two routes to the picture, and the rules for each"}
 :::::columns{split="2-1"}
 ::::col
 **Satellite and your own imagery.** A survey starts from your route file and dated satellite imagery, open building datasets or the orthophotos you already hold. No one travels and no drone flies, however long the route. This is the practical route along long corridors and where access is restricted.

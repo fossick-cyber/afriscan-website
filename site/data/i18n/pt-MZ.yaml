@@ -125,10 +125,10 @@ form:
     za: África do Sul
     mz: Moçambique
     zm: Zâmbia
-    zw: Zimbabué
+    zw: Zimbabwe
     mw: Malawi
     na: Namíbia
-    bw: Botsuana
+    bw: Botswana
     ao: Angola
     ke: Quénia
     tz: Tanzânia
@@ -227,14 +227,14 @@ sites:
   ke: "Quénia (em inglês)"
   gh: "Gana (em inglês)"
   ug: "Uganda (em inglês)"
-  cd-fr: "RD Congo (em francês)"
+  cd-fr: "RD Congo (Français)"
   cd-en: "RD Congo (em inglês)"
   ao-pt: "Angola (Português)"
   ao-en: "Angola (em inglês)"
-  zw: "Zimbabué (em inglês)"
+  zw: "Zimbabwe (em inglês)"
   mw: "Malawi (em inglês)"
   na: "Namíbia (em inglês)"
-  bw: "Botsuana (em inglês)"
+  bw: "Botswana (em inglês)"
   rw: "Ruanda (em inglês)"
 
 # Páginas em inglês para onde as páginas portuguesas remetem (menus, rodapé, caminho de navegação,

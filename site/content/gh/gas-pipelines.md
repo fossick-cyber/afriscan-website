@@ -99,7 +99,7 @@ Re-surveys then flag what changed: new and removed structures, fresh excavations
 ::::
 :::::
 
-:::figure{src="diagrams/corridor" alt="Schematic of a pipeline route between two reporting bands, with invented structures coloured by their distance to the line and a strip beneath it that rates each 500 m stretch low, medium or high from the structures inside the outer band" caption="Schematic: how a pipeline corridor register is read" size="wide" credit="Schematic drawn by AfriScan for illustration. It is not a real pipeline, and the bands shown are examples: your register uses the corridor width in your instrument or wayleave."}
+:::figure{src="diagrams/corridor" alt="Schematic of a pipeline route between two reporting bands, with illustrative structures coloured by their distance to the line and a strip beneath it that rates each 500 m stretch low, medium or high from the structures inside the outer band" caption="Schematic: how a pipeline corridor register is read" size="wide" credit="Schematic drawn by AfriScan for illustration. It is not a real pipeline, and the bands shown are examples: your register uses the corridor width in your instrument or wayleave."}
 :::
 ::::
 

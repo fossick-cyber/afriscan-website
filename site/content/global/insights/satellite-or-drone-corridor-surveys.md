@@ -81,10 +81,10 @@ Many utilities and mines fly their own drones, and many projects bought imagery 
 A satellite baseline of the whole network, rated per 500 m for encroachment density, then scheduled re-surveys that flag new structures. Drone checks go to the stretches where the register shows the most change, or where the imagery cannot settle what is there.
 :::
 :::card{title="A new route or loop" icon="route" eyebrow="Satellite for options, drone for the chosen line"}
-Structure counts along each route option from satellite imagery, so the choice is made on the same numbers. Once the alignment is fixed, a drone orthophoto and elevation survey of the corridor, subject to permits, supports design and the land process.
+Structure counts along each route option from satellite imagery, so the choice is made on the same numbers. Once the alignment is fixed, a drone orthophoto and elevation survey of the corridor, subject to the approvals and security clearances each job requires, supports design and the land process.
 :::
 :::card{title="A resettlement footprint" icon="calendar" eyebrow="Archive history, then a dated record"}
-Dated archive scenes to show the footprint before the census, a record as close to the cut-off date as the imagery plan allows, and re-surveys afterwards. A drone flight on the cut-off date where the permits allow.
+Dated archive scenes to show the footprint before the census, a record as close to the cut-off date as the imagery plan allows, and re-surveys afterwards. A drone flight on the cut-off date where the approvals and security clearances allow.
 :::
 :::card{title="A concession boundary" icon="boundary" eyebrow="Satellite ring, drone on hot spots"}
 Structures and ground disturbance inside the boundary and in a ring around it from satellite imagery, with drone detail where excavations or new settlement cluster.

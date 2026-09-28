@@ -20,7 +20,7 @@ hero:
 service:
   name: Wayleave and reserve structure mapping in Kenya
   type: Wayleave structure register, change detection and acquisition baselines
-  description: Registers of the structures, excavations, tracks and cleared ground inside pipeline, power-line, road, railway and fibre wayleaves and reserves, and in mining and project areas in Kenya, each measured to the centreline, dated to its imagery, compared between dated scans, checked by a person and delivered as a PDF report with GeoPackage, GeoJSON, KMZ and Shapefile layers.
+  description: Registers of the structures, excavations, tracks and cleared ground inside pipeline, power-line, road, railway and fibre wayleaves and reserves, and in mining and project areas in Kenya, each measured to the centreline, dated to its imagery, compared between dated surveys, checked by a person and delivered as a PDF report with GeoPackage, GeoJSON, KMZ and Shapefile layers.
 og:
   headline: Know what stands inside your wayleave in Kenya
   subline: Structures and change in pipeline, power-line, road and rail wayleaves, checked by a person
@@ -98,7 +98,7 @@ About 13,000 km of national backbone fibre is in place ([Capital FM, 15 October 
 - **Bands you set:** for example 0–15 m and 15–30 m either side for a 30 m wayleave, or the width in your gazette order or RAP.
 - **Every 500 m segment rated** high, medium or low by the number of structures it holds, with the busiest segments ranked first. It is a count rule, not a safety rating.
 - **The image date and source** for each feature.
-- **Change since the last scan:** new and removed structures, flagged automatically and confirmed by a reviewer.
+- **Change since the last survey:** new and removed structures, flagged automatically and confirmed by a reviewer.
 - **GeoPackage, GeoJSON, KMZ and Shapefile** layers, an interactive map file that opens in a browser, and a **PDF report** in English.
 
 [See the full sample](/results) · [How the rating works](/methodology)
@@ -114,7 +114,7 @@ The same sample on Google satellite imagery, in two close-ups: each ring is a st
 ::::section{id="sectors" tone="alt" eyebrow="Who we work for in Kenya" title="Wayleaves, reserves and the land around projects"}
 :::cards{cols="3"}
 :::card{title="Pipeline and petroleum operators" icon="pipeline" key="oil-gas"}
-Structure registers for urban and rural pipeline wayleaves, repeat scans for new works, and dated records before a new line is fixed.
+Structure registers for urban and rural pipeline wayleaves, re-surveys for new works, and dated records before a new line is fixed.
 :::
 :::card{title="Transmission and distribution utilities" icon="power" key="power-utilities"}
 Checks against resettlement cut-off dates, registers and vegetation change on operating lines, and route comparison for new lines and interconnectors.
@@ -145,7 +145,7 @@ Building footprint datasets and detection models propose; an analyst reviews eac
 Each report names its imagery and, where the source provides it, the capture date. Map-service basemaps are never passed off as dated imagery.
 :::
 :::card{title="Scheduled, never “real‑time”" icon="clock"}
-Satellites capture images on particular dates, so repeat scans follow a schedule agreed with you, with a change notice after each one.
+Satellites capture images on particular dates, so re-surveys follow a schedule agreed with you, with a change notice after each one.
 :::
 :::card{title="Structures, not personal data" icon="lock"}
 The register carries IDs, coordinates, dates and distances, and no names. Personal data stays in your census. See [data protection in Kenya](/ke/data-protection).
@@ -158,7 +158,7 @@ The register carries IDs, coordinates, dates and distances, and no names. Person
 ::::col
 **Satellite imagery and your own data.** A register starts from your route file and dated satellite imagery, open building datasets or the orthophotos you already hold. Most corridors can be screened this way without anyone flying, however long the route and whichever counties it crosses.
 
-**Drone detail.** Under the Civil Aviation (Unmanned Aircraft Systems) Regulations 2025, commercial drone work needs an RPAS Operator Certificate that KCAA issues only to a company registered in Kenya, with its principal place of business there and a security clearance from the Ministry responsible for defence. So where a stretch needs drone detail, the flights are carried out by such a company, subject to the approvals and security clearances each job requires: KCAA authorisation of the operation, specific permission near high-tension lines, and one month's written notice to the Director of Surveys under the Survey Act. The proposal names the company that will fly, so your team can check its certificate.
+**Drone detail.** Under the Civil Aviation (Unmanned Aircraft Systems) Regulations 2025, commercial drone work needs an RPAS Operator Certificate that KCAA issues only to a company registered in Kenya, with its principal place of business there and a security clearance from the Ministry responsible for defence. So where a stretch needs drone detail, the flights are carried out by such a company, subject to the approvals and security clearances each job requires. These include KCAA authorisation of the operation, specific permission near high-tension lines, and one month's written notice to the Director of Surveys under the Survey Act. The proposal names the company that will fly, so your team can check its certificate.
 ::::
 ::::col
 :::callout{tone="legal" title="The Kenyan drone-law guide"}

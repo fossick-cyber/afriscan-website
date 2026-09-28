@@ -118,7 +118,7 @@ We work from the boundary you give us, or from the lease polygon on the Minerals
 ::::
 :::::
 
-:::figure{src="diagrams/area-ring" alt="Schematic of a lease boundary with a ring drawn around it, a tailings facility with a zone downstream of it, and invented structures coloured by whether they stand inside the lease, in the ring or inside that zone" caption="Schematic: how a lease and ring survey is read" size="wide" credit="Schematic drawn by AfriScan for illustration. It is not a real lease."}
+:::figure{src="diagrams/area-ring" alt="Schematic of a lease boundary with a ring drawn around it, a tailings facility with a zone downstream of it, and illustrative structures coloured by whether they stand inside the lease, in the ring or inside that zone" caption="Schematic: how a lease and ring survey is read" size="wide" credit="Schematic drawn by AfriScan for illustration. It is not a real lease."}
 Each structure in the register is placed in one of three groups: inside the lease, in the ring beyond it, or inside a zone your engineers define, such as the ground below a tailings facility. Dashed lines mark tracks that are new since the previous survey.
 :::
 ::::

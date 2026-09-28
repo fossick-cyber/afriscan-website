@@ -124,7 +124,7 @@ Por isso o inventário descreve o terreno com categorias neutras, como escavaç�
 ::::col
 O rastreio por satélite cobre toda a concessão e as suas zonas sem voos e sem ninguém no terreno. Quando uma área assinalada precisa de mais detalhe, propomos um levantamento com drone, com ortofotomapa e modelo de elevação, sujeito às autorizações e credenciações de segurança exigidas para cada operação, entre as quais a autorização especial da ANAC para os voos (Lei da Aviação Civil, artigo 16.º-A), o consentimento escrito do titular do direito mineiro e, antes de entrar numa zona restrita, a comunicação formal ao titular e às autoridades policiais locais (Código Mineiro, artigo 201.º, n.º 2).
 
-A Afridrone está a trabalhar para obter as autorizações de operador que cada país exige. Cada proposta com drone indica quem voa, com que autorizações e com que prazo. Se a sua equipa já voa drones na concessão, analisamos essas imagens com o mesmo método.
+A Afridrone está a trabalhar para obter as autorizações de operador que Angola exige. Cada proposta com drone indica quem voa, com que autorizações e com que prazo. Se a sua equipa já voa drones na concessão, analisamos essas imagens com o mesmo método.
 ::::
 ::::col
 :::callout{tone="scope" title="Âmbito geográfico"}

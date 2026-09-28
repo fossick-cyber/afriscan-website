@@ -82,7 +82,7 @@ TCN's own statements show the pressure on the grid. In June 2026 it reported dam
 
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="diagrams/ng-nesis-row" alt="Plan-view schematic of three overhead lines drawn to one scale: a 330 kV line with a 50 m red band, a 132 kV line with a 30 m band and a 33 kV line with an 11 m band, each centred on the line with tower symbols along it; square markers stand for structures, red inside the band and teal outside" caption="The NESIS rights of way, drawn to one scale" credit="Schematic drawn by AfriScan for illustration; the structures are invented." size="half"}
+:::figure{src="diagrams/ng-nesis-row" alt="Plan-view schematic of three overhead lines drawn to one scale: a 330 kV line with a 50 m red band, a 132 kV line with a 30 m band and a 33 kV line with an 11 m band, each centred on the line with tower symbols along it; square markers stand for structures, red inside the band and teal outside" caption="The NESIS rights of way, drawn to one scale" credit="Schematic drawn by AfriScan for illustration; the structures are illustrative." size="half"}
 Red: the right of way for each voltage in NESIS Regulations 2015, Table 3.1, divided equally either side of the centre line. The squares show how a register bands structures: red inside the right of way, teal outside it.
 :::
 ::::

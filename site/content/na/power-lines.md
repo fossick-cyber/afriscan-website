@@ -71,7 +71,7 @@ Fresh excavation, spoil and new tracks near tower bases are visible from above. 
 ::::section{id="wayleaves" tone="alt" eyebrow="What the Code and your wayleaves say" title="The widths come from your agreements, the clearances from the Code" lead="A summary of the public rules as last reviewed on 27 September 2026, for orientation. It is not legal advice; the sources are linked."}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="diagrams/na-wayleave" alt="Plan-view schematic of a 400 kV line with towers along it: an 80 m red servitude band, 40 m either side of the line, narrowing to a 50 m band through a settled stretch, with a 12 m grey strip along the line; square markers stand for structures, red inside the servitude and teal outside" caption="An example servitude, widths drawn to scale" credit="Schematic drawn by AfriScan for illustration; the structures are invented." size="half"}
+:::figure{src="diagrams/na-wayleave" alt="Plan-view schematic of a 400 kV line with towers along it: an 80 m red servitude band, 40 m either side of the line, narrowing to a 50 m band through a settled stretch, with a 12 m grey strip along the line; square markers stand for structures, red inside the servitude and teal outside" caption="An example servitude, widths drawn to scale" credit="Schematic drawn by AfriScan for illustration; the structures are illustrative." size="half"}
 Red: an 80 m servitude, 40 m either side of the line, narrowing to 25 m either side through a densely populated stretch; grey: the 12 m strip cleared of vegetation for a service road. The widths are the ones one published framework for a new 400 kV line describes. Your register uses the widths in your own agreements.
 :::
 ::::

@@ -68,7 +68,7 @@ Whether a plot was inside the reserve when it was granted, and when a structure 
 
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="diagrams/tz-reserves" alt="Plan-view schematic, drawn to one scale, of a trunk road and a railway: each has a shaded reserve of 30 m on either side of its centre line, and square markers stand for structures, red inside the reserve and teal outside" caption="A trunk-road reserve at the width in the 2009 Regulations and a railway reserve, drawn to one scale" credit="Schematic drawn by AfriScan for illustration; the structures are invented." size="half"}
+:::figure{src="diagrams/tz-reserves" alt="Plan-view schematic, drawn to one scale, of a trunk road and a railway: each has a shaded reserve of 30 m on either side of its centre line, and square markers stand for structures, red inside the reserve and teal outside" caption="A trunk-road reserve at the width in the 2009 Regulations and a railway reserve, drawn to one scale" credit="Schematic drawn by AfriScan for illustration; the structures are illustrative." size="half"}
 <span class="band band--a">Inside the reserve</span> <span class="band band--c">Outside</span>
 :::
 ::::

@@ -23,7 +23,7 @@ faq:
   - q: Quelle largeur d’emprise retenez-vous pour une voie ferrée ?
     a: "Celle qui s’applique à votre ligne. L’arrêté interministériel n° 0021 du 29 octobre 1993 fixe les emprises des chemins de fer « de 5 à 50 mètres suivant catégories ». Indiquez-nous la largeur retenue par le gestionnaire de la voie ou par le projet ; nous pouvons mesurer jusqu’à six distances dans un même relevé."
   - q: Et pour une route ?
-    a: "L’arrêté de 1993 renvoie, pour les routes, aux plans d’urbanisme et aux plans cadastraux. En pratique, la largeur est souvent celle du projet : un plan de réinstallation publié pour une route financée par la Banque mondiale est passé d’une emprise de 9 m à une emprise de 15 m sur ses 10 premiers kilomètres, le reste devant être mis à jour à 15 m, ou 12 m dans les zones contraintes."
+    a: "L’arrêté de 1993 renvoie, pour les routes, aux plans d’urbanisme et aux plans cadastraux. En pratique, la largeur est souvent celle du projet : d’après son plan de réinstallation publié, une route financée par la Banque mondiale est passée d’une emprise de 9 m à 15 m sur ses 10 premiers kilomètres, le reste devant être mis à jour à 15 m, ou 12 m dans les zones contraintes."
   - q: Pouvez-vous suivre l’avancement du chantier ?
     a: "Oui. Des orthophotos et des modèles d’élévation de drone, datés, sont comparés d’une visite à l’autre, avec les zones de déblai et de remblai. Les levés par drone sont soumis aux autorisations et habilitations de sécurité que chaque mission exige. Ce n’est ni un levé topographique certifié ni un métré."
   - q: Détectez-vous les dégradations des câbles posés dans l’emprise ?
@@ -65,7 +65,7 @@ Près des mines, le Code minier interdit en outre au titulaire d'un droit minier
 ::::
 ::::col
 :::callout{tone="legal" title="À qui revient la décision"}
-La décision sur ce qui est autorisé appartient à vous et aux autorités compétentes. La catégorie d'une voie, et donc la largeur de son emprise, est à confirmer auprès du gestionnaire de la voie ou d'un conseil.
+La décision sur ce qui est autorisé vous appartient, à vous et aux autorités compétentes. La catégorie d'une voie, et donc la largeur de son emprise, est à confirmer auprès du gestionnaire de la voie ou d'un conseil.
 :::
 ::::
 :::::

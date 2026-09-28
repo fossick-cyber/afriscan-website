@@ -173,7 +173,7 @@ The published texts we reviewed do not say whether a Defence or security clearan
 ::::col
 By default we work from satellite imagery, open building datasets and the imagery your company already holds. No aircraft flies, so the authorisations on this page do not come into that work.
 
-Drone surveys are carried out only with the approvals and security clearances each job requires. Afridrone is working towards the operator approvals each country requires; every drone proposal names who will fly, with which ANAC authorisations and on what timeline, so your team can check them before any flight.
+Drone surveys are carried out only with the approvals and security clearances each job requires. Afridrone is working towards the operator approvals Angola requires; every drone proposal names who will fly, with which ANAC authorisations and on what timeline, so your team can check them before any flight.
 ::::
 ::::col
 :::callout{tone="scope" title="What this page is not"}

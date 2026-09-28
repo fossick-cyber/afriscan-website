@@ -48,7 +48,7 @@ faq:
 ---
 
 ::::section{tone="dark" class="home-strip"}
-**Les textes derrière le travail** Loi n° 10/014 sur l'aviation civile, art. 58 bis · Arrêté interministériel n° 0021 du 29 octobre 1993 (servitudes) · Loi n° 14/011 sur l'électricité · Code minier, art. 279 et 281 · Loi n° 17/001 sur la sous-traitance · Décret n° 14/019 (EIES) · Norme de performance 5 de la SFI
+**Les textes de référence** Loi n° 10/014 sur l'aviation civile, art. 58 bis · Arrêté interministériel n° 0021 du 29 octobre 1993 (servitudes) · Loi n° 14/011 sur l'électricité · Code minier, art. 279 et 281 · Loi n° 17/001 sur la sous-traitance · Décret n° 14/019 (EIES) · Norme de performance 5 de la SFI
 ::::
 
 ::::section{id="textes" eyebrow="Ce que prévoient les textes" title="Des distances fixées par les textes, mesurées construction par construction" lead="Trois familles de règles donnent aux relevés leurs largeurs en RDC : les servitudes, la loi sur l’électricité et le Code minier. Vérifié le 27 septembre 2026 sur les textes publiés. Résumé des règles publiques à titre d’information ; ce n’est pas un avis juridique."}
@@ -64,7 +64,7 @@ AfriScan mesure chaque construction relevée par rapport à ces distances, ou à
 ::::
 ::::col
 :::callout{tone="legal" title="À qui revient la décision"}
-La décision sur ce qui est autorisé appartient à vous et aux autorités compétentes. L'articulation entre l'arrêté de 1993 et l'article 108 de la loi sur l'électricité, qui n'empêche pas le titulaire d'un droit foncier de bâtir sous une ligne qui traverse sa concession, reste à préciser par un conseil.
+La décision sur ce qui est autorisé vous appartient, à vous et aux autorités compétentes. L'articulation entre l'arrêté de 1993 et l'article 108 de la loi sur l'électricité, qui n'empêche pas le titulaire d'un droit foncier de bâtir sous une ligne qui traverse sa concession, reste à préciser par un conseil.
 
 [Les emprises des lignes électriques](/cd/fr/emprises-lignes-electriques) · [Les périmètres miniers](/cd/fr/concessions-minieres)
 :::

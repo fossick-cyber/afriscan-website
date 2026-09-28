@@ -79,7 +79,7 @@ Le [guide sectoriel de l'ARSP](https://www.arsp.cd/api/files/attachments/15), au
 ::::section{id="loi-2026" width="prose" eyebrow="La loi de 2026" title="La loi n° 26/017 du 30 juin 2026"}
 La [loi n° 26/017 du 30 juin 2026](https://www.arsp.cd/api/files/attachments/140) modifie et complète la loi n° 17/001. Publiée au Journal officiel (numéro spécial du 8 juillet 2026), elle est entrée en vigueur à sa promulgation (article 5). Les autorisations de sous-traitance accordées auparavant restent valables jusqu'à leur échéance (article 3).
 
-Dans ses décisions, l'ARSP résume l'article 6 modifié comme « réservant la sous-traitance aux sociétés à capitaux congolais dont le siège social est situé sur le territoire national, sauf dérogation ». Parmi les dispositions lues :
+Dans ses décisions, l'ARSP résume l'article 6 modifié comme « réservant la sous-traitance aux sociétés à capitaux congolais dont le siège social est situé sur le territoire national, sauf dérogation ». Parmi les dispositions que nous avons pu lire :
 - une pénalité sur la part du marché sous-traitée au-delà de 40 % ;
 - une pénalité pour le donneur d'ordre qui ne transmet pas chaque année à l'ARSP le chiffre d'affaires réalisé avec ses sous-traitants et leur liste, doublée en cas de récidive, l'ARSP publiant en fin d'année « l'index des entreprises en conformité avec leurs obligations et celles défaillantes » (article 30 decies) ;
 - les procès-verbaux, l'action publique du ministère public et l'action administrative de l'ARSP (articles 30 undecies et 30 duodecies).

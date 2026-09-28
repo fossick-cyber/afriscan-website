@@ -24,10 +24,10 @@ faq:
 
 ### Pour un relevé en RDC
 
-- **La province et le territoire**, pour vérifier les images disponibles. Nous n'acceptons aucune mission dans les provinces hors de notre [champ d'intervention](/cd/fr/#perimetre) ; indiquez la province dans le message, et choisissez « Autre » dans la liste des pays.
-- **Les distances à mesurer :** 25 m de part et d'autre d'une ligne à haute tension, la largeur de l'emprise d'une voie ferrée ou d'une route, 800 et 1 000 m autour des travaux prévus sur un périmètre minier, ou les largeurs de votre cahier des charges. Jusqu'à six distances dans un même relevé. La décision sur ce qui est autorisé appartient à vous et aux autorités compétentes.
+- **La province et le territoire**, pour vérifier les images disponibles. Nous n'acceptons aucune mission dans les provinces hors de notre [champ d'intervention](/cd/fr/#perimetre) ; indiquez la province dans le message.
+- **Les distances à mesurer :** 25 m de part et d'autre d'une ligne à haute tension, la largeur de l'emprise d'une voie ferrée ou d'une route, 800 et 1 000 m autour des travaux prévus sur un périmètre minier, ou les largeurs de votre cahier des charges. Jusqu'à six distances dans un même relevé. La décision sur ce qui est autorisé vous appartient, à vous et aux autorités compétentes.
 - **La date de référence :** si le registre doit servir à une date butoir, indiquez-la ; le choix des images en dépend.
-- **Satellite seul, ou drone aussi :** un levé par drone demande l'autorisation préalable de l'AAC et les autorisations de sécurité de la zone ; la proposition les intègre au calendrier. Voir [la loi sur les drones en RDC](/cd/fr/loi-sur-les-drones).
+- **Satellite seul, ou drone aussi :** un levé par drone demande l'autorisation préalable de l'AAC et les habilitations de sécurité que la mission exige ; la proposition les intègre au calendrier. Voir [la loi sur les drones en RDC](/cd/fr/loi-sur-les-drones).
 - **La langue du rapport :** les rapports PDF sont livrés en anglais.
 
 [La sous-traitance en RDC](/cd/fr/sous-traitance) · [Les périmètres miniers](/cd/fr/concessions-minieres) · [Les emprises des lignes électriques](/cd/fr/emprises-lignes-electriques)

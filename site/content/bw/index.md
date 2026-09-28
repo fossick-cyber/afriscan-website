@@ -49,7 +49,7 @@ faq:
 **The rules behind the work** BPC Act (Cap. 74:01) · Road-reserve wayleave permit · Mines and Minerals Act (Cap. 66:01) · Environmental Assessment Act · S.I. No. 71 of 2024 · IFC Performance Standard 5
 ::::
 
-::::section{id="rules" eyebrow="Already on paper" title="The rules are on the ground" lead="Botswana's servitudes, road reserves and mining licences come with rules about what may stand on the land. Those rules only help if someone can see what is there, and when it arrived."}
+::::section{id="rules" eyebrow="Already on paper" title="What the rules say about the land" lead="Botswana's servitudes, road reserves and mining licences come with rules about what may stand on the land. Those rules only help if someone can see what is there, and when it arrived."}
 :::cards{cols="3"}
 :::card{title="Power lines: grazing, not buildings" icon="power" eyebrow="Servitude use"}
 On the typical designs for BPC's World Bank-financed 66 kV and 33 kV lines, the permanent right of way is 30 m and 15 m wide, and its permitted use is "Grazing. No cultivation or built infrastructure permitted." ([ESMF, Table 2-1](https://documents.worldbank.org/curated/en/099052224012584077/pdf/P18122113057240211a4a61be136f2f526c.pdf)). BPC's technical-services desk takes requests about new developments that encroach on its servitudes ([BPC](https://www.bpc.bw/technical-services/)).

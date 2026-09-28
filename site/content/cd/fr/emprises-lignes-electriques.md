@@ -39,7 +39,7 @@ cta:
   secondary_href: /cd/fr/loi-sur-les-drones
 ---
 
-::::section{id="probleme" eyebrow="Le problème, dans vos mots" title="Entre deux inspections, l’emprise change"}
+::::section{id="probleme" eyebrow="Ce que vous constatez" title="Entre deux inspections, l’emprise change"}
 :::cards{cols="2"}
 :::card{title="« Des constructions apparaissent sous la ligne entre deux passages. »" icon="houses"}
 Une ligne à haute tension traverse des kilomètres de quartiers, de champs et de brousse. Une construction repérée tôt se traite par le dialogue ; repérée tard, elle devient un dossier d'indemnisation ou un litige.
@@ -82,7 +82,7 @@ La [loi n° 14/011 du 17 juin 2014](https://www.leganet.be/Legislation/Droit%20
 - Les 25 m se mesurent-ils depuis l'axe ou depuis le conducteur extérieur ?
 - Comment l'interdiction de l'arrêté s'articule-t-elle avec l'article 108 de la loi de 2014 ?
 
-Ces questions relèvent d'un conseil. La décision sur ce qui est autorisé appartient à vous et aux autorités compétentes.
+Ces questions relèvent d'un conseil. La décision sur ce qui est autorisé vous appartient, à vous et aux autorités compétentes.
 :::
 ::::
 :::::
@@ -125,7 +125,7 @@ Quand un bailleur applique la norme de performance 5 de la SFI, le même registr
 :::::
 ::::
 
-::::section{id="comment" eyebrow="Comment ça marche" title="Du tracé de la ligne au registre vérifié"}
+::::section{id="comment" eyebrow="Notre démarche" title="Du tracé de la ligne au registre vérifié"}
 :::steps
 :::step{title="Cadrer"}
 Vous envoyez le tracé ou les coordonnées des pylônes, la tension et les largeurs à mesurer. Nous convenons des bandes, des images et des livrables dans une proposition écrite.
@@ -136,7 +136,7 @@ Les images satellite et les bases de données ouvertes de bâtiments donnent un 
 :::step{title="Vérifier"}
 Un analyste confirme, corrige et complète chaque résultat ; ce que l'image ne permet pas de trancher est listé pour une vérification au sol.
 :::
-:::step{title="Livrer et répéter"}
+:::step{title="Livrer, puis renouveler"}
 Le rapport et les fichiers SIG vont aux contacts que vous désignez. Les relevés suivants montrent ce qui a changé depuis le précédent.
 :::
 :::

@@ -1,5 +1,5 @@
 {% set s = t.samples %}{% set W = 1000 %}{% set H = 150 %}{% set top = 22 %}{% set base = 104 %}
-{% set sid = 'seg-' ~ a.data %}
+{% set sid = 'seg-' ~ a.data %}{% set dec = ',' if page.lang2 in ('fr', 'pt') else '.' %}
 <figure class="segments">
   <div class="segments-chart">
   <svg viewBox="0 0 {{ W }} {{ H }}" role="img" aria-labelledby="{{ sid }}-t {{ sid }}-d">
@@ -30,7 +30,7 @@
   <details class="disclosure seg-data"><summary>{{ s.seg_table }}</summary>
     <div class="table-wrap" tabindex="0" role="region" aria-label="{{ s.seg_table }}">
     <table><thead><tr><th scope="col">{{ s.segment_km }}</th><th scope="col">{{ s.within.format(b=data.rating_rule.buffer_m) }}</th><th scope="col">{{ s.rating }}</th></tr></thead>
-    <tbody>{% for g in segs %}<tr><td>{{ '%.1f'|format(g.from_m / 1000) }}–{{ '%.1f'|format(g.to_m / 1000) }}</td><td>{{ g.count }}</td><td>{{ s.ratings[g.rating] }}</td></tr>{% endfor %}</tbody></table>
+    <tbody>{% for g in segs %}<tr><td>{{ ('%.1f'|format(g.from_m / 1000))|replace('.', dec) }}–{{ ('%.1f'|format(g.to_m / 1000))|replace('.', dec) }}</td><td>{{ g.count }}</td><td>{{ s.ratings[g.rating] }}</td></tr>{% endfor %}</tbody></table>
     </div>
   </details>
 </figure>

@@ -6,7 +6,7 @@ description: Structures in the 50 m partial protection zone and safety zones of 
 h1: Structures in the 50 m pipeline protection zone, mapped from the air
 crumb: Pipelines
 eyebrow: Oil & gas · Mozambique
-lead: A dated register of the structures inside the partial protection zone and safety zones of your gas and oil pipelines, each measured to the line, with fresh digging and change between campaigns flagged for your field teams. Satellite screening first, drone detail where the permits allow, reviewed by a person and reported in Portuguese or English.
+lead: A dated register of the structures inside the partial protection zone and safety zones of your gas and oil pipelines, each measured to the line, with fresh digging and change between campaigns flagged for your field teams. Satellite screening first, drone detail where the approvals and security clearances allow, reviewed by a person and reported in Portuguese or English.
 buttons:
   - {label: Send us your route file, intent: proposal}
   - {label: See the pipeline sample, key: results}

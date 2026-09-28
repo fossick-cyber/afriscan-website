@@ -113,7 +113,7 @@ For a concession we map the structures inside the boundary and in a ring around 
 - New tracks and access routes into the concession
 - Structures in tailings, blast and other hazard zones you define
 - Revegetation on rehabilitated land, tracked between dates
-- Stockpile and earthworks volumes from drone elevation models, subject to permits
+- Stockpile and earthworks volumes from drone elevation models, subject to the approvals each job requires
 :::
 ::::
 :::::

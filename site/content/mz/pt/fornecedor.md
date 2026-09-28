@@ -31,7 +31,7 @@ faq:
     a: Envie-os com o pedido, juntamente com os formulários de registo ou de conformidade. A proposta indica que registos já estão feitos para o seu contrato e quais estão a ser tratados.
   - q: Os levantamentos por satélite estão abrangidos pelas regras de conteúdo local?
     a: A Lei n.º 9/2026 aplica-se aos projectos de petróleo e gás e às entidades que contratam com eles, e inclui os «serviços de topografia» no regime de exclusividade. Se um levantamento por satélite ou por drone cabe nessa categoria num contrato concreto é uma questão para a sua equipa jurídica; a proposta descreve o serviço com o detalhe necessário para essa avaliação.
-  - q: Que autorizações precisa um trabalho com drone?
+  - q: De que autorizações precisa um trabalho com drone?
     a: Em Moçambique, a aprovação da operação pelo IACM, a autorização do Ministério da Defesa Nacional para o levantamento e a autorização para a cedência dos dados ao cliente (Lei n.º 6/2024, artigo 13). Os levantamentos por drone estão sujeitos às autorizações e credenciações de segurança exigidas para cada operação, e cada proposta com drone indica-as.
   - q: Publicam os nossos dados?
     a: Não. Nunca publicamos o traçado, as imagens ou os resultados de um cliente sem autorização escrita.

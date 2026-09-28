@@ -160,7 +160,7 @@ Remote evidence complements site visits. It helps the monitor decide where to go
 - Construction footprint and earthworks compared between dates
 - New structures in footprints and buffers, reviewer-confirmed
 - Clearing outside approved areas, and revegetation
-- Progress at resettlement villages from drone orthophotos, subject to permits
+- Progress at resettlement villages from drone orthophotos, subject to the approvals each job requires
 - Before-and-after checks after floods and cyclones
 - Dated archive scenes, new captures or your own imagery
 - Evidence packs for each monitoring period

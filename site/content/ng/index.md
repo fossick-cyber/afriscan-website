@@ -154,7 +154,7 @@ Results go only to the contacts you name. Military and other sensitive sites are
 :::
 ::::
 
-::::section{id="drones" eyebrow="Satellite first, drones where the permits allow" title="Two routes to the picture, and the rules for each"}
+::::section{id="drones" eyebrow="Satellite first, drones subject to the approvals each job requires" title="Two routes to the picture, and the rules for each"}
 :::::columns{split="2-1"}
 ::::col
 **Satellite and your own imagery.** A survey starts from your route file and dated satellite imagery, open building datasets or the orthophotos your own drone teams already fly. No one travels and no drone flies, however long the line. We found no rule that requires a licence to buy or analyse commercial satellite imagery in Nigeria; counsel should confirm it for your project.

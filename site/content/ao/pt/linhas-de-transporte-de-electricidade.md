@@ -28,7 +28,7 @@ faq:
   - q: Que largura tem a zona de servidão de uma linha?
     a: A Lei de Terras inclui nas reservas parciais os terrenos ocupados por instalações e condutores de electricidade «com uma faixa confinante de 30m de cada lado» (Lei n.º 9/04, artigo 27.º, n.º 7, alínea g)), e a Lei Geral de Electricidade permite à concessionária constituir servidões (artigo 22.º, alínea b)). Se o contrato de concessão, a servidão constituída ou a regulamentação técnica aplicável fixar outra largura para a sua linha, medimos também essa; um levantamento pode ter até seis distâncias.
   - q: Detectam vandalismo ou furto de cabos e cantoneiras?
-    a: Não. Mapeamos construções, terreno desmatado, escavações e caminhos novos junto das torres e dentro da faixa, e comparamos entre datas. Não vemos pessoas nem actos, e a inspecção dos componentes da linha, como condutores, isoladores e estruturas, é outro trabalho.
+    a: Não. Mapeamos construções, terreno desmatado, escavações e caminhos novos junto das torres e dentro da faixa, e comparamos entre datas. Não identificamos pessoas nem o que fazem, e a inspecção dos componentes da linha, como condutores, isoladores e estruturas, é outro trabalho.
   - q: Podem ajudar no traçado de uma linha nova?
     a: Sim. Contamos as construções a menos de cada largura ao longo de traçados alternativos, para mostrar qual toca menos casas e lavras, e fazemos um registo datado antes do recenseamento e da negociação das servidões.
   - q: Com que frequência se repete o levantamento?

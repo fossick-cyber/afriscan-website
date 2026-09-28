@@ -30,8 +30,8 @@ faq:
   - q: E se o serviço estiver na lista de exclusividade?
     a: Nesse caso, a lei só permite que o serviço seja fornecido por uma sociedade comercial angolana, isto é, com sede em Angola e capital social detido na totalidade por cidadãos ou sociedades angolanas (Decreto Presidencial n.º 271/20, artigos 3.º, alínea q), e 11.º, n.º 1). Se o serviço constar da lista de exclusividade, a proposta indica como o trabalho pode ser contratado nessas condições.
   - q: A AfriScan está registada nos portais de fornecedores?
-    a: Esta página não afirma registos. A proposta indica, para o seu processo, que registos são exigidos e em que ponto está cada um. Envie os formulários de registo ou de pré-qualificação com o pedido.
-  - q: Que autorizações precisa um trabalho com drone?
+    a: Esta página não indica registos em portais de fornecedores. A proposta indica, para o seu processo, que registos são exigidos e em que ponto está cada um. Envie os formulários de registo ou de pré-qualificação com o pedido.
+  - q: De que autorizações precisa um trabalho com drone?
     a: Em Angola, a autorização especial da ANAC para os voos (Lei da Aviação Civil, artigo 16.º-A), o licenciamento do trabalho aéreo e o registo das aeronaves, entre outras. Os levantamentos com drone estão sujeitos às autorizações e credenciações de segurança exigidas para cada operação, e cada proposta com drone indica-as. Veja a [lei de drones em Angola](/ao/pt/lei-de-drones).
   - q: Publicam os nossos dados?
     a: Não. Nunca publicamos o traçado, as imagens ou os resultados de um cliente sem autorização escrita.
@@ -84,7 +84,7 @@ A [página de conteúdo local da ANPG](https://www.anpg.co.ao/conteudo-local) te
 ::::section{id="como-trabalhamos" eyebrow="Como trabalhamos com estas regras" title="O que a proposta diz sobre conteúdo local"}
 - **O serviço, descrito com detalhe:** o que é feito a partir de imagens de satélite, o que exigiria voos de drone e o que fica com as equipas do cliente, para a sua equipa jurídica poder ver se o serviço cai num dos regimes.
 - **Quem contrata:** se o serviço constar da lista de exclusividade, a proposta indica como o trabalho pode ser contratado nessas condições.
-- **Os registos:** a proposta indica que registos o seu processo exige, na ANPG, nos portais de fornecedores das empresas petrolíferas ou no cadastro da contratação pública, e em que ponto está cada um. Esta página não afirma registos.
+- **Os registos:** a proposta indica que registos o seu processo exige, na ANPG, nos portais de fornecedores das empresas petrolíferas ou no cadastro da contratação pública, e em que ponto está cada um. Esta página não indica registos em portais de fornecedores.
 - **Os dados:** que dados pessoais o trabalho envolve, onde ficam e quem os pode ver (veja a secção sobre dados, abaixo).
 ::::
 
@@ -114,7 +114,7 @@ A Circular n.º 02/APD/2024 manda notificar a APD de uma violação de dados pes
 ::::
 
 ::::section{id="drones" tone="alt" eyebrow="Autorizações de drone" title="O satélite primeiro; o drone com as autorizações de cada operação"}
-O rastreio por satélite não envolve voos. Os levantamentos com drone estão sujeitos às autorizações e credenciações de segurança exigidas para cada operação, a começar pela autorização especial da ANAC (Lei da Aviação Civil, artigo 16.º-A). A Afridrone está a trabalhar para obter as autorizações de operador que cada país exige, e cada proposta com drone indica quem voa, com que autorizações e com que prazo. A autorização do INACOM para importar material de telecomunicações é dada a empresas registadas em Angola, com NIF angolano.
+O rastreio por satélite não envolve voos. Os levantamentos com drone estão sujeitos às autorizações e credenciações de segurança exigidas para cada operação, a começar pela autorização especial da ANAC (Lei da Aviação Civil, artigo 16.º-A). A Afridrone está a trabalhar para obter as autorizações de operador que Angola exige, e cada proposta com drone indica quem voa, com que autorizações e com que prazo. A autorização do INACOM para importar material de telecomunicações é dada a empresas registadas em Angola, com NIF angolano.
 
 [Lei de drones em Angola: o guia](/ao/pt/lei-de-drones)
 ::::

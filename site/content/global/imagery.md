@@ -18,7 +18,7 @@ faq:
   - q: Which satellites do you use?
     a: We source very-high-resolution scenes from commercial archives and, when the archive is too old, request new captures from commercial operators. Which scene is best depends on the date you need, the season and cloud over your area, so we choose it per job and name it in the report.
   - q: Can satellite imagery be captured on a date we choose?
-    a: Not with certainty. A new capture is requested for a window, and the date depends on satellite availability and weather, especially in the rainy season. Where a fixed date matters, a drone survey (subject to permits) or an existing archive scene nearest that date is usually the better plan.
+    a: Not with certainty. A new capture is requested for a window, and the date depends on satellite availability and weather, especially in the rainy season. Where a fixed date matters, a drone survey (subject to the approvals and security clearances each job requires) or an existing archive scene nearest that date is usually the better plan.
   - q: Can you work under cloud?
     a: Optical satellite and drone imagery cannot see through cloud. Radar satellites can show larger ground changes, such as clearing and earthworks, under rainy-season cloud; flagged areas are then checked on optical imagery or by drone.
   - q: We already fly our own drones. Can you use that imagery?
@@ -91,7 +91,7 @@ Open data is credited as each licence requires. The full licence and credit text
 ::::
 
 ::::section{id="countries" eyebrow="Every country" title="Imagery and permits in each country"}
-Satellite-based surveys are available in every country we work in, with no site visit and no drone flight. Drone surveys are available subject to the approvals and security clearances each job requires: aviation approvals in every country and, in some, separate authorisations for the survey itself or for handing over the images. Afridrone is working towards the operator approvals each country requires, and we build the permit timeline into every drone proposal.
+Satellite-based surveys are available in every country we work in, with no site visit and no drone flight. Drone surveys are available subject to the approvals and security clearances each job requires. They include aviation approvals in every country and, in some countries, separate authorisations for the survey itself or for handing over the images. Afridrone is working towards the operator approvals each country requires, and we build the permit timeline into every drone proposal.
 
 [Where we work](/countries) · [Drone survey rules by country](/drone-regulations) · [How we work with your team](/how-we-work)
 ::::

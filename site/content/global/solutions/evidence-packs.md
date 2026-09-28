@@ -56,7 +56,7 @@ It shows the files existed, unchanged, at the timestamped time. It does not show
 :::cards{cols="2"}
 :::card{title="Evidence pack" icon="file-check" eyebrow="For a date that matters"}
 1. We agree the date, the area and what the record must show.
-2. We source dated imagery: a drone survey on the day, subject to permits, or dated very-high-resolution scenes from commercial archives.
+2. We source dated imagery: a drone survey on the day, subject to the approvals and security clearances each job requires, or dated very-high-resolution scenes from commercial archives.
 3. A reviewer builds the structure register and maps; unclear structures are listed for a ground check.
 4. We fingerprint every file, timestamp the manifest independently and deliver the pack with a record of who prepared each part.
 :::

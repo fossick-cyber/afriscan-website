@@ -104,7 +104,7 @@ Where a stretch needs more detail than satellite imagery gives, we propose a dro
 ::::section{id="deliverables" tone="alt" eyebrow="What you receive" title="A register by kilometre, ready for GIS"}
 :::::columns{split="1-1" align="center"}
 ::::col
-:::figure{src="diagrams/corridor" alt="Schematic of a corridor with the axis in orange, two width bands on both sides, kilometre posts from 0.0 to 2.5 km and structures drawn as squares; below, the encroachment density of each 500 m segment, from low to high" caption="Schematic: structures by band and density by 500 m segment" credit="Schematic drawn by AfriScan for illustration; widths and structures are invented." size="half"}
+:::figure{src="diagrams/corridor" alt="Schematic of a corridor with the axis in orange, two width bands on both sides, kilometre posts from 0.0 to 2.5 km and structures drawn as squares; below, the encroachment density of each 500 m segment, from low to high" caption="Schematic: structures by band and density by 500 m segment" credit="Schematic drawn by AfriScan for illustration; widths and structures are illustrative." size="half"}
 :::
 ::::
 ::::col

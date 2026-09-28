@@ -100,7 +100,7 @@ After the baseline, the same route is re-surveyed on a schedule you agree with u
 - Settlement growth trends and new tracks around the line
 - Fresh excavation and earthworks near the line, flagged for checking
 - Fire-hotspot notices near above-ground installations
-- Drone checks of flagged stretches, subject to permits
+- Drone checks of flagged stretches, subject to the approvals each job requires
 :::
 ::::
 :::::

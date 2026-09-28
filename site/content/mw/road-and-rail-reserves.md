@@ -93,7 +93,7 @@ A telecom operator in Malawi has reported fibre outages caused by vandalism and 
 ::::section{id="widths" tone="alt" eyebrow="The Public Roads Act" title="The reserve widths, and what needs consent inside them"}
 :::::columns{split="1-1"}
 ::::col
-:::figure{src="diagrams/mw-road-reserves" alt="Plan-view schematic of three roads drawn to one scale, each with its reserve shaded red and centred on the carriageway: 60 m, 36 m and 18 m; square markers stand for structures, red inside the reserve and teal outside it" caption="Road reserves by road class, drawn to one scale" credit="Schematic drawn by AfriScan for illustration; the carriageways and structures are invented." size="half"}
+:::figure{src="diagrams/mw-road-reserves" alt="Plan-view schematic of three roads drawn to one scale, each with its reserve shaded red and centred on the carriageway: 60 m, 36 m and 18 m; square markers stand for structures, red inside the reserve and teal outside it" caption="Road reserves by road class, drawn to one scale" credit="Schematic drawn by AfriScan for illustration; the carriageways and structures are illustrative." size="half"}
 From the top: a main road (60 m); a secondary, tertiary or district road (36 m); a branch or estate road (18 m), each centred on the carriageway, as the consolidated Public Roads Act sets it unless the Minister directs otherwise by Gazette notice (s.10(2)). Red squares stand inside the reserve, teal ones outside it.
 :::
 ::::

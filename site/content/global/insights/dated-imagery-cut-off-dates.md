@@ -27,7 +27,7 @@ faq:
   - q: Can imagery set the cut-off date?
     a: No. The cut-off date comes from the host government's procedures or, where there are none, from the project, and IFC's guidance ties it to the completion of the census and asset inventory. Imagery documents what was visible on the ground on the dates it was captured. It supports the cut-off-date record; it does not define it.
   - q: How close to the cut-off date does the imagery need to be?
-    a: As close as the imagery plan can realistically reach, and the gap should be stated in the record. A drone survey can be flown on a chosen day where the permits allow; satellite archive scenes fall on the dates satellites happened to capture cloud-free images; a new capture falls somewhere in a requested window. A scene either side of the date often tells you more than one scene near it.
+    a: As close as the imagery plan can realistically reach, and the gap should be stated in the record. A drone survey can be flown on a chosen day where the approvals and security clearances allow; satellite archive scenes fall on the dates satellites happened to capture cloud-free images; a new capture falls somewhere in a requested window. A scene either side of the date often tells you more than one scene near it.
   - q: Are free web-map images good enough for a cut-off record?
     a: No. The satellite layers behind common web maps have no stated capture date, are often a mosaic of several dates, and change without notice. They can help plan fieldwork, but a record that depends on a date has to be built on imagery whose date can be shown.
   - q: Does the register tell us who is eligible for compensation?

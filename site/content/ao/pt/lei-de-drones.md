@@ -173,7 +173,7 @@ Se é necessária, além da autorização especial da ANAC, uma autorização da
 ::::col
 Por defeito, trabalhamos com imagens de satélite, bases de dados abertas de edifícios e as imagens que a sua empresa já tem. Nenhuma aeronave voa, por isso as autorizações desta página não se aplicam a esse trabalho.
 
-Os levantamentos com drone são feitos apenas com as autorizações e credenciações de segurança exigidas para cada operação. A Afridrone está a trabalhar para obter as autorizações de operador que cada país exige; cada proposta com drone indica quem voa, com que autorizações da ANAC e com que prazo, para que a sua equipa as possa verificar antes de qualquer voo.
+Os levantamentos com drone são feitos apenas com as autorizações e credenciações de segurança exigidas para cada operação. A Afridrone está a trabalhar para obter as autorizações de operador que Angola exige; cada proposta com drone indica quem voa, com que autorizações da ANAC e com que prazo, para que a sua equipa as possa verificar antes de qualquer voo.
 ::::
 ::::col
 :::callout{tone="scope" title="O que esta página não é"}
