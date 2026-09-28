@@ -582,12 +582,13 @@ class Build:
         return href + ("?" + "&".join(f"{k}={v}" for k, v in q.items()) if q else "")
 
     def form_countries(self, lk):
-        """The contact form's country options: every country with a live section, under its region heading,
-        named by i18n `form.countries` (a live country missing there fails the build), then `other`."""
+        """The contact form's country options: every country with a published (status: live) section, under
+        its region heading, named by i18n `form.countries` (one missing there fails the build), then `other`.
+        Draft sections, built only by --drafts, stay out of the list."""
         names = self.t_of(lk)["form"]["countries"]
         fold = lambda s: "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c)).casefold()
         groups = defaultdict(list)
-        for cc in dict.fromkeys(self.locales[k]["country"].lower() for k in self.live_locales if self.locales[k]["country"]):
+        for cc in dict.fromkeys(self.locales[k]["country"].lower() for k in self.public_locales if self.locales[k]["country"]):
             if not names.get(cc):
                 self.err(f"data/i18n/{self.locales[lk]['i18n']}.yaml: form.countries has no name for '{cc}', a live country")
                 continue
