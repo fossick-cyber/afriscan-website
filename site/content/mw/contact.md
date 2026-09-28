@@ -2,15 +2,15 @@
 key: contact
 template: contact
 title: Request a Survey Proposal in Malawi | AfriScan
-description: Send your line, road or project boundary in Malawi, the district and the widths to check. We reply by email with a scope, imagery options and a proposal.
+description: "Leave your name, email and a short note about your line, road or project area in Malawi. We'll get back to you with a scope, imagery options and a proposal."
 h1: Request a proposal for a survey in Malawi
 crumb: Request a proposal
 eyebrow: Malawi · Contact
-lead: Tell us about the line, road, railway or project area and what the record is for. We reply by email with the questions we need answered, and then with a written proposal covering the scope, imagery plan, method, deliverables and schedule.
+lead: "A short note is enough: leave your name and email, and a few words about the line, road, railway or project area if you like. We'll get back to you with the questions we need answered, and then with a written proposal covering the scope, imagery plan, method, deliverables and schedule."
 cta: false
 og:
   headline: Request a proposal in Malawi
-  subline: Send your route or boundary and the widths that apply; we reply with a written proposal
+  subline: "A short note about your route or site is enough; we'll get back to you with a proposal"
 faq:
   - q: Does anyone need to come to site first?
     a: >-
@@ -37,6 +37,8 @@ faq:
 ---
 
 ### For a line, road or site in Malawi
+
+None of this is needed to get in touch: it is what we'll ask about when we get back to you.
 
 - **District and Traditional Authority areas**, so we can check the imagery that exists and how the register should be grouped.
 - **The widths to report:** the wayleave width for each line section, the road class or reserve width for each road section, the rail-reserve polygons, or your project footprint and a ring around it. Up to six widths in one survey.

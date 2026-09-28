@@ -2,15 +2,15 @@
 key: contact
 template: contact
 title: Request a Survey Proposal in Botswana | AfriScan
-description: Send your line, road reserve or mining licence boundary in Botswana, the district and the widths that apply. We reply with a scope, imagery plan and proposal.
+description: "Leave your name, email and a short note about your line, road reserve or licence area in Botswana. We'll get back to you with a scope and a proposal."
 h1: Talk to us about your servitude, route or lease area in Botswana
 crumb: Request a proposal
 eyebrow: Botswana · Contact
-lead: Tell us about the line, road reserve, pipeline or concession and what the record is for. We reply by email with the questions we need answered, and then with a written proposal covering the scope, imagery plan, method, deliverables and schedule.
+lead: "A short note is enough: leave your name and email, and a few words about the line, road reserve, pipeline or concession if you like. We'll get back to you with the questions we need answered, and then with a written proposal covering the scope, imagery plan, method, deliverables and schedule."
 cta: false
 og:
   headline: Request a proposal in Botswana
-  subline: Send your line, reserve or lease boundary; we reply with a written proposal
+  subline: "A short note about your line or lease area is enough; we'll get back to you with a proposal"
 faq:
   - q: Do you need a site visit or a drone flight to start?
     a: No. A survey in Botswana starts from your route or boundary file and dated satellite imagery, open building datasets or the orthophotos you already hold, so nobody travels and no aircraft flies. Drone detail is added only where a stretch needs it, subject to the CAAB approvals and security clearances each job requires, which the proposal plans for.
@@ -19,7 +19,7 @@ faq:
   - q: Which date can the register reflect?
     a: The date the imagery was captured. For a cut-off date, a licence application or the date a line was built, we look for dated scenes close to that date and tell you what exists before you commit. A new capture can be requested when the archive is too old; its date depends on satellite availability and weather.
   - q: Can we send tender documents?
-    a: Yes. Send the tender or RFQ number, the portal and any supplier or prequalification forms with your request, and tell us whether the procurement is reserved for citizen contractors under section 76 of the Public Procurement Act, 2021. The proposal states which registrations are in place for your contract and which are being arranged.
+    a: Yes. Mention the tender or RFQ number in your message. When we get back to you, we'll ask for the portal, any supplier or prequalification forms and whether the procurement is reserved for citizen contractors under section 76 of the Public Procurement Act, 2021. The proposal states which registrations are in place for your contract and which are being arranged.
   - q: Our files include names and resettlement lists. Should we send them?
     a: Not with this form. Registers describe structures, not people, and carry no names. If a project needs personal data, such as a census list, we agree first how it is transferred and held, with the Data Protection Act, 2024 in mind.
   - q: We have no route file yet. Can we still ask?
@@ -27,6 +27,8 @@ faq:
 ---
 
 ### For a line, reserve or concession in Botswana
+
+None of this is needed to get in touch: it is what we'll ask about when we get back to you.
 
 - **The districts** the route or area crosses, and the nearest villages or towns, so we can check the imagery that exists for the area.
 - **The asset:** a power line and its voltage, a road or rail reserve, a bulk-water pipeline, a buried cable route, or a mining licence or permit area.

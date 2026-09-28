@@ -2,13 +2,13 @@
 key: contact
 template: contact
 title: Request a Corridor Survey Proposal | AfriScan
-description: Send your route (KML, Shapefile or GeoJSON) and buffer widths. We reply with the scope, imagery options and a written proposal for your line or site.
+description: "Leave your name, email and a short note about your route or site. We'll get back to you with the scope, the imagery options and a written proposal."
 h1: Request a proposal
 crumb: Request a proposal
 eyebrow: Contact
-lead: Tell us about the route or site and what you need to know. We reply by email with the questions we need answered and then a written proposal for your line or site.
+lead: "A short note is enough: leave your name and email, and a few words about the route or site if you like. We'll get back to you with the questions we need answered, and then with a written proposal for your line or site."
 cta: false
 og:
   headline: Request a proposal
-  subline: Send your route or boundary and the distances that matter; we reply with a written proposal
+  subline: "A short note is enough; we'll get back to you with a written proposal"
 ---

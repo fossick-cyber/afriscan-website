@@ -27,11 +27,11 @@ og:
 ::::
 
 ::::section{id="contact-form" tone="alt" eyebrow="The contact form" title="What happens when you send a request" width="prose"}
-The form asks for your name, work email, organisation, role and country, what needs surveying, and optionally its size, your timing, what you need, a message and how you heard about us. It also sends, without showing them, which section of the site you wrote from and, if you followed a link from an industry or solution page, which one, so the reply can be relevant.
+The form asks for your name and email address and, if you choose to give them, a phone or WhatsApp number, your company and a message. It also sends, without showing them, which section of the site you wrote from and the country of that section or of the link you followed, and, if you followed a link from another page, the kind of request (such as a proposal or a tender) and the industry or solution page it came from, so the reply can be relevant.
 
 When you press send, your browser sends these details to **FormSubmit** (formsubmit.co), a form-delivery service, which forwards them by email to the AfriScan mailbox. Our mailbox is a Google Gmail account. FormSubmit's own [privacy terms](https://formsubmit.co/privacy.pdf) describe how it handles form data.
 
-We use what you send only to reply to you, to scope the work you asked about and to prepare a proposal. We do not sell it, and we do not share it with anyone outside AfriScan and Afridrone except where needed to answer your request or where the law requires it.
+We use what you send only to reply to you, by email or, if you gave a number, by phone or WhatsApp, to scope the work you asked about and to prepare a proposal. We do not sell it, and we do not share it with anyone outside AfriScan and Afridrone except where needed to answer your request or where the law requires it.
 
 ::::
 

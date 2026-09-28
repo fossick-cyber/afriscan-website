@@ -2,15 +2,15 @@
 key: contact
 template: contact
 title: Request a Survey Proposal in Ghana | AfriScan
-description: Send your pipeline, power-line, rail or fibre route, or your mining lease, in Ghana with the widths to check. We reply with a scope and a written proposal.
+description: "Leave your name, email and a short note about your right of way or mining lease in Ghana. We'll get back to you with a scope and a written proposal."
 h1: Talk to us about your right of way or concession in Ghana
 crumb: Request a proposal
 eyebrow: Ghana · Contact
-lead: Tell us about the line, route or lease and what the record is for. We reply by email with the questions we need answered, and then with a written proposal covering the scope, imagery plan, method, deliverables and schedule.
+lead: "A short note is enough: leave your name and email, and a few words about the line, route or lease if you like. We'll get back to you with the questions we need answered, and then with a written proposal covering the scope, imagery plan, method, deliverables and schedule."
 cta: false
 og:
   headline: Request a proposal in Ghana
-  subline: Send your route or lease boundary and the widths that matter; we reply with a written proposal
+  subline: "A short note about your route or lease is enough; we'll get back to you with a proposal"
 faq:
   - q: Do you need a site visit or a drone flight to start?
     a: No. A survey in Ghana starts from your route or boundary file and dated satellite imagery, open building datasets or imagery you already hold, so nobody travels and no aircraft flies. Drone detail is added only where a stretch needs it, subject to the GCAA authorisations and security clearances each job requires.
@@ -21,12 +21,14 @@ faq:
   - q: We work on a mining lease. Who would we contract with?
     a: With a qualifying Ghanaian firm, which holds the contract, because we treat mining-lease work as falling under the Minerals Commission's local procurement list until counsel settles whether it does; AfriScan supplies the imagery analysis and reviewed registers to it. If you already work with a Ghanaian survey or GIS firm, name it in your request. See [working with AfriScan in Ghana](/gh/working-with-afriscan).
   - q: Can we send tender or prequalification documents?
-    a: Yes. Send the documents with your request, and tell us the portal (GHANEPS, the PPA Supplier Portal or your own), the tender reference and any local-content or permit requirements, so the proposal can answer each one.
+    a: Yes. Mention the tender in your message, and when we get back to you we'll ask for the documents, the portal (GHANEPS, the PPA Supplier Portal or your own), the tender reference and any local-content or permit requirements, so the proposal can answer each one.
   - q: We have no route file yet. Can we still ask?
     a: Yes. Describe the line, lease or route, the regions and districts it crosses, or send tower, valve or kilometre-post coordinates, and we draw the route with you and send it back for your confirmation before any survey runs.
 ---
 
 ### For a route or lease in Ghana
+
+None of this is needed to get in touch: it is what we'll ask about when we get back to you.
 
 - **The regions and districts** the line, route or lease crosses, so we can check the imagery that exists for the area.
 - **The asset:** gas or product pipeline, transmission line and its voltage, railway, road or fibre route, or mining lease or concession.

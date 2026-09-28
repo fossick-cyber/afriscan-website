@@ -2,15 +2,15 @@
 key: contact
 template: contact
 title: Request a Wayleave Survey Proposal in Zambia | AfriScan
-description: Send your line, pipeline, reserve or licence-area file in Zambia, the province and the widths to check. We reply with a scope, imagery options and a proposal.
+description: "Leave your name, email and a short note about your line, pipeline, reserve or licence area in Zambia. We'll get back to you with a scope and a proposal."
 h1: Talk to us about your wayleave, right of way or licence area in Zambia
 crumb: Request a proposal
 eyebrow: Zambia · Contact
-lead: Tell us about the line, route, reserve or licence area and what the record is for. We reply by email with the questions we need answered, and then with a written proposal covering the scope, imagery plan, method, deliverables and schedule.
+lead: "A short note is enough: leave your name and email, and a few words about the line, route, reserve or licence area if you like. We'll get back to you with the questions we need answered, and then with a written proposal covering the scope, imagery plan, method, deliverables and schedule."
 cta: false
 og:
   headline: Request a proposal in Zambia
-  subline: Send your route or boundary and the widths that apply; we reply with a written proposal
+  subline: "A short note about your wayleave or licence area is enough; we'll get back to you with a proposal"
 faq:
   - q: Do you need a site visit or a drone flight to start?
     a: No. A survey in Zambia starts from your route or boundary file and dated satellite imagery, open building datasets or the orthophotos you already hold, so nobody travels and no aircraft flies. Drone detail is added only where a stretch needs it, subject to the ZCAA approvals and Zambia Air Force clearance each operation requires, which the proposal shows in the timeline.
@@ -21,10 +21,12 @@ faq:
   - q: We have no route file yet. Can we still ask?
     a: Yes. Describe the line, pipeline or road, the province and district it crosses, or send tower, valve or kilometre-post coordinates, and we draw the route with you and send it back for your confirmation before any survey runs.
   - q: Our procurement runs through ZPPA e-GP or our own supplier portal. Can you respond there?
-    a: Name the portal and the tender or reference number in your request, and send any supplier-registration, local-content or data-protection forms your organisation uses. Our [notes for procurement teams](/zm/procurement) set out what applies to this kind of service in Zambia.
+    a: Yes. Mention the portal and the tender or reference number in your message, and when we get back to you we'll ask for any supplier-registration, local-content or data-protection forms your organisation uses. Our [notes for procurement teams](/zm/procurement) set out what applies to this kind of service in Zambia.
 ---
 
 ### For a line, route or site in Zambia
+
+None of this is needed to get in touch: it is what we'll ask about when we get back to you.
 
 - **The province and district**, so we can check the imagery that exists for the area.
 - **The asset:** a power line and its voltage, a petroleum pipeline, a railway or road, or a mining licence area, and the file you have for it.

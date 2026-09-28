@@ -2,15 +2,15 @@
 key: contact
 template: contact
 title: Request a Survey Proposal in Zimbabwe | AfriScan
-description: Send your power-line or pipeline route, or your mining-location boundary, in Zimbabwe and the distances to check. We reply with a scope and a written proposal.
+description: "Leave your name, email and a short note about your power line, pipeline or mining location in Zimbabwe. We'll get back to you with a written proposal."
 h1: Talk to us about your wayleave, pipeline reserve or mining location in Zimbabwe
 crumb: Request a proposal
 eyebrow: Zimbabwe · Contact
-lead: Tell us about the line, pipeline, location or site and what the record is for. We reply by email with the questions we need answered, and then with a written proposal covering the scope, imagery plan, method, deliverables and schedule.
+lead: "A short note is enough: leave your name and email, and a few words about the line, pipeline, location or site if you like. We'll get back to you with the questions we need answered, and then with a written proposal covering the scope, imagery plan, method, deliverables and schedule."
 cta: false
 og:
   headline: Request a proposal in Zimbabwe
-  subline: Send your route or boundary and the distances that apply; we reply with a written proposal
+  subline: "A short note about your route or location is enough; we'll get back to you with a proposal"
 faq:
   - q: Do you need a site visit or a drone flight to start?
     a: No. A survey starts from your route or boundary file and dated satellite imagery, open building datasets or the orthophotos you already hold, so nobody travels and no aircraft flies. Drone detail is added only where a stretch needs it, subject to the CAAZ approvals and security clearances each operation requires.
@@ -21,10 +21,12 @@ faq:
   - q: Who sees our route and the results?
     a: Only the contacts you name. We never publish maps of your assets or of the land around them without your written permission, and we never publish imagery of prohibited or protected places. If the register will be linked to occupants, the Cyber and Data Protection Act applies, so we agree the controller and processor roles in writing first.
   - q: Can we send tender or prequalification documents?
-    a: Yes. Public entities contract suppliers registered with PRAZ, by category, on its e-GP system. Send the documents with your request and tell us the procuring entity, the tender number and the category; the proposal sets out how the bid would be submitted and which registrations the contract needs.
+    a: Yes. Public entities contract suppliers registered with PRAZ, by category, on its e-GP system. Mention the tender in your message, and when we get back to you we'll ask for the documents, the procuring entity, the tender number and the category; the proposal sets out how the bid would be submitted and which registrations the contract needs.
 ---
 
 ### For a route or site in Zimbabwe
+
+None of this is needed to get in touch: it is what we'll ask about when we get back to you.
 
 - **The province and district**, and the rural district or urban council areas the route crosses, so we can check the imagery that exists for the area.
 - **The asset:** a power line and its voltage, with tower positions or wayleave polygons if you have them; a pipeline and its reserve width or polygon; or the boundary of a mining location, claims or lease.

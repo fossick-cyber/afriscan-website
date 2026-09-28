@@ -2,15 +2,15 @@
 key: contact
 template: contact
 title: Request a Survey Proposal in Rwanda | AfriScan
-description: Send your power-line, road or licence-area file for Rwanda, the Districts and the right-of-way widths. We reply with a scope, an imagery plan and a proposal.
+description: "Leave your name, email and a short note about your power line, road or licence area in Rwanda. We'll get back to you with a scope, imagery plan and proposal."
 h1: Ask for a proposal for a survey in Rwanda
 crumb: Request a proposal
 eyebrow: Rwanda · Contact
-lead: Tell us about the line, route, licence area or project footprint and what the record is for. We reply by email with the questions we need answered, and then with a written proposal covering the scope, imagery plan, method, deliverables and schedule.
+lead: "A short note is enough: leave your name and email, and a few words about the line, route, licence area or project footprint if you like. We'll get back to you with the questions we need answered, and then with a written proposal covering the scope, imagery plan, method, deliverables and schedule."
 cta: false
 og:
   headline: Request a proposal in Rwanda
-  subline: Send your route and the right-of-way widths; we reply with a written proposal
+  subline: "A short note about your route is enough; we'll get back to you with a written proposal"
 faq:
   - q: Do you need a site visit or a drone flight to start?
     a: No. A survey in Rwanda starts from your route or boundary file and dated satellite imagery, open building datasets or imagery you already hold, so nobody travels and no aircraft flies. Drone detail is added only where a stretch needs it, subject to the RCAA approvals, security reviews and consents each job requires.
@@ -25,6 +25,8 @@ faq:
 ---
 
 ### For a line or site in Rwanda
+
+None of this is needed to get in touch: it is what we'll ask about when we get back to you.
 
 - **The route or site file:** KML, KMZ, Shapefile or GeoJSON, or licence-area coordinates.
 - **The District or Districts** it crosses, so we can check the imagery that exists for the area.

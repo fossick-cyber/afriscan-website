@@ -2,15 +2,15 @@
 key: contact
 template: contact
 title: Request a Survey Proposal in Mozambique | AfriScan
-description: Send your route or site boundary in Mozambique, the province and the widths to check. We reply with a scope, the imagery options and a written proposal.
+description: "Leave your name, email and a short note about your route or site in Mozambique. We'll get back to you with a scope, the imagery options and a proposal."
 h1: Request a proposal for a survey in Mozambique
 crumb: Request a proposal
 eyebrow: Mozambique · Contact
-lead: Tell us about the route or site and what the record is for. We reply by email with the questions we need answered, and then with a written proposal covering the scope, imagery plan, method, deliverables and schedule.
+lead: "A short note is enough: leave your name and email, and a few words about the route, line or site if you like. We'll get back to you with the questions we need answered, and then with a written proposal covering the scope, imagery plan, method, deliverables and schedule."
 cta: false
 og:
   headline: Request a proposal in Mozambique
-  subline: Send your route or boundary and the widths that matter; we reply with a written proposal
+  subline: "A short note about your route or site is enough; we'll get back to you with a proposal"
 faq:
   - q: Do you need a site visit or a drone flight to start?
     a: No. A survey in Mozambique starts from your route or boundary file and dated satellite imagery, open building datasets or imagery you already hold, so nobody travels and no aircraft flies. Drone detail is added only where a stretch needs it, subject to the IACM and Lei n.º 6/2024 authorisations each survey requires.
@@ -23,6 +23,8 @@ faq:
 ---
 
 ### For a route or site in Mozambique
+
+None of this is needed to get in touch: it is what we'll ask about when we get back to you.
 
 - **Province and district**, so we can check the imagery that exists for the area.
 - **The widths to report:** 50 m and 100 m by default; a 200 m safety zone where a decree sets one; or the widths in your concession, servitude or safety study.

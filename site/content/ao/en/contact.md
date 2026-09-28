@@ -2,15 +2,15 @@
 key: contact
 template: contact
 title: Request a Survey Proposal in Angola | AfriScan
-description: Send your route, line or site boundary in Angola, the province and the widths to check. We reply with a scope, the imagery options and a written proposal.
+description: "Leave your name, email and a short note about your route, line or site in Angola. We'll get back to you with a scope, imagery options and a written proposal."
 h1: Request a proposal for a survey in Angola
 crumb: Request a proposal
 eyebrow: Angola · Contact
-lead: Tell us about the route, the line or the concession, and what the record is for. We reply by email with the questions we need answered, and then with a written proposal covering the scope, imagery plan, method, deliverables and schedule.
+lead: "A short note is enough: leave your name and email, and a few words about the route, the line or the concession if you like. We'll get back to you with the questions we need answered, and then with a written proposal covering the scope, imagery plan, method, deliverables and schedule."
 cta: false
 og:
   headline: Request a proposal in Angola
-  subline: Send your route or boundary and the widths that matter; we reply with a written proposal
+  subline: "A short note about your route or site is enough; we'll get back to you with a written proposal"
 faq:
   - q: Which widths should we give you?
     a: The ones the record has to reflect. Angola's Land Law ties a 30 m strip on each side to electricity, water, telecommunications, oil and gas installations and conductors (Lei n.º 9/04, article 27(7)(g)). If your concession contract, a constituted servitude or your own standard sets other widths, give them too; one survey can report up to six distances. For a mining concession, send the polygons of the deposits and plants, and we measure the zones from them.
@@ -23,6 +23,8 @@ faq:
 ---
 
 ### For a route or site in Angola
+
+None of this is needed to get in touch: it is what we'll ask about when we get back to you.
 
 - **Province and municipality**, so we can check the imagery that exists for the area.
 - **The widths to report:** the Land Law's 30 m strip, the widths in your concession contract or servitude, or the zones of a mining concession measured from the polygons you send.
