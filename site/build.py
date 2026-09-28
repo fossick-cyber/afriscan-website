@@ -252,6 +252,7 @@ class Build:
         # data/glossary/<lang>.yaml: the vocabulary guard for the pages in that language (pt-MZ, pt-AO)
         self.glossaries = {p.stem: load_yaml(p) for p in sorted((SITE / "data/glossary").glob("*.yaml"))}
         self.redirects = load_yaml(SITE / "data/redirects.yaml")
+        self.anchor_aliases = load_yaml(SITE / "data/anchors.yaml") or {}
         self.reviews = load_yaml(SITE / "data/reviews.yaml")
         self.icons = load_yaml(SITE / "data/icons.yaml")
         self.law = {p.stem: load_yaml(p) for p in sorted(Path(law_dir).glob("*.yaml"))}
@@ -1297,10 +1298,23 @@ class Build:
         if p["template"] in ("law", "law_hub"):
             ctx["as_of"] = m.get("as_of", self.site["law_as_of"])
         html = self.env.get_template(f"{p['template']}.html.j2").render(**ctx)
-        html = nbsp_units(re.sub(r"\n\s*\n+", "\n", html))
+        html = self.alias_anchors(p, nbsp_units(re.sub(r"\n\s*\n+", "\n", html)))
         p["html"] = html
         p["out"].parent.mkdir(parents=True, exist_ok=True)
         p["out"].write_text(html, encoding="utf-8")
+
+    def alias_anchors(self, p, html):
+        """data/anchors.yaml: keep a renamed section's old fragment working."""
+        for old, new in (self.anchor_aliases.get(p["url"]) or {}).items():
+            if re.search(rf'\sid="{re.escape(old)}"', html):
+                self.err(f"{p['url']}: data/anchors.yaml aliases #{old}, but the page has that id again: remove the entry")
+                continue
+            m = re.search(rf'<[a-z][^>]*\sid="{re.escape(new)}"', html)
+            if not m:
+                self.err(f"{p['url']}: data/anchors.yaml points #{old} at #{new}, which the page no longer has")
+                continue
+            html = html[:m.start()] + f'<span id="{old}" class="anchor-alias"></span>' + html[m.start():]
+        return html
 
     def cta_for(self, p):
         c = p["meta"].get("cta", {})
@@ -2106,6 +2120,10 @@ class Build:
             self.check_structure(p)
         self.check_links(built)
         self.check_withdrawn_names(built)
+        urls = {q["url"] for q in built}
+        for u in self.anchor_aliases:
+            if u not in urls:
+                self.err(f"data/anchors.yaml: {u} is not a built page")
         sample_gallery.check(self, built, name_candidates, name_digest)
         self.check_duplicates(built)
         self.check_similarity(built)

@@ -1,0 +1,45 @@
+# In-page anchors that were live and whose sections have since been renamed (page URL -> {old id: new id}).
+# The build puts an empty <span id="old"> just before the element with id="new", so a deep link to the
+# old fragment still lands on the section. It fails if the new id is missing or the old one is back.
+/countries:
+  reports-in-english-or-portuguese: sites-in-english-portuguese-and-french
+  what-applies-in-each-country: three-examples-of-what-applies
+/drone-regulations:
+  five-questions-to-ask-any-drone-operator-in-any-of-the-three: five-questions-to-ask-any-drone-operator-in-any-country
+  what-a-commercial-survey-operation-needs-in-each-country: three-regimes-compared-what-a-commercial-survey-operation-ne
+/faq:
+  mozambique-south-africa-and-nigeria: three-examples-by-country
+/:
+  mozambique: countries
+  south-africa: countries
+  nigeria: countries
+/industries/government:
+  public-land-estates-and-free-zones: public-land-estates
+/industries/oil-gas:
+  evidence-and-grievances: evidence
+/industries/power-utilities:
+  after-cyclones-and-floods: after-storms
+  fibre-routes-and-tower-sites: telecom
+/mz/drone-regulations:
+  infractions-and-sanctions: infractions
+  what-an-operator-needs: operator
+/mz/pipelines:
+  for-a-new-line-or-loop: new-pipelines
+/mz/power-lines:
+  before-the-servitude-is-registered: registration
+/mz/procurement:
+  lei-n-8-2026-lei-do-petroleo: petroleum-law
+/ng/drone-regulations:
+  the-privacy-clause: privacy-clause
+/ng/esia-support:
+  eia-act-mandatory-studies: mandatory-studies
+/ng/nigerian-content:
+  schedule-minimums-for-survey-mapping-and-data-services: schedule
+/ng/oil-gas-pipelines:
+  for-compensation-and-resettlement: compensation
+  planning-around-the-rainy-season: rainy-season
+  reading-a-register: reading
+/za/drone-regulations:
+  the-50-m-rules-which-decide-most-corridor-plans: fifty-metres
+/za/rail-and-roads:
+  during-construction: construction
