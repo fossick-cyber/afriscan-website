@@ -1625,7 +1625,9 @@ class Build:
             m = re.search(r'<main\b[^>]*>(.*)</main>', html, re.S)
             html = m.group(1) if m else html
         html = re.sub(r"(?s)<(script|style)\b.*?</\1>", " ", html)     # inline <svg> text is checked too
-        attrs = " ¶ ".join(re.findall(r'\b(?:alt|title|aria-label|placeholder)="([^"]*)"', html))
+        # the form's status and field-error messages are shown to visitors from data- attributes
+        attrs = " ¶ ".join(re.findall(r'\b(?:alt|title|aria-label|placeholder'
+                                      r'|data-(?:success|error|sending|err-required|err-format))="([^"]*)"', html))
         # block boundaries become a pilcrow, so guard negation never reaches across blocks
         html = re.sub(r"(?i)</(?:p|li|h[1-6]|td|th|dt|dd|summary|figcaption|div|section|header|a|button|option|label|legend"
                       r"|svg|text|tspan|title|desc)>|<br\s*/?>", " ¶ ", html)
@@ -2372,7 +2374,7 @@ def selftest():
             if not ok:
                 failed.append(name)
         # the contact form, seeded on every rendered contact page: an extra visible field, another endpoint,
-        # an optional email and a missing honeypot
+        # an optional email, a missing honeypot and an overstated status message
         def on_contact(b, fn):
             render = b.render_page
             def patched(p):
@@ -2386,7 +2388,9 @@ def selftest():
                 ("form-endpoint", lambda h: h.replace('action="https://formsubmit.co/', 'action="https://example.org/'),
                  "not the FormSubmit endpoint"),
                 ("form-email-opt", lambda h: re.sub(r'(<input id="f-email"[^>]*?) required', r"\1", h), "'email' must be required"),
-                ("form-honeypot", lambda h: re.sub(r'<div class="hp".*?</div>', "", h), "needs one honeypot")):
+                ("form-honeypot", lambda h: re.sub(r'<div class="hp".*?</div>', "", h), "needs one honeypot"),
+                ("form-message", lambda h: re.sub(r'data-success="[^"]*"', 'data-success="Obrigado. Responderemos em breve."', h),
+                 "[overstatement]")):
             b = make(dist=tmp / name / "dist")
             on_contact(b, fn)
             code = b.run()
