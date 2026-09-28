@@ -2203,6 +2203,15 @@ def selftest():
     dummy_names = {"anywhere": ["QX-7", "Heron Crest"], "outside_law": ["Morlock"], "on_sample_pages": ["12/3456"]}
 
     def make(**kw):
+        # Each case builds a whole site (about 100 MB with 15 countries): drop the finished cases' folders
+        # first, so a run needs the space of one case rather than of all of them.
+        keep = {"fake-checkout"}
+        for v in (kw.get("content_dir"), kw.get("dist")):
+            if v is not None and Path(v).is_relative_to(tmp):
+                keep.add(Path(v).relative_to(tmp).parts[0])
+        for d in tmp.iterdir():
+            if d.name not in keep:
+                shutil.rmtree(d, ignore_errors=True)
         b = Build(quiet=True, **kw)
         wn = b.rules.setdefault("withdrawn_names", {})
         for k, names in dummy_names.items():
