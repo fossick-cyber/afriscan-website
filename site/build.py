@@ -2213,7 +2213,8 @@ class Build:
         self.write_site_files()
         built = [p for p in pages if p.get("html")] + specials
         for p in built:
-            if not p["noindex"] or p.get("special"):
+            # Drafts are checked too (in --drafts builds), so a country is launch-clean before it goes live.
+            if not p["noindex"] or p.get("special") or p.get("status") == "draft" or p.get("draft"):
                 self.run_guards(p, self.guard_text(p))
             self.check_structure(p)
         self.check_forms(built)
@@ -2289,6 +2290,10 @@ def selftest():
         "on-sample-page": ("global/results.md", append("See regulation 12/3456."), "[withdrawn-name]"),
         "law-page-ok":    ("mz/en/50m-protection-zone.md", append("The Morlock corridor has its own zone."), None),
         "other-page-ok":  ("global/faq.md", append("See regulation 12/3456."), None),
+        "fr-certified":   ("cd-fr", append("Nous sommes agréés par l’AAC pour tous vos vols."), "[certificates]"),
+        "fr-realtime":    ("cd-fr", append("Des alertes en temps réel sur votre corridor."), "[overstatement]"),
+        "fr-price":       ("cd-fr", append("Une étude coûte 500 000 FCFA."), "[pricing]"),
+        "un-doc-ok":      ("global/faq.md", append("See UN document S/2024/730."), None),
         "br-monitoring":  ("mz-pt", append("Fazemos o monitoramento do gasoduto."), "'monitoramento'"),
         "br-equipe":      ("mz-pt", append("A nossa equipe responde."), "'equipe'"),
         "br-contato":     ("mz-pt", append("Entre em contato conosco."), "'contato'"),

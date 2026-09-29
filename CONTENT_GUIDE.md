@@ -18,7 +18,7 @@ cd /home/claude/afriscan-site
 /opt/favhousecheck/.venv/bin/python3 site/build.py --drafts --dist /tmp/y   # include status: draft pages and draft sections (local preview only)
 ```
 
-`--drafts` refuses to write into `dist/` or into any directory inside the `dist/` of this checkout or of any other git worktree of the repository: pass a scratch directory. In a drafts build every draft page is `noindex, nofollow` and shows a fixed "Draft: not published" banner; draft sections appear in the menus with a "Draft" badge, but never in sitemaps, hreflang or the country banner.
+`--drafts` refuses to write into `dist/` or into any directory inside the `dist/` of this checkout or of any other git worktree of the repository: pass a scratch directory. In a drafts build every draft page is `noindex, nofollow` and shows a fixed "Draft: not published" banner; draft sections appear in the menus with a "Draft" badge, but never in sitemaps, hreflang or the country banner. The owner-rule guards (pricing, certificates, overstatement, placeholders; English, Portuguese and French patterns) also run on draft pages in a drafts build, so a draft section is launch-clean before its status changes to `live`.
 
 Preview (the local server does not map `/x` to `x.html` the way Cloudflare Pages does, so open `/x.html`):
 

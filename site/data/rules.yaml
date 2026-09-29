@@ -40,7 +40,8 @@ withdrawn_names:
 
 negation_window: 48
 negations: [not, never, "no", nor, without, "isn't", "aren't", "don't", "doesn't", "won't", cannot, "can't",
-            neither, "rather than", "instead of", "nothing", "none", "não", nunca, nem, sem, "em vez de"]
+            neither, "rather than", "instead of", "nothing", "none", "não", nunca, nem, sem, "em vez de",
+            decline, declines, ne, "n’", pas, jamais, aucun, aucune, sans, ni, "plutôt que", "au lieu de"]
 
 checks:
   - id: placeholder
@@ -69,6 +70,9 @@ checks:
       - '\b\d[\d .,]*\s?MT\b'
       - '(?i)\b(?:pricing|price list|price tiers?|prices? from|per[- ]km rate|rate card|tabela de pre[çc]os|pre[çc]os)\b'
       - '(?i)\bcota[çc][ãa]o por\b'
+      - '(?i)\b\d{1,3}(?:[ .\u00a0\u202f]\d{3})*(?:,\d+)?[ \u00a0\u202f]?(?:FCFA|F CFA|XOF|XAF|francs? (?:CFA|congolais))\b'
+      - '\b\d[\d .\u00a0\u202f]*[ \u00a0\u202f]?CDF\b'
+      - '(?i)\b(?:grille tarifaire|nos tarifs|tarifs? à partir|prix à partir|devis à partir)\b'
 
   - id: price-word
     level: warn
@@ -93,6 +97,9 @@ checks:
       - '(?i)\b(?:detemos|possu[ií]mos|temos)\s+(?:a |as |o |os )?(?:licen[çc]as?|autoriza[çc](?:ão|ões)|certificados?|carta de aprova[çc][ãa]o)'
       - '(?i)\boperador(?:es)?\s+(?:licenciad|certificad|autorizad)\w*'
       - '(?i)\bpilotos?\s+(?:licenciad|certificad)\w*'
+      - '(?i)\bnous (?:sommes|avons été)\s+(?:agréé|certifié|autorisé|habilité|licencié|accrédité)\w*'
+      - '(?i)\bnous (?:détenons|disposons d[e’'']|possédons|avons obtenu|sommes titulaires d[e’''])\s*(?:un |une |l[e’''] ?|la |les |des )?(?:licence|agrément|certificat|autorisation|habilitation|attestation)'
+      - '(?i)\bnos (?:télépilotes|pilotes|opérateurs)\s+(?:agréé|certifié|licencié|autorisé)\w*'
 
   - id: overstatement
     level: error
@@ -100,7 +107,7 @@ checks:
     message: nothing physically impossible or overstated (owner rules 3, 5, 9)
     patterns:
       - '(?i)\breal[-\u2011 ]?time\b'
-      - '24/7'
+      - '(?<![\d/])24/7(?!\d)'
       - '(?i)\baround the clock\b'
       - '(?i)\blive (?:detection|monitoring|imagery|feeds?|satellite|tracking|alerts?|view|data|updates?|scans?|intelligence)\b'
       - '(?i)\binstant(?:ly|aneous(?:ly)?)?\b'
@@ -138,6 +145,15 @@ checks:
       - '(?i)\bprova pericial\b'
       - '(?i)\bsubstitui o censo\b'
       - '(?i)\btodas? as (?:constru[çc][õo]es|casas|edif[íi]cios)\b'
+      - '(?i)\btemps réel\b'
+      - '(?i)\b24\s?h\s?/\s?24\b|\b7\s?j\s?/\s?7\b'
+      - '(?i)\binstantan[ée]\w*'
+      - '(?i)\bà travers les nuages\b'
+      - '(?i)\ben continu\b'
+      - '(?i)\b(?:bientôt disponible|prochainement)\b'
+      - '(?i)\b(?:orpailleurs clandestins|squatteurs|envahisseurs|occupants illégaux)\b'
+      - '(?i)\btou(?:s|tes) les (?:bâtiments|constructions|maisons|habitations)\b'
+      - '(?i)\bremplace le recensement\b'
 
   - id: percent
     level: warn
